@@ -1,9 +1,7 @@
 
 .curseclient
-config/*
 mods/*
 saves/*
-defaultconfigs/*
 kubejs/README.txt
 resourcepacks/*
 shaderpacks/*
