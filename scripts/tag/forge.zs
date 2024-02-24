@@ -86,6 +86,22 @@ var addingCorundumClusterForge = [
 for tag_corundum_cluster_forge in addingCorundumClusterForge{
 	<tag:items:forge:corundum/cluster>.add(<item:${tag_corundum_cluster_forge}>);
 }
+// Fruit
+var addingFruitForge = [
+	"ecologics:prickly_pear",
+	"vinery:cherry",
+	"vinery:red_grape",
+	"vinery:jungle_grapes_red",
+	"vinery:jungle_grapes_white",
+	"vinery:savanna_grapes_red",
+	"vinery:savanna_grapes_white",
+	"vinery:taiga_grapes_red",
+	"vinery:taiga_grapes_white",
+	"vinery:white_grape",
+];
+for tag_fruit_forge in addingFruitForge{
+	<tag:items:forge:fruits>.add(<item:${tag_fruit_forge}>);
+}
 // Salt
 <tag:items:forge:dusts/salt>.add(<item:salt:salt>);
 // Sapling

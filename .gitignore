@@ -17,4 +17,5 @@ usernamecache.json
 tconplanner/*
 local/*
 backups/*
+ct_dumps/*
 minecraftinstance.json

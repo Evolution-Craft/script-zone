@@ -15,6 +15,7 @@
  * v0.9 : Rework Rod.
  * v0.10 : Various Fix and Remove Other Recipe.
  * v0.11 : Remove Stone Cutter Hollow Log.
+ * v0.12 : Remve All Vinery Recipe.
  */
 
 #priority 1000
@@ -347,6 +348,9 @@ var removeRecipeByName = [
 	"tconstruct:gadgets/slimesling/ender",
 	"tconstruct:gadgets/slimesling/ichor",
 	"tconstruct:gadgets/slimesling/sky",
+	"tconstruct:gadgets/shuriken/flint_shuriken",
+	"tconstruct:gadgets/shuriken/quartz_shuriken",
+	"tconstruct:gadgets/throwball/efln_ball",
 	"tconstruct:tables/modifier_worktable",
 	"tconstruct:tools/building/flint_and_brick",
 	// Tough As Nails
@@ -630,16 +634,12 @@ var removeMoldingTableRecipeByName = [
 for remove_molding_table_recipe_by_name in removeMoldingTableRecipeByName{
 	<recipetype:tconstruct:molding_table>.removeByName(remove_molding_table_recipe_by_name);
 }
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/quartz/gem_1");
 <recipetype:tconstruct:modifier_worktable>.removeAll();
 
 // Vinery
-//<recipetype:vinery:pot_cooking>.removeAll();
-//<recipetype:vinery:wine_fermentation>.removeAll();
-//<recipetype:vinery:wood_fired_oven_cooking>.removeAll();
+<recipetype:vinery:pot_cooking>.removeAll();
+<recipetype:vinery:wine_fermentation>.removeAll();
+<recipetype:vinery:wood_fired_oven_cooking>.removeAll();
 
 println("End script remove_recipe.");
-
-//craftingTable.remove(<>);
-//craftingTable.removeRecipe(<>);
-//craftingTable.removeByName("");
-//craftingTable.removeByModid("");

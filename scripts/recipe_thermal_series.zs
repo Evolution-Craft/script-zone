@@ -95,6 +95,8 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_wigglewood_sapling", [(<item:undergarden:wigglewood_log> * 6) % 100, <item:undergarden:wigglewood_sapling> % 10], <item:undergarden:wigglewood_sapling>, 1000, 60000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_vinery_cherry_sapling", [(<item:vinery:cherry_log> * 6) % 100, <item:vinery:cherry_sapling> % 10, <item:vinery:cherry> % 50], <item:vinery:cherry_sapling>, 1000, 60000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_vinery_old_cherry_sapling", [(<item:vinery:cherry_log> * 6) % 100, <item:vinery:old_cherry_sapling> % 10, <item:vinery:cherry> % 50], <item:vinery:old_cherry_sapling>, 1000, 60000);
+<recipetype:thermal:insolator>.removeByName("thermal:machines/insolator/insolator_cactus");
+<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_cactus", [(<item:minecraft:cactus> * 2) % 100, <item:ecologics:prickly_pear> % 50], <item:minecraft:cactus>, 1000, 30000);
 
 // Phytogenic Insolator Catalyst
 <recipetype:thermal:insolator_catalyst>.addCatalyst("insolator_catalyst_immersiveengineering_fertilizer", <item:immersiveengineering:fertilizer>, 1.25, 1.25, 0.6, 0.1, 0.5);

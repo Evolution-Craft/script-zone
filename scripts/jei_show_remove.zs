@@ -307,6 +307,7 @@ var removeJeiIngradient = [
 	"tconstruct:coin_sand_cast",
 	"tconstruct:coin_red_sand_cast",
 	"tconstruct:earth_slime_sling",
+	"tconstruct:efln_ball",
 	"tconstruct:ender_slime_sling",
 	"tconstruct:flint_and_brick",
 	"tconstruct:gear_cast",
@@ -314,6 +315,8 @@ var removeJeiIngradient = [
 	"tconstruct:gear_red_sand_cast",
 	"tconstruct:ichor_slime_sling",
 	"tconstruct:modifier_worktable",
+	"tconstruct:quartz_shuriken",
+	"tconstruct:flint_shuriken",
 	"tconstruct:sky_slime_sling",
 	// Tough As Nails
 	"toughasnails:apple_juice",

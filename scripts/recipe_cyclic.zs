@@ -4,7 +4,8 @@
  * The author of this file is Millennium, using CraftTweaker mod code.
  *
  * CHANGELOG:
- * v0.1 : New recipe Solidfier
+ * v0.1 : New recipe Solidfier.
+ * v0.2 : Fix Recipe Rotation Wand.
  */
 
 println("Start script recipe_cyclic.");
@@ -13,7 +14,17 @@ println("Script Priority Null.");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
+import crafttweaker.api.tag.manager.ITagManager;
 
+// Shaped
+craftingTable.removeByName("cyclic:rotation_wand");
+craftingTable.addShaped("cyclic_rotation_wand", <item:cyclic:rotation_wand>, [
+	[<item:minecraft:air>, <item:vinery:loam>, <item:minecraft:stone_hoe>],
+	[<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:vinery:loam>],
+	[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
+// Solidifier
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/fireball", {
 	"ingredients":[ {
 		"item": "minecraft:fire_charge"

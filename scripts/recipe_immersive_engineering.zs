@@ -45,6 +45,10 @@ craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersive
 <recipetype:immersiveengineering:blueprint>.addRecipe("immersiveengineering_blueprint/alexsmobs/banner_pattern_new_mexico", "bannerpatterns", [<item:minecraft:paper>, <item:alexsmobs:tarantula_hawk_wing_fragment> * 6], <item:alexsmobs:banner_pattern_new_mexico>);
 <recipetype:immersiveengineering:blueprint>.addRecipe("immersiveengineering_blueprint/alexsmobs/banner_pattern_brazil", "bannerpatterns", [<item:minecraft:paper>, <item:alexsmobs:shed_snake_skin> * 6], <item:alexsmobs:banner_pattern_brazil>);
 
+// Cloche
+<recipetype:immersiveengineering:cloche>.removeByName("immersiveengineering:cloche/cactus");
+<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/cactus", <item:minecraft:cactus>, <tag:items:forge:sand>, 560, [<item:minecraft:cactus>, <item:ecologics:prickly_pear>], <blockstate:minecraft:cactus>.block, "stacking");
+
 // Metal Press
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_diamond", <item:minecraft:diamond> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal:diamond_gear>);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_emerald", <item:minecraft:emerald> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal:emerald_gear>);

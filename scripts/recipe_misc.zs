@@ -10,6 +10,7 @@
  * v0.4 : Add Missing Campfire Recipe.
  * v0.5 : Add Missing StoneCutter.
  * v0.6 : Adding in Furnace Concrite for converting in Concrete Powder.
+ * v0.7 : Adding Missing Pressure Plate and Loam in StoneCutter.
  */
 
 println("Start script recipe_misc.");
@@ -248,6 +249,8 @@ for addingFencesMacawStoneCutterName, addingFencesMacawStoneCutterMaterial in ad
 stoneCutter.addRecipe("stone_pressure_plate_stoncutting", <item:minecraft:stone_pressure_plate>, <item:minecraft:stone>);
 stoneCutter.addRecipe("polished_blackstone_pressure_plate_stoncutting", <item:minecraft:polished_blackstone_pressure_plate>, <item:minecraft:polished_blackstone>);
 stoneCutter.addRecipe("obsidian_pressure_plate_stoncutting", <item:cyclic:obsidian_pressure_plate>, <item:minecraft:obsidian>);
+stoneCutter.addRecipe("polished_basalt_pressure_plate_stoncutting", <item:infernalexp:polished_basalt_pressure_plate>, <item:minecraft:polished_basalt>);
+stoneCutter.addRecipe("soul_slate_pressure_plate_stoncutting", <item:infernalexp:soul_slate_pressure_plate>, <item:infernalexp:soul_slate>);
 stoneCutter.addRecipe("chiseled_deepslate_stoncutting", <item:minecraft:chiseled_deepslate>, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("deepslate_brick_slab_stoncutting", <item:minecraft:deepslate_brick_slab> * 2, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("deepslate_brick_stairs_stoncutting", <item:minecraft:deepslate_brick_stairs>, <item:minecraft:deepslate>);
@@ -275,6 +278,8 @@ stoneCutter.addRecipe("block_of_crystallized_chorus_to_brick_slab_stoncutting", 
 stoneCutter.addRecipe("block_of_crystallized_chorus_to_brick_stairs_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_stairs> * 4, <item:integrateddynamics:crystalized_chorus_block>);
 stoneCutter.addRecipe("brick_of_crystallized_chorus_to_slab_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_slab> * 2, <item:integrateddynamics:crystalized_chorus_brick>);
 stoneCutter.addRecipe("brick_of_crystallized_chorus_to_stairs_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_stairs>, <item:integrateddynamics:crystalized_chorus_brick>);
+stoneCutter.addRecipe("vinery_loam_stairs_stoncutting", <item:vinery:loam_stairs>, <item:vinery:loam>);
+stoneCutter.addRecipe("vinery_loam_slab_stoncutting", <item:vinery:loam_slab> * 2, <item:vinery:loam>);
 
 // Smoker
 smoker.addRecipe("vinery_dought_in_smoker", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 100);

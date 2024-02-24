@@ -1,6 +1,11 @@
 [
 	{
 		"remove": [
+			"minecraft:wooden_axe",
+			"minecraft:wooden_hoe",
+			"minecraft:wooden_sword",
+			"minecraft:wooden_shovel",
+			"minecraft:wooden_pickaxe",
 			"infernalexp:ascus_bomb",
 			"immersiveengineering:armor_piercing",
 			"immersiveengineering:dragons_breath",
