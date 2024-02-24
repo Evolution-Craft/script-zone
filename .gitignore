@@ -16,5 +16,6 @@ rhino.local.properties
 screenshots/*
 usercache.json
 usernamecache.json
-tconplanner/bookmark.dat
+tconplanner/*
 local/*
+backups/*
