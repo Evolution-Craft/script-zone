@@ -5,3 +5,16 @@ saves/*
 kubejs/README.txt
 resourcepacks/*
 shaderpacks/*
+modernfix/*
+lightspeed-cache/*
+journeymap/*
+logs/*
+minecraftinstance.json
+patchouli_data.json
+reauth.toml
+rhino.local.properties
+screenshots/*
+usercache.json
+usernamecache.json
+tconplanner/bookmark.dat
+local/*
