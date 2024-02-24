@@ -1,4 +1,3 @@
-
 .curseclient
 mods/*
 saves/*
@@ -9,7 +8,6 @@ modernfix/*
 lightspeed-cache/*
 journeymap/*
 logs/*
-minecraftinstance.json
 patchouli_data.json
 reauth.toml
 rhino.local.properties
@@ -19,3 +17,4 @@ usernamecache.json
 tconplanner/*
 local/*
 backups/*
+minecraftinstance.json
