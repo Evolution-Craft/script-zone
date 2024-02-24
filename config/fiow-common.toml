@@ -1,0 +1,13 @@
+
+[world]
+	#when true, logs can only be broken using an axe
+	break_log_requires_axe = true
+	#when true, breaking a log with a bare hand damages the player
+	break_log_hurts = true
+	#when true, wooden tools in loot tables are replaced with flint tools
+	replace_in_loot = false
+
+[item]
+	#when true, wooden tools cannot be used to attack
+	wooden_tools_cannot_attack = true
+

@@ -1,0 +1,5 @@
+
+[render]
+	#When enabled, renders Powder-Snow-like fog when submerged in Quicksand.
+	renderFog = true
+

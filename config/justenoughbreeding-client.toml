@@ -1,0 +1,526 @@
+
+[vanilla]
+
+	[vanilla.axolotl]
+		#Ingredients required for axolotl breeding
+		axolotlIngredients = "minecraft:tropical_fish_bucket"
+		axolotlSpawnEgg = "minecraft:axolotl_spawn_egg"
+		axolotlBreedingCooldown = 6000
+
+	[vanilla.bee]
+		#Ingredients required for bee breeding
+		beeIngredients = "#minecraft:flowers"
+		beeSpawnEgg = "minecraft:bee_spawn_egg"
+		beeBreedingCooldown = 6000
+
+	[vanilla.cat]
+		#Ingredients required for cat breeding
+		catIngredients = "minecraft:cod, minecraft:salmon"
+		catSpawnEgg = "minecraft:cat_spawn_egg"
+		catBreedingCooldown = 6000
+		#Ingredients required for cat taming
+		catTamingIngredients = "minecraft:cod, minecraft:salmon"
+		#Range: 0 ~ 100
+		catTamingChance = 33
+
+	[vanilla.chicken]
+		#Ingredients required for chicken breeding
+		chickenIngredients = "minecraft:wheat_seeds, minecraft:pumpkin_seeds, minecraft:melon_seeds, minecraft:beetroot_seeds"
+		chickenSpawnEgg = "minecraft:chicken_spawn_egg"
+		chickenBreedingCooldown = 6000
+
+	[vanilla.cow]
+		#Ingredients required for cow breeding
+		cowIngredients = "minecraft:wheat"
+		cowSpawnEgg = "minecraft:cow_spawn_egg"
+		cowBreedingCooldown = 6000
+
+	[vanilla.donkey]
+		#Ingredients required for donkey breeding
+		donkeyIngredients = "minecraft:golden_apple, minecraft:enchanted_golden_apple, minecraft:golden_carrot"
+		donkeySpawnEgg = "minecraft:donkey_spawn_egg"
+		donkeyBreedingCooldown = 6000
+		#Ingredients that increase donkey temper
+		donkeyTemperIngredients = "minecraft:sugar, minecraft:wheat, minecraft:apple, minecraft:golden_carrot, minecraft:golden_apple"
+		#Values of ingredients that increase donkey temper
+		donkeyTemperValues = "3, 3, 3, 5, 10"
+
+	[vanilla.fox]
+		#Ingredients required for fox breeding
+		foxIngredients = "#minecraft:fox_food"
+		foxSpawnEgg = "minecraft:fox_spawn_egg"
+		foxBreedingCooldown = 6000
+		#Ingredients required for fox trusting
+		foxTrustingIngredients = "#minecraft:fox_food"
+		#Range: 0 ~ 100
+		foxTrustingChance = 33
+
+	[vanilla.goat]
+		#Ingredients required for goat breeding
+		goatIngredients = "minecraft:wheat"
+		goatSpawnEgg = "minecraft:goat_spawn_egg"
+		goatBreedingCooldown = 6000
+
+	[vanilla.hoglin]
+		#Ingredients required for hoglin breeding
+		hoglinIngredients = "minecraft:crimson_fungus"
+		hoglinSpawnEgg = "minecraft:hoglin_spawn_egg"
+		hoglinBreedingCooldown = 6000
+
+	[vanilla.horse]
+		#Ingredients required for horse breeding
+		horseIngredients = "minecraft:golden_apple, minecraft:enchanted_golden_apple, minecraft:golden_carrot"
+		horseSpawnEgg = "minecraft:horse_spawn_egg"
+		horseBreedingCooldown = 6000
+		#Ingredients that increase horse temper
+		horseTemperIngredients = "minecraft:sugar, minecraft:wheat, minecraft:apple, minecraft:golden_carrot, minecraft:golden_apple"
+		#Values of ingredients that increase horse temper
+		horseTemperValues = "3, 3, 3, 5, 10"
+
+	[vanilla.llama]
+		#Ingredients required for llama breeding
+		llamaIngredients = "minecraft:wheat, minecraft:hay_block"
+		llamaSpawnEgg = "minecraft:llama_spawn_egg"
+		llamaBreedingCooldown = 6000
+		#Ingredients that increase llama temper
+		llamaTemperIngredients = "minecraft:wheat, minecraft:hay_block"
+		#Values of ingredients that increase llama temper
+		llamaTemperValues = "3, 6"
+
+	[vanilla.mooshroom]
+		#Ingredients required for mooshroom breeding
+		mooshroomIngredients = "minecraft:wheat"
+		mooshroomSpawnEgg = "minecraft:mooshroom_spawn_egg"
+		mooshroomBreedingCooldown = 6000
+
+	[vanilla.ocelot]
+		#Ingredients required for ocelot breeding
+		ocelotIngredients = "minecraft:cod, minecraft:salmon"
+		ocelotSpawnEgg = "minecraft:ocelot_spawn_egg"
+		ocelotBreedingCooldown = 6000
+		#Ingredients required for ocelot trusting
+		ocelotTrustingIngredients = "minecraft:cod, minecraft:salmon"
+		#Range: 0 ~ 100
+		ocelotTrustingChance = 33
+
+	[vanilla.panda]
+		#Ingredients required for panda breeding
+		pandaIngredients = "minecraft:bamboo"
+		pandaSpawnEgg = "minecraft:panda_spawn_egg"
+		pandaBreedingCooldown = 6000
+
+	[vanilla.pig]
+		#Ingredients required for pig breeding
+		pigIngredients = "minecraft:carrot, minecraft:potato, minecraft:beetroot"
+		pigSpawnEgg = "minecraft:pig_spawn_egg"
+		pigBreedingCooldown = 6000
+
+	[vanilla.rabbit]
+		#Ingredients required for rabbit breeding
+		rabbitIngredients = "minecraft:dandelion, minecraft:carrot, minecraft:golden_carrot"
+		rabbitSpawnEgg = "minecraft:rabbit_spawn_egg"
+		rabbitBreedingCooldown = 6000
+
+	[vanilla.sheep]
+		#Ingredients required for sheep breeding
+		sheepIngredients = "minecraft:wheat"
+		sheepSpawnEgg = "minecraft:sheep_spawn_egg"
+		sheepBreedingCooldown = 6000
+
+	[vanilla.strider]
+		#Ingredients required for strider breeding
+		striderIngredients = "minecraft:warped_fungus"
+		striderSpawnEgg = "minecraft:strider_spawn_egg"
+		striderBreedingCooldown = 6000
+
+	[vanilla.trader_llama]
+		#Ingredients required for trader_llama breeding
+		trader_llamaIngredients = "minecraft:wheat, minecraft:hay_block"
+		trader_llamaSpawnEgg = "minecraft:trader_llama_spawn_egg"
+		trader_llamaBreedingCooldown = 6000
+		#Ingredients that increase trader_llama temper
+		trader_llamaTemperIngredients = "minecraft:wheat, minecraft:hay_block"
+		#Values of ingredients that increase trader_llama temper
+		trader_llamaTemperValues = "3, 6"
+
+	[vanilla.turtle]
+		#Ingredients required for turtle breeding
+		turtleIngredients = "minecraft:seagrass"
+		turtleSpawnEgg = "minecraft:turtle_spawn_egg"
+		turtleBreedingCooldown = 6000
+		#Egg that turtle lays after breeding
+		turtleEggResult = "minecraft:turtle_egg"
+		#Min amount of eggs that turtle lays after breeding
+		#Range: 1 ~ 64
+		turtleEggMinAmount = 1
+		#Max amount of eggs that turtle lays after breeding
+		#Range: 1 ~ 64
+		turtleEggMaxAmount = 4
+
+	[vanilla.wolf]
+		#Ingredients required for wolf breeding
+		wolfIngredients = "minecraft:porkchop, minecraft:cooked_porkchop, minecraft:beef, minecraft:cooked_beef, minecraft:chicken, minecraft:cooked_chicken, minecraft:rotten_flesh, minecraft:rabbit, minecraft:cooked_rabbit, minecraft:mutton, minecraft:cooked_mutton"
+		wolfSpawnEgg = "minecraft:wolf_spawn_egg"
+		wolfBreedingCooldown = 6000
+		#Ingredients required for wolf taming
+		wolfTamingIngredients = "minecraft:bone"
+		#Range: 0 ~ 100
+		wolfTamingChance = 33
+
+	[vanilla.mule]
+		#Ingredients required for mule taming
+		muleTamingIngredients = "minecraft:wheat, minecraft:hay_block"
+		#Range: 0 ~ 100
+		muleTamingChance = 33
+		muleSpawnEgg = "minecraft:mule_spawn_egg"
+		#Ingredients that increase mule temper
+		muleTemperIngredients = "minecraft:sugar, minecraft:wheat, minecraft:apple, minecraft:golden_carrot, minecraft:golden_apple"
+		#Values of ingredients that increase mule temper
+		muleTemperValues = "3, 3, 3, 5, 10"
+
+	[vanilla.parrot]
+		#Ingredients required for parrot taming
+		parrotTamingIngredients = "minecraft:wheat_seeds, minecraft:pumpkin_seeds, minecraft:melon_seeds, minecraft:beetroot_seeds"
+		#Range: 0 ~ 100
+		parrotTamingChance = 33
+		parrotSpawnEgg = "minecraft:parrot_spawn_egg"
+
+[integration]
+
+	[integration.alexsmobs]
+
+		[integration.alexsmobs.alligator_snapping_turtle]
+			#Ingredients required for alligator_snapping_turtle breeding
+			alligator_snapping_turtleIngredients = "minecraft:cod"
+			alligator_snapping_turtleSpawnEgg = "alexsmobs:spawn_egg_alligator_snapping_turtle"
+
+		[integration.alexsmobs.anaconda]
+			#Ingredients required for anaconda breeding
+			anacondaIngredients = "minecraft:chicken, minecraft:cooked_chicken"
+			anacondaSpawnEgg = "alexsmobs:spawn_egg_anaconda"
+
+		[integration.alexsmobs.anteater]
+			#Ingredients required for anteater breeding
+			anteaterIngredients = "alexsmobs:leafcutter_ant_pupa"
+			anteaterSpawnEgg = "alexsmobs:spawn_egg_anteater"
+
+		[integration.alexsmobs.bald_eagle]
+			#Ingredients required for bald_eagle breeding
+			bald_eagleIngredients = "minecraft:rotten_flesh"
+			bald_eagleSpawnEgg = "alexsmobs:spawn_egg_bald_eagle"
+
+		[integration.alexsmobs.banana_slug]
+			#Ingredients required for banana_slug breeding
+			banana_slugIngredients = "minecraft:brown_mushroom"
+			banana_slugSpawnEgg = "alexsmobs:spawn_egg_banana_slug"
+
+		[integration.alexsmobs.bison]
+			#Ingredients required for bison breeding
+			bisonIngredients = "minecraft:wheat"
+			bisonSpawnEgg = "alexsmobs:spawn_egg_bison"
+
+		[integration.alexsmobs.blue_jay]
+			#Ingredients required for blue_jay breeding
+			blue_jayIngredients = "#alexsmobs:insect_items"
+			blue_jaySpawnEgg = "alexsmobs:spawn_egg_blue_jay"
+
+		[integration.alexsmobs.capuchin_monkey]
+			#Ingredients required for capuchin_monkey breeding
+			capuchin_monkeyIngredients = "#alexsmobs:insect_items"
+			capuchin_monkeySpawnEgg = "alexsmobs:spawn_egg_capuchin_monkey"
+
+		[integration.alexsmobs.cockroach]
+			#Ingredients required for cockroach breeding
+			cockroachIngredients = "minecraft:sugar"
+			cockroachSpawnEgg = "alexsmobs:spawn_egg_cockroach"
+
+		[integration.alexsmobs.crocodile]
+			#Ingredients required for crocodile breeding
+			crocodileIngredients = "minecraft:rotten_flesh"
+			crocodileSpawnEgg = "alexsmobs:spawn_egg_crocodile"
+			#Egg that crocodile lays after breeding
+			crocodileeggResult = "alexsmobs:crocodile_egg"
+			#Min amount of eggs that crocodile lays after breeding
+			#Range: 1 ~ 64
+			crocodileEggMinAmount = 1
+			#Max amount of eggs that crocodile lays after breeding
+			#Range: 1 ~ 64
+			crocodileEggMaxAmount = 1
+
+		[integration.alexsmobs.crow]
+			#Ingredients required for crow breeding
+			crowIngredients = "minecraft:pumpkin_seeds"
+			crowSpawnEgg = "alexsmobs:spawn_egg_crow"
+
+		[integration.alexsmobs.emu]
+			#Ingredients required for emu breeding
+			emuIngredients = "minecraft:wheat"
+			emuSpawnEgg = "alexsmobs:spawn_egg_emu"
+
+		[integration.alexsmobs.endergrade]
+			#Ingredients required for endergrade breeding
+			endergradeIngredients = "minecraft:chorus_fruit"
+			endergradeSpawnEgg = "alexsmobs:spawn_egg_endergrade"
+
+		[integration.alexsmobs.flutter]
+			#Ingredients required for flutter breeding
+			flutterIngredients = "minecraft:bone_meal"
+			flutterSpawnEgg = "alexsmobs:spawn_egg_flutter"
+
+		[integration.alexsmobs.fly]
+			#Ingredients required for fly breeding
+			flyIngredients = "minecraft:rotten_flesh"
+			flySpawnEgg = "alexsmobs:spawn_egg_fly"
+
+		[integration.alexsmobs.gazelle]
+			#Ingredients required for gazelle breeding
+			gazelleIngredients = "minecraft:wheat"
+			gazelleSpawnEgg = "alexsmobs:spawn_egg_gazelle"
+
+		[integration.alexsmobs.gelada_monkey]
+			#Ingredients required for gelada_monkey breeding
+			gelada_monkeyIngredients = "minecraft:dead_bush"
+			gelada_monkeySpawnEgg = "alexsmobs:spawn_egg_gelada_monkey"
+
+		[integration.alexsmobs.hummingbird]
+			#Ingredients required for hummingbird breeding
+			hummingbirdIngredients = "#minecraft:flowers"
+			hummingbirdSpawnEgg = "alexsmobs:spawn_egg_hummingbird"
+
+		[integration.alexsmobs.jerboa]
+			#Ingredients required for jerboa breeding
+			jerboaIngredients = "alexsmobs:maggot"
+			jerboaSpawnEgg = "alexsmobs:spawn_egg_jerboa"
+
+		[integration.alexsmobs.kangaroo]
+			#Ingredients required for kangaroo breeding
+			kangarooIngredients = "minecraft:dead_bush, minecraft:grass"
+			kangarooSpawnEgg = "alexsmobs:spawn_egg_kangaroo"
+
+		[integration.alexsmobs.laviathan]
+			#Ingredients required for laviathan breeding
+			laviathanIngredients = "alexsmobs:mosquito_larva"
+			laviathanSpawnEgg = "alexsmobs:spawn_egg_laviathan"
+
+		[integration.alexsmobs.maned_wolf]
+			#Ingredients required for maned_wolf breeding
+			maned_wolfIngredients = "minecraft:chicken, minecraft:cooked_chicken, minecraft:cooked_rabbit, minecraft:rabbit"
+			maned_wolfSpawnEgg = "alexsmobs:spawn_egg_maned_wolf"
+
+		[integration.alexsmobs.mantis_shrimp]
+			#Ingredients required for mantis_shrimp breeding
+			mantis_shrimpIngredients = "alexsmobs:cooked_lobster_tail, alexsmobs:lobster_tail"
+			mantis_shrimpSpawnEgg = "alexsmobs:spawn_egg_mantis_shrimp"
+
+		[integration.alexsmobs.mimic_octopus]
+			#Ingredients required for mimic_octopus breeding
+			mimic_octopusIngredients = "minecraft:tropical_fish"
+			mimic_octopusSpawnEgg = "alexsmobs:spawn_egg_mimic_octopus"
+
+		[integration.alexsmobs.mudskipper]
+			#Ingredients required for mudskipper breeding
+			mudskipperIngredients = "alexsmobs:cooked_lobster_tail, alexsmobs:lobster_tail, alexsmobs:mosquito_larva"
+			mudskipperSpawnEgg = "alexsmobs:spawn_egg_mudskipper"
+
+		[integration.alexsmobs.mungus]
+			#Ingredients required for mungus breeding
+			mungusIngredients = "alexsmobs:mungal_spores"
+			mungusSpawnEgg = "alexsmobs:spawn_egg_mungus"
+
+		[integration.alexsmobs.orca]
+			#Ingredients required for orca breeding
+			orcaIngredients = "minecraft:salmon"
+			orcaSpawnEgg = "alexsmobs:spawn_egg_orca"
+
+		[integration.alexsmobs.platypus]
+			#Ingredients required for platypus breeding
+			platypusIngredients = "alexsmobs:cooked_lobster_tail, alexsmobs:lobster_tail"
+			platypusSpawnEgg = "alexsmobs:spawn_egg_platypus"
+
+		[integration.alexsmobs.potoo]
+			#Ingredients required for potoo breeding
+			potooIngredients = "#alexsmobs:insect_items"
+			potooSpawnEgg = "alexsmobs:spawn_egg_potoo"
+
+		[integration.alexsmobs.raccoon]
+			#Ingredients required for raccoon breeding
+			raccoonIngredients = "minecraft:bread"
+			raccoonSpawnEgg = "alexsmobs:spawn_egg_raccoon"
+
+		[integration.alexsmobs.rattlesnake]
+			#Ingredients required for rattlesnake breeding
+			rattlesnakeIngredients = "minecraft:porkchop, minecraft:cooked_porkchop, minecraft:beef, minecraft:cooked_beef, minecraft:chicken, minecraft:cooked_chicken, minecraft:rotten_flesh, minecraft:rabbit, minecraft:cooked_rabbit, minecraft:mutton, minecraft:cooked_mutton"
+			rattlesnakeSpawnEgg = "alexsmobs:spawn_egg_rattlesnake"
+
+		[integration.alexsmobs.rhinoceros]
+			#Ingredients required for rhinoceros breeding
+			rhinocerosIngredients = "minecraft:dead_bush"
+			rhinocerosSpawnEgg = "alexsmobs:spawn_egg_rhinoceros"
+
+		[integration.alexsmobs.roadrunner]
+			#Ingredients required for roadrunner breeding
+			roadrunnerIngredients = "#alexsmobs:insect_items"
+			roadrunnerSpawnEgg = "alexsmobs:spawn_egg_roadrunner"
+
+		[integration.alexsmobs.seagull]
+			#Ingredients required for seagull breeding
+			seagullIngredients = "minecraft:cod"
+			seagullSpawnEgg = "alexsmobs:spawn_egg_seagull"
+
+		[integration.alexsmobs.seal]
+			#Ingredients required for seal breeding
+			sealIngredients = "alexsmobs:lobster_tail"
+			sealSpawnEgg = "alexsmobs:spawn_egg_seal"
+
+		[integration.alexsmobs.skunk]
+			#Ingredients required for skunk breeding
+			skunkIngredients = "minecraft:sweet_berries"
+			skunkSpawnEgg = "alexsmobs:spawn_egg_skunk"
+
+		[integration.alexsmobs.snow_leopard]
+			#Ingredients required for snow_leopard breeding
+			snow_leopardIngredients = "alexsmobs:cooked_moose_ribs, alexsmobs:moose_ribs"
+			snow_leopardSpawnEgg = "alexsmobs:spawn_egg_snow_leopard"
+
+		[integration.alexsmobs.sugar_glider]
+			#Ingredients required for sugar_glider breeding
+			sugar_gliderIngredients = "minecraft:honeycomb"
+			sugar_gliderSpawnEgg = "alexsmobs:spawn_egg_sugar_glider"
+
+		[integration.alexsmobs.tasmanian_devil]
+			#Ingredients required for tasmanian_devil breeding
+			tasmanian_devilIngredients = "minecraft:porkchop, minecraft:cooked_porkchop, minecraft:beef, minecraft:cooked_beef, minecraft:chicken, minecraft:cooked_chicken, minecraft:rabbit, minecraft:cooked_rabbit, minecraft:mutton, minecraft:cooked_mutton"
+			tasmanian_devilSpawnEgg = "alexsmobs:spawn_egg_tasmanian_devil"
+
+		[integration.alexsmobs.terrapin]
+			#Ingredients required for terrapin breeding
+			terrapinIngredients = "minecraft:seagrass"
+			terrapinSpawnEgg = "alexsmobs:spawn_egg_terrapin"
+			#Egg that terrapin lays after breeding
+			terrapineggResult = "alexsmobs:terrapin_egg"
+			#Min amount of eggs that terrapin lays after breeding
+			#Range: 1 ~ 64
+			terrapinEggMinAmount = 1
+			#Max amount of eggs that terrapin lays after breeding
+			#Range: 1 ~ 64
+			terrapinEggMaxAmount = 4
+
+		[integration.alexsmobs.tiger]
+			#Ingredients required for tiger breeding
+			tigerIngredients = "#alexsmobs:tiger_breedables"
+			tigerSpawnEgg = "alexsmobs:spawn_egg_tiger"
+
+		[integration.alexsmobs.toucan]
+			#Ingredients required for toucan breeding
+			toucanIngredients = "minecraft:egg"
+			toucanSpawnEgg = "alexsmobs:spawn_egg_toucan"
+
+		[integration.alexsmobs.tusklin]
+			#Ingredients required for tusklin breeding
+			tusklinIngredients = "minecraft:red_mushroom"
+			tusklinSpawnEgg = "alexsmobs:spawn_egg_tusklin"
+
+	[integration.twilightforest]
+
+		[integration.twilightforest.bighorn_sheep]
+			#Ingredients required for bighorn_sheep breeding
+			bighorn_sheepIngredients = "minecraft:wheat"
+			bighorn_sheepSpawnEgg = "twilightforest:bighorn_sheep_spawn_egg"
+			bighorn_sheepBreedingCooldown = 6000
+
+		[integration.twilightforest.boar]
+			#Ingredients required for boar breeding
+			boarIngredients = "minecraft:carrot, minecraft:potato, minecraft:beetroot"
+			boarSpawnEgg = "twilightforest:boar_spawn_egg"
+			boarBreedingCooldown = 6000
+
+		[integration.twilightforest.deer]
+			#Ingredients required for deer breeding
+			deerIngredients = "minecraft:wheat"
+			deerSpawnEgg = "twilightforest:deer_spawn_egg"
+			deerBreedingCooldown = 6000
+
+		[integration.twilightforest.dwarf_rabbit]
+			#Ingredients required for dwarf_rabbit breeding
+			dwarf_rabbitIngredients = "minecraft:dandelion, minecraft:carrot, minecraft:golden_carrot"
+			dwarf_rabbitSpawnEgg = "twilightforest:dwarf_rabbit_spawn_egg"
+			dwarf_rabbitBreedingCooldown = 6000
+
+		[integration.twilightforest.penguin]
+			#Ingredients required for penguin breeding
+			penguinIngredients = "minecraft:cod"
+			penguinSpawnEgg = "twilightforest:penguin_spawn_egg"
+			penguinBreedingCooldown = 6000
+
+	[integration.aquaculture]
+
+		[integration.aquaculture.arrau_turtle]
+			#Ingredients required for arrau_turtle breeding
+			arrau_turtleIngredients = "#aquaculture:turtle_edible"
+			arrau_turtleSpawnEgg = "aquaculture:arrau_turtle_spawn_egg"
+			arrau_turtleBreedingCooldown = 6000
+
+		[integration.aquaculture.box_turtle]
+			#Ingredients required for box_turtle breeding
+			box_turtleIngredients = "#aquaculture:turtle_edible"
+			box_turtleSpawnEgg = "aquaculture:box_turtle_spawn_egg"
+			box_turtleBreedingCooldown = 6000
+
+		[integration.aquaculture.starshell_turtle]
+			#Ingredients required for starshell_turtle breeding
+			starshell_turtleIngredients = "#aquaculture:turtle_edible"
+			starshell_turtleSpawnEgg = "aquaculture:starshell_turtle_spawn_egg"
+			starshell_turtleBreedingCooldown = 6000
+
+	[integration.ecologics]
+
+		[integration.ecologics.camel]
+			#Ingredients required for camel breeding
+			camelIngredients = "ecologics:prickly_pear"
+			camelSpawnEgg = "ecologics:camel_spawn_egg"
+			camelBreedingCooldown = 6000
+			#Ingredients required to gain cameltrust
+			camelTrustingIngredients = "minecraft:dead_bush, minecraft:cactus, ecologics:prickly_pear"
+			#Range: 0 ~ 100
+			camelTrustingChance = 33
+
+		[integration.ecologics.penguin]
+			#Ingredients required for penguin breeding
+			penguinIngredients = "minecraft:cod, minecraft:salmon"
+			penguinSpawnEgg = "ecologics:penguin_spawn_egg"
+			penguinBreedingCooldown = 6000
+
+		[integration.ecologics.squirrel]
+			#Ingredients required for squirrel breeding
+			squirrelIngredients = "minecraft:honeycomb"
+			squirrelSpawnEgg = "ecologics:squirrel_spawn_egg"
+			squirrelBreedingCooldown = 6000
+
+	[integration.quark]
+
+		[integration.quark.crab]
+			#Ingredients required for crab breeding
+			crabIngredients = "minecraft:wheat, minecraft:chicken, #minecraft:fishes"
+			crabSpawnEgg = "quark:crab_spawn_egg"
+			crabBreedingCooldown = 6000
+
+		[integration.quark.foxhound]
+			#Ingredients required for foxhound breeding
+			foxhoundIngredients = "minecraft:porkchop, minecraft:cooked_porkchop, minecraft:beef, minecraft:cooked_beef, minecraft:chicken, minecraft:cooked_chicken, minecraft:rotten_flesh, minecraft:rabbit, minecraft:cooked_rabbit, minecraft:mutton, minecraft:cooked_mutton"
+			foxhoundSpawnEgg = "quark:foxhound_spawn_egg"
+			foxhoundBreedingCooldown = 6000
+			#Ingredients required for foxhound taming
+			foxhoundTamingIngredients = "minecraft:coal"
+			#Range: 0 ~ 100
+			foxhoundTamingChance = 33
+
+		[integration.quark.shiba]
+			#Ingredients required for shiba breeding
+			shibaIngredients = "minecraft:porkchop, minecraft:cooked_porkchop, minecraft:beef, minecraft:cooked_beef, minecraft:chicken, minecraft:cooked_chicken, minecraft:rotten_flesh, minecraft:rabbit, minecraft:cooked_rabbit, minecraft:mutton, minecraft:cooked_mutton"
+			shibaSpawnEgg = "quark:shiba_spawn_egg"
+			shibaBreedingCooldown = 6000
+			#Ingredients required for shiba taming
+			shibaTamingIngredients = "minecraft:bone"
+			#Range: 0 ~ 100
+			shibaTamingChance = 33
+

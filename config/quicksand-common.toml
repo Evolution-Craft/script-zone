@@ -1,0 +1,13 @@
+
+[levelgen]
+	#The rarity of the Quicksand Lake to generate (Greater value stands for lower chance)
+	#Range: > 1
+	quicksandLakeRarity = 16
+	#The rarity of the Red Quicksand Lake to generate (Greater value stands for lower chance)
+	#Range: > 1
+	redQuicksandLakeRarity = 16
+
+[gameplay]
+	#When enabled, Quicksand Cauldron can be crafted by adding Sand to Water Cauldron (level 1).
+	quicksandRenewable = true
+

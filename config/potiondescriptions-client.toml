@@ -1,0 +1,13 @@
+
+[Settings]
+	#If true, the source mod will be displayed for non-vanilla effects.
+	"Show Source Mod" = true
+	#Whether shift is required to display the tooltip.
+	"Shift Required" = true
+	#Whether to display a message telling the player to press shift.
+	"Enable 'Press Shift' Message" = true
+	#Whether to display suspicious stew effects in the tooltip.
+	"Suspicious Stew Tooltips" = false
+	#If true, effects with missing descriptions will be listed in the logs.
+	"Log Missing Descriptions" = true
+
