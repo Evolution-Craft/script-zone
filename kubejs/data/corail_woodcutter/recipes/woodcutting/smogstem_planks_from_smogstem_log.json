@@ -1,0 +1,8 @@
+{
+	"type": "corail_woodcutter:woodcutting",
+	"ingredient": {
+		"tag": "undergarden:smogstem_logs"
+	},
+	"result": "undergarden:smogstem_planks",
+	"count": 4
+}

@@ -1,0 +1,8 @@
+{
+	"type": "corail_woodcutter:woodcutting",
+	"ingredient": {
+		"tag": "tconstruct:greenheart_logs"
+	},
+	"result": "tconstruct:greenheart_planks",
+	"count": 4
+}

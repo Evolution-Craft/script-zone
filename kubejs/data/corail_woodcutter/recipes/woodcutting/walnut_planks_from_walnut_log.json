@@ -1,0 +1,8 @@
+{
+	"type": "corail_woodcutter:woodcutting",
+	"ingredient": {
+		"tag": "ecologics:walnut_logs"
+	},
+	"result": "ecologics:walnut_planks",
+	"count": 4
+}

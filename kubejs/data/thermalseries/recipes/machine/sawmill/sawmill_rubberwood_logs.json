@@ -1,0 +1,14 @@
+{
+	"type": "thermal:sawmill",
+	"ingredient": {
+		"item": "myrtrees:rubberwood_log"
+	},
+	"result": [ {
+		"item": "myrtrees:rubberwood_planks",
+		"count": 6
+	}, {
+		"item": "thermal:sawdust",
+		"chance": 1.25
+	} ],
+	"energy": 1000
+}

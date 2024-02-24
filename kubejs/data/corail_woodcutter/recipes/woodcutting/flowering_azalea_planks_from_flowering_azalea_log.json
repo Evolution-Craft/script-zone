@@ -1,0 +1,8 @@
+{
+	"type": "corail_woodcutter:woodcutting",
+	"ingredient": {
+		"tag": "ecologics:flowering_azalea_logs"
+	},
+	"result": "ecologics:flowering_azalea_planks",
+	"count": 4
+}

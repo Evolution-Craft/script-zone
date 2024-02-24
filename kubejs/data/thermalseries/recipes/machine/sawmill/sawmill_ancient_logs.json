@@ -1,0 +1,14 @@
+{
+	"type": "thermal:sawmill",
+	"ingredient": {
+		"tag": "naturesaura:ancient_logs"
+	},
+	"result": [ {
+		"item": "naturesaura:ancient_planks",
+		"count": 3
+	}, {
+		"item": "thermal:sawdust",
+		"chance": 1.25
+	} ],
+	"energy": 1000
+}

@@ -1,0 +1,8 @@
+{
+	"type": "corail_woodcutter:woodcutting",
+	"ingredient": {
+		"tag": "ecologics:coconut_logs"
+	},
+	"result": "ecologics:coconut_planks",
+	"count": 4
+}

@@ -1,0 +1,14 @@
+{
+	"type": "thermal:sawmill",
+	"ingredient": {
+		"tag": "undergarden:smogstem_logs"
+	},
+	"result": [ {
+		"item": "undergarden:smogstem_planks",
+		"count": 6
+	}, {
+		"item": "thermal:sawdust",
+		"chance": 1.25
+	} ],
+	"energy": 1000
+}

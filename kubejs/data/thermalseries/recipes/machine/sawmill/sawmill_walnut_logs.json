@@ -1,0 +1,14 @@
+{
+	"type": "thermal:sawmill",
+	"ingredient": {
+		"tag": "ecologics:walnut_logs"
+	},
+	"result": [ {
+		"item": "ecologics:walnut_planks",
+		"count": 6
+	}, {
+		"item": "thermal:sawdust",
+		"chance": 1.25
+	} ],
+	"energy": 1000
+}

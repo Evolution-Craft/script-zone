@@ -1,0 +1,8 @@
+{
+	"type": "corail_woodcutter:woodcutting",
+	"ingredient": {
+		"tag": "undergarden:grongle_logs"
+	},
+	"result": "undergarden:grongle_planks",
+	"count": 4
+}

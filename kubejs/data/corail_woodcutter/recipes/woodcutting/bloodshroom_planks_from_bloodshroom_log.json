@@ -1,0 +1,8 @@
+{
+	"type": "corail_woodcutter:woodcutting",
+	"ingredient": {
+		"tag": "tconstruct:bloodshroom_logs"
+	},
+	"result": "tconstruct:bloodshroom_planks",
+	"count": 4
+}

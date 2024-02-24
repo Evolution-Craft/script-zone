@@ -1,0 +1,8 @@
+{
+	"type": "corail_woodcutter:woodcutting",
+	"ingredient": {
+		"item": "twilightforest:time_log"
+	},
+	"result": "twilightforest:hollow_time_log",
+	"count": 1
+}
