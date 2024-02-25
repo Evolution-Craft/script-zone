@@ -1,0 +1,18 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "enlightened_end:cerulean_planks"
+  },
+  "input": {
+    "item": "enlightened_end:cerulean_door"
+  },
+  "energy": 800
+}

@@ -1,0 +1,18 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "ecologics:azalea_planks"
+  },
+  "input": {
+    "item": "ecologics:azalea_stairs"
+  },
+  "energy": 1600
+}

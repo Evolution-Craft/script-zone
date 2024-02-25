@@ -1,0 +1,30 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": true
+    },
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "enlightened_end:cerulean_planks",
+    "count": 6
+  },
+  "energy": 1600,
+  "input": [
+    {
+      "item": "enlightened_end:cerulean_log"
+    }
+  ],
+  "stripped": {
+    "item": "enlightened_end:stripped_cerulean_stalk_block"
+  }
+}

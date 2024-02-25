@@ -1,0 +1,19 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "ecologics:azalea_planks",
+    "count": 6
+  },
+  "input": {
+    "item": "ecologics:stripped_azalea_log"
+  },
+  "energy": 800
+}

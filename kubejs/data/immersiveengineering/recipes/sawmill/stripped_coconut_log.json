@@ -1,0 +1,19 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "ecologics:coconut_planks",
+    "count": 6
+  },
+  "input": {
+    "item": "ecologics:stripped_coconut_log"
+  },
+  "energy": 800
+}

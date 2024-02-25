@@ -1,0 +1,18 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "ecologics:walnut_planks"
+  },
+  "input": {
+    "item": "ecologics:walnut_stairs"
+  },
+  "energy": 1600
+}
