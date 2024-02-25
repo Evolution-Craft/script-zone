@@ -89,6 +89,8 @@ for tag_corundum_cluster_forge in addingCorundumClusterForge{
 // Fruit
 var addingFruitForge = [
 	"ecologics:prickly_pear",
+	"undergarden:blisterberry",
+	"undergarden:droopvine_item",
 	"vinery:cherry",
 	"vinery:red_grape",
 	"vinery:jungle_grapes_red",

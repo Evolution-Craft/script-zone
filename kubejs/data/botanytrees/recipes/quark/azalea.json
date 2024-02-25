@@ -1,0 +1,29 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "ecologics:azalea_flower"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 2400,
+  "display": {
+    "block": "ecologics:azalea_flower"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "quark:azalea_log"
+      }
+    },
+    {
+      "chance": 0.15,
+      "output": {
+        "item": "ecologics:azalea_flower"
+      },
+      "minRolls": 1,
+      "maxRolls": 3
+    }
+  ]
+}
