@@ -14,9 +14,6 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
-// Item Application
-//<recipetype:create:item_application>.addRecipe("croptopia_stripped_cinnamon_log_via_vanilla_stripping", [<item:croptopia:stripped_cinnamon_log> % 100], <item:croptopia:cinnamon_log>, <tag:items:forge:axes>, false);
-
 // Sawing
 <recipetype:create:cutting>.addRecipe("stripped_cinnamon_log_from_cinnamon_log", <item:croptopia:stripped_cinnamon_log> % 100, <item:croptopia:cinnamon_log>, 50);
 <recipetype:create:cutting>.addRecipe("stripped_cinnamon_wood_from_cinnamon_wood", <item:croptopia:stripped_cinnamon_wood> % 100, <item:croptopia:cinnamon_wood>, 50);

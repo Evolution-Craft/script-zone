@@ -11,6 +11,7 @@
  * v0.5 : Add Missing StoneCutter.
  * v0.6 : Adding in Furnace Concrite for converting in Concrete Powder.
  * v0.7 : Adding Missing Pressure Plate and Loam in StoneCutter.
+ * V0.8 : Code Compatting
  */
 
 println("Start script recipe_misc.");
@@ -27,6 +28,24 @@ import crafttweaker.api.recipe.StoneCutterManager;
 import crafttweaker.api.misc.Composter;
 import crafttweaker.api.tag.manager.ITagManager;
 
+var itemDyeMisc = [
+	"black",
+	"blue",
+	"brown",
+	"cyan",
+	"gray",
+	"green",
+	"light_blue",
+	"light_gray",
+	"lime",
+	"magenta",
+	"orange",
+	"pink",
+	"purple",
+	"red",
+	"yellow",
+	"white"
+];
 // Campfire
 campfire.addRecipe("campfire_dough_to_toast", <item:vinery:toast>, <tag:items:minecraft:dough>, 1.0, 200);
 
@@ -176,25 +195,7 @@ blastFurnace.addRecipe("silt_in_bfurnace", <item:minecraft:glass>, <item:inferna
 blastFurnace.addRecipe("dirty_glass_in_bfurnace", <item:minecraft:glass>, <item:quark:dirty_glass>, 0.1, 100);
 
 // Furnace
-var furnaceConcreteDyeAddItem = [
-	"black",
-	"blue",
-	"brown",
-	"cyan",
-	"gray",
-	"green",
-	"light_blue",
-	"light_gray",
-	"lime",
-	"magenta",
-	"orange",
-	"pink",
-	"purple",
-	"red",
-	"yellow",
-	"white"
-];
-for furnace_concrete_dye_add_item in furnaceConcreteDyeAddItem{
+for furnace_concrete_dye_add_item in itemDyeMisc{
 	furnace.addRecipe("minecraft_" + furnace_concrete_dye_add_item + "_concrete_in_furnace", <item:minecraft:${furnace_concrete_dye_add_item}_concrete_powder>, <item:minecraft:${furnace_concrete_dye_add_item}_concrete>, 0.1, 200);
 }
 furnace.addRecipe("minecraft_beetroot_in_furnace", <item:minecraft:sugar> * 2, <item:minecraft:beetroot>, 0.1, 60);
@@ -204,30 +205,11 @@ furnace.addRecipe("twilightforest_brown_thorns_in_furnace", <item:twilightforest
 furnace.addRecipe("vinery_dought_in_furnace", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 200);
 
 // Stone Cutter
-var addingConcreteDyeStoneCutter = [
-	"black",
-	"blue",
-	"brown",
-	"cyan",
-	"gray",
-	"green",
-	"light_blue",
-	"light_gray",
-	"lime",
-	"magenta",
-	"orange",
-	"pink",
-	"purple",
-	"red",
-	"yellow",
-	"white"
-];
-for adding_concrete_dye_stone_cutter_color in addingConcreteDyeStoneCutter{
+for adding_concrete_dye_stone_cutter_color in itemDyeMisc{
 	stoneCutter.addRecipe(adding_concrete_dye_stone_cutter_color + "_concrete_fence_stonecutting", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
 	stoneCutter.addRecipe(adding_concrete_dye_stone_cutter_color + "_concrete_fence_gate_stonecutting", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence_gate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
 	stoneCutter.addRecipe(adding_concrete_dye_stone_cutter_color + "_concrete_pressure_plate_stonecutting", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_pressure_plate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
 }
-
 var addingFencesMacawStoneCutter = {
 	"andesite" : "andesite",
 	"blackstone" : "blackstone",

@@ -7,6 +7,7 @@
  * v0.1 : Adding Missing Item.
  * v0.2 : Fix Jungle Post Bug.
  * v0.3 : Adding Towerwood and Thorn.
+ * v0.4 : Code Compatting.
  */
 
 println("Start script recipe_corail_woodcutter.");
@@ -266,72 +267,6 @@ for addingBotaniaLivingwoodCorailWoodcutterOut, addingBotaniaLivingwoodCorailWoo
 	});
 }
 
-var addingEcologicsCoconutCorailWoodcutter = {
-	"coconut_boat" : 1,
-	"coconut_button" : 4,
-	"coconut_door" : 4,
-	"coconut_fence" : 4,
-	"coconut_fence_gate" : 1,
-	"coconut_pressure_plate" : 4,
-	"coconut_sign" : 4,
-	"coconut_slab" : 8,
-	"coconut_stairs" : 4,
-	"coconut_trapdoor" : 4
-};
-for addingEcologicsCoconutCorailWoodcutterOut, addingEcologicsCoconutCorailWoodcutterCount in addingEcologicsCoconutCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingEcologicsCoconutCorailWoodcutterOut + "_from_coconut_log", {
-		"ingredient":{
-			"tag": "ecologics:coconut_logs"
-		},
-		"result": "ecologics:" + addingEcologicsCoconutCorailWoodcutterOut,
-		"count": addingEcologicsCoconutCorailWoodcutterCount
-	});
-}
-
-var addingEcologicsWalnutCorailWoodcutter = {
-	"walnut_boat" : 1,
-	"walnut_button" : 4,
-	"walnut_door" : 4,
-	"walnut_fence" : 4,
-	"walnut_fence_gate" : 1,
-	"walnut_pressure_plate" : 4,
-	"walnut_sign" : 4,
-	"walnut_slab" : 8,
-	"walnut_stairs" : 4,
-	"walnut_trapdoor" : 4
-};
-for addingEcologicsWalnutCorailWoodcutterOut, addingEcologicsWalnutCorailWoodcutterCount in addingEcologicsWalnutCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingEcologicsWalnutCorailWoodcutterOut + "_from_walnut_log", {
-		"ingredient":{
-			"tag": "ecologics:walnut_logs"
-		},
-		"result": "ecologics:" + addingEcologicsWalnutCorailWoodcutterOut,
-		"count": addingEcologicsWalnutCorailWoodcutterCount
-	});
-}
-
-var addingEcologicsAzaleaCorailWoodcutter = {
-	"azalea_boat" : 1,
-	"azalea_button" : 4,
-	"azalea_door" : 4,
-	"azalea_fence" : 4,
-	"azalea_fence_gate" : 1,
-	"azalea_pressure_plate" : 4,
-	"azalea_sign" : 4,
-	"azalea_slab" : 8,
-	"azalea_stairs" : 4,
-	"azalea_trapdoor" : 4
-};
-for addingEcologicsAzaleaCorailWoodcutterOut, addingEcologicsAzaleaCorailWoodcutterCount in addingEcologicsAzaleaCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingEcologicsAzaleaCorailWoodcutterOut + "_from_azalea_log", {
-		"ingredient":{
-			"tag": "ecologics:azalea_logs"
-		},
-		"result": "ecologics:" + addingEcologicsAzaleaCorailWoodcutterOut,
-		"count": addingEcologicsAzaleaCorailWoodcutterCount
-	});
-}
-
 var addingEcologicsFloweringAzaleaCorailWoodcutter = {
 	"flowering_azalea_boat" : 1,
 	"flowering_azalea_door" : 4,
@@ -425,135 +360,6 @@ for addingNaturesAuraAncientCorailWoodcutterOut, addingNaturesAuraAncientCorailW
 	});
 }
 
-var addingUndergardenGrongleCorailWoodcutter = {
-	"grongle_boat" : 1,
-	"grongle_button" : 4,
-	"grongle_door" : 4,
-	"grongle_fence" : 4,
-	"grongle_fence_gate" : 1,
-	"grongle_pressure_plate" : 4,
-	"grongle_sign" : 4,
-	"grongle_slab" : 8,
-	"grongle_stairs" : 4,
-	"grongle_trapdoor" : 4
-};
-for addingUndergardenGrongleCorailWoodcutterOut, addingUndergardenGrongleCorailWoodcutterCount in addingUndergardenGrongleCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingUndergardenGrongleCorailWoodcutterOut + "_from_grongle_log", {
-		"ingredient":{
-			"tag": "undergarden:grongle_logs"
-		},
-		"result": "undergarden:" + addingUndergardenGrongleCorailWoodcutterOut,
-		"count": addingUndergardenGrongleCorailWoodcutterCount
-	});
-}
-
-var addingUndergardenSmogstemCorailWoodcutter = {
-	"smogstem_boat" : 1,
-	"smogstem_button" : 4,
-	"smogstem_door" : 4,
-	"smogstem_fence" : 4,
-	"smogstem_fence_gate" : 1,
-	"smogstem_pressure_plate" : 4,
-	"smogstem_sign" : 4,
-	"smogstem_slab" : 8,
-	"smogstem_stairs" : 4,
-	"smogstem_trapdoor" : 4
-};
-for addingUndergardenSmogstemCorailWoodcutterOut, addingUndergardenSmogstemCorailWoodcutterCount in addingUndergardenSmogstemCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingUndergardenSmogstemCorailWoodcutterOut + "_from_smogstem_log", {
-		"ingredient":{
-			"tag": "undergarden:smogstem_logs"
-		},
-		"result": "undergarden:" + addingUndergardenSmogstemCorailWoodcutterOut,
-		"count": addingUndergardenSmogstemCorailWoodcutterCount
-	});
-}
-
-var addingUndergardenWigglewoodCorailWoodcutter = {
-	"wigglewood_boat" : 1,
-	"wigglewood_button" : 4,
-	"wigglewood_door" : 4,
-	"wigglewood_fence" : 4,
-	"wigglewood_fence_gate" : 1,
-	"wigglewood_pressure_plate" : 4,
-	"wigglewood_sign" : 4,
-	"wigglewood_slab" : 8,
-	"wigglewood_stairs" : 4,
-	"wigglewood_trapdoor" : 4
-};
-for addingUndergardenWigglewoodCorailWoodcutterOut, addingUndergardenWigglewoodCorailWoodcutterCount in addingUndergardenWigglewoodCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingUndergardenWigglewoodCorailWoodcutterOut + "_from_wigglewood_log", {
-		"ingredient":{
-			"tag": "undergarden:wigglewood_logs"
-		},
-		"result": "undergarden:" + addingUndergardenWigglewoodCorailWoodcutterOut,
-		"count": addingUndergardenWigglewoodCorailWoodcutterCount
-	});
-}
-
-var addingTconstructBloodshroomCorailWoodcutter = {
-	"bloodshroom_button" : 4,
-	"bloodshroom_door" : 4,
-	"bloodshroom_fence" : 4,
-	"bloodshroom_fence_gate" : 1,
-	"bloodshroom_pressure_plate" : 4,
-	"bloodshroom_sign" : 4,
-	"bloodshroom_planks_slab" : 8,
-	"bloodshroom_planks_stairs" : 4,
-	"bloodshroom_trapdoor" : 4
-};
-for addingTconstructBloodshroomCorailWoodcutterOut, addingTconstructBloodshroomCorailWoodcutterCount in addingTconstructBloodshroomCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingTconstructBloodshroomCorailWoodcutterOut + "_from_bloodshroom_log", {
-		"ingredient":{
-			"tag": "tconstruct:bloodshroom_logs"
-		},
-		"result": "tconstruct:" + addingTconstructBloodshroomCorailWoodcutterOut,
-		"count": addingTconstructBloodshroomCorailWoodcutterCount
-	});
-}
-
-var addingTconstructGreenheartCorailWoodcutter = {
-	"greenheart_button" : 4,
-	"greenheart_door" : 4,
-	"greenheart_fence" : 4,
-	"greenheart_fence_gate" : 1,
-	"greenheart_pressure_plate" : 4,
-	"greenheart_sign" : 4,
-	"greenheart_planks_slab" : 8,
-	"greenheart_planks_stairs" : 4,
-	"greenheart_trapdoor" : 4
-};
-for addingTconstructGreenheartCorailWoodcutterOut, addingTconstructGreenheartCorailWoodcutterCount in addingTconstructGreenheartCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingTconstructGreenheartCorailWoodcutterOut + "_from_greenheart_log", {
-		"ingredient":{
-			"tag": "tconstruct:greenheart_logs"
-		},
-		"result": "tconstruct:" + addingTconstructGreenheartCorailWoodcutterOut,
-		"count": addingTconstructGreenheartCorailWoodcutterCount
-	});
-}
-
-var addingTconstructSkyrootCorailWoodcutter = {
-	"skyroot_button" : 4,
-	"skyroot_door" : 4,
-	"skyroot_fence" : 4,
-	"skyroot_fence_gate" : 1,
-	"skyroot_pressure_plate" : 4,
-	"skyroot_sign" : 4,
-	"skyroot_planks_slab" : 8,
-	"skyroot_planks_stairs" : 4,
-	"skyroot_trapdoor" : 4
-};
-for addingTconstructSkyrootCorailWoodcutterOut, addingTconstructSkyrootCorailWoodcutterCount in addingTconstructSkyrootCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingTconstructSkyrootCorailWoodcutterOut + "_from_skyroot_log", {
-		"ingredient":{
-			"tag": "tconstruct:skyroot_logs"
-		},
-		"result": "tconstruct:" + addingTconstructSkyrootCorailWoodcutterOut,
-		"count": addingTconstructSkyrootCorailWoodcutterCount
-	});
-}
-
 var addingVineryCherryCorailWoodcutter = {
 	"cherry_button" : 4,
 	"cherry_door" : 4,
@@ -572,6 +378,58 @@ for addingVineryCherryCorailWoodcutterOut, addingVineryCherryCorailWoodcutterCou
 		"result": "vinery:" + addingVineryCherryCorailWoodcutterOut,
 		"count": addingVineryCherryCorailWoodcutterCount
 	});
+}
+
+var addingBoatLogCorailWoodcutter = {
+	"azalea" : "ecologics",
+	"coconut" : "ecologics",
+	"grongle" : "undergarden",
+	"smogstem" : "undergarden",
+	"walnut" : "ecologics",
+	"wigglewood" : "undergarden"
+};
+for addingBoatLogCorailWoodcutterName, addingBoatLogCorailWoodcutterModId in addingBoatLogCorailWoodcutter {
+	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingBoatLogCorailWoodcutterName + "_boat_from_" + addingBoatLogCorailWoodcutterName + "_log", {
+		"ingredient":{
+			"tag": addingBoatLogCorailWoodcutterModId + ":" + addingBoatLogCorailWoodcutterName + "_logs"
+		},
+		"result": addingBoatLogCorailWoodcutterModId + ":" + addingBoatLogCorailWoodcutterName + "_boat",
+		"count": 1
+	});
+}
+
+var addingComponentLogCorailWoodcutter = {
+	"azalea" : "ecologics",
+	"bloodshroom" : "tconstruct",
+	"coconut" : "ecologics",
+	"greenheart" : "tconstruct",
+	"grongle" : "undergarden",
+	"smogstem" : "undergarden",
+	"skyroot" : "tconstruct",
+	"walnut" : "ecologics",
+	"wigglewood" : "undergarden"
+};
+for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterModId in addingComponentLogCorailWoodcutter {
+	var addingComponentCorailWoodcutter = {
+		"button" : 4,
+		"door" : 4,
+		"fence" : 4,
+		"fence_gate" : 1,
+		"pressure_plate" : 4,
+		"sign" : 4,
+		"planks_slab" : 8,
+		"planks_stairs" : 4,
+		"trapdoor" : 4
+	};
+	for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
+		<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
+			"ingredient":{
+				"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
+			},
+			"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
+			"count": addingComponentCorailWoodcutterCount
+		});
+	}
 }
 
 var addingPathMacawCorailWoodcutter = {
