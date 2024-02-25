@@ -24,7 +24,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 var addingSugarsDiet = [
 	"endersdelight:pearl_pasta_wood",
 	"tmted:bottle_of_wodka",
-    "tombstone:lollipop",
+	"tombstone:lollipop",
 	"twilightdelight:aurora_ice_cream",
 	"vinery:apple_mash",
 	"vinery:apple_pie_slice",
