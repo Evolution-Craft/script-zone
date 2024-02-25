@@ -6,6 +6,7 @@
  * CHANGELOG:
  * v0.1 : Adding Missing Item.
  * v0.2 : Fix Jungle Post Bug.
+ * v0.3 : Adding Towerwood and Thorn.
  */
 
 println("Start script recipe_corail_woodcutter.");
@@ -154,6 +155,18 @@ addRecipeCorailWoodcutter(<item:tflostblocks:thorn_planks>, <item:tflostblocks:t
 addRecipeCorailWoodcutter(<item:tflostblocks:thorn_planks>, <item:tflostblocks:thorn_stairs>, 1);
 addRecipeCorailWoodcutter(<item:tflostblocks:thorn_planks>, <item:tflostblocks:thorn_slab>, 2);
 addRecipeCorailWoodcutter(<item:tflostblocks:thorn_planks>, <item:tflostblocks:thorn_trapdoor>, 1);
+addRecipeCorailWoodcutter(<item:twilightforest:mossy_towerwood>, <item:tflostblocks:mossy_towerwood_stairs>, 1);
+addRecipeCorailWoodcutter(<item:twilightforest:mossy_towerwood>, <item:tflostblocks:mossy_towerwood_slab>, 2);
+addRecipeCorailWoodcutter(<item:twilightforest:towerwood>, <item:tflostblocks:towerwood_banister>, 1);
+addRecipeCorailWoodcutter(<item:twilightforest:towerwood>, <item:tflostblocks:towerwood_button>, 1);
+addRecipeCorailWoodcutter(<item:twilightforest:towerwood>, <item:tflostblocks:towerwood_door>, 1);
+addRecipeCorailWoodcutter(<item:twilightforest:towerwood>, <item:tflostblocks:towerwood_fence>, 1);
+addRecipeCorailWoodcutter(<item:twilightforest:towerwood>, <item:tflostblocks:towerwood_fence_gate>, 1);
+addRecipeCorailWoodcutter(<item:twilightforest:towerwood>, <item:tflostblocks:towerwood_pressure_plate>, 1);
+addRecipeCorailWoodcutter(<item:twilightforest:towerwood>, <item:tflostblocks:towerwood_sign>, 1);
+addRecipeCorailWoodcutter(<item:twilightforest:towerwood>, <item:tflostblocks:towerwood_stairs>, 1);
+addRecipeCorailWoodcutter(<item:twilightforest:towerwood>, <item:tflostblocks:towerwood_slab>, 2);
+addRecipeCorailWoodcutter(<item:twilightforest:towerwood>, <item:tflostblocks:towerwood_trapdoor>, 1);
 // Undergarden
 addRecipeCorailWoodcutter(<item:undergarden:grongle_planks>, <item:undergarden:grongle_button>, 1);
 addRecipeCorailWoodcutter(<item:undergarden:grongle_planks>, <item:undergarden:grongle_door>, 1);

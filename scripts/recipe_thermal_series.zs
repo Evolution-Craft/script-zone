@@ -18,6 +18,9 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Shapeless
+craftingTable.addShapeless("thermal_frost_melon_unblock", <item:thermal:frost_melon_slice> * 9, [<item:thermal:frost_melon>]);
+
 // Shaped
 craftingTable.removeByName("thermal:storage/sawdust_block");
 craftingTable.addShaped("thermal_storage/sawdust_block", <item:thermal:sawdust_block>, [
