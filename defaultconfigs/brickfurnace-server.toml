@@ -7,5 +7,5 @@
 	vanillaRecipesEnabled = true
 	#Cook time factor of all added brick furnaces in relation to corresponding vanilla furnaces. (i. e. 0.5 - half the time, 1.0 same time, 2.0 twice the time)
 	#Range: 0.0 ~ 100.0
-	cookTimeFactor = 1.0
+	cookTimeFactor = 0.8
 
