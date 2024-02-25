@@ -25,6 +25,17 @@ for tag_boat_minecraft in addingBoatMinecraft{
 	<tag:items:minecraft:boats>.add(<item:${tag_boat_minecraft}>);
 }
 
+// Logs
+var addingLogsMinecraft = [
+	"infernalexp:luminous_hyphae",
+	"infernalexp:luminous_stem",
+	"infernalexp:stripped_luminous_hyphae",
+	"infernalexp:stripped_luminous_stem"
+];
+for tag_log_minecraft in addingLogsMinecraft{
+	<tag:items:minecraft:logs>.add(<item:${tag_log_minecraft}>);
+}
+
 // Slab
 var addingSlabMinecraft = [
 	"vinery:coarse_dirt_slab",
