@@ -8,6 +8,7 @@
  * v0.2 : Fix Jungle Post Bug.
  * v0.3 : Adding Towerwood and Thorn.
  * v0.4 : Code Compatting.
+ * v0.5 : Update Code and Adding missing Recipe Botania and Immersive Engineering.
  */
 
 println("Start script recipe_corail_woodcutter.");
@@ -19,6 +20,23 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
+
+<recipetype:corail_woodcutter:woodcutting>.removeByName("corail_woodcutter:woodcutting/quark/jungle_post_from_jungle_planks");
+<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_woodcutting/quark/jungle_post_from_jungle_planks", {
+	"ingredient":{
+		"tag": "forge:planks/jungle"
+	},
+	"result": "quark:jungle_post",
+	"count": 1
+});
+<recipetype:corail_woodcutter:woodcutting>.removeByName("corail_woodcutter:woodcutting/quark/jungle_post_from_jungle_logs");
+<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_woodcutting/quark/jungle_post_from_jungle_logs", {
+	"ingredient":{
+		"tag": "minecraft:jungle_logs"
+	},
+	"result": "quark:jungle_post",
+	"count": 4
+});
 
 function addRecipeCorailWoodcutter(itemIn as IItemStack, itemOut as IItemStack, count as int) as void {
 	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + itemOut.registryName.path + "_from_" + itemIn.registryName.path, {
@@ -43,16 +61,32 @@ addRecipeCorailWoodcutter(<item:bambooeverything:dry_bamboo_bundle>, <item:bambo
 addRecipeCorailWoodcutter(<item:bambooeverything:dry_bamboo_bundle>, <item:bambooeverything:dry_bamboo_stairs>, 1);
 addRecipeCorailWoodcutter(<item:bambooeverything:dry_bamboo_bundle>, <item:bambooeverything:dry_bamboo_trapdoor>, 1);
 // Botania
+addRecipeCorailWoodcutter(<item:botania:dreamwood>, <item:botania:dreamwood_slab>, 2);
+addRecipeCorailWoodcutter(<item:botania:dreamwood>, <item:botania:dreamwood_stairs>, 1);
+addRecipeCorailWoodcutter(<item:botania:dreamwood>, <item:botania:dreamwood_wall>, 1);
+addRecipeCorailWoodcutter(<item:botania:dreamwood_planks>, <item:botania:dreamwood_fence>, 1);
+addRecipeCorailWoodcutter(<item:botania:dreamwood_planks>, <item:botania:dreamwood_fence_gate>, 1);
 addRecipeCorailWoodcutter(<item:botania:dreamwood_planks>, <item:botania:framed_dreamwood>, 1);
 addRecipeCorailWoodcutter(<item:botania:dreamwood_planks>, <item:botania:dreamwood_planks_slab>, 2);
 addRecipeCorailWoodcutter(<item:botania:dreamwood_planks>, <item:botania:dreamwood_planks_stairs>, 1);
 addRecipeCorailWoodcutter(<item:botania:dreamwood_planks>, <item:botania:pattern_framed_dreamwood>, 1);
+addRecipeCorailWoodcutter(<item:botania:livingwood>, <item:botania:livingwood_slab>, 2);
+addRecipeCorailWoodcutter(<item:botania:livingwood>, <item:botania:livingwood_stairs>, 1);
+addRecipeCorailWoodcutter(<item:botania:livingwood>, <item:botania:livingwood_wall>, 1);
+addRecipeCorailWoodcutter(<item:botania:livingwood_planks>, <item:botania:livingwood_fence>, 1);
+addRecipeCorailWoodcutter(<item:botania:livingwood_planks>, <item:botania:livingwood_fence_gate>, 1);
 addRecipeCorailWoodcutter(<item:botania:livingwood_planks>, <item:botania:framed_livingwood>, 1);
 addRecipeCorailWoodcutter(<item:botania:livingwood_planks>, <item:botania:livingwood_planks_slab>, 2);
 addRecipeCorailWoodcutter(<item:botania:livingwood_planks>, <item:botania:livingwood_planks_stairs>, 1);
 addRecipeCorailWoodcutter(<item:botania:livingwood_planks>, <item:botania:pattern_framed_livingwood>, 1);
 addRecipeCorailWoodcutter(<item:botania:shimmerwood_planks>, <item:botania:shimmerwood_planks_slab>, 2);
 addRecipeCorailWoodcutter(<item:botania:shimmerwood_planks>, <item:botania:shimmerwood_planks_stairs>, 1);
+addRecipeCorailWoodcutter(<item:botania:stripped_dreamwood>, <item:botania:stripped_dreamwood_slab>, 2);
+addRecipeCorailWoodcutter(<item:botania:stripped_dreamwood>, <item:botania:stripped_dreamwood_stairs>, 1);
+addRecipeCorailWoodcutter(<item:botania:stripped_dreamwood>, <item:botania:stripped_dreamwood_wall>, 1);
+addRecipeCorailWoodcutter(<item:botania:stripped_livingwood>, <item:botania:stripped_livingwood_slab>, 2);
+addRecipeCorailWoodcutter(<item:botania:stripped_livingwood>, <item:botania:stripped_livingwood_stairs>, 1);
+addRecipeCorailWoodcutter(<item:botania:stripped_livingwood>, <item:botania:stripped_livingwood_wall>, 1);
 // Enlightend
 addRecipeCorailWoodcutter(<item:enlightened_end:cerulean_planks>, <item:enlightened_end:cerulean_button>, 1);
 addRecipeCorailWoodcutter(<item:enlightened_end:cerulean_planks>, <item:enlightened_end:cerulean_door>, 1);
@@ -99,6 +133,28 @@ addRecipeCorailWoodcutter(<item:ecologics:walnut_planks>, <item:ecologics:walnut
 addRecipeCorailWoodcutter(<item:ecologics:walnut_planks>, <item:ecologics:walnut_slab>, 2);
 addRecipeCorailWoodcutter(<item:ecologics:walnut_planks>, <item:ecologics:walnut_stairs>, 1);
 addRecipeCorailWoodcutter(<item:ecologics:walnut_planks>, <item:ecologics:walnut_trapdoor>, 1);
+// Immersive Engineering
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_horizontal>, <item:immersiveengineering:treated_fence>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_packaged>, <item:immersiveengineering:treated_fence>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_vertical>, <item:immersiveengineering:treated_fence>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_horizontal>, <item:immersiveengineering:treated_scaffold>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_packaged>, <item:immersiveengineering:treated_scaffold>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_vertical>, <item:immersiveengineering:treated_scaffold>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_horizontal>, <item:immersiveengineering:slab_treated_wood_horizontal>, 2);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_packaged>, <item:immersiveengineering:slab_treated_wood_packaged>, 2);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_vertical>, <item:immersiveengineering:slab_treated_wood_vertical>, 2);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_horizontal>, <item:immersiveengineering:stairs_treated_wood_horizontal>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_packaged>, <item:immersiveengineering:stairs_treated_wood_packaged>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_vertical>, <item:immersiveengineering:stairs_treated_wood_vertical>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_horizontal>, <item:immersiveengineering:stick_treated>, 2);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_packaged>, <item:immersiveengineering:stick_treated>, 2);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_vertical>, <item:immersiveengineering:stick_treated>, 2);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_horizontal>, <item:immersiveengineering:treated_wood_packaged>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_horizontal>, <item:immersiveengineering:treated_wood_vertical>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_packaged>, <item:immersiveengineering:treated_wood_horizontal>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_packaged>, <item:immersiveengineering:treated_wood_vertical>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_vertical>, <item:immersiveengineering:treated_wood_horizontal>, 1);
+addRecipeCorailWoodcutter(<item:immersiveengineering:treated_wood_vertical>, <item:immersiveengineering:treated_wood_packaged>, 1);
 // Integrated Dynamics
 addRecipeCorailWoodcutter(<item:integrateddynamics:menril_planks>, <item:integrateddynamics:menril_door>, 1);
 addRecipeCorailWoodcutter(<item:integrateddynamics:menril_planks>, <item:integrateddynamics:menril_fence>, 1);
@@ -216,28 +272,13 @@ addRecipeCorailWoodcutter(<item:vinery:cherry_planks>, <item:vinery:cherry_slab>
 addRecipeCorailWoodcutter(<item:vinery:cherry_planks>, <item:vinery:cherry_stairs>, 1);
 addRecipeCorailWoodcutter(<item:vinery:cherry_planks>, <item:vinery:cherry_trapdoor>, 1);
 
-<recipetype:corail_woodcutter:woodcutting>.removeByName("corail_woodcutter:woodcutting/quark/jungle_post_from_jungle_planks");
-<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_woodcutting/quark/jungle_post_from_jungle_planks", {
-	"ingredient":{
-		"tag": "forge:planks/jungle"
-	},
-	"result": "quark:jungle_post",
-	"count": 1
-});
-<recipetype:corail_woodcutter:woodcutting>.removeByName("corail_woodcutter:woodcutting/quark/jungle_post_from_jungle_logs");
-<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_woodcutting/quark/jungle_post_from_jungle_logs", {
-	"ingredient":{
-		"tag": "minecraft:jungle_logs"
-	},
-	"result": "quark:jungle_post",
-	"count": 4
-});
-
 var addingBotaniaDreamwoodCorailWoodcutter = {
 	"framed_dreamwood" : 4,
 	"dreamwood_planks" : 4,
 	"dreamwood_planks_slab" : 8,
 	"dreamwood_planks_stairs" : 4,
+	"dreamwood_fence" : 4,
+	"dreamwood_fence_gate" : 4,
 	"pattern_framed_dreamwood" : 4
 };
 for addingBotaniaDreamwoodCorailWoodcutterOut, addingBotaniaDreamwoodCorailWoodcutterCount in addingBotaniaDreamwoodCorailWoodcutter{
@@ -255,6 +296,8 @@ var addingBotaniaLivingwoodCorailWoodcutter = {
 	"livingwood_planks" : 4,
 	"livingwood_planks_slab" : 8,
 	"livingwood_planks_stairs" : 4,
+	"livingwood_fence" : 4,
+	"livingwood_fence_gate" : 4,
 	"pattern_framed_livingwood" : 4
 };
 for addingBotaniaLivingwoodCorailWoodcutterOut, addingBotaniaLivingwoodCorailWoodcutterCount in addingBotaniaLivingwoodCorailWoodcutter{
@@ -264,66 +307,6 @@ for addingBotaniaLivingwoodCorailWoodcutterOut, addingBotaniaLivingwoodCorailWoo
 		},
 		"result": "botania:" + addingBotaniaLivingwoodCorailWoodcutterOut,
 		"count": addingBotaniaLivingwoodCorailWoodcutterCount
-	});
-}
-
-var addingEcologicsFloweringAzaleaCorailWoodcutter = {
-	"flowering_azalea_boat" : 1,
-	"flowering_azalea_door" : 4,
-	"flowering_azalea_fence" : 4,
-	"flowering_azalea_fence_gate" : 1,
-	"flowering_azalea_sign" : 4,
-	"flowering_azalea_slab" : 8,
-	"flowering_azalea_stairs" : 4,
-	"flowering_azalea_trapdoor" : 4
-};
-for addingEcologicsFloweringAzaleaCorailWoodcutterOut, addingEcologicsFloweringAzaleaCorailWoodcutterCount in addingEcologicsFloweringAzaleaCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingEcologicsFloweringAzaleaCorailWoodcutterOut + "_from_flowering_azalea_log", {
-		"ingredient":{
-			"tag": "ecologics:flowering_azalea_logs"
-		},
-		"result": "ecologics:" + addingEcologicsFloweringAzaleaCorailWoodcutterOut,
-		"count": addingEcologicsFloweringAzaleaCorailWoodcutterCount
-	});
-}
-
-var addingEnlightenedIndigoCorailWoodcutter = {
-	"indigo_button" : 4,
-	"indigo_door" : 4,
-	"indigo_fence" : 4,
-	"indigo_fence_gate" : 1,
-	"indigo_pressure_plate" : 4,
-	"indigo_slab" : 8,
-	"indigo_stairs" : 4,
-	"indigo_trapdoor" : 4
-};
-for addingEnlightenedIndigoCorailWoodcutterOut, addingEnlightenedIndigoCorailWoodcutterCount in addingEnlightenedIndigoCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingEnlightenedIndigoCorailWoodcutterOut + "_from_indigo_log", {
-		"ingredient":{
-			"tag": "enlightened_end:indigo_stems"
-		},
-		"result": "enlightened_end:" + addingEnlightenedIndigoCorailWoodcutterOut,
-		"count": addingEnlightenedIndigoCorailWoodcutterCount
-	});
-}
-
-var addingEnlightenedCeruleanCorailWoodcutter = {
-	"cerulean_button" : 4,
-	"cerulean_door" : 4,
-	"cerulean_fence" : 4,
-	"cerulean_fence_gate" : 1,
-	"cerulean_pressure_plate" : 4,
-	"cerulean_slab" : 8,
-	"cerulean_stairs" : 4,
-	"cerulean_trapdoor" : 4
-};
-for addingEnlightenedCeruleanCorailWoodcutterOut, addingEnlightenedCeruleanCorailWoodcutterCount in addingEnlightenedCeruleanCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingEnlightenedCeruleanCorailWoodcutterOut + "_from_cerulean_log", {
-		"ingredient":{
-			"tag": "enlightened_end:cerulean_logs"
-		},
-		"result": "enlightened_end:" + addingEnlightenedCeruleanCorailWoodcutterOut,
-		"count": addingEnlightenedCeruleanCorailWoodcutterCount
 	});
 }
 
@@ -360,75 +343,121 @@ for addingNaturesAuraAncientCorailWoodcutterOut, addingNaturesAuraAncientCorailW
 	});
 }
 
-var addingVineryCherryCorailWoodcutter = {
-	"cherry_button" : 4,
-	"cherry_door" : 4,
-	"cherry_fence" : 4,
-	"cherry_fence_gate" : 1,
-	"cherry_pressure_plate" : 4,
-	"cherry_slab" : 8,
-	"cherry_stairs" : 4,
-	"cherry_trapdoor" : 4
-};
-for addingVineryCherryCorailWoodcutterOut, addingVineryCherryCorailWoodcutterCount in addingVineryCherryCorailWoodcutter{
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingVineryCherryCorailWoodcutterOut + "_from_cherry_log", {
-		"ingredient":{
-			"tag": "vinery:cherry_logs"
-		},
-		"result": "vinery:" + addingVineryCherryCorailWoodcutterOut,
-		"count": addingVineryCherryCorailWoodcutterCount
-	});
-}
-
-var addingBoatLogCorailWoodcutter = {
-	"azalea" : "ecologics",
-	"coconut" : "ecologics",
-	"grongle" : "undergarden",
-	"smogstem" : "undergarden",
-	"walnut" : "ecologics",
-	"wigglewood" : "undergarden"
-};
-for addingBoatLogCorailWoodcutterName, addingBoatLogCorailWoodcutterModId in addingBoatLogCorailWoodcutter {
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingBoatLogCorailWoodcutterName + "_boat_from_" + addingBoatLogCorailWoodcutterName + "_log", {
-		"ingredient":{
-			"tag": addingBoatLogCorailWoodcutterModId + ":" + addingBoatLogCorailWoodcutterName + "_logs"
-		},
-		"result": addingBoatLogCorailWoodcutterModId + ":" + addingBoatLogCorailWoodcutterName + "_boat",
-		"count": 1
-	});
-}
-
 var addingComponentLogCorailWoodcutter = {
 	"azalea" : "ecologics",
 	"bloodshroom" : "tconstruct",
+	"cerulean" : "enlightened_end",
 	"coconut" : "ecologics",
+	"cherry" : "vinery",
+	"flowering_azalea" : "ecologics",
 	"greenheart" : "tconstruct",
 	"grongle" : "undergarden",
+	"indigo" : "enlightened_end",
 	"smogstem" : "undergarden",
 	"skyroot" : "tconstruct",
 	"walnut" : "ecologics",
 	"wigglewood" : "undergarden"
 };
 for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterModId in addingComponentLogCorailWoodcutter {
-	var addingComponentCorailWoodcutter = {
-		"button" : 4,
-		"door" : 4,
-		"fence" : 4,
-		"fence_gate" : 1,
-		"pressure_plate" : 4,
-		"sign" : 4,
-		"planks_slab" : 8,
-		"planks_stairs" : 4,
-		"trapdoor" : 4
-	};
-	for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
-		<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
-			"ingredient":{
-				"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
-			},
-			"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
-			"count": addingComponentCorailWoodcutterCount
-		});
+	if (addingComponentLogCorailWoodcutterModId == "ecologics" || 
+		addingComponentLogCorailWoodcutterModId == "undergarden") {
+		if (addingComponentLogCorailWoodcutterName == "flowering_azalea") {
+			var addingComponentCorailWoodcutter = {
+				"boat" : 1,
+				"door" : 4,
+				"fence" : 4,
+				"fence_gate" : 1,
+				"sign" : 4,
+				"slab" : 8,
+				"stairs" : 4,
+				"trapdoor" : 4
+			};
+			for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
+				<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
+					"ingredient":{
+						"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
+					},
+					"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
+					"count": addingComponentCorailWoodcutterCount
+				});
+			}
+		} else {
+			var addingComponentCorailWoodcutter = {
+				"boat" : 1,
+				"button" : 4,
+				"door" : 4,
+				"fence" : 4,
+				"fence_gate" : 1,
+				"pressure_plate" : 4,
+				"sign" : 4,
+				"slab" : 8,
+				"stairs" : 4,
+				"trapdoor" : 4
+			};
+			for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
+				<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
+					"ingredient":{
+						"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
+					},
+					"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
+					"count": addingComponentCorailWoodcutterCount
+				});
+			}
+		}
+	} else if (addingComponentLogCorailWoodcutterModId == "enlightened_end" || 
+		addingComponentLogCorailWoodcutterModId == "vinery") {
+		var addingComponentCorailWoodcutter = {
+			"button" : 4,
+			"door" : 4,
+			"fence" : 4,
+			"fence_gate" : 1,
+			"pressure_plate" : 4,
+			"slab" : 8,
+			"stairs" : 4,
+			"trapdoor" : 4
+		};
+		if (addingComponentLogCorailWoodcutterName == "indigo") {
+			for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
+				<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
+					"ingredient":{
+						"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_stems"
+					},
+					"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
+					"count": addingComponentCorailWoodcutterCount
+				});
+			}
+		} else {
+			for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
+				<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
+					"ingredient":{
+						"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
+					},
+					"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
+					"count": addingComponentCorailWoodcutterCount
+				});
+			}
+		}
+	} else {
+		var addingComponentCorailWoodcutter = {
+			"button" : 4,
+			"door" : 4,
+			"fence" : 4,
+			"fence_gate" : 1,
+			"pressure_plate" : 4,
+			"sign" : 4,
+			"planks_slab" : 8,
+			"planks_stairs" : 4,
+			"trapdoor" : 4
+		};
+		for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
+			<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
+				"ingredient":{
+					"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
+				},
+				"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
+				"count": addingComponentCorailWoodcutterCount
+			});
+		}
 	}
 }
 
