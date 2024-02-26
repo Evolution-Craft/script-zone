@@ -24,6 +24,33 @@ craftingTable.addShaped("cyclic_rotation_wand", <item:cyclic:rotation_wand>, [
 	[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
+// Crusher
+<recipetype:cyclic:crusher>.removeByName("cyclic:crusher/chest");
+<recipetype:cyclic:crusher>.addJsonRecipe("cyclic_crusher/chest",{
+	"input": {
+		"tag": "forge:chests/wooden"
+	},
+	"energy": {
+		"ticks": 100,
+		"rfpertick": 20
+	},
+	"result": {
+		"item": "minecraft:stick",
+		"count": 16
+	},
+	"conditions": [ {
+		"values": [ {
+			"modid": "cyclic",
+			"type": "forge:mod_loaded"
+		},
+		{
+			"item": "cyclic:crusher",
+			"type": "forge:item_exists"
+		}],
+		"type": "forge:and"
+	}]
+});
+
 // Solidifier
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/fireball", {
 	"ingredients":[ {
@@ -227,6 +254,48 @@ craftingTable.addShaped("cyclic_rotation_wand", <item:cyclic:rotation_wand>, [
 	"result": {
 		"item": "cyclic:apple_lapis",
 		"count": 1
+	}
+});
+<recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/wax_hive");
+<recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/wax_hive", {
+	"ingredients":[ {
+		"tag": "forge:chests/wooden"
+	}],
+	"mix": {
+		"tag": "forge:wax",
+		"count": 1000
+	},
+	"energy": {
+		"rfpertick": 2000,
+		"ticks": 80
+	},
+	"result": {
+		"item": "minecraft:beehive",
+		"count": 1
+	}
+});
+<recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/solidifier_honeyhive");
+<recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/solidifier_honeyhive", {
+	"ingredients":[ {
+		"tag": "forge:chests/wooden"
+	},
+	{
+		"item": "minecraft:honeycomb"
+	},
+	{
+		"item": "minecraft:stick"
+	}],
+	"mix": {
+		"tag": "forge:honey",
+		"count": 100
+	},
+	"energy": {
+		"rfpertick": 100,
+		"ticks": 100
+	},
+	"result": {
+		"item": "minecraft:beehive",
+		"count": 3
 	}
 });
 

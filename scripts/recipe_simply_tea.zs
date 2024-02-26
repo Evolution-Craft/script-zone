@@ -32,10 +32,11 @@ craftingTable.addShaped("simplytea_tea_teabag_chorus", <item:simplytea:teabag_ch
 	[<tag:items:forge:crops/chorus_petal>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
-craftingTable.addShaped("simplytea_tea_sapling", <item:simplytea:tea_sapling>, [
+// Temporary Removed
+/*craftingTable.addShaped("simplytea_tea_sapling", <item:simplytea:tea_sapling>, [
 	[<item:minecraft:oak_sapling>, <item:minecraft:spruce_sapling>, <item:minecraft:birch_sapling>],
 	[<item:minecraft:jungle_sapling>, <item:minecraft:acacia_sapling>, <item:minecraft:dark_oak_sapling>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
+]);*/
 
 println("End script recipe_simply_tea.");

@@ -1,0 +1,24 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "naturesaura:ancient_planks",
+    "count": 3
+  },
+  "energy": 1600,
+  "input": [
+    {
+      "item": "naturesaura:ancient_log"
+    },
+    {
+      "item": "naturesaura:ancient_bark"
+    }
+  ]
+}

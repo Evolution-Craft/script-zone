@@ -45,6 +45,7 @@ var addingCombinerRecipe = {
 	"croptopia:cinnamon_sapling" : "cinnamon_sapling",
 	"ecologics:walnut_sapling" : "ecologics_walnut_sapling",
 	"simplytea:tea_sapling" : "simplytea_tea_sapling",
+	"myrtrees:rubberwood_sapling" : "myrtrees_rubberwood_sapling",
 	"vinery:cherry_sapling" : "vinery_cherry_sapling",
 	"vinery:old_cherry_sapling" : "vinery_old_cherry_sapling"
 };
