@@ -1,0 +1,33 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": true
+    },
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "twilightforest:time_planks",
+    "count": 6
+  },
+  "energy": 1600,
+  "input": [
+    {
+      "item": "twilightforest:time_log"
+    },
+    {
+      "item": "twilightforest:time_wood"
+    }
+  ],
+  "stripped": {
+    "item": "twilightforest:stripped_time_log"
+  }
+}

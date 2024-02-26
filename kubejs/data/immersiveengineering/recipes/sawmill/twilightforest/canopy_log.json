@@ -1,0 +1,33 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": true
+    },
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "twilightforest:canopy_planks",
+    "count": 6
+  },
+  "energy": 1600,
+  "input": [
+    {
+      "item": "twilightforest:canopy_log"
+    },
+    {
+      "item": "twilightforest:canopy_wood"
+    }
+  ],
+  "stripped": {
+    "item": "twilightforest:stripped_canopy_log"
+  }
+}

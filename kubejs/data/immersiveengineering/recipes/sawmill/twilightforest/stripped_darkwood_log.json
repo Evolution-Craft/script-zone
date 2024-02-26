@@ -1,0 +1,19 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "twilightforest:dark_planks",
+    "count": 6
+  },
+  "input": {
+    "item": "twilightforest:stripped_dark_log"
+  },
+  "energy": 800
+}

@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "drinks",
+  "ingredients": [
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "count": 1,
+      "nbt": "{Potion:\"minecraft:water\"}"
+    },
+    {
+      "item": "simplytea:chorus_petal"
+    },
+    {
+      "item": "simplytea:chorus_petal"
+    }
+  ],
+  "result": {
+    "item": "simplytea:cup_tea_chorus",
+    "count": 1
+  },
+  "container": {
+    "item": "simplytea:cup"
+  },
+  "cookingtime": 200,
+  "experience": 1.0
+}

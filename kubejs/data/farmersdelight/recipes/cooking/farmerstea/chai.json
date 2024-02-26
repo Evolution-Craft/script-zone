@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "drinks",
+  "ingredients": [
+    {
+      "item": "farmersdelight:milk_bottle"
+    },
+    {
+      "item": "simplytea:black_tea"
+    },
+    {
+      "item": "simplytea:black_tea"
+    },
+    {
+      "item": "simplytea:tea_stick"
+    }
+  ],
+  "result": {
+    "item": "simplytea:cup_tea_chai",
+    "count": 1
+  },
+  "container": {
+    "item": "simplytea:cup"
+  },
+  "cookingtime": 200,
+  "experience": 1.0
+}

@@ -1,0 +1,18 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "twilightforest:dark_planks"
+  },
+  "input": {
+    "item": "twilightforest:dark_stairs"
+  },
+  "energy": 1600
+}

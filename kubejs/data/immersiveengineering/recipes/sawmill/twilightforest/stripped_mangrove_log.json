@@ -1,0 +1,19 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "twilightforest:mangrove_planks",
+    "count": 6
+  },
+  "input": {
+    "item": "twilightforest:stripped_mangrove_log"
+  },
+  "energy": 800
+}

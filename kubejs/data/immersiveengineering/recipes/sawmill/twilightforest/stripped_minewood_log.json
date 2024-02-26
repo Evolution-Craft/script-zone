@@ -1,0 +1,19 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "twilightforest:mining_planks",
+    "count": 6
+  },
+  "input": {
+    "item": "twilightforest:stripped_mining_log"
+  },
+  "energy": 800
+}
