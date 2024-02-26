@@ -1,0 +1,33 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": true
+    },
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "quark:blossom_planks",
+    "count": 6
+  },
+  "energy": 1600,
+  "input": [
+    {
+      "item": "quark:blossom_log"
+    },
+    {
+      "item": "quark:blossom_wood"
+    }
+  ],
+  "stripped": {
+    "item": "quark:stripped_blossom_log"
+  }
+}

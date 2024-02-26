@@ -232,7 +232,7 @@ stoneCutter.addRecipe("stone_pressure_plate_stoncutting", <item:minecraft:stone_
 stoneCutter.addRecipe("polished_blackstone_pressure_plate_stoncutting", <item:minecraft:polished_blackstone_pressure_plate>, <item:minecraft:polished_blackstone>);
 stoneCutter.addRecipe("obsidian_pressure_plate_stoncutting", <item:cyclic:obsidian_pressure_plate>, <item:minecraft:obsidian>);
 stoneCutter.addRecipe("polished_basalt_pressure_plate_stoncutting", <item:infernalexp:polished_basalt_pressure_plate>, <item:minecraft:polished_basalt>);
-stoneCutter.addRecipe("soul_slate_pressure_plate_stoncutting", <item:infernalexp:soul_slate_pressure_plate>, <item:infernalexp:soul_slate>);
+//stoneCutter.addRecipe("soul_slate_pressure_plate_stoncutting", <item:infernalexp:soul_slate_pressure_plate>, <item:infernalexp:soul_slate>);
 stoneCutter.addRecipe("chiseled_deepslate_stoncutting", <item:minecraft:chiseled_deepslate>, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("deepslate_brick_slab_stoncutting", <item:minecraft:deepslate_brick_slab> * 2, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("deepslate_brick_stairs_stoncutting", <item:minecraft:deepslate_brick_stairs>, <item:minecraft:deepslate>);

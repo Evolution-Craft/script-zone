@@ -1,0 +1,33 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": true
+    },
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "tconstruct:skyroot_planks",
+    "count": 6
+  },
+  "energy": 1600,
+  "input": [
+    {
+      "item": "tconstruct:skyroot_log"
+    },
+    {
+      "item": "tconstruct:skyroot_wood"
+    }
+  ],
+  "stripped": {
+    "item": "tconstruct:stripped_skyroot_log"
+  }
+}

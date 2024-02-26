@@ -1,0 +1,18 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "unusualend:chorus_nest_planks"
+  },
+  "input": {
+    "item": "unusualend:chorus_nest_planks_door"
+  },
+  "energy": 800
+}

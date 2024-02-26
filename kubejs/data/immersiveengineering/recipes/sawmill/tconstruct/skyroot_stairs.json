@@ -1,0 +1,18 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "tconstruct:skyroot_planks"
+  },
+  "input": {
+    "item": "tconstruct:skyroot_planks_stairs"
+  },
+  "energy": 1600
+}

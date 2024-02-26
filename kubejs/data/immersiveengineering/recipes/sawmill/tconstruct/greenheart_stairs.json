@@ -1,0 +1,18 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "tconstruct:greenheart_planks"
+  },
+  "input": {
+    "item": "tconstruct:greenheart_planks_stairs"
+  },
+  "energy": 1600
+}

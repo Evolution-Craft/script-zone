@@ -1,0 +1,18 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "quark:azalea_planks"
+  },
+  "input": {
+    "item": "quark:azalea_door"
+  },
+  "energy": 800
+}

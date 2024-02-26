@@ -1,0 +1,33 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": true
+    },
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "tconstruct:greenheart_planks",
+    "count": 6
+  },
+  "energy": 1600,
+  "input": [
+    {
+      "item": "tconstruct:greenheart_log"
+    },
+    {
+      "item": "tconstruct:greenheart_wood"
+    }
+  ],
+  "stripped": {
+    "item": "tconstruct:stripped_greenheart_log"
+  }
+}
