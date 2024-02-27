@@ -63,6 +63,7 @@ var removeJeiIngradient = [
 	"cyclic:boomerang_damage",
 	"cyclic:boomerang_stun",
 	"cyclic:carrot_ender",
+	"cyclic:compressed_cobblestone",
 	"cyclic:conveyor",
 	"cyclic:crafting_bag",
 	"cyclic:crafting_stick",

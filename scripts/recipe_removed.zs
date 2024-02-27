@@ -67,6 +67,7 @@ var removeRecipeByName = [
 	"cyclic:boomerang_damage",
 	"cyclic:boomerang_stun",
 	"cyclic:carrot_ender",
+	"cyclic:compressed_cobblestone",
 	"cyclic:conveyor",
 	"cyclic:copper_ingot",
 	"cyclic:crafting_bag",
