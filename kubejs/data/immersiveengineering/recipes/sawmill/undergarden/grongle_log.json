@@ -1,0 +1,33 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": true
+    },
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "undergarden:grongle_planks",
+    "count": 6
+  },
+  "energy": 1600,
+  "input": [
+    {
+      "item": "undergarden:grongle_log"
+    },
+    {
+      "item": "undergarden:grongle_wood"
+    }
+  ],
+  "stripped": {
+    "item": "undergarden:stripped_grongle_log"
+  }
+}

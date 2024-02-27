@@ -48,9 +48,18 @@ if (pack_mode_enable == true) {
 		"quark:azalea_planks" : <tag:items:quark:azalea_logs>,
 		"quark:blossom_planks" : <tag:items:quark:blossom_logs>,
 		// Tinkers Construct
-		// TODO: vanno sistemte tutte le recipe base prima di implementare.
+//		"tconstruct:bloodshroom_planks" : <tag:items:tconstruct:bloodshroom_logs>,
+//		"tconstruct:greenheart_planks" : <tag:items:tconstruct:greenheart_logs>,
+//		"tconstruct:skyroot_planks" : <tag:items:tconstruct:skyroot_logs>,
 		// Twilight Forest
-		// TODO: da implementare.
+//		"twilightforest:canopy_planks" : <tag:items:canopy_logs>,
+//		"twilightforest:dark_planks" : <tag:items:darkwood_logs>,
+//		"twilightforest:mangrove_planks" : <tag:items:mangrove_logs>,
+//		"twilightforest:mining_planks" : <tag:items:mining_logs>,
+//		"twilightforest:sorting_planks" : <tag:items:sortwood_logs>,
+//		"twilightforest:time_planks" : <tag:items:timewood_logs>,
+//		"twilightforest:transformation_planks" : <tag:items:transwood_logs>,
+//		"twilightforest:twilight_oak_planks" : <tag:items:twilight_oak_logs>,
 		// Undergarden
 		"undergarden:grongle_planks" : <tag:items:undergarden:grongle_logs>,
 		"undergarden:smogstem_planks" : <tag:items:undergarden:smogstem_logs>,

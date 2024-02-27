@@ -1,0 +1,19 @@
+{
+  "type": "immersiveengineering:sawmill",
+  "secondaries": [
+    {
+      "output": {
+        "tag": "forge:dusts/wood"
+      },
+      "stripping": false
+    }
+  ],
+  "result": {
+    "item": "undergarden:smogstem_planks",
+    "count": 6
+  },
+  "input": {
+    "item": "undergarden:stripped_smogstem_log"
+  },
+  "energy": 800
+}

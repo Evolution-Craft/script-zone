@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "twilightforest:darkwood_logs"
+    }
+  ],
+  "result": {
+    "item": "twilightforest:dark_planks",
+    "count": 4
+  }
+}
