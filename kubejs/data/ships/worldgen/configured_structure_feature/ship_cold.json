@@ -1,0 +1,10 @@
+{
+  "config": {
+    "start_pool": "ships:ships/ships_cold",
+    "size": 1
+  },
+  "biomes": "#ships:has_structure/ship_cold",
+  "adapt_noise": false,
+  "spawn_overrides": {},
+  "type": "minecraft:village"
+}

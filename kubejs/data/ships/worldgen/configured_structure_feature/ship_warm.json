@@ -1,0 +1,10 @@
+{
+  "config": {
+    "start_pool": "ships:ships/ships_warm",
+    "size": 1
+  },
+  "biomes": "#ships:has_structure/ship_warm",
+  "adapt_noise": false,
+  "spawn_overrides": {},
+  "type": "minecraft:village"
+}
