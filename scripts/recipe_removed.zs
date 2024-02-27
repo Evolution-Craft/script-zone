@@ -147,7 +147,7 @@ var removeRecipeByName = [
 	"electrodynamics:gunpowder",
 	"electrodynamics:obsidian",
 	// Enlightend
-	"enlightened_end:cerulean_planks",
+	"enlightened_end:ceruelean_log_to_planks",
 	// Enginners Delight
 	"tmted:slime_ball",
 	// Extended Crafting
@@ -253,6 +253,8 @@ var removeRecipeByName = [
 	"minecraft:wooden_pickaxe",
 	"minecraft:wooden_shovel",
 	"minecraft:wooden_sword",
+	// Nature Aura
+	"naturesaura:ancient_planks_from_bark",
 	// Mini Utilities
 	"miniutilities:iron_drum",
 	"miniutilities:netherite_reinforced_drum",

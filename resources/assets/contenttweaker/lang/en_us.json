@@ -4,6 +4,10 @@
 	"item.contenttweaker.rare_part": "Rare Part",
 	"item.contenttweaker.epic_part": "Epic Part",
 	"item.contenttweaker.leggendary_part": "Leggendary Part",
+	"item.contenttweaker.lapis_ingot_alloy": "Lapis Ingot Alloy",
+	"item.contenttweaker.lapis_iron_compound": "Lapis Iron Compound",
+	"item.contenttweaker.redstone_ingot_alloy": "Redstone Ingot Ally",
+	"item.contenttweaker.redstone_iron_compound": "Red Iron Compound",
 
 	"itemGroup.evolutionTab": "Evolution Craft"
 }

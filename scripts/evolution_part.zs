@@ -5,6 +5,7 @@
  *
  * CHANGELOG:
  * v0.1 : Add Custom Item.
+ * v0.2 : Add Custom Ingot.
  */
 
 println("Start script recipe_evolution_part.");
@@ -43,5 +44,25 @@ val leggendary_part = <factory:item>.typed<Basic>()
     .tab(evolutionTab)
     .rarity(<constant:minecraft:item/rarity:epic>)
     .build("leggendary_part");
+
+val lapis_ingot_alloy = <factory:item>.typed<Basic>()
+    .tab(evolutionTab)
+    .rarity(<constant:minecraft:item/rarity:common>)
+    .build("lapis_ingot_alloy");
+
+val lapis_iron_compound = <factory:item>.typed<Basic>()
+    .tab(evolutionTab)
+    .rarity(<constant:minecraft:item/rarity:common>)
+    .build("lapis_iron_compound");
+
+val redstone_ingot_alloy = <factory:item>.typed<Basic>()
+    .tab(evolutionTab)
+    .rarity(<constant:minecraft:item/rarity:common>)
+    .build("redstone_ingot_alloy");
+
+val redstone_iron_compound = <factory:item>.typed<Basic>()
+    .tab(evolutionTab)
+    .rarity(<constant:minecraft:item/rarity:common>)
+    .build("redstone_iron_compound");
 
 println("End script recipe_evolution_part.");
