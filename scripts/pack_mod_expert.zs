@@ -48,9 +48,9 @@ if (pack_mode_enable == true) {
 		"quark:azalea_planks" : <tag:items:quark:azalea_logs>,
 		"quark:blossom_planks" : <tag:items:quark:blossom_logs>,
 		// Tinkers Construct
-//		"tconstruct:bloodshroom_planks" : <tag:items:tconstruct:bloodshroom_logs>,
-//		"tconstruct:greenheart_planks" : <tag:items:tconstruct:greenheart_logs>,
-//		"tconstruct:skyroot_planks" : <tag:items:tconstruct:skyroot_logs>,
+		"tconstruct:bloodshroom_planks" : <tag:items:tconstruct:bloodshroom_logs>,
+		"tconstruct:greenheart_planks" : <tag:items:tconstruct:greenheart_logs>,
+		"tconstruct:skyroot_planks" : <tag:items:tconstruct:skyroot_logs>,
 		// Twilight Forest
 //		"twilightforest:canopy_planks" : <tag:items:canopy_logs>,
 //		"twilightforest:dark_planks" : <tag:items:darkwood_logs>,
@@ -68,7 +68,13 @@ if (pack_mode_enable == true) {
 		"vinery:cherry_planks" : <tag:items:vinery:cherry_logs>
 	};
 	for packModeExpertPlanksOut, packModeExpertPlanksIn in packModeExpertPlanks {
-		if (packModeExpertPlanksOut == "quark:azalea_planks") {
+		if (packModeExpertPlanksOut == "tconstruct:bloodshroom_planks") {
+			craftingTable.removeByName("tconstruct:world/wood/bloodshroom/planks");
+		} else if (packModeExpertPlanksOut == "tconstruct:greenheart_planks") {
+			craftingTable.removeByName("tconstruct:world/wood/greenheart/planks");
+		} else if (packModeExpertPlanksOut == "tconstruct:skyroot_planks") {
+			craftingTable.removeByName("tconstruct:world/wood/skyroot/planks");
+		} else if (packModeExpertPlanksOut == "quark:azalea_planks") {
 			craftingTable.removeByName("quark:world/crafting/woodsets/azalea/planks");
 		} else if (packModeExpertPlanksOut == "quark:blossom_planks") {
 			craftingTable.removeByName("quark:world/crafting/woodsets/blossom/planks");
@@ -79,7 +85,7 @@ if (pack_mode_enable == true) {
 		}
 		val packModeExpertPlanksName = <item:${packModeExpertPlanksOut}>;
 		if (packModeExpertPlanksOut == "quark:azalea_planks") {
-			craftingTable.addShapeless("pack_expert_crafting_quark" + packModeExpertPlanksName.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
+			craftingTable.addShapeless("pack_expert_crafting_quark_" + packModeExpertPlanksName.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
 		} else {
 			craftingTable.addShapeless("pack_expert_crafting_" + packModeExpertPlanksName.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
 		}

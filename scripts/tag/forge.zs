@@ -99,10 +99,19 @@ var addingFruitForge = [
 	"vinery:savanna_grapes_white",
 	"vinery:taiga_grapes_red",
 	"vinery:taiga_grapes_white",
-	"vinery:white_grape",
+	"vinery:white_grape"
 ];
 for tag_fruit_forge in addingFruitForge{
 	<tag:items:forge:fruits>.add(<item:${tag_fruit_forge}>);
+}
+// Furnace
+var addingFurnacesForge = [
+	"minecraft:furnace",
+	"quark:deepslate_furnace",
+	"quark:blackstone_furnace"
+];
+for tag_furnaces_forge in addingFurnacesForge{
+	<tag:items:forge:furnaces>.add(<item:${tag_furnaces_forge}>);
 }
 // Salt
 <tag:items:forge:dusts/salt>.add(<item:salt:salt>);
