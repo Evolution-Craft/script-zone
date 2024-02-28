@@ -21,6 +21,33 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
+var craftingExpertLogCorailWoodcutter = {
+	"oak" : <tag:items:minecraft:oak_logs>,
+	"spruce" : <tag:items:minecraft:oak_logs>,
+	"birch" : <tag:items:minecraft:birch_logs>,
+	"jungle" : <tag:items:minecraft:jungle_logs>,
+	"acacia" : <tag:items:minecraft:acacia_logs>,
+	"dark_oak" : <tag:items:minecraft:dark_oak_logs>,
+	"crimson" : <tag:items:minecraft:crimson_stems>,
+	"warped" : <tag:items:minecraft:warped_stems>,
+	"canopy" : <tag:items:twilightforest:canopy_logs>,
+	"dark" : <tag:items:twilightforest:darkwood_logs>,
+	"mangrove" : <tag:items:twilightforest:mangrove_logs>,
+	"mining" : <tag:items:twilightforest:mining_logs>,
+	"sorting" : <tag:items:twilightforest:sortwood_logs>,
+	"time" : <tag:items:twilightforest:timewood_logs>,
+	"transformation" : <tag:items:twilightforest:transwood_logs>,
+	"twilight_oak" : <tag:items:twilightforest:twilight_oak_logs>
+};
+for craftingExpertLogCorailWoodcutterName, craftingExpertLogCorailWoodcutterModId in craftingExpertLogCorailWoodcutter{
+	craftingTable.removeByName("corail_woodcutter:" + craftingExpertLogCorailWoodcutterName + "_woodcutter");
+	craftingTable.addShaped("pack_expert_crafting_woodcutter/" + craftingExpertLogCorailWoodcutterName + "_woodcutter", <item:corail_woodcutter:${craftingExpertLogCorailWoodcutterName}_woodcutter>, [
+		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+		[<item:minecraft:air>, <item:thermal:saw_blade>, <item:minecraft:air>],
+		[craftingExpertLogCorailWoodcutterModId, craftingExpertLogCorailWoodcutterModId, craftingExpertLogCorailWoodcutterModId]
+	]);
+}
+
 <recipetype:corail_woodcutter:woodcutting>.removeByName("corail_woodcutter:woodcutting/quark/jungle_post_from_jungle_planks");
 <recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_woodcutting/quark/jungle_post_from_jungle_planks", {
 	"ingredient":{

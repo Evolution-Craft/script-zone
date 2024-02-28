@@ -319,5 +319,11 @@ craftingTable.addShaped("minecraft_gunpowder", <item:minecraft:gunpowder> * 2, [
 	[<item:salt:salt>, <item:minecraft:charcoal>, <item:salt:salt>],
 	[<item:minecraft:air>, <item:sulfurpotassiummod:potassium>, <item:minecraft:air>]
 ]);
+craftingTable.removeByName("minecraft:stonecutter");
+craftingTable.addShaped("pack_expert_crafting_stonecutter", <item:minecraft:stonecutter>, [
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:thermal:saw_blade>, <item:minecraft:air>],
+	[<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>]
+]);
 
 println("End script recipe_misc.");

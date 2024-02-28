@@ -7,6 +7,7 @@
  * v0.1 : Fix Cooking Pot.
  * v0.2 : Add Vinery Mod Support.
  * v0.3 : Adding Door/Trapdoor/Sign in Cutting Board.
+ * v0.4 : Adding Stripped Log and Wood on Cutting Board.
  */
 
 println("Start script recipe_farmers_delight.");
@@ -25,6 +26,165 @@ import crafttweaker.api.tag.manager.ITagManager;
 <recipetype:farmersdelight:cooking>.addRecipe("cooking_pot_vinery_sweetberry_jam", <item:vinery:sweetberry_jam>, [<item:minecraft:sweet_berries>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 100, 400);
 
 // Cutting Board
+var addingLogCuttingFarmersDelight = {
+	"tconstruct:bloodshroom_log" : "tconstruct:stripped_bloodshroom_log",
+	"tconstruct:bloodshroom_wood" : "tconstruct:stripped_bloodshroom_wood",
+	"ecologics:azalea_log" : "ecologics:stripped_azalea_log",
+	"ecologics:azalea_wood" : "ecologics:stripped_azalea_wood",
+	"quark:azalea_log" : "quark:stripped_azalea_log",
+	"quark:azalea_wood" : "quark:stripped_azalea_wood",
+	"quark:blossom_log" : "quark:stripped_blossom_log",
+	"quark:blossom_wood" : "quark:stripped_blossom_wood",
+	"enlightened_end:cerulean_log" : "enlightened_end:stripped_cerulean_stalk_block",
+	"twilightforest:canopy_log" : "twilightforest:stripped_canopy_log",
+	"twilightforest:canopy_wood" : "twilightforest:stripped_canopy_wood",
+	"croptopia:cinnamon_log" : "croptopia:stripped_cinnamon_log",
+	"croptopia:cinnamon_wood" : "croptopia:stripped_cinnamon_wood",
+	"ecologics:coconut_log" : "ecologics:stripped_coconut_log",
+	"ecologics:coconut_wood" : "ecologics:stripped_coconut_wood",
+	"botania:dreamwood_log" : "botania:stripped_dreamwood_log",
+	"botania:dreamwood" : "botania:stripped_dreamwood",
+	"botania:glimmering_dreamwood_log" : "botania:glimmering_stripped_dreamwood_log",
+	"botania:glimmering_dreamwood" : "botania:glimmering_stripped_dreamwood",
+	"twilightforest:dark_log" : "twilightforest:stripped_dark_log",
+	"twilightforest:dark_wood" : "twilightforest:stripped_dark_wood",
+	"ecologics:flowering_azalea_log" : "ecologics:stripped_azalea_log",
+	"ecologics:flowering_azalea_wood" : "ecologics:stripped_azalea_wood",
+	"tconstruct:greenheart_log" : "tconstruct:stripped_greenheart_log",
+	"tconstruct:greenheart_wood" : "tconstruct:stripped_greenheart_wood",
+	"enlightened_end:indigo_stem" : "enlightened_end:stripped_indigo_stem",
+	"enlightened_end:indigo_hyphae" : "enlightened_end:stripped_indigo_hyphae",
+	"botania:livingwood_log" : "botania:stripped_livingwood_log",
+	"botania:livingwood" : "botania:stripped_livingwood",
+	"botania:glimmering_livingwood_log" : "botania:glimmering_stripped_livingwood_log",
+	"botania:glimmering_livingwood" : "botania:glimmering_stripped_livingwood",
+	"infernalexp:luminous_stem" : "infernalexp:stripped_luminous_stem",
+	"infernalexp:luminous_hyphae" : "infernalexp:stripped_luminous_hyphae",
+	"twilightforest:mangrove_log" : "twilightforest:stripped_mangrove_log",
+	"twilightforest:mangrove_wood" : "twilightforest:stripped_mangrove_wood",
+	"twilightforest:mining_log" : "twilightforest:stripped_mining_log",
+	"twilightforest:mining_wood" : "twilightforest:stripped_mining_wood",
+	"integrateddynamics:menril_log" : "integrateddynamics:menril_log_stripped",
+	"integrateddynamics:menril_wood" : "integrateddynamics:menril_wood_stripped",
+	"twilightforest:sorting_log" : "twilightforest:stripped_sorting_log",
+	"twilightforest:sorting_wood" : "twilightforest:stripped_sorting_wood",
+	"tconstruct:skyroot_log" : "tconstruct:stripped_skyroot_log",
+	"tconstruct:skyroot_wood" : "tconstruct:stripped_skyroot_wood",
+	"ecologics:walnut_log" : "ecologics:stripped_walnut_log",
+	"ecologics:walnut_wood" : "ecologics:stripped_walnut_wood",
+	"twilightforest:time_log" : "twilightforest:stripped_time_log",
+	"twilightforest:time_wood" : "twilightforest:stripped_time_wood",
+	"twilightforest:transformation_log" : "twilightforest:stripped_transformation_log",
+	"twilightforest:transformation_wood" : "twilightforest:stripped_transformation_wood",
+	"twilightforest:twilight_oak_log" : "twilightforest:stripped_twilight_oak_log",
+	"twilightforest:twilight_oak_wood" : "twilightforest:stripped_twilight_oak_wood"
+};
+for addingLogCuttingFarmersDelightIn, addingLogCuttingFarmersDelightOut in addingLogCuttingFarmersDelight {
+	val addingLogCuttingFarmersDelightName = <item:${addingLogCuttingFarmersDelightIn}>;
+	if (addingLogCuttingFarmersDelightIn == "quark:azalea_log" || addingLogCuttingFarmersDelightIn == "quark:azalea_wood" ||
+		addingLogCuttingFarmersDelightIn == "quark:blossom_log" || addingLogCuttingFarmersDelightIn == "quark:blossom_wood") {
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/quark_" + addingLogCuttingFarmersDelightName.registryName.path, {
+			"ingredients": [{
+				"item": addingLogCuttingFarmersDelightIn
+			}],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_strip"
+			},
+			"result": [{
+				"item": addingLogCuttingFarmersDelightOut
+			},
+			{
+				"item": "farmersdelight:tree_bark"
+			}],
+			"sound": "minecraft:item.axe.strip"
+		});
+	} else {
+			<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingLogCuttingFarmersDelightName.registryName.path, {
+			"ingredients": [{
+				"item": addingLogCuttingFarmersDelightIn
+			}],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_strip"
+			},
+			"result": [{
+				"item": addingLogCuttingFarmersDelightOut
+			},
+			{
+				"item": "farmersdelight:tree_bark"
+			}],
+			"sound": "minecraft:item.axe.strip"
+		});
+	}
+	
+}
+
+<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/cherry_log", {
+	"ingredients": [{
+		"item": "vinery:cherry_log"
+	}],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "axe_strip"
+	},
+	"result": [{
+		"item": "vinery:stripped_cherry_log"
+	},
+	{
+		"item": "farmersdelight:tree_bark"
+	}],
+	"sound": "minecraft:item.axe.strip"
+});
+<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/cherry_wood", {
+	"ingredients": [{
+		"item": "vinery:cherry_wood"
+	}],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "axe_strip"
+	},
+	"result": [{
+		"item": "vinery:stripped_cherry_wood"
+	},
+	{
+		"item": "farmersdelight:tree_bark"
+	}],
+	"sound": "minecraft:item.axe.strip"
+});
+<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/old_cherry_log", {
+	"ingredients": [{
+		"item": "vinery:old_cherry_log"
+	}],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "axe_strip"
+	},
+	"result": [{
+		"item": "vinery:stripped_old_cherry_log"
+	},
+	{
+		"item": "farmersdelight:tree_bark"
+	}],
+	"sound": "minecraft:item.axe.strip"
+});
+<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/old_cherry_wood", {
+	"ingredients": [{
+		"item": "vinery:old_cherry_wood"
+	}],
+	"tool": {
+		"type": "farmersdelight:tool_action",
+		"action": "axe_strip"
+	},
+	"result": [{
+		"item": "vinery:stripped_old_cherry_wood"
+	},
+	{
+		"item": "farmersdelight:tree_bark"
+	}],
+	"sound": "minecraft:item.axe.strip"
+});
+
 var addingDoorCuttingFarmersDelight = {
 	"azalea" : "ecologics:azalea",
 	"azalea_quark" : "quark:azalea",

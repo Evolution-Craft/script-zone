@@ -4,7 +4,8 @@
  * The author of this file is Millennium, using CraftTweaker mod code.
  *
  * CHANGELOG:
- * v0.1 : Adding Missing Recipe.
+ * v0.1 : Adding Missing Sapling Recipe.
+ * v0.2 : Adding Missing Log Recipe.
  */
  
 println("Start script recipe_alchemistry");
@@ -49,8 +50,8 @@ var addingCombinerRecipe = {
 	"vinery:cherry_sapling" : "vinery_cherry_sapling",
 	"vinery:old_cherry_sapling" : "vinery_old_cherry_sapling"
 };
-for addingCombinerRecipeID, addingCombinerRecipeName in addingCombinerRecipe{
-	<recipetype:alchemistry:combiner>.addJsonRecipe("alchemistry_combiner/" + addingCombinerRecipeName, {	
+for addingCombinerRecipeID, addingCombinerRecipeName in addingCombinerRecipe {
+	<recipetype:alchemistry:combiner>.addJsonRecipe("alchemistry_combiner/" + addingCombinerRecipeName, {
 		"group": "alchemistry:combiner",
 		"input": [ {
 			"ingredient": {
@@ -65,6 +66,42 @@ for addingCombinerRecipeID, addingCombinerRecipeName in addingCombinerRecipe{
 		} ],
 		"result": {
 			"item": addingCombinerRecipeID
+		}
+	});
+}
+
+// Compactor
+var addingCompactorRecipe = {
+	"ecologics:azalea_log" : "ecologics_azalea_log",
+	"quark:azalea_log" : "quark_azalea_log",
+	"quark:blossom_log" : "quark_blossom_log",
+	"twilightforest:canopy_log" : "twilightforest_canopy_log",
+	"vinery:cherry_log" : "vinery_cherry_log",
+	"croptopia:cinnamon_log" : "croptopia_cinnamon_log",
+	"ecologics:coconut_log" : "ecologics_coconut_log",
+	"twilightforest:dark_log" : "twilightforest_dark_log",
+	"ecologics:flowering_azalea_log" : "flowering_ecologics_azalea_log",
+	"twilightforest:mangrove_log" : "twilightforest_mangrove_log",
+	"twilightforest:mining_log" : "twilightforest_mining_log",
+	"integrateddynamics:menril_log" : "integrateddynamics_menril_log",
+	"vinery:old_cherry_log" : "vinery_old_cherry_log",
+	"twilightforest:sorting_log" : "twilightforest_sorting_log",
+	"ecologics:walnut_log" : "ecologics_walnut_log",
+	"twilightforest:time_log" : "twilightforest_time_log",
+	"twilightforest:transformation_log" : "twilightforest_transformation_log",
+	"twilightforest:twilight_oak_log" : "twilightforest_twilight_oak_log"
+};
+for addingCompactorRecipeID, addingCompactorRecipeName in addingCompactorRecipe {
+	<recipetype:alchemistry:compactor>.addJsonRecipe("alchemistry_combiner/" + addingCompactorRecipeName, {
+		"group": "alchemistry:compactor",
+		"input": {
+			"ingredient": {
+				"item": "chemlib:cellulose"
+			},
+		"count": 1
+		},
+		"result": {
+			"item": addingCompactorRecipeID
 		}
 	});
 }

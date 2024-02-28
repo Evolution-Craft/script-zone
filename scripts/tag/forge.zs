@@ -19,6 +19,13 @@ println("Script Priority 997.");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Berries
+var addingBerriesForge = [
+	"vinery:cherry"
+];
+for tag_berries_forge in addingBerriesForge{
+	<tag:items:forge:berries>.add(<item:${tag_berries_forge}>);
+}
 // Crops Grape
 var addingCropsGrapeForge = [
 	"vinery:jungle_grapes_red",
