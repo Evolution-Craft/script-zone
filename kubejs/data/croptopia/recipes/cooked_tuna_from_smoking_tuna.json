@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "tag": "forge:tuna"
+  },
+  "result": "croptopia:cooked_tuna",
+  "experience": 0.2,
+  "cookingtime": 100
+}

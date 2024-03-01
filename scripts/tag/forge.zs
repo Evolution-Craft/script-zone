@@ -9,6 +9,7 @@
  * v0.3 : Add Corundum Tag.
  * v0.4 : Add Missing Sapling and Log.
  * v0.5 : Move Salt Tag on this Script.
+ * v0.6 : Add Missing Tags.
  */
 
 #priority 997
@@ -26,6 +27,33 @@ var addingBerriesForge = [
 for tag_berries_forge in addingBerriesForge{
 	<tag:items:forge:berries>.add(<item:${tag_berries_forge}>);
 }
+// Bread
+var addingBreadForge = [
+	"corn_delight:cornbread",
+	"pneumaticcraft:sourdough_bread",
+	"vinery:milk_bread",
+	"vinery:crusty_bread"
+];
+for tag_bread_forge in addingBreadForge{
+	<tag:items:forge:bread>.add(<item:${tag_bread_forge}>);
+}
+// Cheeses
+var addingCheesesForge = [
+	"beyond_earth:cheese",
+	"thermal:cheese_wedge"
+];
+for tag_cheeses_forge in addingCheesesForge{
+	<tag:items:forge:cheeses>.add(<item:${tag_cheeses_forge}>);
+}
+// Cherries
+var addingCherriesForge = [
+	"vinery:cherry"
+];
+for tag_cherries_forge in addingCherriesForge{
+	<tag:items:forge:cherries>.add(<item:${tag_cherries_forge}>);
+}
+// Crabs
+<tag:items:forge:crabs>.add(<item:crabbersdelight:crab>);
 // Crops Grape
 var addingCropsGrapeForge = [
 	"vinery:jungle_grapes_red",
@@ -38,7 +66,11 @@ var addingCropsGrapeForge = [
 	"vinery:white_grape"
 ];
 for tag_crops_grape_forge in addingCropsGrapeForge{
+	<tag:items:forge:crops>.add(<item:${tag_crops_grape_forge}>); // Temporary Fix
 	<tag:items:forge:crops/grape>.add(<item:${tag_crops_grape_forge}>);
+	<tag:items:forge:fruits>.add(<item:${tag_crops_grape_forge}>); // Temporary Fix
+	<tag:items:forge:fruits/grape>.add(<item:${tag_crops_grape_forge}>); // Temporary Fix
+	<tag:items:forge:grapes>.add(<item:${tag_crops_grape_forge}>); // Temporary Fix
 }
 // Crops Chorus Petal
 var addingCropsChorusPetalForge = [
@@ -93,6 +125,14 @@ var addingCorundumClusterForge = [
 for tag_corundum_cluster_forge in addingCorundumClusterForge{
 	<tag:items:forge:corundum/cluster>.add(<item:${tag_corundum_cluster_forge}>);
 }
+// Doughs
+var addingDoughsForge = [
+	"pneumaticcraft:sourdough",
+	"vinery:dough"
+];
+for tag_doughs_forge in addingDoughsForge{
+	<tag:items:forge:doughs>.add(<item:${tag_doughs_forge}>);
+}
 // Fruit
 var addingFruitForge = [
 	"ecologics:prickly_pear",
@@ -120,6 +160,22 @@ var addingFurnacesForge = [
 for tag_furnaces_forge in addingFurnacesForge{
 	<tag:items:forge:furnaces>.add(<item:${tag_furnaces_forge}>);
 }
+// Material
+<tag:items:forge:raw_materials>.add(<item:galosphere:raw_silver>);
+<tag:items:forge:raw_materials/silver>.add(<item:galosphere:raw_silver>);
+// Jams
+var addingJamsForge = [
+	"vinery:apple_jam",
+	"vinery:cherry_jam",
+	"vinery:sweetberry_jam",
+	"vinery:grape_jam"
+];
+for tag_jams_forge in addingJamsForge{
+	<tag:items:forge:jams>.add(<item:${tag_jams_forge}>);
+}
+// Ore
+//<tag:items:forge:ores>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Remove for Bug
+//<tag:items:forge:ores/iron>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Remove for Bug
 // Salt
 <tag:items:forge:dusts/salt>.add(<item:salt:salt>);
 // Sapling
@@ -179,5 +235,7 @@ var addingStrippedWoodForge = [
 for tag_stripped_wood_forge in addingStrippedWoodForge{
 	<tag:items:forge:stripped_wood>.add(<item:${tag_stripped_wood_forge}>);
 }
+// Tuna
+<tag:items:forge:tuna>.add(<item:aquaculture:tuna>);
 
 println("End script/tag forge.");

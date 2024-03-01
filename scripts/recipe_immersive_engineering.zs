@@ -48,6 +48,17 @@ craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersive
 // Cloche
 <recipetype:immersiveengineering:cloche>.removeByName("immersiveengineering:cloche/cactus");
 <recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/cactus", <item:minecraft:cactus>, <tag:items:forge:sand>, 560, [<item:minecraft:cactus>, <item:ecologics:prickly_pear>], <blockstate:minecraft:cactus>.block, "stacking");
+<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/amaranth_seeds", <item:thermal:amaranth_seeds>, <item:minecraft:dirt>, 640, [<item:thermal:amaranth> * 2, <item:thermal:amaranth_seeds>], <blockstate:thermal:amaranth>.block, "crop");
+<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/amaranth_seeds_rich_soil", <item:thermal:amaranth_seeds>, <item:farmersdelight:rich_soil>, 576, [<item:thermal:amaranth> * 3, <item:thermal:amaranth_seeds>], <blockstate:thermal:amaranth>.block, "crop");
+//<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/barley_seeds", <item:thermal:barley_seeds>, <item:minecraft:dirt>, 640, [<item:thermal:barley> * 2, <item:thermal:barley_seeds>], <blockstate:thermal:barley>.block, "crop");
+//<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/barley_seeds_rich_soil", <item:thermal:barley_seeds>, <item:farmersdelight:rich_soil>, 576, [<item:thermal:barley> * 3, <item:thermal:barley_seeds>], <blockstate:thermal:barley>.block, "crop");
+
+// Fertilizer
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/industrialforegoing_fertilizer", <item:industrialforegoing:fertilizer>, 1.25);
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/waterstrainer_fertilizer", <item:waterstrainer:fertilizer>, 1.5);
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/thermal_compost", <item:thermal:compost>, 1.75);
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/create_tree_fertilizer", <item:create:tree_fertilizer>, 2.0);
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/thermal_phytogro", <item:thermal:phytogro>, 3.0);
 
 // Metal Press
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_diamond", <item:minecraft:diamond> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal:diamond_gear>);

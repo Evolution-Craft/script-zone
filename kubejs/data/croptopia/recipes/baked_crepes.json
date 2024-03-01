@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "121",
+    "356",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "tag": "forge:eggs"
+    },
+    "2": {
+      "tag": "forge:flour"
+    },
+    "3": {
+      "tag": "forge:milks"
+    },
+    "7": {
+      "item": "croptopia:frying_pan"
+    },
+    "6": {
+      "tag": "forge:cheeses"
+    },
+    "5": {
+      "tag": "forge:spinach"
+    }
+  },
+  "result": {
+    "item": "croptopia:baked_crepes"
+  }
+}

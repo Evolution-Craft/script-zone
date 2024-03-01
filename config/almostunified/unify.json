@@ -19,10 +19,12 @@
     "industrialforegoing",
     "pneaumaticcraft",
 	"beyond_earth",
+	"integrateddynamics",
 	"electrodynamics",
 	"moremekanismprocessing",
 	"chemlib",
-	"cyclic"
+	"cyclic",
+	"galosphere"
   ],
   "stoneStrata": [
     "stone",

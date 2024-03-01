@@ -52,14 +52,14 @@ if (pack_mode_enable == true) {
 		"tconstruct:greenheart_planks" : <tag:items:tconstruct:greenheart_logs>,
 		"tconstruct:skyroot_planks" : <tag:items:tconstruct:skyroot_logs>,
 		// Twilight Forest
-//		"twilightforest:canopy_planks" : <tag:items:twilightforest:canopy_logs>,
-//		"twilightforest:dark_planks" : <tag:items:twilightforest:darkwood_logs>,
-//		"twilightforest:mangrove_planks" : <tag:items:twilightforest:mangrove_logs>,
-//		"twilightforest:mining_planks" : <tag:items:twilightforest:mining_logs>,
-//		"twilightforest:sorting_planks" : <tag:items:twilightforest:sortwood_logs>,
-//		"twilightforest:time_planks" : <tag:items:twilightforest:timewood_logs>,
-//		"twilightforest:transformation_planks" : <tag:items:twilightforest:transwood_logs>,
-//		"twilightforest:twilight_oak_planks" : <tag:items:twilightforest:twilight_oak_logs>,
+		"twilightforest:canopy_planks" : <tag:items:twilightforest:canopy_logs>,
+		"twilightforest:dark_planks" : <tag:items:twilightforest:darkwood_logs>,
+		"twilightforest:mangrove_planks" : <tag:items:twilightforest:mangrove_logs>,
+		"twilightforest:mining_planks" : <tag:items:twilightforest:mining_logs>,
+		"twilightforest:sorting_planks" : <tag:items:twilightforest:sortwood_logs>,
+		"twilightforest:time_planks" : <tag:items:twilightforest:timewood_logs>,
+		"twilightforest:transformation_planks" : <tag:items:twilightforest:transwood_logs>,
+		"twilightforest:twilight_oak_planks" : <tag:items:twilightforest:twilight_oak_logs>,
 		// Undergarden
 		"undergarden:grongle_planks" : <tag:items:undergarden:grongle_logs>,
 		"undergarden:smogstem_planks" : <tag:items:undergarden:smogstem_logs>,
@@ -68,7 +68,18 @@ if (pack_mode_enable == true) {
 		"vinery:cherry_planks" : <tag:items:vinery:cherry_logs>
 	};
 	for packModeExpertPlanksOut, packModeExpertPlanksIn in packModeExpertPlanks {
-		if (packModeExpertPlanksOut == "tconstruct:bloodshroom_planks") {
+		val packModeExpertPlanksName = <item:${packModeExpertPlanksOut}>;
+		if (packModeExpertPlanksOut == "twilightforest:canopy_planks" ||
+			packModeExpertPlanksOut == "twilightforest:mangrove_planks" ||
+			packModeExpertPlanksOut == "twilightforest:mining_planks" ||
+			packModeExpertPlanksOut == "twilightforest:sorting_planks" ||
+			packModeExpertPlanksOut == "twilightforest:time_planks" ||
+			packModeExpertPlanksOut == "twilightforest:transformation_planks" ||
+			packModeExpertPlanksOut == "twilightforest:twilight_oak_planks") {
+			craftingTable.removeByName("twilightforest:wood/" + packModeExpertPlanksName.registryName.path);
+		} else if (packModeExpertPlanksOut == "twilightforest:dark_planks") {
+			craftingTable.removeByName("twilightforest:wood/darkwood_planks");
+		} else if (packModeExpertPlanksOut == "tconstruct:bloodshroom_planks") {
 			craftingTable.removeByName("tconstruct:world/wood/bloodshroom/planks");
 		} else if (packModeExpertPlanksOut == "tconstruct:greenheart_planks") {
 			craftingTable.removeByName("tconstruct:world/wood/greenheart/planks");
@@ -83,7 +94,6 @@ if (pack_mode_enable == true) {
 		} else {
 			craftingTable.removeByName(packModeExpertPlanksOut);
 		}
-		val packModeExpertPlanksName = <item:${packModeExpertPlanksOut}>;
 		if (packModeExpertPlanksOut == "quark:azalea_planks") {
 			craftingTable.addShapeless("pack_expert_crafting_quark_" + packModeExpertPlanksName.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
 		} else {
