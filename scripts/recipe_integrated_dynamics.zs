@@ -25,17 +25,23 @@ import crafttweaker.api.tag.manager.ITagManager;
 	"result": {
 		"items": [
 		{
-			"item": "ae2:certus_quartz_crystal",
-			"count": 3
+			"item": {
+				"ae2:certus_quartz_crystal",
+				"count": 3
+			}
 		},
 		{
-			"item": "ae2:certus_quartz_crystal",
-			"count": 2,
+			"item": {
+				"item":"ae2:certus_quartz_crystal",
+				"count": 2
+			},
 			"chance": 0.5
 		},
 		{
-			"item": "ae2:certus_quartz_dust",
-			"count": 2,
+			"item": {
+				"item":"ae2:certus_quartz_dust",
+				"count": 2
+			},
 			"chance": 0.5
 		} ]
 	},
