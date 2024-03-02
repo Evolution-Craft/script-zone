@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "croptopia:frog_legs"
-  },
-  "result": "croptopia:fried_frog_legs",
-  "experience": 0.2,
-  "cookingtime": 200
-}

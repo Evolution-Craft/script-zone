@@ -153,6 +153,11 @@ var removeRecipeByName = [
 	"tmted:slime_ball",
 	// Extended Crafting
 	"extendedcrafting:handheld_table",
+	// Ftb Quests
+	"ftbquests:screen_1",
+	"ftbquests:screen_3",
+	"ftbquests:screen_5",
+	"ftbquests:screen_7",
 	// Hostile Neural Networks
 	"hostilenetworks:living_matter/extraterrestrial/nether_star",
 	// Immersive Engineering
@@ -235,6 +240,12 @@ var removeRecipeByName = [
 	"infernalexp:crafting/crafting_shaped/paper_from_mushrooms",
 	"infernalexp:crafting/crafting_shapeless/gold_ingot_from_molten_cluster_1",
 	"infernalexp:crafting/crafting_shapeless/gold_ingot_from_molten_cluster_2",
+	// Library Ferret
+	"libraryferret:crafting_shaped/fake_diamond_block",
+	"libraryferret:crafting_shaped/fake_emerald_block",
+	"libraryferret:crafting_shaped/fake_gold_block",
+	"libraryferret:crafting_shaped/fake_iron_block",
+	"libraryferret:crafting_shaped/fake_netherite_block",
 	// Mekanism Tools
 	"mekanismtools:wood_paxel",
 	// Minecraft
@@ -426,7 +437,13 @@ var removeRecipeByNameBlastingFurnace = [
 	// Beyond Earth
 	"beyond_earth:steel_ingot_blasting",
 	// Croptopia
-	"croptopia:blasting_salt"
+	"croptopia:blasting_salt",
+	// Library Ferret
+	"libraryferret:blasting/diamond_coins_jtl",
+	"libraryferret:blasting/emerald_coins_jtl",
+	"libraryferret:blasting/gold_coins_jtl",
+	"libraryferret:blasting/iron_coins_jtl",
+	"libraryferret:blasting/netherite_coins_jtl",
 ];
 for remove_recipe_by_name_blasting_furnace in removeRecipeByNameBlastingFurnace{
 	blastFurnace.removeByName(remove_recipe_by_name_blasting_furnace);
@@ -440,6 +457,12 @@ var removeRecipeByNameFurnace = [
 	"cyclic:smelting/fireball",
 	// Croptopia
 	"croptopia:salt_from_water_bottle",
+	// Library Ferret
+	"libraryferret:smelting/diamond_coins_jtl",
+	"libraryferret:smelting/emerald_coins_jtl",
+	"libraryferret:smelting/gold_coins_jtl",
+	"libraryferret:smelting/iron_coins_jtl",
+	"libraryferret:smelting/netherite_coins_jtl",
 	// Refinde Storage
 	"refinedstorage:silicon",
 	// Thermal Series

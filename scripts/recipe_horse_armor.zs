@@ -12,6 +12,7 @@
  * v0.6 : Adding function "shapedHorseArmorVarFunction" for trasport armor damage.
  * v0.7 : Adding Galospehere horse armor.
  * v0.8 : Adding maxDamage for all armor.
+ * v0.9 : Move maxDamage and Reworking Code.
  */
 
 println("Start script recipe_horse_armor.");
@@ -35,47 +36,34 @@ var shapedHorseArmorVarFunction as function(usualOut as IItemStack, inputs as II
 };
 
 craftingTable.removeByModid("woodarmorhorse");
-var logsHO = {
+var logsWoodenHorse = {
 	"oak" : "oak",
 	"birch" : "birch",
 	"jungle" : "jungle",
 	"acacia" : "acacia",
 	"dark_oak" : "bigoak",
-	"spruce" : "spruce"
-};
-for logId, logName in logsHO {
-	craftingTable.addShaped(logName + "_horse_armor", <item:woodarmorhorse:${logName}_horse_armor>, [
-		[<item:minecraft:air>, <item:minecraft:air>, <item:woodarmor:${logId}_helmet>],
-		[<item:minecraft:${logId}_planks>, <item:minecraft:${logId}_log>, <item:minecraft:${logId}_planks>],
-		[<item:woodarmor:${logId}_leggings>, <item:minecraft:air>, <item:woodarmor:${logId}_leggings>]
-	]);
-}
-
-var logsHN = {
+	"spruce" : "spruce",
 	"warped" : "warped",
 	"crimson" : "crimson"
 };
-for logId, logName in logsHN {
-	craftingTable.addShaped(logName + "_horse_armor", <item:woodarmorhorse:${logName}_horse_armor>, [
-		[<item:minecraft:air>, <item:minecraft:air>, <item:woodarmor:${logId}_helmet>],
-		[<item:minecraft:${logId}_planks>, <item:minecraft:${logId}_stem>, <item:minecraft:${logId}_planks>],
-		[<item:woodarmor:${logId}_leggings>, <item:minecraft:air>, <item:woodarmor:${logId}_leggings>]
-	]);
+for logWoodenHorseId, logWoodenHorseName in logsWoodenHorse {
+	if (logWoodenHorseId == "warped" || logWoodenHorseId == "crimson") {
+		craftingTable.addShaped(logWoodenHorseName + "_horse_armor", <item:woodarmorhorse:${logWoodenHorseName}_horse_armor>, [
+			[<item:minecraft:air>, <item:minecraft:air>, <item:woodarmor:${logWoodenHorseId}_helmet>],
+			[<item:minecraft:${logWoodenHorseId}_planks>, <item:minecraft:${logWoodenHorseId}_stem>, <item:minecraft:${logWoodenHorseId}_planks>],
+			[<item:woodarmor:${logWoodenHorseId}_leggings>, <item:minecraft:air>, <item:woodarmor:${logWoodenHorseId}_leggings>]
+		]);
+		<tag:items:woodarmorhorse:wooden_horse_armor>.add(<item:woodarmorhorse:${logWoodenHorseName}_horse_armor>);
+	} else {
+		craftingTable.addShaped(logWoodenHorseName + "_horse_armor", <item:woodarmorhorse:${logWoodenHorseName}_horse_armor>, [
+			[<item:minecraft:air>, <item:minecraft:air>, <item:woodarmor:${logWoodenHorseId}_helmet>],
+			[<item:minecraft:${logWoodenHorseId}_planks>, <item:minecraft:${logWoodenHorseId}_log>, <item:minecraft:${logWoodenHorseId}_planks>],
+			[<item:woodarmor:${logWoodenHorseId}_leggings>, <item:minecraft:air>, <item:woodarmor:${logWoodenHorseId}_leggings>]
+		]);
+		<tag:items:woodarmorhorse:wooden_horse_armor>.add(<item:woodarmorhorse:${logWoodenHorseName}_horse_armor>);
+	}
 }
 
-var addingWoodenArmorHorse = [
-	"oak_horse_armor",
-	"birch_horse_armor",
-	"warped_horse_armor",
-	"jungle_horse_armor",
-	"acacia_horse_armor",
-	"bigoak_horse_armor",
-	"spruce_horse_armor",
-	"crimson_horse_armor"
-];
-for tag_woodarmorhorse in addingWoodenArmorHorse{
-	<tag:items:woodarmorhorse:wooden_horse_armor>.add(<item:woodarmorhorse:${tag_woodarmorhorse}>);
-}
 craftingTable.addShaped("stone_horse_armor", <item:woodarmorhorse:stone_horse_armor>, [
 	[<item:minecraft:air>, <item:minecraft:air>, <item:woodarmor:stone_helmet>],
 	[<item:minecraft:cobblestone>, <tag:items:woodarmorhorse:wooden_horse_armor>.asIIngredient().anyDamage(), <item:minecraft:cobblestone>],
