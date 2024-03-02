@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "12 ",
+    "34 ",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "tag": "forge:frog_legs"
+    },
+    "2": {
+      "tag": "forge:flour"
+    },
+    "3": {
+      "tag": "forge:olive_oils"
+    },
+    "4": {
+      "item": "croptopia:frying_pan"
+    }
+  },
+  "result": {
+    "item": "croptopia:fried_frog_legs",
+    "count": 1
+  }
+}

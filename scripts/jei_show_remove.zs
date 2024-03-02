@@ -111,6 +111,16 @@ var removeJeiIngradient = [
 	"bigreactors:basic_turbinecreativesteamgenerator",
 	"bigreactors:reinforced_turbinecreativesteamgenerator",
 	"bigreactors:reinforced_reactorcreativewatergenerator",
+	// Ftb Quests
+	"ftbquests:barrier",
+	"ftbquests:custom_icon",
+	"ftbquests:detector",
+	"ftbquests:missing_item",
+	"ftbquests:screen_1",
+	"ftbquests:screen_3",
+	"ftbquests:screen_5",
+	"ftbquests:screen_7",
+	"ftbquests:stage_barrier",
 	// Immersive Engineering
 	"immersiveengineering:armor_piercing",
 	"immersiveengineering:buckshot",
