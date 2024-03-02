@@ -16,7 +16,9 @@ import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 // TODO: count is bugged, not work.
-/*<recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("integrateddynamics_mechanical_squeezer/ore/raw_certus_quartz", {
+<recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("integrateddynamics_mechanical_squeezer/ore/raw_certus_quartz", 
+{
+"type": "integrateddynamics:mechanical_squeezer",
 	"item": {
 		"tag": "forge:ores/certus_quartz"
 	},
@@ -38,6 +40,6 @@ import crafttweaker.api.tag.manager.ITagManager;
 		} ]
 	},
 	"duration": 40
-});*/
+});
 
 println("End script recipe_integrated_dynamics.");
