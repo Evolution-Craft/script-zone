@@ -9,5 +9,5 @@
 	#Whether to display suspicious stew effects in the tooltip.
 	"Suspicious Stew Tooltips" = false
 	#If true, effects with missing descriptions will be listed in the logs.
-	"Log Missing Descriptions" = true
+	"Log Missing Descriptions" = false
 
