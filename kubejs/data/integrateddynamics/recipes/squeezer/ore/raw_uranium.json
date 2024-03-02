@@ -1,0 +1,37 @@
+{
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "tag": "forge:ores/uranium"
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": "immersiveengineering:raw_uranium",
+          "count": 2
+        }
+      },
+      {
+        "item": "immersiveengineering:raw_uranium",
+        "chance": 0.75
+      }
+    ]
+  },
+  "duration": 40,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:raw_materials/uranium"
+      }
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ores/uranium"
+      }
+    }
+  ]
+}

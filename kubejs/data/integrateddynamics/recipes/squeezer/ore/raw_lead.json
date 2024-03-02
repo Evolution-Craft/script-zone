@@ -1,0 +1,37 @@
+{
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "tag": "forge:ores/lead"
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": "thermal:raw_lead",
+          "count": 2
+        }
+      },
+      {
+        "item": "thermal:raw_lead",
+        "chance": 0.75
+      }
+    ]
+  },
+  "duration": 40,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:raw_materials/lead"
+      }
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ores/lead"
+      }
+    }
+  ]
+}

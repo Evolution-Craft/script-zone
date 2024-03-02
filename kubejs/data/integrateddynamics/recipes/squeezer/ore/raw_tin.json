@@ -1,0 +1,37 @@
+{
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "tag": "forge:ores/tin"
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": "thermal:raw_tin",
+          "count": 2
+        }
+      },
+      {
+        "item": "thermal:raw_tin",
+        "chance": 0.75
+      }
+    ]
+  },
+  "duration": 40,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:raw_materials/tin"
+      }
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ores/tin"
+      }
+    }
+  ]
+}

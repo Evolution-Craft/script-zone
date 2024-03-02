@@ -1,0 +1,47 @@
+{
+  "type": "integrateddynamics:mechanical_squeezer",
+  "item": {
+    "tag": "forge:ores/uranium"
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": "immersiveengineering:raw_uranium",
+          "count": 3
+        }
+      },
+      {
+        "item": {
+          "item": "immersiveengineering:raw_uranium",
+          "count": 2
+        },
+        "chance": 0.5
+      },
+      {
+        "item": {
+          "item": "immersiveengineering:raw_uranium",
+          "count": 2
+        },
+        "chance": 0.5
+      }
+    ]
+  },
+  "duration": 40,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:raw_materials/uranium"
+      }
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ores/uranium"
+      }
+    }
+  ]
+}
