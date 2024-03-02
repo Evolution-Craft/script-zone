@@ -13,15 +13,6 @@ println("Script Priority Null.");
 import crafttweaker.api.item.ItemStack;
 
 var itemSetMaxDamage = {
-	"aquaculture:neptunium_fillet_knife" : 2860,
-	"croptopia:knife" : 400,
-	"fiow:flint_knife" : 26,
-	"galosphere:sterling_horse_armor" : 360,
-	"minecraft:leather_horse_armor" : 150,
-	"minecraft:iron_horse_armor" : 450,
-	"minecraft:golden_horse_armor" : 210,
-	"minecraft:diamond_horse_armor" : 990,
-	"nha:netherite_horse_armor" : 1100,
 	"woodarmorhorse:oak_horse_armor" : 300,
 	"woodarmorhorse:birch_horse_armor" : 300,
 	"woodarmorhorse:jungle_horse_armor" : 300,
@@ -30,7 +21,14 @@ var itemSetMaxDamage = {
 	"woodarmorhorse:spruce_horse_armor" : 300,
 	"woodarmorhorse:crimson_horse_armor" : 300,
 	"woodarmorhorse:warped_horse_armor" : 300,
-	"woodarmorhorse:stone_horse_armor" : 300
+	"woodarmorhorse:stone_horse_armor" : 300,
+	"minecraft:leather_horse_armor" : 150,
+	"galosphere:sterling_horse_armor" : 360,
+	"minecraft:iron_horse_armor" : 450,
+	"minecraft:golden_horse_armor" : 210,
+	"minecraft:diamond_horse_armor" : 990,
+	"nha:netherite_horse_armor" : 1100
+
 };
 for itemSetMaxDamageMaterial, itemSetMaxDamageValue in itemSetMaxDamage {
 	<item:${itemSetMaxDamageMaterial}>.maxDamage = itemSetMaxDamageValue;

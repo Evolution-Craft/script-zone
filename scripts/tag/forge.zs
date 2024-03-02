@@ -129,16 +129,6 @@ var addingDoughsForge = [
 for tag_doughs_forge in addingDoughsForge{
 	<tag:items:forge:doughs>.add(<item:${tag_doughs_forge}>);
 }
-// Flour
-var addingFlourForge = [
-	"pneumaticcraft:wheat_flour",
-	"tmted:wheat_flour"
-];
-for tag_flour_forge in addingFlourForge{
-	<tag:items:forge:flour>.add(<item:${tag_flour_forge}>);
-}
-// Frog Legs
-<tag:items:forge:frog_legs>.add(<item:aquaculture:frog_legs_raw>);
 // Fruit
 var addingFruitForge = [
 	"ecologics:prickly_pear",
@@ -253,20 +243,6 @@ var addingStrippedWoodForge = [
 ];
 for tag_stripped_wood_forge in addingStrippedWoodForge{
 	<tag:items:forge:stripped_wood>.add(<item:${tag_stripped_wood_forge}>);
-}
-// Tools Knives
-var addingToolsKnivesForge = [
-	"aquaculture:wooden_fillet_knife",
-	"aquaculture:stone_fillet_knife",
-	"aquaculture:iron_fillet_knife",
-	"aquaculture:gold_fillet_knife",
-	"aquaculture:diamond_fillet_knife",
-	"aquaculture:neptunium_fillet_knife",
-	"enlightened_end:adamantite_knife",
-	"fiow:flint_knife"
-];
-for tag_tools_knives_forge in addingToolsKnivesForge{
-	<tag:items:forge:tools/knives>.add(<item:${tag_tools_knives_forge}>);
 }
 // Tuna
 <tag:items:forge:tuna>.add(<item:aquaculture:tuna>);
