@@ -25,27 +25,6 @@ import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.recipe.SmithingRecipeManager;
 import crafttweaker.api.tag.manager.ITagManager;
 
-var TypeWoodenArmorHorse = [
-	"oak_horse_armor",
-	"birch_horse_armor",
-	"jungle_horse_armor",
-	"acacia_horse_armor",
-	"bigoak_horse_armor",
-	"spruce_horse_armor"
-];
-for propeties_woodarmorhorse in TypeWoodenArmorHorse{
-	<item:woodarmorhorse:${propeties_woodarmorhorse}>.maxDamage = 300;
-}
-<item:woodarmorhorse:crimson_horse_armor>.maxDamage = 300;
-<item:woodarmorhorse:warped_horse_armor>.maxDamage = 300;
-<item:woodarmorhorse:stone_horse_armor>.maxDamage = 300;
-<item:minecraft:leather_horse_armor>.maxDamage = 150;
-<item:galosphere:sterling_horse_armor>.maxDamage = 360;
-<item:minecraft:iron_horse_armor>.maxDamage = 450;
-<item:minecraft:golden_horse_armor>.maxDamage = 210;
-<item:minecraft:diamond_horse_armor>.maxDamage = 990;
-<item:nha:netherite_horse_armor>.maxDamage = 1100;
-
 var shapedHorseArmorVarFunction as function(usualOut as IItemStack, inputs as IItemStack[][]) as IItemStack = (usualOut as IItemStack, inputs as IItemStack[][]) => {
 
 	var oldDamage = inputs[1][1].damage;
@@ -53,7 +32,6 @@ var shapedHorseArmorVarFunction as function(usualOut as IItemStack, inputs as II
 		oldDamage = 0;
 	}
 	return usualOut.withDamage(oldDamage);
-	//TODO: decidere se craftare con durabilità al 50%
 };
 
 craftingTable.removeByModid("woodarmorhorse");

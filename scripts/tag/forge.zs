@@ -10,6 +10,7 @@
  * v0.4 : Add Missing Sapling and Log.
  * v0.5 : Move Salt Tag on this Script.
  * v0.6 : Add Missing Tags.
+ * v0.7 : Remove Partinal temorary Fix.
  */
 
 #priority 997
@@ -21,12 +22,7 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
 // Berries
-var addingBerriesForge = [
-	"vinery:cherry"
-];
-for tag_berries_forge in addingBerriesForge{
-	<tag:items:forge:berries>.add(<item:${tag_berries_forge}>);
-}
+<tag:items:forge:berries>.add(<item:vinery:cherry>);
 // Bread
 var addingBreadForge = [
 	"corn_delight:cornbread",
@@ -46,14 +42,23 @@ for tag_cheeses_forge in addingCheesesForge{
 	<tag:items:forge:cheeses>.add(<item:${tag_cheeses_forge}>);
 }
 // Cherries
-var addingCherriesForge = [
-	"vinery:cherry"
-];
-for tag_cherries_forge in addingCherriesForge{
-	<tag:items:forge:cherries>.add(<item:${tag_cherries_forge}>);
-}
+<tag:items:forge:cherries>.add(<item:vinery:cherry>);
 // Crabs
 <tag:items:forge:crabs>.add(<item:crabbersdelight:crab>);
+// Crops
+var addingCropsForge = [
+	"vinery:jungle_grapes_red",
+	"vinery:jungle_grapes_white",
+	"vinery:red_grape",
+	"vinery:savanna_grapes_red",
+	"vinery:savanna_grapes_white",
+	"vinery:taiga_grapes_red",
+	"vinery:taiga_grapes_white",
+	"vinery:white_grape"
+];
+for tag_crops_forge in addingCropsForge{
+	<tag:items:forge:crops>.add(<item:${tag_crops_forge}>);
+}
 // Crops Grape
 var addingCropsGrapeForge = [
 	"vinery:jungle_grapes_red",
@@ -66,11 +71,7 @@ var addingCropsGrapeForge = [
 	"vinery:white_grape"
 ];
 for tag_crops_grape_forge in addingCropsGrapeForge{
-	<tag:items:forge:crops>.add(<item:${tag_crops_grape_forge}>); // Temporary Fix
 	<tag:items:forge:crops/grape>.add(<item:${tag_crops_grape_forge}>);
-	<tag:items:forge:fruits>.add(<item:${tag_crops_grape_forge}>); // Temporary Fix
-	<tag:items:forge:fruits/grape>.add(<item:${tag_crops_grape_forge}>); // Temporary Fix
-	<tag:items:forge:grapes>.add(<item:${tag_crops_grape_forge}>); // Temporary Fix
 }
 // Crops Chorus Petal
 var addingCropsChorusPetalForge = [
@@ -81,12 +82,7 @@ for tag_crops_chorus_petal_forge in addingCropsChorusPetalForge{
 	<tag:items:forge:crops/chorus_petal>.add(<item:${tag_crops_chorus_petal_forge}>);
 }
 // Crops Tea
-var addingCropsTeaForge = [
-	"croptopia:tea_leaves"
-];
-for tag_crops_tea_forge in addingCropsTeaForge{
-	<tag:items:forge:crops/tea>.add(<item:${tag_crops_tea_forge}>);
-}
+<tag:items:forge:crops/tea>.add(<item:croptopia:tea_leaves>);
 // Corundum
 var addingCorundumBlockForge = [
 	"quark:red_corundum",
@@ -151,6 +147,20 @@ var addingFruitForge = [
 for tag_fruit_forge in addingFruitForge{
 	<tag:items:forge:fruits>.add(<item:${tag_fruit_forge}>);
 }
+var addingFruitGrapeForge = [
+	"vinery:jungle_grapes_red",
+	"vinery:jungle_grapes_white",
+	"vinery:red_grape",
+	"vinery:savanna_grapes_red",
+	"vinery:savanna_grapes_white",
+	"vinery:taiga_grapes_red",
+	"vinery:taiga_grapes_white",
+	"vinery:white_grape"
+];
+for tag_fruit_grape_forge in addingFruitGrapeForge{
+	<tag:items:forge:fruits/grape>.add(<item:${tag_fruit_grape_forge}>);
+	<tag:items:forge:grapes>.add(<item:${tag_fruit_grape_forge}>); // Temporary Fix
+}
 // Furnace
 var addingFurnacesForge = [
 	"minecraft:furnace",
@@ -185,7 +195,6 @@ var addingSaplingForge = [
 ];
 for tag_sapling_forge in addingSaplingForge{
 	<tag:items:forge:sapling>.add(<item:${tag_sapling_forge}>);
-	<tag:items:minecraft:saplings>.add(<item:${tag_sapling_forge}>); // Temporary Fix
 }
 // Seed
 var addingSeedForge = [

@@ -6,6 +6,7 @@
  * CHANGELOG:
  * v0.1 : Add Missing Boat.
  * v0.2 : Add Missing Stair and Slab.
+ * v0.3 : Add Missing Sapling.
  */
 
 #priority 996
@@ -24,7 +25,6 @@ var addingBoatMinecraft = [
 for tag_boat_minecraft in addingBoatMinecraft{
 	<tag:items:minecraft:boats>.add(<item:${tag_boat_minecraft}>);
 }
-
 // Logs
 var addingLogsMinecraft = [
 	"infernalexp:luminous_hyphae",
@@ -35,7 +35,6 @@ var addingLogsMinecraft = [
 for tag_log_minecraft in addingLogsMinecraft{
 	<tag:items:minecraft:logs>.add(<item:${tag_log_minecraft}>);
 }
-
 // Slab
 var addingSlabMinecraft = [
 	"vinery:coarse_dirt_slab",
@@ -46,7 +45,14 @@ var addingSlabMinecraft = [
 for tag_slab_minecraft in addingSlabMinecraft{
 	<tag:items:minecraft:slabs>.add(<item:${tag_slab_minecraft}>);
 }
-
+// Sapling
+var addingSaplingMinecraft = [
+	"vinery:cherry_sapling",
+	"vinery:old_cherry_sapling"
+];
+for tag_sapling_minecraft in addingSaplingMinecraft{
+	<tag:items:minecraft:saplings>.add(<item:${tag_sapling_minecraft}>);
+}
 // Stair
 var addingStairMinecraft = [
 	"vinery:loam_stairs"

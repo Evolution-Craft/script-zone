@@ -15,7 +15,7 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
-TODO: count is bugged, not work.
+// TODO: count is bugged, not work.
 /*<recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("integrateddynamics_mechanical_squeezer/ore/raw_certus_quartz", {
 	"item": {
 		"tag": "forge:ores/certus_quartz"
