@@ -9,10 +9,10 @@
       "nbt": "{Potion:\"minecraft:water\"}"
     },
     {
-      "item": "simplytea:tea_leaf"
+      "tag": "forge:crops/tea"
     },
     {
-      "item": "simplytea:tea_leaf"
+      "tag": "forge:crops/tea"
     },
     {
       "item": "simplytea:ice_cube"

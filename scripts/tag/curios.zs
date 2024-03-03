@@ -6,7 +6,11 @@
  * CHANGELOG:
  * v0.1 : Fix Elytra uncategorized.
  */
- 
+
+println("Start script/tag curios.");
+println("Script Priority Null.");
+
+
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
@@ -20,10 +24,4 @@ for tag_back_curios in addingBackCurios{
 	<tag:items:curios:back>.add(<item:${tag_back_curios}>);
 }
 
-// Curio
-/*var addingCurioCurios = [
-    "tiab:time_in_a_bottle"
-];
-for tag_curio_curios in addingCurioCurios{
-	<tag:items:curios:curio>.add(<item:${tag_curio_curios}>);
-}*/
+println("End script/tag curios.");

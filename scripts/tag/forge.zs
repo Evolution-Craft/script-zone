@@ -43,6 +43,8 @@ for tag_cheeses_forge in addingCheesesForge{
 }
 // Cherries
 <tag:items:forge:cherries>.add(<item:vinery:cherry>);
+// Cinnamon
+<tag:items:forge:cinnamon>.add(<item:simplytea:tea_stick>);
 // Crabs
 <tag:items:forge:crabs>.add(<item:crabbersdelight:crab>);
 // Crops

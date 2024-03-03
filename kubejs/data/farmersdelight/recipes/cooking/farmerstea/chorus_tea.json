@@ -9,10 +9,10 @@
       "nbt": "{Potion:\"minecraft:water\"}"
     },
     {
-      "item": "simplytea:chorus_petal"
+      "tag": "forge:crops/chorus_petal"
     },
     {
-      "item": "simplytea:chorus_petal"
+      "tag": "forge:crops/chorus_petal"
     }
   ],
   "result": {
