@@ -159,6 +159,7 @@ var addingFruitForge = [
 for tag_fruit_forge in addingFruitForge{
 	<tag:items:forge:fruits>.add(<item:${tag_fruit_forge}>);
 }
+// Fruit Grape
 var addingFruitGrapeForge = [
 	"vinery:jungle_grapes_red",
 	"vinery:jungle_grapes_white",
@@ -210,6 +211,7 @@ for tag_sapling_forge in addingSaplingForge{
 }
 // Seed
 var addingSeedForge = [
+	"enlightened_end:elevibloom_seeds",
 	"vinery:jungle_grape_seeds_red",
 	"vinery:jungle_grape_seeds_white",
 	"vinery:red_grape_seeds",
