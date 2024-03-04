@@ -50,7 +50,7 @@ var addingCombinerRecipe = {
 	"vinery:cherry_sapling" : "vinery_cherry_sapling",
 	"vinery:old_cherry_sapling" : "vinery_old_cherry_sapling"
 };
-for addingCombinerRecipeID, addingCombinerRecipeName in addingCombinerRecipe {
+for addingCombinerRecipeId, addingCombinerRecipeName in addingCombinerRecipe {
 	<recipetype:alchemistry:combiner>.addJsonRecipe("alchemistry_combiner/" + addingCombinerRecipeName, {
 		"group": "alchemistry:combiner",
 		"input": [ {
@@ -65,7 +65,121 @@ for addingCombinerRecipeID, addingCombinerRecipeName in addingCombinerRecipe {
 			"count": 2
 		} ],
 		"result": {
-			"item": addingCombinerRecipeID
+			"item": addingCombinerRecipeId
+		}
+	});
+}
+var addingSeedCombinerRecipe = {
+	"croptopia/artichoke" : "croptopia:artichoke_seed",
+	"croptopia/asparagus" : "croptopia:asparagus_seed",
+	"croptopia/barley" : "croptopia:barley_seed",
+	"croptopia/basil" : "croptopia:basil_seed",
+	"croptopia/bellpepper" : "croptopia:bellpepper_seed",
+	"croptopia/blackbean" : "croptopia:blackbean_seed",
+	"croptopia/blackberry" : "croptopia:blackberry_seed",
+	"croptopia/blueberry" : "croptopia:blueberry_seed",
+	"croptopia/broccoli" : "croptopia:broccoli_seed",
+	"croptopia/cabbage" : "croptopia:cabbage_seed",
+	"croptopia/cantaloupe" : "croptopia:cantaloupe_seed",
+	"croptopia/cauliflower" : "croptopia:cauliflower_seed",
+	"croptopia/celery" : "croptopia:celery_seed",
+	"croptopia/chile_pepper" : "croptopia:chile_pepper_seed",
+	"croptopia/coffee" : "croptopia:coffee_seed",
+	"croptopia/corn" : "croptopia:corn_seed",
+	"croptopia/cranberry" : "croptopia:cranberry_seed",
+	"croptopia/cucumber" : "croptopia:cucumber_seed",
+	"croptopia/currant" : "croptopia:currant_seed",
+	"croptopia/eggplant" : "croptopia:eggplant_seed",
+	"croptopia/elderberry" : "croptopia:elderberry_seed",
+	"croptopia/garlic" : "croptopia:garlic_seed",
+	"croptopia/ginger" : "croptopia:ginger_seed",
+	"croptopia/grape" : "croptopia:grape_seed",
+	"croptopia/greenbean" : "croptopia:greenbean_seed",
+	"croptopia/greenonion" : "croptopia:greenonion_seed",
+	"croptopia/honeydew" : "croptopia:honeydew_seed",
+	"croptopia/hops" : "croptopia:hops_seed",
+	"croptopia/kale" : "croptopia:kale_seed",
+	"croptopia/kiwi" : "croptopia:kiwi_seed",
+	"croptopia/leek" : "croptopia:leek_seed",
+	"croptopia/lettuce" : "croptopia:lettuce_seed",
+	"croptopia/mustard" : "croptopia:mustard_seed",
+	"croptopia/oat" : "croptopia:oat_seed",
+	"croptopia/olive" : "croptopia:olive_seed",
+	"croptopia/onion" : "croptopia:onion_seed",
+	"croptopia/peanut" : "croptopia:peanut_seed",
+	"croptopia/pepper" : "croptopia:pepper_seed",
+	"croptopia/pineapple" : "croptopia:pineapple_seed",
+	"croptopia/radish" : "croptopia:radish_seed",
+	"croptopia/raspberry" : "croptopia:raspberry_seed",
+	"croptopia/rhubarb" : "croptopia:rhubarb_seed",
+	"croptopia/rice" : "croptopia:rice_seed",
+	"croptopia/rutabaga" : "croptopia:rutabaga_seed",
+	"croptopia/saguaro" : "croptopia:saguaro_seed",
+	"croptopia/soybean" : "croptopia:soybean_seed",
+	"croptopia/spinach" : "croptopia:spinach_seed",
+	"croptopia/squash" : "croptopia:squash_seed",
+	"croptopia/strawberry" : "croptopia:strawberry_seed",
+	"croptopia/sweetpotato" : "croptopia:sweetpotato_seed",
+	"croptopia/tea" : "croptopia:tea_seed",
+	"croptopia/tomatillo" : "croptopia:tomatillo_seed",
+	"croptopia/tomato" : "croptopia:tomato_seed",
+	"croptopia/turmeric" : "croptopia:turmeric_seed",
+	"croptopia/turnip" : "croptopia:turnip_seed",
+	"croptopia/vanilla" : "croptopia:vanilla_seeds",
+	"croptopia/yam" : "croptopia:yam_seed",
+	"croptopia/zucchini" : "croptopia:zucchini_seed",
+	"corn_delight/corn" : "corn_delight:corn_seeds",
+	"ecologics/coconut" : "ecologics:coconut_seedling",
+	"enlightened_end/elevibloom" : "enlightened_end:elevibloom_seeds",
+	"farmersdelight/cabbage" : "farmersdelight:cabbage_seeds",
+	"farmersdelight/tomato" : "farmersdelight:tomato_seeds",
+	"immersiveengineering/seed" : "immersiveengineering:seed",
+	"supplementaries/flax" : "supplementaries:flax_seeds",
+	"thermal/amaranth" : "thermal:amaranth_seeds",
+	"thermal/barley" : "thermal:barley_seeds",
+	"thermal/bell_pepper" : "thermal:bell_pepper_seeds",
+	"thermal/coffee" : "thermal:coffee_seeds",
+	"thermal/corn" : "thermal:corn_seeds",
+	"thermal/eggplant" : "thermal:eggplant_seeds",
+	"thermal/flax" : "thermal:flax_seeds",
+	"thermal/frost_melon" : "thermal:frost_melon_seeds",
+	"thermal/green_bean" : "thermal:green_bean_seeds",
+	"thermal/hops" : "thermal:hops_seeds",
+	"thermal/onion" : "thermal:onion_seeds",
+	"thermal/peanut" : "thermal:peanut_seeds",
+	"thermal/radish" : "thermal:radish_seeds",
+	"thermal/rice" : "thermal:rice_seeds",
+	"thermal/sadiroot" : "thermal:sadiroot_seeds",
+	"thermal/spinach" : "thermal:spinach_seeds",
+	"thermal/strawberry" : "thermal:strawberry_seeds",
+	"thermal/tea" : "thermal:tea_seeds",
+	"thermal/tomato" : "thermal:tomato_seeds",
+	"undergarden/gloomgourd" : "undergarden:gloomgourd_seeds",
+	"vinery/red_grape" : "vinery:red_grape_seeds",
+	"vinery/white_grape" : "vinery:white_grape_seeds",
+	"vinery/jungle_grape_seeds_red" : "vinery:jungle_grape_seeds_red",
+	"vinery/jungle_grape_seeds_white" : "vinery:jungle_grape_seeds_white",
+	"vinery/savanna_grape_seeds_red" : "vinery:savanna_grape_seeds_red",
+	"vinery/savanna_grape_seeds_white" : "vinery:savanna_grape_seeds_white",
+	"vinery/taiga_grape_seeds_red" : "vinery:taiga_grape_seeds_red",
+	"vinery/taiga_grape_seeds_white" : "vinery:taiga_grape_seeds_white"
+};
+for addingSeedCombinerRecipeName, addingSeedCombinerRecipeId in addingSeedCombinerRecipe {
+	<recipetype:alchemistry:combiner>.addJsonRecipe("alchemistry_combiner/" + addingSeedCombinerRecipeName, {
+		"group": "alchemistry:combiner",
+		"input": [ {
+			"ingredient": {
+				"item": "chemlib:sucrose"
+			},
+			"count": 1
+		}, {
+			"ingredient": {
+				"item": "chemlib:triglyceride"
+			},
+			"count": 2
+		} ],
+		"result": {
+			"item": addingSeedCombinerRecipeId
 		}
 	});
 }

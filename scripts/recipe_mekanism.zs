@@ -104,7 +104,6 @@ for addingSeedCrushingMekanismName, addingSeedCrushingMekanismMod in addingSeedC
 }
 
 var addingSeedsCrushingMekanism = {
-	// TODO: Botania Seeds.
 	"croptopia/vanilla" : "croptopia:vanilla",
 	"corn_delight/corn" : "corn_delight:corn",
 	"enlightened_end/elevibloom" : "enlightened_end:elevibloom",

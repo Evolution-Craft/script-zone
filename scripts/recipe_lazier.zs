@@ -149,10 +149,51 @@ for addingSeedGrinderLazierName, addingSeedGrinderLazierMod in addingSeedGrinder
 	}
 }
 
-// TODO: Vinery missing item.
+var addingVinerySeedsGrinderLazier = {
+	"vinery/jungle_grape_seeds_red" : "vinery:jungle_grape_seeds_red",
+	"vinery/jungle_grape_seeds_white" : "vinery:jungle_grape_seeds_white",
+	"vinery/savanna_grape_seeds_red" : "vinery:savanna_grape_seeds_red",
+	"vinery/savanna_grape_seeds_white" : "vinery:savanna_grape_seeds_white",
+	"vinery/taiga_grape_seeds_red" : "vinery:taiga_grape_seeds_red",
+	"vinery/taiga_grape_seeds_white" : "vinery:taiga_grape_seeds_white"
+};
+for addingVinerySeedsGrinderLazierName, addingVinerySeedsGrinderLazierMod in addingVinerySeedsGrinderLazier {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingVinerySeedsGrinderLazierName, {
+		"output": {
+			"item": "mekanism:bio_fuel",
+			"count": lazier_bio_fuel_seeds_quantity
+		},
+		"input": {
+			"item": addingVinerySeedsGrinderLazierMod
+		},
+		"process_time": lazier_process_time,
+		"energy_cost": lazier_energy_cost
+	});
+}
+
+var addingVineryCropsGrinderLazier = {
+	"vinery/jungle_grapes_red" : "vinery:jungle_grapes_red",
+	"vinery/jungle_grapes_white" : "vinery:jungle_grapes_white",
+	"vinery/savanna_grapes_red" : "vinery:savanna_grapes_red",
+	"vinery/savanna_grapes_white" : "vinery:savanna_grapes_white",
+	"vinery/taiga_grape_red" : "vinery:taiga_grapes_red",
+	"vinery/taiga_grape_white" : "vinery:taiga_grapes_white"
+};
+for addingVineryCropsGrinderLazierName, addingVineryCropsGrinderLazierMod in addingVineryCropsGrinderLazier {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingVineryCropsGrinderLazierName, {
+		"output": {
+			"item": "mekanism:bio_fuel",
+			"count": lazier_bio_fuel_crops_quantity
+		},
+		"input": {
+			"item": addingVineryCropsGrinderLazierMod
+		},
+		"process_time": lazier_process_time,
+		"energy_cost": lazier_energy_cost
+	});
+}
 
 var addingSeedsGrinderLazier = {
-	// TODO: Botania Seeds.
 	"croptopia/vanilla" : "croptopia:vanilla",
 	"corn_delight/corn" : "corn_delight:corn",
 	"enlightened_end/elevibloom" : "enlightened_end:elevibloom",
