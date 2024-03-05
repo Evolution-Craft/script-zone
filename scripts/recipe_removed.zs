@@ -27,6 +27,7 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.recipe.CampFireRecipeManager;
 import crafttweaker.api.recipe.FurnaceRecipeManager;
+import crafttweaker.api.recipe.SmithingRecipeManager;
 import crafttweaker.api.recipe.StoneCutterManager;
 import crafttweaker.api.recipe.Replacer;
 
@@ -240,6 +241,12 @@ var removeRecipeByName = [
 	"infernalexp:crafting/crafting_shaped/paper_from_mushrooms",
 	"infernalexp:crafting/crafting_shapeless/gold_ingot_from_molten_cluster_1",
 	"infernalexp:crafting/crafting_shapeless/gold_ingot_from_molten_cluster_2",
+	// Leathered Boots
+	"leatheredboots:crafting/leathered_chainmail_boots",
+	"leatheredboots:crafting/leathered_iron_boots",
+	"leatheredboots:crafting/leathered_gold_boots",
+	"leatheredboots:crafting/leathered_diamond_boots",
+	"leatheredboots:crafting/leathered_netherite_boots",
 	// Library Ferret
 	"libraryferret:crafting_shaped/fake_diamond_block",
 	"libraryferret:crafting_shaped/fake_emerald_block",
@@ -472,6 +479,20 @@ var removeRecipeByNameFurnace = [
 ];
 for remove_recipe_by_name_furnace in removeRecipeByNameFurnace{
 	furnace.removeByName(remove_recipe_by_name_furnace);
+}
+
+// Smithing Table
+var removeRecipeByNameSmithingTable = [
+	// Leathered Boots
+	"leatheredboots:smithing/leathered_chainmail_boots",
+	"leatheredboots:smithing/leathered_iron_boots",
+	"leatheredboots:smithing/leathered_gold_boots",
+	"leatheredboots:smithing/leathered_diamond_boots",
+	"leatheredboots:smithing/leathered_netherite_boots",
+	"leatheredboots:smithing/leathered_netherite_boots_from_diamond"
+];
+for remove_recipe_by_name_smithing_table in removeRecipeByNameSmithingTable{
+	smithing.removeByName(remove_recipe_by_name_smithing_table);
 }
 
 // Smoker

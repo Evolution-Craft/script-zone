@@ -284,13 +284,7 @@ for tag_stripped_wood_forge in addingStrippedWoodForge{
 
 // Tools Knives
 var addingToolsKnivesForge = [
-	/*"aquaculture:wooden_fillet_knife",
-	"aquaculture:stone_fillet_knife",
-	"aquaculture:iron_fillet_knife",
-	"aquaculture:gold_fillet_knife",
-	"aquaculture:diamond_fillet_knife",
-	"aquaculture:neptunium_fillet_knife",
-	"enlightened_end:adamantite_knife",*/
+	"enlightened_end:adamantite_knife",
 	"fiow:flint_knife"
 ];
 for tag_tools_knives_forge in addingToolsKnivesForge{
