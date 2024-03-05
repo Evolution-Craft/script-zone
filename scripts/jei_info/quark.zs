@@ -1,3 +1,15 @@
+/*
+ * This file is part of the Evolution Craft modpack.
+ *
+ * The author of this file is Millennium, using CraftTweaker mod code.
+ *
+ * CHANGELOG:
+ * v0.1 : Fix Issue.
+ */
+
+println("Start script/jei_info/quark.");
+println("Script Priority Null.");
+
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
 
@@ -178,3 +190,5 @@ i_quark(<item:quark:tiny_potato>, "Tater, my beloved.");
 i_quark(<item:quark:pickarang>, "Can be thrown to mine whatever block it lands on. Enchantments can change its performance.");
 i_quark(<item:quark:flamerang>, "Works similarly to the Pickarang, but has built in flame and fire resistance.");
 i_quark(<item:quark:ancient_tome>, "Can be found on dungeon and stronghold chests. Combine with an enchanted item or book in an anvil to raise its level, up to 1 beyond the max.");
+
+println("End script/jei_info/quark.");

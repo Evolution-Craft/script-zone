@@ -7,7 +7,7 @@
  * v0.1 : Fix Salt.
  */
 
-println("Start script recipe_mekanism.");
+println("Start script recipe_salt.");
 println("Script Priority Null.");
 
 import crafttweaker.api.item.ItemStack;
@@ -23,4 +23,4 @@ craftingTable.addShaped("salt_salt_block", <item:salt:salt_block>, [
 	[<tag:items:forge:dusts/salt>, <tag:items:forge:dusts/salt>, <tag:items:forge:dusts/salt>]
 ]);
 
-println("End script recipe_mekanism.");
+println("End script recipe_salt.");

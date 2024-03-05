@@ -379,6 +379,4 @@ for hide_jei in removeJeiIngradient{
 JEI.hideRegex(".*:.*_spawn_egg");
 JEI.hideRegex(".*:spawn_egg_.*");
 
-//JEI.hideIngredient(<item:botania:mana_tablet>.withTag({mana: "500000" as string}));
-
 println("End script jei_show_remove.");

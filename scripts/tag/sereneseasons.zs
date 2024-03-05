@@ -10,7 +10,7 @@
 
 #priority 994
 
-println("Start script/tag sereneseasons.");
+println("Start script/tag/sereneseasons.");
 println("Script Priority 994.");
 
 import crafttweaker.api.item.ItemStack;
@@ -106,4 +106,4 @@ for tag_winter_sereneseasons in addingWinterSereneSeasons{
 	<tag:items:sereneseasons:winter_crops>.add(<item:${tag_winter_sereneseasons}>);
 }
 
-println("End script/tag sereneseasons.");
+println("End script/tag/sereneseasons.");

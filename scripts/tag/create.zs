@@ -9,7 +9,7 @@
 
 #priority 992
 
-println("Start script/tag create.");
+println("Start script/tag/create.");
 println("Script Priority 992.");
 
 import crafttweaker.api.item.ItemStack;
@@ -31,6 +31,7 @@ var addingStrippedLogCreate = [
 for tag_stripped_log_create in addingStrippedLogCreate{
 	<tag:items:create:modded_stripped_logs>.add(<item:${tag_stripped_log_create}>);
 }
+
 // Stripped Wood
 var addingStrippedWoodCreate = [
 	"botania:glimmering_stripped_dreamwood",
@@ -47,4 +48,4 @@ for tag_stripped_wood_create in addingStrippedWoodCreate{
 	<tag:items:create:modded_stripped_wood>.add(<item:${tag_stripped_wood_create}>);
 }
 
-println("End script/tag create.");
+println("End script/tag/create.");

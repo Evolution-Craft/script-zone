@@ -13,7 +13,7 @@ println("Script Priority Null.");
 import crafttweaker.api.item.ItemStack;
 
 var itemSetMaxDamage = {
-	"aquaculture:neptunium_fillet_knife" : 2860,
+	//"aquaculture:neptunium_fillet_knife" : 2860,
 	"croptopia:knife" : 400,
 	"fiow:flint_knife" : 26,
 	"galosphere:sterling_horse_armor" : 360,

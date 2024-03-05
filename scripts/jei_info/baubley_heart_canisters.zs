@@ -1,3 +1,15 @@
+/*
+ * This file is part of the Evolution Craft modpack.
+ *
+ * The author of this file is Millennium, using CraftTweaker mod code.
+ *
+ * CHANGELOG:
+ * v0.1 : Fix Issue.
+ */
+
+println("Start script/jei_info/baubley_heart_canisters.");
+println("Script Priority Null.");
+
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
 
@@ -10,3 +22,5 @@ i_baubley_heart_canisters(<item:bhc:yellow_heart>, "Yellow Heart, drop from the 
 i_baubley_heart_canisters(<item:bhc:green_heart>, "Green Heart, drop from the Ender Dragon boss.");
 i_baubley_heart_canisters(<item:bhc:blue_heart>, "Blue Hearts, drop from the Evokers.");
 i_baubley_heart_canisters(<item:bhc:wither_bone>, "Wither Bone, drop from Wither Skeleton mobs.");
+
+println("End script/jei_info/baubley_heart_canisters.");

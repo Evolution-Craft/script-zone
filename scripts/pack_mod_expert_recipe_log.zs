@@ -9,18 +9,16 @@
 
 #priority 500
 
-println("Start script pack_mode_expert.");
+println("Start script pack_mod_expert_recipe_log.");
 println("Script Priority 500.");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
-val pack_mode_enable = true;
-
-// Setting
+val pack_mode_log_enable = true;
 val expert_log_to_planks = 2;
 
-if (pack_mode_enable == true) {
+if (pack_mode_log_enable == true) {
 	var packModeExpertPlanks = {
 		// Botania
 		"botania:dreamwood_planks" : <tag:items:botania:dreamwood_logs>,
@@ -104,4 +102,5 @@ if (pack_mode_enable == true) {
 	craftingTable.removeByName("myrtrees:rubberwood_planks");
 	craftingTable.addShapeless("pack_expert_crafting_rubberwood_planks", <item:myrtrees:rubberwood_planks> * expert_log_to_planks, [<item:myrtrees:rubberwood_log>]);
 }
-println("End script pack_mode_expert.");
+
+println("End script pack_mod_expert_recipe_log.");

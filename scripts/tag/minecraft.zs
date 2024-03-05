@@ -11,7 +11,7 @@
 
 #priority 996
 
-println("Start script/tag minecaft.");
+println("Start script/tag/minecaft.");
 println("Script Priority 996.");
 
 import crafttweaker.api.item.ItemStack;
@@ -25,6 +25,7 @@ var addingBoatMinecraft = [
 for tag_boat_minecraft in addingBoatMinecraft{
 	<tag:items:minecraft:boats>.add(<item:${tag_boat_minecraft}>);
 }
+
 // Logs
 var addingLogsMinecraft = [
 	"infernalexp:luminous_hyphae",
@@ -35,6 +36,7 @@ var addingLogsMinecraft = [
 for tag_log_minecraft in addingLogsMinecraft{
 	<tag:items:minecraft:logs>.add(<item:${tag_log_minecraft}>);
 }
+
 // Slab
 var addingSlabMinecraft = [
 	"vinery:coarse_dirt_slab",
@@ -45,6 +47,7 @@ var addingSlabMinecraft = [
 for tag_slab_minecraft in addingSlabMinecraft{
 	<tag:items:minecraft:slabs>.add(<item:${tag_slab_minecraft}>);
 }
+
 // Sapling
 var addingSaplingMinecraft = [
 	"vinery:cherry_sapling",
@@ -53,6 +56,7 @@ var addingSaplingMinecraft = [
 for tag_sapling_minecraft in addingSaplingMinecraft{
 	<tag:items:minecraft:saplings>.add(<item:${tag_sapling_minecraft}>);
 }
+
 // Stair
 var addingStairMinecraft = [
 	"vinery:loam_stairs"
@@ -61,4 +65,4 @@ for tag_stair_minecraft in addingStairMinecraft{
 	<tag:items:minecraft:stairs>.add(<item:${tag_stair_minecraft}>);
 }
 
-println("End script/tag minecraft.");
+println("End script/tag/minecraft.");

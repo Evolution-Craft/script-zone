@@ -1,3 +1,15 @@
+/*
+ * This file is part of the Evolution Craft modpack.
+ *
+ * The author of this file is Millennium, using CraftTweaker mod code.
+ *
+ * CHANGELOG:
+ * v0.1 : Fix Issue.
+ */
+
+println("Start script/jei_info/alexs_mobs.");
+println("Script Priority Null.");
+
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
 
@@ -5,7 +17,6 @@ function i_alexsmobs(m_alexsmobs as IItemStack, s_alexsmobs as string) as void {
 	JEI.addDescription(m_alexsmobs, [s_alexsmobs]);	
 }
 
-// Alex's Mobs
 var s_alexsmobs = "Consult an Animal Dictionary for more information.";
 i_alexsmobs(<item:alexsmobs:acacia_blossom>, s_alexsmobs);
 i_alexsmobs(<item:alexsmobs:bear_fur>, s_alexsmobs);
@@ -60,3 +71,5 @@ i_alexsmobs(<item:alexsmobs:pocket_sand>, "Can be used as a longrange weapon, if
 i_alexsmobs(<item:alexsmobs:gustmaker>, "When given a redstone signal, sends a sand tornado in the direction it's facing.");
 i_alexsmobs(<item:alexsmobs:fedora>, "He's a semi-aquatic, egg-laying mammal of action!");
 i_alexsmobs(<item:alexsmobs:capsid>, "Can drop from Enderiophages and used to transport items. Consult an Animal Dictionary for more information.");
+
+println("End script/jei_info/alexs_mobs.");

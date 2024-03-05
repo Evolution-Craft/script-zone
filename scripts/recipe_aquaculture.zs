@@ -7,7 +7,7 @@
  * v0.1 : Fix Recipe.
  */
  
-println("Start script recipe_aquaculture");
+println("Start script recipe_aquaculture.");
 println("Script Priority Null.");
 
 import crafttweaker.api.item.ItemStack;

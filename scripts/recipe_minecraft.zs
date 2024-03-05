@@ -14,7 +14,7 @@
  * V0.8 : Code Compatting
  */
 
-println("Start script recipe_misc.");
+println("Start script recipe_minecraft.");
 println("Script Priority Null.");
 
 import crafttweaker.api.item.ItemStack;
@@ -46,8 +46,9 @@ var itemDyeMisc = [
 	"yellow",
 	"white"
 ];
+
 // Campfire
-campfire.addRecipe("campfire_dough_to_toast", <item:vinery:toast>, <tag:items:minecraft:dough>, 1.0, 200);
+campfire.addRecipe("vinery_campfire_dough_to_toast", <item:vinery:toast>, <tag:items:minecraft:dough>, 1.0, 200);
 
 // Composter
 var composterAddItem = {
@@ -335,4 +336,4 @@ craftingTable.addShaped("pack_expert_crafting_stonecutter", <item:minecraft:ston
 	[<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>]
 ]);
 
-println("End script recipe_misc.");
+println("End script recipe_minecraft.");

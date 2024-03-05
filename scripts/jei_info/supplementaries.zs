@@ -1,3 +1,15 @@
+/*
+ * This file is part of the Evolution Craft modpack.
+ *
+ * The author of this file is Millennium, using CraftTweaker mod code.
+ *
+ * CHANGELOG:
+ * v0.1 : Fix Issue.
+ */
+
+println("Start script/jei_info/supplementaries.");
+println("Script Priority Null.");
+
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
 
@@ -81,3 +93,5 @@ s_supplementaries = "Flax can spawn on sand next to water on hot biomes, like be
 i_supplementaries(<item:supplementaries:wild_flax>, s_supplementaries);
 i_supplementaries(<item:supplementaries:flax>, s_supplementaries);
 i_supplementaries(<item:supplementaries:flax_seeds>, s_supplementaries);
+
+println("End script/jei_info/supplementaries.");

@@ -8,7 +8,7 @@
  * v0.2 : Adding Missing Log Recipe.
  */
  
-println("Start script recipe_alchemistry");
+println("Start script recipe_alchemistry.");
 println("Script Priority Null.");
 
 import crafttweaker.api.item.ItemStack;

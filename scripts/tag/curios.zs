@@ -7,21 +7,20 @@
  * v0.1 : Fix Elytra uncategorized.
  */
 
-println("Start script/tag curios.");
+println("Start script/tag/curios.");
 println("Script Priority Null.");
-
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
 // Back
 var addingBackCurios = [
-    "alexsmobs:tarantula_hawk_elytra",
-	"tconstruct:slime_chestplate",
-	"mekanism:hdpe_elytra"
+	"alexsmobs:tarantula_hawk_elytra",
+	"mekanism:hdpe_elytra",
+	"tconstruct:slime_chestplate"
 ];
 for tag_back_curios in addingBackCurios{
 	<tag:items:curios:back>.add(<item:${tag_back_curios}>);
 }
 
-println("End script/tag curios.");
+println("End script/tag/curios.");

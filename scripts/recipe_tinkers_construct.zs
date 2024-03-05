@@ -10,8 +10,4 @@
 println("Start script recipe_tinkers_construct.");
 println("Script Priority Null.");
 
-import crafttweaker.api.item.ItemStack;
-import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
-
 println("End script recipe_tinkers_construct.");

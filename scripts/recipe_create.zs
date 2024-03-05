@@ -7,7 +7,7 @@
  * v0.1 : Adding Missing Recipe.
  */
  
-println("Start script recipe_create");
+println("Start script recipe_create.");
 println("Script Priority Null.");
 
 import crafttweaker.api.item.ItemStack;

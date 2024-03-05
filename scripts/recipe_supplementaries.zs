@@ -9,6 +9,9 @@
  * v0.3 : Fix recipe glass pane bug.
  */
 
+println("Start script recipe_supplementaries.");
+println("Script Priority Null.");
+
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
@@ -22,22 +25,22 @@ craftingTable.addShaped("supplementaries_soap/carpet", <item:minecraft:white_car
 ]);
 craftingTable.removeByName("supplementaries:soap/sleeping_bag");
 var addingConforts = [
-    "sleeping_bag_black",
-    "sleeping_bag_blue",
-    "sleeping_bag_brown",
-    "sleeping_bag_cyan",
-    "sleeping_bag_gray",
-    "sleeping_bag_green",
-    "sleeping_bag_light_blue",
-    "sleeping_bag_light_gray",
-    "sleeping_bag_lime",
-    "sleeping_bag_magenta",
-    "sleeping_bag_orange",
-    "sleeping_bag_pink",
-    "sleeping_bag_purple",
-    "sleeping_bag_red",
-    "sleeping_bag_white",
-    "sleeping_bag_yellow"
+	"sleeping_bag_black",
+	"sleeping_bag_blue",
+	"sleeping_bag_brown",
+	"sleeping_bag_cyan",
+	"sleeping_bag_gray",
+	"sleeping_bag_green",
+	"sleeping_bag_light_blue",
+	"sleeping_bag_light_gray",
+	"sleeping_bag_lime",
+	"sleeping_bag_magenta",
+	"sleeping_bag_orange",
+	"sleeping_bag_pink",
+	"sleeping_bag_purple",
+	"sleeping_bag_red",
+	"sleeping_bag_white",
+	"sleeping_bag_yellow"
 ];
 for tag_conforts in addingConforts{
 	<tag:items:comforts:sleeping_bag>.add(<item:comforts:${tag_conforts}>);
@@ -52,3 +55,5 @@ craftingTable.addShaped("supplementaries_soap/glass_pane", <item:minecraft:glass
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
+
+println("End script recipe_supplementaries.");

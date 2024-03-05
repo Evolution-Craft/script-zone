@@ -9,7 +9,7 @@
 
 #priority 995
 
-println("Start script/tag natures_aura.");
+println("Start script/tag/natures_aura.");
 println("Script Priority 995.");
 
 import crafttweaker.api.item.ItemStack;
@@ -24,4 +24,4 @@ for tag_ancient_logs_natures_aura in addingAnciantLogsNaturesAura{
 	<tag:items:naturesaura:ancient_logs>.add(<item:${tag_ancient_logs_natures_aura}>);
 }
 
-println("End script/tag natures_aura.");
+println("End script/tag/natures_aura.");

@@ -7,7 +7,7 @@
  * v0.1 : Fix Recipe.
  */
  
-println("Start script recipe_bamboo_everything");
+println("Start script recipe_bamboo_everything.");
 println("Script Priority Null.");
 
 import crafttweaker.api.item.ItemStack;

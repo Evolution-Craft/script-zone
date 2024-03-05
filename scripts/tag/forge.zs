@@ -23,6 +23,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 // Berries
 <tag:items:forge:berries>.add(<item:vinery:cherry>);
+
 // Bread
 var addingBreadForge = [
 	"corn_delight:cornbread",
@@ -33,6 +34,7 @@ var addingBreadForge = [
 for tag_bread_forge in addingBreadForge{
 	<tag:items:forge:bread>.add(<item:${tag_bread_forge}>);
 }
+
 // Cheeses
 var addingCheesesForge = [
 	"beyond_earth:cheese",
@@ -41,12 +43,16 @@ var addingCheesesForge = [
 for tag_cheeses_forge in addingCheesesForge{
 	<tag:items:forge:cheeses>.add(<item:${tag_cheeses_forge}>);
 }
+
 // Cherries
 <tag:items:forge:cherries>.add(<item:vinery:cherry>);
+
 // Cinnamon
 <tag:items:forge:cinnamon>.add(<item:simplytea:tea_stick>);
+
 // Crabs
 <tag:items:forge:crabs>.add(<item:crabbersdelight:crab>);
+
 // Crops
 var addingCropsForge = [
 	"vinery:jungle_grapes_red",
@@ -61,6 +67,7 @@ var addingCropsForge = [
 for tag_crops_forge in addingCropsForge{
 	<tag:items:forge:crops>.add(<item:${tag_crops_forge}>);
 }
+
 // Crops Grape
 var addingCropsGrapeForge = [
 	"vinery:jungle_grapes_red",
@@ -75,6 +82,7 @@ var addingCropsGrapeForge = [
 for tag_crops_grape_forge in addingCropsGrapeForge{
 	<tag:items:forge:crops/grape>.add(<item:${tag_crops_grape_forge}>);
 }
+
 // Crops Chorus Petal
 var addingCropsChorusPetalForge = [
 	"simplytea:chorus_petal",
@@ -83,8 +91,10 @@ var addingCropsChorusPetalForge = [
 for tag_crops_chorus_petal_forge in addingCropsChorusPetalForge{
 	<tag:items:forge:crops/chorus_petal>.add(<item:${tag_crops_chorus_petal_forge}>);
 }
+
 // Crops Tea
 <tag:items:forge:crops/tea>.add(<item:croptopia:tea_leaves>);
+
 // Corundum
 var addingCorundumBlockForge = [
 	"quark:red_corundum",
@@ -123,6 +133,7 @@ var addingCorundumClusterForge = [
 for tag_corundum_cluster_forge in addingCorundumClusterForge{
 	<tag:items:forge:corundum/cluster>.add(<item:${tag_corundum_cluster_forge}>);
 }
+
 // Doughs
 var addingDoughsForge = [
 	"pneumaticcraft:sourdough",
@@ -131,6 +142,7 @@ var addingDoughsForge = [
 for tag_doughs_forge in addingDoughsForge{
 	<tag:items:forge:doughs>.add(<item:${tag_doughs_forge}>);
 }
+
 // Flour
 var addingFlourForge = [
 	"pneumaticcraft:wheat_flour",
@@ -139,6 +151,7 @@ var addingFlourForge = [
 for tag_flour_forge in addingFlourForge{
 	<tag:items:forge:flour>.add(<item:${tag_flour_forge}>);
 }
+
 // Frog Legs
 <tag:items:forge:frog_legs>.add(<item:aquaculture:frog_legs_raw>);
 // Fruit
@@ -159,6 +172,7 @@ var addingFruitForge = [
 for tag_fruit_forge in addingFruitForge{
 	<tag:items:forge:fruits>.add(<item:${tag_fruit_forge}>);
 }
+
 // Fruit Grape
 var addingFruitGrapeForge = [
 	"vinery:jungle_grapes_red",
@@ -174,6 +188,7 @@ for tag_fruit_grape_forge in addingFruitGrapeForge{
 	<tag:items:forge:fruits/grape>.add(<item:${tag_fruit_grape_forge}>);
 	<tag:items:forge:grapes>.add(<item:${tag_fruit_grape_forge}>); // Temporary Fix
 }
+
 // Furnace
 var addingFurnacesForge = [
 	"minecraft:furnace",
@@ -183,9 +198,11 @@ var addingFurnacesForge = [
 for tag_furnaces_forge in addingFurnacesForge{
 	<tag:items:forge:furnaces>.add(<item:${tag_furnaces_forge}>);
 }
+
 // Material
 <tag:items:forge:raw_materials>.add(<item:galosphere:raw_silver>);
 <tag:items:forge:raw_materials/silver>.add(<item:galosphere:raw_silver>);
+
 // Jams
 var addingJamsForge = [
 	"vinery:apple_jam",
@@ -196,11 +213,14 @@ var addingJamsForge = [
 for tag_jams_forge in addingJamsForge{
 	<tag:items:forge:jams>.add(<item:${tag_jams_forge}>);
 }
+
 // Ore
-//<tag:items:forge:ores>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Remove for Bug
-//<tag:items:forge:ores/iron>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Remove for Bug
+//<tag:items:forge:ores>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Removed for Bug
+//<tag:items:forge:ores/iron>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Removed for Bug
+
 // Salt
 <tag:items:forge:dusts/salt>.add(<item:salt:salt>);
+
 // Sapling
 var addingSaplingForge = [
 	"vinery:cherry_sapling",
@@ -209,6 +229,7 @@ var addingSaplingForge = [
 for tag_sapling_forge in addingSaplingForge{
 	<tag:items:forge:sapling>.add(<item:${tag_sapling_forge}>);
 }
+
 // Seed
 var addingSeedForge = [
 	"enlightened_end:elevibloom_seeds",
@@ -225,6 +246,7 @@ for tag_seed_forge in addingSeedForge{
 	<tag:items:forge:seeds>.add(<item:${tag_seed_forge}>);
 	<tag:items:forge:seeds/grape>.add(<item:${tag_seed_forge}>); // Temporary Fix
 }
+
 // Stripped Log
 var addingStrippedLogForge = [
 	"botania:glimmering_stripped_dreamwood_log",
@@ -242,6 +264,7 @@ var addingStrippedLogForge = [
 for tag_stripped_log_forge in addingStrippedLogForge{
 	<tag:items:forge:stripped_logs>.add(<item:${tag_stripped_log_forge}>);
 }
+
 // Stripped Wood
 var addingStrippedWoodForge = [
 	"botania:glimmering_stripped_dreamwood",
@@ -258,20 +281,22 @@ var addingStrippedWoodForge = [
 for tag_stripped_wood_forge in addingStrippedWoodForge{
 	<tag:items:forge:stripped_wood>.add(<item:${tag_stripped_wood_forge}>);
 }
+
 // Tools Knives
 var addingToolsKnivesForge = [
-	"aquaculture:wooden_fillet_knife",
+	/*"aquaculture:wooden_fillet_knife",
 	"aquaculture:stone_fillet_knife",
 	"aquaculture:iron_fillet_knife",
 	"aquaculture:gold_fillet_knife",
 	"aquaculture:diamond_fillet_knife",
 	"aquaculture:neptunium_fillet_knife",
-	"enlightened_end:adamantite_knife",
+	"enlightened_end:adamantite_knife",*/
 	"fiow:flint_knife"
 ];
 for tag_tools_knives_forge in addingToolsKnivesForge{
 	<tag:items:forge:tools/knives>.add(<item:${tag_tools_knives_forge}>);
 }
+
 // Tuna
 <tag:items:forge:tuna>.add(<item:aquaculture:tuna>);
 

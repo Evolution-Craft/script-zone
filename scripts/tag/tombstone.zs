@@ -7,7 +7,7 @@
  * v0.1 : Fix Missing Seeds.
  */
 
-println("Start script/tag tombstone.");
+println("Start script/tag/tombstone.");
 println("Script Priority Null.");
 
 import crafttweaker.api.item.ItemStack;
@@ -29,4 +29,4 @@ for tag_seeds_tombstone in addingSeedsTombstone{
 	<tag:items:tombstone:seeds>.add(<item:${tag_seeds_tombstone}>);
 }
 
-println("End script/tag tombstone.");
+println("End script/tag/tombstone.");
