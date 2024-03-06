@@ -205,7 +205,7 @@ blastFurnace.addRecipe("silt_in_bfurnace", <item:minecraft:glass>, <item:inferna
 blastFurnace.addRecipe("dirty_glass_in_bfurnace", <item:minecraft:glass>, <item:quark:dirty_glass>, 0.1, 100);
 
 // Furnace
-for furnace_concrete_dye_add_item in itemDyeMisc{
+for furnace_concrete_dye_add_item in itemDyeMisc {
 	furnace.addRecipe("minecraft_" + furnace_concrete_dye_add_item + "_concrete_in_furnace", <item:minecraft:${furnace_concrete_dye_add_item}_concrete_powder>, <item:minecraft:${furnace_concrete_dye_add_item}_concrete>, 0.1, 200);
 }
 furnace.addRecipe("minecraft_beetroot_in_furnace", <item:minecraft:sugar> * 2, <item:minecraft:beetroot>, 0.1, 60);
@@ -215,7 +215,7 @@ furnace.addRecipe("twilightforest_brown_thorns_in_furnace", <item:twilightforest
 furnace.addRecipe("vinery_dought_in_furnace", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 200);
 
 // Stone Cutter
-for adding_concrete_dye_stone_cutter_color in itemDyeMisc{
+for adding_concrete_dye_stone_cutter_color in itemDyeMisc {
 	stoneCutter.addRecipe(adding_concrete_dye_stone_cutter_color + "_concrete_fence_stonecutting", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
 	stoneCutter.addRecipe(adding_concrete_dye_stone_cutter_color + "_concrete_fence_gate_stonecutting", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence_gate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
 	stoneCutter.addRecipe(adding_concrete_dye_stone_cutter_color + "_concrete_pressure_plate_stonecutting", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_pressure_plate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);

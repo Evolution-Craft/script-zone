@@ -121,6 +121,8 @@ var removeJeiIngradient = [
 	"ftbquests:screen_5",
 	"ftbquests:screen_7",
 	"ftbquests:stage_barrier",
+	// Galosphere
+	"galosphere:silver_bomb",
 	// Immersive Engineering
 	"immersiveengineering:armor_piercing",
 	"immersiveengineering:buckshot",
@@ -222,10 +224,10 @@ var removeJeiIngradient = [
 	"pneumaticcraft:creative_upgrade",
 	// Powah
 	"powah:energy_cell_creative",
-	"quark:obsidian_pressure_plate",
 	// Quark
 	"quark:bamboo_block",
 	"quark:iron_ladder",
+	"quark:obsidian_pressure_plate",
 	// Refined Storage
 	"refinedstorage:black_creative_controller",
 	"refinedstorage:blue_creative_controller",

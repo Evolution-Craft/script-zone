@@ -159,6 +159,8 @@ var removeRecipeByName = [
 	"ftbquests:screen_3",
 	"ftbquests:screen_5",
 	"ftbquests:screen_7",
+	// Galosphere
+	"galosphere:silver_bomb",
 	// Hostile Neural Networks
 	"hostilenetworks:living_matter/extraterrestrial/nether_star",
 	// Immersive Engineering
@@ -564,6 +566,12 @@ for remove_industrial_foregoing_recipe_by_name in removeRecipeByNameIndustrialFo
 
 // Lazier
 <recipetype:lazierae2:etcher>.removeByName("lazierae2:etcher/universal_press");
+
+// Pneumatic Craft
+<recipetype:pneumaticcraft:amadron>.removeAll();
+
+// Twilight Forest
+<recipetype:twilightforest:uncrafting>.removeAll();
 
 // Thermal Series
 var removeMultiservoPressRecipeByName = [
