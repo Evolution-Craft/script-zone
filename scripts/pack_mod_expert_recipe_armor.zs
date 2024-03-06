@@ -158,19 +158,40 @@ if (pack_mode_armor_enable == true) {
 		[<item:minecraft:leather>, <item:woodarmor:stone_chestplate>.anyDamage(), <item:minecraft:leather>],
 		[<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>]
 	], shapedArmorVarFunction);
-		craftingTable.removeByName("minecraft:leather_leggings");
+	craftingTable.removeByName("minecraft:leather_leggings");
 	craftingTable.addShaped("pack_expert_crafting_armor/leather_leggings", <item:minecraft:leather_leggings>, [
 		[<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>],
 		[<item:minecraft:leather>, <item:woodarmor:stone_leggings>.anyDamage(), <item:minecraft:leather>],
 		[<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>]
 	], shapedArmorVarFunction);
-		craftingTable.removeByName("minecraft:leather_boots");
+	craftingTable.removeByName("minecraft:leather_boots");
 	craftingTable.addShaped("pack_expert_crafting_armor/leather_boots", <item:minecraft:leather_boots>, [
 		[<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>],
 		[<item:minecraft:leather>, <item:woodarmor:stone_boots>.anyDamage(), <item:minecraft:leather>],
 		[<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>]
 	], shapedArmorVarFunction);
+	craftingTable.addShaped("pack_expert_crafting_armor/silver_helmet", <item:galosphere:sterling_helmet>, [
+		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>],
+		[<tag:items:forge:ingots/silver>, <item:minecraft:leather_helmet>.anyDamage(), <tag:items:forge:ingots/silver>],
+		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>]
+	], shapedArmorVarFunction);
+	craftingTable.addShaped("pack_expert_crafting_armor/silver_chestplate", <item:galosphere:sterling_chestplate>, [
+		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>],
+		[<tag:items:forge:ingots/silver>, <item:minecraft:leather_chestplate>.anyDamage(), <tag:items:forge:ingots/silver>],
+		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>]
+	], shapedArmorVarFunction);
+	craftingTable.addShaped("pack_expert_crafting_armor/silver_leggings", <item:galosphere:sterling_leggings>, [
+		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>],
+		[<tag:items:forge:ingots/silver>, <item:minecraft:leather_leggings>.anyDamage(), <tag:items:forge:ingots/silver>],
+		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>]
+	], shapedArmorVarFunction);
+	craftingTable.addShaped("pack_expert_crafting_armor/silver_boots", <item:galosphere:sterling_boots>, [
+		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>],
+		[<tag:items:forge:ingots/silver>, <item:minecraft:leather_boots>.anyDamage(), <tag:items:forge:ingots/silver>],
+		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>]
+	], shapedArmorVarFunction);
 
+/********************************************************************************************************************************/
 
 	craftingTable.addShaped("minecraft_chainmail_helmet", <item:minecraft:chainmail_helmet>, [
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],

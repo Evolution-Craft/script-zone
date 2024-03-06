@@ -1,6 +1,12 @@
 import crafttweaker.api.loot.modifier.CommonLootModifiers;
 
 CommonLootModifiers.removeAll(
+	// Cyclic
+	<item:cyclic:copper_axe>,
+	<item:cyclic:copper_hoe>,
+	<item:cyclic:copper_pickaxe>,
+	<item:cyclic:copper_shovel>,
+	<item:cyclic:copper_sword>,
 	// Galosphere
 	<item:galosphere:silver_bomb>,
 	// Immersive Engineering

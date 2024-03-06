@@ -109,4 +109,26 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 <recipetype:thermal:insolator_catalyst>.addCatalyst("insolator_catalyst_indutrialforegoing_fertilizer", <item:industrialforegoing:fertilizer>, 1.25, 1.25, 0.6, 0.1, 0.5);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("insolator_catalyst_waterstrainer_fertilizer", <item:waterstrainer:fertilizer>, 1.5, 1.5, 0.8, 0.1, 0.5);
 
+// Smelter Recycle
+<recipetype:thermal:smelter_recycle>.addJsonRecipe("thermal_machines/smelter/smelter_silver_armor", {
+	"ingredient": {
+		"tag": "forge:armor/silver"
+	},
+	"result": [{
+		"item": "thermal:silver_ingot",
+		"count": 3
+	}],
+	"experience": 0.9
+});
+<recipetype:thermal:smelter_recycle>.addJsonRecipe("thermal_machines/smelter/smelter_copper_armor", {
+	"ingredient": {
+		"tag": "forge:armor/copper"
+	},
+	"result": [{
+		"item": "minecraft:copper_ingot",
+		"count": 3
+	}],
+	"experience": 0.9
+});
+
 println("End script recipe_thermal_series.");

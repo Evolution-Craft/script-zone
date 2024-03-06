@@ -23,6 +23,12 @@ craftingTable.addShaped("cyclic_rotation_wand", <item:cyclic:rotation_wand>, [
 	[<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:vinery:loam>],
 	[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
+craftingTable.removeByName("cyclic:breaker");
+craftingTable.addShaped("cyclic_breaker", <item:cyclic:breaker>, [
+	[<item:minecraft:tripwire_hook>, <tag:items:forge:nuggets/copper>, <item:minecraft:tripwire_hook>],
+	[<item:exlinecopperequipment:copper_shovel>, <item:minecraft:dispenser>, <item:exlinecopperequipment:copper_pick>],
+	[<item:minecraft:mossy_cobblestone_slab>, <item:minecraft:mossy_cobblestone_slab>, <item:minecraft:mossy_cobblestone_slab>]
+]);
 
 // Crusher
 <recipetype:cyclic:crusher>.removeByName("cyclic:crusher/chest");

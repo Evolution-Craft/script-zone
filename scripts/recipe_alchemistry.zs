@@ -239,4 +239,46 @@ for addingCompactorRecipeID, addingCompactorRecipeName in addingCompactorRecipe 
 	});
 }
 
+// Dissolver
+<recipetype:alchemistry:dissolver>.addJsonRecipe("alchemistry_dissolver/copper_horse_armor", {
+	"group": "alchemistry:dissolver",
+	"input": {
+		"ingredient": {
+			"item": "exlinecopperequipment:copper_horse_armor"
+		},
+		"count": 1
+	},
+	"output": {
+		"rolls": 1,
+		"weighted": false,
+		"groups": [{
+			"probability": 100.0,
+			"results": [{
+				"item": "chemlib:copper",
+				"count": 64
+			}]
+		}]
+	}
+});
+<recipetype:alchemistry:dissolver>.addJsonRecipe("alchemistry_dissolver/silver_horse_armor", {
+	"group": "alchemistry:dissolver",
+	"input": {
+		"ingredient": {
+			"item": "galosphere:sterling_horse_armor"
+		},
+		"count": 1
+	},
+	"output": {
+		"rolls": 1,
+		"weighted": false,
+		"groups": [{
+			"probability": 100.0,
+			"results": [{
+				"item": "chemlib:silver",
+				"count": 64
+			}]
+		}]
+	}
+});
+
 println("End script recipe_alchemistry.");

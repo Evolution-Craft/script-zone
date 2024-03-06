@@ -191,28 +191,57 @@ for composterAddItemMaterial, composterAddItemValue in composterAddItem {
 }
 
 // Blast Furnace
-blastFurnace.addRecipe("raw_iron_block_in_bfurnace", <item:minecraft:iron_block>, <item:minecraft:raw_iron_block>, 4.2, 200);
-blastFurnace.addRecipe("raw_copper_block_in_bfurnace", <item:minecraft:copper_block>, <item:minecraft:raw_copper_block>, 4.2, 200);
-blastFurnace.addRecipe("raw_gold_block_in_bfurnace", <item:minecraft:gold_block>, <item:minecraft:raw_gold_block>, 6.0, 200);
-blastFurnace.addRecipe("raw_cloggrum_block_in_bfurnace", <item:undergarden:cloggrum_block>, <item:undergarden:raw_cloggrum_block>, 6.0, 200);
-blastFurnace.addRecipe("raw_froststeel_block_in_bfurnace", <item:undergarden:froststeel_block>, <item:undergarden:raw_froststeel_block>, 6.0, 200);
-blastFurnace.addRecipe("raw_zinc_block_in_bfurnace", <item:create:zinc_block>, <item:create:raw_zinc_block>, 6.0, 200);
-blastFurnace.addRecipe("sand_in_bfurnace", <item:minecraft:glass>, <tag:items:minecraft:sand>, 0.1, 100);
-blastFurnace.addRecipe("cobblestone_in_bfurnace", <item:minecraft:stone>, <item:minecraft:cobblestone>, 0.1, 100);
-blastFurnace.addRecipe("cobbled_deepslate_in_bfurnace", <item:minecraft:deepslate>, <item:minecraft:cobbled_deepslate>, 0.1, 100);
-blastFurnace.addRecipe("stone_in_bfurnace", <item:minecraft:smooth_stone>, <item:minecraft:stone>, 0.1, 100);
-blastFurnace.addRecipe("silt_in_bfurnace", <item:minecraft:glass>, <item:infernalexp:silt>, 0.1, 100);
-blastFurnace.addRecipe("dirty_glass_in_bfurnace", <item:minecraft:glass>, <item:quark:dirty_glass>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/minecraft_raw_iron_block", <item:minecraft:iron_block>, <item:minecraft:raw_iron_block>, 4.2, 200);
+blastFurnace.addRecipe("blast_furnace/minecraft_raw_copper_block", <item:minecraft:copper_block>, <item:minecraft:raw_copper_block>, 4.2, 200);
+blastFurnace.addRecipe("blast_furnace/minecraft_raw_gold_block", <item:minecraft:gold_block>, <item:minecraft:raw_gold_block>, 6.0, 200);
+blastFurnace.addRecipe("blast_furnace/undergarden_raw_cloggrum_block", <item:undergarden:cloggrum_block>, <item:undergarden:raw_cloggrum_block>, 6.0, 200);
+blastFurnace.addRecipe("blast_furnace/undergarden_raw_froststeel_block", <item:undergarden:froststeel_block>, <item:undergarden:raw_froststeel_block>, 6.0, 200);
+blastFurnace.addRecipe("blast_furnace/create_raw_zinc_block", <item:create:zinc_block>, <item:create:raw_zinc_block>, 6.0, 200);
+blastFurnace.addRecipe("blast_furnace/minecraft_sand", <item:minecraft:glass>, <tag:items:minecraft:sand>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/minecraft_cobblestone", <item:minecraft:stone>, <item:minecraft:cobblestone>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/minecraft_cobbled_deepslate", <item:minecraft:deepslate>, <item:minecraft:cobbled_deepslate>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/minecraft_stone", <item:minecraft:smooth_stone>, <item:minecraft:stone>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/infernalexp_silt", <item:minecraft:glass>, <item:infernalexp:silt>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/quark_dirty_glass", <item:minecraft:glass>, <item:quark:dirty_glass>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_sterling_horse_armor", <item:thermal:silver_nugget>, <item:galosphere:sterling_horse_armor>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_sterling_helmet", <item:thermal:silver_nugget>, <item:galosphere:sterling_helmet>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_sterling_chestplate", <item:thermal:silver_nugget>, <item:galosphere:sterling_chestplate>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_sterling_leggings", <item:thermal:silver_nugget>, <item:galosphere:sterling_leggings>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_sterling_boots", <item:thermal:silver_nugget>, <item:galosphere:sterling_boots>, 0.1, 100);
+blastFurnace.removeByName("exlinecopperequipment:copper_horse_armor_blast");
+blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_horse_armor", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_horse_armor>, 0.1, 100);
+blastFurnace.removeByName("exlinecopperequipment:copper_helm_blast");
+blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_helmet", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_helmet>, 0.1, 100);
+blastFurnace.removeByName("exlinecopperequipment:copper_chest_blast");
+blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_chestplate", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_chestplate>, 0.1, 100);
+blastFurnace.removeByName("exlinecopperequipment:copper_leggs_blast");
+blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_leggings", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_leggings>, 0.1, 100);
+blastFurnace.removeByName("exlinecopperequipment:copper_boots_blast");
+blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 100);
 
 // Furnace
 for furnace_concrete_dye_add_item in itemDyeMisc {
-	furnace.addRecipe("minecraft_" + furnace_concrete_dye_add_item + "_concrete_in_furnace", <item:minecraft:${furnace_concrete_dye_add_item}_concrete_powder>, <item:minecraft:${furnace_concrete_dye_add_item}_concrete>, 0.1, 200);
+	furnace.addRecipe("furnace/minecraft_" + furnace_concrete_dye_add_item + "_concrete", <item:minecraft:${furnace_concrete_dye_add_item}_concrete_powder>, <item:minecraft:${furnace_concrete_dye_add_item}_concrete>, 0.1, 200);
 }
-furnace.addRecipe("minecraft_beetroot_in_furnace", <item:minecraft:sugar> * 2, <item:minecraft:beetroot>, 0.1, 60);
-furnace.addRecipe("minecraft_rotten_flesh_in_furnace", <item:minecraft:leather>, <item:minecraft:rotten_flesh> * 4, 0.4, 240);
-furnace.addRecipe("twilightforest_green_thorns_in_furnace", <item:twilightforest:burnt_thorns>, <item:twilightforest:green_thorns>, 0.4, 240);
-furnace.addRecipe("twilightforest_brown_thorns_in_furnace", <item:twilightforest:burnt_thorns>, <item:twilightforest:brown_thorns>, 0.4, 240);
-furnace.addRecipe("vinery_dought_in_furnace", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 200);
+furnace.addRecipe("furnace/minecraft_beetroot", <item:minecraft:sugar> * 2, <item:minecraft:beetroot>, 0.1, 60);
+furnace.addRecipe("furnace/minecraft_rotten_flesh", <item:minecraft:leather>, <item:minecraft:rotten_flesh> * 4, 0.4, 240);
+furnace.addRecipe("furnace/twilightforest_green_thorns", <item:twilightforest:burnt_thorns>, <item:twilightforest:green_thorns>, 0.4, 240);
+furnace.addRecipe("furnace/twilightforest_brown_thorns", <item:twilightforest:burnt_thorns>, <item:twilightforest:brown_thorns>, 0.4, 240);
+furnace.addRecipe("furnace/vinery_dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 200);
+furnace.addRecipe("furnace/galosphere_sterling_horse_armor", <item:thermal:silver_nugget>, <item:galosphere:sterling_horse_armor>, 0.1, 200);
+furnace.addRecipe("furnace/galosphere_sterling_helmet", <item:thermal:silver_nugget>, <item:galosphere:sterling_helmet>, 0.1, 200);
+furnace.addRecipe("furnace/galosphere_sterling_chestplate", <item:thermal:silver_nugget>, <item:galosphere:sterling_chestplate>, 0.1, 200);
+furnace.addRecipe("furnace/galosphere_sterling_leggings", <item:thermal:silver_nugget>, <item:galosphere:sterling_leggings>, 0.1, 200);
+furnace.addRecipe("furnace/galosphere_sterling_boots", <item:thermal:silver_nugget>, <item:galosphere:sterling_boots>, 0.1, 200);
+furnace.removeByName("exlinecopperequipment:copper_horse_armor_smelt");
+furnace.addRecipe("furnace/exlinecopperequipment_copper_horse_armor", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_horse_armor>, 0.1, 200);
+furnace.addRecipe("furnace/exlinecopperequipment_copper_helmet", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_helmet>, 0.1, 200);
+furnace.removeByName("exlinecopperequipment:copper_chest_smelt");
+furnace.addRecipe("furnace/exlinecopperequipment_copper_chestplate", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_chestplate>, 0.1, 200);
+furnace.removeByName("exlinecopperequipment:copper_leggs_smelt");
+furnace.addRecipe("furnace/exlinecopperequipment_copper_leggings", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_leggings>, 0.1, 200);
+furnace.removeByName("exlinecopperequipment:copper_boots_smelt");
+furnace.addRecipe("furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 200);
 
 // Stone Cutter
 for adding_concrete_dye_stone_cutter_color in itemDyeMisc {

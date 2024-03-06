@@ -82,9 +82,16 @@ craftingTable.addShaped("pack_expert_crafting_horse_armor/sterling_horse_armor",
 	[<item:galosphere:sterling_leggings>, <item:minecraft:air>, <item:galosphere:sterling_leggings>]
 ], shapedHorseArmorVarFunction);
 
+craftingTable.removeByName("exlinecopperequipment:copper_horse_armor_recipe");
+craftingTable.addShaped("pack_expert_crafting_horse_armor/copper_horse_armor", <item:exlinecopperequipment:copper_horse_armor>, [
+	[<item:minecraft:air>, <item:minecraft:air>, <item:exlinecopperequipment:copper_helmet>],
+	[<item:minecraft:copper_ingot>, <item:galosphere:sterling_horse_armor>.anyDamage(), <item:minecraft:copper_ingot>],
+	[<item:exlinecopperequipment:copper_leggings>, <item:minecraft:air>, <item:exlinecopperequipment:copper_leggings>]
+], shapedHorseArmorVarFunction);
+
 craftingTable.addShaped("pack_expert_crafting_horse_armor/iron_horse_armor", <item:minecraft:iron_horse_armor>, [
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:iron_helmet>],
-	[<item:minecraft:iron_ingot>, <item:galosphere:sterling_horse_armor>.anyDamage(), <item:minecraft:iron_ingot>],
+	[<item:minecraft:iron_ingot>, <item:exlinecopperequipment:copper_horse_armor>.anyDamage(), <item:minecraft:iron_ingot>],
 	[<item:minecraft:iron_leggings>, <item:minecraft:air>, <item:minecraft:iron_leggings>]
 ], shapedHorseArmorVarFunction);
 

@@ -21,6 +21,28 @@ println("Script Priority 997.");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Armor
+var addingArmorCopperForge = [
+	"exlinecopperequipment:copper_boots",
+	"exlinecopperequipment:copper_chestplate",
+	"exlinecopperequipment:copper_helmet",
+	"exlinecopperequipment:copper_leggings"
+];
+for tag_armor_copper_forge in addingArmorCopperForge{
+	<tag:items:forge:armor>.add(<item:${tag_armor_copper_forge}>);
+	<tag:items:forge:armor/copper>.add(<item:${tag_armor_copper_forge}>);
+}
+var addingArmorSilverForge = [
+	"galosphere:sterling_boots",
+	"galosphere:sterling_chestplate",
+	"galosphere:sterling_helmet",
+	"galosphere:sterling_leggings"
+];
+for tag_armor_silver_forge in addingArmorSilverForge{
+	<tag:items:forge:armor>.add(<item:${tag_armor_silver_forge}>);
+	<tag:items:forge:armor/silver>.add(<item:${tag_armor_silver_forge}>);
+}
+
 // Berries
 <tag:items:forge:berries>.add(<item:vinery:cherry>);
 
@@ -154,6 +176,7 @@ for tag_flour_forge in addingFlourForge{
 
 // Frog Legs
 <tag:items:forge:frog_legs>.add(<item:aquaculture:frog_legs_raw>);
+
 // Fruit
 var addingFruitForge = [
 	"ecologics:prickly_pear",
@@ -202,6 +225,10 @@ for tag_furnaces_forge in addingFurnacesForge{
 // Material
 <tag:items:forge:raw_materials>.add(<item:galosphere:raw_silver>);
 <tag:items:forge:raw_materials/silver>.add(<item:galosphere:raw_silver>);
+
+// Nugget
+<tag:items:forge:nuggets>.add(<item:exlinecopperequipment:copper_nugget>);
+<tag:items:forge:nuggets/copper>.add(<item:exlinecopperequipment:copper_nugget>);
 
 // Jams
 var addingJamsForge = [

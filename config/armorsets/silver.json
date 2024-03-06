@@ -1,27 +1,27 @@
 {
-  "armorSetName": "stone",
+  "armorSetName": "silver",
   "performanceMode": true,
   "head": {
-    "itemKey": "woodarmor:stone_helmet",
+    "itemKey": "galosphere:sterling_helmet",
     "mustBeEmpty": false
   },
   "chest": {
-    "itemKey": "woodarmor:stone_chestplate",
+    "itemKey": "galosphere:sterling_chestplate",
     "mustBeEmpty": false
   },
   "legs": {
-    "itemKey": "woodarmor:stone_leggings",
+    "itemKey": "galosphere:sterling_leggings",
     "mustBeEmpty": false
   },
   "boots": {
-    "itemKey": "woodarmor:stone_boots",
+    "itemKey": "galosphere:sterling_boots",
     "mustBeEmpty": false
   },
   "partialBonusRequiredAmount": 2,
   "partialSetBonuses": [
     {
       "type": "effect",
-      "name": "minecraft:slowness",
+      "name": "minecraft:night_vision",
       "value": 0.0,
       "interactionType": "self",
       "interactionDuration": 300,
@@ -32,8 +32,8 @@
   "fullSetBonuses": [
     {
       "type": "effect",
-      "name": "minecraft:strength",
-      "value": 0.0,
+      "name": "minecraft:luck",
+      "value": 1.0,
       "interactionType": "self",
       "interactionDuration": 300,
       "hideBonusDescription": false,
