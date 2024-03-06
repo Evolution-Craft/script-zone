@@ -1,0 +1,32 @@
+{
+  "armorSetName": "crimson",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "woodarmor:crimson_helmet",
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "woodarmor:crimson_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "woodarmor:crimson_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "woodarmor:crimson_boots",
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:fire_resistance",
+      "value": 1.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

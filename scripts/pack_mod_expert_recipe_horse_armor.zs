@@ -18,7 +18,6 @@
 println("Start script pack_mod_expert_recipe_horse_armor.");
 println("Script Priority Null.");
 
-import crafttweaker.api.entity.attribute.AttributeOperation;
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -27,7 +26,6 @@ import crafttweaker.api.recipe.SmithingRecipeManager;
 import crafttweaker.api.tag.manager.ITagManager;
 
 var shapedHorseArmorVarFunction as function(usualOut as IItemStack, inputs as IItemStack[][]) as IItemStack = (usualOut as IItemStack, inputs as IItemStack[][]) => {
-
 	var oldDamage = inputs[1][1].damage;
 	if oldDamage < 0 {
 		oldDamage = 0;

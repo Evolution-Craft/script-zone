@@ -1,0 +1,35 @@
+{
+  "armorSetName": "oak",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "woodarmor:oak_helmet",
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "woodarmor:oak_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "woodarmor:oak_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "woodarmor:oak_boots",
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "value": 2.0,
+      "modifierUUID": "d5a7dc88-9405-4398-b1e5-250b4c6dd218",
+      "description": "+1 hearts",
+      "attributeOperation": 0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

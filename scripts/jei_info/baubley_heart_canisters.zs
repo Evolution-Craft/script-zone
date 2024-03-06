@@ -4,7 +4,7 @@
  * The author of this file is Millennium, using CraftTweaker mod code.
  *
  * CHANGELOG:
- * v0.1 : Fix Issue.
+ * v0.1 : First Issue.
  */
 
 println("Start script/jei_info/baubley_heart_canisters.");
