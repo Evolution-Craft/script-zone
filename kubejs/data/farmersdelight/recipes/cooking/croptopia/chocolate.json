@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "croptopia:butter"
+    }
+  ],
+  "result": {
+    "item": "croptopia:chocolate",
+    "count": 4
+  },
+  "cookingtime": 80,
+  "experience": 1.0
+}

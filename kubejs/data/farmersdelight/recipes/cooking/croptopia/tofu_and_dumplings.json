@@ -1,0 +1,24 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:doughs"
+    },
+    {
+      "tag": "forge:chile_peppers"
+    },
+    {
+      "tag": "forge:tofu"
+    }
+  ],
+  "result": {
+    "item": "croptopia:tofu_and_dumplings",
+    "count": 1
+  },
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 80,
+  "experience": 1.0
+}

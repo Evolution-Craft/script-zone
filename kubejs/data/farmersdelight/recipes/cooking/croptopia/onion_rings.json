@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:flour"
+    },
+    {
+      "item": "croptopia:olive_oil"
+    },
+    {
+      "tag": "forge:onions"
+    },
+    {
+      "tag": "forge:salts"
+    }
+  ],
+  "result": {
+    "item": "croptopia:onion_rings",
+    "count": 1
+  },
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 80,
+  "experience": 1.0
+}

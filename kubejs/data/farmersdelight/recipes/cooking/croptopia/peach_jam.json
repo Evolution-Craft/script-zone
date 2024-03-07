@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:peaches"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "croptopia:peach_jam",
+    "count": 1
+  },
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "cookingtime": 80,
+  "experience": 1.0
+}

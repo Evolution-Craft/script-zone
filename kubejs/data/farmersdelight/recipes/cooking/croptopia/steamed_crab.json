@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:water_bottles"
+    },
+    {
+      "tag": "forge:crabs"
+    }
+  ],
+  "result": {
+    "item": "croptopia:steamed_crab",
+    "count": 1
+  },
+  "cookingtime": 80,
+  "experience": 1.0
+}
