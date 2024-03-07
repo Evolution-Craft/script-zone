@@ -18,7 +18,7 @@ function i_quark(m_quark as IItemStack, s_quark as string) as void {
 }
 
 // Shard
-var s_quark = "Glass Shards drop from the respective block of glass when broken without silk touch.";
+val s_quark = "Glass Shards drop from the respective block of glass when broken without silk touch.";
 i_quark(<item:quark:clear_shard>, s_quark);
 i_quark(<item:quark:dirty_shard>, s_quark);
 i_quark(<item:quark:white_shard>, s_quark);

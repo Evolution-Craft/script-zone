@@ -24,30 +24,35 @@ if (pack_mode_hopper_enable == true) {
 		[<item:minecraft:brick>, <item:woodenhopper:wooden_hopper>, <item:minecraft:brick>],
 		[<item:minecraft:air>, <item:minecraft:brick>]
 	]);
+
 	craftingTable.removeByName("minecraft:hopper");
 	craftingTable.addShaped("pack_expert_crafting_hopper/hopper", <item:minecraft:hopper>, [
 		[<item:minecraft:iron_ingot>, <item:minecraft:air>, <item:minecraft:iron_ingot>],
 		[<item:minecraft:iron_ingot>, <item:brickhopper:brick_hopper>, <item:minecraft:iron_ingot>],
 		[<item:minecraft:air>, <item:minecraft:iron_ingot>]
 	]);
+
 	craftingTable.removeByName("cyclic:hopper_fluid");
 	craftingTable.addShaped("pack_expert_crafting_hopper/hopper_fluid", <item:cyclic:hopper_fluid>, [
 		[<item:minecraft:brick>, <item:minecraft:bucket>, <item:minecraft:brick>],
 		[<item:minecraft:brick>, <item:minecraft:hopper>, <item:minecraft:brick>],
 		[<item:minecraft:air>, <item:minecraft:brick>]
 	]);
+
 	craftingTable.removeByName("speedyhoppers:speedyhopper_mk1");
 	craftingTable.addShaped("pack_expert_crafting_hopper/speedyhopper_mk1", <item:speedyhoppers:speedyhopper_mk1>, [
 		[<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>],
 		[<item:minecraft:iron_ingot>, <item:minecraft:hopper>, <item:minecraft:iron_ingot>],
 		[<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]
 	]);
+
 	craftingTable.removeByName("speedyhoppers:speedyhopper_mk2");
 	craftingTable.addShaped("pack_expert_crafting_hopper/speedyhopper_mk2", <item:speedyhoppers:speedyhopper_mk2>, [
 		[<item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>],
 		[<item:minecraft:gold_ingot>, <item:speedyhoppers:speedyhopper_mk1>, <item:minecraft:gold_ingot>],
 		[<item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>]
 	]);
+
 	craftingTable.removeByName("speedyhoppers:speedyhopper_mk3");
 	craftingTable.addShaped("pack_expert_crafting_hopper/speedyhopper_mk3", <item:speedyhoppers:speedyhopper_mk3>, [
 		[<item:minecraft:diamond>, <item:minecraft:diamond>, <item:minecraft:diamond>],

@@ -1,0 +1,50 @@
+{
+  "armorSetName": "copper",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "exlinecopperequipment:copper_helmet",
+	"mixAndMatch": [
+      "create:copper_diving_helmet"
+    ],
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "exlinecopperequipment:copper_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "exlinecopperequipment:copper_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "exlinecopperequipment:copper_boots",
+	"mixAndMatch": [
+      "create:copper_diving_boots"
+    ],
+    "mustBeEmpty": false
+  },
+  "partialBonusRequiredAmount": 2,
+  "partialSetBonuses": [
+    {
+      "type": "effect",
+      "name": "alexsmobs:poison_resistance",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:resistance",
+      "value": 1.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

@@ -11,6 +11,7 @@
  * v0.5 : Move Salt Tag on this Script.
  * v0.6 : Add Missing Tags.
  * v0.7 : Remove Partinal temorary Fix.
+ * v0.8 : Add Armors Tags.
  */
 
 #priority 997
@@ -41,6 +42,73 @@ var addingArmorSilverForge = [
 for tag_armor_silver_forge in addingArmorSilverForge{
 	<tag:items:forge:armor>.add(<item:${tag_armor_silver_forge}>);
 	<tag:items:forge:armor/silver>.add(<item:${tag_armor_silver_forge}>);
+}
+var addingArmorWoodForge = [
+	"woodarmor:oak",
+	"woodarmor:birch",
+	"woodarmor:jungle",
+	"woodarmor:acacia",
+	"woodarmor:dark_oak",
+	"woodarmor:spruce",
+	"woodarmor:warped",
+	"woodarmor:crimson"
+];
+for tag_armor_wood_forge in addingArmorWoodForge {
+	<tag:items:forge:armor>.add(<item:${tag_armor_wood_forge}_helmet>);
+	<tag:items:forge:armor>.add(<item:${tag_armor_wood_forge}_chestplate>);
+	<tag:items:forge:armor>.add(<item:${tag_armor_wood_forge}_leggings>);
+	<tag:items:forge:armor>.add(<item:${tag_armor_wood_forge}_boots>);
+	if (tag_armor_wood_forge == "oak") {
+		<tag:items:forge:armor/oak>.add(<item:${tag_armor_wood_forge}_helmet>);
+		<tag:items:forge:armor/oak>.add(<item:${tag_armor_wood_forge}_chestplate>);
+		<tag:items:forge:armor/oak>.add(<item:${tag_armor_wood_forge}_leggings>);
+		<tag:items:forge:armor/oak>.add(<item:${tag_armor_wood_forge}_boots>);
+	} else if (tag_armor_wood_forge == "birch") {
+		<tag:items:forge:armor/birch>.add(<item:${tag_armor_wood_forge}_helmet>);
+		<tag:items:forge:armor/birch>.add(<item:${tag_armor_wood_forge}_chestplate>);
+		<tag:items:forge:armor/birch>.add(<item:${tag_armor_wood_forge}_leggings>);
+		<tag:items:forge:armor/birch>.add(<item:${tag_armor_wood_forge}_boots>);
+	} else if (tag_armor_wood_forge == "jungle") {
+		<tag:items:forge:armor/jungle>.add(<item:${tag_armor_wood_forge}_helmet>);
+		<tag:items:forge:armor/jungle>.add(<item:${tag_armor_wood_forge}_chestplate>);
+		<tag:items:forge:armor/jungle>.add(<item:${tag_armor_wood_forge}_leggings>);
+		<tag:items:forge:armor/jungle>.add(<item:${tag_armor_wood_forge}_boots>);
+	} else if (tag_armor_wood_forge == "acacia") {
+		<tag:items:forge:armor/acacia>.add(<item:${tag_armor_wood_forge}_helmet>);
+		<tag:items:forge:armor/acacia>.add(<item:${tag_armor_wood_forge}_chestplate>);
+		<tag:items:forge:armor/acacia>.add(<item:${tag_armor_wood_forge}_leggings>);
+		<tag:items:forge:armor/acacia>.add(<item:${tag_armor_wood_forge}_boots>);
+	} else if (tag_armor_wood_forge == "dark_oak") {
+		<tag:items:forge:armor/dark_oak>.add(<item:${tag_armor_wood_forge}_helmet>);
+		<tag:items:forge:armor/dark_oak>.add(<item:${tag_armor_wood_forge}_chestplate>);
+		<tag:items:forge:armor/dark_oak>.add(<item:${tag_armor_wood_forge}_leggings>);
+		<tag:items:forge:armor/dark_oak>.add(<item:${tag_armor_wood_forge}_boots>);
+	} else if (tag_armor_wood_forge == "spruce") {
+		<tag:items:forge:armor/spruce>.add(<item:${tag_armor_wood_forge}_helmet>);
+		<tag:items:forge:armor/spruce>.add(<item:${tag_armor_wood_forge}_chestplate>);
+		<tag:items:forge:armor/spruce>.add(<item:${tag_armor_wood_forge}_leggings>);
+		<tag:items:forge:armor/spruce>.add(<item:${tag_armor_wood_forge}_boots>);
+	} else if (tag_armor_wood_forge == "warped") {
+		<tag:items:forge:armor/warped>.add(<item:${tag_armor_wood_forge}_helmet>);
+		<tag:items:forge:armor/warped>.add(<item:${tag_armor_wood_forge}_chestplate>);
+		<tag:items:forge:armor/warped>.add(<item:${tag_armor_wood_forge}_leggings>);
+		<tag:items:forge:armor/warped>.add(<item:${tag_armor_wood_forge}_boots>);
+	} else {
+		<tag:items:forge:armor/crimson>.add(<item:${tag_armor_wood_forge}_helmet>);
+		<tag:items:forge:armor/crimson>.add(<item:${tag_armor_wood_forge}_chestplate>);
+		<tag:items:forge:armor/crimson>.add(<item:${tag_armor_wood_forge}_leggings>);
+		<tag:items:forge:armor/crimson>.add(<item:${tag_armor_wood_forge}_boots>);
+	}
+}
+var addingArmorStoneForge = [
+	"woodarmor:stone_boots",
+	"woodarmor:stone_chestplate",
+	"woodarmor:stone_helmet",
+	"woodarmor:stone_leggings"
+];
+for tag_armor_stone_forge in addingArmorStoneForge{
+	<tag:items:forge:armor>.add(<item:${tag_armor_stone_forge}>);
+	<tag:items:forge:armor/stone>.add(<item:${tag_armor_stone_forge}>);
 }
 
 // Berries

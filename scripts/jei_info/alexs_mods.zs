@@ -17,7 +17,7 @@ function i_alexsmobs(m_alexsmobs as IItemStack, s_alexsmobs as string) as void {
 	JEI.addDescription(m_alexsmobs, [s_alexsmobs]);	
 }
 
-var s_alexsmobs = "Consult an Animal Dictionary for more information.";
+val s_alexsmobs = "Consult an Animal Dictionary for more information.";
 i_alexsmobs(<item:alexsmobs:acacia_blossom>, s_alexsmobs);
 i_alexsmobs(<item:alexsmobs:bear_fur>, s_alexsmobs);
 i_alexsmobs(<item:alexsmobs:blood_sac>, s_alexsmobs);

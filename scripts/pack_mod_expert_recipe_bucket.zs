@@ -23,6 +23,7 @@ if (pack_mode_bucket_enable == true) {
 		[<item:minecraft:clay_ball>, <item:woodenbucket:wooden_bucket>, <item:minecraft:clay_ball>],
 		[<item:minecraft:air>, <item:minecraft:clay_ball>, <item:minecraft:air>]
 	]);
+
 	craftingTable.removeByName("minecraft:bucket");
 	craftingTable.addShaped("pack_expert_crafting_bucket/iron_bucket", <item:minecraft:bucket>, [
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],

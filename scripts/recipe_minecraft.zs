@@ -11,7 +11,8 @@
  * v0.5 : Add Missing StoneCutter.
  * v0.6 : Adding in Furnace Concrite for converting in Concrete Powder.
  * v0.7 : Adding Missing Pressure Plate and Loam in StoneCutter.
- * V0.8 : Code Compatting
+ * V0.8 : Code Compatting.
+ * v0.9 : Add Tag and Name Fixing.
  */
 
 println("Start script recipe_minecraft.");
@@ -48,7 +49,7 @@ var itemDyeMisc = [
 ];
 
 // Campfire
-campfire.addRecipe("vinery_campfire_dough_to_toast", <item:vinery:toast>, <tag:items:minecraft:dough>, 1.0, 200);
+campfire.addRecipe("campfire/vinery_toast_from_dough", <item:vinery:toast>, <tag:items:minecraft:dough>, 1.0, 200);
 
 // Composter
 var composterAddItem = {
@@ -245,9 +246,9 @@ furnace.addRecipe("furnace/exlinecopperequipment_copper_boots", <item:thermal:co
 
 // Stone Cutter
 for adding_concrete_dye_stone_cutter_color in itemDyeMisc {
-	stoneCutter.addRecipe(adding_concrete_dye_stone_cutter_color + "_concrete_fence_stonecutting", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
-	stoneCutter.addRecipe(adding_concrete_dye_stone_cutter_color + "_concrete_fence_gate_stonecutting", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence_gate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
-	stoneCutter.addRecipe(adding_concrete_dye_stone_cutter_color + "_concrete_pressure_plate_stonecutting", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_pressure_plate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
+	stoneCutter.addRecipe("stonecutter/moreconcrete_" + adding_concrete_dye_stone_cutter_color + "_concrete_fence", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
+	stoneCutter.addRecipe("stonecutter/moreconcrete_" + adding_concrete_dye_stone_cutter_color + "_concrete_fence_gate", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence_gate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
+	stoneCutter.addRecipe("stonecutter/moreconcrete_" + adding_concrete_dye_stone_cutter_color + "_concrete_pressure_plate", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_pressure_plate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
 }
 var addingFencesMacawStoneCutter = {
 	"andesite" : "andesite",
@@ -265,45 +266,45 @@ var addingFencesMacawStoneCutter = {
 	"stone" : "stone_bricks"
 };
 for addingFencesMacawStoneCutterName, addingFencesMacawStoneCutterMaterial in addingFencesMacawStoneCutter {
-	stoneCutter.addRecipe("mcwfences_" + addingFencesMacawStoneCutterName + "_pillar_wall_stoncutting", <item:mcwfences:${addingFencesMacawStoneCutterName}_pillar_wall>, <item:minecraft:${addingFencesMacawStoneCutterMaterial}>);
+	stoneCutter.addRecipe("stonecutter/mcwfences_" + addingFencesMacawStoneCutterName + "_pillar_wall", <item:mcwfences:${addingFencesMacawStoneCutterName}_pillar_wall>, <item:minecraft:${addingFencesMacawStoneCutterMaterial}>);
 }
-stoneCutter.addRecipe("stone_pressure_plate_stoncutting", <item:minecraft:stone_pressure_plate>, <item:minecraft:stone>);
-stoneCutter.addRecipe("polished_blackstone_pressure_plate_stoncutting", <item:minecraft:polished_blackstone_pressure_plate>, <item:minecraft:polished_blackstone>);
-stoneCutter.addRecipe("obsidian_pressure_plate_stoncutting", <item:cyclic:obsidian_pressure_plate>, <item:minecraft:obsidian>);
-stoneCutter.addRecipe("polished_basalt_pressure_plate_stoncutting", <item:infernalexp:polished_basalt_pressure_plate>, <item:minecraft:polished_basalt>);
-//stoneCutter.addRecipe("soul_slate_pressure_plate_stoncutting", <item:infernalexp:soul_slate_pressure_plate>, <item:infernalexp:soul_slate>);
-stoneCutter.addRecipe("chiseled_deepslate_stoncutting", <item:minecraft:chiseled_deepslate>, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("deepslate_brick_slab_stoncutting", <item:minecraft:deepslate_brick_slab> * 2, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("deepslate_brick_stairs_stoncutting", <item:minecraft:deepslate_brick_stairs>, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("deepslate_brick_wall_stoncutting", <item:minecraft:deepslate_brick_wall>, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("deepslate_brick_stoncutting", <item:minecraft:deepslate_bricks>, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("deepslate_tile_slab_stoncutting", <item:minecraft:deepslate_tile_slab> * 2, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("deepslate_tile_stairs_stoncutting", <item:minecraft:deepslate_tile_stairs>, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("deepslate_tile_wall_stoncutting", <item:minecraft:deepslate_tile_wall>, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("deepslate_tiles_stoncutting", <item:minecraft:deepslate_tiles>, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("polished_deepslate_slab_stoncutting", <item:minecraft:polished_deepslate_slab> * 2, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("polished_deepslate_stairs_stoncutting", <item:minecraft:polished_deepslate_stairs>, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("polished_deepslate_stoncutting", <item:minecraft:polished_deepslate>, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("polished_deepslate_wall_stoncutting", <item:minecraft:polished_deepslate_wall>, <item:minecraft:deepslate>);
-stoneCutter.addRecipe("block_of_crystallized_menril_to_brick_stoncutting", <item:integrateddynamics:crystalized_menril_brick> * 4, <item:integrateddynamics:crystalized_menril_block>);
-stoneCutter.addRecipe("block_of_crystallized_menril_to_slab_stoncutting", <item:integrateddynamics:crystalized_menril_block_slab> * 2, <item:integrateddynamics:crystalized_menril_block>);
-stoneCutter.addRecipe("block_of_crystallized_menril_to_stairs_stoncutting", <item:integrateddynamics:crystalized_menril_block_stairs>, <item:integrateddynamics:crystalized_menril_block>);
-stoneCutter.addRecipe("block_of_crystallized_menril_to_brick_slab_stoncutting", <item:integrateddynamics:crystalized_menril_brick_slab> * 8, <item:integrateddynamics:crystalized_menril_block>);
-stoneCutter.addRecipe("block_of_crystallized_menril_to_brick_stairs_stoncutting", <item:integrateddynamics:crystalized_menril_brick_stairs> * 4, <item:integrateddynamics:crystalized_menril_block>);
-stoneCutter.addRecipe("brick_of_crystallized_menril_to_slab_stoncutting", <item:integrateddynamics:crystalized_menril_brick_slab> * 2, <item:integrateddynamics:crystalized_menril_brick>);
-stoneCutter.addRecipe("brick_of_crystallized_menril_to_stairs_stoncutting", <item:integrateddynamics:crystalized_menril_brick_stairs>, <item:integrateddynamics:crystalized_menril_brick>);
-stoneCutter.addRecipe("block_of_crystallized_chorus_to_brick_stoncutting", <item:integrateddynamics:crystalized_chorus_brick> * 4, <item:integrateddynamics:crystalized_chorus_block>);
-stoneCutter.addRecipe("block_of_crystallized_chorus_to_slab_stoncutting", <item:integrateddynamics:crystalized_chorus_block_slab> * 2, <item:integrateddynamics:crystalized_chorus_block>);
-stoneCutter.addRecipe("block_of_crystallized_chorus_to_stairs_stoncutting", <item:integrateddynamics:crystalized_chorus_block_stairs>, <item:integrateddynamics:crystalized_chorus_block>);
-stoneCutter.addRecipe("block_of_crystallized_chorus_to_brick_slab_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_slab> * 8, <item:integrateddynamics:crystalized_chorus_block>);
-stoneCutter.addRecipe("block_of_crystallized_chorus_to_brick_stairs_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_stairs> * 4, <item:integrateddynamics:crystalized_chorus_block>);
-stoneCutter.addRecipe("brick_of_crystallized_chorus_to_slab_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_slab> * 2, <item:integrateddynamics:crystalized_chorus_brick>);
-stoneCutter.addRecipe("brick_of_crystallized_chorus_to_stairs_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_stairs>, <item:integrateddynamics:crystalized_chorus_brick>);
-stoneCutter.addRecipe("vinery_loam_stairs_stoncutting", <item:vinery:loam_stairs>, <item:vinery:loam>);
-stoneCutter.addRecipe("vinery_loam_slab_stoncutting", <item:vinery:loam_slab> * 2, <item:vinery:loam>);
+stoneCutter.addRecipe("stonecutter/cyclic_obsidian_pressure_plate", <item:cyclic:obsidian_pressure_plate>, <item:minecraft:obsidian>);
+stoneCutter.addRecipe("stonecutter/infernalexp_polished_basalt_pressure_plate", <item:infernalexp:polished_basalt_pressure_plate>, <item:minecraft:polished_basalt>);
+//stoneCutter.addRecipe("stonecutter/infernalexp_soul_slate_pressure_plate", <item:infernalexp:soul_slate_pressure_plate>, <item:infernalexp:soul_slate>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_menril_to_brick", <item:integrateddynamics:crystalized_menril_brick> * 4, <item:integrateddynamics:crystalized_menril_block>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_menril_to_slab", <item:integrateddynamics:crystalized_menril_block_slab> * 2, <item:integrateddynamics:crystalized_menril_block>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_menril_to_stairs_stoncutting", <item:integrateddynamics:crystalized_menril_block_stairs>, <item:integrateddynamics:crystalized_menril_block>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_menril_to_brick_slab_stoncutting", <item:integrateddynamics:crystalized_menril_brick_slab> * 8, <item:integrateddynamics:crystalized_menril_block>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_menril_to_brick_stairs_stoncutting", <item:integrateddynamics:crystalized_menril_brick_stairs> * 4, <item:integrateddynamics:crystalized_menril_block>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_brick_of_crystallized_menril_to_slab_stoncutting", <item:integrateddynamics:crystalized_menril_brick_slab> * 2, <item:integrateddynamics:crystalized_menril_brick>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_brick_of_crystallized_menril_to_stairs_stoncutting", <item:integrateddynamics:crystalized_menril_brick_stairs>, <item:integrateddynamics:crystalized_menril_brick>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_chorus_to_brick_stoncutting", <item:integrateddynamics:crystalized_chorus_brick> * 4, <item:integrateddynamics:crystalized_chorus_block>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_chorus_to_slab_stoncutting", <item:integrateddynamics:crystalized_chorus_block_slab> * 2, <item:integrateddynamics:crystalized_chorus_block>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_chorus_to_stairs_stoncutting", <item:integrateddynamics:crystalized_chorus_block_stairs>, <item:integrateddynamics:crystalized_chorus_block>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_chorus_to_brick_slab_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_slab> * 8, <item:integrateddynamics:crystalized_chorus_block>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_chorus_to_brick_stairs_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_stairs> * 4, <item:integrateddynamics:crystalized_chorus_block>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_brick_of_crystallized_chorus_to_slab_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_slab> * 2, <item:integrateddynamics:crystalized_chorus_brick>);
+stoneCutter.addRecipe("stonecutter/integrateddynamics_brick_of_crystallized_chorus_to_stairs_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_stairs>, <item:integrateddynamics:crystalized_chorus_brick>);
+stoneCutter.addRecipe("stonecutter/minecraft_chiseled_deepslate", <item:minecraft:chiseled_deepslate>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_deepslate_brick_slab", <item:minecraft:deepslate_brick_slab> * 2, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_deepslate_brick_stairs", <item:minecraft:deepslate_brick_stairs>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_deepslate_brick_wall", <item:minecraft:deepslate_brick_wall>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_deepslate_brick", <item:minecraft:deepslate_bricks>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_deepslate_tile_slab", <item:minecraft:deepslate_tile_slab> * 2, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_deepslate_tile_stairs", <item:minecraft:deepslate_tile_stairs>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_deepslate_tile_wall", <item:minecraft:deepslate_tile_wall>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_deepslate_tiles", <item:minecraft:deepslate_tiles>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_polished_blackstone_pressure_plate", <item:minecraft:polished_blackstone_pressure_plate>, <item:minecraft:polished_blackstone>);
+stoneCutter.addRecipe("stonecutter/minecraft_polished_deepslate_slab", <item:minecraft:polished_deepslate_slab> * 2, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_polished_deepslate_stairs", <item:minecraft:polished_deepslate_stairs>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_polished_deepslate", <item:minecraft:polished_deepslate>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_polished_deepslate_wall", <item:minecraft:polished_deepslate_wall>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft_stone_pressure_plate", <item:minecraft:stone_pressure_plate>, <item:minecraft:stone>);
+stoneCutter.addRecipe("stonecutter/vinery_loam_stairs", <item:vinery:loam_stairs>, <item:vinery:loam>);
+stoneCutter.addRecipe("stonecutter/vinery_loam_slab", <item:vinery:loam_slab> * 2, <item:vinery:loam>);
 
 // Smoker
-smoker.addRecipe("vinery_dought_in_smoker", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 100);
+smoker.addRecipe("smoker/vinery_dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 100);
 
 // Shapeless
 craftingTable.addShapeless("minecraft_flint", <item:minecraft:flint>, [<item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>]);
@@ -329,27 +330,27 @@ craftingTable.addShaped("minecraft_tuff", <item:minecraft:tuff> * 2, [
 craftingTable.addShaped("minecraft_saddle", <item:minecraft:saddle>, [
 	[<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>],
 	[<item:minecraft:chain>, <item:minecraft:air>, <item:minecraft:chain>],
-	[<item:minecraft:string>, <item:minecraft:air>, <item:minecraft:string>]
+	[<tag:items:forge:string>, <item:minecraft:air>, <tag:items:forge:string>]
 ]);
-craftingTable.addShaped("minecraft_petrified_oak_slab", <item:minecraft:petrified_oak_slab> * 2, [
+/*craftingTable.addShaped("minecraft_petrified_oak_slab", <item:minecraft:petrified_oak_slab> * 2, [
 	[<item:minecraft:oak_slab>, <item:minecraft:cobblestone>, <item:minecraft:air>],
 	[<item:minecraft:cobblestone>, <item:minecraft:oak_slab>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
+]);*/
 craftingTable.addShaped("minecraft_totem_of_undying", <item:minecraft:totem_of_undying>, [
-	[<item:minecraft:emerald>, <item:minecraft:gold_ingot>, <item:minecraft:emerald>],
-	[<item:minecraft:gold_ingot>, <item:minecraft:nether_star>, <item:minecraft:gold_ingot>],
+	[<item:minecraft:emerald>, <tag:items:forge:ingots/gold>, <item:minecraft:emerald>],
+	[<tag:items:forge:ingots/gold>, <item:minecraft:nether_star>, <tag:items:forge:ingots/gold>],
 	[<item:minecraft:air>, <item:minecraft:gold_block>, <item:minecraft:air>]
 ]);
 craftingTable.addShaped("minecraft_name_tag", <item:minecraft:name_tag>, [
-	[<item:minecraft:air>, <item:minecraft:iron_ingot>, <item:minecraft:string>],
-	[<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:iron_ingot>],
+	[<item:minecraft:air>, <tag:items:forge:ingots/iron>, <tag:items:forge:string>],
+	[<item:minecraft:air>, <item:minecraft:leather>, <tag:items:forge:ingots/iron>],
 	[<item:minecraft:leather>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 craftingTable.addShaped("minecraft_bell", <item:minecraft:bell>, [
 	[<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, <tag:items:minecraft:logs>],
-	[<item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>],
-	[<item:minecraft:gold_ingot>, <item:minecraft:gold_block>, <item:minecraft:gold_ingot>]
+	[<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/gold>, <tag:items:forge:ingots/gold>],
+	[<tag:items:forge:ingots/gold>, <item:minecraft:gold_block>, <tag:items:forge:ingots/gold>]
 ]);
 craftingTable.removeByName("sulfurpotassiummod:gunpowder");
 craftingTable.removeByName("salt:gunpowder");

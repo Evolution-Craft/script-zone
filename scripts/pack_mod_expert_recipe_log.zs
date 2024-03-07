@@ -98,6 +98,7 @@ if (pack_mode_log_enable == true) {
 			craftingTable.addShapeless("pack_expert_crafting_" + packModeExpertPlanksName.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
 		}
 	}
+
 	// Myrtrees
 	craftingTable.removeByName("myrtrees:rubberwood_planks");
 	craftingTable.addShapeless("pack_expert_crafting_rubberwood_planks", <item:myrtrees:rubberwood_planks> * expert_log_to_planks, [<item:myrtrees:rubberwood_log>]);

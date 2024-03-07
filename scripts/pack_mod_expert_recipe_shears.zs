@@ -26,12 +26,14 @@ if (pack_mode_shears_enable == true) {
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 	]);
+
 	craftingTable.removeByName("minecraft:shears");
 	craftingTable.addShaped("pack_expert_crafting_shears/shears", <item:minecraft:shears>, [
 		[<item:minecraft:iron_ingot>, <item:ceramicshears:ceramic_shears>.anyDamage(), <item:minecraft:iron_ingot>],
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 	]);
+
 	craftingTable.removeByName("cyclic:shearing");
 	craftingTable.addShaped("pack_expert_crafting_shears/cyclic_shearing", <item:cyclic:shearing>, [
 		[<item:minecraft:air>, <item:netherite_shears_and_flint_and_steel:netherite_shears>, <item:minecraft:air>],

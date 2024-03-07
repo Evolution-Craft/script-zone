@@ -17,24 +17,6 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
-// Shapeless
-craftingTable.addShapeless("immersiveengineering_crafting/wire_iron", <item:createaddition:iron_wire>, [<tag:items:forge:plates/iron>, <item:immersiveengineering:wirecutter>.anyDamage().transformDamage()]);
-craftingTable.addShapeless("immersiveengineering_crafting/wire_gold", <item:createaddition:gold_wire>, [<tag:items:forge:plates/gold>, <item:immersiveengineering:wirecutter>.anyDamage().transformDamage()]);
-
-// Shaped
-craftingTable.removeByName("immersiveengineering:crafting/fiberboard");
-craftingTable.addShaped("immersiveengineering_crafting_fiberboard", <item:immersiveengineering:fiberboard> * 8, [
-	[<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>],
-	[<tag:items:forge:dusts/wood>, <item:immersiveengineering:phenolic_resin_bucket>, <tag:items:forge:dusts/wood>],
-	[<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>]
-]);
-craftingTable.removeByName("immersiveengineering:crafting/sawdust");
-craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersiveengineering:sawdust> * 6, [
-	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-	[<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>],
-	[<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>]
-]);
-
 // Blueprint
 <recipetype:immersiveengineering:blueprint>.addRecipe("immersiveengineering_blueprint/banner_wolf", "bannerpatterns", [<item:minecraft:paper>, <item:tconstruct:bloodbone>], <item:immersiveengineering:bannerpattern_wolf>);
 <recipetype:immersiveengineering:blueprint>.addRecipe("immersiveengineering_blueprint/banner_wolf_l", "bannerpatterns", [<item:minecraft:paper>, <item:tconstruct:blazing_bone>], <item:immersiveengineering:bannerpattern_wolf_l>);
@@ -74,5 +56,23 @@ craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersive
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_twinite", <item:thermal_extra:twinite_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:twinite_gear>);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_dragonsteel", <item:thermal_extra:dragonsteel_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:dragonsteel_gear>);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_iron_compressed", <item:pneumaticcraft:ingot_iron_compressed> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:pneumaticcraft:compressed_iron_gear>);
+
+// Shapeless
+craftingTable.addShapeless("immersiveengineering_crafting/wire_iron", <item:createaddition:iron_wire>, [<tag:items:forge:plates/iron>, <item:immersiveengineering:wirecutter>.anyDamage().transformDamage()]);
+craftingTable.addShapeless("immersiveengineering_crafting/wire_gold", <item:createaddition:gold_wire>, [<tag:items:forge:plates/gold>, <item:immersiveengineering:wirecutter>.anyDamage().transformDamage()]);
+
+// Shaped
+craftingTable.removeByName("immersiveengineering:crafting/fiberboard");
+craftingTable.addShaped("immersiveengineering_crafting_fiberboard", <item:immersiveengineering:fiberboard> * 8, [
+	[<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>],
+	[<tag:items:forge:dusts/wood>, <item:immersiveengineering:phenolic_resin_bucket>, <tag:items:forge:dusts/wood>],
+	[<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>]
+]);
+craftingTable.removeByName("immersiveengineering:crafting/sawdust");
+craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersiveengineering:sawdust> * 6, [
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+	[<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>],
+	[<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>]
+]);
 
 println("End script recipe_immersive_engieneering.");
