@@ -1,0 +1,24 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "result": [
+    {
+      "item": "minecraft:wheat_seed"
+    },
+    {
+      "item": "minecraft:wheat_seed",
+      "chance": 0.5
+    },
+    {
+      "item": "croptopia:flour",
+      "chance": 0.3
+    }
+  ]
+}

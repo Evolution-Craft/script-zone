@@ -27,6 +27,126 @@ import crafttweaker.api.tag.manager.ITagManager;
 <recipetype:farmersdelight:cooking>.addRecipe("cooking_pot_vinery_sweetberry_jam", <item:vinery:sweetberry_jam>, [<item:minecraft:sweet_berries>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 1, 400);
 
 // Cutting Board
+var addingSeedCuttingFarmersDelight = {
+	"artichoke" : "croptopia:artichoke_seed",
+	"asparagus" : "croptopia:asparagus_seed",
+	"barley" : "croptopia:barley_seed",
+	"basil" : "croptopia:basil_seed",
+	"bellpepper" : "croptopia:bellpepper_seed",
+	"blackbean" : "croptopia:blackbean_seed",
+	"blackberry" : "croptopia:blackberry_seed",
+	"blueberry" : "croptopia:blueberry_seed",
+	"broccoli" : "croptopia:broccoli_seed",
+	"cabbage" : "croptopia:cabbage_seed",
+	"cantaloupe" : "croptopia:cantaloupe_seed",
+	"cauliflower" : "croptopia:cauliflower_seed",
+	"celery" : "croptopia:celery_seed",
+	"chile_pepper" : "croptopia:chile_pepper_seed",
+	"coffee" : "croptopia:coffee_seed",
+	"corn" : "croptopia:corn_seed",
+	"cranberry" : "croptopia:cranberry_seed",
+	"cucumber" : "croptopia:cucumber_seed",
+	"currant" : "croptopia:currant_seed",
+	"eggplant" : "croptopia:eggplant_seed",
+	"elderberry" : "croptopia:elderberry_seed",
+	"garlic" : "croptopia:garlic_seed",
+	"ginger" : "croptopia:ginger_seed",
+	"grape" : "croptopia:grape_seed",
+	"greenbean" : "croptopia:greenbean_seed",
+	"greenonion" : "croptopia:greenonion_seed",
+	"honeydew" : "croptopia:honeydew_seed",
+	"hops" : "croptopia:hops_seed",
+	"kale" : "croptopia:kale_seed",
+	"kiwi" : "croptopia:kiwi_seed",
+	"leek" : "croptopia:leek_seed",
+	"lettuce" : "croptopia:lettuce_seed",
+	"mustard" : "croptopia:mustard_seed",
+	"oat" : "croptopia:oat_seed",
+	"olive" : "croptopia:olive_seed",
+	"onion" : "croptopia:onion_seed",
+	"peanut" : "croptopia:peanut_seed",
+	"pepper" : "croptopia:pepper_seed",
+	"pineapple" : "croptopia:pineapple_seed",
+	"radish" : "croptopia:radish_seed",
+	"raspberry" : "croptopia:raspberry_seed",
+	"rhubarb" : "croptopia:rhubarb_seed",
+	"rice" : "croptopia:rice_seed",
+	"rutabaga" : "croptopia:rutabaga_seed",
+	"saguaro" : "croptopia:saguaro_seed",
+	"soybean" : "croptopia:soybean_seed",
+	"spinach" : "croptopia:spinach_seed",
+	"squash" : "croptopia:squash_seed",
+	"strawberry" : "croptopia:strawberry_seed",
+	"sweetpotato" : "croptopia:sweetpotato_seed",
+	"tea" : "croptopia:tea_seed",
+	"tomatillo" : "croptopia:tomatillo_seed",
+	"tomato" : "croptopia:tomato_seed",
+	"turmeric" : "croptopia:turmeric_seed",
+	"turnip" : "croptopia:turnip_seed",
+	"vanilla" : "croptopia:vanilla_seeds",
+	"yam" : "croptopia:yam_seed",
+	"zucchini" : "croptopia:zucchini_seed"
+};
+for addingSeedCuttingFarmersDelightName, addingSeedCuttingFarmersDelightOut in addingSeedCuttingFarmersDelight {
+	if (addingSeedCuttingFarmersDelightName == "barley" || addingSeedCuttingFarmersDelightName == "corn" || addingSeedCuttingFarmersDelightName == "oat") {
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/croptopia/" + addingSeedCuttingFarmersDelightName, {
+			"ingredients": [{
+				"item": "croptopia:" + addingSeedCuttingFarmersDelightName
+			}],
+			"tool": {
+				"tag": "forge:tools/knives"
+			},
+			"result": [{
+				"item": addingSeedCuttingFarmersDelightOut
+			},
+			{
+				"item": addingSeedCuttingFarmersDelightOut,
+				"chance": 0.5
+			},
+			{
+				"item": "croptopia:flour",
+				"chance": 0.3
+			}]
+		});
+	} else if (addingSeedCuttingFarmersDelightName == "chile_pepper") {
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/croptopia/" + addingSeedCuttingFarmersDelightName, {
+			"ingredients": [{
+				"item": "croptopia:" + addingSeedCuttingFarmersDelightName
+			}],
+			"tool": {
+				"tag": "forge:tools/knives"
+			},
+			"result": [{
+				"item": addingSeedCuttingFarmersDelightOut
+			},
+			{
+				"item": addingSeedCuttingFarmersDelightOut,
+				"chance": 0.5
+			},
+			{
+				"item": "croptopia:paprica",
+				"chance": 0.3
+			}]
+		});
+	} else {
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/croptopia/" + addingSeedCuttingFarmersDelightName, {
+			"ingredients": [{
+				"item": "croptopia:" + addingSeedCuttingFarmersDelightName
+			}],
+			"tool": {
+				"tag": "forge:tools/knives"
+			},
+			"result": [{
+				"item": addingSeedCuttingFarmersDelightOut
+			},
+			{
+				"item": addingSeedCuttingFarmersDelightOut,
+				"chance": 0.5
+			}]
+		});
+	}
+}
+
 var addingLogCuttingFarmersDelight = {
 	"tconstruct:bloodshroom_log" : "tconstruct:stripped_bloodshroom_log",
 	"tconstruct:bloodshroom_wood" : "tconstruct:stripped_bloodshroom_wood",

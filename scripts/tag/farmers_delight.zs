@@ -9,16 +9,19 @@
 
 println("Start script/tag/farmers_delight.");
 println("Script Priority Null.");
- 
+
+import crafttweaker.api.block.Block;
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
 // Heat Sources
 var addingHeatSources = [
+	"ends_delight:end_stove",
 	"vinery:stove"
 ];
 for tag_heat_sources in addingHeatSources{
-	<tag:items:farmersdelight:heatsources>.add(<item:${tag_heat_sources}>);
+	<tag:blocks:farmersdelight:heatsources>.add(<block:${tag_heat_sources}>);
+	<tag:blocks:mmlib:heat_conductors>.add(<block:${tag_heat_sources}>);
 }
 
 println("End script/tag/farmers_delight.");
