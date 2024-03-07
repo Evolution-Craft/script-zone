@@ -9,6 +9,7 @@
  * v0.3 : Add mythicbotany:dream_cherry and varius update.
  * v0.4 : Add supper for Unusual End, Enlightened and Enders Delight.
  * v0.5 : Alphabet correct sequence.
+ * v0.6 : Add missing Aquaculture food.
  */
 
 #priority 993
@@ -126,6 +127,8 @@ for tag_vegetables_diet in addingVegetablesDiet{
 var addingProteinsDiet = [
 	"alexsmobs:cosmic_cod",
 	"alexsmobs:rainbow_jelly",
+	"aquaculturedelight:cooked_small_turtle_meat",
+	"aquaculturedelight:small_turtle_meat",
 	"beyond_earth:cheese",
 	"crabbersdelight:clawster",
 	"crabbersdelight:cooked_clam_meat",

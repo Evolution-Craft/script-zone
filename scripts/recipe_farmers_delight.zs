@@ -8,6 +8,7 @@
  * v0.2 : Add Vinery Mod Support.
  * v0.3 : Adding Door/Trapdoor/Sign in Cutting Board.
  * v0.4 : Adding Stripped Log and Wood on Cutting Board.
+ * v0.5 : Remove unnecessary Item.
  */
 
 println("Start script recipe_farmers_delight.");
@@ -31,10 +32,6 @@ var addingLogCuttingFarmersDelight = {
 	"tconstruct:bloodshroom_wood" : "tconstruct:stripped_bloodshroom_wood",
 	"ecologics:azalea_log" : "ecologics:stripped_azalea_log",
 	"ecologics:azalea_wood" : "ecologics:stripped_azalea_wood",
-	"quark:azalea_log" : "quark:stripped_azalea_log",
-	"quark:azalea_wood" : "quark:stripped_azalea_wood",
-	"quark:blossom_log" : "quark:stripped_blossom_log",
-	"quark:blossom_wood" : "quark:stripped_blossom_wood",
 	"enlightened_end:cerulean_log" : "enlightened_end:stripped_cerulean_stalk_block",
 	"twilightforest:canopy_log" : "twilightforest:stripped_canopy_log",
 	"twilightforest:canopy_wood" : "twilightforest:stripped_canopy_wood",
@@ -81,43 +78,22 @@ var addingLogCuttingFarmersDelight = {
 };
 for addingLogCuttingFarmersDelightIn, addingLogCuttingFarmersDelightOut in addingLogCuttingFarmersDelight {
 	val addingLogCuttingFarmersDelightName = <item:${addingLogCuttingFarmersDelightIn}>;
-	if (addingLogCuttingFarmersDelightIn == "quark:azalea_log" || addingLogCuttingFarmersDelightIn == "quark:azalea_wood" ||
-		addingLogCuttingFarmersDelightIn == "quark:blossom_log" || addingLogCuttingFarmersDelightIn == "quark:blossom_wood") {
-		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/quark_" + addingLogCuttingFarmersDelightName.registryName.path, {
-			"ingredients": [{
-				"item": addingLogCuttingFarmersDelightIn
-			}],
-			"tool": {
-				"type": "farmersdelight:tool_action",
-				"action": "axe_strip"
-			},
-			"result": [{
-				"item": addingLogCuttingFarmersDelightOut
-			},
-			{
-				"item": "farmersdelight:tree_bark"
-			}],
-			"sound": "minecraft:item.axe.strip"
-		});
-	} else {
-			<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingLogCuttingFarmersDelightName.registryName.path, {
-			"ingredients": [{
-				"item": addingLogCuttingFarmersDelightIn
-			}],
-			"tool": {
-				"type": "farmersdelight:tool_action",
-				"action": "axe_strip"
-			},
-			"result": [{
-				"item": addingLogCuttingFarmersDelightOut
-			},
-			{
-				"item": "farmersdelight:tree_bark"
-			}],
-			"sound": "minecraft:item.axe.strip"
-		});
-	}
-	
+	<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingLogCuttingFarmersDelightName.registryName.path, {
+		"ingredients": [{
+			"item": addingLogCuttingFarmersDelightIn
+		}],
+		"tool": {
+			"type": "farmersdelight:tool_action",
+			"action": "axe_strip"
+		},
+		"result": [{
+			"item": addingLogCuttingFarmersDelightOut
+		},
+		{
+			"item": "farmersdelight:tree_bark"
+		}],
+		"sound": "minecraft:item.axe.strip"
+	});
 }
 
 <recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/cherry_log", {
@@ -187,9 +163,7 @@ for addingLogCuttingFarmersDelightIn, addingLogCuttingFarmersDelightOut in addin
 
 var addingDoorCuttingFarmersDelight = {
 	"azalea" : "ecologics:azalea",
-	"azalea_quark" : "quark:azalea",
 	"bloodshroom" : "tconstruct:bloodshroom",
-	"blossom" : "quark:blossom",
 	"canopy" : "twilightforest:canopy",
 	"cerulean" : "enlightened_end:cerulean",
 	"cherry" : "vinery:cherry",
@@ -235,9 +209,7 @@ for addingDoorCuttingFarmersDelightName, addingDoorCuttingFarmersDelightId in ad
 }
 var addingSignCuttingFarmersDelight = {
 	"azalea" : "ecologics:azalea",
-	"azalea_quark" : "quark:azalea",
 	"bloodshroom" : "tconstruct:bloodshroom",
-	"blossom" : "quark:blossom",
 	"canopy" : "twilightforest:canopy",
 	"coconut" : "ecologics:coconut",
 	"flowering_azalea" : "ecologics:flowering_azalea",

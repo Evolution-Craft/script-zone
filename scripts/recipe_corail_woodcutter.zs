@@ -23,7 +23,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 var craftingExpertLogCorailWoodcutter = {
 	"oak" : <tag:items:minecraft:oak_logs>,
-	"spruce" : <tag:items:minecraft:oak_logs>,
+	"spruce" : <tag:items:minecraft:spruce_logs>,
 	"birch" : <tag:items:minecraft:birch_logs>,
 	"jungle" : <tag:items:minecraft:jungle_logs>,
 	"acacia" : <tag:items:minecraft:acacia_logs>,
