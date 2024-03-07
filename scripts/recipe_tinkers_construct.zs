@@ -17,15 +17,15 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 <recipetype:tconstruct:casting_basin>.addJsonRecipe("tconstruct_casting_table/minecraft_petrified_oak_slab", {
 	"cast": {
-		"item": "item:minecraft:oak_slab"
+		"item": "minecraft:oak_slab"
 	},
 	"cast_consumed": true,
 	"fluid": {
-		"tag": "molten_porcelain",
+		"tag": "tconstruct:molten_clay",
 		"amount": 180
 	},
 	"result": "minecraft:petrified_oak_slab",
 	"cooling_time": 221
-}
+});
 
 println("End script recipe_tinkers_construct.");

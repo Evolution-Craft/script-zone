@@ -56,7 +56,7 @@ i_supplementaries(<item:supplementaries:bomb_blue>, "Just like a Bomb, but stron
 i_supplementaries(<item:supplementaries:bubble_blower>, "Used to blow bubbles at your friends for fun. If enchanted with Stasis, can place Soap Bubble blocks.");
 i_supplementaries(<item:supplementaries:antique_ink>, "Can be used to make Signs, Maps, or Globes have a fancy antique look. Can be found in Urns or as treasure when fishing.");
 
-val s_supplementaries = "Works like a normal wooden one when unpowered. When powered, ignores interactions.";
+var s_supplementaries = "Works like a normal wooden one when unpowered. When powered, ignores interactions.";
 i_supplementaries(<item:supplementaries:gold_door>, s_supplementaries);
 i_supplementaries(<item:supplementaries:gold_trapdoor>, s_supplementaries);
 

@@ -178,6 +178,33 @@ if (pack_mode_armor_enable == true) {
 		[<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>]
 	], shapedArmorVarFunction);
 
+	craftingTable.removeByName("tconstruct:armor/building/travelers_goggles");
+	craftingTable.removeByName("tconstruct:armor/building/travelers_chestplate");
+	craftingTable.removeByName("tconstruct:armor/building/travelers_pants");
+	craftingTable.removeByName("tconstruct:armor/building/travelers_boots");
+	var armorTravelersCastTconstructAdd = {
+		"leather_helmet" : "travelers_helmet",
+		"leather_chestplate" : "travelers_chestplate",
+		"leather_leggings" : "travelers_leggings",
+		"leather_boots" : "travelers_boots"
+	};
+	for armorTravelersCastTconstructAddCast, armorTravelersCastTconstructAddResult in armorTravelersCastTconstructAdd {
+		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting_armor/tconstruct_casting_table/" + armorTravelersCastTconstructAddResult, {
+			"cast": {
+				"item": "minecraft:" + armorTravelersCastTconstructAddCast
+			},
+			"cast_consumed": true,
+			"fluid": {
+				"tag": "forge:molten_copper",
+				"amount": 540
+			},
+			"result": {
+				"item": "tconstruct:" + armorTravelersCastTconstructAddResult
+			},
+			"cooling_time": 160
+		});
+	}
+
 	craftingTable.addShaped("pack_expert_crafting_armor/silver_helmet", <item:galosphere:sterling_helmet>, [
 		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>],
 		[<tag:items:forge:ingots/silver>, <item:minecraft:leather_helmet>.anyDamage(), <tag:items:forge:ingots/silver>],

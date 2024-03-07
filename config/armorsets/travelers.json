@@ -1,0 +1,59 @@
+{
+  "armorSetName": "travelers",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "tconstruct:travelers_helmet",
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "tconstruct:travelers_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "tconstruct:travelers_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "tconstruct:travelers_boots",
+    "mustBeEmpty": false
+  },
+  "offHand": {
+	"itemKey": "tconstruct:travelers_shield"
+  },
+  "partialBonusRequiredAmount": 2,
+  "partialSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:speed",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:jump_boost",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    },
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "value": 10.0,
+      "modifierUUID": "d5a7dc88-9405-4398-b1e5-250b4c6dd218",
+      "description": "+5 hearts",
+      "attributeOperation": 0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}
