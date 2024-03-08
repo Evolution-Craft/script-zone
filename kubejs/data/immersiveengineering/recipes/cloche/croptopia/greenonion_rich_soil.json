@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "croptopia:greenonion_seed"
+  },
+  "soil": {
+    "item": "farmersdelight:rich_soil"
+  },
+  "results": [
+    {
+      "item": "croptopia:greenonion",
+      "count": 2
+    },
+    {
+      "item": "croptopia:greenonion_seed"
+    }
+  ],
+  "time": 576,
+  "render": {
+    "type": "crop",
+    "block": "croptopia:greenonion_crop"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

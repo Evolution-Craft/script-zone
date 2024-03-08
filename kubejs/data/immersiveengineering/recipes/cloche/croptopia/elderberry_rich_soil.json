@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "croptopia:elderberry_seed"
+  },
+  "soil": {
+    "item": "farmersdelight:rich_soil"
+  },
+  "results": [
+    {
+      "item": "croptopia:elderberry",
+      "count": 2
+    },
+    {
+      "item": "croptopia:elderberry_seed"
+    }
+  ],
+  "time": 576,
+  "render": {
+    "type": "crop",
+    "block": "croptopia:elderberry_crop"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

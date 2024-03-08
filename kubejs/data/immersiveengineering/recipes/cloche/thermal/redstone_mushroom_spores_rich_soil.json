@@ -1,0 +1,22 @@
+{
+    "type": "immersiveengineering:cloche",
+    "results": [
+        {
+            "item": "thermal:redstone_mushroom_spores",
+            "count": 2
+        }
+    ],
+    "input": {
+        "item": "thermal:redstone_mushroom_spores"
+    },
+    "soil": [
+        {
+            "item": "farmersdelight:rich_soil"
+        }
+    ],
+    "time": 2160.0,
+    "render": {
+        "type": "crop",
+        "block": "thermal:redstone_mushroom"
+    }
+}

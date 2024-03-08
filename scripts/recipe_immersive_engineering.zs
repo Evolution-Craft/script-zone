@@ -30,10 +30,6 @@ import crafttweaker.api.tag.manager.ITagManager;
 // Cloche
 <recipetype:immersiveengineering:cloche>.removeByName("immersiveengineering:cloche/cactus");
 <recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/cactus", <item:minecraft:cactus>, <tag:items:forge:sand>, 560, [<item:minecraft:cactus>, <item:ecologics:prickly_pear>], <blockstate:minecraft:cactus>.block, "stacking");
-//<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/amaranth_seeds", <item:thermal:amaranth_seeds>, <item:minecraft:dirt>, 640, [<item:thermal:amaranth> * 2, <item:thermal:amaranth_seeds>], <blockstate:thermal:amaranth>.block, "crop");
-//<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/amaranth_seeds_rich_soil", <item:thermal:amaranth_seeds>, <item:farmersdelight:rich_soil>, 576, [<item:thermal:amaranth> * 3, <item:thermal:amaranth_seeds>], <blockstate:thermal:amaranth>.block, "crop");
-//<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/barley_seeds", <item:thermal:barley_seeds>, <item:minecraft:dirt>, 640, [<item:thermal:barley> * 2, <item:thermal:barley_seeds>], <blockstate:thermal:barley>.block, "crop");
-//<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/barley_seeds_rich_soil", <item:thermal:barley_seeds>, <item:farmersdelight:rich_soil>, 576, [<item:thermal:barley> * 3, <item:thermal:barley_seeds>], <blockstate:thermal:barley>.block, "crop");
 
 // Fertilizer
 <recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/industrialforegoing_fertilizer", <item:industrialforegoing:fertilizer>, 1.25);

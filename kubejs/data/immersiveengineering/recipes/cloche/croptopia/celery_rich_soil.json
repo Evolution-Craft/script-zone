@@ -1,0 +1,29 @@
+{
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "croptopia:celery_seed"
+  },
+  "soil": {
+    "item": "farmersdelight:rich_soil"
+  },
+  "results": [
+    {
+      "item": "croptopia:celery",
+      "count": 2
+    },
+    {
+      "item": "croptopia:celery_seed"
+    }
+  ],
+  "time": 576,
+  "render": {
+    "type": "crop",
+    "block": "croptopia:celery_crop"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}
