@@ -9,6 +9,7 @@
  * v0.3 : Add Torch.
  * v0.4 : Adding Towerwood and Thorn.
  * v0.5 : Bio Fuel Update.
+ * v0.6 : Adding HOP Graphite dust.
  */
 
 println("Start script recipe_mekanism.");
@@ -366,6 +367,8 @@ for addingFlowersCrushingMekanismName, addingFlowersCrushingMekanismMod in addin
 // Enrichment Chamber
 <recipetype:mekanism:enriching>.removeByName("mekanism:enriching/salt");
 <recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/salt", ItemStackIngredient.from(<item:salt:salt_block>), <item:salt:salt> * 9);
+<recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/hop_graphite_dust_from_dust", ItemStackIngredient.from(<item:immersiveengineering:dust_coke> * 4), <item:immersiveengineering:dust_hop_graphite>);
+<recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/hop_graphite_dust_from_petcoke", ItemStackIngredient.from(<item:immersivepetroleum:petcoke_dust> * 4), <item:immersiveengineering:dust_hop_graphite>);
 
 // Precision Sawmill
 val mekanism_book_bookshelf_chance = 1;

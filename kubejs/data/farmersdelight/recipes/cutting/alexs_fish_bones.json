@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "alexsmobs:fish_bones"
+    }
+  ],
+  "tool": {
+    "item": "galosphere_delight:silver_kitchen_hammer"
+  },
+  "result": [
+    {
+      "item": "minecraft:bone_meal",
+	  "count": 4
+    }
+  ]
+}

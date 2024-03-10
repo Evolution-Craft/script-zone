@@ -50,6 +50,9 @@ var removeRecipeByName = [
 	"beyond_earth:desh_plate",
 	"beyond_earth:iron_plate",
 	"beyond_earth:iron_stick",
+	// Botania
+	"botania:elementium_shears",
+	"botania:manasteel_shears",
 	// BucketLib
 	"bucketlib:cake",
 	// Create
@@ -69,6 +72,8 @@ var removeRecipeByName = [
 	"cyclic:boomerang_damage",
 	"cyclic:boomerang_stun",
 	"cyclic:carrot_ender",
+	"cyclic:charm_torch",
+	"cyclic:charm_torch_cave",
 	"cyclic:compressed_cobblestone",
 	"cyclic:conveyor",
 	"cyclic:copper_ingot",
@@ -107,6 +112,7 @@ var removeRecipeByName = [
 	"cyclic:wand_hypno",
 	"cyclic:wand_missile",
 	"cyclic:workbench",
+	"cyclic:torch_launcher",
 	"cyclic:uncrafter",
 	// Comforts
 	"comforts:hammock_black",
@@ -317,6 +323,7 @@ var removeRecipeByName = [
 	"miniutilities:mechanical_miner",
 	"miniutilities:mechanical_placer",
 	"miniutilities:netherite_reinforced_drum",
+	"miniutilities:precision_shears",
 	"miniutilities:redstone_clock",
 	"miniutilities:reinforced_large_drum",
 	"miniutilities:solar_panel",
@@ -433,6 +440,7 @@ var removeRecipeByName = [
 	"tconstruct:gadgets/throwball/efln_ball",
 	"tconstruct:tables/modifier_worktable",
 	"tconstruct:tools/building/flint_and_brick",
+	"tconstruct:tools/modifiers/wither_bone_conversion",
 	// Tough As Nails
 	"toughasnails:apple_juice",
 	"toughasnails:cactus_juice",
@@ -574,7 +582,28 @@ stoneCutter.removeByName("twilightforest:stonecutting/dark_wood/towerwood");
 <recipetype:beyond_earth_giselle_addon:extruding>.removeByName("beyond_earth_giselle_addon:extruding/iron_stick");
 
 // Botania
-<recipetype:botania:mana_infusion>.removeByName("botania:mana_infusion/cactus_to_slime");
+var removeManaInfsionRecipeByName = [
+	"botania:mana_infusion/acacia_log_to_dark_oak_log",
+	"botania:mana_infusion/acacia_sapling_to_dark_oak_sapling",
+	"botania:mana_infusion/birch_log_to_jungle_log",
+	"botania:mana_infusion/birch_sapling_to_jungle_sapling",
+	"botania:mana_infusion/dark_oak_log_to_oak_log",
+	"botania:mana_infusion/dark_oak_sapling_to_oak_sapling",
+	"botania:mana_infusion/jungle_log_to_acacia_log",
+	"botania:mana_infusion/jungle_sapling_to_acacia_sapling",
+	"botania:mana_infusion/oak_log_to_spruce_log",
+	"botania:mana_infusion/oak_sapling_to_spruce_sapling",
+	"botania:mana_infusion/spruce_log_to_birch_log",
+	"botania:mana_infusion/spruce_sapling_to_birch_sapling",
+	"botania:mana_infusion/cactus_to_slime",
+	"botania:mana_infusion/coal_dupe",
+	"botania:mana_infusion/glowstone_dupe",
+	"botania:mana_infusion/quartz_dupe",
+	"botania:mana_infusion/redstone_dupe"
+];
+for remove_mana_infusion_recipe_by_name in removeManaInfsionRecipeByName{
+	<recipetype:botania:mana_infusion>.removeByName(remove_mana_infusion_recipe_by_name);
+}
 
 // Create
 <recipetype:create:filling>.removeByName("create:filling/honeyed_apple");

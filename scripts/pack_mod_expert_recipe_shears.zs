@@ -5,9 +5,8 @@
  *
  * CHANGELOG:
  * v0.1 : Created crafting sequence for Shears.
+ * v0.2 : Adding missing shears.
  */
-
-// TODO: Check other shears.
 
 println("Start script pack_mod_expert_recipe_shears.");
 println("Script Priority Null.");

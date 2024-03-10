@@ -8,6 +8,7 @@
  * v0.2 : Adding Missing Rod.
  * v0.3 : Remove Rod for Fix Bug fluid quantiti in Blast Chiller, convert recipe in .json in KubeJS.
  * v0.4 : Adding Missing Sapling.
+ * v0.5 : Adding HOP Graphite dust.
  */
 
 println("Start script recipe_thermal_series.");
@@ -34,6 +35,10 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 	[<tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>],
 	[<tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>]
 ]);
+
+// Induction Smelter
+<recipetype:thermal:smelter>.addRecipe("thermal_machines/smelter/dust_hop_graphite_from_coke", [<item:immersiveengineering:dust_hop_graphite> % 100], [<item:immersiveengineering:dust_coke> * 4], 20, 6000);
+<recipetype:thermal:smelter>.addRecipe("thermal_machines/smelter/dust_hop_graphite_from_petcoke", [<item:immersiveengineering:dust_hop_graphite> % 100], [<item:immersivepetroleum:petcoke_dust> * 4], 20, 6000);
 
 // Multiservo Press
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_diamond_to_gear", [<item:thermal:diamond_gear>], <fluid:minecraft:empty>, [<item:minecraft:diamond> * 4, <item:thermal:press_gear_die>], 2400);

@@ -29,7 +29,9 @@ var removeJeiIngradient = [
 	// Botania
 	"botania:creative_pool",
 	"botania:corporea_spark_creative",
+	"botania:elementium_shears",
 	"botania:infrangible_platform",
+	"botania:manasteel_shears",
 	// Building Gadgets
 	"buildinggadgets:construction_paste_container_creative",
 	// Create
@@ -63,6 +65,8 @@ var removeJeiIngradient = [
 	"cyclic:boomerang_damage",
 	"cyclic:boomerang_stun",
 	"cyclic:carrot_ender",
+	"cyclic:charm_torch",
+	"cyclic:charm_torch_cave",
 	"cyclic:compressed_cobblestone",
 	"cyclic:conveyor",
 	"cyclic:copper_axe",
@@ -95,6 +99,7 @@ var removeJeiIngradient = [
 	"cyclic:wand_hypno",
 	"cyclic:wand_missile",
 	"cyclic:workbench",
+	"cyclic:torch_launcher",
 	"cyclic:uncrafter",
 	// Croptopia
 	"croptopia:salt",
@@ -229,6 +234,7 @@ var removeJeiIngradient = [
 	"miniutilities:mechanical_miner",
 	"miniutilities:mechanical_placer",
 	"miniutilities:netherite_reinforced_drum",
+	"miniutilities:precision_shears",
 	"miniutilities:redstone_clock",
 	"miniutilities:reinforced_large_drum",
 	"miniutilities:solar_panel",

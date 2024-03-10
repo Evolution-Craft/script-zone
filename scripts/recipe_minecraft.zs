@@ -13,6 +13,7 @@
  * v0.7 : Adding Missing Pressure Plate and Loam in StoneCutter.
  * V0.8 : Code Compatting.
  * v0.9 : Add Tag and Name Fixing.
+ * v0.10 : Adding bone in Furnace.
  */
 
 println("Start script recipe_minecraft.");
@@ -57,7 +58,6 @@ var composterAddItem = {
 	"alexsmobs:maggot" : 0.2,
 	// Aquacylture
 	"aquaculture:algae" : 0.3,
-	"aquaculture:fish_bones" : 0.1,
 	"aquaculture:worm" : 0.2,
 	// Botania
 	"botania:dry_seeds" : 0.30,
@@ -243,6 +243,9 @@ furnace.removeByName("exlinecopperequipment:copper_leggs_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_leggings", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_leggings>, 0.1, 200);
 furnace.removeByName("exlinecopperequipment:copper_boots_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 200);
+furnace.addRecipe("furnace/aquaculture_fish_bones", <item:minecraft:bone_meal> * 3, <item:aquaculture:fish_bones>, 0.05, 200);
+furnace.addRecipe("furnace/alexsmobs_fish_bones", <item:minecraft:bone_meal> * 3, <item:alexsmobs:fish_bones>, 0.05, 200);
+furnace.addRecipe("furnace/netherdepthsupgrade_bonefish", <item:minecraft:bone_meal> * 3, <item:netherdepthsupgrade:bonefish>, 0.05, 200);
 
 // Stone Cutter
 for adding_concrete_dye_stone_cutter_color in itemDyeMisc {
@@ -307,6 +310,8 @@ stoneCutter.addRecipe("stonecutter/vinery_loam_slab", <item:vinery:loam_slab> * 
 smoker.addRecipe("smoker/vinery_dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 100);
 
 // Shapeless
+craftingTable.removeByName("minecraft:flint_and_steel");
+craftingTable.addShapeless("pack_expert_crafting/flint_and_steel", <item:minecraft:flint_and_steel>, [<tag:items:forge:ingots/steel>, <item:minecraft:flint>]);
 craftingTable.addShapeless("minecraft_flint", <item:minecraft:flint>, [<item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>]);
 craftingTable.addShapeless("minecraft_nether_wart_unblock", <item:minecraft:nether_wart> * 4, [<item:minecraft:nether_wart_block>]);
 craftingTable.addShapeless("minecraft_snow_block_unblock", <item:minecraft:snowball> * 4, [<item:minecraft:snow_block>]);
