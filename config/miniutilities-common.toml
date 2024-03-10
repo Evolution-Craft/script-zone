@@ -24,13 +24,13 @@
 	"Flame Lily Generation" = true
 	#How much FE should the Solar Panel Generate?
 	#Range: 0 ~ 1000000
-	"Solar Panel Generation" = 4
+	"Solar Panel Generation" = 0
 	#How much FE should the Lunar Panel Generate?
 	#Range: 0 ~ 1000000
-	"Lunar Panel Generation" = 4
+	"Lunar Panel Generation" = 0
 	#How many Panels should it take to increase the multiplier by 1?
 	#Range: 1 ~ 1000000
-	"Panel Multiplier Amount" = 50
+	"Panel Multiplier Amount" = 1
 
 ["World Generation"]
 	#Should Ender Ore Generate?

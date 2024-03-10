@@ -20,6 +20,32 @@ import crafttweaker.api.tag.manager.ITagManager;
 val pack_mode_shears_enable = true;
 
 if (pack_mode_shears_enable == true) {
+	craftingTable.removeByName("cyclic:shears_flint");
+	craftingTable.addShaped("pack_expert_crafting_shears/flint_shears", <item:cyclic:shears_flint>, [
+		[<item:minecraft:air>, <item:fiow:flint_tool_head>, <item:minecraft:air>],
+		[<item:fiow:flint_tool_head>, <item:minecraft:air>, <item:minecraft:air>],
+		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+	]);
+
+	var logsWoodenShears = {
+	"oak" : "oak",
+	"birch" : "birch",
+	"jungle" : "jungle",
+	"acacia" : "acacia",
+	"dark_oak" : "big_oak",
+	"spruce" : "spruce",
+	"warped" : "warped",
+	"crimson" : "crimson"
+	};
+	for logWoodenShearsId, logWoodenShearsName in logsWoodenShears {
+		craftingTable.removeByName("woodenshears:wshears." + logWoodenShearsName);
+		craftingTable.addShaped("pack_expert_crafting_shears/wooden_" + logWoodenShearsId + "_shears", <item:woodenshears:wshears_${logWoodenShearsName}>, [
+		[<item:minecraft:${logWoodenShearsId}_planks>, <item:minecraft:${logWoodenShearsId}_planks>, <item:minecraft:${logWoodenShearsId}_planks>],
+		[<item:minecraft:${logWoodenShearsId}_planks>, <item:cyclic:shears_flint>.anyDamage(), <item:minecraft:${logWoodenShearsId}_planks>],
+		[<item:minecraft:${logWoodenShearsId}_planks>, <item:minecraft:${logWoodenShearsId}_planks>, <item:minecraft:${logWoodenShearsId}_planks>]
+	]);
+	}
+
 	craftingTable.removeByName("ceramicshears:ceramic_shears");
 	craftingTable.addShaped("pack_expert_crafting_shears/ceramic_shears", <item:ceramicshears:ceramic_shears>, [
 		[<item:ceramicshears:ceramic_shears_part>, <tag:items:woodenshears:wshears>.asIIngredient().anyDamage(), <item:ceramicshears:ceramic_shears_part>],

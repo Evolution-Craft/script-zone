@@ -310,8 +310,9 @@ for tag_jams_forge in addingJamsForge{
 }
 
 // Ore
-//<tag:items:forge:ores>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Removed for Bug
-//<tag:items:forge:ores/iron>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Removed for Bug
+<tag:items:forge:ores>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Removed for Bug
+<tag:items:forge:ores/iron>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Removed for Bug
+<tag:items:forge:ores_in_ground/basalt>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Removed for Bug
 
 // Salt
 <tag:items:forge:dusts/salt>.add(<item:salt:salt>);

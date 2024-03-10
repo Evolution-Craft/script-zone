@@ -1,57 +1,137 @@
 [
   {
-    "name": "minecraft:coal_ore",
+    "name": "beyond_earth:moon_ice_shard_ore",
+    "weight": 8,
+    "dimensions": [
+      "beyond_earth:moon"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:moon_iron_ore",
     "weight": 4,
     "dimensions": [
-      "minecraft:overworld"
+      "beyond_earth:moon"
     ],
     "biomes": []
   },
   {
-    "name": "minecraft:iron_ore",
-    "weight": 3,
-    "dimensions": [
-      "minecraft:overworld"
-    ],
-    "biomes": []
-  },
-  {
-    "name": "minecraft:gold_ore",
+    "name": "beyond_earth:moon_desh_ore",
     "weight": 1,
     "dimensions": [
-      "minecraft:overworld"
+      "beyond_earth:moon"
     ],
     "biomes": []
   },
   {
-    "name": "minecraft:diamond_ore",
-    "weight": 1,
+    "name": "beyond_earth:mars_ice_shard_ore",
+    "weight": 8,
     "dimensions": [
-      "minecraft:overworld"
+      "beyond_earth:mars"
     ],
     "biomes": []
   },
   {
-    "name": "minecraft:lapis_ore",
+    "name": "beyond_earth:mars_iron_ore",
+    "weight": 4,
+    "dimensions": [
+      "beyond_earth:mars"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:mars_diamond_ore",
     "weight": 2,
     "dimensions": [
-      "minecraft:overworld"
+      "beyond_earth:mars"
     ],
     "biomes": []
   },
   {
-    "name": "minecraft:redstone_ore",
-    "weight": 4,
-    "dimensions": [
-      "minecraft:overworld"
-    ],
-    "biomes": []
-  },
-  {
-    "name": "minecraft:emerald_ore",
+    "name": "beyond_earth:mars_ostrum_ore",
     "weight": 1,
     "dimensions": [
-      "minecraft:overworld"
+      "beyond_earth:mars"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:mercury_iron_ore",
+    "weight": 1,
+    "dimensions": [
+      "beyond_earth:mercury"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:venus_coal_ore",
+    "weight": 8,
+    "dimensions": [
+      "beyond_earth:venus"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:venus_gold_ore",
+    "weight": 4,
+    "dimensions": [
+      "beyond_earth:venus"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:venus_diamond_ore",
+    "weight": 2,
+    "dimensions": [
+      "beyond_earth:venus"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:venus_calorite_ore",
+    "weight": 1,
+    "dimensions": [
+      "beyond_earth:venus"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:glacio_ice_shard_ore",
+    "weight": 8,
+    "dimensions": [
+      "beyond_earth:glacio"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:glacio_coal_ore",
+    "weight": 6,
+    "dimensions": [
+      "beyond_earth:glacio"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:glacio_copper_ore",
+    "weight": 4,
+    "dimensions": [
+      "beyond_earth:glacio"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:glacio_iron_ore",
+    "weight": 3,
+    "dimensions": [
+      "beyond_earth:glacio"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "beyond_earth:glacio_lapis_ore",
+    "weight": 2,
+    "dimensions": [
+      "beyond_earth:glacio"
     ],
     "biomes": []
   }

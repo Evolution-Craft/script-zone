@@ -29,6 +29,30 @@ craftingTable.addShaped("cyclic_breaker", <item:cyclic:breaker>, [
 	[<item:exlinecopperequipment:copper_shovel>, <item:minecraft:dispenser>, <item:exlinecopperequipment:copper_pick>],
 	[<item:minecraft:mossy_cobblestone_slab>, <item:minecraft:mossy_cobblestone_slab>, <item:minecraft:mossy_cobblestone_slab>]
 ]);
+craftingTable.removeByName("cyclic:spikes_iron");
+craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
+	[<item:minecraft:air>, <item:minecraft:iron_bars>, <item:minecraft:air>],
+	[<item:minecraft:iron_bars>, <item:minecraft:repeater>, <item:minecraft:iron_bars>],
+	[<tag:items:forge:storage_blocks/iron>, <item:miniutilities:iron_spikes>, <tag:items:forge:storage_blocks/iron>]
+]);
+craftingTable.removeByName("cyclic:spikes_diamond");
+craftingTable.addShaped("cyclic_spikes_diamond", <item:cyclic:spikes_diamond> * 2, [
+	[<item:minecraft:air>, <item:thermal:diamond_gear>, <item:minecraft:air>],
+	[<item:thermal:diamond_gear>, <item:minecraft:repeater>, <item:thermal:diamond_gear>],
+	[<tag:items:forge:storage_blocks/diamond>, <item:miniutilities:diamond_spikes>, <tag:items:forge:storage_blocks/diamond>]
+]);
+craftingTable.removeByName("cyclic:spikes_curse");
+craftingTable.addShaped("cyclic_spikes_curse", <item:cyclic:spikes_curse> * 2, [
+	[<item:minecraft:fermented_spider_eye>, <item:minecraft:fermented_spider_eye>, <item:minecraft:fermented_spider_eye>],
+	[<item:minecraft:fermented_spider_eye>, <item:cyclic:spikes_diamond>, <item:minecraft:fermented_spider_eye>],
+	[<item:minecraft:fermented_spider_eye>, <item:minecraft:fermented_spider_eye>, <item:minecraft:fermented_spider_eye>]
+]);
+craftingTable.removeByName("cyclic:spikes_fire");
+craftingTable.addShaped("cyclic_spikes_fire", <item:cyclic:spikes_fire> * 2, [
+	[<item:cyclic:fireball>, <item:cyclic:fireball>, <item:cyclic:fireball>],
+	[<item:cyclic:fireball>, <item:cyclic:spikes_diamond>, <item:cyclic:fireball>],
+	[<item:cyclic:fireball>, <item:cyclic:fireball>, <item:cyclic:fireball>]
+]);
 
 // Crusher
 <recipetype:cyclic:crusher>.removeByName("cyclic:crusher/chest");

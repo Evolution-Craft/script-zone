@@ -2,13 +2,13 @@
   "general": {
     "unsupportedDeveloperTools": false,
     "matterCannonBlockDamage_comment": "Enables the ability of the Matter Cannon to break blocks.",
-    "matterCannonBlockDamage": true,
+    "matterCannonBlockDamage": false,
     "tinyTntBlockDamage_comment": "Enables the ability of Tiny TNT to break blocks.",
     "tinyTntBlockDamage": true,
     "serverOpsIgnoreSecurity_comment": "Server operators are not restricted by ME security terminal settings.",
     "serverOpsIgnoreSecurity": true,
     "channels_comment": "Changes the channel capacity that cables provide in AE2.",
-    "channels": "default",
+    "channels": "x2",
     "pathfindingStepsPerTick_comment": "The number of pathfinding steps that are taken per tick and per grid that is booting. Lower numbers will mean booting takes longer, but less work is done per tick.",
     "pathfindingStepsPerTick": 4
   },
@@ -85,8 +85,8 @@
     "UsageMultiplier": 1.0
   },
   "Condenser": {
-    "MatterBalls": 256,
-    "Singularity": 256000
+    "MatterBalls": 2560,
+    "Singularity": 2560000
   },
   "tickRates": {
     "_comment": " Min / Max Tickrates for dynamic ticking, most of these components also use sleeping, to prevent constant ticking, adjust with care, non standard rates are not supported or tested.",

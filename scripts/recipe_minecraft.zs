@@ -332,11 +332,6 @@ craftingTable.addShaped("minecraft_saddle", <item:minecraft:saddle>, [
 	[<item:minecraft:chain>, <item:minecraft:air>, <item:minecraft:chain>],
 	[<tag:items:forge:string>, <item:minecraft:air>, <tag:items:forge:string>]
 ]);
-/*craftingTable.addShaped("minecraft_petrified_oak_slab", <item:minecraft:petrified_oak_slab> * 2, [
-	[<item:minecraft:oak_slab>, <item:minecraft:cobblestone>, <item:minecraft:air>],
-	[<item:minecraft:cobblestone>, <item:minecraft:oak_slab>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);*/
 craftingTable.addShaped("minecraft_totem_of_undying", <item:minecraft:totem_of_undying>, [
 	[<item:minecraft:emerald>, <tag:items:forge:ingots/gold>, <item:minecraft:emerald>],
 	[<tag:items:forge:ingots/gold>, <item:minecraft:nether_star>, <tag:items:forge:ingots/gold>],
