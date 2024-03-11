@@ -88,6 +88,7 @@ for addingCombinerRecipeId, addingCombinerRecipeName in addingCombinerRecipe {
 		}
 	});
 }
+
 var addingSeedCombinerRecipe = {
 	"croptopia/artichoke" : "croptopia:artichoke_seed",
 	"croptopia/asparagus" : "croptopia:asparagus_seed",
@@ -260,6 +261,7 @@ for addingCompactorRecipeID, addingCompactorRecipeName in addingCompactorRecipe 
 		}]
 	}
 });
+
 <recipetype:alchemistry:dissolver>.addJsonRecipe("alchemistry_dissolver/silver_horse_armor", {
 	"group": "alchemistry:dissolver",
 	"input": {

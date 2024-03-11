@@ -19,6 +19,14 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Shaped
+craftingTable.removeByName("farmersdelight:cooking_pot");
+craftingTable.addShaped("farmersdelight_delight_cooking_pot", <item:farmersdelight:cooking_pot>, [
+	[<item:minecraft:brick>, <item:minecraft:iron_shovel>, <item:minecraft:brick>],
+	[<item:minecraft:iron_ingot>, <item:minecraft:water_bucket>, <item:minecraft:iron_ingot>],
+	[<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]
+]);
+
 // Cooking Pot
 <recipetype:farmersdelight:cooking>.addRecipe("cooking_pot_vinery_applesauce", <item:vinery:applesauce>, [<item:minecraft:apple>, <item:minecraft:sugar> * 2], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:minecraft:bowl>, 1, 400);
 <recipetype:farmersdelight:cooking>.addRecipe("cooking_pot_vinery_apple_jam", <item:vinery:apple_jam>, [<item:minecraft:apple>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 1, 400);
@@ -232,6 +240,7 @@ for addingLogCuttingFarmersDelightIn, addingLogCuttingFarmersDelightOut in addin
 	}],
 	"sound": "minecraft:item.axe.strip"
 });
+
 <recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/cherry_wood", {
 	"ingredients": [{
 		"item": "vinery:cherry_wood"
@@ -248,6 +257,7 @@ for addingLogCuttingFarmersDelightIn, addingLogCuttingFarmersDelightOut in addin
 	}],
 	"sound": "minecraft:item.axe.strip"
 });
+
 <recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/old_cherry_log", {
 	"ingredients": [{
 		"item": "vinery:old_cherry_log"
@@ -264,6 +274,7 @@ for addingLogCuttingFarmersDelightIn, addingLogCuttingFarmersDelightOut in addin
 	}],
 	"sound": "minecraft:item.axe.strip"
 });
+
 <recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/old_cherry_wood", {
 	"ingredients": [{
 		"item": "vinery:old_cherry_wood"
@@ -327,6 +338,7 @@ for addingDoorCuttingFarmersDelightName, addingDoorCuttingFarmersDelightId in ad
 		}]
 	});
 }
+
 var addingSignCuttingFarmersDelight = {
 	"azalea" : "ecologics:azalea",
 	"bloodshroom" : "tconstruct:bloodshroom",
@@ -357,6 +369,7 @@ for addingSignCuttingFarmersDelightName, addingSignCuttingFarmersDelightId in ad
 		}]
 	});
 }
+
 var addingTFLostCuttingFarmersDelight = {
 	"towerwood" : "twilightforest:towerwood",
 	"thorn" : "tflostblocks:thorn_planks"
@@ -399,6 +412,7 @@ for addingTFLostCuttingFarmersDelightName, addingTFLostCuttingFarmersDelightId i
 		}]
 	});
 }
+
 <recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/menril_door", {
 	"ingredients": [{
 		"item": "integrateddynamics:menril_door"
@@ -411,6 +425,7 @@ for addingTFLostCuttingFarmersDelightName, addingTFLostCuttingFarmersDelightId i
 		"item": "integrateddynamics:menril_planks"
 	}]
 });
+
 <recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/chorus_nest_planks_door", {
 	"ingredients": [{
 		"item": "unusualend:chorus_nest_planks_door"
@@ -423,6 +438,7 @@ for addingTFLostCuttingFarmersDelightName, addingTFLostCuttingFarmersDelightId i
 		"item": "unusualend:chorus_nest_planks"
 	}]
 });
+
 <recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/chorus_nest_trapdoor", {
 	"ingredients": [{
 		"item": "unusualend:chorus_nest_trapdoor"
@@ -435,6 +451,7 @@ for addingTFLostCuttingFarmersDelightName, addingTFLostCuttingFarmersDelightId i
 		"item": "unusualend:chorus_nest_planks"
 	}]
 });
+
 <recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/darkwood_sign", {
 	"ingredients": [{
 		"item": "twilightforest:darkwood_sign"
@@ -447,15 +464,8 @@ for addingTFLostCuttingFarmersDelightName, addingTFLostCuttingFarmersDelightId i
 		"item": "twilightforest:dark_planks"
 	}]
 });
+
 <recipetype:farmersdelight:cutting>.addRecipe("thermal_cutting_board_frost_melon_slice", <item:thermal:frost_melon>, [<item:thermal:frost_melon_slice> * 9], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("vinery_cutting_board_cake_slice", <item:vinery:apple_pie>, [<item:vinery:apple_pie_slice> * 4], <tag:items:farmersdelight:tools/knives>);
-
-// Shaped
-craftingTable.removeByName("farmersdelight:cooking_pot");
-craftingTable.addShaped("farmersdelight_delight_cooking_pot", <item:farmersdelight:cooking_pot>, [
-	[<item:minecraft:brick>, <item:minecraft:iron_shovel>, <item:minecraft:brick>],
-	[<item:minecraft:iron_ingot>, <item:minecraft:water_bucket>, <item:minecraft:iron_ingot>],
-	[<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]
-]);
 
 println("End script recipe_farmers_delight.");

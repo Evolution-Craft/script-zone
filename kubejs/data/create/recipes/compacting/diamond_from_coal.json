@@ -1,0 +1,59 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "superheated",
+  "ingredients": [
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  },
+	  {
+		"item": "minecraft:coal_block"
+	  }
+  ],
+  "results":  [
+    {
+      "chance": 0.10,
+      "item": "minecraft:diamond"
+    }]
+}

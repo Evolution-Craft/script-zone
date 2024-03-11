@@ -14,6 +14,7 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
+// Shaped
 craftingTable.removeByName("sophisticatedbackpacks:tool_swapper_upgrade");
 craftingTable.addShaped("sophisticatedbackpacks_tool_swapper_upgrade", <item:sophisticatedbackpacks:tool_swapper_upgrade>, [
 	[<item:minecraft:redstone>, <item:minecraft:iron_sword>, <item:minecraft:redstone>],

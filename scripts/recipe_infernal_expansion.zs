@@ -14,6 +14,7 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
+// Shaped
 craftingTable.addShaped("infernalexp_luminous_hyphae_from_luminous_stem", <item:infernalexp:luminous_hyphae> * 3, [
 	[<item:infernalexp:luminous_stem>, <item:infernalexp:luminous_stem>, <item:minecraft:air>],
 	[<item:infernalexp:luminous_stem>, <item:infernalexp:luminous_stem>, <item:minecraft:air>],

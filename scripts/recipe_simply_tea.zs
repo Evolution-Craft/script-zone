@@ -17,19 +17,22 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
-craftingTable.addShapeless("simplytea_ice_cube", <item:simplytea:ice_cube> * 4, [<item:minecraft:ice>]);
+// Shapeless
 craftingTable.addShapeless("simplytea_chorus_petal", <item:simplytea:chorus_petal> * 4, [<item:minecraft:chorus_fruit>]);
+craftingTable.addShapeless("simplytea_ice_cube", <item:simplytea:ice_cube> * 4, [<item:minecraft:ice>]);
+
+// Shaped
+craftingTable.removeByName("simplytea:teabag_chorus");
+craftingTable.addShaped("simplytea_tea_teabag_chorus", <item:simplytea:teabag_chorus>, [
+	[<item:simplytea:teabag>, <tag:items:forge:crops/chorus_petal>, <item:minecraft:air>],
+	[<tag:items:forge:crops/chorus_petal>, <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
 
 craftingTable.removeByName("simplytea:teabag_green");
 craftingTable.addShaped("simplytea_tea_teabag_green", <item:simplytea:teabag_green>, [
 	[<item:simplytea:teabag>, <tag:items:forge:crops/tea>, <item:minecraft:air>],
 	[<tag:items:forge:crops/tea>, <item:minecraft:air>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-craftingTable.removeByName("simplytea:teabag_chorus");
-craftingTable.addShaped("simplytea_tea_teabag_chorus", <item:simplytea:teabag_chorus>, [
-	[<item:simplytea:teabag>, <tag:items:forge:crops/chorus_petal>, <item:minecraft:air>],
-	[<tag:items:forge:crops/chorus_petal>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 

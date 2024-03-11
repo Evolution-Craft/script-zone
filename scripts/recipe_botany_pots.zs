@@ -41,6 +41,7 @@ import crafttweaker.api.recipe.Replacer;
 		"maxRolls": 2
 	}]
 });
+
 <recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/red_grape_seeds", {
 	"seed": {
 		"item": "vinery:red_grape_seeds"
@@ -69,6 +70,7 @@ import crafttweaker.api.recipe.Replacer;
 		"maxRolls": 2
 	}]
 });
+
 <recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/white_grape_seeds", {
 	"seed": {
 		"item": "vinery:white_grape_seeds"
@@ -97,6 +99,7 @@ import crafttweaker.api.recipe.Replacer;
 		"maxRolls": 2
 	}]
 });
+
 <recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/savanna_grape_seeds_red", {
 	"seed": {
 		"item": "vinery:savanna_grape_seeds_red"
@@ -125,6 +128,7 @@ import crafttweaker.api.recipe.Replacer;
 		"maxRolls": 2
 	}]
 });
+
 <recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/savanna_grape_seeds_white", {
 	"seed": {
 		"item": "vinery:savanna_grape_seeds_white"
@@ -153,6 +157,7 @@ import crafttweaker.api.recipe.Replacer;
 		"maxRolls": 2
 	}]
 });
+
 <recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/taiga_grape_seeds_red", {
 	"seed": {
 		"item": "vinery:taiga_grape_seeds_red"
@@ -181,6 +186,7 @@ import crafttweaker.api.recipe.Replacer;
 		"maxRolls": 2
 	}]
 });
+
 <recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/taiga_grape_seeds_white", {
 	"seed": {
 		"item": "vinery:taiga_grape_seeds_white"
@@ -209,6 +215,7 @@ import crafttweaker.api.recipe.Replacer;
 		"maxRolls": 2
 	}]
 });
+
 <recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/jungle_grape_seeds_red", {
 	"seed": {
 		"item": "vinery:jungle_grape_seeds_red"
@@ -237,6 +244,7 @@ import crafttweaker.api.recipe.Replacer;
 		"maxRolls": 2
 	}]
 });
+
 <recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/jungle_grape_seeds_white", {
 	"seed": {
 		"item": "vinery:jungle_grape_seeds_white"
@@ -266,4 +274,4 @@ import crafttweaker.api.recipe.Replacer;
 	}]
 });
 
-println("Start script end_recipe_botany_pot.");
+println("End script recipe_botany_pot.");

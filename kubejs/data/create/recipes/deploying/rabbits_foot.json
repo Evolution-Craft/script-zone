@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:rabbit_hide"
+    },
+    {
+      "item": "minecraft:bone"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:rabbit_foot"
+    }
+  ]
+}

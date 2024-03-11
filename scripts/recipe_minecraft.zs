@@ -49,6 +49,72 @@ var itemDyeMisc = [
 	"white"
 ];
 
+// Shapeless
+craftingTable.addShapeless("minecraft_flint", <item:minecraft:flint>, [<item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>]);
+craftingTable.addShapeless("minecraft_nether_wart_unblock", <item:minecraft:nether_wart> * 4, [<item:minecraft:nether_wart_block>]);
+craftingTable.addShapeless("minecraft_snow_block_unblock", <item:minecraft:snowball> * 4, [<item:minecraft:snow_block>]);
+
+craftingTable.removeByName("minecraft:flint_and_steel");
+craftingTable.addShapeless("pack_expert_crafting/flint_and_steel", <item:minecraft:flint_and_steel>, [<tag:items:forge:ingots/steel>, <item:minecraft:flint>]);
+
+// Shaped
+craftingTable.addShaped("minecraft_bell", <item:minecraft:bell>, [
+	[<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, <tag:items:minecraft:logs>],
+	[<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/gold>, <tag:items:forge:ingots/gold>],
+	[<tag:items:forge:ingots/gold>, <item:minecraft:gold_block>, <tag:items:forge:ingots/gold>]
+]);
+
+craftingTable.addShaped("minecraft_calcite", <item:minecraft:calcite> * 2, [
+	[<item:minecraft:tuff>, <item:minecraft:quartz>, <item:minecraft:air>],
+	[<item:minecraft:quartz>, <item:minecraft:tuff>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
+craftingTable.addShaped("minecraft_grass_block", <item:minecraft:grass_block>, [
+	[<item:minecraft:air>, <item:minecraft:moss_carpet>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:dirt>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
+craftingTable.removeByName("sulfurpotassiummod:gunpowder");
+craftingTable.removeByName("salt:gunpowder");
+craftingTable.addShaped("minecraft_gunpowder", <item:minecraft:gunpowder> * 2, [
+	[<item:minecraft:air>, <item:sulfurpotassiummod:sulfur>, <item:minecraft:air>],
+	[<item:salt:salt>, <item:minecraft:charcoal>, <item:salt:salt>],
+	[<item:minecraft:air>, <item:sulfurpotassiummod:potassium>, <item:minecraft:air>]
+]);
+
+craftingTable.addShaped("minecraft_name_tag", <item:minecraft:name_tag>, [
+	[<item:minecraft:air>, <tag:items:forge:ingots/iron>, <tag:items:forge:string>],
+	[<item:minecraft:air>, <item:minecraft:leather>, <tag:items:forge:ingots/iron>],
+	[<item:minecraft:leather>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
+craftingTable.addShaped("minecraft_saddle", <item:minecraft:saddle>, [
+	[<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>],
+	[<item:minecraft:chain>, <item:minecraft:air>, <item:minecraft:chain>],
+	[<tag:items:forge:string>, <item:minecraft:air>, <tag:items:forge:string>]
+]);
+
+craftingTable.addShaped("minecraft_totem_of_undying", <item:minecraft:totem_of_undying>, [
+	[<item:minecraft:emerald>, <tag:items:forge:ingots/gold>, <item:minecraft:emerald>],
+	[<tag:items:forge:ingots/gold>, <item:minecraft:nether_star>, <tag:items:forge:ingots/gold>],
+	[<item:minecraft:air>, <item:minecraft:gold_block>, <item:minecraft:air>]
+]);
+
+craftingTable.addShaped("minecraft_tuff", <item:minecraft:tuff> * 2, [
+	[<item:minecraft:cobbled_deepslate>, <item:minecraft:andesite>, <item:minecraft:air>],
+	[<item:minecraft:andesite>, <item:minecraft:cobbled_deepslate>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
+craftingTable.removeByName("minecraft:stonecutter");
+craftingTable.addShaped("pack_expert_crafting/minecraft_stonecutter", <item:minecraft:stonecutter>, [
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:thermal:saw_blade>, <item:minecraft:air>],
+	[<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>]
+]);
+
 // Campfire
 campfire.addRecipe("campfire/vinery_toast_from_dough", <item:vinery:toast>, <tag:items:minecraft:dough>, 1.0, 200);
 
@@ -192,60 +258,61 @@ for composterAddItemMaterial, composterAddItemValue in composterAddItem {
 }
 
 // Blast Furnace
+blastFurnace.addRecipe("blast_furnace/create_raw_zinc_block", <item:create:zinc_block>, <item:create:raw_zinc_block>, 6.0, 200);
+blastFurnace.removeByName("exlinecopperequipment:copper_boots_blast");
+blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 100);
+blastFurnace.removeByName("exlinecopperequipment:copper_chest_blast");
+blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_chestplate", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_chestplate>, 0.1, 100);
+blastFurnace.removeByName("exlinecopperequipment:copper_helm_blast");
+blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_helmet", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_helmet>, 0.1, 100);
+blastFurnace.removeByName("exlinecopperequipment:copper_horse_armor_blast");
+blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_horse_armor", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_horse_armor>, 0.1, 100);
+blastFurnace.removeByName("exlinecopperequipment:copper_leggs_blast");
+blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_leggings", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_leggings>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_sterling_boots", <item:thermal:silver_nugget>, <item:galosphere:sterling_boots>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_sterling_chestplate", <item:thermal:silver_nugget>, <item:galosphere:sterling_chestplate>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_sterling_helmet", <item:thermal:silver_nugget>, <item:galosphere:sterling_helmet>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_sterling_horse_armor", <item:thermal:silver_nugget>, <item:galosphere:sterling_horse_armor>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_sterling_leggings", <item:thermal:silver_nugget>, <item:galosphere:sterling_leggings>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/infernalexp_silt", <item:minecraft:glass>, <item:infernalexp:silt>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/minecraft_cobblestone", <item:minecraft:stone>, <item:minecraft:cobblestone>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/minecraft_cobbled_deepslate", <item:minecraft:deepslate>, <item:minecraft:cobbled_deepslate>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/minecraft_raw_iron_block", <item:minecraft:iron_block>, <item:minecraft:raw_iron_block>, 4.2, 200);
 blastFurnace.addRecipe("blast_furnace/minecraft_raw_copper_block", <item:minecraft:copper_block>, <item:minecraft:raw_copper_block>, 4.2, 200);
 blastFurnace.addRecipe("blast_furnace/minecraft_raw_gold_block", <item:minecraft:gold_block>, <item:minecraft:raw_gold_block>, 6.0, 200);
+blastFurnace.addRecipe("blast_furnace/minecraft_sand", <item:minecraft:glass>, <tag:items:minecraft:sand>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/minecraft_stone", <item:minecraft:smooth_stone>, <item:minecraft:stone>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/quark_dirty_glass", <item:minecraft:glass>, <item:quark:dirty_glass>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/undergarden_raw_cloggrum_block", <item:undergarden:cloggrum_block>, <item:undergarden:raw_cloggrum_block>, 6.0, 200);
 blastFurnace.addRecipe("blast_furnace/undergarden_raw_froststeel_block", <item:undergarden:froststeel_block>, <item:undergarden:raw_froststeel_block>, 6.0, 200);
-blastFurnace.addRecipe("blast_furnace/create_raw_zinc_block", <item:create:zinc_block>, <item:create:raw_zinc_block>, 6.0, 200);
-blastFurnace.addRecipe("blast_furnace/minecraft_sand", <item:minecraft:glass>, <tag:items:minecraft:sand>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/minecraft_cobblestone", <item:minecraft:stone>, <item:minecraft:cobblestone>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/minecraft_cobbled_deepslate", <item:minecraft:deepslate>, <item:minecraft:cobbled_deepslate>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/minecraft_stone", <item:minecraft:smooth_stone>, <item:minecraft:stone>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/infernalexp_silt", <item:minecraft:glass>, <item:infernalexp:silt>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/quark_dirty_glass", <item:minecraft:glass>, <item:quark:dirty_glass>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/galosphere_sterling_horse_armor", <item:thermal:silver_nugget>, <item:galosphere:sterling_horse_armor>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/galosphere_sterling_helmet", <item:thermal:silver_nugget>, <item:galosphere:sterling_helmet>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/galosphere_sterling_chestplate", <item:thermal:silver_nugget>, <item:galosphere:sterling_chestplate>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/galosphere_sterling_leggings", <item:thermal:silver_nugget>, <item:galosphere:sterling_leggings>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/galosphere_sterling_boots", <item:thermal:silver_nugget>, <item:galosphere:sterling_boots>, 0.1, 100);
-blastFurnace.removeByName("exlinecopperequipment:copper_horse_armor_blast");
-blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_horse_armor", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_horse_armor>, 0.1, 100);
-blastFurnace.removeByName("exlinecopperequipment:copper_helm_blast");
-blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_helmet", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_helmet>, 0.1, 100);
-blastFurnace.removeByName("exlinecopperequipment:copper_chest_blast");
-blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_chestplate", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_chestplate>, 0.1, 100);
-blastFurnace.removeByName("exlinecopperequipment:copper_leggs_blast");
-blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_leggings", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_leggings>, 0.1, 100);
-blastFurnace.removeByName("exlinecopperequipment:copper_boots_blast");
-blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 100);
 
 // Furnace
 for furnace_concrete_dye_add_item in itemDyeMisc {
 	furnace.addRecipe("furnace/minecraft_" + furnace_concrete_dye_add_item + "_concrete", <item:minecraft:${furnace_concrete_dye_add_item}_concrete_powder>, <item:minecraft:${furnace_concrete_dye_add_item}_concrete>, 0.1, 200);
 }
+
+furnace.addRecipe("furnace/alexsmobs_fish_bones", <item:minecraft:bone_meal> * 3, <item:alexsmobs:fish_bones>, 0.05, 200);
+furnace.addRecipe("furnace/aquaculture_fish_bones", <item:minecraft:bone_meal> * 3, <item:aquaculture:fish_bones>, 0.05, 200);
+furnace.removeByName("exlinecopperequipment:copper_boots_smelt");
+furnace.addRecipe("furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 200);
+furnace.removeByName("exlinecopperequipment:copper_chest_smelt");
+furnace.addRecipe("furnace/exlinecopperequipment_copper_chestplate", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_chestplate>, 0.1, 200);
+furnace.addRecipe("furnace/exlinecopperequipment_copper_helmet", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_helmet>, 0.1, 200);
+furnace.removeByName("exlinecopperequipment:copper_horse_armor_smelt");
+furnace.addRecipe("furnace/exlinecopperequipment_copper_horse_armor", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_horse_armor>, 0.1, 200);
+furnace.removeByName("exlinecopperequipment:copper_leggs_smelt");
+furnace.addRecipe("furnace/exlinecopperequipment_copper_leggings", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_leggings>, 0.1, 200);
+furnace.addRecipe("furnace/galosphere_sterling_boots", <item:thermal:silver_nugget>, <item:galosphere:sterling_boots>, 0.1, 200);
+furnace.addRecipe("furnace/galosphere_sterling_chestplate", <item:thermal:silver_nugget>, <item:galosphere:sterling_chestplate>, 0.1, 200);
+furnace.addRecipe("furnace/galosphere_sterling_helmet", <item:thermal:silver_nugget>, <item:galosphere:sterling_helmet>, 0.1, 200);
+furnace.addRecipe("furnace/galosphere_sterling_horse_armor", <item:thermal:silver_nugget>, <item:galosphere:sterling_horse_armor>, 0.1, 200);
+furnace.addRecipe("furnace/galosphere_sterling_leggings", <item:thermal:silver_nugget>, <item:galosphere:sterling_leggings>, 0.1, 200);
 furnace.addRecipe("furnace/minecraft_beetroot", <item:minecraft:sugar> * 2, <item:minecraft:beetroot>, 0.1, 60);
 furnace.addRecipe("furnace/minecraft_rotten_flesh", <item:minecraft:leather>, <item:minecraft:rotten_flesh> * 4, 0.4, 240);
+furnace.addRecipe("furnace/netherdepthsupgrade_bonefish", <item:minecraft:bone_meal> * 3, <item:netherdepthsupgrade:bonefish>, 0.05, 200);
 furnace.addRecipe("furnace/twilightforest_green_thorns", <item:twilightforest:burnt_thorns>, <item:twilightforest:green_thorns>, 0.4, 240);
 furnace.addRecipe("furnace/twilightforest_brown_thorns", <item:twilightforest:burnt_thorns>, <item:twilightforest:brown_thorns>, 0.4, 240);
 furnace.addRecipe("furnace/vinery_dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 200);
-furnace.addRecipe("furnace/galosphere_sterling_horse_armor", <item:thermal:silver_nugget>, <item:galosphere:sterling_horse_armor>, 0.1, 200);
-furnace.addRecipe("furnace/galosphere_sterling_helmet", <item:thermal:silver_nugget>, <item:galosphere:sterling_helmet>, 0.1, 200);
-furnace.addRecipe("furnace/galosphere_sterling_chestplate", <item:thermal:silver_nugget>, <item:galosphere:sterling_chestplate>, 0.1, 200);
-furnace.addRecipe("furnace/galosphere_sterling_leggings", <item:thermal:silver_nugget>, <item:galosphere:sterling_leggings>, 0.1, 200);
-furnace.addRecipe("furnace/galosphere_sterling_boots", <item:thermal:silver_nugget>, <item:galosphere:sterling_boots>, 0.1, 200);
-furnace.removeByName("exlinecopperequipment:copper_horse_armor_smelt");
-furnace.addRecipe("furnace/exlinecopperequipment_copper_horse_armor", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_horse_armor>, 0.1, 200);
-furnace.addRecipe("furnace/exlinecopperequipment_copper_helmet", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_helmet>, 0.1, 200);
-furnace.removeByName("exlinecopperequipment:copper_chest_smelt");
-furnace.addRecipe("furnace/exlinecopperequipment_copper_chestplate", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_chestplate>, 0.1, 200);
-furnace.removeByName("exlinecopperequipment:copper_leggs_smelt");
-furnace.addRecipe("furnace/exlinecopperequipment_copper_leggings", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_leggings>, 0.1, 200);
-furnace.removeByName("exlinecopperequipment:copper_boots_smelt");
-furnace.addRecipe("furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 200);
-furnace.addRecipe("furnace/aquaculture_fish_bones", <item:minecraft:bone_meal> * 3, <item:aquaculture:fish_bones>, 0.05, 200);
-furnace.addRecipe("furnace/alexsmobs_fish_bones", <item:minecraft:bone_meal> * 3, <item:alexsmobs:fish_bones>, 0.05, 200);
-furnace.addRecipe("furnace/netherdepthsupgrade_bonefish", <item:minecraft:bone_meal> * 3, <item:netherdepthsupgrade:bonefish>, 0.05, 200);
 
 // Stone Cutter
 for adding_concrete_dye_stone_cutter_color in itemDyeMisc {
@@ -253,6 +320,7 @@ for adding_concrete_dye_stone_cutter_color in itemDyeMisc {
 	stoneCutter.addRecipe("stonecutter/moreconcrete_" + adding_concrete_dye_stone_cutter_color + "_concrete_fence_gate", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence_gate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
 	stoneCutter.addRecipe("stonecutter/moreconcrete_" + adding_concrete_dye_stone_cutter_color + "_concrete_pressure_plate", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_pressure_plate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
 }
+
 var addingFencesMacawStoneCutter = {
 	"andesite" : "andesite",
 	"blackstone" : "blackstone",
@@ -271,9 +339,9 @@ var addingFencesMacawStoneCutter = {
 for addingFencesMacawStoneCutterName, addingFencesMacawStoneCutterMaterial in addingFencesMacawStoneCutter {
 	stoneCutter.addRecipe("stonecutter/mcwfences_" + addingFencesMacawStoneCutterName + "_pillar_wall", <item:mcwfences:${addingFencesMacawStoneCutterName}_pillar_wall>, <item:minecraft:${addingFencesMacawStoneCutterMaterial}>);
 }
+
 stoneCutter.addRecipe("stonecutter/cyclic_obsidian_pressure_plate", <item:cyclic:obsidian_pressure_plate>, <item:minecraft:obsidian>);
 stoneCutter.addRecipe("stonecutter/infernalexp_polished_basalt_pressure_plate", <item:infernalexp:polished_basalt_pressure_plate>, <item:minecraft:polished_basalt>);
-//stoneCutter.addRecipe("stonecutter/infernalexp_soul_slate_pressure_plate", <item:infernalexp:soul_slate_pressure_plate>, <item:infernalexp:soul_slate>);
 stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_menril_to_brick", <item:integrateddynamics:crystalized_menril_brick> * 4, <item:integrateddynamics:crystalized_menril_block>);
 stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_menril_to_slab", <item:integrateddynamics:crystalized_menril_block_slab> * 2, <item:integrateddynamics:crystalized_menril_block>);
 stoneCutter.addRecipe("stonecutter/integrateddynamics_block_of_crystallized_menril_to_stairs_stoncutting", <item:integrateddynamics:crystalized_menril_block_stairs>, <item:integrateddynamics:crystalized_menril_block>);
@@ -308,62 +376,5 @@ stoneCutter.addRecipe("stonecutter/vinery_loam_slab", <item:vinery:loam_slab> * 
 
 // Smoker
 smoker.addRecipe("smoker/vinery_dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 100);
-
-// Shapeless
-craftingTable.removeByName("minecraft:flint_and_steel");
-craftingTable.addShapeless("pack_expert_crafting/flint_and_steel", <item:minecraft:flint_and_steel>, [<tag:items:forge:ingots/steel>, <item:minecraft:flint>]);
-craftingTable.addShapeless("minecraft_flint", <item:minecraft:flint>, [<item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>]);
-craftingTable.addShapeless("minecraft_nether_wart_unblock", <item:minecraft:nether_wart> * 4, [<item:minecraft:nether_wart_block>]);
-craftingTable.addShapeless("minecraft_snow_block_unblock", <item:minecraft:snowball> * 4, [<item:minecraft:snow_block>]);
-
-// Shaped
-craftingTable.addShaped("minecraft_grass_block", <item:minecraft:grass_block>, [
-	[<item:minecraft:air>, <item:minecraft:moss_carpet>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:dirt>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-craftingTable.addShaped("minecraft_calcite", <item:minecraft:calcite> * 2, [
-	[<item:minecraft:tuff>, <item:minecraft:quartz>, <item:minecraft:air>],
-	[<item:minecraft:quartz>, <item:minecraft:tuff>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-craftingTable.addShaped("minecraft_tuff", <item:minecraft:tuff> * 2, [
-	[<item:minecraft:cobbled_deepslate>, <item:minecraft:andesite>, <item:minecraft:air>],
-	[<item:minecraft:andesite>, <item:minecraft:cobbled_deepslate>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-craftingTable.addShaped("minecraft_saddle", <item:minecraft:saddle>, [
-	[<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>],
-	[<item:minecraft:chain>, <item:minecraft:air>, <item:minecraft:chain>],
-	[<tag:items:forge:string>, <item:minecraft:air>, <tag:items:forge:string>]
-]);
-craftingTable.addShaped("minecraft_totem_of_undying", <item:minecraft:totem_of_undying>, [
-	[<item:minecraft:emerald>, <tag:items:forge:ingots/gold>, <item:minecraft:emerald>],
-	[<tag:items:forge:ingots/gold>, <item:minecraft:nether_star>, <tag:items:forge:ingots/gold>],
-	[<item:minecraft:air>, <item:minecraft:gold_block>, <item:minecraft:air>]
-]);
-craftingTable.addShaped("minecraft_name_tag", <item:minecraft:name_tag>, [
-	[<item:minecraft:air>, <tag:items:forge:ingots/iron>, <tag:items:forge:string>],
-	[<item:minecraft:air>, <item:minecraft:leather>, <tag:items:forge:ingots/iron>],
-	[<item:minecraft:leather>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-craftingTable.addShaped("minecraft_bell", <item:minecraft:bell>, [
-	[<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, <tag:items:minecraft:logs>],
-	[<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/gold>, <tag:items:forge:ingots/gold>],
-	[<tag:items:forge:ingots/gold>, <item:minecraft:gold_block>, <tag:items:forge:ingots/gold>]
-]);
-craftingTable.removeByName("sulfurpotassiummod:gunpowder");
-craftingTable.removeByName("salt:gunpowder");
-craftingTable.addShaped("minecraft_gunpowder", <item:minecraft:gunpowder> * 2, [
-	[<item:minecraft:air>, <item:sulfurpotassiummod:sulfur>, <item:minecraft:air>],
-	[<item:salt:salt>, <item:minecraft:charcoal>, <item:salt:salt>],
-	[<item:minecraft:air>, <item:sulfurpotassiummod:potassium>, <item:minecraft:air>]
-]);
-craftingTable.removeByName("minecraft:stonecutter");
-craftingTable.addShaped("pack_expert_crafting_stonecutter", <item:minecraft:stonecutter>, [
-	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-	[<item:minecraft:air>, <item:thermal:saw_blade>, <item:minecraft:air>],
-	[<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>]
-]);
 
 println("End script recipe_minecraft.");

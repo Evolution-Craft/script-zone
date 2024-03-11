@@ -14,6 +14,7 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
+// Shaped
 craftingTable.removeByName("immersivepetroleum:seismic_survey_tool");
 craftingTable.addShaped("immersivepetroleum/seismic_survey_tool", <item:immersivepetroleum:seismic_survey>, [
 	[<item:immersiveengineering:steel_scaffolding_standard>, <item:immersiveengineering:stick_steel>, <item:immersiveengineering:wire_steel>],

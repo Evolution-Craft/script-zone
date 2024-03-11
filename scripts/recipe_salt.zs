@@ -15,6 +15,7 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Shaped
 craftingTable.removeByName("mekanism:storage_blocks/salt");
 craftingTable.removeByName("salt:salt_packing");
 craftingTable.addShaped("salt_salt_block", <item:salt:salt_block>, [

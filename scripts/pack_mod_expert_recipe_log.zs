@@ -93,7 +93,7 @@ if (pack_mode_log_enable == true) {
 			craftingTable.removeByName(packModeExpertPlanksOut);
 		}
 		if (packModeExpertPlanksOut == "quark:azalea_planks") {
-			craftingTable.addShapeless("pack_expert_crafting_quark_" + packModeExpertPlanksName.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
+			craftingTable.addShapeless("pack_expert_crafting/quark_" + packModeExpertPlanksName.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
 		} else {
 			craftingTable.addShapeless("pack_expert_crafting_" + packModeExpertPlanksName.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
 		}

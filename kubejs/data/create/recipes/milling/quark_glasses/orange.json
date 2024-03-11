@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "quark:shards"
+    },
+    {
+      "tag": "quark:shards"
+    },
+    {
+      "tag": "quark:shards"
+    },
+    {
+      "tag": "quark:shards"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    }
+  ],
+  "results": [
+    {
+      "item": "quark:orange_shard",
+      "count": 4
+    }
+  ]
+}

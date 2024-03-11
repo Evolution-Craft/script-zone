@@ -15,6 +15,7 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Shapeless
 craftingTable.removeByName("refinedstorage:raw_advanced_processor");
 craftingTable.addShapeless("refinedstorage_raw_advanced_processor", <item:refinedstorage:raw_advanced_processor>, [<item:refinedstorage:processor_binding>, <item:minecraft:diamond>, <tag:items:forge:silicon>, <item:minecraft:redstone>]);
 craftingTable.removeByName("refinedstorage:raw_basic_processor");
@@ -22,6 +23,7 @@ craftingTable.addShapeless("refinedstorage_raw_basic_processor", <item:refinedst
 craftingTable.removeByName("refinedstorage:raw_improved_processor");
 craftingTable.addShapeless("refinedstorage_raw_improved_processor", <item:refinedstorage:raw_improved_processor>, [<item:refinedstorage:processor_binding>, <item:minecraft:gold_ingot>, <tag:items:forge:silicon>, <item:minecraft:redstone>]);
 
+// Shaped
 craftingTable.removeByName("refinedstorage:controller");
 craftingTable.addShaped("refinedstorage_controller", <item:refinedstorage:controller>, [
 	[<item:refinedstorage:quartz_enriched_iron>, <item:refinedstorage:advanced_processor>, <item:refinedstorage:quartz_enriched_iron>],

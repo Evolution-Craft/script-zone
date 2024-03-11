@@ -21,6 +21,7 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Shaped
 var craftingExpertLogCorailWoodcutter = {
 	"oak" : <tag:items:minecraft:oak_logs>,
 	"spruce" : <tag:items:minecraft:spruce_logs>,
@@ -48,6 +49,7 @@ for craftingExpertLogCorailWoodcutterName, craftingExpertLogCorailWoodcutterModI
 	]);
 }
 
+// Woodcutting
 <recipetype:corail_woodcutter:woodcutting>.removeByName("corail_woodcutter:woodcutting/quark/jungle_post_from_jungle_planks");
 <recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_woodcutting/quark/jungle_post_from_jungle_planks", {
 	"ingredient":{

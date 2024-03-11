@@ -15,6 +15,7 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Shaped
 craftingTable.removeByName("bambooeverything:bamboo_torch");
 craftingTable.addShaped("bambooeverything_bamboo_torch", <item:bambooeverything:bamboo_torch> * 4, [
 	[<item:minecraft:air>, <item:minecraft:coal>, <item:minecraft:air>],

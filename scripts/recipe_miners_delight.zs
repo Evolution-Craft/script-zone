@@ -14,6 +14,7 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
+// Shaped
 craftingTable.removeByName("miners_delight:copper_pot");
 craftingTable.addShaped("miners_delight_copper_pot", <item:miners_delight:copper_pot>, [
 	[<item:minecraft:air>, <item:minecraft:iron_shovel>, <item:minecraft:air>],

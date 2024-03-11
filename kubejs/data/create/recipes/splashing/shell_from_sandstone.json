@@ -1,0 +1,17 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "minecraft:sandstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "chance": 0.025,
+      "item": "minecraft:nautilus_shell"
+    }
+  ]
+}

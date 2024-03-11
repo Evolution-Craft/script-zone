@@ -15,6 +15,7 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Shaped
 craftingTable.addShaped("glass_pane_table", <item:pitg:glass_pane_table>, [
 	[<item:minecraft:blackstone_slab>, <tag:items:forge:glass_panes/silica>, <item:minecraft:blackstone_slab>],
 	[<item:minecraft:air>, <item:minecraft:blackstone_slab>, <item:minecraft:air>],
