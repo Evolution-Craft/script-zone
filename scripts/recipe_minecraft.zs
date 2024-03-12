@@ -50,6 +50,8 @@ var itemDyeMisc = [
 ];
 
 // Shapeless
+craftingTable.addShapeless("minecraft_brown_day", <item:minecraft:brown_dye> * 3, [<item:minecraft:blue_dye>, <item:minecraft:red_dye>, <item:minecraft:yellow_dye>]);
+craftingTable.addShapeless("minecraft_green_day", <item:minecraft:green_dye> * 3, [<item:minecraft:blue_dye>, <item:minecraft:yellow_dye>]);
 craftingTable.addShapeless("minecraft_flint", <item:minecraft:flint>, [<item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>]);
 craftingTable.addShapeless("minecraft_nether_wart_unblock", <item:minecraft:nether_wart> * 4, [<item:minecraft:nether_wart_block>]);
 craftingTable.addShapeless("minecraft_snow_block_unblock", <item:minecraft:snowball> * 4, [<item:minecraft:snow_block>]);
