@@ -135,5 +135,15 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 	}],
 	"experience": 0.9
 });
+<recipetype:thermal:smelter_recycle>.addJsonRecipe("thermal_machines/smelter/smelter_copper_tools", {
+	"ingredient": {
+		"tag": "forge:tools/copper"
+	},
+	"result": [{
+		"item": "minecraft:copper_ingot",
+		"count": 1
+	}],
+	"experience": 0.3
+});
 
 println("End script recipe_thermal_series.");

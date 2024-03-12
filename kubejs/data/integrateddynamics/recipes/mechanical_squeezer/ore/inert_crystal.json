@@ -1,0 +1,31 @@
+{
+  "type": "integrateddynamics:mechanical_squeezer",
+  "item": {
+    "tag": "forge:ores/inert_crystal"
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": "elementalcraft:inert_crystal",
+          "count": 3
+        }
+      },
+      {
+        "item": {
+          "item": "elementalcraft:inert_crystal",
+          "count": 2
+        },
+        "chance": 0.5
+      },
+      {
+        "item": {
+          "item": "elementalcraft:inert_crystal",
+          "count": 2
+        },
+        "chance": 0.5
+      }
+    ]
+  },
+  "duration": 40
+}

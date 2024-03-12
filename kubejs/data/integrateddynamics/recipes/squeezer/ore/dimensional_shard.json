@@ -1,0 +1,21 @@
+{
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "tag": "forge:ores/dimensional_shard"
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": "rftoolsbase:dimensionalshard",
+          "count": 2
+        }
+      },
+      {
+        "item": "rftoolsbase:dimensionalshard",
+        "chance": 0.75
+      }
+    ]
+  },
+  "duration": 40
+}

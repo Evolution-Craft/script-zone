@@ -4,7 +4,7 @@
  * The author of this file is Millennium, using CraftTweaker mod code.
  *
  * CHANGELOG:
- * v0.1 : Fix Elytra uncategorized.
+ * v0.1 : Add tag heat sources.
  */
 
 println("Start script/tag/farmers_delight.");

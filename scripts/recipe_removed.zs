@@ -312,8 +312,12 @@ var removeRecipeByName = [
 	"minecraft:wooden_sword",
 	// Mini Utilities
 	"miniutilities:chorus_tile",
+	"miniutilities:destruction_pickaxe",
+	"miniutilities:erosion_shovel",
 	"miniutilities:ender_tile",
+	"miniutilities:etheric_sword",
 	"miniutilities:golden_lasso",
+	"miniutilities:healing_axe",
 	"miniutilities:iron_drum",
 	"miniutilities:kikoku",
 	"miniutilities:laser_hub",
@@ -326,6 +330,7 @@ var removeRecipeByName = [
 	"miniutilities:precision_shears",
 	"miniutilities:redstone_clock",
 	"miniutilities:reinforced_large_drum",
+	"miniutilities:reversing_hoe",
 	"miniutilities:solar_panel",
 	"miniutilities:solar_panel_controller",
 	"miniutilities:stone_drum",
@@ -607,6 +612,23 @@ for remove_mana_infusion_recipe_by_name in removeManaInfsionRecipeByName{
 
 // Create
 <recipetype:create:filling>.removeByName("create:filling/honeyed_apple");
+
+// Cyclic
+var removeCyclicCrusherRecipeByName = [
+	"cyclic:crusher/coal_ore",
+	"cyclic:crusher/copper_ore",
+	"cyclic:crusher/diamond_ore",
+	"cyclic:crusher/emerald_ore",
+	"cyclic:crusher/gold_ore",
+	"cyclic:crusher/hopper_gold",
+	"cyclic:crusher/iron_ore",
+	"cyclic:crusher/lapis_ore",
+	"cyclic:crusher/quartz_ore",
+	"cyclic:crusher/redstone_ore"
+];
+for remove_cyclic_crusher_recipe_by_name in removeCyclicCrusherRecipeByName{
+	<recipetype:cyclic:crusher>.removeByName(remove_cyclic_crusher_recipe_by_name);
+}
 
 // Electrodynamics
 <recipetype:electrodynamics:lathe_recipe>.removeByName("electrodynamics:item2item/lathe/steel_rod");

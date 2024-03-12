@@ -1,3 +1,5 @@
 {
-  "values":["healingbed:scoreboard"]
+	"values":[
+		"healingbed:scoreboard"
+	]
 }

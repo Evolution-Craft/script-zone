@@ -33,6 +33,7 @@ for tag_armor_copper_forge in addingArmorCopperForge{
 	<tag:items:forge:armor>.add(<item:${tag_armor_copper_forge}>);
 	<tag:items:forge:armor/copper>.add(<item:${tag_armor_copper_forge}>);
 }
+
 var addingArmorSilverForge = [
 	"galosphere:sterling_boots",
 	"galosphere:sterling_chestplate",
@@ -43,6 +44,7 @@ for tag_armor_silver_forge in addingArmorSilverForge{
 	<tag:items:forge:armor>.add(<item:${tag_armor_silver_forge}>);
 	<tag:items:forge:armor/silver>.add(<item:${tag_armor_silver_forge}>);
 }
+
 var addingArmorWoodForge = [
 	"woodarmor:oak",
 	"woodarmor:birch",
@@ -100,6 +102,7 @@ for tag_armor_wood_forge in addingArmorWoodForge {
 		<tag:items:forge:armor/crimson>.add(<item:${tag_armor_wood_forge}_boots>);
 	}
 }
+
 var addingArmorStoneForge = [
 	"woodarmor:stone_boots",
 	"woodarmor:stone_chestplate",
@@ -109,6 +112,46 @@ var addingArmorStoneForge = [
 for tag_armor_stone_forge in addingArmorStoneForge{
 	<tag:items:forge:armor>.add(<item:${tag_armor_stone_forge}>);
 	<tag:items:forge:armor/stone>.add(<item:${tag_armor_stone_forge}>);
+}
+
+// Axes
+var addingAxesForge = [
+	"ae2:certus_quartz_axe",
+	"ae2:fluix_axe",
+	"ae2:nether_quartz_axe",
+	"botania:elementium_axe",
+	"botania:manasteel_axe",
+	"cyclic:amethyst_axe",
+	"cyclic:crystal_axe",
+	"cyclic:emerald_axe",
+	"cyclic:netherbrick_axe",
+	"cyclic:sandstone_axe",
+	"enlightened_end:adamantite_axe",
+	"enlightened_end:starsteel_axe",
+	"enlightened_end:tenebrium_axe",
+	"exlinecopperequipment:copper_axe",
+	"immersiveengineering:axe_steel",
+	"mekanismtools:lapis_lazuli_axe",
+	"mekanismtools:osmium_axe",
+	"mekanismtools:refined_glowstone_axe",
+	"mekanismtools:refined_obsidian_axe",
+	"mekanismtools:steel_axe",
+	"naturesaura:infused_iron_axe",
+	"naturesaura:sky_axe",
+	"twilightforest:diamond_minotaur_axe",
+	"twilightforest:gold_minotaur_axe",
+	"twilightforest:ironwood_axe",
+	"twilightforest:knightmetal_axe",
+	"twilightforest:steeleaf_axe",
+	"undergarden:cloggrum_axe",
+	"undergarden:cloggrum_battleaxe",
+	"undergarden:forgotten_axe",
+	"undergarden:forgotten_battleaxe",
+	"undergarden:froststeel_axe",
+	"undergarden:utherium_axe"
+];
+for tag_axes_forge in addingAxesForge{
+	<tag:items:forge:axes>.add(<item:${tag_axes_forge}>);
 }
 
 // Berries
@@ -376,6 +419,18 @@ var addingStrippedWoodForge = [
 ];
 for tag_stripped_wood_forge in addingStrippedWoodForge{
 	<tag:items:forge:stripped_wood>.add(<item:${tag_stripped_wood_forge}>);
+}
+
+// Tool
+var addingToolsCopperForge = [
+	"exlinecopperequipment:copper_axe",
+	"exlinecopperequipment:copper_hoe",
+	"exlinecopperequipment:copper_pick",
+	"exlinecopperequipment:copper_shovel",
+	"exlinecopperequipment:copper_sword"
+];
+for tag_tools_copper_forge in addingToolsCopperForge{
+	<tag:items:forge:tools/copper>.add(<item:${tag_tools_copper_forge}>);
 }
 
 // Tools Knives
