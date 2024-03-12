@@ -1,0 +1,12 @@
+{
+  "type": "mekanism:sawing",
+  "input": {
+    "ingredient": {
+      "item": "thermal:frost_melon"
+    }
+  },
+  "mainOutput": {
+    "item": "thermal:frost_melon_slice",
+    "count": 9
+  }
+}

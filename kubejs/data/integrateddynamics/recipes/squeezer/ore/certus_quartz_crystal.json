@@ -1,0 +1,21 @@
+{
+  "type": "integrateddynamics:squeezer",
+  "item": {
+    "tag": "forge:ores/certus_quartz"
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": "ae2:certus_quartz_crystal",
+          "count": 2
+        }
+      },
+      {
+        "item": "ae2:certus_quartz_dust",
+        "chance": 0.75
+      }
+    ]
+  },
+  "duration": 40
+}

@@ -1,0 +1,12 @@
+{
+  "type": "immersiveengineering:metal_press",
+  "mold": "immersiveengineering:mold_unpacking",
+  "result": {
+    "item": "thermal:frost_melon_slice",
+    "count": 9
+  },
+  "input": {
+    "item": "thermal:frost_melon"
+  },
+  "energy": 3200
+}
