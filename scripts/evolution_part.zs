@@ -20,6 +20,7 @@ import contenttweaker.object.vanilla.property.StandardItemProperties;
 val evolutionCreativeTab = <factory:creative_tab>.create("evolutionTab", <item:minecraft:paper>);
 val evolutionTab = <tab:evolutionTab>;
 
+// Part
 val common_part = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
@@ -45,6 +46,7 @@ val leggendary_part = <factory:item>.typed<Basic>()
 	.rarity(<constant:minecraft:item/rarity:epic>)
 	.build("leggendary_part");
 
+// Ingot
 val lapis_ingot_alloy = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
@@ -64,5 +66,26 @@ val redstone_iron_compound = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("redstone_iron_compound");
+
+// Ae2 Integration
+val crushed_certus_quartz = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("crushed_certus_quartz");
+
+val crushed_charged_certus_quartz = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("crushed_charged_certus_quartz");
+
+val crushed_fluix = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("crushed_fluix");
+
+val crushed_quartz = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("crushed_quartz");
 
 println("End script recipe_evolution_part.");
