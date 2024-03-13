@@ -23,3 +23,6 @@ minecraftinstance.json
 config/towns_and_towers/
 crash-reports
 screenshots
+/.vscode
+minecraftinstance.json
+/kubejs/probe
