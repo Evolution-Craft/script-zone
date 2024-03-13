@@ -1,8 +1,11 @@
-console.info('Removing ores from your world, during startup')
-
+console.log('ores fired')
 WorldgenEvents.remove(event => {
     event.removeOres(ores => {
-      ores.blocks = JsonIO.read('kubejs/world_ore_remove_tags.json').tags
+      ores.blocks = [
+	  		"beyond_earth:moon_desh_ore",
+			"beyond_earth:mars_ostrum_ore",
+			"beyond_earth:venus_calorite_ore"
+				]
     })
 })
 
