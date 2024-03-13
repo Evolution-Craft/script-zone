@@ -1,5 +1,5 @@
 console.log('ores fired')
-WorldgenEvents.remove(event => {
+onEvent('worldgen.remove', event => {
     event.removeOres(ores => {
       ores.blocks = [
 	  		"beyond_earth:moon_desh_ore",
@@ -9,6 +9,6 @@ WorldgenEvents.remove(event => {
     })
 })
 
-ForgeEvents.onEvent('net.minecraftforge.event.level.BlockEvent$PortalSpawnEvent', event => {
+/*ForgeEvents.onEvent('net.minecraftforge.event.level.BlockEvent$PortalSpawnEvent', event => {
   event.canceled = true
-})
+})*/
