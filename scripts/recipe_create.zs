@@ -14,6 +14,167 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
+// Crushing
+<recipetype:create:crushing>.removeByName("create:crushing/nether_quartz_ore");
+<recipetype:create:crushing>.addRecipe("create_crushing/nether_quartz_ore", [<item:contenttweaker:ae2/crushed_quartz> * 2, <item:contenttweaker:ae2/crushed_quartz> % 25, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:minecraft:nether_quartz_ore>, 350);
+
+// Mixing
+<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_refined_glowstone", {
+	"ingredients": [
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "minecraft:glowstone_dust"
+		},
+		{
+			"item": "minecraft:glowstone_dust"
+		},
+		{
+			"item": "minecraft:glowstone_dust"
+		},
+		{
+			"item": "minecraft:glowstone_dust"
+		},
+		{
+			"item": "minecraft:glowstone_dust"
+		},
+		{
+			"item": "minecraft:glowstone_dust"
+		},
+		{
+			"item": "minecraft:glowstone_dust"
+		},
+		{
+			"item": "minecraft:glowstone_dust"
+		}
+	],
+	"results": [
+		{
+			"item": "contenttweaker:mekanism/crushed_refined_glowstone",
+			"count": 8
+		} 
+	],
+	"heatRequirement": "superheated"
+});
+
+<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_refined_obsidian", {
+	"ingredients": [
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:crushed_raw_osmium"
+		},
+		{
+			"item": "create:powdered_obsidian"
+		},
+		{
+			"item": "create:powdered_obsidian"
+		},
+		{
+			"item": "create:powdered_obsidian"
+		},
+		{
+			"item": "create:powdered_obsidian"
+		},
+		{
+			"item": "create:powdered_obsidian"
+		},
+		{
+			"item": "create:powdered_obsidian"
+		},
+		{
+			"item": "create:powdered_obsidian"
+		},
+		{
+			"item": "create:powdered_obsidian"
+		},
+		{
+			"item": "mekanism:enriched_diamond"
+		}
+	],
+	"results": [
+		{
+			"item": "contenttweaker:mekanism/crushed_refined_obsidian",
+			"count": 8
+		} 
+	],
+	"heatRequirement": "superheated"
+});
+
+<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_steel", {
+	"ingredients": [
+		{
+			"item": "create:crushed_raw_iron"
+		},
+		{
+			"item": "create:crushed_raw_iron"
+		},
+		{
+			"item": "create:crushed_raw_iron"
+		},
+		{
+			"item": "create:crushed_raw_iron"
+		},
+		{
+			"item": "mekanism:enriched_carbon"
+		}
+	],
+	"results": [
+		{
+			"item": "contenttweaker:mekanism/crushed_steel",
+			"count": 4
+		} 
+	],
+	"heatRequirement": "heated"
+});
+
+// Splashing
+<recipetype:create:splashing>.addRecipe("create_splashing/crushed_quartz", [<item:minecraft:quartz> * 2, (<item:minecraft:quartz> * 1) % 50], <item:contenttweaker:ae2/crushed_quartz>, 200);
+<recipetype:create:splashing>.addRecipe("create_splashing/crushed_refined_glowstone", [<item:mekanism:nugget_refined_glowstone> * 12, (<item:mekanism:nugget_refined_glowstone> * 5) % 50], <item:contenttweaker:mekanism/crushed_refined_glowstone>, 200);
+<recipetype:create:splashing>.addRecipe("create_splashing/crushed_refined_obsidian", [<item:mekanism:nugget_refined_obsidian> * 12, (<item:mekanism:nugget_refined_obsidian> * 5) % 50], <item:contenttweaker:mekanism/crushed_refined_obsidian>, 200);
+<recipetype:create:splashing>.addRecipe("create_splashing/crushed_steel", [<item:thermal:steel_nugget> * 12, (<item:thermal:steel_nugget> * 5) % 50], <item:contenttweaker:mekanism/crushed_steel>, 200);
+
 // Sawing
 <recipetype:create:cutting>.addRecipe("stripped_cinnamon_log_from_cinnamon_log", <item:croptopia:stripped_cinnamon_log> % 100, <item:croptopia:cinnamon_log>, 50);
 <recipetype:create:cutting>.addRecipe("stripped_cinnamon_wood_from_cinnamon_wood", <item:croptopia:stripped_cinnamon_wood> % 100, <item:croptopia:cinnamon_wood>, 50);

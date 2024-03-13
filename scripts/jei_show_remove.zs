@@ -218,6 +218,7 @@ var removeJeiIngradient = [
 	"mekanism:creative_chemical_tank",
 	//"mekanism:creative_energy_cube",
 	"mekanism:creative_fluid_tank",
+	"mekanism:dust_quartz",
 	"mekanism:salt",
 	// Mekanism Tools
 	"mekanismtools:wood_paxel",

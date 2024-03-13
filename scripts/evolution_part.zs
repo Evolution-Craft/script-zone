@@ -71,21 +71,170 @@ val redstone_iron_compound = <factory:item>.typed<Basic>()
 val crushed_certus_quartz = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
-	.build("crushed_certus_quartz");
+	.build("ae2/crushed_certus_quartz");
 
 val crushed_charged_certus_quartz = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
-	.build("crushed_charged_certus_quartz");
+	.build("ae2/crushed_charged_certus_quartz");
 
 val crushed_fluix = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
-	.build("crushed_fluix");
+	.build("ae2/crushed_fluix");
 
 val crushed_quartz = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
-	.build("crushed_quartz");
+	.build("ae2/crushed_quartz");
+
+// Immersive Engineering
+val diamond_rod = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("immersiveengineering/diamond_rod");
+
+val emerald_rod = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("immersiveengineering/emerald_rod");
+
+// Mekanism
+val crushed_refined_glowstone = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("mekanism/crushed_refined_glowstone");
+
+val crushed_refined_obsidian = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("mekanism/crushed_refined_obsidian");
+
+val crushed_steel = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("mekanism/crushed_steel");
+
+// Tinker Construct
+val cobalt_sheet = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/cobalt_sheet");
+
+val crushed_ancient_debris = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/crushed_ancient_debris");
+
+val crushed_cobalt_ore = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/crushed_cobalt_ore");
+
+val crushed_hepatizon = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/crushed_hepatizon");
+
+val crushed_manyullyn = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/crushed_manyullyn");
+
+val crushed_pig_iron = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/crushed_pig_iron");
+
+val crushed_queens_slime = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/crushed_queens_slime");
+
+val crushed_rose_gold = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/crushed_rose_gold");
+
+val crushed_slimesteel = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/crushed_slimesteel");
+
+val crushed_tinkers_bronze = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/crushed_tinkers_bronze");
+
+val hepatizon_sheet = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/hepatizon_sheet");
+
+val manyullyn_sheet = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/manyullyn_sheet");
+
+val netherite_sheet = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/netherite_sheet");
+
+val pig_iron_sheet = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/pig_iron_sheet");
+
+val queens_slime_sheet = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/queens_slime_sheet");
+
+val rose_gold_sheet = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/rose_gold_sheet");
+
+val slimesteel_sheet = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/slimesteel_sheet");
+
+val tinkers_bronze_sheet = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/tinkers_bronze_sheet");
+
+val zinc_sheet = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/zinc_sheet");
+
+// Thermal Series
+val diamond_plate = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("thermal/diamond_plate");
+
+val emerald_plate = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("thermal/emerald_plate");
+
+val lapis_plate = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("thermal/lapis_plate");
+
+val osmium_plate = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("thermal/osmium_plate");
+
+val quartz_plate = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("thermal/quartz_plate");
 
 println("End script recipe_evolution_part.");
