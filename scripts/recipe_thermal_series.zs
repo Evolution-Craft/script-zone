@@ -72,7 +72,25 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 	"energy": 2400
 });
 
+// Centrifugal Separator
+<recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_certus_quartz", [<item:ae2:certus_quartz_crystal> % 100, <item:ae2:certus_quartz_dust> %25], <fluid:minecraft:empty>, <item:contenttweaker:ae2/crushed_certus_quartz>, 1600);
+<recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_charged_certus_quartz", [<item:ae2:charged_certus_quartz_crystal> % 100, <item:ae2:certus_quartz_dust> %25], <fluid:minecraft:empty>, <item:contenttweaker:ae2/crushed_charged_certus_quartz>, 1600);
+<recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_fluix", [<item:ae2:fluix_crystal> % 100, <item:ae2:fluix_dust> %25], <fluid:minecraft:empty>, <item:contenttweaker:ae2/crushed_fluix>, 1600);
+<recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_quartz", [<item:minecraft:quartz> % 100, <item:thermal:quartz_dust> %25], <fluid:minecraft:empty>, <item:contenttweaker:ae2/crushed_quartz>, 1600);
+<recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_refined_glowstone", [(<item:mekanism:nugget_refined_glowstone> * 9) % 100, <item:minecraft:glowstone> %25], <fluid:minecraft:empty>, <item:contenttweaker:mekanism/crushed_refined_glowstone>, 1600);
+<recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_refined_obsidian", [(<item:mekanism:nugget_refined_obsidian> * 9) % 100, <item:mekanism:dust_refined_obsidian> %25], <fluid:minecraft:empty>, <item:contenttweaker:mekanism/crushed_refined_obsidian>, 1600);
+<recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_steel", [(<item:thermal:steel_nugget> * 9) % 100, <item:thermal:iron_dust> %25], <fluid:minecraft:empty>, <item:contenttweaker:mekanism/crushed_steel>, 1600);
+<recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_cobalt_ore", [(<item:tconstruct:cobalt_nugget> * 9) % 100, <item:thermal:netherite_dust> %25], <fluid:minecraft:empty>, <item:contenttweaker:tconstruct/crushed_cobalt_ore>, 1600);
+
 // Induction Smelter
+<recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_certus_quartz", [<item:ae2:certus_quartz_crystal> % 100], [<item:contenttweaker:ae2/crushed_certus_quartz>], 20, 1600);
+<recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_charged_certus_quartz", [<item:ae2:charged_certus_quartz_crystal> % 100], [<item:contenttweaker:ae2/crushed_charged_certus_quartz>], 20, 1600);
+<recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_fluix", [<item:ae2:fluix_crystal> % 100], [<item:contenttweaker:ae2/crushed_fluix>], 20, 1600);
+<recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_quartz", [<item:minecraft:quartz> % 100], [<item:contenttweaker:ae2/crushed_quartz>], 20, 1600);
+<recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_refined_glowstone", [<item:mekanism:ingot_refined_glowstone> % 100], [<item:contenttweaker:mekanism/crushed_refined_glowstone>], 20, 1600);
+<recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_refined_obsidian", [<item:mekanism:ingot_refined_obsidian> % 100], [<item:contenttweaker:mekanism/crushed_refined_obsidian>], 20, 1600);
+<recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_steel", [<item:thermal:steel_ingot> % 100], [<item:contenttweaker:mekanism/crushed_steel>], 20, 1600);
+<recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_cobalt_ore", [<item:tconstruct:cobalt_ingot> % 100], [<item:contenttweaker:tconstruct/crushed_cobalt_ore>], 20, 1600);
 <recipetype:thermal:smelter>.addRecipe("pack_expert_crafting/thermal_machines/smelter/dust_hop_graphite_from_coke", [<item:immersiveengineering:dust_hop_graphite> % 100], [<item:immersiveengineering:dust_coke> * 4], 20, 6000);
 <recipetype:thermal:smelter>.addRecipe("pack_expert_crafting/thermal_machines/smelter/dust_hop_graphite_from_petcoke", [<item:immersiveengineering:dust_hop_graphite> % 100], [<item:immersivepetroleum:petcoke_dust> * 4], 20, 6000);
 

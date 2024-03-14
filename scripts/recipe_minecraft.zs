@@ -260,7 +260,11 @@ for composterAddItemMaterial, composterAddItemValue in composterAddItem {
 }
 
 // Blast Furnace
+blastFurnace.addRecipe("blast_furnace/create_crushed_certus_quartz", <item:ae2:certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_certus_quartz>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/create_charged_crushed_certus_quartz", <item:ae2:charged_certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_charged_certus_quartz>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/create_crushed_fluix", <item:ae2:fluix_crystal>, <item:contenttweaker:ae2/crushed_fluix>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create_crushed_quartz", <item:minecraft:quartz>, <item:contenttweaker:ae2/crushed_quartz>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/create_crushed_cobalt_ore", <item:tconstruct:cobalt_ingot>, <item:contenttweaker:tconstruct/crushed_cobalt_ore>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create_raw_zinc_block", <item:create:zinc_block>, <item:create:raw_zinc_block>, 6.0, 200);
 blastFurnace.removeByName("exlinecopperequipment:copper_boots_blast");
 blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 100);
@@ -299,7 +303,11 @@ for furnace_concrete_dye_add_item in itemDyeMisc {
 
 furnace.addRecipe("furnace/alexsmobs_fish_bones", <item:minecraft:bone_meal> * 3, <item:alexsmobs:fish_bones>, 0.05, 200);
 furnace.addRecipe("furnace/aquaculture_fish_bones", <item:minecraft:bone_meal> * 3, <item:aquaculture:fish_bones>, 0.05, 200);
+furnace.addRecipe("furnace/create_crushed_certus_quartz", <item:ae2:certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_certus_quartz>, 0.1, 200);
+furnace.addRecipe("furnace/create_charged_crushed_certus_quartz", <item:ae2:charged_certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_charged_certus_quartz>, 0.1, 200);
+furnace.addRecipe("furnace/create_crushed_fluix", <item:ae2:fluix_crystal>, <item:contenttweaker:ae2/crushed_fluix>, 0.1, 200);
 furnace.addRecipe("furnace/create_crushed_quartz", <item:minecraft:quartz>, <item:contenttweaker:ae2/crushed_quartz>, 0.1, 200);
+furnace.addRecipe("furnace/create_crushed_cobalt_ore", <item:tconstruct:cobalt_ingot>, <item:contenttweaker:tconstruct/crushed_cobalt_ore>, 0.1, 200);
 furnace.removeByName("exlinecopperequipment:copper_boots_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 200);
 furnace.removeByName("exlinecopperequipment:copper_chest_smelt");

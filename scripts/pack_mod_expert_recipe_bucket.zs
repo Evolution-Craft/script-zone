@@ -14,9 +14,9 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
-val pack_mode_bucket_enable = true;
+val pack_mode_expert_enable = true;
 
-if (pack_mode_bucket_enable == true) {
+if (pack_mode_expert_enable == true) {
 	craftingTable.removeByName("ceramicbucket:unfired_clay_bucket");
 	craftingTable.addShaped("pack_expert_crafting_bucket/ceramicbucket_unfired_clay_bucket", <item:ceramicbucket:unfired_clay_bucket>, [
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],

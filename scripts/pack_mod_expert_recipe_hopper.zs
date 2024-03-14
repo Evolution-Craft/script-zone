@@ -15,9 +15,9 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
-val pack_mode_hopper_enable = true;
+val pack_mode_expert_enable = true;
 
-if (pack_mode_hopper_enable == true) {
+if (pack_mode_expert_enable == true) {
 	craftingTable.removeByName("brickhopper:brick_hopper");
 	craftingTable.addShaped("pack_expert_crafting_hopper/brick_hopper", <item:brickhopper:brick_hopper>, [
 		[<item:minecraft:brick>, <item:minecraft:air>, <item:minecraft:brick>],

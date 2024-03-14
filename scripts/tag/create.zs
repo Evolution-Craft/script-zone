@@ -15,6 +15,27 @@ println("Script Priority 992.");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Crushed Raw Material
+var addingCrushedRawMaterialCreate = [
+	"contenttweaker:ae2/crushed_certus_quartz",
+	"contenttweaker:ae2/crushed_charged_certus_quartz",
+	"contenttweaker:ae2/crushed_fluix",
+	"contenttweaker:ae2/crushed_quartz",
+	"contenttweaker:mekanism/crushed_refined_glowstone",
+	"contenttweaker:mekanism/crushed_refined_obsidian",
+	"contenttweaker:mekanism/crushed_steel",
+	"contenttweaker:tconstruct/crushed_ancient_debris",
+	"contenttweaker:tconstruct/crushed_cobalt_ore",
+	"contenttweaker:tconstruct/crushed_manyullyn",
+	"contenttweaker:tconstruct/crushed_pig_iron",
+	"contenttweaker:tconstruct/crushed_queens_slime",
+	"contenttweaker:tconstruct/crushed_rose_gold",
+	"contenttweaker:tconstruct/crushed_slimesteel"
+];
+for tag_crushed_raw_material_create in addingCrushedRawMaterialCreate{
+	<tag:items:create:crushed_raw_materials>.add(<item:${tag_crushed_raw_material_create}>);
+}
+
 // Stripped Log
 var addingStrippedLogCreate = [
 	"botania:glimmering_stripped_dreamwood_log",

@@ -15,9 +15,9 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
-val pack_mode_furnace_enable = true;
+val pack_mode_expert_enable = true;
 
-if (pack_mode_furnace_enable == true) {
+if (pack_mode_expert_enable == true) {
 	craftingTable.removeByName("quark:building/crafting/furnaces/cobblestone_furnace");
 	craftingTable.addShaped("pack_expert_crafting_furnaces/cobblestone_furnace", <item:minecraft:furnace>, [
 		[<item:compressium:cobblestone_1>, <item:compressium:cobblestone_1>, <item:compressium:cobblestone_1>],

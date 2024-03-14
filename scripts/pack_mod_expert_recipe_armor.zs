@@ -17,7 +17,7 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
-val pack_mode_armor_enable = true;
+val pack_mode_expert_enable = true;
 
 var logsWoodenArmor = [
 	"oak",
@@ -121,7 +121,7 @@ var shapedArmorVarFunction as function(usualOut as IItemStack, inputs as IItemSt
 	return usualOut.withDamage(oldDamage);
 };
 
-if (pack_mode_armor_enable == true) {
+if (pack_mode_expert_enable == true) {
 	craftingTable.removeByName("woodarmor:stone_helm_recipe");
 	craftingTable.addShaped("pack_expert_crafting_armor/stone_helmet", <item:woodarmor:stone_helmet>, [
 		[<item:minecraft:cobblestone>, <item:minecraft:cobblestone>, <item:minecraft:cobblestone>],

@@ -17,8 +17,35 @@ import crafttweaker.api.recipe.Replacer;
 // Crushing
 <recipetype:create:crushing>.removeByName("create:crushing/nether_quartz_ore");
 <recipetype:create:crushing>.addRecipe("create_crushing/nether_quartz_ore", [<item:contenttweaker:ae2/crushed_quartz> * 2, <item:contenttweaker:ae2/crushed_quartz> % 25, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:minecraft:nether_quartz_ore>, 350);
+<recipetype:create:crushing>.addRecipe("create_crushing/charged_certus_quartz_crystal", [<item:contenttweaker:ae2/crushed_charged_certus_quartz>, <item:contenttweaker:ae2/crushed_charged_certus_quartz> % 25, <item:create:experience_nugget> % 10], <item:ae2:charged_certus_quartz_crystal>, 350);
+<recipetype:create:crushing>.addRecipe("create_crushing/nether_cobalt_ore", [<item:contenttweaker:tconstruct/crushed_cobalt_ore> * 2, <item:contenttweaker:tconstruct/crushed_cobalt_ore> % 25, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 350);
 
 // Mixing
+<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_flux", {
+	"ingredients": [
+		{
+			"item": "contenttweaker:ae2/crushed_charged_certus_quartz"
+		},
+		{
+			"item": "contenttweaker:ae2/crushed_quartz"
+		},
+		{
+			"item": "minecraft:redstone"
+		},
+		{
+			"fluid": "minecraft:water",
+			"nbt": {},
+			"amount": 250
+		}
+	],
+	"results": [
+		{
+			"item": "contenttweaker:ae2/crushed_fluix",
+			"count": 2
+		} 
+	]
+});
+
 <recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_refined_glowstone", {
 	"ingredients": [
 		{
@@ -170,10 +197,14 @@ import crafttweaker.api.recipe.Replacer;
 });
 
 // Splashing
+<recipetype:create:splashing>.addRecipe("create_splashing/crushed_certus_quartz", [<item:ae2:certus_quartz_crystal> * 2, (<item:ae2:certus_quartz_crystal> * 1) % 50], <item:contenttweaker:ae2/crushed_certus_quartz>, 200);
+<recipetype:create:splashing>.addRecipe("create_splashing/crushed_charged_certus_quartz", [<item:ae2:charged_certus_quartz_crystal>, (<item:ae2:charged_certus_quartz_crystal> * 1) % 50], <item:contenttweaker:ae2/crushed_charged_certus_quartz>, 200);
+<recipetype:create:splashing>.addRecipe("create_splashing/crushed_fluix_crystal", [<item:ae2:fluix_crystal> * 2, (<item:ae2:fluix_crystal> * 1) % 50], <item:contenttweaker:ae2/crushed_fluix>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_quartz", [<item:minecraft:quartz> * 2, (<item:minecraft:quartz> * 1) % 50], <item:contenttweaker:ae2/crushed_quartz>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_refined_glowstone", [<item:mekanism:nugget_refined_glowstone> * 12, (<item:mekanism:nugget_refined_glowstone> * 5) % 50], <item:contenttweaker:mekanism/crushed_refined_glowstone>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_refined_obsidian", [<item:mekanism:nugget_refined_obsidian> * 12, (<item:mekanism:nugget_refined_obsidian> * 5) % 50], <item:contenttweaker:mekanism/crushed_refined_obsidian>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_steel", [<item:thermal:steel_nugget> * 12, (<item:thermal:steel_nugget> * 5) % 50], <item:contenttweaker:mekanism/crushed_steel>, 200);
+<recipetype:create:splashing>.addRecipe("create_splashing/crushed_cobalt_ore", [<item:tconstruct:cobalt_nugget> * 9, <item:moremekanismprocessing:dust_cobalt> % 25], <item:contenttweaker:tconstruct/crushed_cobalt_ore>, 200);
 
 // Sawing
 <recipetype:create:cutting>.addRecipe("stripped_cinnamon_log_from_cinnamon_log", <item:croptopia:stripped_cinnamon_log> % 100, <item:croptopia:cinnamon_log>, 50);

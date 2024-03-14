@@ -15,10 +15,10 @@ println("Script Priority 500.");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
-val pack_mode_log_enable = true;
+val pack_mode_expert_enable = true;
 val expert_log_to_planks = 2;
 
-if (pack_mode_log_enable == true) {
+if (pack_mode_expert_enable == true) {
 	var packModeExpertPlanks = {
 		// Botania
 		"botania:dreamwood_planks" : <tag:items:botania:dreamwood_logs>,

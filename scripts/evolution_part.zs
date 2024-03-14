@@ -162,11 +162,6 @@ val crushed_slimesteel = <factory:item>.typed<Basic>()
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("tconstruct/crushed_slimesteel");
 
-val crushed_tinkers_bronze = <factory:item>.typed<Basic>()
-	.tab(evolutionTab)
-	.rarity(<constant:minecraft:item/rarity:common>)
-	.build("tconstruct/crushed_tinkers_bronze");
-
 val hepatizon_sheet = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
@@ -201,16 +196,6 @@ val slimesteel_sheet = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("tconstruct/slimesteel_sheet");
-
-val tinkers_bronze_sheet = <factory:item>.typed<Basic>()
-	.tab(evolutionTab)
-	.rarity(<constant:minecraft:item/rarity:common>)
-	.build("tconstruct/tinkers_bronze_sheet");
-
-val zinc_sheet = <factory:item>.typed<Basic>()
-	.tab(evolutionTab)
-	.rarity(<constant:minecraft:item/rarity:common>)
-	.build("tconstruct/zinc_sheet");
 
 // Thermal Series
 val diamond_plate = <factory:item>.typed<Basic>()
