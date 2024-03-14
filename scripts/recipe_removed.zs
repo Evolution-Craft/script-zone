@@ -89,6 +89,7 @@ var removeRecipeByName = [
 	"cyclic:crafting/quartz",
 	"cyclic:crafting/repeater",
 	"cyclic:diamond_carrot_health",
+	"cyclic:elevation_wand",
 	"cyclic:experience_pylon",
 	"cyclic:fan",
 	"cyclic:fan_slab",

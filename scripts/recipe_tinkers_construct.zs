@@ -36,7 +36,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 		"tag": "tconstruct:casts/multi_use/rod"
 	},
 	"fluid": {
-		"tag": "forge:molten_diamond",
+		"tag": "tconstruct:molten_diamond",
 		"amount": 45
 	},
 		"result": {
@@ -51,7 +51,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 	},
 	"cast_consumed": true,
 	"fluid": {
-		"tag": "forge:molten_diamond",
+		"tag": "tconstruct:molten_diamond",
 		"amount": 45
 	},
 	"result": {
@@ -65,7 +65,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 		"tag": "tconstruct:casts/multi_use/rod"
 	},
 	"fluid": {
-		"tag": "forge:molten_emerald",
+		"tag": "tconstruct:molten_emerald",
 		"amount": 45
 	},
 		"result": {
@@ -80,7 +80,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 	},
 	"cast_consumed": true,
 	"fluid": {
-		"tag": "forge:molten_emerald",
+		"tag": "tconstruct:molten_emerald",
 		"amount": 45
 	},
 	"result": {

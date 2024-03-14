@@ -26,7 +26,7 @@ craftingTable.addShapeless("thermal_frost_melon_unblock", <item:thermal:frost_me
 // Shaped
 craftingTable.addShaped("thermal/press_rod_die", <item:contenttweaker:thermal/press_rod_die>, [
 	[<item:minecraft:air>, <tag:items:forge:plates/invar>, <item:minecraft:air>],
-	[<tag:items:forge:plates/invar>, <item:contenttweaker:thermal/diamond_rod>, <tag:items:forge:plates/invar>],
+	[<tag:items:forge:plates/invar>, <item:contenttweaker:immersiveengineering/diamond_rod>, <tag:items:forge:plates/invar>],
 	[<item:minecraft:air>, <tag:items:forge:plates/invar>, <item:minecraft:air>]
 ]);
 craftingTable.removeByName("thermal:storage/sawdust_block");
@@ -77,11 +77,25 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 <recipetype:thermal:smelter>.addRecipe("pack_expert_crafting/thermal_machines/smelter/dust_hop_graphite_from_petcoke", [<item:immersiveengineering:dust_hop_graphite> % 100], [<item:immersivepetroleum:petcoke_dust> * 4], 20, 6000);
 
 // Multiservo Press
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_aluminum_to_rod", [<item:immersiveengineering:stick_aluminum>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/aluminum>, <item:contenttweaker:thermal/press_rod_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_brass_to_rod", [<item:createaddition:brass_rod>], <fluid:minecraft:empty>, [<item:create:brass_ingot>, <item:contenttweaker:thermal/press_rod_die>], 2400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_compressed_iron_ingot_to_gear", [<item:pneumaticcraft:compressed_iron_gear>], <fluid:minecraft:empty>, [<item:pneumaticcraft:ingot_iron_compressed> * 4, <item:thermal:press_gear_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_constantan_to_rod", [<item:immersiveposts:stick_constantan>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/constantan>, <item:contenttweaker:thermal/press_rod_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_copper_to_rod", [<item:createaddition:copper_rod>], <fluid:minecraft:empty>, [<item:minecraft:copper_ingot>, <item:contenttweaker:thermal/press_rod_die>], 2400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_diamond_to_gear", [<item:thermal:diamond_gear>], <fluid:minecraft:empty>, [<item:minecraft:diamond> * 4, <item:thermal:press_gear_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_diamond_to_rod", [<item:contenttweaker:immersiveengineering/diamond_rod>], <fluid:minecraft:empty>, [<item:minecraft:diamond>, <item:contenttweaker:thermal/press_rod_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_electrum_to_rod", [<item:createaddition:electrum_rod>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/electrum>, <item:contenttweaker:thermal/press_rod_die>], 2400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_emerald_to_gear", [<item:thermal:emerald_gear>], <fluid:minecraft:empty>, [<item:minecraft:emerald> * 4, <item:thermal:press_gear_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_emerald_to_rod", [<item:contenttweaker:immersiveengineering/emerald_rod>], <fluid:minecraft:empty>, [<item:minecraft:emerald>, <item:contenttweaker:thermal/press_rod_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_gold_to_rod", [<item:createaddition:gold_rod>], <fluid:minecraft:empty>, [<item:minecraft:gold_ingot>, <item:contenttweaker:thermal/press_rod_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_iron_to_rod", [<item:immersiveengineering:stick_iron>], <fluid:minecraft:empty>, [<item:minecraft:iron_ingot>, <item:contenttweaker:thermal/press_rod_die>], 2400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_lapis_to_gear", [<item:thermal:lapis_gear>], <fluid:minecraft:empty>, [<item:minecraft:lapis_lazuli> * 4, <item:thermal:press_gear_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_lead_to_rod", [<item:immersiveposts:stick_lead>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/lead>, <item:contenttweaker:thermal/press_rod_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_nickel_to_rod", [<item:immersiveposts:stick_nickel>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/nickel>, <item:contenttweaker:thermal/press_rod_die>], 2400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_quartz_to_gear", [<item:thermal:quartz_gear>], <fluid:minecraft:empty>, [<item:minecraft:quartz> * 4, <item:thermal:press_gear_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_silver_to_rod", [<item:immersiveposts:stick_silver>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/silver>, <item:contenttweaker:thermal/press_rod_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_steel_to_rod", [<item:immersiveengineering:stick_steel>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/steel>, <item:contenttweaker:thermal/press_rod_die>], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_uranium_to_rod", [<item:immersiveposts:stick_uranium>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/uranium>, <item:contenttweaker:thermal/press_rod_die>], 2400);
 <recipetype:thermal:press>.removeByName("thermal:machines/press/packing3x3/press_sawdust_packing");
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/packing3x3/press_sawdust_packing", [<item:thermal:sawdust_block>], <fluid:minecraft:empty>, [<tag:items:forge:dusts/wood> * 9, <item:thermal:press_packing_3x3_die>], 400);
 <recipetype:thermal:press>.removeByName("thermal:compat/mekanism/press_mek_salt_packing");

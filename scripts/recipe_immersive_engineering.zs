@@ -58,6 +58,8 @@ craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersive
 <recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/thermal_phytogro", <item:thermal:phytogro>, 3.0);
 
 // Metal Press
+<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/diamond_rod", <item:minecraft:diamond>, <item:immersiveengineering:mold_rod>, 2400, <item:contenttweaker:immersiveengineering/diamond_rod> * 2);
+<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/emerald_rod", <item:minecraft:emerald>, <item:immersiveengineering:mold_rod>, 2400, <item:contenttweaker:immersiveengineering/emerald_rod> * 2);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_diamond", <item:minecraft:diamond> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal:diamond_gear>);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_dragonsteel", <item:thermal_extra:dragonsteel_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:dragonsteel_gear>);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_emerald", <item:minecraft:emerald> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal:emerald_gear>);
@@ -71,7 +73,5 @@ craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersive
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_soul_infused", <item:thermal_extra:soul_infused_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:soul_infused_gear>);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_shellite", <item:thermal_extra:shellite_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:shellite_gear>);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_twinite", <item:thermal_extra:twinite_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:twinite_gear>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/diamond_rod", <item:minecraft:diamond> * 4, <item:immersiveengineering:mold_rod>, 2400, <item:contenttweaker:immersiveengineering/diamond_rod>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/emerald_rod", <item:minecraft:emerald> * 4, <item:immersiveengineering:mold_rod>, 2400, <item:contenttweaker:immersiveengineering/emerald_rod>);
 
 println("End script recipe_immersive_engieneering.");

@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:gems/diamond"
+	},
+	"result": {
+		"item": "contenttweaker:immersiveengineering/diamond_rod",
+		"count": 1
+	}
+}

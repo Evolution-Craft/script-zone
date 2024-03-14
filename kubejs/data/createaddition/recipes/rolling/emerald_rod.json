@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:gems/emerald"
+	},
+	"result": {
+		"item": "contenttweaker:immersiveengineering/emerald_rod",
+		"count": 1
+	}
+}

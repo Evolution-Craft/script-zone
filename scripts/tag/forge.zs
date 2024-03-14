@@ -359,6 +359,31 @@ for tag_jams_forge in addingJamsForge{
 <tag:items:forge:ores_in_ground/basalt>.add(<item:infernalexp:basalt_iron_ore>);
 
 // Rods
+var addingRodsForge = [
+	"contenttweaker:immersiveengineering/diamond_rod",
+	"contenttweaker:immersiveengineering/emerald_rod",
+	"electrodynamics:rodhslasteel",
+	"electrodynamics:rodstainlesssteel",
+	"electrodynamics:rodtitaniumcarbide",
+	"immersiveposts:stick_lead",
+	"immersiveposts:stick_silver",
+	"immersiveposts:stick_nickel",
+	"immersiveposts:stick_constantan",
+	"immersiveposts:stick_uranium"
+];
+for tag_rods_forge in addingRodsForge{
+	<tag:items:forge:rods>.add(<item:${tag_rods_forge}>);
+}
+var addingRodsAllForge = [
+	//"contenttweaker:immersiveengineering/diamond_rod",
+	//"contenttweaker:immersiveengineering/emerald_rod",
+	"electrodynamics:rodhslasteel",
+	"electrodynamics:rodstainlesssteel",
+	"electrodynamics:rodtitaniumcarbide"
+];
+for tag_rods_all_forge in addingRodsAllForge{
+	<tag:items:forge:rods/all_metal>.add(<item:${tag_rods_all_forge}>);
+}
 <tag:items:forge:rods/diamond>.add(<item:contenttweaker:immersiveengineering/diamond_rod>);
 <tag:items:forge:rods/emerald>.add(<item:contenttweaker:immersiveengineering/emerald_rod>);
 

@@ -77,6 +77,7 @@ var removeJeiIngradient = [
 	"cyclic:crafting_bag",
 	"cyclic:crafting_stick",
 	"cyclic:diamond_carrot_health",
+	"cyclic:elevation_wand",
 	"cyclic:emerald_carrot_jump",
 	"cyclic:ender_fishing",
 	"cyclic:ender_torch",
