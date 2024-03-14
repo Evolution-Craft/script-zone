@@ -270,6 +270,34 @@ if (pack_mode_expert_enable == true) {
 		[<item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:create:andesite_alloy>]
 	], shapedArmorVarFunction);
 
+	craftingTable.removeByName("mekanismtools:lapis_lazuli/armor/helmet");
+	craftingTable.addShaped("pack_expert_crafting_armor/lapis_lazuli_helmet", <item:mekanismtools:lapis_lazuli_helmet>, [
+		[<item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>],
+		[<item:contenttweaker:thermal/lapis_plate>, <item:exlinecopperequipment:copper_helmet>.anyDamage(), <item:contenttweaker:thermal/lapis_plate>],
+		[<item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>]
+	], shapedArmorVarFunction);
+
+	craftingTable.removeByName("mekanismtools:lapis_lazuli/armor/chestplate");
+	craftingTable.addShaped("pack_expert_crafting_armor/lapis_lazuli_chestplate", <item:mekanismtools:lapis_lazuli_chestplate>, [
+		[<item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>],
+		[<item:contenttweaker:thermal/lapis_plate>, <item:exlinecopperequipment:copper_chestplate>.anyDamage(), <item:contenttweaker:thermal/lapis_plate>],
+		[<item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>]
+	], shapedArmorVarFunction);
+
+	craftingTable.removeByName("mekanismtools:lapis_lazuli/armor/leggings");
+	craftingTable.addShaped("pack_expert_crafting_armor/lapis_lazuli_leggings", <item:mekanismtools:lapis_lazuli_leggings>, [
+		[<item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>],
+		[<item:contenttweaker:thermal/lapis_plate>, <item:exlinecopperequipment:copper_leggings>.anyDamage(), <item:contenttweaker:thermal/lapis_plate>],
+		[<item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>]
+	], shapedArmorVarFunction);
+
+	craftingTable.removeByName("mekanismtools:lapis_lazuli/armor/boots");
+	craftingTable.addShaped("pack_expert_crafting_armor/lapis_lazuli_boots", <item:mekanismtools:lapis_lazuli_boots>, [
+		[<item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>],
+		[<item:contenttweaker:thermal/lapis_plate>, <item:exlinecopperequipment:copper_boots>.anyDamage(), <item:contenttweaker:thermal/lapis_plate>],
+		[<item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>, <item:contenttweaker:thermal/lapis_plate>]
+	], shapedArmorVarFunction);
+
 /********************************************************************************************************************************/
 
 	craftingTable.addShaped("minecraft_chainmail_helmet", <item:minecraft:chainmail_helmet>, [

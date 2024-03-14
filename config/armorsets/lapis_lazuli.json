@@ -1,0 +1,35 @@
+{
+  "armorSetName": "jungle",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "mekanismtools:lapis_lazuli_helmet",
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "mekanismtools:lapis_lazuli_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "mekanismtools:lapis_lazuli_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "mekanismtools:lapis_lazuli_boots",
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "value": 10.0,
+      "modifierUUID": "d5a7dc88-9405-4398-b1e5-250b4c6dd219",
+      "description": "+5 hearts",
+      "attributeOperation": 0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}
