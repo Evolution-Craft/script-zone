@@ -9,6 +9,7 @@
  * v0.3 : Remove Rod for Fix Bug fluid quantiti in Blast Chiller, convert recipe in .json in KubeJS.
  * v0.4 : Adding Missing Sapling.
  * v0.5 : Adding HOP Graphite dust.
+ * v0.6 : Add Custom Rods.
  */
 
 println("Start script recipe_thermal_series.");
@@ -23,6 +24,11 @@ import crafttweaker.api.tag.manager.ITagManager;
 craftingTable.addShapeless("thermal_frost_melon_unblock", <item:thermal:frost_melon_slice> * 9, [<item:thermal:frost_melon>]);
 
 // Shaped
+craftingTable.addShaped("thermal/press_rod_die", <item:contenttweaker:thermal/press_rod_die>, [
+	[<item:minecraft:air>, <tag:items:forge:plates/invar>, <item:minecraft:air>],
+	[<tag:items:forge:plates/invar>, <item:contenttweaker:thermal/diamond_rod>, <tag:items:forge:plates/invar>],
+	[<item:minecraft:air>, <tag:items:forge:plates/invar>, <item:minecraft:air>]
+]);
 craftingTable.removeByName("thermal:storage/sawdust_block");
 craftingTable.addShaped("thermal_storage/sawdust_block", <item:thermal:sawdust_block>, [
 	[<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>],
@@ -35,6 +41,36 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 	[<tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>],
 	[<tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>]
 ]);
+
+// Blast Chiller 
+<recipetype:thermal:chiller>.addJsonRecipe("thermal_machines/chiller/chiller_diamond_rod", {
+	"input": [ {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 45
+	},
+	{
+		"item": "thermal:chiller_rod_cast"
+	} ],
+	"result": {
+		"item": "contenttweaker:immersiveengineering/diamond_rod",
+		"count": 1
+	},
+	"energy": 2400
+});
+<recipetype:thermal:chiller>.addJsonRecipe("thermal_machines/chiller/chiller_emerald_rod", {
+	"input": [ {
+		"fluid": "tconstruct:molten_emerald",
+		"amount": 45
+	},
+	{
+		"item": "thermal:chiller_rod_cast"
+	} ],
+	"result": {
+		"item": "contenttweaker:immersiveengineering/emerald_rod",
+		"count": 1
+	},
+	"energy": 2400
+});
 
 // Induction Smelter
 <recipetype:thermal:smelter>.addRecipe("pack_expert_crafting/thermal_machines/smelter/dust_hop_graphite_from_coke", [<item:immersiveengineering:dust_hop_graphite> % 100], [<item:immersiveengineering:dust_coke> * 4], 20, 6000);

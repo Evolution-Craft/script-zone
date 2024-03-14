@@ -7,6 +7,7 @@
  * v0.1 : Adding Missing Gear.
  * v0.2 : Adding Missing Pattern.
  * v0.3 : Adding Missing Wire.
+ * v0.4 : Add Custom Rods.
  */
 
 println("Start script recipe_immersive_engieneering.");
@@ -70,5 +71,7 @@ craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersive
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_soul_infused", <item:thermal_extra:soul_infused_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:soul_infused_gear>);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_shellite", <item:thermal_extra:shellite_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:shellite_gear>);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_twinite", <item:thermal_extra:twinite_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:twinite_gear>);
+<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/diamond_rod", <item:minecraft:diamond> * 4, <item:immersiveengineering:mold_rod>, 2400, <item:contenttweaker:immersiveengineering/diamond_rod>);
+<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/emerald_rod", <item:minecraft:emerald> * 4, <item:immersiveengineering:mold_rod>, 2400, <item:contenttweaker:immersiveengineering/emerald_rod>);
 
 println("End script recipe_immersive_engieneering.");

@@ -6,6 +6,7 @@
  * CHANGELOG:
  * v0.1 : Add Custom Item.
  * v0.2 : Add Custom Ingot.
+ * v0.2 : Add Custom Rods.
  */
 
 println("Start script recipe_evolution_part.");
@@ -236,5 +237,10 @@ val quartz_plate = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("thermal/quartz_plate");
+
+val press_rod_die = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("thermal/press_rod_die");
 
 println("End script recipe_evolution_part.");

@@ -12,6 +12,7 @@
  * v0.6 : Add Missing Tags.
  * v0.7 : Remove Partinal temorary Fix.
  * v0.8 : Add Armors Tags.
+ * v0.9 : Add Custom Rods.
  */
 
 #priority 997
@@ -353,9 +354,13 @@ for tag_jams_forge in addingJamsForge{
 }
 
 // Ore
-<tag:items:forge:ores>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Removed for Bug
-<tag:items:forge:ores/iron>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Removed for Bug
-<tag:items:forge:ores_in_ground/basalt>.add(<item:infernalexp:basalt_iron_ore>); // Temporary Removed for Bug
+<tag:items:forge:ores>.add(<item:infernalexp:basalt_iron_ore>);
+<tag:items:forge:ores/iron>.add(<item:infernalexp:basalt_iron_ore>);
+<tag:items:forge:ores_in_ground/basalt>.add(<item:infernalexp:basalt_iron_ore>);
+
+// Rods
+<tag:items:forge:rods/diamond>.add(<item:contenttweaker:immersiveengineering/diamond_rod>);
+<tag:items:forge:rods/emerald>.add(<item:contenttweaker:immersiveengineering/emerald_rod>);
 
 // Salt
 <tag:items:forge:dusts/salt>.add(<item:salt:salt>);
