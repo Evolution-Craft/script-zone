@@ -172,11 +172,6 @@ val manyullyn_sheet = <factory:item>.typed<Basic>()
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("tconstruct/manyullyn_sheet");
 
-val netherite_sheet = <factory:item>.typed<Basic>()
-	.tab(evolutionTab)
-	.rarity(<constant:minecraft:item/rarity:common>)
-	.build("tconstruct/netherite_sheet");
-
 val pig_iron_sheet = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
@@ -186,11 +181,6 @@ val queens_slime_sheet = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("tconstruct/queens_slime_sheet");
-
-val rose_gold_sheet = <factory:item>.typed<Basic>()
-	.tab(evolutionTab)
-	.rarity(<constant:minecraft:item/rarity:common>)
-	.build("tconstruct/rose_gold_sheet");
 
 val slimesteel_sheet = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)

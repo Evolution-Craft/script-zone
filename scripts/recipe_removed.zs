@@ -161,6 +161,10 @@ var removeRecipeByName = [
 	"electrodynamics:gear_tin",
 	"electrodynamics:gunpowder",
 	"electrodynamics:obsidian",
+	"electrodynamics:plate_bronze",
+	"electrodynamics:plate_iron",
+	"electrodynamics:plate_lead",
+	"electrodynamics:plate_steel",
 	// Enlightend
 	"enlightened_end:ceruelean_log_to_planks",
 	// Enginners Delight
@@ -207,6 +211,17 @@ var removeRecipeByName = [
 	"immersiveengineering:crafting/gunpart_drum",
 	"immersiveengineering:crafting/gunpart_hammer",
 	"immersiveengineering:crafting/paper_from_sawdust",
+	"immersiveengineering:crafting/plate_aluminum_hammering",
+	"immersiveengineering:crafting/plate_constantan_hammering",
+	"immersiveengineering:crafting/plate_copper_hammering",
+	"immersiveengineering:crafting/plate_electrum_hammering",
+	"immersiveengineering:crafting/plate_gold_hammering",
+	"immersiveengineering:crafting/plate_iron_hammering",
+	"immersiveengineering:crafting/plate_lead_hammering",
+	"immersiveengineering:crafting/plate_nickel_hammering",
+	"immersiveengineering:crafting/plate_silver_hammering",
+	"immersiveengineering:crafting/plate_steel_hammering",
+	"immersiveengineering:crafting/plate_uranium_hammering",
 	"immersiveengineering:crafting/powerpack",
 	"immersiveengineering:crafting/railgun",
 	"immersiveengineering:crafting/raw_hammercrushing_aluminum",
@@ -586,6 +601,7 @@ stoneCutter.removeByName("twilightforest:stonecutting/dark_wood/towerwood");
 
 // Beyond Earth: Giselle Addon
 <recipetype:beyond_earth_giselle_addon:extruding>.removeByName("beyond_earth_giselle_addon:extruding/iron_stick");
+<recipetype:beyond_earth_giselle_addon:rolling>.removeByName("beyond_earth_giselle_addon:rolling/iron_plate");
 
 // Botania
 var removeManaInfsionRecipeByName = [

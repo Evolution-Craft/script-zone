@@ -358,6 +358,42 @@ for tag_jams_forge in addingJamsForge{
 <tag:items:forge:ores/iron>.add(<item:infernalexp:basalt_iron_ore>);
 <tag:items:forge:ores_in_ground/basalt>.add(<item:infernalexp:basalt_iron_ore>);
 
+// Plates
+var addingPlatesForge = [
+	"contenttweaker:tconstruct/cobalt_sheet",
+	"contenttweaker:tconstruct/hepatizon_sheet",
+	"contenttweaker:tconstruct/manyullyn_sheet",
+	"contenttweaker:tconstruct/pig_iron_sheet",
+	"contenttweaker:tconstruct/queens_slime_sheet",
+	"contenttweaker:tconstruct/slimesteel_sheet",
+	"contenttweaker:thermal/diamond_plate",
+	"contenttweaker:thermal/emerald_plate",
+	"contenttweaker:thermal/lapis_plate",
+	"contenttweaker:thermal/osmium_plate",
+	"contenttweaker:thermal/quartz_plate",
+	"electrodynamics:platehslasteel",
+	"electrodynamics:platelithium",
+	"electrodynamics:platestainlesssteel",
+	"electrodynamics:platevanadiumsteel",
+	"electrodynamics:platetitanium",
+	"electrodynamics:platetitaniumcarbide",
+	"thermal_extra:shellite_plate"
+];
+for tag_plates_forge in addingPlatesForge{
+	<tag:items:forge:plates>.add(<item:${tag_plates_forge}>);
+}
+<tag:items:forge:plates/cobalt_sheet>.add(<item:contenttweaker:tconstruct/cobalt_sheet>);
+<tag:items:forge:plates/hepatizon_sheet>.add(<item:contenttweaker:tconstruct/hepatizon_sheet>);
+<tag:items:forge:plates/manyullyn_sheet>.add(<item:contenttweaker:tconstruct/manyullyn_sheet>);
+<tag:items:forge:plates/pig_iron_sheet>.add(<item:contenttweaker:tconstruct/pig_iron_sheet>);
+<tag:items:forge:plates/queens_slime_sheet>.add(<item:contenttweaker:tconstruct/queens_slime_sheet>);
+<tag:items:forge:plates/slimesteel_sheet>.add(<item:contenttweaker:tconstruct/slimesteel_sheet>);
+<tag:items:forge:plates/diamond>.add(<item:contenttweaker:thermal/diamond_plate>);
+<tag:items:forge:plates/emerald>.add(<item:contenttweaker:thermal/emerald_plate>);
+<tag:items:forge:plates/lapis>.add(<item:contenttweaker:thermal/lapis_plate>);
+<tag:items:forge:plates/osmium>.add(<item:contenttweaker:thermal/osmium_plate>);
+<tag:items:forge:plates/quartz>.add(<item:contenttweaker:thermal/quartz_plate>);
+
 // Rods
 var addingRodsForge = [
 	"contenttweaker:immersiveengineering/diamond_rod",
