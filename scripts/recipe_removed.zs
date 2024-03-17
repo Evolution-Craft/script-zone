@@ -20,8 +20,8 @@
 
 #priority 1000
 
-println("Start script remove_recipe.");
-println("Script Priority 1000.");
+Globals.startScript("recipe_removed");
+Globals.priorityScript("1000");
 
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.item.ItemStack;
@@ -50,6 +50,8 @@ var removeRecipeByName = [
 	"beyond_earth:desh_plate",
 	"beyond_earth:iron_plate",
 	"beyond_earth:iron_stick",
+	// Beyond Earth Giselle Addon
+	"beyond_earth_giselle_addon:compat/immersiveengineering/crafting/plate_desh_hammering",
 	// Botania
 	"botania:elementium_shears",
 	"botania:manasteel_shears",
@@ -514,7 +516,7 @@ var removeRecipeByName = [
 	"vinery:grapevine_pot",
 	"vinery:wood_fired_oven"
 ];
-for remove_recipe_by_name in removeRecipeByName{
+for remove_recipe_by_name in removeRecipeByName {
 	craftingTable.removeByName(remove_recipe_by_name);
 }
 var removeRecipeByModid = [
@@ -523,7 +525,7 @@ var removeRecipeByModid = [
 	// The One Probe
 	"theoneprobe"
 ];
-for remove_recipe_by_modid in removeRecipeByModid{
+for remove_recipe_by_modid in removeRecipeByModid {
 	craftingTable.removeByModid(remove_recipe_by_modid);
 }
 
@@ -540,7 +542,7 @@ var removeRecipeByNameBlastingFurnace = [
 	"libraryferret:blasting/iron_coins_jtl",
 	"libraryferret:blasting/netherite_coins_jtl",
 ];
-for remove_recipe_by_name_blasting_furnace in removeRecipeByNameBlastingFurnace{
+for remove_recipe_by_name_blasting_furnace in removeRecipeByNameBlastingFurnace {
 	blastFurnace.removeByName(remove_recipe_by_name_blasting_furnace);
 }
 
@@ -565,7 +567,7 @@ var removeRecipeByNameFurnace = [
 	"thermal:smelting/gunpowder_from_spores_smelting",
 	"thermal:smelting/redstone_from_spores_smelting"
 ];
-for remove_recipe_by_name_furnace in removeRecipeByNameFurnace{
+for remove_recipe_by_name_furnace in removeRecipeByNameFurnace {
 	furnace.removeByName(remove_recipe_by_name_furnace);
 }
 
@@ -579,7 +581,7 @@ var removeRecipeByNameSmithingTable = [
 	"leatheredboots:smithing/leathered_netherite_boots",
 	"leatheredboots:smithing/leathered_netherite_boots_from_diamond"
 ];
-for remove_recipe_by_name_smithing_table in removeRecipeByNameSmithingTable{
+for remove_recipe_by_name_smithing_table in removeRecipeByNameSmithingTable {
 	smithing.removeByName(remove_recipe_by_name_smithing_table);
 }
 
@@ -623,7 +625,7 @@ var removeManaInfsionRecipeByName = [
 	"botania:mana_infusion/quartz_dupe",
 	"botania:mana_infusion/redstone_dupe"
 ];
-for remove_mana_infusion_recipe_by_name in removeManaInfsionRecipeByName{
+for remove_mana_infusion_recipe_by_name in removeManaInfsionRecipeByName {
 	<recipetype:botania:mana_infusion>.removeByName(remove_mana_infusion_recipe_by_name);
 }
 
@@ -643,7 +645,7 @@ var removeCyclicCrusherRecipeByName = [
 	"cyclic:crusher/quartz_ore",
 	"cyclic:crusher/redstone_ore"
 ];
-for remove_cyclic_crusher_recipe_by_name in removeCyclicCrusherRecipeByName{
+for remove_cyclic_crusher_recipe_by_name in removeCyclicCrusherRecipeByName {
 	<recipetype:cyclic:crusher>.removeByName(remove_cyclic_crusher_recipe_by_name);
 }
 
@@ -669,7 +671,7 @@ var removeBlueprintRecipeByName = [
 	"immersiveengineering:blueprint/bullet_wolfpack",
 	"immersiveengineering:blueprint/mold_bullet_casing"
 ];
-for remove_blueprint_recipe_by_name in removeBlueprintRecipeByName{
+for remove_blueprint_recipe_by_name in removeBlueprintRecipeByName {
 	<recipetype:immersiveengineering:blueprint>.removeByName(remove_blueprint_recipe_by_name);
 }
 <recipetype:immersiveengineering:bottling_machine>.removeByName("immersiveengineering:bottling/empty_shell");
@@ -685,7 +687,7 @@ var removeRecipeByNameIndustrialForegoing = [
 	"industrialforegoing:dissolution_chamber/infinity_saw",
 	"industrialforegoing:dissolution_chamber/infinity_trident",
 ];
-for remove_industrial_foregoing_recipe_by_name in removeRecipeByNameIndustrialForegoing{
+for remove_industrial_foregoing_recipe_by_name in removeRecipeByNameIndustrialForegoing {
 	<recipetype:industrialforegoing:dissolution_chamber>.removeByName(remove_industrial_foregoing_recipe_by_name);
 }
 
@@ -743,7 +745,7 @@ var removeMultiservoPressRecipeByName = [
 	"thermal_extra:machine/press/twinite_coin",
 	"thermal_extra:machine/press/twinite_nugget_to_coin"
 ];
-for remove_multiservo_press_recipe_by_name in removeMultiservoPressRecipeByName{
+for remove_multiservo_press_recipe_by_name in removeMultiservoPressRecipeByName {
 	<recipetype:thermal:press>.removeByName(remove_multiservo_press_recipe_by_name);
 }
 <recipetype:thermal:bottler>.removeByName("thermal:compat/create/bottler_create_honeyed_apple");
@@ -834,7 +836,7 @@ var removeCastingTableRecipeByName = [
 	"thermal_extra:compat/tconstruct/casting/dragonsteel/gear_sand_cast",
 	"thermal_extra:compat/tconstruct/casting/soul_infused/gear_sand_cast"
 ];
-for remove_casting_table_recipe_by_name in removeCastingTableRecipeByName{
+for remove_casting_table_recipe_by_name in removeCastingTableRecipeByName {
 	<recipetype:tconstruct:casting_table>.removeByName(remove_casting_table_recipe_by_name);
 }
 var removeMoldingTableRecipeByName = [
@@ -844,7 +846,7 @@ var removeMoldingTableRecipeByName = [
 	"tconstruct:smeltery/casts/sand_casts/gears",
 	"tconstruct:smeltery/casts/red_sand_casts/gears"
 ];
-for remove_molding_table_recipe_by_name in removeMoldingTableRecipeByName{
+for remove_molding_table_recipe_by_name in removeMoldingTableRecipeByName {
 	<recipetype:tconstruct:molding_table>.removeByName(remove_molding_table_recipe_by_name);
 }
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/quartz/gem_1");
@@ -855,4 +857,4 @@ for remove_molding_table_recipe_by_name in removeMoldingTableRecipeByName{
 <recipetype:vinery:wine_fermentation>.removeAll();
 <recipetype:vinery:wood_fired_oven_cooking>.removeAll();
 
-println("End script remove_recipe.");
+Globals.endScript("recipe_removed");
