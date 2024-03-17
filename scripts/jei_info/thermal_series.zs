@@ -7,8 +7,8 @@
  * v0.1 : First Issue.
  */
 
-println("Start script/jei_info/thermal_series.");
-println("Script Priority Null.");
+Globals.startScript("jei_info/thermal_series");
+Globals.priorityScript("Null");
 
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
@@ -19,4 +19,4 @@ function i_thermal_series(m_thermal_series as IItemStack, s_thermal_series as st
 
 i_thermal_series(<item:thermal:compost>, "Crafting in Batch Composter.");
 
-println("End script/jei_info/thermal_series.");
+Globals.endScript("jei_info/thermal_series");

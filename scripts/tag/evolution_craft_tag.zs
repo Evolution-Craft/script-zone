@@ -9,8 +9,8 @@
 
 #priority 991
 
-println("Start script/tag/evolution_craft.");
-println("Script Priority 991.");
+Globals.startScript("tag/evolution_craft");
+Globals.priorityScript("991");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
@@ -39,4 +39,4 @@ for tag_evolution_craft_ingot in addingEvolutionCraftIngot{
 	<tag:items:forge:ingors>.add(<item:${tag_evolution_craft_ingot}>);
 }
 
-println("End script/tag/evolution_craft.");
+Globals.endScript("tag/evolution_craft");

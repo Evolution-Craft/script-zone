@@ -7,8 +7,8 @@
  * v0.1 : Add tag heat sources.
  */
 
-println("Start script/tag/farmers_delight.");
-println("Script Priority Null.");
+Globals.startScript("tag/farmers_delight");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.block.Block;
 import crafttweaker.api.item.ItemStack;
@@ -24,4 +24,4 @@ for tag_heat_sources in addingHeatSources{
 	<tag:blocks:mmlib:heat_conductors>.add(<block:${tag_heat_sources}>);
 }
 
-println("End script/tag/farmers_delight.");
+Globals.endScript("tag/farmers_delight");

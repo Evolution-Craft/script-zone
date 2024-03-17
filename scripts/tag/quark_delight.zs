@@ -7,8 +7,8 @@
  * v0.1 : Fix Empty Tag.
  */
 
-println("Start script/tag/quark_delight.");
-println("Script Priority Null.");
+Globals.startScript("tag/quark_delight");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
@@ -36,4 +36,4 @@ for tag_adding_hollow_duark_delight in addingHollowQuarkDelight{
 	<tag:items:quarkdelight:hollow_logs>.add(<item:${tag_adding_hollow_duark_delight}>);
 }
 
-println("End script/tag/quark_delight.");
+Globals.endScript("tag/quark_delight");

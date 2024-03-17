@@ -7,8 +7,8 @@
  * v0.1 : First Issue.
  */
 
-println("Start script/jei_info/evolution_craft.");
-println("Script Priority Null.");
+Globals.startScript("jei_info/evolution_craft");
+Globals.priorityScript("Null");
 
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
@@ -23,4 +23,4 @@ i_evolution_craft(<item:contenttweaker:rare_part>, "---????---");
 i_evolution_craft(<item:contenttweaker:epic_part>, "---????---");
 i_evolution_craft(<item:contenttweaker:leggendary_part>, "---????---");
 
-println("End script/jei_info/evolution_craft.");
+Globals.endScript("jei_info/evolution_craft");

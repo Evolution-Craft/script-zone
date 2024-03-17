@@ -17,8 +17,8 @@
 
 #priority 997
 
-println("Start script/tag forge.");
-println("Script Priority 997.");
+Globals.startScript("tag/forge");
+Globals.priorityScript("997");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
@@ -511,4 +511,4 @@ for tag_tools_knives_forge in addingToolsKnivesForge{
 // Tuna
 <tag:items:forge:tuna>.add(<item:aquaculture:tuna>);
 
-println("End script/tag forge.");
+Globals.endScript("tag/forge");

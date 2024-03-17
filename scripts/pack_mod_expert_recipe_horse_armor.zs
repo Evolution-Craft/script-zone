@@ -52,6 +52,7 @@ for logWoodenHorseId, logWoodenHorseName in logsWoodenHorse {
 }
 
 if (pack_mode_expert_enable == true) {
+	println("Pack Mod Expert Horse Active.");
 	for logWoodenHorseId, logWoodenHorseName in logsWoodenHorse {
 		if (logWoodenHorseId == "warped" || logWoodenHorseId == "crimson") {
 			craftingTable.addShaped("pack_expert_crafting_horse_armor/" + logWoodenHorseName + "_horse_armor", <item:woodarmorhorse:${logWoodenHorseName}_horse_armor>, [

@@ -7,8 +7,8 @@
  * v0.1 : Remove Trade.
  */
 
-println("Start script villager/machinist.");
-println("Script Priority Null.");
+Globals.startScript("villager/machinist");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.villagers.VillagerTrades;
 
@@ -26,4 +26,4 @@ villagerTrades.addTrade(<profession:immersiveengineering:machinist>, 4, <item:mi
 villagerTrades.removeAllTrades(<profession:immersiveengineering:machinist>, 5);
 villagerTrades.addTrade(<profession:immersiveengineering:machinist>, 5, <item:minecraft:emerald> * 32, <item:immersiveengineering:blueprint>.withTag({blueprint: "electrode" as string}), 3, 30, 0.2);
 
-println("End script villager/machinist.");
+Globals.endScript("villager/machinist");

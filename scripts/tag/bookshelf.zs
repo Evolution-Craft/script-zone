@@ -9,8 +9,8 @@
 
 #priority 990
 
-println("Start script/tag/bookshelf.");
-println("Script Priority 990.");
+Globals.startScript("tag/bookshelf");
+Globals.priorityScript("990");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
@@ -55,4 +55,4 @@ for tag_axes_bookshelf in addingAxesBookshelf{
 	<tag:items:bookshelf:axes>.add(<item:${tag_axes_bookshelf}>);
 }
 
-println("End script/tag/bookshelf.");
+Globals.endScript("tag/bookshelf");

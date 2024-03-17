@@ -11,8 +11,8 @@
 
 #priority 996
 
-println("Start script/tag/minecaft.");
-println("Script Priority 996.");
+Globals.startScript("tag/minecaft");
+Globals.priorityScript("996");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
@@ -65,4 +65,4 @@ for tag_stair_minecraft in addingStairMinecraft{
 	<tag:items:minecraft:stairs>.add(<item:${tag_stair_minecraft}>);
 }
 
-println("End script/tag/minecraft.");
+Globals.endScript("tag/minecaft");

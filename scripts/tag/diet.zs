@@ -14,8 +14,8 @@
 
 #priority 993
 
-println("Start script/tag/diet.");
-println("Script Priority 993.");
+Globals.startScript("tag/diet");
+Globals.priorityScript("993");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.food.FoodData;
@@ -237,4 +237,4 @@ for tag_proteins_diet in addingProteinsDiet{
 	<tag:items:diet:proteins>.add(<item:${tag_proteins_diet}>);
 }
 
-println("End script/tag/diet.");
+Globals.endScript("tag/diet");

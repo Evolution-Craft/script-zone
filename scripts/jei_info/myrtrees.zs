@@ -7,8 +7,8 @@
  * v0.1 : First Issue.
  */
 
-println("Start script/jei_info/myrtrees.");
-println("Script Priority Null.");
+Globals.startScript("jei_info/myrtrees");
+Globals.priorityScript("Null");
 
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
@@ -22,4 +22,4 @@ i_myrtrees(<item:myrtrees:wooden_bucket>, "Position in front of Tree Tap for col
 i_myrtrees(<item:myrtrees:latex>, "Extract from Ruberwood Log using Tree Tap and Wooden Bucket.");
 i_myrtrees(<item:myrtrees:rubberwood_log>, "Rubberwood Tree spawning in Savana.");
 
-println("End script/jei_info/myrtrees.");
+Globals.endScript("jei_info/myrtrees");

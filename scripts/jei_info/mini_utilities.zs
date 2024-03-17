@@ -7,8 +7,8 @@
  * v0.1 : First Issue.
  */
 
-println("Start script/jei_info/mini_utilities.");
-println("Script Priority Null.");
+Globals.startScript("jei_info/mini_utilities");
+Globals.priorityScript("Null");
 
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
@@ -23,4 +23,4 @@ i_mini_utilities(<item:miniutilities:blessed_earth>, "Spawns more neutral mobs."
 i_mini_utilities(<item:miniutilities:blursed_earth>, "Spawns more hostile and neutral mobs, light level of five and above stops spawns.");
 i_mini_utilities(<item:miniutilities:lapis_lamp>, "Lights up without blocking the spawn.");
 
-println("End script/jei_info/mini_utilities.");
+Globals.endScript("jei_info/mini_utilities");

@@ -7,8 +7,8 @@
  * v0.1 : First Issue.
  */
 
-println("Start script/jei_info/minecraft.");
-println("Script Priority Null.");
+Globals.startScript("jei_info/minecraft");
+Globals.priorityScript("Null");
 
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
@@ -42,4 +42,4 @@ for minecraft_concrete_dye_add_info in itemDyeMinecraftInfo {
 	i_minecraft(<item:minecraft:${minecraft_concrete_dye_add_info}_concrete_powder>, s_minecraft_concrete_powder);
 }
 
-println("End script/jei_info/minecraft.");
+Globals.endScript("jei_info/minecraft");

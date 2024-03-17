@@ -7,8 +7,8 @@
  * v0.1 : Full Rework.
  */
 
-println("Start script villager/leatherworker.");
-println("Script Priority Null.");
+Globals.startScript("villager/leatherworker");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.villagers.VillagerTrades;
 
@@ -39,4 +39,4 @@ villagerTrades.removeAllTrades(<profession:minecraft:leatherworker>, 5);
 villagerTrades.addTrade(<profession:minecraft:leatherworker>, 5, <item:minecraft:emerald> * 6, <item:minecraft:saddle>, 12, 30, 0.2);
 villagerTrades.addTrade(<profession:minecraft:leatherworker>, 5, <item:minecraft:emerald> * 32, <item:minecraft:enchanted_book>.setEnchantments({<enchantment:leatheredboots:soft_step> : 1 as int?}), 1, 30, 0.5);
 
-println("End script villager/leatherworker.");
+Globals.endScript("villager/leatherworker");

@@ -7,8 +7,8 @@
  * v0.1 : Fix Elytra uncategorized.
  */
 
-println("Start script/tag/curios.");
-println("Script Priority Null.");
+Globals.startScript("tag/curios");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
@@ -23,4 +23,4 @@ for tag_back_curios in addingBackCurios{
 	<tag:items:curios:back>.add(<item:${tag_back_curios}>);
 }
 
-println("End script/tag/curios.");
+Globals.endScript("tag/curios");

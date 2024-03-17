@@ -7,8 +7,8 @@
  * v0.1 : First Issue.
  */
 
-println("Start script/jei_info/baubley_heart_canisters.");
-println("Script Priority Null.");
+Globals.startScript("jei_info/baubley_heart_canisters");
+Globals.priorityScript("Null");
 
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
@@ -23,4 +23,4 @@ i_baubley_heart_canisters(<item:bhc:green_heart>, "Green Heart, drop from the En
 i_baubley_heart_canisters(<item:bhc:blue_heart>, "Blue Hearts, drop from the Evokers.");
 i_baubley_heart_canisters(<item:bhc:wither_bone>, "Wither Bone, drop from Wither Skeleton mobs.");
 
-println("End script/jei_info/baubley_heart_canisters.");
+Globals.endScript("jei_info/baubley_heart_canisters");

@@ -7,8 +7,8 @@
  * v0.1 : Add Blueprint.
  */
 
-println("Start script villager/engineer.");
-println("Script Priority Null.");
+Globals.startScript("villager/engineer");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.villagers.VillagerTrades;
 
@@ -24,4 +24,4 @@ import crafttweaker.api.villagers.VillagerTrades;
 villagerTrades.removeAllTrades(<profession:immersiveengineering:engineer>, 5);
 villagerTrades.addTrade(<profession:immersiveengineering:engineer>, 5, <item:minecraft:emerald> * 32, <item:immersiveengineering:blueprint>.withTag({blueprint: "molds" as string}), 3, 30, 0.2);
 
-println("End script villager/engineer.");
+Globals.endScript("villager/engineer");

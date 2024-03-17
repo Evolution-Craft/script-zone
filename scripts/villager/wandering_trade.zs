@@ -7,8 +7,8 @@
  * v0.1 : Add new Trade.
  */
 
-println("Start script villager/wandering_trade.");
-println("Script Priority Null.");
+Globals.startScript("villager/wandering_trade");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.villagers.VillagerTrades;
 
@@ -18,4 +18,4 @@ villagerTrades.addWanderingTrade(1, <item:minecraft:emerald> * 6, <item:simplyte
 
 // Tier 2
 
-println("End script villager/wandering_trade.");
+Globals.endScript("villager/wandering_trade");

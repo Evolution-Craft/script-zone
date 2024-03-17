@@ -7,8 +7,8 @@
  * v0.1 : First Issue.
  */
 
-println("Start script/jei_info/quark.");
-println("Script Priority Null.");
+Globals.startScript("jei_info/quark");
+Globals.priorityScript("Null");
 
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
@@ -191,4 +191,4 @@ i_quark(<item:quark:pickarang>, "Can be thrown to mine whatever block it lands o
 i_quark(<item:quark:flamerang>, "Works similarly to the Pickarang, but has built in flame and fire resistance.");
 i_quark(<item:quark:ancient_tome>, "Can be found on dungeon and stronghold chests. Combine with an enchanted item or book in an anvil to raise its level, up to 1 beyond the max.");
 
-println("End script/jei_info/quark.");
+Globals.endScript("jei_info/quark");

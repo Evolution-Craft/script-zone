@@ -7,8 +7,8 @@
  * v0.1 : Add new dies.
  */
 
-println("Start script/tag/thermal.");
-println("Script Priority Null.");
+Globals.startScript("tag/thermal");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
@@ -17,4 +17,4 @@ import crafttweaker.api.tag.manager.ITagManager;
 <tag:items:thermal:crafting/dies>.add(<item:contenttweaker:thermal/press_rod_die>);
 <tag:items:thermal:crafting/dies>.add(<item:immersiveengineering:mold_wire>); // Temporary Using
 
-println("End script/tag/thermal.");
+Globals.endScript("tag/thermal");

@@ -7,8 +7,8 @@
  * v0.1 : Remove All Trade.
  */
 
-println("Start script villager/gunsmith.");
-println("Script Priority Null.");
+Globals.startScript("villager/gunsmith");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.villagers.VillagerTrades;
 
@@ -27,4 +27,4 @@ villagerTrades.removeAllTrades(<profession:immersiveengineering:gunsmith>, 4);
 // Tier 5
 villagerTrades.removeAllTrades(<profession:immersiveengineering:gunsmith>, 5);
 
-println("End script villager/gunsmith.");
+Globals.endScript("villager/gunsmith");

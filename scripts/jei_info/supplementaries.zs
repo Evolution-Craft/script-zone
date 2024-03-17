@@ -7,8 +7,8 @@
  * v0.1 : First Issue.
  */
 
-println("Start script/jei_info/supplementaries.");
-println("Script Priority Null.");
+Globals.startScript("jei_info/supplementaries");
+Globals.priorityScript("Null");
 
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
@@ -94,4 +94,4 @@ i_supplementaries(<item:supplementaries:wild_flax>, s_supplementaries);
 i_supplementaries(<item:supplementaries:flax>, s_supplementaries);
 i_supplementaries(<item:supplementaries:flax_seeds>, s_supplementaries);
 
-println("End script/jei_info/supplementaries.");
+Globals.endScript("jei_info/supplementaries");

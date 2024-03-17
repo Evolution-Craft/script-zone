@@ -8,8 +8,8 @@
  * v0.2 : Add Trade.
  */
 
-println("Start script villager/outfitter.");
-println("Script Priority Null.");
+Globals.startScript("villager/outfitter");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.villagers.VillagerTrades;
 
@@ -39,4 +39,4 @@ villagerTrades.addTrade(<profession:immersiveengineering:outfitter>, 4, <item:mi
 villagerTrades.removeAllTrades(<profession:immersiveengineering:outfitter>, 5);
 villagerTrades.addTrade(<profession:immersiveengineering:outfitter>, 5, <item:minecraft:emerald_block> * 16, <item:thermal:gold_dust> * 16, <item:immersiveengineering:shader_bag_ie_masterwork>, 6, 8, 0.2);
 
-println("End script villager/outfitter.");
+Globals.endScript("villager/outfitter");

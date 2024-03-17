@@ -7,8 +7,8 @@
  * v0.1 : Remove Trade.
  */
 
-println("Start script villager/electrician.");
-println("Script Priority Null.");
+Globals.startScript("villager/electrician");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.villagers.VillagerTrades;
 
@@ -26,4 +26,4 @@ villagerTrades.addTrade(<profession:immersiveengineering:electrician>, 4, <item:
 villagerTrades.removeAllTrades(<profession:immersiveengineering:electrician>, 5);
 villagerTrades.addTrade(<profession:immersiveengineering:electrician>, 5, <item:minecraft:emerald> * 32, <item:immersiveengineering:blueprint>.withTag({blueprint: "components" as string}), 3, 30, 0.2);
 
-println("End script villager/electrician.");
+Globals.endScript("villager/electrician");

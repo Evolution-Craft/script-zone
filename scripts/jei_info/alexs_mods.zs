@@ -7,8 +7,8 @@
  * v0.1 : First Issue.
  */
 
-println("Start script/jei_info/alexs_mobs.");
-println("Script Priority Null.");
+Globals.startScript("jei_info/alexs_mobs");
+Globals.priorityScript("Null");
 
 import mods.jei.JEI as JEI;
 import crafttweaker.api.item.IItemStack;
@@ -72,4 +72,4 @@ i_alexsmobs(<item:alexsmobs:gustmaker>, "When given a redstone signal, sends a s
 i_alexsmobs(<item:alexsmobs:fedora>, "He's a semi-aquatic, egg-laying mammal of action!");
 i_alexsmobs(<item:alexsmobs:capsid>, "Can drop from Enderiophages and used to transport items. Consult an Animal Dictionary for more information.");
 
-println("End script/jei_info/alexs_mobs.");
+Globals.endScript("jei_info/alexs_mobs");

@@ -9,8 +9,8 @@
 
 #priority 992
 
-println("Start script/tag/create.");
-println("Script Priority 992.");
+Globals.startScript("tag/create");
+Globals.priorityScript("992");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
@@ -69,4 +69,4 @@ for tag_stripped_wood_create in addingStrippedWoodCreate{
 	<tag:items:create:modded_stripped_wood>.add(<item:${tag_stripped_wood_create}>);
 }
 
-println("End script/tag/create.");
+Globals.endScript("tag/create");

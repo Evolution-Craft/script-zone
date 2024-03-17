@@ -7,8 +7,8 @@
  * v0.1 : Full Rework.
  */
 
-println("Start script villager/winemaker.");
-println("Script Priority Null.");
+Globals.startScript("villager/winemaker");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.villagers.VillagerTrades;
 
@@ -50,4 +50,4 @@ villagerTrades.addTrade(<profession:vinery:winemaker>, 5, <item:minecraft:emeral
 villagerTrades.addTrade(<profession:vinery:winemaker>, 5, <item:minecraft:emerald> * 24, <item:vinery:old_cherry_sapling>, 2, 24, 0.1);
 villagerTrades.addTrade(<profession:vinery:winemaker>, 5, <item:vinery:cherry_crate> * 1, <item:minecraft:emerald> * 4, 12, 16, 0.05);
 
-println("End script villager/winemaker.");
+Globals.endScript("villager/winemaker");
