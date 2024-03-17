@@ -15,11 +15,12 @@ Globals.priorityScript("500");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
-val pack_mode_expert_enable = true;
-val expert_log_to_planks = 2;
+val expert_log_to_planks = packModeSetting.packModeSettingLogsCount();
 
-if (pack_mode_expert_enable == true) {
-	Globals.startScript("Log - Active");
+if (packModeSetting.packModeSettingLogs() == true) {
+
+	Globals.packExpertScript("Log - Active");
+
 	var packModeExpertPlanks = {
 		// Botania
 		"botania:dreamwood_planks" : <tag:items:botania:dreamwood_logs>,

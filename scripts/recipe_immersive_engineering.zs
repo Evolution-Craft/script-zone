@@ -10,13 +10,19 @@
  * v0.4 : Add Custom Rods.
  */
 
-println("Start script recipe_immersive_engieneering.");
-println("Script Priority Null.");
+Globals.startScript("recipe_immersive_engieneering");
+Globals.priorityScript("Null");
+
+if (packModeSetting.packModeSettingPlates() == true) {
+	Globals.packExpertScript("Plate - Active");
+}
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
+
+val expert_ingradient_to_plate = packModeSetting.packModeSettingPlateMetalPress();
 
 // Shapeless
 craftingTable.addShapeless("immersiveengineering_crafting/wire_iron", <item:createaddition:iron_wire>, [<tag:items:forge:plates/iron>, <item:immersiveengineering:wirecutter>.anyDamage().transformDamage()]);
@@ -74,56 +80,78 @@ craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersive
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_shellite", <item:thermal_extra:shellite_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:shellite_gear>);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/gear_twinite", <item:thermal_extra:twinite_ingot> * 4, <item:immersiveengineering:mold_gear>, 2400, <item:thermal_extra:twinite_gear>);
 
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_aluminum");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_aluminum", <tag:items:forge:ingots/aluminum> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:immersiveengineering:plate_aluminum>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_brass");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_brass", <tag:items:forge:ingots/brass> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:create:brass_sheet>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_bronze");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_bronze", <tag:items:forge:ingots/bronze> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:bronze_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_cobalt", <tag:items:forge:ingots/cobalt> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/cobalt_sheet>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_copper");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_copper", <tag:items:forge:ingots/copper> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:copper_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_diamond", <tag:items:forge:gems/diamond> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/diamond_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_dragonsteel", <tag:items:forge:ingots/dragonsteel> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:dragonsteel_plate>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_electrum");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_electrum", <tag:items:forge:ingots/electrum> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:electrum_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_emerald", <tag:items:forge:gems/emerald> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/emerald_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_enderium", <tag:items:forge:ingots/enderium> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:enderium_plate>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_gold");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_gold", <tag:items:forge:ingots/gold> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:gold_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_hepatizon", <tag:items:forge:ingots/hepatizon> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/hepatizon_sheet>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_invar");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_invar", <tag:items:forge:ingots/invar> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:invar_plate>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_iron");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_iron", <tag:items:forge:ingots/iron> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:iron_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_lapis_lazuli", <tag:items:forge:gems/lapis> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/lapis_plate>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_lead");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_lead", <tag:items:forge:ingots/lead> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:lead_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_lumium", <tag:items:forge:ingots/lumium> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:lumium_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_manyullyn", <tag:items:forge:ingots/manyullyn> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/manyullyn_sheet>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_netherite", <tag:items:forge:ingots/netherite> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:netherite_plate>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_nickel");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_nickel", <tag:items:forge:ingots/nickel> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:nickel_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_osmium", <tag:items:forge:ingots/osmium> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/osmium_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_pig_iron", <tag:items:forge:ingots/pig_iron> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/pig_iron_sheet>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_quartz", <tag:items:forge:gems/quartz> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/quartz_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_queens_slime", <tag:items:forge:ingots/queens_slime> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/queens_slime_sheet>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_rose_gold");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_rose_gold", <tag:items:forge:ingots/rose_gold> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:rose_gold_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_shellite", <tag:items:forge:ingots/shellite> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:shellite_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_signalum", <tag:items:forge:ingots/signalum> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:signalum_plate>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_silver");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_silver", <tag:items:forge:ingots/silver> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:silver_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_slimesteel", <tag:items:forge:ingots/slimesteel> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/slimesteel_sheet>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_soul_infused", <tag:items:forge:ingots/soul_infused> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:soul_infused_plate>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_steel");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_steel", <tag:items:forge:ingots/steel> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:steel_plate>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_tin");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_tin", <tag:items:forge:ingots/tin> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:tin_plate>);
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_twinite", <tag:items:forge:ingots/twinite> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:twinite_plate>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_uranium");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_uranium", <tag:items:forge:ingots/uranium> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:immersiveengineering:plate_uranium>);
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_zinc");
-<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_zinc", <tag:items:forge:ingots/zinc> * 4, <item:immersiveengineering:mold_plate>, 2400, <item:createaddition:zinc_sheet>);
+if (packModeSetting.packModeSettingPlates() == true) {
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_aluminum");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_aluminum", <tag:items:forge:ingots/aluminum> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:immersiveengineering:plate_aluminum>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_brass");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_brass", <tag:items:forge:ingots/brass> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:create:brass_sheet>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_bronze");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_bronze", <tag:items:forge:ingots/bronze> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:bronze_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_cobalt", <tag:items:forge:ingots/cobalt> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/cobalt_sheet>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_copper");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_copper", <tag:items:forge:ingots/copper> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:copper_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_diamond", <tag:items:forge:gems/diamond> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/diamond_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_dragonsteel", <tag:items:forge:ingots/dragonsteel> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:dragonsteel_plate>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_electrum");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_electrum", <tag:items:forge:ingots/electrum> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:electrum_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_emerald", <tag:items:forge:gems/emerald> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/emerald_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_enderium", <tag:items:forge:ingots/enderium> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:enderium_plate>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_gold");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_gold", <tag:items:forge:ingots/gold> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:gold_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_hepatizon", <tag:items:forge:ingots/hepatizon> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/hepatizon_sheet>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_invar");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_invar", <tag:items:forge:ingots/invar> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:invar_plate>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_iron");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_iron", <tag:items:forge:ingots/iron> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:iron_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_lapis_lazuli", <tag:items:forge:gems/lapis> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/lapis_plate>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_lead");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_lead", <tag:items:forge:ingots/lead> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:lead_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_lumium", <tag:items:forge:ingots/lumium> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:lumium_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_manyullyn", <tag:items:forge:ingots/manyullyn> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/manyullyn_sheet>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_netherite", <tag:items:forge:ingots/netherite> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:netherite_plate>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_nickel");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_nickel", <tag:items:forge:ingots/nickel> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:nickel_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_osmium", <tag:items:forge:ingots/osmium> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/osmium_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_pig_iron", <tag:items:forge:ingots/pig_iron> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/pig_iron_sheet>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_quartz", <tag:items:forge:gems/quartz> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/quartz_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_queens_slime", <tag:items:forge:ingots/queens_slime> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/queens_slime_sheet>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_rose_gold");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_rose_gold", <tag:items:forge:ingots/rose_gold> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:rose_gold_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_shellite", <tag:items:forge:ingots/shellite> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:shellite_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_signalum", <tag:items:forge:ingots/signalum> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:signalum_plate>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_silver");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_silver", <tag:items:forge:ingots/silver> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:silver_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_slimesteel", <tag:items:forge:ingots/slimesteel> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/slimesteel_sheet>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_soul_infused", <tag:items:forge:ingots/soul_infused> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:soul_infused_plate>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_steel");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_steel", <tag:items:forge:ingots/steel> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:steel_plate>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_tin");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_tin", <tag:items:forge:ingots/tin> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:tin_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_twinite", <tag:items:forge:ingots/twinite> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:twinite_plate>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_uranium");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_uranium", <tag:items:forge:ingots/uranium> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:immersiveengineering:plate_uranium>);
+	<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/plate_zinc");
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_zinc", <tag:items:forge:ingots/zinc> * expert_ingradient_to_plate, <item:immersiveengineering:mold_plate>, 2400, <item:createaddition:zinc_sheet>);
+} else {
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_cobalt", <tag:items:forge:ingots/cobalt>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/cobalt_sheet>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_diamond", <tag:items:forge:gems/diamond>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/diamond_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_dragonsteel", <tag:items:forge:ingots/dragonsteel> , <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:dragonsteel_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_emerald", <tag:items:forge:gems/emerald>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/emerald_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_enderium", <tag:items:forge:ingots/enderium>, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:enderium_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_hepatizon", <tag:items:forge:ingots/hepatizon>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/hepatizon_sheet>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_lapis_lazuli", <tag:items:forge:gems/lapis>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/lapis_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_lumium", <tag:items:forge:ingots/lumium>, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:lumium_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_manyullyn", <tag:items:forge:ingots/manyullyn>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/manyullyn_sheet>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_netherite", <tag:items:forge:ingots/netherite>, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:netherite_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_osmium", <tag:items:forge:ingots/osmium>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/osmium_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_pig_iron", <tag:items:forge:ingots/pig_iron>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/pig_iron_sheet>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_quartz", <tag:items:forge:gems/quartz>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:thermal/quartz_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_queens_slime", <tag:items:forge:ingots/queens_slime>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/queens_slime_sheet>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_shellite", <tag:items:forge:ingots/shellite>, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:shellite_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_signalum", <tag:items:forge:ingots/signalum>, <item:immersiveengineering:mold_plate>, 2400, <item:thermal:signalum_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_slimesteel", <tag:items:forge:ingots/slimesteel>, <item:immersiveengineering:mold_plate>, 2400, <item:contenttweaker:tconstruct/slimesteel_sheet>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_soul_infused", <tag:items:forge:ingots/soul_infused>, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:soul_infused_plate>);
+	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_twinite", <tag:items:forge:ingots/twinite>, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:twinite_plate>);
+}
 
-println("End script recipe_immersive_engieneering.");
+Globals.endScript("recipe_immersive_engieneering");

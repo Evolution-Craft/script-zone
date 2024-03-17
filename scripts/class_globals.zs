@@ -10,7 +10,10 @@
 #priority 2000
 
 println("===============================================================");
+println("          Starting Script: class_global          ");
+println("===============================================================");
 println("          Script Priority 2000         ");
+println("===============================================================");
 println("          Class Globals Loading...          ");
 
 public class Globals {
@@ -38,8 +41,7 @@ public class Globals {
 	public static val priorityScript_Load as string = "priorityScript Load Completed";
 
 	public static packExpertScript(scriptName as string) as void {
-		//println(EQUALS_SEPARATOR);
-		println("          Pack Mode Espert Recipe: " + scriptName  + "          ");
+		println("          Pack Mode Expert Recipe: " + scriptName  + "          ");
 		println(EQUALS_SEPARATOR);
 	}
 	public static val packExpertScript_Load as string = "packExpertScript Load Completed";
@@ -50,4 +52,6 @@ println("          -> " + Globals.endScript_Load  + "          ");
 println("          -> " + Globals.priorityScript_Load  + "          ");
 println("          -> " + Globals.packExpertScript_Load  + "          ");
 println("          Class Globals Loading Completed          ");
+println("===============================================================");
+println("          Ending Script: class_global          ");
 println("===============================================================");

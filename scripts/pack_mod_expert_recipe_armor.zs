@@ -7,17 +7,19 @@
  * v0.1 : Adding Chainmail Armor Crafting Recipe.
  * v0.2 : Add Wooden Armor Tags, Stone Armor and Leather Armor Crafting.
  */
- 
-println("Start script pack_mod_expert_recipe_armor.");
-println("Script Priority Null.");
+
+Globals.startScript("pack_mod_expert_recipe_armor");
+Globals.priorityScript("Null");
+
+if (packModeSetting.packModeSettingArmors() == true) {
+	Globals.packExpertScript("Armor - Active");
+}
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
-
-val pack_mode_expert_enable = true;
 
 var logsWoodenArmor = [
 	"oak",
@@ -121,7 +123,7 @@ var shapedArmorVarFunction as function(usualOut as IItemStack, inputs as IItemSt
 	return usualOut.withDamage(oldDamage);
 };
 
-if (pack_mode_expert_enable == true) {
+if (packModeSetting.packModeSettingArmors() == true) {
 	craftingTable.removeByName("woodarmor:stone_helm_recipe");
 	craftingTable.addShaped("pack_expert_crafting_armor/stone_helmet", <item:woodarmor:stone_helmet>, [
 		[<item:minecraft:cobblestone>, <item:minecraft:cobblestone>, <item:minecraft:cobblestone>],
@@ -322,4 +324,4 @@ if (pack_mode_expert_enable == true) {
 	]);
 }
 
-println("End script pack_mod_expert_recipe_armor.");
+Globals.endScript("pack_mod_expert_recipe_armor");

@@ -8,17 +8,18 @@
  * v0.2 : Adding missing shears.
  */
 
-println("Start script pack_mod_expert_recipe_shears.");
-println("Script Priority Null.");
+Globals.startScript("pack_mod_expert_recipe_shears");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
-val pack_mode_expert_enable = true;
+if (packModeSetting.packModeSettingShears() == true) {
 
-if (pack_mode_expert_enable == true) {
+	Globals.packExpertScript("Log - Shears");
+
 	craftingTable.removeByName("cyclic:shears_flint");
 	craftingTable.addShaped("pack_expert_crafting_shears/flint_shears", <item:cyclic:shears_flint>, [
 		[<item:minecraft:air>, <item:fiow:flint_tool_head>, <item:minecraft:air>],
@@ -67,4 +68,4 @@ if (pack_mode_expert_enable == true) {
 	]);
 }
 
-println("End script pack_mod_expert_recipe_shears.");
+Globals.endScript("pack_mod_expert_recipe_shears");

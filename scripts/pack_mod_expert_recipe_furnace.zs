@@ -7,17 +7,18 @@
  * v0.1 : Created crafting sequence for Furnaces.
  */
 
-println("Start script pack_mod_expert_recipe_furnace.");
-println("Script Priority Null.");
+Globals.startScript("pack_mod_expert_recipe_furnace");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
-val pack_mode_expert_enable = true;
+if (packModeSetting.packModeSettingFurnaces() == true) {
 
-if (pack_mode_expert_enable == true) {
+	Globals.packExpertScript("Furnace - Active");
+
 	craftingTable.removeByName("quark:building/crafting/furnaces/cobblestone_furnace");
 	craftingTable.addShaped("pack_expert_crafting_furnaces/cobblestone_furnace", <item:minecraft:furnace>, [
 		[<item:compressium:cobblestone_1>, <item:compressium:cobblestone_1>, <item:compressium:cobblestone_1>],
@@ -80,4 +81,4 @@ if (pack_mode_expert_enable == true) {
 	]);
 }
 
-println("End script pack_mod_expert_recipe_furnace.");
+Globals.endScript("pack_mod_expert_recipe_bucket");

@@ -8,16 +8,17 @@
  * v0.2 : Add fluid hopper.
  */
 
-println("Start script pack_mod_expert_recipe_hopper.");
-println("Script Priority Null.");
+Globals.startScript("pack_mod_expert_recipe_hopper");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
-val pack_mode_expert_enable = true;
+if (packModeSetting.packModeSettingHoppers() == true) {
 
-if (pack_mode_expert_enable == true) {
+	Globals.packExpertScript("Hopper - Active");
+
 	craftingTable.removeByName("brickhopper:brick_hopper");
 	craftingTable.addShaped("pack_expert_crafting_hopper/brick_hopper", <item:brickhopper:brick_hopper>, [
 		[<item:minecraft:brick>, <item:minecraft:air>, <item:minecraft:brick>],
@@ -61,4 +62,4 @@ if (pack_mode_expert_enable == true) {
 	]);
 }
 
-println("End script pack_mod_expert_recipe_hopper.");
+Globals.endScript("pack_mod_expert_recipe_hopper");

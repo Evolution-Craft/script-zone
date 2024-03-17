@@ -7,16 +7,17 @@
  * v0.1 : Created crafting sequence for Bucket.
  */
 
-println("Start script pack_mod_expert_recipe_bucket.");
-println("Script Priority Null.");
+Globals.startScript("pack_mod_expert_recipe_bucket");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
-val pack_mode_expert_enable = true;
+if (packModeSetting.packModeSettingBuckets() == true) {
 
-if (pack_mode_expert_enable == true) {
+	Globals.packExpertScript("Bucket - Active");
+
 	craftingTable.removeByName("ceramicbucket:unfired_clay_bucket");
 	craftingTable.addShaped("pack_expert_crafting_bucket/ceramicbucket_unfired_clay_bucket", <item:ceramicbucket:unfired_clay_bucket>, [
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
@@ -32,4 +33,4 @@ if (pack_mode_expert_enable == true) {
 	]);
 }
 
-println("End script pack_mod_expert_recipe_bucket.");
+Globals.endScript("pack_mod_expert_recipe_bucket");
