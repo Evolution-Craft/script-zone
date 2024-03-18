@@ -7,8 +7,8 @@
  * v0.1 : Pure Dasy modded.
  */
 
-println("Start script recipe_botania.");
-println("Script Priority Null.");
+Globals.startScript("recipe_botania");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -22,4 +22,4 @@ import crafttweaker.api.tag.manager.ITagManager;
 <recipetype:botania:pure_daisy>.removeByName("botania:pure_daisy/livingwood");
 <recipetype:botania:pure_daisy>.addRecipe("pack_expert_crafting/botania_pure_daisy/livingwood", <blockstate:botania:livingwood_log>, <blockstate:immersiveengineering:treated_wood_horizontal>);
 
-println("End script recipe_botania.");
+Globals.endScript("recipe_botania");

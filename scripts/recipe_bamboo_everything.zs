@@ -6,9 +6,9 @@
  * CHANGELOG:
  * v0.1 : Fix Recipe.
  */
- 
-println("Start script recipe_bamboo_everything.");
-println("Script Priority Null.");
+
+Globals.startScript("recipe_bamboo_everything");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -29,4 +29,4 @@ craftingTable.addShaped("bambooeverything_dry_bamboo_torch", <item:bambooeveryth
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-println("End script recipe_bamboo_everything.");
+Globals.endScript("recipe_bamboo_everything");

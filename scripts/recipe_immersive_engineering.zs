@@ -8,6 +8,7 @@
  * v0.2 : Adding Missing Pattern.
  * v0.3 : Adding Missing Wire.
  * v0.4 : Add Custom Rods.
+ * v0.5 : Adding Plate System.
  */
 
 Globals.startScript("recipe_immersive_engieneering");

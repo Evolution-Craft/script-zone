@@ -5,6 +5,7 @@
  *
  * CHANGELOG:
  * v0.1 : Adding Missing Recipe.
+ * v0.2 : Adding Plate System.
  */
  
 Globals.startScript("recipe_create");

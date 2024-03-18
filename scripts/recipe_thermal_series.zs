@@ -10,15 +10,22 @@
  * v0.4 : Adding Missing Sapling.
  * v0.5 : Adding HOP Graphite dust.
  * v0.6 : Add Custom Rods.
+ * v0.7 : Adding Plate System.
  */
 
-println("Start script recipe_thermal_series.");
-println("Script Priority Null.");
+Globals.startScript("recipe_thermal_series");
+Globals.priorityScript("Null");
+
+if (packModeSetting.packModeSettingPlates() == true) {
+	Globals.packExpertScript("Plate - Active");
+}
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
+
+val expert_ingradient_to_plate = packModeSetting.packModeSettingPlateMultiPress();
 
 // Shapeless
 craftingTable.addShapeless("thermal_frost_melon_unblock", <item:thermal:frost_melon_slice> * 9, [<item:thermal:frost_melon>]);
@@ -121,6 +128,97 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 <recipetype:thermal:press>.removeByName("thermal:compat/mekanism/press_mek_salt_unpacking");
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/press_salt", [<item:salt:salt> * 9], <fluid:minecraft:empty>, [<item:salt:salt_block>, <item:thermal:press_unpacking_die>], 400);
 
+if (packModeSetting.packModeSettingPlates() == true) {
+
+	<recipetype:thermal:press>.removeByName("thermal:compat/immersiveengineering/press_ie_aluminum_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_bronze_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_constantan_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_copper_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("beyond_earth_giselle_addon:compat/thermal/press/press_desh_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal_extra:machine/press/dragonsteel_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_electrum_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_enderium_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_gold_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_invar_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_iron_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_lead_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_lumium_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_netherite_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_nickel_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_rose_gold_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal_extra:machine/press/shellite_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_signalum_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_silver_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal_extra:machine/press/soul_infused_plate");
+	<recipetype:thermal:press>.removeByName("thermal:compat/immersiveengineering/press_ie_steel_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_tin_ingot_to_plate");
+	<recipetype:thermal:press>.removeByName("thermal_extra:machine/press/twinite_plate");
+	<recipetype:thermal:press>.removeByName("thermal:compat/immersiveengineering/press_ie_uranium_ingot_to_plate");
+	
+	var addingPlateMultiservoPress = {
+		"immersiveengineering:plate_aluminum" : "forge:ingots/aluminum",
+		"create:brass_sheet" : "forge:ingots/brass",
+		"thermal:bronze_plate" : "forge:ingots/bronze",
+		"contenttweaker:tconstruct/cobalt_sheet" : "forge:ingots/cobalt",
+		"thermal:constantan_plate" : "forge:ingots/constantan",
+		"thermal:copper_plate" : "forge:ingots/copper",
+		"beyond_earth:desh_plate" : "forge:ingots/desh",
+		"thermal_extra:dragonsteel_plate" : "forge:ingots/dragonsteel",
+		"contenttweaker:thermal/diamond_plate" : "forge:gems/diamond",
+		"thermal:electrum_plate" : "forge:ingots/electrum",
+		"thermal:enderium_plate" : "forge:ingots/enderium",
+		"contenttweaker:thermal/emerald_plate" : "forge:gems/emerald",
+		"thermal:gold_plate" : "forge:ingots/gold",
+		"contenttweaker:tconstruct/hepatizon_sheet" : "forge:ingots/hepatizon",
+		"thermal:invar_plate" : "forge:ingots/invar",
+		"thermal:iron_plate" : "forge:ingots/iron",
+		"contenttweaker:thermal/lapis_plate" : "forge:gems/lapis",
+		"thermal:lead_plate" : "forge:ingots/lead",
+		"thermal:lumium_plate" : "forge:ingots/lumium",
+		"thermal:netherite_plate" : "forge:ingots/netherite",
+		"thermal:nickel_plate" : "forge:ingots/nickel",
+		"contenttweaker:tconstruct/pig_iron_sheet" : "forge:ingots/pig_iron",
+		"contenttweaker:thermal/quartz_plate" : "forge:gems/quartz",
+		"contenttweaker:tconstruct/queens_slime_sheet" : "forge:ingots/queens_slime",
+		"thermal:rose_gold_plate" : "forge:ingots/rose_gold",
+		"thermal_extra:shellite_plate" : "forge:ingots/shellite",
+		"thermal:signalum_plate" : "forge:ingots/signalum",
+		"thermal:silver_plate" : "forge:ingots/silver",
+		"contenttweaker:tconstruct/slimesteel_sheet" : "forge:ingots/slimesteel",
+		"thermal_extra:soul_infused_plate" : "forge:ingots/soul_infused",
+		"thermal:steel_plate" : "forge:ingots/steel",
+		"thermal:tin_plate" : "forge:ingots/tin",
+		"thermal_extra:twinite_plate" : "forge:ingots/twinite",
+		"immersiveengineering:plate_uranium" : "forge:ingots/uranium",
+		"createaddition:zinc_sheet" : "forge:ingots/zinc"
+	};
+
+	for addingPlateMultiservoPressOut, addingPlateMultiservoPressIn in addingPlateMultiservoPress {
+		val addingPlateMultiservoPressName = <item:${addingPlateMultiservoPressOut}>;
+		<recipetype:thermal:press>.addJsonRecipe("pack_expert_crafting/thermal_machines/press/press_" + addingPlateMultiservoPressName.registryName.path, {
+			"ingredients": [{
+				"tag": addingPlateMultiservoPressIn,
+				"count": expert_ingradient_to_plate
+			}],
+			"result": [{
+				"item": addingPlateMultiservoPressOut
+			}]
+		});
+	}
+} else {
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_brass_ingot_to_plate", [<item:create:brass_sheet>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/brass>], 2400);
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_cobalt_ingot_to_plate", [<item:contenttweaker:tconstruct/cobalt_sheet>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/cobalt>], 2400);
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_diamond_to_plate", [<item:contenttweaker:thermal/diamond_plate>], <fluid:minecraft:empty>, [<tag:items:forge:gems/diamond>], 2400);
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_emerald_to_plate", [<item:contenttweaker:thermal/emerald_plate>], <fluid:minecraft:empty>, [<tag:items:forge:gems/emerald>], 2400);
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_hepatizon_ingot_to_plate", [<item:contenttweaker:tconstruct/hepatizon_sheet>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/hepatizon>], 2400);
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_lapis_to_plate", [<item:contenttweaker:thermal/lapis_plate>], <fluid:minecraft:empty>, [<tag:items:forge:gems/lapis>], 2400);
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_pig_iron_ingot_to_plate", [<item:contenttweaker:tconstruct/pig_iron_sheet>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/pig_iron>], 2400);
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_quartz_to_plate", [<item:contenttweaker:thermal/quartz_plate>], <fluid:minecraft:empty>, [<tag:items:forge:gems/quartz>], 2400);
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_queen_slime_ingot_to_plate", [<item:contenttweaker:tconstruct/queens_slime_sheet>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/queens_slime>], 2400);
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_slimesteel_ingot_to_plate", [<item:contenttweaker:tconstruct/slimesteel_sheet>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/slimesteel>], 2400);
+	<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_zinc_ingot_to_plate", [<item:createaddition:zinc_sheet>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/zinc>], 2400);
+}
+
 // Phytogenic Insolator
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_almond_sapling", [(<item:minecraft:dark_oak_log> * 6) % 100, <item:croptopia:almond_sapling> % 10, <item:croptopia:almond> % 50], <item:croptopia:almond_sapling>, 1000, 60000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_apple_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:apple_sapling> % 10, <item:minecraft:apple> % 50], <item:croptopia:apple_sapling>, 1000, 60000);
@@ -214,4 +312,4 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 	"experience": 0.3
 });
 
-println("End script recipe_thermal_series.");
+Globals.endScript("recipe_thermal_series");

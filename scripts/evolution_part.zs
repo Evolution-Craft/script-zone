@@ -7,6 +7,7 @@
  * v0.1 : Add Custom Item.
  * v0.2 : Add Custom Ingot.
  * v0.3 : Add Custom Rods.
+ * v0.4 : Add Custom Plates.
  */
 
 println("===============================================================");

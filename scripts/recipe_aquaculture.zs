@@ -6,9 +6,9 @@
  * CHANGELOG:
  * v0.1 : Fix Recipe.
  */
- 
-println("Start script recipe_aquaculture.");
-println("Script Priority Null.");
+
+Globals.startScript("recipe_aquaculture");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -18,4 +18,4 @@ import crafttweaker.api.recipe.Replacer;
 craftingTable.removeByName("aquaculture:planks_from_driftwood");
 craftingTable.addShapeless("pack_expert_crafting/aquaculture_planks_from_driftwood", <item:minecraft:oak_planks> * 2, [<item:aquaculture:driftwood>]);
 
-println("End script recipe_aquaculture.");
+Globals.endScript("recipe_aquaculture");
