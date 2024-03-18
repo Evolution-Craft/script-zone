@@ -1,3 +1,15 @@
+/*
+ * This file is part of the Evolution Craft modpack.
+ *
+ * The author of this file is Millennium, using CraftTweaker mod code.
+ *
+ * CHANGELOG:
+ * v0.1 : First Issue.
+ */
+ 
+Globals.startScript("loot_tables_remove");
+Globals.priorityScript("Null");
+
 import crafttweaker.api.loot.modifier.CommonLootModifiers;
 
 CommonLootModifiers.removeAll(
@@ -108,3 +120,5 @@ CommonLootModifiers.removeAll(
 	<item:theoneprobe:probe>,
 	<item:theoneprobe:probenote>
 );
+
+Globals.endScript("loot_tables_remove");

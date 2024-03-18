@@ -6,12 +6,16 @@
  * CHANGELOG:
  * v0.1 : Add Custom Item.
  * v0.2 : Add Custom Ingot.
- * v0.2 : Add Custom Rods.
+ * v0.3 : Add Custom Rods.
  */
 
-println("Start script recipe_evolution_part.");
-println("Script Priority Null.");
-println("Loader Content Tweaker.");
+println("===============================================================");
+println("          Starting Script: evolution_part          ");
+println("===============================================================");
+println("          Script Priority: Null         ");
+println("===============================================================");
+println("          Loader Module: Content Tweaker          ");
+println("===============================================================");
 
 #loader contenttweaker
 
@@ -218,4 +222,6 @@ val press_rod_die = <factory:item>.typed<Basic>()
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("thermal/press_rod_die");
 
-println("End script recipe_evolution_part.");
+println("===============================================================");
+println("          Ending Script: evolution_part          ");
+println("===============================================================");

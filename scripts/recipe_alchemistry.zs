@@ -7,9 +7,9 @@
  * v0.1 : Adding Missing Sapling Recipe.
  * v0.2 : Adding Missing Log Recipe.
  */
- 
-println("Start script recipe_alchemistry.");
-println("Script Priority Null.");
+
+Globals.startScript("recipe_alchemistry");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -283,4 +283,4 @@ for addingCompactorRecipeID, addingCompactorRecipeName in addingCompactorRecipe 
 	}
 });
 
-println("End script recipe_alchemistry.");
+Globals.endScript("recipe_alchemistry");

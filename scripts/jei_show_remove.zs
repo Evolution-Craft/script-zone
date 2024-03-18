@@ -16,8 +16,8 @@
 
 #priority 999
 
-println("Start script jei_show_remove.");
-println("Script Priority 999.");
+Globals.startScript("jei_show_remove");
+Globals.priorityScript("999");
 
 import mods.jei.JEI;
 
@@ -439,4 +439,4 @@ for hide_jei in removeJeiIngradient{
 JEI.hideRegex(".*:.*_spawn_egg");
 JEI.hideRegex(".*:spawn_egg_.*");
 
-println("End script jei_show_remove.");
+Globals.endScript("jei_show_remove");

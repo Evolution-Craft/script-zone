@@ -7,8 +7,8 @@
  * v0.1 : Modify Item Max Damage.
  */
 
-println("Start script item_max_damage.");
-println("Script Priority Null.");
+Globals.startScript("item_max_damage");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 
@@ -38,4 +38,4 @@ for itemSetMaxDamageMaterial, itemSetMaxDamageValue in itemSetMaxDamage {
 	<item:${itemSetMaxDamageMaterial}>.maxDamage = itemSetMaxDamageValue;
 }
 
-println("End script item_max_damage.");
+Globals.endScript("item_max_damage");

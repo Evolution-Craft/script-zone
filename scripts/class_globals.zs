@@ -12,7 +12,7 @@
 println("===============================================================");
 println("          Starting Script: class_global          ");
 println("===============================================================");
-println("          Script Priority 2000         ");
+println("          Script Priority: 2000         ");
 println("===============================================================");
 println("          Class Globals Loading...          ");
 

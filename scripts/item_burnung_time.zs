@@ -11,8 +11,8 @@
  * v0.5 : Add missing Item.
  */
 
-println("Start script item_burning_time.");
-println("Script Priority Null.");
+Globals.startScript("item_burning_time");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.IItemStack;
@@ -965,4 +965,4 @@ for materialBurnTimeId, materialBurnTimeTick in materialBurnTime {
 	<item:${materialBurnTimeId}>.burnTime = materialBurnTimeTick;
 }
 
-println("End script item_burning_time.");
+Globals.endScript("item_burning_time");

@@ -7,8 +7,8 @@
  * v0.1 : Modify Item Max Stack Size.
  */
 
-println("Start script item_max_stack_size.");
-println("Script Priority Null.");
+Globals.startScript("item_max_stack_size");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 
@@ -28,4 +28,4 @@ for itemSetMaxStackSizeMaterial, itemSetMaxStackSizeValue in itemSetMaxStackSize
 	<item:${itemSetMaxStackSizeMaterial}>.setMaxStackSize(itemSetMaxStackSizeValue);
 }
 
-println("End script item_max_stack_size.");
+Globals.endScript("item_max_stack_size");
