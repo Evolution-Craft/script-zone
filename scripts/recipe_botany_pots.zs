@@ -5,10 +5,11 @@
  *
  * CHANGELOG:
  * v0.1 : Add Vinery Crops.
+ * v0.2 : Modify Cactus Recipe.
  */
 
-println("Start script recipe_botany_pots.");
-println("Script Priority Null.");
+Globals.startScript("recipe_botany_pots");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -274,4 +275,4 @@ import crafttweaker.api.recipe.Replacer;
 	}]
 });
 
-println("End script recipe_botany_pot.");
+Globals.endScript("recipe_botany_pot");

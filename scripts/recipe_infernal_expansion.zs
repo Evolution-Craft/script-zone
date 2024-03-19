@@ -6,9 +6,9 @@
  * CHANGELOG:
  * v0.1 : Add Missing Recipe.
  */
- 
-println("Start script recipe_infernal_expansion.");
-println("Script Priority Null.");
+
+Globals.startScript("recipe_infernal_expansion");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -26,4 +26,4 @@ craftingTable.addShaped("infernalexp_stripped_luminous_hyphae_from_stripped_lumi
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-println("End script recipe_infernal_expansion.");
+Globals.endScript("recipe_infernal_expansion");

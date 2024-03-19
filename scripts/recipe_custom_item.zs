@@ -7,8 +7,8 @@
  * v0.1 : First Isseu.
  */
 
-println("Start script recipe_custom_item.");
-println("Script Priority Null.");
+Globals.startScript("recipe_custom_item");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -32,4 +32,4 @@ craftingTable.addShaped("evolution_craft_redstone_iron_compound", <item:contentt
 blastFurnace.addRecipe("evolution_craft_lapis_ingot_alloy", <item:contenttweaker:lapis_ingot_alloy>, <item:contenttweaker:lapis_iron_compound>, 10, 200);
 blastFurnace.addRecipe("evolution_craft_redstone_ingot_alloy", <item:contenttweaker:redstone_ingot_alloy>, <item:contenttweaker:redstone_iron_compound>, 10, 200);
 
-println("End script recipe_custom_item.");
+Globals.endScript("recipe_custom_item");

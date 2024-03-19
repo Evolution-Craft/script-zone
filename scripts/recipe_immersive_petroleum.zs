@@ -7,8 +7,8 @@
  * v0.1 : Change seismic survery tool.
  */
 
-println("Start script recipe_immersive_petroleum.");
-println("Script Priority Null.");
+Globals.startScript("recipe_immersive_petroleum");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -22,4 +22,4 @@ craftingTable.addShaped("immersivepetroleum/seismic_survey_tool", <item:immersiv
 	[<item:immersiveengineering:component_iron>, <item:immersiveengineering:light_engineering>, <item:immersiveengineering:component_iron>]
 ]);
 
-println("End script recipe_immersive_petroleum.");
+Globals.endScript("recipe_immersive_petroleum");

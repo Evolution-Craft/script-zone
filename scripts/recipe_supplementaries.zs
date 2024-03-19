@@ -9,8 +9,8 @@
  * v0.3 : Fix recipe glass pane bug.
  */
 
-println("Start script recipe_supplementaries.");
-println("Script Priority Null.");
+Globals.startScript("recipe_supplementaries");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -60,4 +60,4 @@ craftingTable.addShaped("supplementaries_soap/sleeping_bag", <item:comforts:slee
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-println("End script recipe_supplementaries.");
+Globals.endScript("recipe_supplementaries");

@@ -11,8 +11,8 @@
  * v0.5 : Remove unnecessary Item.
  */
 
-println("Start script recipe_farmers_delight.");
-println("Script Priority Null.");
+Globals.startScript("recipe_farmers_delight");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -468,4 +468,4 @@ for addingTFLostCuttingFarmersDelightName, addingTFLostCuttingFarmersDelightId i
 <recipetype:farmersdelight:cutting>.addRecipe("thermal_cutting_board_frost_melon_slice", <item:thermal:frost_melon>, [<item:thermal:frost_melon_slice> * 9], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("vinery_cutting_board_cake_slice", <item:vinery:apple_pie>, [<item:vinery:apple_pie_slice> * 4], <tag:items:farmersdelight:tools/knives>);
 
-println("End script recipe_farmers_delight.");
+Globals.endScript("recipe_farmers_delight");

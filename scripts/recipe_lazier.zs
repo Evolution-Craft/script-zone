@@ -7,8 +7,8 @@
  * v0.1 : Bio Fuel Update.
  */
 
-println("Start script recipe_lazier.");
-println("Script Priority Null.");
+Globals.startScript("recipe_lazier");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -510,4 +510,4 @@ for addingFlowersGrinderLazierName, addingFlowersGrinderLazierMod in addingFlowe
 	});
 }
 
-println("End script recipe_lazier.");
+Globals.endScript("recipe_lazier");

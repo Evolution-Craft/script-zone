@@ -7,8 +7,8 @@
  * v0.1 : Fix Recipe.
  */
 
-println("Start script recipe_miners_delight.");
-println("Script Priority Null.");
+Globals.startScript("recipe_miners_delight");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -22,4 +22,4 @@ craftingTable.addShaped("miners_delight_copper_pot", <item:miners_delight:copper
 	[<item:minecraft:copper_ingot>, <item:minecraft:copper_ingot>, <item:minecraft:copper_ingot>]
 ]);
 
-println("End script recipe_miners_delight.");
+Globals.endScript("recipe_miners_delight");

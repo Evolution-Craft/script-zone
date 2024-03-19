@@ -6,9 +6,9 @@
  * CHANGELOG:
  * v0.1 : Fix Recipe.
  */
- 
-println("Start script recipe_undergarden.");
-println("Script Priority Null.");
+
+Globals.startScript("recipe_undergarden");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -23,4 +23,4 @@ craftingTable.addShaped("undergarden_shard_torch", <item:undergarden:shard_torch
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-println("End script recipe_undergarden.");
+Globals.endScript("recipe_undergarden");

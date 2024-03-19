@@ -12,8 +12,8 @@
  * v0.6 : Adding HOP Graphite dust.
  */
 
-println("Start script recipe_mekanism.");
-println("Script Priority Null.");
+Globals.startScript("recipe_mekanism");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -570,4 +570,4 @@ for addingSawingChestMekanismName, addingSawingChestMekanismId in addingSawingCh
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/torch/menril_torch", ItemStackIngredient.from(<item:integrateddynamics:menril_torch> * 4), <item:minecraft:stick>, <item:integrateddynamics:menril_berries>, 1);
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/torch/shard_torch", ItemStackIngredient.from(<item:undergarden:shard_torch> * 4), <item:minecraft:stick>, <item:undergarden:utheric_shard>, 1);
 
-println("End script recipe_mekanism.");
+Globals.endScript("recipe_mekanism");

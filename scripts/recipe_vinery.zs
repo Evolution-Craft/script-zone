@@ -7,8 +7,8 @@
  * v0.1 : First Fix mod.
  */
 
-println("Start script recipe_vinery.");
-println("Script Priority Null.");
+Globals.startScript("recipe_vinery");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -148,4 +148,4 @@ craftingTable.addShaped("vinery_jellie_wine", <item:vinery:jellie_wine>, [
 	[<item:vinery:cherry>, <item:vinery:bolvar_wine>, <item:vinery:cherry>]
 ]);
 
-println("End script recipe_vinery.");
+Globals.endScript("recipe_vinery");

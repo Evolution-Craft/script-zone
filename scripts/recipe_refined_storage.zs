@@ -7,8 +7,8 @@
  * v0.1 : Replace Silicon Refined Storage with forge tag.
  */
 
-println("Start script recipe_refined_storage.");
-println("Script Priority Null.");
+Globals.startScript("recipe_refined_storage");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -43,4 +43,4 @@ craftingTable.addShaped("refinedstorage_64k_fluid_storage_part", <item:refinedst
 	[<tag:items:forge:silicon>, <tag:items:forge:glass>, <tag:items:forge:silicon>]
 ]);
 
-println("End script recipe_refined_storage.");
+Globals.endScript("recipe_refined_storage");

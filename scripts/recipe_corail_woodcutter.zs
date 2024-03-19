@@ -11,8 +11,8 @@
  * v0.5 : Update Code and Adding missing Recipe Botania and Immersive Engineering.
  */
 
-println("Start script recipe_corail_woodcutter.");
-println("Script Priority Null.");
+Globals.startScript("recipe_corail_woodcutter");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.item.ItemStack;
@@ -584,4 +584,4 @@ for addingFencesPartMacawCorailWoodcutterName in addingFencesPartMacawCorailWood
 	}
 }
 
-println("End script recipe_corail_woodcutter.");
+Globals.endScript("recipe_corail_woodcutter");

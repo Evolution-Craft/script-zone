@@ -163,7 +163,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		"contenttweaker:tconstruct/hepatizon_sheet" : "tconstruct:molten_hepatizon",
 		"thermal:invar_plate" : "tconstruct:molten_invar",
 		"thermal:iron_plate" : "tconstruct:molten_iron",
-		//"contenttweaker:thermal/lapis_plate" : "forge:gems/lapis", // manca fluido
+		//"contenttweaker:thermal/lapis_plate" : "forge:gems/lapis", // TODO : Missig Lapis Molten Fluid
 		"thermal:lead_plate" : "tconstruct:molten_lead",
 		"thermal:lumium_plate" : "tconstruct:molten_lumium",
 		"thermal:netherite_plate" : "tconstruct:molten_netherite",
@@ -223,7 +223,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		"contenttweaker:thermal/diamond_plate" : "tconstruct:molten_diamond",
 		"contenttweaker:thermal/emerald_plate" : "tconstruct:molten_emerald",
 		"contenttweaker:tconstruct/hepatizon_sheet" : "tconstruct:molten_hepatizon",
-		//"contenttweaker:thermal/lapis_plate" : "forge:gems/lapis", // manca fluido
+		//"contenttweaker:thermal/lapis_plate" : "forge:gems/lapis", // TODO : Missig Lapis Molten Fluid
 		"contenttweaker:tconstruct/pig_iron_sheet" : "tconstruct:molten_pig_iron",
 		"contenttweaker:thermal/quartz_plate" : "tconstruct:molten_quartz",
 		"thermal_extra:soul_infused_plate" : "thermal_extra:soul_infused",
@@ -268,4 +268,4 @@ if (packModeSetting.packModeSettingPlates() == true) {
 
 }
 
-println("End script recipe_tinkers_construct.");
+Globals.endScript("recipe_tinkers_construct");

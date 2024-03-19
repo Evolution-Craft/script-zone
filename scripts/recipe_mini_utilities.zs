@@ -7,8 +7,8 @@
  * v0.1 : Update Recipe.
  */
 
-println("Start script recipe_mini_utilities.");
-println("Script Priority Null.");
+Globals.startScript("recipe_mini_utilities");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -22,4 +22,4 @@ craftingTable.addShaped("pack_expert_crafting/miniutilities_quantum_quarry", <it
 	[<item:miniutilities:unstable_block>, <item:ae2:singularity>, <item:miniutilities:unstable_block>]
 ]);
 
-println("End script recipe_mini_utilities.");
+Globals.endScript("recipe_mini_utilities");

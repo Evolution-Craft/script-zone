@@ -9,8 +9,8 @@
  * v0.3 : Support for Unusual End.
  */
 
-println("Start script recipe_simply_tea.");
-println("Script Priority Null.");
+Globals.startScript("recipe_simply_tea");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -36,4 +36,4 @@ craftingTable.addShaped("simplytea_tea_teabag_green", <item:simplytea:teabag_gre
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-println("End script recipe_simply_tea.");
+Globals.endScript("recipe_simply_tea");

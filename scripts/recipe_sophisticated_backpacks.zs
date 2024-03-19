@@ -7,8 +7,8 @@
  * v0.1 : Fix Recipe.
  */
 
-println("Start script recipe_sophisticated_backpacks.");
-println("Script Priority Null.");
+Globals.startScript("recipe_sophisticated_backpacks");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -22,4 +22,4 @@ craftingTable.addShaped("sophisticatedbackpacks_tool_swapper_upgrade", <item:sop
 	[<item:minecraft:iron_ingot>, <item:minecraft:iron_shovel>, <item:minecraft:iron_ingot>]
 ]);
 
-println("End script recipe_sophisticated_backpacks.");
+Globals.endScript("recipe_sophisticated_backpacks");

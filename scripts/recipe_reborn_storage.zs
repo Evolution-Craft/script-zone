@@ -7,8 +7,8 @@
  * v0.1 : Replace Silicon Refined Storage with forge tag.
  */
 
-println("Start script recipe_reborn_storage.");
-println("Script Priority Null.");
+Globals.startScript("recipe_reborn_storage");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -34,4 +34,4 @@ craftingTable.addShaped("rebornstorage_multiblock_heat", <item:rebornstorage:mul
 	[<item:rebornstorage:multiblock_frame>, <item:refinedstorage:quartz_enriched_iron>, <item:rebornstorage:multiblock_frame>]
 ]);
 
-println("End script recipe_reborn_storage.");
+Globals.endScript("recipe_reborn_storage");

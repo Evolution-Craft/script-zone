@@ -8,8 +8,8 @@
  * v0.2 : Fix Recipe Rotation Wand.
  */
 
-println("Start script recipe_cyclic.");
-println("Script Priority Null.");
+Globals.startScript("recipe_cyclic");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -345,4 +345,4 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 	}
 });
 
-println("End script recipe_cyclic.");
+Globals.endScript("recipe_cyclic");

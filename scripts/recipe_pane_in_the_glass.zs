@@ -7,8 +7,8 @@
  * v0.1 : Replace recipe.
  */
 
-println("Start script recipe_pane_in_the_glass.");
-println("Script Priority Null.");
+Globals.startScript("recipe_pane_in_the_glass");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -27,4 +27,4 @@ craftingTable.addShaped("glazing_tool", <item:pitg:glazing_tool>, [
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:iron_ingot>]
 ]);
 
-println("End script recipe_pane_in_the_glass.");
+Globals.endScript("recipe_pane_in_the_glass");

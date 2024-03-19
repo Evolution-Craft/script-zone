@@ -7,8 +7,8 @@
  * v0.1 : Update Recipe.
  */
 
-println("Start script recipe_mob_ginding_utils.");
-println("Script Priority Null.");
+Globals.startScript("recipe_mob_ginding_utils");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -23,4 +23,4 @@ craftingTable.addShaped("pack_expert_crafting/mob_grinding_utils_saw", <item:mob
 	[<item:minecraft:diamond_block>, <tag:items:forge:storage_blocks/steel>, <item:minecraft:diamond_block>]
 ]);
 
-println("End script recipe_mob_ginding_utils.");
+Globals.endScript("recipe_mob_ginding_utils");

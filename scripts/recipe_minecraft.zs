@@ -16,8 +16,8 @@
  * v0.10 : Adding bone in Furnace.
  */
 
-println("Start script recipe_minecraft.");
-println("Script Priority Null.");
+Globals.startScript("recipe_minecraft");
+Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -395,4 +395,4 @@ stoneCutter.addRecipe("stonecutter/vinery_loam_slab", <item:vinery:loam_slab> * 
 // Smoker
 smoker.addRecipe("smoker/vinery_dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 100);
 
-println("End script recipe_minecraft.");
+Globals.endScript("recipe_minecraft");
