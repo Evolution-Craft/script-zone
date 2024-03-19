@@ -23,34 +23,69 @@ println("===============================================================");
 import contenttweaker.builder.vanilla.item.Basic;
 import contenttweaker.object.vanilla.property.StandardItemProperties;
 
-val evolutionCreativeTab = <factory:creative_tab>.create("evolutionTab", <item:minecraft:paper>);
+val evolutionCreativeTab = <factory:creative_tab>.create("evolutionTab", <item:create:experience_nugget>);
 val evolutionTab = <tab:evolutionTab>;
 
 // Part
 val common_part = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.fireResistant(true)
 	.build("common_part");
 
 val uncommon_part = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:uncommon>)
+	.fireResistant(true)
 	.build("uncommon_part");
 
 val rare_part = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:rare>)
+	.fireResistant(true)
 	.build("rare_part");
 
 val epic_part = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:epic>)
+	.fireResistant(true)
 	.build("epic_part");
 
 val leggendary_part = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:epic>)
+	.fireResistant(true)
 	.build("leggendary_part");
+
+val mythic_part = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.fireResistant(true)
+	.build("mythic_part");
+
+val relic_part = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.fireResistant(true)
+	.build("relic_part");
+
+val masterwork_part = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.fireResistant(true)
+	.build("masterwork_part");
+
+val eternal_part = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.fireResistant(true)
+	.build("eternal_part");
+
+val ultimate_part = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.fireResistant(true)
+	.build("ultimate_part");
 
 // Ingot
 val lapis_ingot_alloy = <factory:item>.typed<Basic>()

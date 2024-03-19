@@ -3,7 +3,12 @@
 	"item.contenttweaker.uncommon_part": "Uncommon Part",
 	"item.contenttweaker.rare_part": "Rare Part",
 	"item.contenttweaker.epic_part": "Epic Part",
-	"item.contenttweaker.leggendary_part": "Leggendary Part",
+	"item.contenttweaker.leggendary_part": "§6Leggendary Part",
+	"item.contenttweaker.mythic_part": "§5Mythic Part",
+	"item.contenttweaker.relic_part": "§cRelic Part",
+	"item.contenttweaker.masterwork_part": "§aMasterwork Part",
+	"item.contenttweaker.eternal_part": "§3Eternal Part",
+	"item.contenttweaker.ultimate_part": "§4Ultimate Part",
 
 	"item.contenttweaker.lapis_ingot_alloy": "Lapis Ingot Alloy",
 	"item.contenttweaker.lapis_iron_compound": "Lapis Iron Compound",

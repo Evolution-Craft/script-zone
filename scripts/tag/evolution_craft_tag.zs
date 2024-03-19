@@ -21,7 +21,12 @@ var addingEvolutionCraftPart = [
 	"contenttweaker:uncommon_part",
 	"contenttweaker:rare_part",
 	"contenttweaker:epic_part",
-	"contenttweaker:leggendary_part"
+	"contenttweaker:leggendary_part",
+	"contenttweaker:mythic_part",
+	"contenttweaker:relic_part",
+	"contenttweaker:masterwork_part",
+	"contenttweaker:eternal_part",
+	"contenttweaker:ultimate_part"
 ];
 for tag_evolution_craft_part in addingEvolutionCraftPart{
 	<tag:items:evolution_craft:parts>.add(<item:${tag_evolution_craft_part}>);

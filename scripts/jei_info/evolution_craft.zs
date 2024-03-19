@@ -22,5 +22,10 @@ i_evolution_craft(<item:contenttweaker:uncommon_part>, "---????---");
 i_evolution_craft(<item:contenttweaker:rare_part>, "---????---");
 i_evolution_craft(<item:contenttweaker:epic_part>, "---????---");
 i_evolution_craft(<item:contenttweaker:leggendary_part>, "---????---");
+i_evolution_craft(<item:contenttweaker:mythic_part>, "---????---");
+i_evolution_craft(<item:contenttweaker:relic_part>, "---????---");
+i_evolution_craft(<item:contenttweaker:masterwork_part>, "---????---");
+i_evolution_craft(<item:contenttweaker:eternal_part>, "---????---");
+i_evolution_craft(<item:contenttweaker:ultimate_part>, "---????---");
 
 Globals.endScript("jei_info/evolution_craft");
