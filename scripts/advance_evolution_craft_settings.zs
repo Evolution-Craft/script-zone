@@ -26,6 +26,7 @@ public class packModeSetting {
 	private static val quantity_planks_from_log as int = 2;
 	private static val quantity_plate_from_ingradient_in_metal_press as int = 4;
 	private static val quantity_plate_from_ingradient_in_multiservo_press as int = 2;
+	private static val quantity_plate_from_ingradient_in_casting_basing as int = 810;
 
 	public static packModeSettingArmors() as string {
 		return pack_mode_expert_recipe_armor_enable;
@@ -89,6 +90,11 @@ public class packModeSetting {
 		return quantity_plate_from_ingradient_in_multiservo_press;
 	}
 	public static val packModeSettingPlateMultiPressCount_Set as string = "packModeSettingPlates Quantity: " + quantity_plate_from_ingradient_in_multiservo_press;
+
+	public static packModeSettingPlateCastingBasing() as int {
+		return quantity_plate_from_ingradient_in_casting_basing;
+	}
+	public static val packModeSettingPlateMultiCastingBasing_Set as string = "packModeSettingPlates Quantity: " + quantity_plate_from_ingradient_in_casting_basing;
 }
 
 println("          Pack Mode Settings...          ");
@@ -106,6 +112,7 @@ println("          -> " + packModeSetting.packModeSettingLogs_Load  + "         
 println("          -> " + packModeSetting.packModeSettingPlates_Set  + "          ");
 println("          -> " + packModeSetting.packModeSettingPlateMetalPressCount_Set  + " In Metal Press         ");
 println("          -> " + packModeSetting.packModeSettingPlateMultiPressCount_Set  + " In Multiservo Press         ");
+println("          -> " + packModeSetting.packModeSettingPlateMultiCastingBasing_Set  + " In Casting Basing         ");
 println("          -> " + packModeSetting.packModeSettingPlates_Load  + "          ");
 println("          -> " + packModeSetting.packModeSettingShears_Set  + "          ");
 println("          -> " + packModeSetting.packModeSettingShears_Load  + "          ");

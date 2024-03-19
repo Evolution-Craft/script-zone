@@ -51,13 +51,13 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 
 // Blast Chiller 
 <recipetype:thermal:chiller>.addJsonRecipe("thermal_machines/chiller/chiller_diamond_rod", {
-	"input": [ {
+	"input": [{
 		"fluid": "tconstruct:molten_diamond",
 		"amount": 45
 	},
 	{
 		"item": "thermal:chiller_rod_cast"
-	} ],
+	}],
 	"result": {
 		"item": "contenttweaker:immersiveengineering/diamond_rod",
 		"count": 1
@@ -65,13 +65,13 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 	"energy": 2400
 });
 <recipetype:thermal:chiller>.addJsonRecipe("thermal_machines/chiller/chiller_emerald_rod", {
-	"input": [ {
+	"input": [{
 		"fluid": "tconstruct:molten_emerald",
 		"amount": 45
 	},
 	{
 		"item": "thermal:chiller_rod_cast"
-	} ],
+	}],
 	"result": {
 		"item": "contenttweaker:immersiveengineering/emerald_rod",
 		"count": 1
