@@ -223,6 +223,8 @@ var removeJeiIngradient = [
 	"mekanism:salt",
 	// Mekanism Tools
 	"mekanismtools:wood_paxel",
+	// Minecraft
+	"minecraft:bedrock",
 	// Mini Utilities
 	"miniutilities:chorus_tile",
 	"miniutilities:destruction_pickaxe",

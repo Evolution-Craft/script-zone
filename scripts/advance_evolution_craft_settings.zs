@@ -16,6 +16,7 @@ public class packModeSetting {
 
 	private static val pack_mode_expert_recipe_armor_enable as string = true;
 	private static val pack_mode_expert_recipe_bucket_enable as string = true;
+	private static val pack_mode_expert_recipe_evolution_part_enable as string = true;
 	private static val pack_mode_expert_recipe_furnace_enable as string = true;
 	private static val pack_mode_expert_recipe_hopper_enable as string = true;
 	private static val pack_mode_expert_recipe_horse_armor_enable as string = true;
@@ -39,6 +40,12 @@ public class packModeSetting {
 	}
 	public static val packModeSettingBuckets_Set as string = "packModeSettingBuckets Set: " + pack_mode_expert_recipe_bucket_enable;
 	public static val packModeSettingBuckets_Load as string = "packModeSettingBuckets Load Completed";
+
+	public static packModeSettingEvolutionParts() as string {
+		return pack_mode_expert_recipe_evolution_part_enable;
+	}
+	public static val packModeSettingEvolutionParts_Set as string = "packModeSettingEvolutionParts Set: " + pack_mode_expert_recipe_evolution_part_enable;
+	public static val packModeSettingEvolutionParts_Load as string = "packModeSettingEvolutionParts Load Completed";
 
 	public static packModeSettingFurnaces() as string {
 		return pack_mode_expert_recipe_furnace_enable;
@@ -102,6 +109,8 @@ println("          -> " + packModeSetting.packModeSettingArmors_Set  + "        
 println("          -> " + packModeSetting.packModeSettingArmors_Load  + "          ");
 println("          -> " + packModeSetting.packModeSettingBuckets_Set  + "          ");
 println("          -> " + packModeSetting.packModeSettingBuckets_Load  + "          ");
+println("          -> " + packModeSetting.packModeSettingEvolutionParts_Set  + "          ");
+println("          -> " + packModeSetting.packModeSettingEvolutionParts_Load  + "          ");
 println("          -> " + packModeSetting.packModeSettingFurnaces_Set  + "          ");
 println("          -> " + packModeSetting.packModeSettingFurnaces_Load  + "          ");
 println("          -> " + packModeSetting.packModeSettingHoppers_Set  + "          ");

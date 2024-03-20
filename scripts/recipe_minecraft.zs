@@ -262,9 +262,14 @@ for composterAddItemMaterial, composterAddItemValue in composterAddItem {
 // Blast Furnace
 blastFurnace.addRecipe("blast_furnace/create_crushed_certus_quartz", <item:ae2:certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_certus_quartz>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create_charged_crushed_certus_quartz", <item:ae2:charged_certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_charged_certus_quartz>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/create_crushed_fluix", <item:ae2:fluix_crystal>, <item:contenttweaker:ae2/crushed_fluix>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/create_crushed_quartz", <item:minecraft:quartz>, <item:contenttweaker:ae2/crushed_quartz>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create_crushed_cobalt_ore", <item:tconstruct:cobalt_ingot>, <item:contenttweaker:tconstruct/crushed_cobalt_ore>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/create_crushed_fluix", <item:ae2:fluix_crystal>, <item:contenttweaker:ae2/crushed_fluix>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/create_crushed_hepatizon", <item:tconstruct:hepatizon_ingot>, <item:contenttweaker:tconstruct/crushed_hepatizon>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/create_crushed_manyullyn", <item:tconstruct:manyullyn_ingot>, <item:contenttweaker:tconstruct/crushed_manyullyn>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/create_crushed_quartz", <item:minecraft:quartz>, <item:contenttweaker:ae2/crushed_quartz>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/create_crushed_queens_slime", <item:tconstruct:queens_slime_ingot>, <item:contenttweaker:tconstruct/crushed_queens_slime>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/create_crushed_rose_gold", <item:tconstruct:rose_gold_ingot>, <item:contenttweaker:tconstruct/crushed_rose_gold>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/create_crushed_slimesteel", <item:tconstruct:slimesteel_ingot>, <item:contenttweaker:tconstruct/crushed_slimesteel>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create_raw_zinc_block", <item:create:zinc_block>, <item:create:raw_zinc_block>, 6.0, 200);
 blastFurnace.removeByName("exlinecopperequipment:copper_boots_blast");
 blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 100);
@@ -291,6 +296,7 @@ blastFurnace.addRecipe("blast_furnace/minecraft_raw_copper_block", <item:minecra
 blastFurnace.addRecipe("blast_furnace/minecraft_raw_gold_block", <item:minecraft:gold_block>, <item:minecraft:raw_gold_block>, 6.0, 200);
 blastFurnace.addRecipe("blast_furnace/minecraft_sand", <item:minecraft:glass>, <tag:items:minecraft:sand>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/minecraft_stone", <item:minecraft:smooth_stone>, <item:minecraft:stone>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/tconstruct_ingot_pig_iron_from_crushed_pig_iron", <item:tconstruct:pig_iron_ingot>, <item:contenttweaker:tconstruct/crushed_pig_iron>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/quark_dirty_glass", <item:minecraft:glass>, <item:quark:dirty_glass>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/thermal_steel_ingot_from_crushed_steel", <item:thermal:steel_ingot>, <item:contenttweaker:mekanism/crushed_steel>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/undergarden_raw_cloggrum_block", <item:undergarden:cloggrum_block>, <item:undergarden:raw_cloggrum_block>, 6.0, 200);
@@ -305,9 +311,14 @@ furnace.addRecipe("furnace/alexsmobs_fish_bones", <item:minecraft:bone_meal> * 3
 furnace.addRecipe("furnace/aquaculture_fish_bones", <item:minecraft:bone_meal> * 3, <item:aquaculture:fish_bones>, 0.05, 200);
 furnace.addRecipe("furnace/create_crushed_certus_quartz", <item:ae2:certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_certus_quartz>, 0.1, 200);
 furnace.addRecipe("furnace/create_charged_crushed_certus_quartz", <item:ae2:charged_certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_charged_certus_quartz>, 0.1, 200);
-furnace.addRecipe("furnace/create_crushed_fluix", <item:ae2:fluix_crystal>, <item:contenttweaker:ae2/crushed_fluix>, 0.1, 200);
-furnace.addRecipe("furnace/create_crushed_quartz", <item:minecraft:quartz>, <item:contenttweaker:ae2/crushed_quartz>, 0.1, 200);
 furnace.addRecipe("furnace/create_crushed_cobalt_ore", <item:tconstruct:cobalt_ingot>, <item:contenttweaker:tconstruct/crushed_cobalt_ore>, 0.1, 200);
+furnace.addRecipe("furnace/create_crushed_fluix", <item:ae2:fluix_crystal>, <item:contenttweaker:ae2/crushed_fluix>, 0.1, 200);
+furnace.addRecipe("furnace/create_crushed_hepatizon", <item:tconstruct:hepatizon_ingot>, <item:contenttweaker:tconstruct/crushed_hepatizon>, 0.1, 200);
+furnace.addRecipe("furnace/create_crushed_manyullyn", <item:tconstruct:manyullyn_ingot>, <item:contenttweaker:tconstruct/crushed_manyullyn>, 0.1, 200);
+furnace.addRecipe("furnace/create_crushed_quartz", <item:minecraft:quartz>, <item:contenttweaker:ae2/crushed_quartz>, 0.1, 200);
+furnace.addRecipe("furnace/create_crushed_queens_slime", <item:tconstruct:queens_slime_ingot>, <item:contenttweaker:tconstruct/crushed_queens_slime>, 0.1, 200);
+furnace.addRecipe("furnace/create_crushed_rose_gold", <item:tconstruct:rose_gold_ingot>, <item:contenttweaker:tconstruct/crushed_rose_gold>, 0.1, 200);
+furnace.addRecipe("furnace/create_crushed_slimesteel", <item:tconstruct:slimesteel_ingot>, <item:contenttweaker:tconstruct/crushed_slimesteel>, 0.1, 200);
 furnace.removeByName("exlinecopperequipment:copper_boots_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 200);
 furnace.removeByName("exlinecopperequipment:copper_chest_smelt");
@@ -328,6 +339,7 @@ furnace.addRecipe("furnace/minecraft_beetroot", <item:minecraft:sugar> * 2, <ite
 furnace.addRecipe("furnace/minecraft_rotten_flesh", <item:minecraft:leather>, <item:minecraft:rotten_flesh> * 4, 0.4, 240);
 furnace.addRecipe("furnace/thermal_steel_ingot_from_crushed_steel", <item:thermal:steel_ingot>, <item:contenttweaker:mekanism/crushed_steel>, 0.1, 200);
 furnace.addRecipe("furnace/netherdepthsupgrade_bonefish", <item:minecraft:bone_meal> * 3, <item:netherdepthsupgrade:bonefish>, 0.05, 200);
+furnace.addRecipe("furnace/tconstruct_ingot_pig_iron_from_crushed_pig_iron", <item:tconstruct:pig_iron_ingot>, <item:contenttweaker:tconstruct/crushed_pig_iron>, 0.1, 200);
 furnace.addRecipe("furnace/twilightforest_green_thorns", <item:twilightforest:burnt_thorns>, <item:twilightforest:green_thorns>, 0.4, 240);
 furnace.addRecipe("furnace/twilightforest_brown_thorns", <item:twilightforest:burnt_thorns>, <item:twilightforest:brown_thorns>, 0.4, 240);
 furnace.addRecipe("furnace/vinery_dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 200);

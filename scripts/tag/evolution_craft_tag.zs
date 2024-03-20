@@ -32,6 +32,14 @@ for tag_evolution_craft_part in addingEvolutionCraftPart{
 	<tag:items:evolution_craft:parts>.add(<item:${tag_evolution_craft_part}>);
 }
 
+// Evolution Craft - Parts Middle
+var addingEvolutionCraftPartMiddle = [
+	"contenttweaker:common_part_middle"
+];
+for tag_evolution_craft_part_middle in addingEvolutionCraftPartMiddle{
+	<tag:items:evolution_craft:parts/middle>.add(<item:${tag_evolution_craft_part_middle}>);
+}
+
 // Evolution Craft - Ingots
 var addingEvolutionCraftIngot = [
 	"contenttweaker:lapis_ingot_alloy",

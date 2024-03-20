@@ -4,10 +4,10 @@
  * The author of this file is Millennium, using CraftTweaker mod code.
  *
  * CHANGELOG:
- * v0.1 : Fix Recipe.
+ * v0.1 : adding Plate System.
  */
 
-Globals.startScript("recipe_aquaculture");
+Globals.startScript("recipe_electrodynamics");
 Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
@@ -39,4 +39,4 @@ val expert_energy_for_tick_to_plate = 450.0;//packModeSetting.packModeSettingPla
 	"experience": 0.10000000149011612
 });*/
 
-Globals.endScript("recipe_aquaculture");
+Globals.endScript("recipe_electrodynamics");

@@ -18,6 +18,7 @@ function i_evolution_craft(m_evolution_craft as IItemStack, s_evolution_craft as
 }
 
 i_evolution_craft(<item:contenttweaker:common_part>, "---????---");
+i_evolution_craft(<item:contenttweaker:common_part>, "Ingradiant for Evolution Common Part, to be smelt on Constantan for create Common Part");
 i_evolution_craft(<item:contenttweaker:uncommon_part>, "---????---");
 i_evolution_craft(<item:contenttweaker:rare_part>, "---????---");
 i_evolution_craft(<item:contenttweaker:epic_part>, "---????---");

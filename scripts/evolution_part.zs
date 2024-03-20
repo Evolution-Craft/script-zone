@@ -33,6 +33,12 @@ val common_part = <factory:item>.typed<Basic>()
 	.fireResistant(true)
 	.build("common_part");
 
+val common_part_middle = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.fireResistant(true)
+	.build("common_part_middle");
+
 val uncommon_part = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:uncommon>)
