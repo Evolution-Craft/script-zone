@@ -25,7 +25,7 @@ if (packModeSetting.packModeSettingEvolutionParts() == true) {
 		[<item:minecraft:amethyst_block>, <item:contenttweaker:lapis_ingot_alloy>, <item:thermal:lead_plate>, <item:contenttweaker:lapis_ingot_alloy>, <item:minecraft:amethyst_block>],
 		[<item:tconstruct:pig_iron_block>, <item:minecraft:amethyst_block>, <item:tombstone:white_marble>, <item:minecraft:amethyst_block>, <item:tconstruct:pig_iron_block>]
 	]);
-	<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/evolution_part/common_part", {
+	<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/evolution_part/tconstruct/common_part", {
 	"cast": {
 		"item": "contenttweaker:common_part_middle"
 	},
@@ -36,7 +36,9 @@ if (packModeSetting.packModeSettingEvolutionParts() == true) {
 	},
 	"result": "contenttweaker:common_part",
 	"cooling_time": 628
-});
+	});
+	<recipetype:create:filling>.addRecipe("pack_expert_crafting/evolution_part/create/common_part", <item:contenttweaker:common_part>, <item:contenttweaker:common_part_middle>, <fluid:tconstruct:molten_constantan> * 810, 314);
+	<recipetype:thermal:bottler>.addRecipe("pack_expert_crafting/evolution_part/thermal/common_part", <item:contenttweaker:common_part>, <item:contenttweaker:common_part_middle>, <fluid:tconstruct:molten_constantan> * 810, 50500);
 }
 
 Globals.endScript("pack_mod_expert_recipe_evolution_part");

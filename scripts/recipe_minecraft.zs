@@ -51,7 +51,7 @@ var itemDyeMisc = [
 
 // Shapeless
 craftingTable.addShapeless("minecraft_brown_day", <item:minecraft:brown_dye> * 3, [<item:minecraft:blue_dye>, <item:minecraft:red_dye>, <item:minecraft:yellow_dye>]);
-craftingTable.addShapeless("minecraft_green_day", <item:minecraft:green_dye> * 3, [<item:minecraft:blue_dye>, <item:minecraft:yellow_dye>]);
+craftingTable.addShapeless("minecraft_green_day", <item:minecraft:green_dye> * 2, [<item:minecraft:blue_dye>, <item:minecraft:yellow_dye>]);
 craftingTable.addShapeless("minecraft_flint", <item:minecraft:flint>, [<item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>]);
 craftingTable.addShapeless("minecraft_nether_wart_unblock", <item:minecraft:nether_wart> * 4, [<item:minecraft:nether_wart_block>]);
 craftingTable.addShapeless("minecraft_snow_block_unblock", <item:minecraft:snowball> * 4, [<item:minecraft:snow_block>]);
@@ -115,6 +115,13 @@ craftingTable.addShaped("pack_expert_crafting/minecraft_stonecutter", <item:mine
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:thermal:saw_blade>, <item:minecraft:air>],
 	[<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>]
+]);
+
+craftingTable.removeByName("minecraft:piston");
+craftingTable.addShaped("pack_expert_crafting/minecraft_piston", <item:minecraft:piston>, [
+	[<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <tag:items:minecraft:planks>],
+	[<item:minecraft:stone>, <tag:items:forge:ingots/invar>, <item:minecraft:stone>],
+	[<item:minecraft:stone>, <item:contenttweaker:redstone_ingot_alloy>, <item:minecraft:stone>]
 ]);
 
 // Campfire
