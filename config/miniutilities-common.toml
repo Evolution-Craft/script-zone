@@ -34,7 +34,7 @@
 
 ["World Generation"]
 	#Should Ender Ore Generate?
-	"Ender Ore Generation" = true
+	"Ender Ore Generation" = false
 
 ["Blessed Earth Settings"]
 	#How long should it minimum wait before trying to spawn

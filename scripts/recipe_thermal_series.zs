@@ -280,6 +280,11 @@ if (packModeSetting.packModeSettingPlates() == true) {
 <recipetype:thermal:insolator_catalyst>.addCatalyst("insolator_catalyst_indutrialforegoing_fertilizer", <item:industrialforegoing:fertilizer>, 1.25, 1.25, 0.6, 0.1, 0.5);
 <recipetype:thermal:insolator_catalyst>.addCatalyst("insolator_catalyst_waterstrainer_fertilizer", <item:waterstrainer:fertilizer>, 1.5, 1.5, 0.8, 0.1, 0.5);
 
+// Pulverizer
+<recipetype:thermal:pulverizer>.addRecipe("thermal_machines/pulverizer/alexsmobs_fish_bones", [(<item:minecraft:bone_meal> * 3) % 100] , <item:alexsmobs:fish_bones>, 2, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("thermal_machines/pulverizer/aquaculture_fish_bones", [(<item:minecraft:bone_meal> * 3) % 100] , <item:aquaculture:fish_bones>, 2, 4000);
+<recipetype:thermal:pulverizer>.addRecipe("thermal_machines/pulverizer/netherdepthsupgrade_bonefish", [(<item:minecraft:bone_meal> * 3) % 100] , <item:netherdepthsupgrade:bonefish>, 2, 4000);
+
 // Smelter Recycle
 <recipetype:thermal:smelter_recycle>.addJsonRecipe("thermal_machines/smelter/smelter_silver_armor", {
 	"ingredient": {
