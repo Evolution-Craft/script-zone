@@ -302,22 +302,26 @@ if (packModeSetting.packModeSettingArmors() == true) {
 
 /********************************************************************************************************************************/
 
-	craftingTable.addShaped("minecraft_chainmail_helmet", <item:minecraft:chainmail_helmet>, [
+	craftingTable.removeByName("minecraft:chainmail_helmet");
+	craftingTable.addShaped("pack_expert_crafting_armor/chainmail_helmet", <item:minecraft:chainmail_helmet>, [
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 		[<item:minecraft:chain>, <item:minecraft:chain>, <item:minecraft:chain>],
 		[<item:minecraft:chain>, <item:minecraft:air>, <item:minecraft:chain>]
 	]);
-	craftingTable.addShaped("minecraft_chainmail_chestplate", <item:minecraft:chainmail_chestplate>, [
+	craftingTable.removeByName("minecraft:chainmail_chestplate");
+	craftingTable.addShaped("pack_expert_crafting_armor/chainmail_chestplate", <item:minecraft:chainmail_chestplate>, [
 		[<item:minecraft:chain>, <item:minecraft:air>, <item:minecraft:chain>],
 		[<item:minecraft:chain>, <item:minecraft:chain>, <item:minecraft:chain>],
 		[<item:minecraft:chain>, <item:minecraft:chain>, <item:minecraft:chain>]
 	]);
-	craftingTable.addShaped("minecraft_chainmail_leggings", <item:minecraft:chainmail_leggings>, [
+	craftingTable.removeByName("minecraft:chainmail_leggings");
+	craftingTable.addShaped("pack_expert_crafting_armor/chainmail_leggings", <item:minecraft:chainmail_leggings>, [
 		[<item:minecraft:chain>, <item:minecraft:chain>, <item:minecraft:chain>],
 		[<item:minecraft:chain>, <item:minecraft:air>, <item:minecraft:chain>],
 		[<item:minecraft:chain>, <item:minecraft:air>, <item:minecraft:chain>]
 	]);
-	craftingTable.addShaped("minecraft_chainmail_boots", <item:minecraft:chainmail_boots>, [
+	craftingTable.removeByName("minecraft:chainmail_boots");
+	craftingTable.addShaped("pack_expert_crafting_armor/chainmail_boots", <item:minecraft:chainmail_boots>, [
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 		[<item:minecraft:chain>, <item:minecraft:air>, <item:minecraft:chain>],
 		[<item:minecraft:chain>, <item:minecraft:air>, <item:minecraft:chain>]
