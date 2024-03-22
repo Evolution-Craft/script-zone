@@ -44,6 +44,11 @@ var removeRecipeByName = [
 	// Applied Energistics 2
 	"ae2:misc/vanilla_comparator",
 	"ae2:tools/matter_cannon",
+	// Archers Arsenal
+	"archarsenal:arrow_down_vanilla_to_villager",
+	"archarsenal:arrow_up_villager_to_vanilla",
+	"archarsenal:villager_arrow",
+	"archarsenal:arrow_down_barbed_to_vanilla",
 	// Baubley Heart Canisters
 	"bhc:god_apple",
 	// Beyond Earth
@@ -105,6 +110,8 @@ var removeRecipeByName = [
 	"cyclic:magic_net",
 	"cyclic:magic_net_alt",
 	"cyclic:netherite_ingot",
+	"cyclic:quiver_damage",
+	"cyclic:quiver_lightning",
 	"cyclic:redstone_carrot_speed",
 	"cyclic:shapeless/spark",
 	"cyclic:shapeless/ender_fishing",
@@ -182,6 +189,7 @@ var removeRecipeByName = [
 	"galosphere:silver_bomb",
 	// Hostile Neural Networks
 	"hostilenetworks:living_matter/extraterrestrial/nether_star",
+	"hostilenetworks:living_matter/overworldian/arrow",
 	// Immersive Engineering
 	"immersiveengineering:crafting/blueprint_bannerpatterns",
 	"immersiveengineering:crafting/blueprint_bullets",
@@ -312,6 +320,7 @@ var removeRecipeByName = [
 	// Mekanism Tools
 	"mekanismtools:wood_paxel",
 	// Minecraft
+	"minecraft:arrow",
 	"minecraft:beacon",
 	"minecraft:cake",
 	"minecraft:creeper_banner_pattern",
@@ -322,6 +331,7 @@ var removeRecipeByName = [
 	"minecraft:magma_cream",
 	"minecraft:mojang_banner_pattern",
 	"minecraft:skull_banner_pattern",
+	"minecraft:spectral_arrow",
 	"minecraft:sticky_piston",
 	"minecraft:wooden_axe",
 	"minecraft:wooden_hoe",

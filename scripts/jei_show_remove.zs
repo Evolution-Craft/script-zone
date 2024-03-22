@@ -26,6 +26,8 @@ var removeJeiIngradient = [
 	"alexsmobs:vine_lasso",
 	// Apotheosis
 	"apotheosis:ender_lead",
+	// Archers Arsenal
+	"archarsenal:villager_arrow",
 	// Botania
 	"botania:creative_pool",
 	"botania:corporea_spark_creative",
@@ -93,6 +95,8 @@ var removeJeiIngradient = [
 	"cyclic:item_infinite",
 	"cyclic:laser_cannon",
 	"cyclic:magic_net",
+	"cyclic:quiver_damage",
+	"cyclic:quiver_lightning",
 	"cyclic:redstone_carrot_speed",
 	"cyclic:shears_obsidian",
 	"cyclic:sleeping_mat",
