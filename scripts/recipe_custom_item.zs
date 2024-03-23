@@ -27,6 +27,16 @@ craftingTable.addShaped("evolution_craft_redstone_iron_compound", <item:contentt
 	[<tag:items:forge:dusts/redstone>, <tag:items:forge:ingots/iron>, <tag:items:forge:dusts/redstone>],
 	[<tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>]
 ]);
+craftingTable.addShaped("evolution_craft_copper_knife", <item:contenttweaker:knife/copper_knife>, [
+	[<item:minecraft:air>, <item:minecraft:copper_ingot>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+craftingTable.addShaped("evolution_craft_steel_knife", <item:contenttweaker:knife/steel_knife>, [
+	[<item:minecraft:air>, <item:thermal:steel_ingot>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
 
 // Blast Furnace
 blastFurnace.addRecipe("evolution_craft_lapis_ingot_alloy", <item:contenttweaker:lapis_ingot_alloy>, <item:contenttweaker:lapis_iron_compound>, 10, 200);

@@ -504,10 +504,95 @@ for tag_tools_copper_forge in addingToolsCopperForge{
 // Tools Knives
 var addingToolsKnivesForge = [
 	"enlightened_end:adamantite_knife",
+	"contenttweaker:knife/copper_knife",
+	"contenttweaker:knife/steel_knife",
 	"fiow:flint_knife"
 ];
 for tag_tools_knives_forge in addingToolsKnivesForge{
 	<tag:items:forge:tools/knives>.add(<item:${tag_tools_knives_forge}>);
+}
+
+// Tools Pickaxes
+var addingToolsPickaxesForge = [
+	"ae2:certus_quartz_pickaxe",
+	"ae2:nether_quartz_pickaxe",
+	"ae2:fluix_pickaxe",
+	"aquaculture:neptunium_pickaxe",
+	"bloodmagic:soulpickaxe",
+	"botania:manasteel_pick",
+	"botania:elementium_pickaxe",
+	"botania:glass_pickaxe",
+	"exlinecopperequipment:copper_pick",
+	"cyclic:amethyst_pickaxe",
+	"cyclic:emerald_pickaxe",
+	"cyclic:crystal_pickaxe",
+	"cyclic:sandstone_pickaxe",
+	"cyclic:netherbrick_pickaxe",
+	"enlightened_end:tenebrium_pickaxe",
+	"enlightened_end:starsteel_pickaxe",
+	"enlightened_end:adamantite_pickaxe",
+	"fiow:flint_pickaxe",
+	"immersiveengineering:pickaxe_steel",
+	"mekanismtools:bronze_pickaxe",
+	"mekanismtools:lapis_lazuli_pickaxe",
+	"mekanismtools:osmium_pickaxe",
+	"mekanismtools:refined_glowstone_pickaxe",
+	"mekanismtools:refined_obsidian_pickaxe",
+	"mekanismtools:steel_pickaxe",
+	"naturesaura:infused_iron_pickaxe",
+	"naturesaura:sky_pickaxe",
+	"twilightforest:ironwood_pickaxe",
+	"twilightforest:fiery_pickaxe",
+	"twilightforest:steeleaf_pickaxe",
+	"twilightforest:knightmetal_pickaxe",
+	"twilightforest:giant_pickaxe",
+	"undergarden:cloggrum_pickaxe",
+	"undergarden:froststeel_pickaxe",
+	"undergarden:utherium_pickaxe",
+	"undergarden:forgotten_pickaxe"
+];
+for tag_tools_pickaxes_forge in addingToolsPickaxesForge{
+	<tag:items:forge:tools/pickaxes>.add(<item:${tag_tools_pickaxes_forge}>);
+}
+
+// Tools Swords
+var addingToolsSwordsForge = [
+	"ae2:certus_quartz_sword",
+	"ae2:nether_quartz_sword",
+	"ae2:fluix_sword",
+	"aquaculture:neptunium_sword",
+	"botania:manasteel_sword",
+	"botania:elementium_sword",
+	"exlinecopperequipment:copper_sword",
+	"cyclic:amethyst_sword",
+	"cyclic:emerald_sword",
+	"cyclic:crystal_sword",
+	"cyclic:sandstone_sword",
+	"cyclic:netherbrick_sword",
+	"enlightened_end:tenebrium_sword",
+	"enlightened_end:starsteel_sword",
+	"enlightened_end:adamantite_sword",
+	"immersiveengineering:sword_steel",
+	"mekanismtools:bronze_sword",
+	"mekanismtools:lapis_lazuli_sword",
+	"mekanismtools:osmium_sword",
+	"mekanismtools:refined_glowstone_sword",
+	"mekanismtools:refined_obsidian_sword",
+	"mekanismtools:steel_sword",
+	"twilightforest:ironwood_sword",
+	"twilightforest:fiery_sword",
+	"twilightforest:steeleaf_sword",
+	"twilightforest:knightmetal_sword",
+	"twilightforest:ice_sword",
+	"twilightforest:glass_sword",
+	"twilightforest:giant_sword",
+	"undergarden:cloggrum_sword",
+	"undergarden:froststeel_sword",
+	"undergarden:utherium_sword",
+	"undergarden:forgotten_sword"
+];
+for tag_tools_swords_forge in addingToolsSwordsForge{
+	<tag:items:forge:tools/swords>.add(<item:${tag_tools_swords_forge}>);
 }
 
 // Tuna

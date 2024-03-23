@@ -156,5 +156,7 @@
   "enchantment.improved_exp.ore_detector.desc": "Using the right mouse button will tell the user about nearby ores.",
   "enchantment.improved_exp.flight.desc": "Allows the wearer to fly.",
   "enchantment.improved_exp.werewolf.desc": "Grants the wearer buffs based on the current moon phase.",
-  "enchantment.improved_exp.fear_of_height.desc": "The wearer will take damage if they are too high."
+  "enchantment.improved_exp.fear_of_height.desc": "The wearer will take damage if they are too high.",
+  
+  "enchantment.toughasnails.thermal_tuning.desc": "Neutralize the player's body temperature, regardless of the current environmental temperature."
 }

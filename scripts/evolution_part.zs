@@ -135,6 +135,19 @@ val crushed_quartz = <factory:item>.typed<Basic>()
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("ae2/crushed_quartz");
 
+// Knife
+val copper_knife = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.durability(150)
+	.build("knife/copper_knife");
+
+val steel_knife = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.durability(484)
+	.build("knife/steel_knife");
+
 // Immersive Engineering
 val diamond_rod = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
