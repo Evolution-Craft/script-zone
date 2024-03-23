@@ -172,6 +172,8 @@ for tag_bread_forge in addingBreadForge{
 // Cheeses
 var addingCheesesForge = [
 	"beyond_earth:cheese",
+	"brewinandchewin:flaxen_cheese_wedge",
+	"brewinandchewin:scarlet_cheese_wedge",
 	"thermal:cheese_wedge"
 ];
 for tag_cheeses_forge in addingCheesesForge{

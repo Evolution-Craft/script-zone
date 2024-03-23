@@ -273,29 +273,29 @@
 		disableSourceSpawn = false
 		#Chance to add a source in world (the small the more frequent).
 		#Range: 1 ~ 10000
-		sourceSpawnChance = 30
+		sourceSpawnChance = 450
 		#number of sources at spawn per element type.
 		#Range: 1 ~ 20
-		sourceSpawnCount = 2
+		sourceSpawnCount = 1
 		#Chance to add a source in an ocean biome (the small the more frequent).
 		#Range: 1 ~ 10000
-		oceanSourceSpawnChance = 150
+		oceanSourceSpawnChance = 650
 		#Chance to add a source in world ignoring biome element type (the small the more frequent).
 		#Range: 1 ~ 10000
-		randomSourceSpawnChance = 300
+		randomSourceSpawnChance = 650
 		#CSource Altar genreration distance setting.
 		#Range: 0 ~ 100
-		sourceAltarDistance = 64
+		sourceAltarDistance = 100
 
 		[elementalcraft.worldgen.inertCrystal]
 			#Disable creation of inertCrystals.
 			disableInertCrystal = false
 			#Number of inert crystal vein.
 			#Range: 1 ~ 100
-			inertCrystalCount = 10
+			inertCrystalCount = 35
 			#Size of inert crystal vein.
 			#Range: 1 ~ 100
-			inertCrystalSize = 9
+			inertCrystalSize = 4
 			#max Y level of inert crystal.
 			#Range: 1 ~ 256
 			inertCrystalYMax = 96
