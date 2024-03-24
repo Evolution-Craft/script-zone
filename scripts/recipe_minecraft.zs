@@ -330,6 +330,7 @@ furnace.removeByName("exlinecopperequipment:copper_boots_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 200);
 furnace.removeByName("exlinecopperequipment:copper_chest_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_chestplate", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_chestplate>, 0.1, 200);
+furnace.removeByName("exlinecopperequipment:copper_helm_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_helmet", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_helmet>, 0.1, 200);
 furnace.removeByName("exlinecopperequipment:copper_horse_armor_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_horse_armor", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_horse_armor>, 0.1, 200);
