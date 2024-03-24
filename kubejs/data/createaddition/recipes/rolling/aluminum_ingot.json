@@ -6,9 +6,5 @@
 	"result": {
 		"item": "immersiveengineering:stick_aluminum",
 		"count": 1
-	},
-	"conditions": {
-		"type": "forge:mod_loaded",
-		"modid": "immersiveengineering"
-    }
+	}
 }

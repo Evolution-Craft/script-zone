@@ -1,0 +1,29 @@
+{
+  "type": "brewinandchewin:fermenting",
+  "ingredients": [
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "simplytea:black_tea"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  ],
+  "result": {
+    "item": "brewinandchewin:kombucha"
+  },
+  "container": {
+    "item": "brewinandchewin:tankard"
+  },
+  "liquid": {
+    "item": "simplytea:cup_tea_green"
+  },
+  "experience": 0.6,
+  "cookingtime": 12000,
+  "temperature": 3
+}

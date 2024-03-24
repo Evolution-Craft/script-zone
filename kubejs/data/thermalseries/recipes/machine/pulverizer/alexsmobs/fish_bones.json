@@ -1,7 +1,7 @@
 {
   "type": "thermal:pulverizer",
   "ingredient": {
-    "item": "alexsmods:fish_bones"
+    "item": "alexsmobs:fish_bones"
   },
   "result": [
     {

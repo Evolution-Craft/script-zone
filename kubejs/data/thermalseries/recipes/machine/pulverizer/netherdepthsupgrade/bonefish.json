@@ -1,7 +1,7 @@
 {
   "type": "thermal:pulverizer",
   "ingredient": {
-    "item": "netherdepthsupdate:bonefish"
+    "item": "netherdepthsupgrade:bonefish"
   },
   "result": [
     {
