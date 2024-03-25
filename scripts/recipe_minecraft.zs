@@ -30,25 +30,6 @@ import crafttweaker.api.recipe.StoneCutterManager;
 import crafttweaker.api.misc.Composter;
 import crafttweaker.api.tag.manager.ITagManager;
 
-var itemDyeMisc = [
-	"black",
-	"blue",
-	"brown",
-	"cyan",
-	"gray",
-	"green",
-	"light_blue",
-	"light_gray",
-	"lime",
-	"magenta",
-	"orange",
-	"pink",
-	"purple",
-	"red",
-	"yellow",
-	"white"
-];
-
 // Shapeless
 craftingTable.addShapeless("minecraft_brown_day", <item:minecraft:brown_dye> * 3, [<item:minecraft:blue_dye>, <item:minecraft:red_dye>, <item:minecraft:yellow_dye>]);
 craftingTable.addShapeless("minecraft_green_day", <item:minecraft:green_dye> * 2, [<item:minecraft:blue_dye>, <item:minecraft:yellow_dye>]);
@@ -310,7 +291,7 @@ blastFurnace.addRecipe("blast_furnace/undergarden_raw_cloggrum_block", <item:und
 blastFurnace.addRecipe("blast_furnace/undergarden_raw_froststeel_block", <item:undergarden:froststeel_block>, <item:undergarden:raw_froststeel_block>, 6.0, 200);
 
 // Furnace
-for furnace_concrete_dye_add_item in itemDyeMisc {
+for furnace_concrete_dye_add_item in Constant.packColours {
 	furnace.addRecipe("furnace/minecraft_" + furnace_concrete_dye_add_item + "_concrete", <item:minecraft:${furnace_concrete_dye_add_item}_concrete_powder>, <item:minecraft:${furnace_concrete_dye_add_item}_concrete>, 0.1, 200);
 }
 
@@ -353,7 +334,7 @@ furnace.addRecipe("furnace/twilightforest_brown_thorns", <item:twilightforest:bu
 furnace.addRecipe("furnace/vinery_dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 200);
 
 // Stone Cutter
-for adding_concrete_dye_stone_cutter_color in itemDyeMisc {
+for adding_concrete_dye_stone_cutter_color in Constant.packColours {
 	stoneCutter.addRecipe("stonecutter/moreconcrete_" + adding_concrete_dye_stone_cutter_color + "_concrete_fence", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
 	stoneCutter.addRecipe("stonecutter/moreconcrete_" + adding_concrete_dye_stone_cutter_color + "_concrete_fence_gate", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_fence_gate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);
 	stoneCutter.addRecipe("stonecutter/moreconcrete_" + adding_concrete_dye_stone_cutter_color + "_concrete_pressure_plate", <item:moreconcrete:${adding_concrete_dye_stone_cutter_color}_concrete_pressure_plate>, <item:minecraft:${adding_concrete_dye_stone_cutter_color}_concrete>);

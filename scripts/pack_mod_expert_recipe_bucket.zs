@@ -13,6 +13,7 @@ Globals.priorityScript("Null");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
+import crafttweaker.api.tag.manager.ITagManager;
 
 if (packModeSetting.packModeSettingBuckets() == true) {
 
@@ -28,8 +29,8 @@ if (packModeSetting.packModeSettingBuckets() == true) {
 	craftingTable.removeByName("minecraft:bucket");
 	craftingTable.addShaped("pack_expert_crafting_bucket/iron_bucket", <item:minecraft:bucket>, [
 		[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-		[<item:minecraft:iron_ingot>, <item:ceramicbucket:ceramic_bucket>, <item:minecraft:iron_ingot>],
-		[<item:minecraft:air>, <item:minecraft:iron_ingot>, <item:minecraft:air>]
+		[<tag:items:forge:plates/iron>, <item:ceramicbucket:ceramic_bucket>, <tag:items:forge:plates/iron>],
+		[<item:minecraft:air>, <tag:items:forge:plates/iron>, <item:minecraft:air>]
 	]);
 }
 
