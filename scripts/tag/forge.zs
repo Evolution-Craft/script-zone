@@ -454,6 +454,43 @@ for tag_seed_forge in addingSeedForge{
 	<tag:items:forge:seeds/grape>.add(<item:${tag_seed_forge}>); // Temporary Fix
 }
 
+// Shovels
+var addingShovelsForge = [
+	"ae2:certus_quartz_shovel",
+	"ae2:nether_quartz_shovel",
+	"ae2:fluix_shovel",
+	"aquaculture:neptunium_shovel",
+	"botania:manasteel_shovel",
+	"botania:elementium_shovel",
+	"exlinecopperequipment:copper_shovel",
+	"cyclic:amethyst_shovel",
+	"cyclic:emerald_shovel",
+	"cyclic:crystal_shovel",
+	"cyclic:sandstone_shovel",
+	"cyclic:netherbrick_shovel",
+	"enlightened_end:tenebrium_shovel",
+	"enlightened_end:starsteel_shovel",
+	"enlightened_end:adamantite_shovel",
+	"immersiveengineering:shovel_steel",
+	"mekanismtools:bronze_shovel",
+	"mekanismtools:lapis_lazuli_shovel",
+	"mekanismtools:osmium_shovel",
+	"mekanismtools:refined_glowstone_shovel",
+	"mekanismtools:refined_obsidian_shovel",
+	"mekanismtools:steel_shovel",
+	"naturesaura:infused_iron_shovel",
+	"naturesaura:sky_shovel",
+	"twilightforest:ironwood_shovel",
+	"twilightforest:steeleaf_shovel",
+	"undergarden:cloggrum_shovel",
+	"undergarden:froststeel_shovel",
+	"undergarden:utherium_shovel",
+	"undergarden:forgotten_shovel"
+];
+for tag_shovels_forge in addingShovelsForge{
+	<tag:items:forge:shovels>.add(<item:${tag_shovels_forge}>);
+}
+
 // Stripped Log
 var addingStrippedLogForge = [
 	"botania:glimmering_stripped_dreamwood_log",

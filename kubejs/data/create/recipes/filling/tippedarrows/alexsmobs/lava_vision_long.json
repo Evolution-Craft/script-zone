@@ -1,0 +1,24 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:arrow"
+    },
+    {
+      "amount": 25,
+      "fluid": "create:potion",
+      "nbt": {
+        "Bottle": "REGULAR",
+        "Potion": "alexsmobs:long_lava_vision"
+      }
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:tipped_arrow",
+      "nbt": {
+        "Potion": "alexsmobs:long_lava_vision"
+      }
+    }
+  ]
+}

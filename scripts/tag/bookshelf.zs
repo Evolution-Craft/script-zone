@@ -4,7 +4,7 @@
  * The author of this file is Millennium, using CraftTweaker mod code.
  *
  * CHANGELOG:
- * v0.1 : Fix Missing Axe.
+ * v0.1 : Fix Missing Tag.
  */
 
 #priority 990
@@ -51,7 +51,7 @@ var addingAxesBookshelf = [
 	"undergarden:froststeel_axe",
 	"undergarden:utherium_axe"
 ];
-for tag_axes_bookshelf in addingAxesBookshelf{
+for tag_axes_bookshelf in addingAxesBookshelf {
 	<tag:items:bookshelf:axes>.add(<item:${tag_axes_bookshelf}>);
 }
 
@@ -94,8 +94,45 @@ var addingPickaxesBookshelf = [
 	"undergarden:utherium_pickaxe",
 	"undergarden:forgotten_pickaxe"
 ];
-for tag_pickaxes_bookshelf in addingPickaxesBookshelf{
+for tag_pickaxes_bookshelf in addingPickaxesBookshelf {
 	<tag:items:bookshelf:pickaxes>.add(<item:${tag_pickaxes_bookshelf}>);
+}
+
+// Shovels
+var addingShovelsBookshelf = [
+	"ae2:certus_quartz_shovel",
+	"ae2:nether_quartz_shovel",
+	"ae2:fluix_shovel",
+	"aquaculture:neptunium_shovel",
+	"botania:manasteel_shovel",
+	"botania:elementium_shovel",
+	"exlinecopperequipment:copper_shovel",
+	"cyclic:amethyst_shovel",
+	"cyclic:emerald_shovel",
+	"cyclic:crystal_shovel",
+	"cyclic:sandstone_shovel",
+	"cyclic:netherbrick_shovel",
+	"enlightened_end:tenebrium_shovel",
+	"enlightened_end:starsteel_shovel",
+	"enlightened_end:adamantite_shovel",
+	"immersiveengineering:shovel_steel",
+	"mekanismtools:bronze_shovel",
+	"mekanismtools:lapis_lazuli_shovel",
+	"mekanismtools:osmium_shovel",
+	"mekanismtools:refined_glowstone_shovel",
+	"mekanismtools:refined_obsidian_shovel",
+	"mekanismtools:steel_shovel",
+	"naturesaura:infused_iron_shovel",
+	"naturesaura:sky_shovel",
+	"twilightforest:ironwood_shovel",
+	"twilightforest:steeleaf_shovel",
+	"undergarden:cloggrum_shovel",
+	"undergarden:froststeel_shovel",
+	"undergarden:utherium_shovel",
+	"undergarden:forgotten_shovel"
+];
+for tag_shovels_bookshelf in addingShovelsBookshelf {
+	<tag:items:bookshelf:shovels>.add(<item:${tag_shovels_bookshelf}>);
 }
 
 // Swords
@@ -134,7 +171,7 @@ var addingSwordsBookshelf = [
 	"undergarden:utherium_sword",
 	"undergarden:forgotten_sword"
 ];
-for tag_swords_bookshelf in addingSwordsBookshelf{
+for tag_swords_bookshelf in addingSwordsBookshelf {
 	<tag:items:bookshelf:swords>.add(<item:${tag_swords_bookshelf}>);
 }
 
