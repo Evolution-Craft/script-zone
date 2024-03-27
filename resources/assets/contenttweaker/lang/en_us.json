@@ -16,6 +16,11 @@
 	"item.contenttweaker.redstone_ingot_alloy": "Redstone Ingot Ally",
 	"item.contenttweaker.redstone_iron_compound": "Red Iron Compound",
 
+	"item.contenttweaker.coin_common": "Common Coin",
+	"item.contenttweaker.coin_rare": "Rare Coin",
+	"item.contenttweaker.coin_legendary": "Leggendary Coin",
+	"item.contenttweaker.coin_mythic": "Mythic Coin",
+
 	"item.contenttweaker.ae2.crushed_certus_quartz": "Crushed Certus Quartz",
 	"item.contenttweaker.ae2.crushed_charged_certus_quartz": "Crushed Charged Certus Quartz",
 	"item.contenttweaker.ae2.crushed_fluix": "Crushed Fluix",

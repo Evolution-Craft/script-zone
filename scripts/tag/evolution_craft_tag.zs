@@ -15,6 +15,17 @@ Globals.priorityScript("991");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Evolution Craft - Coins
+var addingEvolutionCraftCoin = [
+	"contenttweaker:coin_common",
+	"contenttweaker:coin_rare",
+	"contenttweaker:coin_legendary",
+	"contenttweaker:coin_mythic"
+];
+for tag_evolution_craft_coin in addingEvolutionCraftCoin{
+	<tag:items:evolution_craft:coins>.add(<item:${tag_evolution_craft_coin}>);
+}
+
 // Evolution Craft - Parts
 var addingEvolutionCraftPart = [
 	"contenttweaker:common_part",

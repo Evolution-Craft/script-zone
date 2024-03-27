@@ -114,6 +114,31 @@ val redstone_iron_compound = <factory:item>.typed<Basic>()
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("redstone_iron_compound");
 
+// Coin
+val coin_common = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.fireResistant(true)
+	.build("coin_common");
+
+val coin_rare = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:uncommon>)
+	.fireResistant(true)
+	.build("coin_rare");
+
+val coin_legendary = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:rare>)
+	.fireResistant(true)
+	.build("coin_legendary");
+
+val coin_mythic = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.fireResistant(true)
+	.build("coin_mythic");
+
 // Ae2 Integration
 val crushed_certus_quartz = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)

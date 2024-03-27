@@ -30,7 +30,7 @@ var addingArmorCopperForge = [
 	"exlinecopperequipment:copper_helmet",
 	"exlinecopperequipment:copper_leggings"
 ];
-for tag_armor_copper_forge in addingArmorCopperForge{
+for tag_armor_copper_forge in addingArmorCopperForge {
 	<tag:items:forge:armor>.add(<item:${tag_armor_copper_forge}>);
 	<tag:items:forge:armor/copper>.add(<item:${tag_armor_copper_forge}>);
 }
@@ -41,7 +41,7 @@ var addingArmorSilverForge = [
 	"galosphere:sterling_helmet",
 	"galosphere:sterling_leggings"
 ];
-for tag_armor_silver_forge in addingArmorSilverForge{
+for tag_armor_silver_forge in addingArmorSilverForge {
 	<tag:items:forge:armor>.add(<item:${tag_armor_silver_forge}>);
 	<tag:items:forge:armor/silver>.add(<item:${tag_armor_silver_forge}>);
 }
@@ -110,7 +110,7 @@ var addingArmorStoneForge = [
 	"woodarmor:stone_helmet",
 	"woodarmor:stone_leggings"
 ];
-for tag_armor_stone_forge in addingArmorStoneForge{
+for tag_armor_stone_forge in addingArmorStoneForge {
 	<tag:items:forge:armor>.add(<item:${tag_armor_stone_forge}>);
 	<tag:items:forge:armor/stone>.add(<item:${tag_armor_stone_forge}>);
 }
@@ -151,7 +151,7 @@ var addingAxesForge = [
 	"undergarden:froststeel_axe",
 	"undergarden:utherium_axe"
 ];
-for tag_axes_forge in addingAxesForge{
+for tag_axes_forge in addingAxesForge {
 	<tag:items:forge:axes>.add(<item:${tag_axes_forge}>);
 }
 
@@ -165,7 +165,7 @@ var addingBreadForge = [
 	"vinery:milk_bread",
 	"vinery:crusty_bread"
 ];
-for tag_bread_forge in addingBreadForge{
+for tag_bread_forge in addingBreadForge {
 	<tag:items:forge:bread>.add(<item:${tag_bread_forge}>);
 }
 
@@ -176,7 +176,7 @@ var addingCheesesForge = [
 	"brewinandchewin:scarlet_cheese_wedge",
 	"thermal:cheese_wedge"
 ];
-for tag_cheeses_forge in addingCheesesForge{
+for tag_cheeses_forge in addingCheesesForge {
 	<tag:items:forge:cheeses>.add(<item:${tag_cheeses_forge}>);
 }
 
@@ -200,7 +200,7 @@ var addingCropsForge = [
 	"vinery:taiga_grapes_white",
 	"vinery:white_grape"
 ];
-for tag_crops_forge in addingCropsForge{
+for tag_crops_forge in addingCropsForge {
 	<tag:items:forge:crops>.add(<item:${tag_crops_forge}>);
 }
 
@@ -215,7 +215,7 @@ var addingCropsGrapeForge = [
 	"vinery:taiga_grapes_white",
 	"vinery:white_grape"
 ];
-for tag_crops_grape_forge in addingCropsGrapeForge{
+for tag_crops_grape_forge in addingCropsGrapeForge {
 	<tag:items:forge:crops/grape>.add(<item:${tag_crops_grape_forge}>);
 }
 
@@ -224,7 +224,7 @@ var addingCropsChorusPetalForge = [
 	"simplytea:chorus_petal",
 	"unusualend:chorus_petal"
 ];
-for tag_crops_chorus_petal_forge in addingCropsChorusPetalForge{
+for tag_crops_chorus_petal_forge in addingCropsChorusPetalForge {
 	<tag:items:forge:crops/chorus_petal>.add(<item:${tag_crops_chorus_petal_forge}>);
 }
 
@@ -252,7 +252,7 @@ var addingCorundumBlockForge = [
 	"quark:white_corundum",
 	"quark:waxed_white_corundum"
 ];
-for tag_corundum_block_forge in addingCorundumBlockForge{
+for tag_corundum_block_forge in addingCorundumBlockForge {
 	<tag:items:forge:corundum/block>.add(<item:${tag_corundum_block_forge}>);
 }
 var addingCorundumClusterForge = [
@@ -266,7 +266,7 @@ var addingCorundumClusterForge = [
 	"quark:black_corundum_cluster",
 	"quark:white_corundum_cluster"
 ];
-for tag_corundum_cluster_forge in addingCorundumClusterForge{
+for tag_corundum_cluster_forge in addingCorundumClusterForge {
 	<tag:items:forge:corundum/cluster>.add(<item:${tag_corundum_cluster_forge}>);
 }
 
@@ -275,7 +275,7 @@ var addingDoughsForge = [
 	"pneumaticcraft:sourdough",
 	"vinery:dough"
 ];
-for tag_doughs_forge in addingDoughsForge{
+for tag_doughs_forge in addingDoughsForge {
 	<tag:items:forge:doughs>.add(<item:${tag_doughs_forge}>);
 }
 
@@ -284,7 +284,7 @@ var addingFlourForge = [
 	"pneumaticcraft:wheat_flour",
 	"tmted:wheat_flour"
 ];
-for tag_flour_forge in addingFlourForge{
+for tag_flour_forge in addingFlourForge {
 	<tag:items:forge:flour>.add(<item:${tag_flour_forge}>);
 }
 
@@ -306,7 +306,7 @@ var addingFruitForge = [
 	"vinery:taiga_grapes_white",
 	"vinery:white_grape"
 ];
-for tag_fruit_forge in addingFruitForge{
+for tag_fruit_forge in addingFruitForge {
 	<tag:items:forge:fruits>.add(<item:${tag_fruit_forge}>);
 }
 
@@ -321,7 +321,7 @@ var addingFruitGrapeForge = [
 	"vinery:taiga_grapes_white",
 	"vinery:white_grape"
 ];
-for tag_fruit_grape_forge in addingFruitGrapeForge{
+for tag_fruit_grape_forge in addingFruitGrapeForge {
 	<tag:items:forge:fruits/grape>.add(<item:${tag_fruit_grape_forge}>);
 	<tag:items:forge:grapes>.add(<item:${tag_fruit_grape_forge}>); // Temporary Fix
 }
@@ -332,7 +332,7 @@ var addingFurnacesForge = [
 	"quark:deepslate_furnace",
 	"quark:blackstone_furnace"
 ];
-for tag_furnaces_forge in addingFurnacesForge{
+for tag_furnaces_forge in addingFurnacesForge {
 	<tag:items:forge:furnaces>.add(<item:${tag_furnaces_forge}>);
 }
 
@@ -351,7 +351,7 @@ var addingJamsForge = [
 	"vinery:sweetberry_jam",
 	"vinery:grape_jam"
 ];
-for tag_jams_forge in addingJamsForge{
+for tag_jams_forge in addingJamsForge {
 	<tag:items:forge:jams>.add(<item:${tag_jams_forge}>);
 }
 
@@ -381,7 +381,7 @@ var addingPlatesForge = [
 	"electrodynamics:platetitaniumcarbide",
 	"thermal_extra:shellite_plate"
 ];
-for tag_plates_forge in addingPlatesForge{
+for tag_plates_forge in addingPlatesForge {
 	<tag:items:forge:plates>.add(<item:${tag_plates_forge}>);
 }
 <tag:items:forge:plates/cobalt_sheet>.add(<item:contenttweaker:tconstruct/cobalt_sheet>);
@@ -409,7 +409,7 @@ var addingRodsForge = [
 	"immersiveposts:stick_constantan",
 	"immersiveposts:stick_uranium"
 ];
-for tag_rods_forge in addingRodsForge{
+for tag_rods_forge in addingRodsForge {
 	<tag:items:forge:rods>.add(<item:${tag_rods_forge}>);
 }
 var addingRodsAllForge = [
@@ -419,11 +419,21 @@ var addingRodsAllForge = [
 	"electrodynamics:rodstainlesssteel",
 	"electrodynamics:rodtitaniumcarbide"
 ];
-for tag_rods_all_forge in addingRodsAllForge{
+for tag_rods_all_forge in addingRodsAllForge {
 	<tag:items:forge:rods/all_metal>.add(<item:${tag_rods_all_forge}>);
 }
 <tag:items:forge:rods/diamond>.add(<item:contenttweaker:immersiveengineering/diamond_rod>);
 <tag:items:forge:rods/emerald>.add(<item:contenttweaker:immersiveengineering/emerald_rod>);
+
+// Rubber
+var addingRubbersForge = [
+	"myrtrees:latex",
+	"industrialforegoing:dryrubber",
+	"thermal:rubber"
+];
+for tag_rubbers_forge in addingRubbersForge {
+	<tag:items:forge:rubbers>.add(<item:${tag_rubbers_forge}>);
+}
 
 // Salt
 <tag:items:forge:dusts/salt>.add(<item:salt:salt>);
@@ -433,7 +443,7 @@ var addingSaplingForge = [
 	"vinery:cherry_sapling",
 	"vinery:old_cherry_sapling"
 ];
-for tag_sapling_forge in addingSaplingForge{
+for tag_sapling_forge in addingSaplingForge {
 	<tag:items:forge:sapling>.add(<item:${tag_sapling_forge}>);
 }
 
@@ -449,7 +459,7 @@ var addingSeedForge = [
 	"vinery:taiga_grape_seeds_white",
 	"vinery:white_grape_seeds"
 ];
-for tag_seed_forge in addingSeedForge{
+for tag_seed_forge in addingSeedForge {
 	<tag:items:forge:seeds>.add(<item:${tag_seed_forge}>);
 	<tag:items:forge:seeds/grape>.add(<item:${tag_seed_forge}>); // Temporary Fix
 }
@@ -487,7 +497,7 @@ var addingShovelsForge = [
 	"undergarden:utherium_shovel",
 	"undergarden:forgotten_shovel"
 ];
-for tag_shovels_forge in addingShovelsForge{
+for tag_shovels_forge in addingShovelsForge {
 	<tag:items:forge:shovels>.add(<item:${tag_shovels_forge}>);
 }
 
@@ -505,7 +515,7 @@ var addingStrippedLogForge = [
 	"vinery:stripped_cherry_log",
 	"vinery:stripped_old_cherry_log"
 ];
-for tag_stripped_log_forge in addingStrippedLogForge{
+for tag_stripped_log_forge in addingStrippedLogForge {
 	<tag:items:forge:stripped_logs>.add(<item:${tag_stripped_log_forge}>);
 }
 
@@ -522,7 +532,7 @@ var addingStrippedWoodForge = [
 	"vinery:stripped_cherry_wood",
 	"vinery:stripped_old_cherry_wood"
 ];
-for tag_stripped_wood_forge in addingStrippedWoodForge{
+for tag_stripped_wood_forge in addingStrippedWoodForge {
 	<tag:items:forge:stripped_wood>.add(<item:${tag_stripped_wood_forge}>);
 }
 
@@ -534,7 +544,7 @@ var addingToolsCopperForge = [
 	"exlinecopperequipment:copper_shovel",
 	"exlinecopperequipment:copper_sword"
 ];
-for tag_tools_copper_forge in addingToolsCopperForge{
+for tag_tools_copper_forge in addingToolsCopperForge {
 	<tag:items:forge:tools/copper>.add(<item:${tag_tools_copper_forge}>);
 }
 
@@ -545,7 +555,7 @@ var addingToolsKnivesForge = [
 	"contenttweaker:knife/steel_knife",
 	"fiow:flint_knife"
 ];
-for tag_tools_knives_forge in addingToolsKnivesForge{
+for tag_tools_knives_forge in addingToolsKnivesForge {
 	<tag:items:forge:tools/knives>.add(<item:${tag_tools_knives_forge}>);
 }
 
@@ -588,7 +598,7 @@ var addingToolsPickaxesForge = [
 	"undergarden:utherium_pickaxe",
 	"undergarden:forgotten_pickaxe"
 ];
-for tag_tools_pickaxes_forge in addingToolsPickaxesForge{
+for tag_tools_pickaxes_forge in addingToolsPickaxesForge {
 	<tag:items:forge:tools/pickaxes>.add(<item:${tag_tools_pickaxes_forge}>);
 }
 
@@ -628,7 +638,7 @@ var addingToolsSwordsForge = [
 	"undergarden:utherium_sword",
 	"undergarden:forgotten_sword"
 ];
-for tag_tools_swords_forge in addingToolsSwordsForge{
+for tag_tools_swords_forge in addingToolsSwordsForge {
 	<tag:items:forge:tools/swords>.add(<item:${tag_tools_swords_forge}>);
 }
 

@@ -13,17 +13,18 @@ Globals.priorityScript("Null");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
+import crafttweaker.api.tag.manager.ITagManager;
 
 if (packModeSetting.packModeSettingEvolutionParts() == true) {
 
 	Globals.packExpertScript("Evolution Part - Active");
 
 	mods.extendedcrafting.TableCrafting.addShaped("pack_expert_crafting/evolution_part/common_part_middle", <item:contenttweaker:common_part_middle>, [
-		[<item:tconstruct:pig_iron_block>, <item:minecraft:amethyst_block>, <item:tombstone:white_marble>, <item:minecraft:amethyst_block>, <item:tconstruct:pig_iron_block>],
-		[<item:minecraft:amethyst_block>, <item:contenttweaker:lapis_ingot_alloy>, <item:thermal:lead_plate>, <item:contenttweaker:lapis_ingot_alloy>, <item:minecraft:amethyst_block>],
-		[<item:tombstone:white_marble>, <item:thermal:lead_plate>, <item:myrtrees:latex>, <item:thermal:lead_plate>, <item:tombstone:white_marble>],
-		[<item:minecraft:amethyst_block>, <item:contenttweaker:lapis_ingot_alloy>, <item:thermal:lead_plate>, <item:contenttweaker:lapis_ingot_alloy>, <item:minecraft:amethyst_block>],
-		[<item:tconstruct:pig_iron_block>, <item:minecraft:amethyst_block>, <item:tombstone:white_marble>, <item:minecraft:amethyst_block>, <item:tconstruct:pig_iron_block>]
+		[<item:tconstruct:pig_iron_block>, <item:immersiveengineering:alu_scaffolding_standard>, <item:thermal:rose_gold_block>, <item:immersiveengineering:alu_scaffolding_standard>, <item:tconstruct:pig_iron_block>],
+		[<item:immersiveengineering:alu_scaffolding_standard>, <item:contenttweaker:lapis_ingot_alloy>, <item:thermal:lead_plate>, <item:contenttweaker:lapis_ingot_alloy>, <item:immersiveengineering:alu_scaffolding_standard>],
+		[<item:thermal:rose_gold_block>, <item:thermal:lead_plate>, <tag:items:forge:rubbers>, <item:thermal:lead_plate>, <item:thermal:rose_gold_block>],
+		[<item:immersiveengineering:alu_scaffolding_standard>, <item:contenttweaker:lapis_ingot_alloy>, <item:thermal:lead_plate>, <item:contenttweaker:lapis_ingot_alloy>, <item:immersiveengineering:alu_scaffolding_standard>],
+		[<item:tconstruct:pig_iron_block>, <item:immersiveengineering:alu_scaffolding_standard>, <item:thermal:rose_gold_block>, <item:immersiveengineering:alu_scaffolding_standard>, <item:tconstruct:pig_iron_block>]
 	]);
 	<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/evolution_part/tconstruct/common_part", {
 	"cast": {

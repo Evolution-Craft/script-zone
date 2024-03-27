@@ -160,6 +160,8 @@ var removeRecipeByName = [
 	"comforts:rope_and_nail_shapeless",
 	// Croptopia
 	"croptopia:shaped_tea",
+	//Decorative Blocks
+	"decorative_blocks:dirt_from_rocky_dirt",
 	// Easy Villagers
 	"easy_villagers:iron_farm",
 	// Electrodynamics
