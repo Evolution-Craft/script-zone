@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "": [
+      {"model": "minecraft:block/flowering_lily_pad_1","weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_1","y": 90,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_1","y": 180,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_1","y": 270,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_2","weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_2","y": 90,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_2","y": 180,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_2","y": 270,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_3","weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_3","y": 90,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_3","y": 180,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_3","y": 270,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_4","weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_4","y": 90,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_4","y": 180,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_4","y": 270,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_5","weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_5","y": 90,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_5","y": 180,"weight":1},
+      {"model": "minecraft:block/flowering_lily_pad_5","y": 270,"weight":1},
+      {"model": "minecraft:block/lily_pad","weight":20},
+      {"model": "minecraft:block/lily_pad","y": 90,"weight":20},
+      {"model": "minecraft:block/lily_pad","y": 180,"weight":20},
+      {"model": "minecraft:block/lily_pad","y": 270,"weight":20}
+    ]
+  }
+}
