@@ -233,6 +233,8 @@ var removeJeiIngradient = [
 	"miniutilities:chorus_tile",
 	"miniutilities:destruction_pickaxe",
 	"miniutilities:erosion_shovel",
+	"miniutilities:ender_dust",
+	"miniutilities:ender_ore",
 	"miniutilities:ender_tile",
 	"miniutilities:etheric_sword",
 	"miniutilities:golden_lasso",

@@ -342,6 +342,7 @@ var removeRecipeByName = [
 	"miniutilities:chorus_tile",
 	"miniutilities:destruction_pickaxe",
 	"miniutilities:erosion_shovel",
+	"miniutilities:ender_dust_to_ender_pearl",
 	"miniutilities:ender_tile",
 	"miniutilities:etheric_sword",
 	"miniutilities:golden_lasso",
@@ -594,6 +595,8 @@ var removeRecipeByNameFurnace = [
 	"libraryferret:smelting/gold_coins_jtl",
 	"libraryferret:smelting/iron_coins_jtl",
 	"libraryferret:smelting/netherite_coins_jtl",
+	// Mini Utilities
+	"miniutilities:smelting/ender_ore",
 	// Refinde Storage
 	"refinedstorage:silicon",
 	// Thermal Series

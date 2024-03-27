@@ -29,7 +29,7 @@ i_supplementaries(<item:supplementaries:notice_board>, "Can display maps, or the
 i_supplementaries(<item:supplementaries:pedestal>, "Can display items, including their names. Can also be stacked vertically for decor.");
 i_supplementaries(<item:supplementaries:spring_launcher>, "Pushes entities, like the original piston mod! You can also jump on it while it's extended.");
 i_supplementaries(<item:supplementaries:planter>, "Can grow crops just like irrigated farmland.");
-//i_supplementaries(<item:supplementaries:planter_rich>, "Can grow crops just like irrigated farmland, but with the faster speed of rich soil.");
+i_supplementaries(<item:supplementaries:planter_rich>, "Can grow crops just like irrigated farmland, but with the faster speed of rich soil.");
 i_supplementaries(<item:supplementaries:redstone_illuminator>, "Outputs a lower light level the higher the redstone signal its given.");
 i_supplementaries(<item:supplementaries:sack>, "Can store items, you can take it with you like a shulker box. If you try to carry multiple, it'll slow you down.");
 i_supplementaries(<item:supplementaries:turn_table>, "While powered, keeps rotating whatever block is attached to it. Also rotates entities on top. Right click to invert the rotation.");
