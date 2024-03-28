@@ -22,7 +22,7 @@ var addingEvolutionCraftCoin = [
 	"contenttweaker:coin_legendary",
 	"contenttweaker:coin_mythic"
 ];
-for tag_evolution_craft_coin in addingEvolutionCraftCoin{
+for tag_evolution_craft_coin in addingEvolutionCraftCoin {
 	<tag:items:evolution_craft:coins>.add(<item:${tag_evolution_craft_coin}>);
 }
 
@@ -39,7 +39,7 @@ var addingEvolutionCraftPart = [
 	"contenttweaker:eternal_part",
 	"contenttweaker:ultimate_part"
 ];
-for tag_evolution_craft_part in addingEvolutionCraftPart{
+for tag_evolution_craft_part in addingEvolutionCraftPart {
 	<tag:items:evolution_craft:parts>.add(<item:${tag_evolution_craft_part}>);
 }
 
@@ -47,7 +47,7 @@ for tag_evolution_craft_part in addingEvolutionCraftPart{
 var addingEvolutionCraftPartMiddle = [
 	"contenttweaker:common_part_middle"
 ];
-for tag_evolution_craft_part_middle in addingEvolutionCraftPartMiddle{
+for tag_evolution_craft_part_middle in addingEvolutionCraftPartMiddle {
 	<tag:items:evolution_craft:parts/middle>.add(<item:${tag_evolution_craft_part_middle}>);
 }
 
@@ -58,7 +58,7 @@ var addingEvolutionCraftIngot = [
 	"contenttweaker:redstone_ingot_alloy",
 	"contenttweaker:redstone_iron_compound"
 ];
-for tag_evolution_craft_ingot in addingEvolutionCraftIngot{
+for tag_evolution_craft_ingot in addingEvolutionCraftIngot {
 	<tag:items:evolution_craft:ingors>.add(<item:${tag_evolution_craft_ingot}>);
 	<tag:items:forge:ingors>.add(<item:${tag_evolution_craft_ingot}>);
 }

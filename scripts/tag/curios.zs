@@ -19,7 +19,7 @@ var addingBackCurios = [
 	"mekanism:hdpe_elytra",
 	"tconstruct:slime_chestplate"
 ];
-for tag_back_curios in addingBackCurios{
+for tag_back_curios in addingBackCurios {
 	<tag:items:curios:back>.add(<item:${tag_back_curios}>);
 }
 

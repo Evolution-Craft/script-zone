@@ -22,7 +22,7 @@ var addingBoatMinecraft = [
 	"quark:azalea_boat",
 	"quark:blossom_boat"
 ];
-for tag_boat_minecraft in addingBoatMinecraft{
+for tag_boat_minecraft in addingBoatMinecraft {
 	<tag:items:minecraft:boats>.add(<item:${tag_boat_minecraft}>);
 }
 
@@ -33,7 +33,7 @@ var addingLogsMinecraft = [
 	"infernalexp:stripped_luminous_hyphae",
 	"infernalexp:stripped_luminous_stem"
 ];
-for tag_log_minecraft in addingLogsMinecraft{
+for tag_log_minecraft in addingLogsMinecraft {
 	<tag:items:minecraft:logs>.add(<item:${tag_log_minecraft}>);
 }
 
@@ -44,7 +44,7 @@ var addingSlabMinecraft = [
 	"vinery:grass_slab",
 	"vinery:loam_slab"
 ];
-for tag_slab_minecraft in addingSlabMinecraft{
+for tag_slab_minecraft in addingSlabMinecraft {
 	<tag:items:minecraft:slabs>.add(<item:${tag_slab_minecraft}>);
 }
 
@@ -53,7 +53,7 @@ var addingSaplingMinecraft = [
 	"vinery:cherry_sapling",
 	"vinery:old_cherry_sapling"
 ];
-for tag_sapling_minecraft in addingSaplingMinecraft{
+for tag_sapling_minecraft in addingSaplingMinecraft {
 	<tag:items:minecraft:saplings>.add(<item:${tag_sapling_minecraft}>);
 }
 
@@ -61,7 +61,7 @@ for tag_sapling_minecraft in addingSaplingMinecraft{
 var addingStairMinecraft = [
 	"vinery:loam_stairs"
 ];
-for tag_stair_minecraft in addingStairMinecraft{
+for tag_stair_minecraft in addingStairMinecraft {
 	<tag:items:minecraft:stairs>.add(<item:${tag_stair_minecraft}>);
 }
 

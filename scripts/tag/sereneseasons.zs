@@ -38,7 +38,7 @@ var addingSpringSereneSeasons = [
 	"vinery:taiga_grape_seeds_white",
 	"vinery:white_grape_seeds"
 ];
-for tag_spring_sereneseasons in addingSpringSereneSeasons{
+for tag_spring_sereneseasons in addingSpringSereneSeasons {
 	<tag:items:sereneseasons:spring_crops>.add(<item:${tag_spring_sereneseasons}>);
 }
 
@@ -62,7 +62,7 @@ var addingSummerSereneSeasons = [
 	"vinery:taiga_grape_seeds_white",
 	"vinery:white_grape_seeds"
 ];
-for tag_summer_sereneseasons in addingSummerSereneSeasons{
+for tag_summer_sereneseasons in addingSummerSereneSeasons {
 	<tag:items:sereneseasons:summer_crops>.add(<item:${tag_summer_sereneseasons}>);
 }
 
@@ -87,7 +87,7 @@ var addingAutumnSereneSeasons = [
 	"vinery:cherry_sapling",
 	"vinery:old_cherry_sapling"
 ];
-for tag_autumn_sereneseasons in addingAutumnSereneSeasons{
+for tag_autumn_sereneseasons in addingAutumnSereneSeasons {
 	<tag:items:sereneseasons:autumn_crops>.add(<item:${tag_autumn_sereneseasons}>);
 }
 
@@ -102,7 +102,7 @@ var addingWinterSereneSeasons = [
 	"vinery:cherry_sapling",
 	"vinery:old_cherry_sapling"
 ];
-for tag_winter_sereneseasons in addingWinterSereneSeasons{
+for tag_winter_sereneseasons in addingWinterSereneSeasons {
 	<tag:items:sereneseasons:winter_crops>.add(<item:${tag_winter_sereneseasons}>);
 }
 

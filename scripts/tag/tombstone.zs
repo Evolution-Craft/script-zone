@@ -25,7 +25,7 @@ var addingSeedsTombstone = [
 	"vinery:taiga_grape_seeds_white",
 	"vinery:white_grape_seeds"
 ];
-for tag_seeds_tombstone in addingSeedsTombstone{
+for tag_seeds_tombstone in addingSeedsTombstone {
 	<tag:items:tombstone:seeds>.add(<item:${tag_seeds_tombstone}>);
 }
 

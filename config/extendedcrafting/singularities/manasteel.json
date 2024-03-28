@@ -1,0 +1,10 @@
+{
+  "name": "Manasteel",
+  "colors": [
+    "66b7eb",
+    "3962d7"
+  ],
+  "ingredient": {
+    "item": "botania:manasteel_ingot"
+  }
+}

@@ -40,7 +40,7 @@ var addingSugarsDiet = [
 	"vinery:taiga_grapes_white",
 	"vinery:white_grape"
 ];
-for tag_sugars_diet in addingSugarsDiet{
+for tag_sugars_diet in addingSugarsDiet {
 	<tag:items:diet:sugars>.add(<item:${tag_sugars_diet}>);
 }
 
@@ -68,7 +68,7 @@ var addingFruitsDiet = [
 	"vinery:cherry",
 	"vinery:rotten_cherry"
 ];
-for tag_fruits_diet in addingFruitsDiet{
+for tag_fruits_diet in addingFruitsDiet {
 	<tag:items:diet:fruits>.add(<item:${tag_fruits_diet}>);
 }
 
@@ -79,7 +79,7 @@ var addingGrainsDiet = [
 	"miners_delight:noodle_soup_cup",
 	"vinery:apple_pie_slice"
 ];
-for tag_grains_diet in addingGrainsDiet{
+for tag_grains_diet in addingGrainsDiet {
 	<tag:items:diet:grains>.add(<item:${tag_grains_diet}>);
 }
 
@@ -119,7 +119,7 @@ var addingVegetablesDiet = [
 	"unusualend:chorus_petal",
 	"unusualend:wandering_stew"
 ];
-for tag_vegetables_diet in addingVegetablesDiet{
+for tag_vegetables_diet in addingVegetablesDiet {
 	<tag:items:diet:vegetables>.add(<item:${tag_vegetables_diet}>);
 }
 
@@ -236,7 +236,7 @@ var addingProteinsDiet = [
 	"unusualend:end_blob_jelly",
 	"unusualend:wandering_stew"
 ];
-for tag_proteins_diet in addingProteinsDiet{
+for tag_proteins_diet in addingProteinsDiet {
 	<tag:items:diet:proteins>.add(<item:${tag_proteins_diet}>);
 }
 

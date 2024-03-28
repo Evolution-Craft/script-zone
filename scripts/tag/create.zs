@@ -32,7 +32,7 @@ var addingCrushedRawMaterialCreate = [
 	"contenttweaker:tconstruct/crushed_rose_gold",
 	"contenttweaker:tconstruct/crushed_slimesteel"
 ];
-for tag_crushed_raw_material_create in addingCrushedRawMaterialCreate{
+for tag_crushed_raw_material_create in addingCrushedRawMaterialCreate {
 	<tag:items:create:crushed_raw_materials>.add(<item:${tag_crushed_raw_material_create}>);
 }
 
@@ -49,7 +49,7 @@ var addingStrippedLogCreate = [
 	"vinery:stripped_cherry_log",
 	"vinery:stripped_old_cherry_log"
 ];
-for tag_stripped_log_create in addingStrippedLogCreate{
+for tag_stripped_log_create in addingStrippedLogCreate {
 	<tag:items:create:modded_stripped_logs>.add(<item:${tag_stripped_log_create}>);
 }
 
@@ -65,7 +65,7 @@ var addingStrippedWoodCreate = [
 	"vinery:stripped_cherry_wood",
 	"vinery:stripped_old_cherry_wood"
 ];
-for tag_stripped_wood_create in addingStrippedWoodCreate{
+for tag_stripped_wood_create in addingStrippedWoodCreate {
 	<tag:items:create:modded_stripped_wood>.add(<item:${tag_stripped_wood_create}>);
 }
 

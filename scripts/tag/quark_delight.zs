@@ -32,7 +32,7 @@ var addingHollowQuarkDelight = [
 	"twilightforest:hollow_transformation_log",
 	"twilightforest:hollow_twilight_oak_log"
 ];
-for tag_adding_hollow_duark_delight in addingHollowQuarkDelight{
+for tag_adding_hollow_duark_delight in addingHollowQuarkDelight {
 	<tag:items:quarkdelight:hollow_logs>.add(<item:${tag_adding_hollow_duark_delight}>);
 }
 

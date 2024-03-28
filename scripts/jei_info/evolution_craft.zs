@@ -29,4 +29,9 @@ i_evolution_craft(<item:contenttweaker:masterwork_part>, "Masterwork Part this i
 i_evolution_craft(<item:contenttweaker:eternal_part>, "Eternal Part this is ingradient for advance recipe.");
 i_evolution_craft(<item:contenttweaker:ultimate_part>, "Ultimate Part this is ingradient for advance recipe.");
 
+i_evolution_craft(<item:contenttweaker:coin_common>, "Using for buy quest items.");
+i_evolution_craft(<item:contenttweaker:coin_rare>, "Using for buy quest items.");
+i_evolution_craft(<item:contenttweaker:coin_legendary>, "Using for buy quest items.");
+i_evolution_craft(<item:contenttweaker:coin_mythic>, "Using for buy quest items.");
+
 Globals.endScript("jei_info/evolution_craft");

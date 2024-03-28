@@ -19,7 +19,7 @@ var addingHeatSources = [
 	"ends_delight:end_stove",
 	"vinery:stove"
 ];
-for tag_heat_sources in addingHeatSources{
+for tag_heat_sources in addingHeatSources {
 	<tag:blocks:farmersdelight:heatsources>.add(<block:${tag_heat_sources}>);
 	<tag:blocks:mmlib:heat_conductors>.add(<block:${tag_heat_sources}>);
 }

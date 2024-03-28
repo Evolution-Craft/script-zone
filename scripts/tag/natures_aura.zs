@@ -20,7 +20,7 @@ var addingAnciantLogsNaturesAura = [
 	"naturesaura:ancient_log",
 	"naturesaura:ancient_bark"
 ];
-for tag_ancient_logs_natures_aura in addingAnciantLogsNaturesAura{
+for tag_ancient_logs_natures_aura in addingAnciantLogsNaturesAura {
 	<tag:items:naturesaura:ancient_logs>.add(<item:${tag_ancient_logs_natures_aura}>);
 }
 
