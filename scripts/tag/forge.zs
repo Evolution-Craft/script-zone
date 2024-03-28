@@ -536,6 +536,20 @@ for tag_stripped_wood_forge in addingStrippedWoodForge {
 	<tag:items:forge:stripped_wood>.add(<item:${tag_stripped_wood_forge}>);
 }
 
+// Stone
+var addingStoneForge = [
+	"create:asurine",
+	"create:crimsite",
+	"create:limestone",
+	"create:ochrum",
+	"create:scoria",
+	"create:veridium"
+];
+for tag_stone_forge in addingStoneForge {
+	<tag:items:forge:stone>.add(<item:${tag_stone_forge}>);
+}
+
+
 // Tool
 var addingToolsCopperForge = [
 	"exlinecopperequipment:copper_axe",

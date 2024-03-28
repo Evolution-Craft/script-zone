@@ -9,7 +9,7 @@
       "fluid": "create:potion",
       "nbt": {
         "Bottle": "REGULAR",
-        "Potion": "toughasnails:ice_resilience"
+        "Potion": "unusualend:end_infection"
       }
     }
   ],
@@ -17,7 +17,7 @@
     {
       "item": "minecraft:tipped_arrow",
       "nbt": {
-        "Potion": "toughasnails:ice_resilience"
+        "Potion": "unusualend:end_infection"
       }
     }
   ]
