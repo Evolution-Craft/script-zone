@@ -415,6 +415,7 @@ var removeJeiIngradient = [
 	"tconstruct:gear_cast",
 	"tconstruct:gear_sand_cast",
 	"tconstruct:gear_red_sand_cast",
+	"tconstruct:gold_bars",
 	"tconstruct:ichor_slime_sling",
 	"tconstruct:modifier_worktable",
 	"tconstruct:quartz_shuriken",

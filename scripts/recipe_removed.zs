@@ -491,6 +491,7 @@ var removeRecipeByName = [
 	"systeams:boilers/upgrades/numismatic_downgrade",
 	"systeams:boilers/upgrades/numismatic_upgrade",
 	// Tinkers Construct
+	"tconstruct:common/gold_bars",
 	"tconstruct:gadgets/slimesling/earth",
 	"tconstruct:gadgets/slimesling/ender",
 	"tconstruct:gadgets/slimesling/ichor",
@@ -791,6 +792,7 @@ for remove_multiservo_press_recipe_by_name in removeMultiservoPressRecipeByName 
 
 // Tinkers Construct
 var removeCastingTableRecipeByName = [
+	"tconstruct:smeltery/casting/metal/gold/bars",
 	// Gold Cast
 	"tconstruct:smeltery/casts/gold_casts/gears",
 	"tconstruct:smeltery/casts/gold_casts/coins",
