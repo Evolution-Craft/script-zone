@@ -208,9 +208,6 @@
   "description.effect.quark.resilience": "Increases knockback resistance.",
   "description.effect.quark.danger_sight": "Highlights spots where hostile mobs can spawn.",
 
-  "_comment_recall_potion": "Recall Potion",
-  "description.effect.recall_potion.recall": "The recall potion allows you to teleport back home safely",
-
   "_comment_reliquary": "Reliquary",
   "description.effect.reliquary.cure": "Cures zombie villagers. Higher levers work faster.",
 
