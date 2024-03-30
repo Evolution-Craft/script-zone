@@ -88,6 +88,7 @@ var removeJeiIngradient = [
 	"cyclic:fan_slab",
 	"cyclic:fire_killer",
 	"cyclic:flute_summoning",
+	"cyclic:generator_solar",
 	"cyclic:heart",
 	"cyclic:heart_empty",
 	"cyclic:hopper",
@@ -105,6 +106,9 @@ var removeJeiIngradient = [
 	"cyclic:wand_missile",
 	"cyclic:workbench",
 	"cyclic:torch_launcher",
+	"cyclic:trash",
+	"cyclic:unbreakable_block",
+	"cyclic:unbreakable_reactive",
 	"cyclic:uncrafter",
 	// Croptopia
 	"croptopia:salt",

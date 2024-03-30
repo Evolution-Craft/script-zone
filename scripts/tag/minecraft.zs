@@ -45,7 +45,6 @@ for tag_climbable_minecraft in addingClimbableMinecraft {
 	<tag:blocks:minecraft:climbable>.add(<block:${tag_climbable_minecraft}>);
 }
 
-
 // Logs
 var addingLogsMinecraft = [
 	"infernalexp:luminous_hyphae",
