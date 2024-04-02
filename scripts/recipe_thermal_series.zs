@@ -89,6 +89,29 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 <recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_steel", [(<item:thermal:steel_nugget> * 9) % 100, <item:thermal:iron_dust> %25], <fluid:minecraft:empty>, <item:contenttweaker:mekanism/crushed_steel>, 1600);
 <recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_cobalt_ore", [(<item:tconstruct:cobalt_nugget> * 9) % 100, <item:thermal:netherite_dust> %25], <fluid:minecraft:empty>, <item:contenttweaker:tconstruct/crushed_cobalt_ore>, 1600);
 
+// Fluid Encapsulator
+/*for bottler_potion_type in Constant.packPotions {
+	<recipetype:thermal:bottler>.addJsonRecipe("thermal_machines/bottler/" + bottler_potion_type.registryName.path, {
+		"ingredients": [{
+			"item": "minecraft:arrow"
+		},
+		{
+			"fluid": "create:potion",
+			"nbt": {
+				"Bottle": "REGULAR",
+				"Potion": bottler_potion_type
+			}
+			"amount": 25
+		}],
+		"result": [{
+			"item": "minecraft:tipped_arrow",
+			"nbt": {
+				"Potion": bottler_potion_type
+			}
+		}]
+	});
+}*/
+
 // Induction Smelter
 <recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_certus_quartz", [<item:ae2:certus_quartz_crystal> % 100], [<item:contenttweaker:ae2/crushed_certus_quartz>], 20, 1600);
 <recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_charged_certus_quartz", [<item:ae2:charged_certus_quartz_crystal> % 100], [<item:contenttweaker:ae2/crushed_charged_certus_quartz>], 20, 1600);

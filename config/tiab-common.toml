@@ -11,5 +11,5 @@
 	"Average Update Random Tick" = 1365
 	#Define max time the items can store - in tick (1 second = 20 ticks)
 	#Range: 600 ~ 622080000
-	"Max Stored Time" = 622080000
+	"Max Stored Time" = 172800
 

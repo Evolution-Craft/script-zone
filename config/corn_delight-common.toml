@@ -7,5 +7,5 @@
 	genWildCorn = true
 	#Chance of generating clusters. Smaller value = more frequent.
 	#Range: > 0
-	chance = 30
+	chance = 60
 

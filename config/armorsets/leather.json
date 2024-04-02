@@ -22,7 +22,7 @@
       "type": "attribute",
       "name": "minecraft:generic.armor",
       "value": 3.0,
-      "modifierUUID": "d5a7dc88-9405-4398-b1e5-250b4c6dd218",
+      "modifierUUID": "c94688b6-14da-4867-af4f-a332c6d0a1d6",
       "description": "+3 armor",
       "interactionType": "self",
       "interactionDuration": 300,
