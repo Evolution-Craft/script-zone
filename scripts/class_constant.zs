@@ -112,7 +112,7 @@ public class Constant {
 		"minecraft:long_leaping",
 		"minecraft:long_night_vision",
 		"minecraft:long_poison",
-		"minecraft:long_regeneration"
+		"minecraft:long_regeneration",
 		"minecraft:long_slow_falling",
 		"minecraft:long_slowness",
 		"minecraft:long_strength",
@@ -136,7 +136,7 @@ public class Constant {
 		"minecraft:strong_slowness",
 		"minecraft:strong_strength",
 		"minecraft:strong_swiftness",
-		"minecraft:strong_turtle_master"
+		"minecraft:strong_turtle_master",
 		"minecraft:swiftness",
 		"minecraft:thick",
 		"minecraft:turtle_master",
