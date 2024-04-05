@@ -151,6 +151,106 @@ name = "minecraft:vanishing_curse"
 max_lvl = 1
 
 [[entries]]
+name = "apotheosis:miners_fervor"
+max_lvl = 5
+
+[[entries]]
+name = "apotheosis:stable_footing"
+max_lvl = 1
+
+[[entries]]
+name = "apotheosis:scavenger"
+max_lvl = 3
+
+[[entries]]
+name = "apotheosis:life_mending"
+max_lvl = 3
+
+[[entries]]
+name = "apotheosis:icy_thorns"
+max_lvl = 3
+
+[[entries]]
+name = "apotheosis:tempting"
+max_lvl = 1
+
+[[entries]]
+name = "apotheosis:shield_bash"
+max_lvl = 4
+
+[[entries]]
+name = "apotheosis:reflective"
+max_lvl = 5
+
+[[entries]]
+name = "apotheosis:berserkers_fury"
+max_lvl = 3
+
+[[entries]]
+name = "apotheosis:knowledge"
+max_lvl = 3
+
+[[entries]]
+name = "apotheosis:splitting"
+max_lvl = 1
+
+[[entries]]
+name = "apotheosis:natures_blessing"
+max_lvl = 3
+
+[[entries]]
+name = "apotheosis:rebounding"
+max_lvl = 3
+
+[[entries]]
+name = "apotheosis:bane_of_illagers"
+max_lvl = 5
+
+[[entries]]
+name = "apotheosis:obliteration"
+max_lvl = 1
+
+[[entries]]
+name = "apotheosis:crescendo"
+max_lvl = 5
+
+[[entries]]
+name = "apotheosis:infusion"
+max_lvl = 1
+
+[[entries]]
+name = "apotheosis:endless_quiver"
+max_lvl = 1
+
+[[entries]]
+name = "apotheosis:chromatic"
+max_lvl = 1
+
+[[entries]]
+name = "apotheosis:exploitation"
+max_lvl = 1
+
+[[entries]]
+name = "apotheosis:growth_serum"
+max_lvl = 1
+
+[[entries]]
+name = "apotheosis:earths_boon"
+max_lvl = 3
+
+[[entries]]
+name = "apotheosis:chainsaw"
+max_lvl = 1
+
+[[entries]]
+name = "apotheosis:spearfishing"
+max_lvl = 5
+
+[[entries]]
+name = "apotheosis:capturing"
+max_lvl = 5
+
+[[entries]]
 name = "tombstone:shadow_step"
 max_lvl = 10
 
@@ -179,5 +279,21 @@ name = "tombstone:frostbite"
 max_lvl = 10
 
 [[entries]]
-name = "supplementaries:stasis"
+name = "naturesaura:aura_mending"
 max_lvl = 1
+
+[[entries]]
+name = "miniutilities:shotgun"
+max_lvl = 4
+
+[[entries]]
+name = "miniutilities:molten_head"
+max_lvl = 1
+
+[[entries]]
+name = "miniutilities:experience_harvester"
+max_lvl = 5
+
+[[entries]]
+name = "mythicbotany:hammer_mobility"
+max_lvl = 5
