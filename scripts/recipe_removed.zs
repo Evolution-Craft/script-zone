@@ -108,7 +108,7 @@ var removeRecipeByName = [
 	"cyclic:hopper",
 	"cyclic:hopper_gold",
 	"cyclic:laser_cannon",
-	"cyclic:magic_net",
+	//"cyclic:magic_net",
 	"cyclic:magic_net_alt",
 	"cyclic:netherite_ingot",
 	"cyclic:quiver_damage",

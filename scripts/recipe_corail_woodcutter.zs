@@ -584,4 +584,32 @@ for addingFencesPartMacawCorailWoodcutterName in addingFencesPartMacawCorailWood
 	}
 }
 
+var addingBridgesPartMacawCorailWoodcutter = [
+	"bridge_pier",
+	"log_bridge_middle",
+	"log_bridge_stair",
+	"rail_bridge"
+];
+for addingBridgesPartMacawCorailWoodcutterName in addingBridgesPartMacawCorailWoodcutter{
+	var addingBridgesMacawCorailWoodcutter = {
+		"oak" : "logs",
+		"spruce" : "logs",
+		"birch" : "logs",
+		"jungle" : "logs",
+		"acacia" : "logs",
+		"dark_oak" : "logs",
+		"crimson" : "stems",
+		"warped" : "stems"
+	};
+	for addingBridgesMacawCorailWoodcutterId, addingBridgesMacawCorailWoodcutterType in addingBridgesMacawCorailWoodcutter{
+		<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingBridgesPartMacawCorailWoodcutterName + "_" + addingBridgesMacawCorailWoodcutterId + "_from_" + addingBridgesMacawCorailWoodcutterId + "_" + addingBridgesMacawCorailWoodcutterType, {
+			"ingredient":{
+				"tag": "minecraft:" + addingBridgesMacawCorailWoodcutterId + "_" + addingBridgesMacawCorailWoodcutterType
+			},
+			"result": "mcwbridges:" + addingBridgesMacawCorailWoodcutterId + "_" + addingBridgesPartMacawCorailWoodcutterName,
+			"count": 1
+		});	
+	}
+}
+
 Globals.endScript("recipe_corail_woodcutter");
