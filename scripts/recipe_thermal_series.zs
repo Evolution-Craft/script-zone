@@ -11,6 +11,7 @@
  * v0.5 : Adding HOP Graphite dust.
  * v0.6 : Add Custom Rods.
  * v0.7 : Adding Plate System.
+ * v0.8 : Adding Tipped Arrow.
  */
 
 Globals.startScript("recipe_thermal_series");
@@ -90,8 +91,9 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 <recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_cobalt_ore", [(<item:tconstruct:cobalt_nugget> * 9) % 100, <item:thermal:netherite_dust> %25], <fluid:minecraft:empty>, <item:contenttweaker:tconstruct/crushed_cobalt_ore>, 1600);
 
 // Fluid Encapsulator
-/*for bottler_potion_type in Constant.packPotions {
-	<recipetype:thermal:bottler>.addJsonRecipe("thermal_machines/bottler/" + bottler_potion_type.registryName.path, {
+var bottler_potion_type_name = 1;
+for bottler_potion_type in Constant.packPotions {
+	<recipetype:thermal:bottler>.addJsonRecipe("thermal_machines/bottler/tipped_arrow_" + bottler_potion_type_name, {
 		"ingredients": [{
 			"item": "minecraft:arrow"
 		},
@@ -100,7 +102,7 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 			"nbt": {
 				"Bottle": "REGULAR",
 				"Potion": bottler_potion_type
-			}
+			},
 			"amount": 25
 		}],
 		"result": [{
@@ -110,7 +112,8 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 			}
 		}]
 	});
-}*/
+	bottler_potion_type_name++;
+}
 
 // Induction Smelter
 <recipetype:thermal:smelter>.addRecipe("thermal_compat/create/smelter_create_crushed_certus_quartz", [<item:ae2:certus_quartz_crystal> % 100], [<item:contenttweaker:ae2/crushed_certus_quartz>], 20, 1600);

@@ -377,9 +377,8 @@ val mekanism_planks_boat_return = 5;
 val mekanism_planks_bookshelf_return = 6;
 val mekanism_planks_chest_return = 8;
 val mekanism_planks_door_return = 2;
-val mekanism_mekanism_planks_fence_gate_return = 2;
+val mekanism_planks_fence_gate_return = 2;
 val mekanism_planks_log_return = 6;
-val mekanism_planks_log_half_return = 3;
 val mekanism_planks_pressure_plate_return = 2;
 val mekanism_planks_trapdoor_return = 3;
 val mekanism_planks_trapped_chest_return = 8;
@@ -390,7 +389,7 @@ val mekanism_stick_fence_gate_return = 4;
 val mekanism_tripwire_hook_chest_chance = 0.75;
 val mekanism_tripwire_hook_chest_return = 1;
 
-<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/log/ancient", ItemStackIngredient.from(<tag:items:naturesaura:ancient_logs>), <item:naturesaura:ancient_planks> * mekanism_planks_log_half_return, <item:thermal:sawdust> * mekanism_saw_dust_log_return, mekanism_saw_dust_log_chance);
+<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/log/ancient", ItemStackIngredient.from(<tag:items:naturesaura:ancient_logs>), <item:naturesaura:ancient_planks> * (mekanism_planks_log_return / 2), <item:thermal:sawdust> * mekanism_saw_dust_log_return, mekanism_saw_dust_log_chance);
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/log/rubberwood", ItemStackIngredient.from(<item:myrtrees:rubberwood_log>), <item:myrtrees:rubberwood_planks> * mekanism_planks_log_return, <item:thermal:sawdust> * mekanism_saw_dust_log_return, mekanism_saw_dust_log_chance);
 
 var addingSawingMekanism = {
@@ -434,13 +433,13 @@ for addingSawingMekanismName, addingSawingMekanismMod in addingSawingMekanism {
 		addingSawingMekanismName == "twilight_oak") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/boat/" + addingSawingMekanismName, ItemStackIngredient.from(<item:twilightdecor:${addingSawingMekanismName}_boat>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_boat_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_door>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_door_return);
-		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
+		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/pressure_plate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_pressure_plate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_pressure_plate_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapdoor/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_trapdoor>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_trapdoor_return);
 	} else if (addingSawingMekanismName == "flowering_azalea") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/boat/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_boat>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_boat_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_door>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_door_return);
-		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
+		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapdoor/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_trapdoor>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_trapdoor_return);
 	} else if (addingSawingMekanismName == "bloodshroom" ||
 			   addingSawingMekanismName == "cerulean" ||
@@ -449,31 +448,31 @@ for addingSawingMekanismName, addingSawingMekanismMod in addingSawingMekanism {
 			   addingSawingMekanismName == "indigo" ||
 			   addingSawingMekanismName == "skyroot") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_door>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_door_return);
-		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
+		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/pressure_plate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_pressure_plate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_pressure_plate_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapdoor/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_trapdoor>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_trapdoor_return);
 	} else if (addingSawingMekanismName == "menril") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_door>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_door_return);
-		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
+		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
 	} else if (addingSawingMekanismName == "chorus_nest") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_planks_door>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_door_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapdoor/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_trapdoor>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_trapdoor_return);
 	} else if (addingSawingMekanismName == "chorus_nest_mosaic") {
-		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_mosaic> * mekanism_mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
+		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_mosaic> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
 	} else if (addingSawingMekanismName == "thorn") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_door>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_door_return);
-		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
+		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/pressure_plate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_pressure_plate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_pressure_plate_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapdoor/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_trapdoor>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_trapdoor_return);
 	} else if (addingSawingMekanismName == "towerwood") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:tflostblocks:${addingSawingMekanismName}_door>), <item:${addingSawingMekanismMod}> * mekanism_planks_door_return);
-		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:tflostblocks:${addingSawingMekanismName}_fence_gate>), <item:${addingSawingMekanismMod}> * mekanism_mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
+		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:tflostblocks:${addingSawingMekanismName}_fence_gate>), <item:${addingSawingMekanismMod}> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/pressure_plate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:tflostblocks:${addingSawingMekanismName}_pressure_plate>), <item:${addingSawingMekanismMod}> * mekanism_planks_pressure_plate_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapdoor/" + addingSawingMekanismName, ItemStackIngredient.from(<item:tflostblocks:${addingSawingMekanismName}_trapdoor>), <item:${addingSawingMekanismMod}> * mekanism_planks_trapdoor_return);
 	} else {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/boat/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_boat>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_boat_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_door>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_door_return);
-		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
+		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/pressure_plate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_pressure_plate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_pressure_plate_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapdoor/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_trapdoor>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_trapdoor_return);
 	}

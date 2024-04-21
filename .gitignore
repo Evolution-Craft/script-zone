@@ -23,6 +23,7 @@ minecraftinstance.json
 patchouli_data.json
 reauth.toml
 rhino.local.properties
+schematics/*
 TrashSlotSaveState.json
 usercache.json
 usernamecache.json
