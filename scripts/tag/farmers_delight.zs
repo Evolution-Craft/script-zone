@@ -5,6 +5,7 @@
  *
  * CHANGELOG:
  * v0.1 : Add tag heat sources.
+ * v0.2 : Fix tag knife.
  */
 
 Globals.startScript("tag/farmers_delight");
@@ -22,6 +23,18 @@ var addingHeatSources = [
 for tag_heat_sources in addingHeatSources {
 	<tag:blocks:farmersdelight:heatsources>.add(<block:${tag_heat_sources}>);
 	<tag:blocks:mmlib:heat_conductors>.add(<block:${tag_heat_sources}>);
+}
+
+// Knives
+var addingToolsKnives = [
+	"enlightened_end:adamantite_knife",
+	"croptopia:knife",
+	"contenttweaker:knife/copper_knife",
+	"contenttweaker:knife/steel_knife",
+	"fiow:flint_knife"
+];
+for tag_tools_knives in addingToolsKnives {
+	<tag:items:farmersdelight:straw_harvesters>.add(<item:${tag_tools_knives}>);
 }
 
 Globals.endScript("tag/farmers_delight");

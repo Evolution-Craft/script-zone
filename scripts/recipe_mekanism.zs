@@ -393,34 +393,34 @@ val mekanism_tripwire_hook_chest_return = 1;
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/log/rubberwood", ItemStackIngredient.from(<item:myrtrees:rubberwood_log>), <item:myrtrees:rubberwood_planks> * mekanism_planks_log_return, <item:thermal:sawdust> * mekanism_saw_dust_log_return, mekanism_saw_dust_log_chance);
 
 var addingSawingMekanism = {
-	"azalea" : "ecologics:azalea",							// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"azalea_quark" : "quark:azalea",						// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"bloodshroom" : "tconstruct:bloodshroom",				// Door | Fence Gate | Pressure Plate | Trapdoor
-	"blossom" : "quark:blossom",							// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"canopy" : "twilightforest:canopy",						// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"cerulean" : "enlightened_end:cerulean",				// Door | Fence Gate | Pressure Plate | Trapdoor
-	"cherry" : "vinery:cherry",								// Door | Fence Gate | Pressure Plate | Trapdoor
-	"chorus_nest" : "unusualend:chorus_nest",				// Door | Trapdoor
-	"chorus_nest_mosaic" : "unusualend:chorus_nest",		// Fence Gate
-	"coconut" : "ecologics:coconut",						// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"darkwood" : "twilightforest:dark",						// Boat | Door | Fence Gate | Pressure Plate | Trapdoor 
-	"flowering_azalea" : "ecologics:flowering_azalea",		// Boat | Door | Fence Gate | Trapdoor
-	"greenheart" : "tconstruct:greenheart",					// Door | Fence Gate | Pressure Plate | Trapdoor
-	"grongle" : "undergarden:grongle",						// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"indigo" : "enlightened_end:indigo",					// Door | Fence Gate | Pressure Plate | Trapdoor
-	"mangrove" : "twilightforest:mangrove",					// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"menril" : "integrateddynamics:menril",					// Door | Fence Gate
-	"mining" : "twilightforest:mining",						// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"smogstem" : "undergarden:smogstem",					// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"sorting" : "twilightforest:sorting",					// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"skyroot" : "tconstruct:skyroot",						// Door | Fence Gate | Pressure Plate | Trapdoor
-	"walnut" : "ecologics:walnut",							// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"wigglewood" : "undergarden:wigglewood",				// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"thorn" : "tflostblocks:thorn",							// Door | Fence Gate | Pressure Plate | Trapdoor
-	"timewood" : "twilightforest:time",						// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"towerwood" : "twilightforest:towerwood",				// Door | Fence Gate | Pressure Plate | Trapdoor
-	"transformation" : "twilightforest:transformation",		// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
-	"twilight_oak" : "twilightforest:twilight_oak"			// Boat | Door | Fence Gate | Pressure Plate | Trapdoor
+	"azalea" : "ecologics:azalea",
+	"azalea_quark" : "quark:azalea",
+	"bloodshroom" : "tconstruct:bloodshroom",
+	"blossom" : "quark:blossom",
+	"canopy" : "twilightforest:canopy",
+	"cerulean" : "enlightened_end:cerulean",
+	"cherry" : "vinery:cherry",
+	"chorus_nest" : "unusualend:chorus_nest",
+	"chorus_nest_mosaic" : "unusualend:chorus_nest",
+	"coconut" : "ecologics:coconut",
+	"darkwood" : "twilightforest:dark",
+	"flowering_azalea" : "ecologics:flowering_azalea",
+	"greenheart" : "tconstruct:greenheart",
+	"grongle" : "undergarden:grongle",
+	"indigo" : "enlightened_end:indigo",
+	"mangrove" : "twilightforest:mangrove",
+	"menril" : "integrateddynamics:menril",
+	"mining" : "twilightforest:mining",
+	"smogstem" : "undergarden:smogstem",
+	"sorting" : "twilightforest:sorting",
+	"skyroot" : "tconstruct:skyroot",
+	"walnut" : "ecologics:walnut",
+	"wigglewood" : "undergarden:wigglewood",
+	"thorn" : "tflostblocks:thorn",
+	"timewood" : "twilightforest:time",
+	"towerwood" : "twilightforest:towerwood",
+	"transformation" : "twilightforest:transformation",
+	"twilight_oak" : "twilightforest:twilight_oak"
 };
 for addingSawingMekanismName, addingSawingMekanismMod in addingSawingMekanism {
 	if (addingSawingMekanismName == "canopy" || 
