@@ -8,8 +8,8 @@
 	"Ambient Wind" = true
 	#Adjust the volume of ambient Wind Chime Sounds.
 	#Range: 0.0 ~ 1.0
-	"Ambient Wind Chime Sound Volume" = 1.0
+	"Ambient Wind Chime Sound Volume" = 0.5
 	#Adjust the volume of interaction Wind Chime Sounds.
 	#Range: 0.0 ~ 1.0
-	"Interaction Wind Chime Sound Volume" = 1.0
+	"Interaction Wind Chime Sound Volume" = 0.5
 

@@ -828,5 +828,4 @@ if (packModeSetting.packModeSettingPlates() != true) {
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_slimesteel", [<item:tconstruct:slimesteel_nugget> * 10, (<item:tconstruct:slimesteel_nugget> * 5) % 50], <item:contenttweaker:tconstruct/crushed_slimesteel>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_steel", [<item:thermal:steel_nugget> * 12, (<item:thermal:steel_nugget> * 5) % 50], <item:contenttweaker:mekanism/crushed_steel>, 200);
 
-
 Globals.endScript("recipe_create");

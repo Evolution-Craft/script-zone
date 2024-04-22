@@ -18,31 +18,31 @@ println("          Class Globals Loading...          ");
 
 public class Globals {
 
-	private static val EQUALS_SEPARATOR as string = "===============================================================";
+	private static val Equals_Separator as string = "===============================================================";
 
 	public static startScript(scriptName as string) as void {
-		println(EQUALS_SEPARATOR);
+		println(Equals_Separator);
 		println("          Starting Script: " + scriptName + "          ");
-		println(EQUALS_SEPARATOR);
+		println(Equals_Separator);
 	}
 	public static val startScript_Load as string = "startScript Load Completed";
 
 	public static endScript(scriptName as string) as void {
-		println(EQUALS_SEPARATOR);
+		println(Equals_Separator);
 		println("          Ending Script: " + scriptName  + "          ");
-		println(EQUALS_SEPARATOR);
+		println(Equals_Separator);
 	}
 	public static val endScript_Load as string = "endScript Load Completed";
 
 	public static priorityScript(scriptName as string) as void {
 		println("          Script Priority: " + scriptName  + "          ");
-		println(EQUALS_SEPARATOR);
+		println(Equals_Separator);
 	}
 	public static val priorityScript_Load as string = "priorityScript Load Completed";
 
 	public static packExpertScript(scriptName as string) as void {
 		println("          Pack Mode Expert Recipe: " + scriptName  + "          ");
-		println(EQUALS_SEPARATOR);
+		println(Equals_Separator);
 	}
 	public static val packExpertScript_Load as string = "packExpertScript Load Completed";
 }

@@ -13,7 +13,6 @@ Globals.priorityScript("Null");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
-//import crafttweaker.api.tag.manager.ITagManager;
 
 // Fletching
 craftingTable.removeByName("archarsenal:arrow_up_vanilla_to_barbed");

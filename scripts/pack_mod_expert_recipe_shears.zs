@@ -18,7 +18,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 if (packModeSetting.packModeSettingShears() == true) {
 
-	Globals.packExpertScript("Log - Shears");
+	Globals.packExpertScript("Shears - Active");
 
 	craftingTable.removeByName("cyclic:shears_flint");
 	craftingTable.addShaped("pack_expert_crafting_shears/flint_shears", <item:cyclic:shears_flint>, [

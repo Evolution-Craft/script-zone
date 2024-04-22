@@ -5,5 +5,5 @@
 	"Phantom Repel Radius Vertical" = 25
 	#Customize the radius needed to repel Phantoms from a chiming Wind Chime. [Default is 10]
 	#Range: 0 ~ 20
-	"Phantom Repel Radius Horizontal" = 8
+	"Phantom Repel Radius Horizontal" = 10
 

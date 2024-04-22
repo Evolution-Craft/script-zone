@@ -255,6 +255,7 @@ var addingCorundumBlockForge = [
 for tag_corundum_block_forge in addingCorundumBlockForge {
 	<tag:items:forge:corundum/block>.add(<item:${tag_corundum_block_forge}>);
 }
+
 var addingCorundumClusterForge = [
 	"quark:red_corundum_cluster",
 	"quark:orange_corundum_cluster",
@@ -548,7 +549,6 @@ var addingStoneForge = [
 for tag_stone_forge in addingStoneForge {
 	<tag:items:forge:stone>.add(<item:${tag_stone_forge}>);
 }
-
 
 // Tool
 var addingToolsCopperForge = [

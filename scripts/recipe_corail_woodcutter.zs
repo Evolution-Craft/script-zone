@@ -345,7 +345,7 @@ var addingBotaniaDreamwoodCorailWoodcutter = {
 };
 for addingBotaniaDreamwoodCorailWoodcutterOut, addingBotaniaDreamwoodCorailWoodcutterCount in addingBotaniaDreamwoodCorailWoodcutter {
 	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingBotaniaDreamwoodCorailWoodcutterOut + "_from_dreamwood_log", {
-		"ingredient":{
+		"ingredient": {
 			"tag": "botania:dreamwood_logs"
 		},
 		"result": "botania:" + addingBotaniaDreamwoodCorailWoodcutterOut,
@@ -364,7 +364,7 @@ var addingBotaniaLivingwoodCorailWoodcutter = {
 };
 for addingBotaniaLivingwoodCorailWoodcutterOut, addingBotaniaLivingwoodCorailWoodcutterCount in addingBotaniaLivingwoodCorailWoodcutter {
 	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingBotaniaLivingwoodCorailWoodcutterOut + "_from_liwingwood_log", {
-		"ingredient":{
+		"ingredient": {
 			"tag": "botania:livingwood_logs"
 		},
 		"result": "botania:" + addingBotaniaLivingwoodCorailWoodcutterOut,
@@ -381,7 +381,7 @@ var addingIntegratedDynamicsMenrilCorailWoodcutter = {
 };
 for addingIntegratedDynamicsMenrilCorailWoodcutterOut, addingIntegratedDynamicsMenrilCorailWoodcutterCount in addingIntegratedDynamicsMenrilCorailWoodcutter {
 	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingIntegratedDynamicsMenrilCorailWoodcutterOut + "_from_menril_log", {
-		"ingredient":{
+		"ingredient": {
 			"tag": "integrateddynamics:menril_logs"
 		},
 		"result": "integrateddynamics:" + addingIntegratedDynamicsMenrilCorailWoodcutterOut,
@@ -397,7 +397,7 @@ var addingNaturesAuraAncientCorailWoodcutter = {
 };
 for addingNaturesAuraAncientCorailWoodcutterOut, addingNaturesAuraAncientCorailWoodcutterCount in addingNaturesAuraAncientCorailWoodcutter {
 	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingNaturesAuraAncientCorailWoodcutterOut + "_from_ancient_log", {
-		"ingredient":{
+		"ingredient": {
 			"tag": "naturesaura:ancient_logs"
 		},
 		"result": "naturesaura:" + addingNaturesAuraAncientCorailWoodcutterOut,
@@ -436,7 +436,7 @@ for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterMo
 			};
 			for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
 				<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
-					"ingredient":{
+					"ingredient": {
 						"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
 					},
 					"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
@@ -458,7 +458,7 @@ for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterMo
 			};
 			for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
 				<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
-					"ingredient":{
+					"ingredient": {
 						"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
 					},
 					"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
@@ -481,7 +481,7 @@ for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterMo
 		if (addingComponentLogCorailWoodcutterName == "indigo") {
 			for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
 				<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
-					"ingredient":{
+					"ingredient": {
 						"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_stems"
 					},
 					"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
@@ -491,7 +491,7 @@ for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterMo
 		} else {
 			for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
 				<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
-					"ingredient":{
+					"ingredient": {
 						"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
 					},
 					"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
@@ -513,7 +513,7 @@ for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterMo
 		};
 		for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
 			<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
-				"ingredient":{
+				"ingredient": {
 					"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
 				},
 				"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
@@ -533,16 +533,17 @@ var addingBaseLogsCorailWoodcutter = {
 	"crimson" : "stems",
 	"warped" : "stems"
 };
+
 for addingPathMacawCorailWoodcutterId, addingPathMacawCorailWoodcutterType in addingBaseLogsCorailWoodcutter {
 	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingPathMacawCorailWoodcutterId + "_path_from_" + addingPathMacawCorailWoodcutterId + "_planks", {
-		"ingredient":{
+		"ingredient": {
 			"item": "minecraft:" + addingPathMacawCorailWoodcutterId + "_planks"
 		},
 		"result": "mcwpaths:" + addingPathMacawCorailWoodcutterId + "_planks_path",
 		"count": woodcutting_mcwpaths_planks
 	});
 	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingPathMacawCorailWoodcutterId + "_path_from_" + addingPathMacawCorailWoodcutterId + "_" + addingPathMacawCorailWoodcutterType, {
-		"ingredient":{
+		"ingredient": {
 			"tag": "minecraft:" + addingPathMacawCorailWoodcutterId + "_" + addingPathMacawCorailWoodcutterType
 		},
 		"result": "mcwpaths:" + addingPathMacawCorailWoodcutterId + "_planks_path",
@@ -562,14 +563,14 @@ var addingRoofPartMacawCorailWoodcutter = [
 for addingRoofPartMacawCorailWoodcutterName in addingRoofPartMacawCorailWoodcutter {
 	for addingRoofMacawCorailWoodcutterId, addingRoofMacawCorailWoodcutterType in addingBaseLogsCorailWoodcutter {
 		<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingRoofPartMacawCorailWoodcutterName + "_" + addingRoofMacawCorailWoodcutterId + "_from_" + addingRoofMacawCorailWoodcutterId + "_planks", {
-			"ingredient":{
+			"ingredient": {
 				"item": "minecraft:" + addingRoofMacawCorailWoodcutterId + "_planks"
 			},
 			"result": "mcwroofs:" + addingRoofMacawCorailWoodcutterId + "_planks_" + addingRoofPartMacawCorailWoodcutterName,
 			"count": woodcutting_mcwroofs_planks
 		});
 		<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingRoofPartMacawCorailWoodcutterName + "_" + addingRoofMacawCorailWoodcutterId + "_from_" + addingRoofMacawCorailWoodcutterId + "_" + addingRoofMacawCorailWoodcutterType, {
-			"ingredient":{
+			"ingredient": {
 				"tag": "minecraft:" + addingRoofMacawCorailWoodcutterId + "_" + addingRoofMacawCorailWoodcutterType
 			},
 			"result": "mcwroofs:" + addingRoofMacawCorailWoodcutterId + "_" + addingRoofPartMacawCorailWoodcutterName,
@@ -588,7 +589,7 @@ var addingFencesPartMacawCorailWoodcutter = [
 for addingFencesPartMacawCorailWoodcutterName in addingFencesPartMacawCorailWoodcutter {
 	for addingFencesMacawCorailWoodcutterId, addingFencesMacawCorailWoodcutterType in addingBaseLogsCorailWoodcutter {
 		<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingFencesPartMacawCorailWoodcutterName + "_" + addingFencesMacawCorailWoodcutterId + "_from_" + addingFencesMacawCorailWoodcutterId + "_" + addingFencesMacawCorailWoodcutterType, {
-			"ingredient":{
+			"ingredient": {
 				"tag": "minecraft:" + addingFencesMacawCorailWoodcutterId + "_" + addingFencesMacawCorailWoodcutterType
 			},
 			"result": "mcwfences:" + addingFencesMacawCorailWoodcutterId + "_" + addingFencesPartMacawCorailWoodcutterName,
@@ -606,7 +607,7 @@ var addingBridgesPartMacawCorailWoodcutter = [
 for addingBridgesPartMacawCorailWoodcutterName in addingBridgesPartMacawCorailWoodcutter {
 	for addingBridgesMacawCorailWoodcutterId, addingBridgesMacawCorailWoodcutterType in addingBaseLogsCorailWoodcutter {
 		<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingBridgesPartMacawCorailWoodcutterName + "_" + addingBridgesMacawCorailWoodcutterId + "_from_" + addingBridgesMacawCorailWoodcutterId + "_" + addingBridgesMacawCorailWoodcutterType, {
-			"ingredient":{
+			"ingredient": {
 				"tag": "minecraft:" + addingBridgesMacawCorailWoodcutterId + "_" + addingBridgesMacawCorailWoodcutterType
 			},
 			"result": "mcwbridges:" + addingBridgesMacawCorailWoodcutterId + "_" + addingBridgesPartMacawCorailWoodcutterName,

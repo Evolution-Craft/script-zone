@@ -561,6 +561,7 @@ var removeRecipeByName = [
 for remove_recipe_by_name in removeRecipeByName {
 	craftingTable.removeByName(remove_recipe_by_name);
 }
+
 var removeRecipeByModid = [
 	// Pane In The Glass
 	"pitg",
@@ -593,6 +594,7 @@ campfire.removeByName("apotheosis:torch");
 
 // Furnace
 var removeRecipeByNameFurnace = [
+	// Cyclic
 	"cyclic:smelting/fireball",
 	// Croptopia
 	"croptopia:salt_from_water_bottle",
@@ -633,11 +635,31 @@ for remove_recipe_by_name_smithing_table in removeRecipeByNameSmithingTable {
 smoker.removeByName("croptopia:salt_from_smoking_water_bottle");
 
 // Stone Cutter
-stoneCutter.removeByRegex("mcwfences:.*railing_.*");
+var removeRecipeByNameStoneCutter = [
+	// Twilight Forest
+	"twilightforest:stonecutting/dark_log/towerwood",
+	"twilightforest:stonecutting/dark_wood/towerwood"
+];
+for remove_recipe_by_name_stone_cutter in removeRecipeByNameStoneCutter {
+	smithing.removeByName(remove_recipe_by_name_stone_cutter);
+}
+
+var removeRecipeByRegexStoneCutter = [
+	// Macaw's Fences
+	"mcwfences:.*railing_.*",
+	"mcwfences:railing_.*",
+	// Twilight Forest
+	"twilightforest:.*hollow_.*"
+];
+for remove_recipe_by_regex_stone_cutter in removeRecipeByRegexStoneCutter {
+	smithing.removeByRegex(remove_recipe_by_regex_stone_cutter);
+}
+
+/*stoneCutter.removeByRegex("mcwfences:.*railing_.*");
 stoneCutter.removeByRegex("mcwfences:railing_.*");
 stoneCutter.removeByRegex("twilightforest:.*hollow_.*");
 stoneCutter.removeByName("twilightforest:stonecutting/dark_log/towerwood");
-stoneCutter.removeByName("twilightforest:stonecutting/dark_wood/towerwood");
+stoneCutter.removeByName("twilightforest:stonecutting/dark_wood/towerwood");*/
 
 // Alchemistry
 <recipetype:alchemistry:dissolver>.removeByName("alchemistry:dissolver/storage_blocks/bamboo");
@@ -718,6 +740,7 @@ var removeBlueprintRecipeByName = [
 for remove_blueprint_recipe_by_name in removeBlueprintRecipeByName {
 	<recipetype:immersiveengineering:blueprint>.removeByName(remove_blueprint_recipe_by_name);
 }
+
 <recipetype:immersiveengineering:bottling_machine>.removeByName("immersiveengineering:bottling/empty_shell");
 <recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/bullet_casing");
 
@@ -792,6 +815,7 @@ var removeMultiservoPressRecipeByName = [
 for remove_multiservo_press_recipe_by_name in removeMultiservoPressRecipeByName {
 	<recipetype:thermal:press>.removeByName(remove_multiservo_press_recipe_by_name);
 }
+
 <recipetype:thermal:bottler>.removeByName("thermal:compat/create/bottler_create_honeyed_apple");
 
 // Tinkers Construct
@@ -884,6 +908,7 @@ var removeCastingTableRecipeByName = [
 for remove_casting_table_recipe_by_name in removeCastingTableRecipeByName {
 	<recipetype:tconstruct:casting_table>.removeByName(remove_casting_table_recipe_by_name);
 }
+
 var removeMoldingTableRecipeByName = [
 	// Sand Cast
 	"tconstruct:smeltery/casts/sand_casts/coins",
@@ -894,6 +919,7 @@ var removeMoldingTableRecipeByName = [
 for remove_molding_table_recipe_by_name in removeMoldingTableRecipeByName {
 	<recipetype:tconstruct:molding_table>.removeByName(remove_molding_table_recipe_by_name);
 }
+
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/quartz/gem_1");
 <recipetype:tconstruct:modifier_worktable>.removeAll();
 
