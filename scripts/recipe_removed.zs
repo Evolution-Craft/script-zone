@@ -78,6 +78,7 @@ var removeRecipeByName = [
 	"cyclic:boomerang_carry",
 	"cyclic:boomerang_damage",
 	"cyclic:boomerang_stun",
+	"cyclic:cable_wrench",
 	"cyclic:carrot_ender",
 	"cyclic:charm_torch",
 	"cyclic:charm_torch_cave",
@@ -97,16 +98,19 @@ var removeRecipeByName = [
 	"cyclic:crafting/repeater",
 	"cyclic:diamond_carrot_health",
 	"cyclic:elevation_wand",
+	"cyclic:energy_pipe",
 	"cyclic:experience_pylon",
 	"cyclic:fan",
 	"cyclic:fan_slab",
 	"cyclic:fire_killer",
+	"cyclic:fluid_pipe",
 	"cyclic:flute_summoning",
 	"cyclic:generator_solar",
 	"cyclic:heart",
 	"cyclic:heart_empty",
 	"cyclic:hopper",
 	"cyclic:hopper_gold",
+	"cyclic:item_pipe",
 	"cyclic:laser_cannon",
 	//"cyclic:magic_net",
 	"cyclic:magic_net_alt",
@@ -641,7 +645,7 @@ var removeRecipeByNameStoneCutter = [
 	"twilightforest:stonecutting/dark_wood/towerwood"
 ];
 for remove_recipe_by_name_stone_cutter in removeRecipeByNameStoneCutter {
-	smithing.removeByName(remove_recipe_by_name_stone_cutter);
+	stoneCutter.removeByName(remove_recipe_by_name_stone_cutter);
 }
 
 var removeRecipeByRegexStoneCutter = [
@@ -652,7 +656,7 @@ var removeRecipeByRegexStoneCutter = [
 	"twilightforest:.*hollow_.*"
 ];
 for remove_recipe_by_regex_stone_cutter in removeRecipeByRegexStoneCutter {
-	smithing.removeByRegex(remove_recipe_by_regex_stone_cutter);
+	stoneCutter.removeByRegex(remove_recipe_by_regex_stone_cutter);
 }
 
 /*stoneCutter.removeByRegex("mcwfences:.*railing_.*");
