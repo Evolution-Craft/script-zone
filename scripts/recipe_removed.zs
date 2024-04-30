@@ -659,12 +659,6 @@ for remove_recipe_by_regex_stone_cutter in removeRecipeByRegexStoneCutter {
 	stoneCutter.removeByRegex(remove_recipe_by_regex_stone_cutter);
 }
 
-/*stoneCutter.removeByRegex("mcwfences:.*railing_.*");
-stoneCutter.removeByRegex("mcwfences:railing_.*");
-stoneCutter.removeByRegex("twilightforest:.*hollow_.*");
-stoneCutter.removeByName("twilightforest:stonecutting/dark_log/towerwood");
-stoneCutter.removeByName("twilightforest:stonecutting/dark_wood/towerwood");*/
-
 // Alchemistry
 <recipetype:alchemistry:dissolver>.removeByName("alchemistry:dissolver/storage_blocks/bamboo");
 

@@ -11,6 +11,10 @@
 Globals.startScript("pack_mod_expert_recipe_armor");
 Globals.priorityScript("Null");
 
+if (packModeSetting.packModeSettingArmors() == true) {
+	Globals.packExpertScript("Armor - Active");
+}
+
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.Ingredient;
@@ -120,9 +124,6 @@ var shapedArmorVarFunction as function(usualOut as IItemStack, inputs as IItemSt
 };
 
 if (packModeSetting.packModeSettingArmors() == true) {
-
-	Globals.packExpertScript("Armor - Active");
-
 	craftingTable.removeByName("woodarmor:stone_helm_recipe");
 	craftingTable.addShaped("pack_expert_crafting_armor/stone_helmet", <item:woodarmor:stone_helmet>, [
 		[<item:minecraft:cobblestone>, <item:minecraft:cobblestone>, <item:minecraft:cobblestone>],

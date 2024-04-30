@@ -96,7 +96,6 @@ val expert_ingradient_to_plate = packModeSetting.packModeSettingPlateCastingBasi
 });
 
 if (packModeSetting.packModeSettingPlates() == true) {
-
 	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/aluminum/plate_gold_cast");
 	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/aluminum/plate_sand_cast");
 	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/brass/plate_gold_cast");
