@@ -5,6 +5,7 @@
  *
  * CHANGELOG:
  * v0.1 : First Issue.
+ * v0.2 : Add packPotion class.
  */
 
 #priority 1499

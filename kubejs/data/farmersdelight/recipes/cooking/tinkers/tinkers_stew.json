@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+	{
+      "type": "forge:mod_loaded",
+      "modid": "tconstruct"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "farmersdelight:cooked_bacon"
+    },
+    {
+      "item": "tconstruct:sky_slime_ball"
+    },
+    {
+      "item": "tconstruct:blood_slime_sapling"
+    },
+    {
+      "tag": "forge:vegetables"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "contenttweaker:tconstruct/delight/tinkers_stew"
+  },
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

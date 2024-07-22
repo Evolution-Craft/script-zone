@@ -51,6 +51,17 @@
 	"item.contenttweaker.tconstruct.queens_slime_sheet": "Queens Slime Sheet",
 	"item.contenttweaker.tconstruct.slimesteel_sheet": "Slime Steel Sheet",
 
+	"item.contenttweaker.tconstruct.delight.blood_cake_slice": "Blood Cake Slice",
+	"item.contenttweaker.tconstruct.delight.crimson_broth": "Crimson Broth",
+	"item.contenttweaker.tconstruct.delight.earthslime_cake_slice": "Earthslime Cake Slice",
+	"item.contenttweaker.tconstruct.delight.enderslime_cake_slice": "Enderslime Cake Slice",
+	"item.contenttweaker.tconstruct.delight.enderslime_pudding": "Enderslime Pudding",
+	"item.contenttweaker.tconstruct.delight.ichor_salad": "Nether Spicy Salad",
+	"item.contenttweaker.tconstruct.delight.magma_cake_slice": "Magma Cake Slice",
+	"item.contenttweaker.tconstruct.delight.skyslime_cake_slice": "Skyslime Cake Slice",
+	"item.contenttweaker.tconstruct.delight.skyslime_sweets": "Skyslime Sweets",
+	"item.contenttweaker.tconstruct.delight.tinkers_stew": "Tinkers Stew",
+
 	"item.contenttweaker.thermal.diamond_plate": "Diamond Plate",
 	"item.contenttweaker.thermal.emerald_plate": "Emerald Plate",
 	"item.contenttweaker.thermal.lapis_plate": "Lapis Lazuli Plate",

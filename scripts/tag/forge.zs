@@ -567,7 +567,8 @@ var addingToolsKnivesForge = [
 	"enlightened_end:adamantite_knife",
 	"contenttweaker:knife/copper_knife",
 	"contenttweaker:knife/steel_knife",
-	"fiow:flint_knife"
+	"fiow:flint_knife",
+	"tconstruct:dagger"
 ];
 for tag_tools_knives_forge in addingToolsKnivesForge {
 	<tag:items:forge:tools/knives>.add(<item:${tag_tools_knives_forge}>);

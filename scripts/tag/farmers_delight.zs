@@ -31,7 +31,8 @@ var addingToolsKnives = [
 	"croptopia:knife",
 	"contenttweaker:knife/copper_knife",
 	"contenttweaker:knife/steel_knife",
-	"fiow:flint_knife"
+	"fiow:flint_knife",
+	"tconstruct:dagger"
 ];
 for tag_tools_knives in addingToolsKnives {
 	<tag:items:farmersdelight:straw_harvesters>.add(<item:${tag_tools_knives}>);

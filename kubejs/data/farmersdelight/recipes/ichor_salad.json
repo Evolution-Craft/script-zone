@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tconstruct:blazing_bone"
+    },
+	[
+		{
+		  "item": "tconstruct:ichor_slime_ball"
+		},
+		{
+		  "item": "minecraft:magma_cream"
+		}
+	],
+    {
+      "item": "farmersdelight:cooked_mutton_chops"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "contenttweaker:tconstruct/delight/ichor_salad"
+  }
+}

@@ -106,6 +106,7 @@ craftingTable.addShaped("pack_expert_crafting/minecraft_piston", <item:minecraft
 ]);
 
 // Campfire
+campfire.addRecipe("campfire/tinker_construct_cooked_bacon_from_bacon", <item:farmersdelight:cooked_bacon>, <item:tconstruct:bacon>, 0.3, 600);
 campfire.addRecipe("campfire/vinery_toast_from_dough", <item:vinery:toast>, <tag:items:minecraft:dough>, 1.0, 200);
 
 // Composter
@@ -394,6 +395,7 @@ stoneCutter.addRecipe("stonecutter/vinery_loam_stairs", <item:vinery:loam_stairs
 stoneCutter.addRecipe("stonecutter/vinery_loam_slab", <item:vinery:loam_slab> * 2, <item:vinery:loam>);
 
 // Smoker
+smoker.addRecipe("smoker/tinker_construct_cooked_bacon_from_bacon", <item:farmersdelight:cooked_bacon>, <item:tconstruct:bacon>, 0.35, 100);
 smoker.addRecipe("smoker/vinery_dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 100);
 
 Globals.endScript("recipe_minecraft");

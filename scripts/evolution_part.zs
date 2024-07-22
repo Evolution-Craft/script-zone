@@ -8,6 +8,8 @@
  * v0.2 : Add Custom Ingot.
  * v0.3 : Add Custom Rods.
  * v0.4 : Add Custom Plates.
+ * v0.5 : Add Custom Knife.
+ * v0.6 : Add Custom Tinkers Food.
  */
 
 println("===============================================================");
@@ -270,6 +272,56 @@ val slimesteel_sheet = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("tconstruct/slimesteel_sheet");
+
+val blood_cake_slice = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/delight/blood_cake_slice");
+
+val crimson_broth = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/delight/crimson_broth");
+
+val earthslime_cake_slice = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/delight/earthslime_cake_slice");
+
+val enderslime_cake_slice = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/delight/enderslime_cake_slice");
+
+val enderslime_pudding = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/delight/enderslime_pudding");
+
+val ichor_salad = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/delight/ichor_salad");
+
+val magma_cake_slice = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/delight/magma_cake_slice");
+
+val skyslime_cake_slice = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/delight/skyslime_cake_slice");
+
+val skyslime_sweets = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/delight/skyslime_sweets");
+
+val tinkers_stew = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("tconstruct/delight/tinkers_stew");
 
 // Thermal Series
 val diamond_plate = <factory:item>.typed<Basic>()

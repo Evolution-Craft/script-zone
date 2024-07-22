@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+	{
+      "id": "tconstruct:lavawood",
+      "required": false
+    },
+	{
+      "id": "tconstruct:blazewood",
+      "required": false
+    }
+  ]
+}
