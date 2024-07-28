@@ -278,6 +278,8 @@ blastFurnace.addRecipe("blast_furnace/galosphere_sterling_leggings", <item:therm
 blastFurnace.addRecipe("blast_furnace/infernalexp_silt", <item:minecraft:glass>, <item:infernalexp:silt>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/mekanism_ingot_refined_glowstone_from_crushed_refined_glowstone", <item:mekanism:ingot_refined_glowstone>, <item:contenttweaker:mekanism/crushed_refined_glowstone>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/mekanism_ingot_refined_obsidian_from_crushed_refined_obsidian", <item:mekanism:ingot_refined_obsidian>, <item:contenttweaker:mekanism/crushed_refined_obsidian>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/minecraft_clay", <item:minecraft:terracotta>, <item:minecraft:clay>, 0.35, 100);
+blastFurnace.addRecipe("blast_furnace/minecraft_clay_ball", <item:minecraft:brick>, <item:minecraft:clay_ball>, 0.3, 100);
 blastFurnace.addRecipe("blast_furnace/minecraft_cobblestone", <item:minecraft:stone>, <item:minecraft:cobblestone>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/minecraft_cobbled_deepslate", <item:minecraft:deepslate>, <item:minecraft:cobbled_deepslate>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/minecraft_raw_iron_block", <item:minecraft:iron_block>, <item:minecraft:raw_iron_block>, 4.2, 200);

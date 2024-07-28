@@ -276,51 +276,81 @@ val slimesteel_sheet = <factory:item>.typed<Basic>()
 val blood_cake_slice = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.canAlwaysEat(true)
+	.nutrition(2)
+	.saturationMod(0.5)
 	.build("tconstruct/delight/blood_cake_slice");
 
 val crimson_broth = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.canAlwaysEat(true)
+	.nutrition(2)
+	.saturationMod(1)
 	.build("tconstruct/delight/crimson_broth");
 
 val earthslime_cake_slice = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.canAlwaysEat(true)
+	.nutrition(2)
+	.saturationMod(0.5)
 	.build("tconstruct/delight/earthslime_cake_slice");
 
 val enderslime_cake_slice = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.canAlwaysEat(true)
+	.nutrition(2)
+	.saturationMod(0.5)
 	.build("tconstruct/delight/enderslime_cake_slice");
 
 val enderslime_pudding = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.canAlwaysEat(true)
+	.nutrition(4)
+	.saturationMod(1)
 	.build("tconstruct/delight/enderslime_pudding");
 
 val ichor_salad = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.canAlwaysEat(true)
+	.nutrition(4)
+	.saturationMod(1)
 	.build("tconstruct/delight/ichor_salad");
 
 val magma_cake_slice = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.canAlwaysEat(true)
+	.nutrition(2)
+	.saturationMod(0.5)
 	.build("tconstruct/delight/magma_cake_slice");
 
 val skyslime_cake_slice = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.canAlwaysEat(true)
+	.nutrition(2)
+	.saturationMod(0.5)
 	.build("tconstruct/delight/skyslime_cake_slice");
 
 val skyslime_sweets = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.canAlwaysEat(true)
+	.nutrition(1)
+	.saturationMod(0.5)
 	.build("tconstruct/delight/skyslime_sweets");
 
 val tinkers_stew = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
+	.canAlwaysEat(true)
+	.nutrition(4)
+	.saturationMod(1)
 	.build("tconstruct/delight/tinkers_stew");
 
 // Thermal Series

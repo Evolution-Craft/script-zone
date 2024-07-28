@@ -18,6 +18,8 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.IItemStack;
 
 var materialBurnTime = {
+	// Aquatic Torches
+	"aquatictorches:aquatic_torch" : 200,
 	// Aquaculture 2
 	"aquaculture:acacia_fish_mount" : 200,
 	"aquaculture:birch_fish_mount" : 200,

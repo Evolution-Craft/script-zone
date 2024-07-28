@@ -563,6 +563,7 @@ for addingSawingChestMekanismName, addingSawingChestMekanismId in addingSawingCh
 	}
 }
 
+<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/torch/aquatic_torch", ItemStackIngredient.from(<item:aquatictorches:aquatic_torch> * 4), <item:minecraft:stick>, <item:minecraft:glow_ink_sac>, 1);
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/torch/bamboo_torch", ItemStackIngredient.from(<item:bambooeverything:bamboo_torch> * 4), <item:minecraft:bamboo>, <item:minecraft:coal>, 1);
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/torch/dry_bamboo_torch", ItemStackIngredient.from(<item:bambooeverything:dry_bamboo_torch> * 4), <item:bambooeverything:dry_bamboo>, <item:minecraft:coal>, 1);
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/torch/glow_torch", ItemStackIngredient.from(<item:infernalexp:glow_torch> * 4), <item:minecraft:stick>, <item:infernalexp:glowcoal>, 1);

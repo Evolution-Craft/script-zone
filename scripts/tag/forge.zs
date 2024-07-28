@@ -657,6 +657,20 @@ for tag_tools_swords_forge in addingToolsSwordsForge {
 	<tag:items:forge:tools/swords>.add(<item:${tag_tools_swords_forge}>);
 }
 
+// Torches
+var addingTorchesForge = [
+	"aquatictorches:aquatic_torch",
+	"bambooeverything:bamboo_torch",
+	"bambooeverything:dry_bamboo_torch",
+	"beyond_earth:coal_torch",
+	"infernalexp:glow_torch",
+	"nethersdelight:propelplant_torch",
+	"undergarden:shard_torch"
+];
+for tag_torches_forge in addingTorchesForge {
+	<tag:items:forge:torches>.add(<item:${tag_torches_forge}>);
+}
+
 // Tuna
 <tag:items:forge:tuna>.add(<item:aquaculture:tuna>);
 

@@ -93,6 +93,7 @@ var removeRecipeByName = [
 	"cyclic:crafting_bag",
 	"cyclic:crafting_stick",
 	"cyclic:crafting/dispenser_alt",
+	"cyclic:crafting/melon",
 	"cyclic:crafting/nether_wart_reverse",
 	"cyclic:crafting/quartz",
 	"cyclic:crafting/repeater",
