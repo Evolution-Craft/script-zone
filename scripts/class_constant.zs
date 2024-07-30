@@ -15,7 +15,7 @@ Globals.priorityScript("1499");
 
 public class Constant {
 
-    public static val packColours as string[] = [
+	public static val packColours as string[] = [
 		"black",
 		"blue",
 		"brown",
@@ -32,10 +32,10 @@ public class Constant {
 		"red",
 		"yellow",
 		"white"
-    ];
+	];
 	public static val packColours_Load as string = "packColours Load Completed";
 
-    public static val packPotions as string[] = [
+	public static val packPotions as string[] = [
 		"alexsmobs:bug_pheromones",
 		"alexsmobs:clinging",
 		"alexsmobs:knockback_resistance",
@@ -173,7 +173,7 @@ public class Constant {
 		"unusualend:regeneration",
 		"unusualend:regeneration_ii",
 		"unusualend:resistance"
-    ];
+	];
 	public static val packPotions_Load as string = "packPotions Load Completed";
 }
 

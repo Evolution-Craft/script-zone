@@ -15,7 +15,6 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
 // Shaped
-
 craftingTable.removeByName("decorative_blocks:rocky_dirt");
 craftingTable.addShaped("decorative_blocks_rocky_dirt", <item:decorative_blocks:rocky_dirt>, [
 	[<item:minecraft:cobblestone>, <item:minecraft:dirt>, <item:minecraft:air>],

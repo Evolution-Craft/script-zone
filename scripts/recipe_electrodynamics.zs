@@ -16,8 +16,8 @@ import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 val expert_ingradient_to_plate = 2; //packModeSetting.packModeSettingPlateCastingBasing();
-val expert_ticks_to_plate = 200;//packModeSetting.packModeSettingPlateCastingBasing();
-val expert_energy_for_tick_to_plate = 450.0;//packModeSetting.packModeSettingPlateCastingBasing();
+val expert_ticks_to_plate = 200; //packModeSetting.packModeSettingPlateCastingBasing();
+val expert_energy_for_tick_to_plate = 450.0; //packModeSetting.packModeSettingPlateCastingBasing();
 
 // Mineral Crusher
 

@@ -264,7 +264,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 			"cooling_time": cooling_time_value
 		});
 	}
-
 }
 
 Globals.endScript("recipe_tinkers_construct");

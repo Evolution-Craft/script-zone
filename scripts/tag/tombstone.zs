@@ -5,10 +5,13 @@
  *
  * CHANGELOG:
  * v0.1 : Fix Missing Seeds.
+ * v0.2 : Add priority.
  */
 
+#priority 984
+
 Globals.startScript("tag/tombstone");
-Globals.priorityScript("Null");
+Globals.priorityScript("984");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;

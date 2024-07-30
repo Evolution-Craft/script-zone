@@ -5,10 +5,13 @@
  *
  * CHANGELOG:
  * v0.1 : Fix Elytra uncategorized.
+ * v0.2 : Add priority.
  */
 
+#priority 983
+
 Globals.startScript("tag/curios");
-Globals.priorityScript("Null");
+Globals.priorityScript("983");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;

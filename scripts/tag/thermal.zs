@@ -5,10 +5,13 @@
  *
  * CHANGELOG:
  * v0.1 : Add new dies.
+ * v0.2 : Add priority.
  */
 
+#priority 986
+
 Globals.startScript("tag/thermal");
-Globals.priorityScript("Null");
+Globals.priorityScript("986");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;

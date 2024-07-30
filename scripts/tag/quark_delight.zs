@@ -5,10 +5,13 @@
  *
  * CHANGELOG:
  * v0.1 : Fix Empty Tag.
+ * v0.2 : Add priority.
  */
 
+#priority 982
+
 Globals.startScript("tag/quark_delight");
-Globals.priorityScript("Null");
+Globals.priorityScript("982");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;

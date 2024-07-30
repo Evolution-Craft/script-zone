@@ -5,6 +5,7 @@
  *
  * CHANGELOG:
  * v0.1 : First Issue.
+ * v0.2 : Potions Settings.
  */
 
 #priority 1500
@@ -23,13 +24,16 @@ public class packModeSetting {
 	private static val pack_mode_expert_recipe_log_enable as string = true;
 	private static val pack_mode_expert_recipe_plate_enable as string = true;
 	private static val pack_mode_expert_recipe_shears_enable as string = true;
-	
+
 	private static val quantity_planks_from_log as int = 2;
+
 	private static val quantity_plate_from_ingradient_in_metal_press as int = 4;
 	private static val quantity_plate_from_ingradient_in_multiservo_press as int = 2;
 	private static val quantity_plate_from_ingradient_in_casting_basing as int = 810;
 
 	private static val quantity_potion_stack_size as int = 3;
+	private static val quantity_splash_potion_stack_size as int = 3;
+	private static val quantity_lingering_potion_stack_size as int = 3;
 
 	public static packModeSettingArmors() as string {
 		return pack_mode_expert_recipe_armor_enable;
@@ -110,7 +114,15 @@ public class packModeSetting {
 	}
 	public static val packModeSettingPotionStackSize_Set as string = "packModeSettingPotionStackSize Value: " + quantity_potion_stack_size;
 
+	public static packModeSettingSplashPotionStackSize() as int {
+		return quantity_splash_potion_stack_size;
+	}
+	public static val packModeSettingSplashPotionStackSize_Set as string = "packModeSettingSplashPotionStackSize Value: " + quantity_splash_potion_stack_size;
 
+	public static packModeSettingLingeringPotionStackSize() as int {
+		return quantity_lingering_potion_stack_size;
+	}
+	public static val packModeSettingLingeringPotionStackSize_Set as string = "packModeSettingLingeringPotionStackSize Value: " + quantity_lingering_potion_stack_size;
 }
 
 println("          Pack Mode Settings...          ");
@@ -135,5 +147,7 @@ println("          -> " + packModeSetting.packModeSettingPlates_Load  + "       
 println("          -> " + packModeSetting.packModeSettingShears_Set  + "          ");
 println("          -> " + packModeSetting.packModeSettingShears_Load  + "          ");
 println("          -> " + packModeSetting.packModeSettingPotionStackSize_Set  + "          ");
+println("          -> " + packModeSetting.packModeSettingSplashPotionStackSize_Set  + "          ");
+println("          -> " + packModeSetting.packModeSettingLingeringPotionStackSize_Set  + "          ");
 println("          Pack Mode Settings Loading Completed          ");
 Globals.endScript("advance_evolution_craft_settings");

@@ -36,7 +36,6 @@ craftingTable.addShapeless("minecraft_green_day", <item:minecraft:green_dye> * 2
 craftingTable.addShapeless("minecraft_flint", <item:minecraft:flint>, [<item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>]);
 craftingTable.addShapeless("minecraft_nether_wart_unblock", <item:minecraft:nether_wart> * 4, [<item:minecraft:nether_wart_block>]);
 craftingTable.addShapeless("minecraft_snow_block_unblock", <item:minecraft:snowball> * 4, [<item:minecraft:snow_block>]);
-
 craftingTable.removeByName("minecraft:flint_and_steel");
 craftingTable.addShapeless("pack_expert_crafting/flint_and_steel", <item:minecraft:flint_and_steel>, [<tag:items:forge:ingots/steel>, <item:minecraft:flint>]);
 

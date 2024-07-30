@@ -73,8 +73,8 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 		"item": "minecraft:stick",
 		"count": 16
 	},
-	"conditions": [ {
-		"values": [ {
+	"conditions": [{
+		"values": [{
 			"modid": "cyclic",
 			"type": "forge:mod_loaded"
 		},
@@ -88,7 +88,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 
 // Solidifier
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_chocolate_1", {
-	"ingredients":[ {
+	"ingredients":[{
 		"item": "cyclic:apple_honey"
 	}],
 	"mix": {
@@ -106,7 +106,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 });
 
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_chocolate_3", {
-	"ingredients":[ {
+	"ingredients":[{
 		"item": "cyclic:apple_honey"
 	},
 	{
@@ -130,7 +130,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 });
 
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_chorus", {
-	"ingredients":[ {
+	"ingredients":[{
 		"item": "minecraft:chorus_flower"
 	},
 	{
@@ -154,7 +154,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 });
 
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_iron_1", {
-	"ingredients":[ {
+	"ingredients":[{
 		"item": "cyclic:apple_honey"
 	}],
 	"mix": {
@@ -172,7 +172,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 });
 
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_iron_3", {
-	"ingredients":[ {
+	"ingredients":[{
 		"item": "cyclic:apple_honey"
 	},
 	{
@@ -196,7 +196,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 });
 
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_sprout_diamond", {
-	"ingredients":[ {
+	"ingredients":[{
 		"item": "cyclic:apple_chorus"
 	}],
 	"mix": {
@@ -214,7 +214,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 });
 
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_sprout_emerald", {
-	"ingredients":[ {
+	"ingredients":[{
 		"item": "cyclic:apple_chorus"
 	}],
 	"mix": {
@@ -232,7 +232,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 });
 
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_lapis", {
-	"ingredients":[ {
+	"ingredients":[{
 		"item": "minecraft:lapis_lazuli"
 	},
 	{
@@ -256,7 +256,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 });
 
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/fireball", {
-	"ingredients":[ {
+	"ingredients":[{
 		"item": "minecraft:fire_charge"
 	},
 	{
@@ -278,7 +278,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 
 <recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/solidifier_apple_enchanted");
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/solidifier_apple_enchanted", {
-	"ingredients":[ {
+	"ingredients":[{
 		"item": "cyclic:apple_diamond"
 	},
 	{
@@ -303,7 +303,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 
 <recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/solidifier_honeyhive");
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/solidifier_honeyhive", {
-	"ingredients":[ {
+	"ingredients":[{
 		"tag": "forge:chests/wooden"
 	},
 	{
@@ -328,7 +328,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 
 <recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/wax_hive");
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/wax_hive", {
-	"ingredients":[ {
+	"ingredients":[{
 		"tag": "forge:chests/wooden"
 	}],
 	"mix": {

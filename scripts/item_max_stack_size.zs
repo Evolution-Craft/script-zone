@@ -5,6 +5,7 @@
  *
  * CHANGELOG:
  * v0.1 : Modify Item Max Stack Size.
+ * v0.2 : Potion Max Stack Size.
  */
 
 Globals.startScript("item_max_stack_size");
@@ -12,17 +13,15 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 
-/*for max_stack_size_potion_type in Constant.packPotions {
-	<item:${itemSetMaxStackSizeMaterial}>.setMaxStackSize(itemSetMaxStackSizeValue);
-}*/
-
 val expert_max_stack_size_potion = packModeSetting.packModeSettingPotionStackSize();
+val expert_max_stack_size_splash_potion = packModeSetting.packModeSettingSplashPotionStackSize();
+val expert_max_stack_size_lingering_potion = packModeSetting.packModeSettingLingeringPotionStackSize();
 
 var itemSetMaxStackSize = {
 
 	"minecraft:potion" : expert_max_stack_size_potion,
-	"minecraft:splash_potion" : expert_max_stack_size_potion,
-	"minecraft:lingering_potion" : expert_max_stack_size_potion,
+	"minecraft:splash_potion" : expert_max_stack_size_splash_potion,
+	"minecraft:lingering_potion" : expert_max_stack_size_lingering_potion,
 
 	"ecologics:azalea_sign" : 64,
 	"ecologics:coconut_sign" : 64,

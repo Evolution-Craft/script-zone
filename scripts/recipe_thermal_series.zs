@@ -180,7 +180,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	<recipetype:thermal:press>.removeByName("thermal:machines/press/press_tin_ingot_to_plate");
 	<recipetype:thermal:press>.removeByName("thermal_extra:machine/press/twinite_plate");
 	<recipetype:thermal:press>.removeByName("thermal:compat/immersiveengineering/press_ie_uranium_ingot_to_plate");
-	
+
 	var addingPlateMultiservoPress = {
 		"immersiveengineering:plate_aluminum" : "forge:ingots/aluminum",
 		"create:brass_sheet" : "forge:ingots/brass",

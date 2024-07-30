@@ -42,18 +42,15 @@ var shapedHorseArmorVarFunction as function(usualOut as IItemStack, inputs as II
 
 craftingTable.removeByModid("woodarmorhorse");
 var logsWoodenHorse = {
-	"oak" : "oak",
-	"birch" : "birch",
-	"jungle" : "jungle",
 	"acacia" : "acacia",
+	"birch" : "birch",
+	"crimson" : "crimson",
 	"dark_oak" : "bigoak",
+	"jungle" : "jungle",
+	"oak" : "oak",
 	"spruce" : "spruce",
-	"warped" : "warped",
-	"crimson" : "crimson"
+	"warped" : "warped"
 };
-for logWoodenHorseId, logWoodenHorseName in logsWoodenHorse {
-	<tag:items:woodarmorhorse:wooden_horse_armor>.add(<item:woodarmorhorse:${logWoodenHorseName}_horse_armor>);
-}
 
 if (packModeSetting.packModeSettingHorseArmors() == true) {
 	for logWoodenHorseId, logWoodenHorseName in logsWoodenHorse {
