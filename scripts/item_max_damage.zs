@@ -14,11 +14,15 @@ import crafttweaker.api.item.ItemStack;
 
 var itemSetMaxDamage = {
 	"aquaculture:neptunium_fillet_knife" : 2860,
+	"aquaculturedelight:neptunium_knife" : 2860,
 	"croptopia:knife" : 400,
 	"cyclic:shears_flint" : 25,
 	"exlinecopperequipment:copper_horse_armor" : 420,
 	"fiow:flint_knife" : 26,
 	"galosphere:sterling_horse_armor" : 360,
+	"galosphere_delight:silver_knife" : 185,
+	"galosphere_delight:lumiere_knife" : 155,
+	"galosphere_delight:allurite_knife" : 165,
 	"minecraft:leather_horse_armor" : 150,
 	"minecraft:iron_horse_armor" : 450,
 	"minecraft:golden_horse_armor" : 210,

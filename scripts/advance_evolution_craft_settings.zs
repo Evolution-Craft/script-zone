@@ -29,6 +29,8 @@ public class packModeSetting {
 	private static val quantity_plate_from_ingradient_in_multiservo_press as int = 2;
 	private static val quantity_plate_from_ingradient_in_casting_basing as int = 810;
 
+	private static val quantity_potion_stack_size as int = 3;
+
 	public static packModeSettingArmors() as string {
 		return pack_mode_expert_recipe_armor_enable;
 	}
@@ -102,6 +104,13 @@ public class packModeSetting {
 		return quantity_plate_from_ingradient_in_casting_basing;
 	}
 	public static val packModeSettingPlateMultiCastingBasing_Set as string = "packModeSettingPlates Quantity: " + quantity_plate_from_ingradient_in_casting_basing;
+
+	public static packModeSettingPotionStackSize() as int {
+		return quantity_potion_stack_size;
+	}
+	public static val packModeSettingPotionStackSize_Set as string = "packModeSettingPotionStackSize Value: " + quantity_potion_stack_size;
+
+
 }
 
 println("          Pack Mode Settings...          ");
@@ -125,5 +134,6 @@ println("          -> " + packModeSetting.packModeSettingPlateMultiCastingBasing
 println("          -> " + packModeSetting.packModeSettingPlates_Load  + "          ");
 println("          -> " + packModeSetting.packModeSettingShears_Set  + "          ");
 println("          -> " + packModeSetting.packModeSettingShears_Load  + "          ");
+println("          -> " + packModeSetting.packModeSettingPotionStackSize_Set  + "          ");
 println("          Pack Mode Settings Loading Completed          ");
 Globals.endScript("advance_evolution_craft_settings");
