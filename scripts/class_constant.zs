@@ -6,6 +6,7 @@
  * CHANGELOG:
  * v0.1 : First Issue.
  * v0.2 : Add packPotion class.
+ * v0.3 : Add packBaseWoods class.
  */
 
 #priority 1499
@@ -34,6 +35,18 @@ public class Constant {
 		"white"
 	];
 	public static val packColours_Load as string = "packColours Load Completed";
+
+	public static val packBaseWoods as string[] = [
+		"acacia",
+		"birch",
+		"crimson"
+		"dark_oak",
+		"jungle",
+		"oak",
+		"spruce",
+		"warped",
+	];
+	public static val packBaseWoods_Load as string = "packBaseWoods Load Completed";
 
 	public static val packPotions as string[] = [
 		"alexsmobs:bug_pheromones",
@@ -179,6 +192,7 @@ public class Constant {
 
 println("          Class Constant Loading...          ");
 println("          -> " + Constant.packColours_Load  + "          ");
+println("          -> " + Constant.packBaseWoods_Load  + "          ");
 println("          -> " + Constant.packPotions_Load  + "          ");
 println("          Class Constant Loading Completed          ");
 Globals.endScript("class_constant");
