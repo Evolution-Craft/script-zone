@@ -27,20 +27,20 @@ var addingHeatSources = [
 ];
 for tag_heat_sources in addingHeatSources {
 	<tag:blocks:farmersdelight:heat_sources>.add(<block:${tag_heat_sources}>);
-	//<tag:blocks:mmlib:heat_conductors>.add(<block:${tag_heat_sources}>);
+	<tag:blocks:mmlib:heat_conductors>.add(<block:${tag_heat_sources}>);
 }
 
 // Tray Heat Sources
 var addingTrayHeatSources = [
-	"infernalexp:campfire_glow",
+	"infernalexp:glow_campfire",
 	"decorative_blocks:brazier",
 	"decorative_blocks:soul_brazier",
-	"decorative_blocks_abnormals:ender_brazier",
 	"ends_delight:end_stove",
 	"vinery:stove"
 ];
 for tag_tray_heat_sources in addingTrayHeatSources {
 	<tag:blocks:farmersdelight:tray_heat_sources>.add(<block:${tag_tray_heat_sources}>);
+	<tag:blocks:mmlib:tray_heat_sources>.add(<block:${tag_tray_heat_sources}>);
 }
 
 // Knives
