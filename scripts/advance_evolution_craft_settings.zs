@@ -21,6 +21,7 @@ public class packModeSetting {
 	private static val pack_mode_expert_recipe_furnace_enable as string = true;
 	private static val pack_mode_expert_recipe_hopper_enable as string = true;
 	private static val pack_mode_expert_recipe_horse_armor_enable as string = true;
+	private static val pack_mode_expert_recipe_knife_enable as string = true;
 	private static val pack_mode_expert_recipe_log_enable as string = true;
 	private static val pack_mode_expert_recipe_plate_enable as string = true;
 	private static val pack_mode_expert_recipe_shears_enable as string = true;
@@ -70,6 +71,12 @@ public class packModeSetting {
 	}
 	public static val packModeSettingHorseArmors_Set as string = "packModeSettingHorseArmors Set: " + pack_mode_expert_recipe_horse_armor_enable;
 	public static val packModeSettingHorseArmors_Load as string = "packModeSettingHorseArmors Load Completed";
+
+	public static packModeSettingKnife() as string {
+		return pack_mode_expert_recipe_knife_enable;
+	}
+	public static val packModeSettingKnife_Set as string = "packModeSettingKnife Set: " + pack_mode_expert_recipe_knife_enable;
+	public static val packModeSettingKnife_Load as string = "packModeSettingKnife Load Completed";
 
 	public static packModeSettingLogs() as string {
 		return pack_mode_expert_recipe_log_enable;
@@ -136,6 +143,10 @@ println("          -> " + packModeSetting.packModeSettingFurnaces_Set  + "      
 println("          -> " + packModeSetting.packModeSettingFurnaces_Load  + "          ");
 println("          -> " + packModeSetting.packModeSettingHoppers_Set  + "          ");
 println("          -> " + packModeSetting.packModeSettingHoppers_Load  + "          ");
+println("          -> " + packModeSetting.packModeSettingHorseArmors_Set  + "          ");
+println("          -> " + packModeSetting.packModeSettingHorseArmors_Load  + "          ");
+println("          -> " + packModeSetting.packModeSettingKnife_Set  + "          ");
+println("          -> " + packModeSetting.packModeSettingKnife_Load  + "          ");
 println("          -> " + packModeSetting.packModeSettingLogs_Set  + "          ");
 println("          -> " + packModeSetting.packModeSettingLogsCount_Set  + "          ");
 println("          -> " + packModeSetting.packModeSettingLogs_Load  + "          ");

@@ -39,12 +39,12 @@ public class Constant {
 	public static val packBaseWoods as string[] = [
 		"acacia",
 		"birch",
-		"crimson"
+		"crimson",
 		"dark_oak",
 		"jungle",
 		"oak",
 		"spruce",
-		"warped",
+		"warped"
 	];
 	public static val packBaseWoods_Load as string = "packBaseWoods Load Completed";
 

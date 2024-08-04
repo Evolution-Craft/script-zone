@@ -5,6 +5,7 @@
  *
  * CHANGELOG:
  * v0.1 : First Issue.
+ * v0.2 : Add Knife Info.
  */
 
 Globals.startScript("jei_info/evolution_craft");
@@ -33,5 +34,13 @@ i_evolution_craft(<item:contenttweaker:coin_common>, "Using for buy quest items.
 i_evolution_craft(<item:contenttweaker:coin_rare>, "Using for buy quest items.");
 i_evolution_craft(<item:contenttweaker:coin_legendary>, "Using for buy quest items.");
 i_evolution_craft(<item:contenttweaker:coin_mythic>, "Using for buy quest items.");
+
+var addingKnifeInfo = [
+	"knife/copper_knife",
+	"knife/steel_knife"
+];
+for knife_add_info in addingKnifeInfo {
+	JEI.addDescription(<item:contenttweaker:${knife_add_info}>, ("Knives are lightweight melee weapon. They can harvest Straw from grasses, and guarantee secondary drops from animals."));
+}
 
 Globals.endScript("jei_info/evolution_craft");

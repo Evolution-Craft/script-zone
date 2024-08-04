@@ -35,37 +35,37 @@ import crafttweaker.api.item.IItemStack;
 
 // All Knife Reach Distance
 var addingKnifeReachDistance = [
-	"aquaculture:wooden_fillet_knife",
-	"aquaculture:stone_fillet_knife",
-	"aquaculture:iron_fillet_knife",
-	"aquaculture:gold_fillet_knife",
 	"aquaculture:diamond_fillet_knife",
+	"aquaculture:gold_fillet_knife",
+	"aquaculture:iron_fillet_knife",
 	"aquaculture:neptunium_fillet_knife",
+	"aquaculture:stone_fillet_knife",
+	"aquaculture:wooden_fillet_knife",
 	"aquaculturedelight:neptunium_knife",
 	"contenttweaker:knife/copper_knife",
 	"contenttweaker:knife/steel_knife",
 	"croptopia:knife",
 	"ends_delight:dragon_egg_shell_knife",
-	"ends_delight:purpur_knife",
-	"ends_delight:end_stone_knife",
 	"ends_delight:dragon_tooth_knife",
+	"ends_delight:end_stone_knife",
+	"ends_delight:purpur_knife",
 	"enlightened_end:adamantite_knife",
 	"farmersdelight:flint_knife",
 	"farmersdelight:iron_knife",
 	"farmersdelight:diamond_knife",
 	"farmersdelight:netherite_knife",
 	"farmersdelight:golden_knife",
-	"galosphere_delight:silver_knife",
-	"galosphere_delight:lumiere_knife",
 	"galosphere_delight:allurite_knife",
+	"galosphere_delight:lumiere_knife",
+	"galosphere_delight:silver_knife",
 	"twilightdelight:fiery_knife",
 	"twilightdelight:ironwood_knife",
 	"twilightdelight:knightmetal_knife",
 	"twilightdelight:steeleaf_knife",
 	"undergardendelight:cloggrum_knife",
+	"undergardendelight:forgotten_knife",
 	"undergardendelight:frosteel_knife",
-	"undergardendelight:utherium_knife",
-	"undergardendelight:forgotten_knife"
+	"undergardendelight:utherium_knife"
 ];
 for addingKnifeReachDistanceName in addingKnifeReachDistance {
 	<item:${addingKnifeReachDistanceName}>.anyDamage().removeGlobalAttribute(<attribute:forge:reach_distance>, [<constant:minecraft:equipmentslot:mainhand>]);

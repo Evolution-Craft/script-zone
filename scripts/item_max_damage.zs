@@ -13,10 +13,13 @@ Globals.priorityScript("Null");
 import crafttweaker.api.item.ItemStack;
 
 var itemSetMaxDamage = {
-	"aquaculture:neptunium_fillet_knife" : 2860,
-	"aquaculturedelight:neptunium_knife" : 2860,
+	"aquaculture:neptunium_fillet_knife" : 1860,
+	"aquaculturedelight:neptunium_knife" : 2260,
 	"croptopia:knife" : 400,
 	"cyclic:shears_flint" : 25,
+	"ends_delight:dragon_tooth_knife" : 956,
+	"ends_delight:end_stone_knife" : 98,
+	"ends_delight:purpur_knife" : 12,
 	"exlinecopperequipment:copper_horse_armor" : 420,
 	"fiow:flint_knife" : 26,
 	"galosphere:sterling_horse_armor" : 360,
@@ -36,7 +39,10 @@ var itemSetMaxDamage = {
 	"woodarmorhorse:spruce_horse_armor" : 300,
 	"woodarmorhorse:crimson_horse_armor" : 300,
 	"woodarmorhorse:warped_horse_armor" : 300,
-	"woodarmorhorse:stone_horse_armor" : 300
+	"woodarmorhorse:stone_horse_armor" : 300,
+	"undergardendelight:forgotten_knife" : 1561,
+	"undergardendelight:frosteel_knife" : 426,
+	"undergardendelight:utherium_knife" : 628
 };
 for itemSetMaxDamageMaterial, itemSetMaxDamageValue in itemSetMaxDamage {
 	<item:${itemSetMaxDamageMaterial}>.maxDamage = itemSetMaxDamageValue;
