@@ -37,6 +37,6 @@ villagerTrades.addTrade(<profession:minecraft:leatherworker>, 4, <item:minecraft
 // Tier 5
 villagerTrades.removeAllTrades(<profession:minecraft:leatherworker>, 5);
 villagerTrades.addTrade(<profession:minecraft:leatherworker>, 5, <item:minecraft:emerald> * 6, <item:minecraft:saddle>, 12, 30, 0.2);
-villagerTrades.addTrade(<profession:minecraft:leatherworker>, 5, <item:minecraft:emerald> * 32, <item:minecraft:enchanted_book>.setEnchantments({<enchantment:leatheredboots:soft_step> : 1 as int?}), 1, 30, 0.5);
+villagerTrades.addTrade(<profession:minecraft:leatherworker>, 5, <item:minecraft:emerald> * 32, <item:minecraft:enchanted_book>.setEnchantments({<enchantment:leathered_boots:soft_step> : 1 as int?}), 1, 30, 0.5);
 
 Globals.endScript("villager/leatherworker");

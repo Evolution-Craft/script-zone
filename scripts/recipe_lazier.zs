@@ -89,7 +89,7 @@ var addingSeedGrinderLazier = {
 };
 for addingSeedGrinderLazierName, addingSeedGrinderLazierMod in addingSeedGrinderLazier {
 	if (addingSeedGrinderLazierName == "immersiveengineering/seed") {
-		<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingSeedGrinderLazierName, {
+		<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingSeedGrinderLazierName, {
 			"output": {
 				"item": "mekanism:bio_fuel",
 				"count": lazier_bio_fuel_seeds_quantity
@@ -101,7 +101,7 @@ for addingSeedGrinderLazierName, addingSeedGrinderLazierMod in addingSeedGrinder
 			"energy_cost": lazier_energy_cost
 		});
 	} else if (addingSeedGrinderLazierName == "ecologics/coconut") {
-		<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingSeedGrinderLazierName + "_seedling", {
+		<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingSeedGrinderLazierName + "_seedling", {
 			"output": {
 				"item": "mekanism:bio_fuel",
 				"count": lazier_bio_fuel_seeds_quantity
@@ -112,7 +112,7 @@ for addingSeedGrinderLazierName, addingSeedGrinderLazierMod in addingSeedGrinder
 			"process_time": lazier_process_time,
 			"energy_cost": lazier_energy_cost
 		});
-		<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingSeedGrinderLazierName, {
+		<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingSeedGrinderLazierName, {
 			"output": {
 				"item": "mekanism:bio_fuel",
 				"count": lazier_bio_fuel_seeds_quantity
@@ -124,7 +124,7 @@ for addingSeedGrinderLazierName, addingSeedGrinderLazierMod in addingSeedGrinder
 			"energy_cost": lazier_energy_cost
 		});
 	} else {
-		<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingSeedGrinderLazierName + "_seed", {
+		<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingSeedGrinderLazierName + "_seed", {
 			"output": {
 				"item": "mekanism:bio_fuel",
 				"count": lazier_bio_fuel_seeds_quantity
@@ -135,7 +135,7 @@ for addingSeedGrinderLazierName, addingSeedGrinderLazierMod in addingSeedGrinder
 			"process_time": lazier_process_time,
 			"energy_cost": lazier_energy_cost
 		});
-		<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingSeedGrinderLazierName, {
+		<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingSeedGrinderLazierName, {
 			"output": {
 				"item": "mekanism:bio_fuel",
 				"count": lazier_bio_fuel_seeds_quantity
@@ -158,7 +158,7 @@ var addingVinerySeedsGrinderLazier = {
 	"vinery/taiga_grape_seeds_white" : "vinery:taiga_grape_seeds_white"
 };
 for addingVinerySeedsGrinderLazierName, addingVinerySeedsGrinderLazierMod in addingVinerySeedsGrinderLazier {
-	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingVinerySeedsGrinderLazierName, {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingVinerySeedsGrinderLazierName, {
 		"output": {
 			"item": "mekanism:bio_fuel",
 			"count": lazier_bio_fuel_seeds_quantity
@@ -180,7 +180,7 @@ var addingVineryCropsGrinderLazier = {
 	"vinery/taiga_grape_white" : "vinery:taiga_grapes_white"
 };
 for addingVineryCropsGrinderLazierName, addingVineryCropsGrinderLazierMod in addingVineryCropsGrinderLazier {
-	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingVineryCropsGrinderLazierName, {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingVineryCropsGrinderLazierName, {
 		"output": {
 			"item": "mekanism:bio_fuel",
 			"count": lazier_bio_fuel_crops_quantity
@@ -224,7 +224,7 @@ var addingSeedsGrinderLazier = {
 	"vinery/white_grape" : "vinery:white_grape"
 };
 for addingSeedsGrinderLazierName, addingSeedsGrinderLazierMod in addingSeedsGrinderLazier {
-	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingSeedsGrinderLazierName + "_seed", {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingSeedsGrinderLazierName + "_seed", {
 		"output": {
 			"item": "mekanism:bio_fuel",
 			"count": lazier_bio_fuel_seeds_quantity
@@ -235,7 +235,7 @@ for addingSeedsGrinderLazierName, addingSeedsGrinderLazierMod in addingSeedsGrin
 		"process_time": lazier_process_time,
 		"energy_cost": lazier_energy_cost
 	});
-	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingSeedsGrinderLazierName, {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingSeedsGrinderLazierName, {
 		"output": {
 			"item": "mekanism:bio_fuel",
 			"count": lazier_bio_fuel_seeds_quantity
@@ -287,7 +287,7 @@ var addingLeavesGrinderLazier = {
 	"vinery/cherry_leaves" : "vinery:cherry_leaves"
 };
 for addingLeavesGrinderLazierName, addingLeavesGrinderLazierMod in addingLeavesGrinderLazier {
-	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingLeavesGrinderLazierName, {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingLeavesGrinderLazierName, {
 		"output": {
 			"item": "mekanism:bio_fuel",
 			"count": lazier_bio_fuel_leaves_quantity
@@ -358,7 +358,7 @@ var addingSaplingsGrinderLazier = {
 	"vinery/old_cherry_sapling" : "vinery:old_cherry_sapling"
 };
 for addingSaplingsGrinderLazierName, addingSaplingsGrinderLazierMod in addingSaplingsGrinderLazier {
-	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingSaplingsGrinderLazierName, {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingSaplingsGrinderLazierName, {
 		"output": {
 			"item": "mekanism:bio_fuel",
 			"count": lazier_bio_fuel_saplings_quantity
@@ -400,7 +400,7 @@ var addingMushroomsGrinderLazier = {
 	"undergarden/veil_mushroom" : "undergarden:veil_mushroom"
 };
 for addingMushroomsGrinderLazierName, addingMushroomsGrinderLazierMod in addingMushroomsGrinderLazier {
-	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingMushroomsGrinderLazierName, {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingMushroomsGrinderLazierName, {
 		"output": {
 			"item": "mekanism:bio_fuel",
 			"count": lazier_bio_fuel_mushrooms_quantity
@@ -427,7 +427,7 @@ var addingMushroomsBlockGrinderLazier = {
 	"undergarden/veil_mushroom_stalk" : "undergarden:veil_mushroom_stalk"
 };
 for addingMushroomsBlockGrinderLazierName, addingMushroomsBlockGrinderLazierMod in addingMushroomsBlockGrinderLazier {
-	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingMushroomsBlockGrinderLazierName, {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingMushroomsBlockGrinderLazierName, {
 		"output": {
 			"item": "mekanism:bio_fuel",
 			"count": lazier_bio_fuel_mushrooms_block_quantity
@@ -497,7 +497,7 @@ var addingFlowersGrinderLazier = {
 	"enlightened_end/cradling_flower" : "enlightened_end:cradling_flower"
 };
 for addingFlowersGrinderLazierName, addingFlowersGrinderLazierMod in addingFlowersGrinderLazier {
-	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/ginder/bio_fuel/" + addingFlowersGrinderLazierName, {
+	<recipetype:lazierae2:grinder>.addJsonRecipe("compat/mekanism/grinder/bio_fuel/" + addingFlowersGrinderLazierName, {
 		"output": {
 			"item": "mekanism:bio_fuel",
 			"count": lazier_bio_fuel_flowers_quantity
