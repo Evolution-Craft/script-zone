@@ -589,6 +589,8 @@ var removeRecipeByNameBlastingFurnace = [
 	"libraryferret:blasting/gold_coins_jtl",
 	"libraryferret:blasting/iron_coins_jtl",
 	"libraryferret:blasting/netherite_coins_jtl",
+	// Undergarden
+	"undergarden:blast_utherium_item"
 ];
 for remove_recipe_by_name_blasting_furnace in removeRecipeByNameBlastingFurnace {
 	blastFurnace.removeByName(remove_recipe_by_name_blasting_furnace);
@@ -616,7 +618,9 @@ var removeRecipeByNameFurnace = [
 	// Thermal Series
 	"thermal:smelting/glowstone_dust_from_spores_smelting",
 	"thermal:smelting/gunpowder_from_spores_smelting",
-	"thermal:smelting/redstone_from_spores_smelting"
+	"thermal:smelting/redstone_from_spores_smelting",
+	// Undergarden
+	"undergarden:smelt_utherium_item"
 ];
 for remove_recipe_by_name_furnace in removeRecipeByNameFurnace {
 	furnace.removeByName(remove_recipe_by_name_furnace);

@@ -47,10 +47,10 @@ public class Globals {
 	public static val packExpertScript_Load as string = "packExpertScript Load Completed";
 }
 
-println("          -> " + Globals.startScript_Load  + "          ");
-println("          -> " + Globals.endScript_Load  + "          ");
-println("          -> " + Globals.priorityScript_Load  + "          ");
-println("          -> " + Globals.packExpertScript_Load  + "          ");
+println("          -> " + Globals.startScript_Load + "          ");
+println("          -> " + Globals.endScript_Load + "          ");
+println("          -> " + Globals.priorityScript_Load + "          ");
+println("          -> " + Globals.packExpertScript_Load + "          ");
 println("          Class Globals Loading Completed          ");
 println("===============================================================");
 println("          Ending Script: class_global          ");

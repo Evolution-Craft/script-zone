@@ -191,8 +191,8 @@ public class Constant {
 }
 
 println("          Class Constant Loading...          ");
-println("          -> " + Constant.packColours_Load  + "          ");
-println("          -> " + Constant.packBaseWoods_Load  + "          ");
-println("          -> " + Constant.packPotions_Load  + "          ");
+println("          -> " + Constant.packColours_Load + "          ");
+println("          -> " + Constant.packBaseWoods_Load + "          ");
+println("          -> " + Constant.packPotions_Load + "          ");
 println("          Class Constant Loading Completed          ");
 Globals.endScript("class_constant");

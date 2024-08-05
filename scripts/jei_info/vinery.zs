@@ -5,13 +5,12 @@
  *
  * CHANGELOG:
  * v0.1 : First Issue.
+ * v0.2 : Rework.
  */
 
 Globals.startScript("jei_info/vinery");
 Globals.priorityScript("Null");
 
-import mods.jei.JEI as JEI;
-
-JEI.addDescription(<item:vinery:apple_mash>, ("Crafting in Apple Press."));
+packJeiDescripton(<item:vinery:apple_mash>, "Crafting in Apple Press.");
 
 Globals.endScript("jei_info/vinery");
