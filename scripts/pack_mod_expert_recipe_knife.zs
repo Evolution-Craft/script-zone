@@ -15,12 +15,12 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
-craftingTable.addShaped("pack_expert_crafting_knife/copper_knife", <item:contenttweaker:knife/copper_knife>, [
+craftingTable.addShaped("pack_expert_crafting_knife/copper_knife", <item:contenttweaker:evolution_craft/knife/copper_knife>, [
 	[<item:minecraft:air>, <item:minecraft:copper_ingot>, <item:minecraft:air>],
 	[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
-craftingTable.addShaped("pack_expert_crafting_knife/steel_knife", <item:contenttweaker:knife/steel_knife>, [
+craftingTable.addShaped("pack_expert_crafting_knife/steel_knife", <item:contenttweaker:evolution_craft/knife/steel_knife>, [
 	[<item:minecraft:air>, <item:thermal:steel_ingot>, <item:minecraft:air>],
 	[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]

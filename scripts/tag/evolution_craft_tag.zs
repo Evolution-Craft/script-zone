@@ -15,6 +15,22 @@ Globals.priorityScript("991");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Evolution Craft - Books
+var addingEvolutionCraftBook = [
+	"contenttweaker:evolution_craft/book/cursed_book",
+	"contenttweaker:evolution_craft/book/grimoire_book",
+	"contenttweaker:evolution_craft/book/herobrines_book",
+	"contenttweaker:evolution_craft/book/knowledge_book",
+	"contenttweaker:evolution_craft/book/monster_book",
+	"contenttweaker:evolution_craft/book/necronomicon_book",
+	"contenttweaker:evolution_craft/book/notchs_book",
+	"contenttweaker:evolution_craft/book/book.old_book",
+	"contenttweaker:evolution_craft/book/book.rexs_book"
+];
+for tag_evolution_craft_book in addingEvolutionCraftBook {
+	<tag:items:evolution_craft:books>.add(<item:${tag_evolution_craft_book}>);
+}
+
 // Evolution Craft - Coins
 var addingEvolutionCraftCoin = [
 	"contenttweaker:coin_common",

@@ -565,8 +565,8 @@ for tag_tools_copper_forge in addingToolsCopperForge {
 // Tools Knives
 var addingToolsKnivesForge = [
 	"enlightened_end:adamantite_knife",
-	"contenttweaker:knife/copper_knife",
-	"contenttweaker:knife/steel_knife",
+	"contenttweaker:evolution_craft/knife/copper_knife",
+	"contenttweaker:evolution_craft/knife/steel_knife",
 	"fiow:flint_knife",
 	"tconstruct:dagger"
 ];

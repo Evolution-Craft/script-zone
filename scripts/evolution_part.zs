@@ -23,6 +23,8 @@ println("===============================================================");
 #loader contenttweaker
 
 import contenttweaker.builder.vanilla.item.Basic;
+//import contenttweaker.builder.vanilla.item.Sword;
+import contenttweaker.builder.vanilla.item.ToolBuilder;
 import contenttweaker.object.vanilla.property.StandardItemProperties;
 
 val evolutionCreativeTab = <factory:creative_tab>.create("evolutionTab", <item:create:experience_nugget>);
@@ -141,6 +143,157 @@ val coin_mythic = <factory:item>.typed<Basic>()
 	.fireResistant(true)
 	.build("coin_mythic");
 
+// Book
+val cursed_book = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.build("evolution_craft/book/cursed_book");
+
+val grimoire_book = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.build("evolution_craft/book/grimoire_book");
+
+val herobrines_book = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.build("evolution_craft/book/herobrines_book");
+
+val knowledge_book = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.build("evolution_craft/book/knowledge_book");
+
+val monster_book = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.build("evolution_craft/book/monster_book");
+
+val necronomicon_book = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.build("evolution_craft/book/necronomicon_book");
+
+val notchs_book = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.build("evolution_craft/book/notchs_book");
+
+val old_book = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.build("evolution_craft/book/old_book");
+
+val rexs_book = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:epic>)
+	.build("evolution_craft/book/rexs_book");
+
+// Fragment
+val amethyst_fragment = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/fragment/amethyst_fragment");
+
+val crystal_fragment = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/fragment/crystal_fragment");
+
+val diamond_fragment = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/fragment/diamond_fragment");
+
+val emerald_fragment = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/fragment/emerald_fragment");
+
+val hematite_fragment = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/fragment/hematite_fragment");
+
+val ruby_fragment = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/fragment/ruby_fragment");
+
+val sapphire_fragment = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/fragment/sapphire_fragment");
+
+val topaz_fragment = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/fragment/topaz_fragment");
+
+val tourmaline_fragment = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/fragment/tourmaline_fragment");
+
+// Gem
+val agate_gem = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/gem/agate_gem");
+
+val amber_gem = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/gem/amber_gem");
+
+val black_obsidian_gem = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/gem/black_obsidian_gem");
+
+val desert_rose_gem = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/gem/desert_rose_gem");
+
+val jade_gem = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/gem/jade_gem");
+
+val magnetite_gem = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/gem/magnetite_gem");
+
+val malachit_gem = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/gem/malachit_gem");
+
+val opal_gem = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("evolution_craft/gem/opal_gem");
+
+// Knife
+val copper_knife = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.durability(150)
+/*	withType<ItemBuilderTool>()
+	.withToolType(<tooltype:sword>, 3, 4.0F) //Shovel harvest level 3 and destroy speed 4.0
+	.withAttackDamage(10.0F)
+	.withAttackSpeed(5.0F)
+	.withDurabilityCostAttack(1)*/
+	.build("evolution_craft/knife/copper_knife");
+
+val steel_knife = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.durability(484)
+	.build("evolution_craft/knife/steel_knife");
+
 // Ae2 Integration
 val crushed_certus_quartz = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
@@ -161,19 +314,6 @@ val crushed_quartz = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("ae2/crushed_quartz");
-
-// Knife
-val copper_knife = <factory:item>.typed<Basic>()
-	.tab(evolutionTab)
-	.rarity(<constant:minecraft:item/rarity:common>)
-	.durability(150)
-	.build("knife/copper_knife");
-
-val steel_knife = <factory:item>.typed<Basic>()
-	.tab(evolutionTab)
-	.rarity(<constant:minecraft:item/rarity:common>)
-	.durability(484)
-	.build("knife/steel_knife");
 
 // Immersive Engineering
 val diamond_rod = <factory:item>.typed<Basic>()

@@ -121,7 +121,7 @@ var removeJeiIngradient = [
 	// Easy Villagers
 	"easy_villagers:iron_farm",
 	// Electrodynamics
-	//"electrodynamics:creativepowersource",
+	"electrodynamics:creativepowersource",
 	"electrodynamics:creativefluidsource",
 	"electrodynamics:dustsalt",
 	// Elemental Craft

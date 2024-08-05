@@ -30,14 +30,37 @@ i_evolution_craft(<item:contenttweaker:masterwork_part>, "Masterwork Part this i
 i_evolution_craft(<item:contenttweaker:eternal_part>, "Eternal Part this is ingradient for advance recipe.");
 i_evolution_craft(<item:contenttweaker:ultimate_part>, "Ultimate Part this is ingradient for advance recipe.");
 
-i_evolution_craft(<item:contenttweaker:coin_common>, "Using for buy quest items.");
-i_evolution_craft(<item:contenttweaker:coin_rare>, "Using for buy quest items.");
-i_evolution_craft(<item:contenttweaker:coin_legendary>, "Using for buy quest items.");
-i_evolution_craft(<item:contenttweaker:coin_mythic>, "Using for buy quest items.");
+// Evolution Craft - Books
+var addingBookInfo = [
+	"evolution_craft/book/cursed_book",
+	"evolution_craft/book/grimoire_book",
+	"evolution_craft/book/herobrines_book",
+	"evolution_craft/book/knowledge_book",
+	"evolution_craft/book/monster_book",
+	"evolution_craft/book/necronomicon_book",
+	"evolution_craft/book/notchs_book",
+	"evolution_craft/book/book.old_book",
+	"evolution_craft/book/book.rexs_book"
+];
+for book_add_info in addingBookInfo {
+	JEI.addDescription(<item:contenttweaker:${book_add_info}>, ("This is a part of Book Set, random Leggendary drop in Abandoned Mineshaft, Bastion, Jungle Temple, Pillager Outpost, Shipwreck Treasure, Stronghold Library, Woodland Mansion, World Treasure "));
+}
 
+// Evolution Craft - Coins
+var addingCoinInfo = [
+	"coin_common",
+	"coin_rare",
+	"coin_legendary",
+	"coin_mythic"
+];
+for coin_add_info in addingCoinInfo {
+	JEI.addDescription(<item:contenttweaker:${coin_add_info}>, ("Using for buy quest items."));
+}
+
+// Evolution Craft - Knife
 var addingKnifeInfo = [
-	"knife/copper_knife",
-	"knife/steel_knife"
+	"evolution_craft/knife/copper_knife",
+	"evolution_craft/knife/steel_knife"
 ];
 for knife_add_info in addingKnifeInfo {
 	JEI.addDescription(<item:contenttweaker:${knife_add_info}>, ("Knives are lightweight melee weapon. They can harvest Straw from grasses, and guarantee secondary drops from animals."));

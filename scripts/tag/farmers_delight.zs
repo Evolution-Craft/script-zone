@@ -47,8 +47,8 @@ for tag_tray_heat_sources in addingTrayHeatSources {
 var addingToolsKnives = [
 	"enlightened_end:adamantite_knife",
 	"croptopia:knife",
-	"contenttweaker:knife/copper_knife",
-	"contenttweaker:knife/steel_knife",
+	"contenttweaker:evolution_craft/knife/copper_knife",
+	"contenttweaker:evolution_craft/knife/steel_knife",
 	"fiow:flint_knife",
 	"tconstruct:dagger"
 ];

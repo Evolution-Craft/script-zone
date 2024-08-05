@@ -25,10 +25,39 @@
 	"item.contenttweaker.ae2.crushed_charged_certus_quartz": "Crushed Charged Certus Quartz",
 	"item.contenttweaker.ae2.crushed_fluix": "Crushed Fluix",
 	"item.contenttweaker.ae2.crushed_quartz": "Crushed Quartz",
-	
-	"item.contenttweaker.knife.copper_knife": "Copper Knife",
-	"item.contenttweaker.knife.steel_knife": "Steel Knife",
-	
+
+	"item.contenttweaker.evolution_craft.book.cursed_book": "Cursed Book",
+	"item.contenttweaker.evolution_craft.book.grimoire_book": "Grimoire Book",
+	"item.contenttweaker.evolution_craft.book.herobrines_book": "Herobrines Book",
+	"item.contenttweaker.evolution_craft.book.knowledge_book": "Knowledge Book",
+	"item.contenttweaker.evolution_craft.book.monster_book": "Monster Book",
+	"item.contenttweaker.evolution_craft.book.necronomicon_book": "Necronomicon Book",
+	"item.contenttweaker.evolution_craft.book.notchs_book": "Notchs Book",
+	"item.contenttweaker.evolution_craft.book.old_book": "Old Book",
+	"item.contenttweaker.evolution_craft.book.rexs_book": "Rexs Book",
+
+	"item.contenttweaker.evolution_craft.fragment.amethyst_fragment": "Amethyst Fragment",
+	"item.contenttweaker.evolution_craft.fragment.crystal_fragment": "Crystal Fragment",
+	"item.contenttweaker.evolution_craft.fragment.diamond_fragment": "Diamond Fragment",
+	"item.contenttweaker.evolution_craft.fragment.emerald_fragment": "Emerald Fragment",
+	"item.contenttweaker.evolution_craft.fragment.hematite_fragment": "Hematite Fragment",
+	"item.contenttweaker.evolution_craft.fragment.ruby_fragment": "Ruby Fragment",
+	"item.contenttweaker.evolution_craft.fragment.sapphire_fragment": "Sapphire Fragment",
+	"item.contenttweaker.evolution_craft.fragment.topaz_fragment": "Topaz Fragment",
+	"item.contenttweaker.evolution_craft.fragment.tourmaline_fragment": "Tourmaline Fragment",
+
+	"item.contenttweaker.evolution_craft.gem.agate_gem": "Agate Gem",
+	"item.contenttweaker.evolution_craft.gem.amber_gem": "Amber Gem",
+	"item.contenttweaker.evolution_craft.gem.black_obsidian_gem": "Black Obsidian Gem",
+	"item.contenttweaker.evolution_craft.gem.desert_rose_gem": "Desert Rose Gem",
+	"item.contenttweaker.evolution_craft.gem.jade_gem": "Jade Gem",
+	"item.contenttweaker.evolution_craft.gem.magnetite_gem": "Magnetite Gem",
+	"item.contenttweaker.evolution_craft.gem.malachit_gem": "Malachit Gem",
+	"item.contenttweaker.evolution_craft.gem.opal_gem": "Opal Gem",
+
+	"item.contenttweaker.evolution_craft.knife.copper_knife": "Copper Knife",
+	"item.contenttweaker.evolution_craft.knife.steel_knife": "Steel Knife",
+
 	"item.contenttweaker.immersiveengineering.diamond_rod": "Diamond Rod",
 	"item.contenttweaker.immersiveengineering.emerald_rod": "Emerald Rod",
 

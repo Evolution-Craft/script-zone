@@ -249,8 +249,8 @@ for composterAddItemMaterial, composterAddItemValue in composterAddItem {
 
 // Blast Furnace
 blastFurnace.addRecipe("blast_furnace/aquaculturedelight_neptunium_knife", <item:aquaculture:neptunium_nugget>, <item:aquaculturedelight:neptunium_knife>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/contenttweaker_copper_knife", <item:thermal:copper_nugget>, <item:contenttweaker:knife/copper_knife>, 0.1, 100);
-blastFurnace.addRecipe("blast_furnace/contenttweaker_steel_knife", <item:thermal:steel_nugget>, <item:contenttweaker:knife/steel_knife>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/contenttweaker_copper_knife", <item:thermal:copper_nugget>, <item:contenttweaker:evolution_craft/knife/copper_knife>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/contenttweaker_steel_knife", <item:thermal:steel_nugget>, <item:contenttweaker:evolution_craft/knife/steel_knife>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create_crushed_certus_quartz", <item:ae2:certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_certus_quartz>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create_charged_crushed_certus_quartz", <item:ae2:charged_certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_charged_certus_quartz>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create_crushed_cobalt_ore", <item:tconstruct:cobalt_ingot>, <item:contenttweaker:tconstruct/crushed_cobalt_ore>, 0.1, 100);
@@ -304,8 +304,8 @@ for furnace_concrete_dye_add_item in Constant.packColours {
 furnace.addRecipe("furnace/alexsmobs_fish_bones", <item:minecraft:bone_meal> * 3, <item:alexsmobs:fish_bones>, 0.05, 200);
 furnace.addRecipe("furnace/aquaculture_fish_bones", <item:minecraft:bone_meal> * 3, <item:aquaculture:fish_bones>, 0.05, 200);
 furnace.addRecipe("furnace/aquaculturedelight_neptunium_knife", <item:aquaculture:neptunium_nugget>, <item:aquaculturedelight:neptunium_knife>, 0.1, 200);
-furnace.addRecipe("furnace/contenttweaker_copper_knife", <item:thermal:copper_nugget>, <item:contenttweaker:knife/copper_knife>, 0.1, 200);
-furnace.addRecipe("furnace/contenttweaker_steel_knife", <item:thermal:steel_nugget>, <item:contenttweaker:knife/steel_knife>, 0.1, 200);
+furnace.addRecipe("furnace/contenttweaker_copper_knife", <item:thermal:copper_nugget>, <item:contenttweaker:evolution_craft/knife/copper_knife>, 0.1, 200);
+furnace.addRecipe("furnace/contenttweaker_steel_knife", <item:thermal:steel_nugget>, <item:contenttweaker:evolution_craft/knife/steel_knife>, 0.1, 200);
 furnace.addRecipe("furnace/create_crushed_certus_quartz", <item:ae2:certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_certus_quartz>, 0.1, 200);
 furnace.addRecipe("furnace/create_charged_crushed_certus_quartz", <item:ae2:charged_certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_charged_certus_quartz>, 0.1, 200);
 furnace.addRecipe("furnace/create_crushed_cobalt_ore", <item:tconstruct:cobalt_ingot>, <item:contenttweaker:tconstruct/crushed_cobalt_ore>, 0.1, 200);

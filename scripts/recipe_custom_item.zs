@@ -22,6 +22,7 @@ craftingTable.addShaped("evolution_craft_lapis_iron_compound", <item:contenttwea
 	[<tag:items:forge:dusts/lapis>, <tag:items:forge:ingots/iron>, <tag:items:forge:dusts/lapis>],
 	[<tag:items:forge:dusts/lapis>, <tag:items:forge:dusts/lapis>, <tag:items:forge:dusts/lapis>]
 ]);
+
 craftingTable.addShaped("evolution_craft_redstone_iron_compound", <item:contenttweaker:redstone_iron_compound>, [
 	[<tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>],
 	[<tag:items:forge:dusts/redstone>, <tag:items:forge:ingots/iron>, <tag:items:forge:dusts/redstone>],
