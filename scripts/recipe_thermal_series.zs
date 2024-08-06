@@ -28,9 +28,6 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 val expert_ingradient_to_plate = packModeSetting.packModeSettingPlateMultiPress();
 
-// Shapeless
-//craftingTable.addShapeless("thermal_frost_melon_unblock", <item:thermal:frost_melon_slice> * 9, [<item:thermal:frost_melon>]);
-
 // Shaped
 craftingTable.addShaped("thermal/press_rod_die", <item:contenttweaker:thermal/press_rod_die>, [
 	[<item:minecraft:air>, <tag:items:forge:plates/invar>, <item:minecraft:air>],

@@ -49,6 +49,8 @@ var addingToolsKnives = [
 	"croptopia:knife",
 	"contenttweaker:evolution_craft/knife/copper_knife",
 	"contenttweaker:evolution_craft/knife/steel_knife",
+	"contenttweaker:evolution_craft/knife/stone_knife",
+	"contenttweaker:evolution_craft/knife/wooden_knife",
 	"fiow:flint_knife",
 	"tconstruct:dagger"
 ];

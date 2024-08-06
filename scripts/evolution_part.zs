@@ -294,6 +294,18 @@ val steel_knife = <factory:item>.typed<Basic>()
 	.durability(484)
 	.build("evolution_craft/knife/steel_knife");
 
+val stone_knife = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.durability(45)
+	.build("evolution_craft/knife/stone_knife");
+
+val wooden_knife = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.durability(20)
+	.build("evolution_craft/knife/wooden_knife");
+
 // Ae2 Integration
 val crushed_certus_quartz = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)

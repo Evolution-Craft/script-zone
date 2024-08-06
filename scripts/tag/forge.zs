@@ -47,62 +47,61 @@ for tag_armor_silver_forge in addingArmorSilverForge {
 }
 
 var addingArmorWoodForge = [
-	"woodarmor:oak",
-	"woodarmor:birch",
-	"woodarmor:jungle",
 	"woodarmor:acacia",
+	"woodarmor:birch",
+	"woodarmor:crimson",
 	"woodarmor:dark_oak",
+	"woodarmor:jungle",
+	"woodarmor:oak",
 	"woodarmor:spruce",
-	"woodarmor:warped",
-	"woodarmor:crimson"
+	"woodarmor:warped"
 ];
 for tag_armor_wood_forge in addingArmorWoodForge {
 	<tag:items:forge:armor>.add(<item:${tag_armor_wood_forge}_helmet>);
 	<tag:items:forge:armor>.add(<item:${tag_armor_wood_forge}_chestplate>);
 	<tag:items:forge:armor>.add(<item:${tag_armor_wood_forge}_leggings>);
 	<tag:items:forge:armor>.add(<item:${tag_armor_wood_forge}_boots>);
-	if (tag_armor_wood_forge == "oak") {
-		<tag:items:forge:armor/oak>.add(<item:${tag_armor_wood_forge}_helmet>);
-		<tag:items:forge:armor/oak>.add(<item:${tag_armor_wood_forge}_chestplate>);
-		<tag:items:forge:armor/oak>.add(<item:${tag_armor_wood_forge}_leggings>);
-		<tag:items:forge:armor/oak>.add(<item:${tag_armor_wood_forge}_boots>);
-	} else if (tag_armor_wood_forge == "birch") {
-		<tag:items:forge:armor/birch>.add(<item:${tag_armor_wood_forge}_helmet>);
-		<tag:items:forge:armor/birch>.add(<item:${tag_armor_wood_forge}_chestplate>);
-		<tag:items:forge:armor/birch>.add(<item:${tag_armor_wood_forge}_leggings>);
-		<tag:items:forge:armor/birch>.add(<item:${tag_armor_wood_forge}_boots>);
-	} else if (tag_armor_wood_forge == "jungle") {
-		<tag:items:forge:armor/jungle>.add(<item:${tag_armor_wood_forge}_helmet>);
-		<tag:items:forge:armor/jungle>.add(<item:${tag_armor_wood_forge}_chestplate>);
-		<tag:items:forge:armor/jungle>.add(<item:${tag_armor_wood_forge}_leggings>);
-		<tag:items:forge:armor/jungle>.add(<item:${tag_armor_wood_forge}_boots>);
-	} else if (tag_armor_wood_forge == "acacia") {
-		<tag:items:forge:armor/acacia>.add(<item:${tag_armor_wood_forge}_helmet>);
-		<tag:items:forge:armor/acacia>.add(<item:${tag_armor_wood_forge}_chestplate>);
-		<tag:items:forge:armor/acacia>.add(<item:${tag_armor_wood_forge}_leggings>);
-		<tag:items:forge:armor/acacia>.add(<item:${tag_armor_wood_forge}_boots>);
-	} else if (tag_armor_wood_forge == "dark_oak") {
-		<tag:items:forge:armor/dark_oak>.add(<item:${tag_armor_wood_forge}_helmet>);
-		<tag:items:forge:armor/dark_oak>.add(<item:${tag_armor_wood_forge}_chestplate>);
-		<tag:items:forge:armor/dark_oak>.add(<item:${tag_armor_wood_forge}_leggings>);
-		<tag:items:forge:armor/dark_oak>.add(<item:${tag_armor_wood_forge}_boots>);
-	} else if (tag_armor_wood_forge == "spruce") {
-		<tag:items:forge:armor/spruce>.add(<item:${tag_armor_wood_forge}_helmet>);
-		<tag:items:forge:armor/spruce>.add(<item:${tag_armor_wood_forge}_chestplate>);
-		<tag:items:forge:armor/spruce>.add(<item:${tag_armor_wood_forge}_leggings>);
-		<tag:items:forge:armor/spruce>.add(<item:${tag_armor_wood_forge}_boots>);
-	} else if (tag_armor_wood_forge == "warped") {
-		<tag:items:forge:armor/warped>.add(<item:${tag_armor_wood_forge}_helmet>);
-		<tag:items:forge:armor/warped>.add(<item:${tag_armor_wood_forge}_chestplate>);
-		<tag:items:forge:armor/warped>.add(<item:${tag_armor_wood_forge}_leggings>);
-		<tag:items:forge:armor/warped>.add(<item:${tag_armor_wood_forge}_boots>);
-	} else {
-		<tag:items:forge:armor/crimson>.add(<item:${tag_armor_wood_forge}_helmet>);
-		<tag:items:forge:armor/crimson>.add(<item:${tag_armor_wood_forge}_chestplate>);
-		<tag:items:forge:armor/crimson>.add(<item:${tag_armor_wood_forge}_leggings>);
-		<tag:items:forge:armor/crimson>.add(<item:${tag_armor_wood_forge}_boots>);
-	}
 }
+
+<tag:items:forge:armor/acacia>.add(<item:woodarmor:acacia_helmet>);
+<tag:items:forge:armor/acacia>.add(<item:woodarmor:acacia_chestplate>);
+<tag:items:forge:armor/acacia>.add(<item:woodarmor:acacia_leggings>);
+<tag:items:forge:armor/acacia>.add(<item:woodarmor:acacia_boots>);
+
+<tag:items:forge:armor/birch>.add(<item:woodarmor:birch_helmet>);
+<tag:items:forge:armor/birch>.add(<item:woodarmor:birch_chestplate>);
+<tag:items:forge:armor/birch>.add(<item:woodarmor:birch_leggings>);
+<tag:items:forge:armor/birch>.add(<item:woodarmor:birch_boots>);
+
+<tag:items:forge:armor/crimson>.add(<item:woodarmor:crimson_helmet>);
+<tag:items:forge:armor/crimson>.add(<item:woodarmor:crimson_chestplate>);
+<tag:items:forge:armor/crimson>.add(<item:woodarmor:crimson_leggings>);
+<tag:items:forge:armor/crimson>.add(<item:woodarmor:crimson_boots>);
+
+<tag:items:forge:armor/dark_oak>.add(<item:woodarmor:dark_oak_helmet>);
+<tag:items:forge:armor/dark_oak>.add(<item:woodarmor:dark_oak_chestplate>);
+<tag:items:forge:armor/dark_oak>.add(<item:woodarmor:dark_oak_leggings>);
+<tag:items:forge:armor/dark_oak>.add(<item:woodarmor:dark_oak_boots>);
+
+<tag:items:forge:armor/jungle>.add(<item:woodarmor:jungle_helmet>);
+<tag:items:forge:armor/jungle>.add(<item:woodarmor:jungle_chestplate>);
+<tag:items:forge:armor/jungle>.add(<item:woodarmor:jungle_leggings>);
+<tag:items:forge:armor/jungle>.add(<item:woodarmor:jungle_boots>);
+
+<tag:items:forge:armor/oak>.add(<item:woodarmor:oak_helmet>);
+<tag:items:forge:armor/oak>.add(<item:woodarmor:oak_chestplate>);
+<tag:items:forge:armor/oak>.add(<item:woodarmor:oak_leggings>);
+<tag:items:forge:armor/oak>.add(<item:woodarmor:oak_boots>);
+
+<tag:items:forge:armor/spruce>.add(<item:woodarmor:spruce_helmet>);
+<tag:items:forge:armor/spruce>.add(<item:woodarmor:spruce_chestplate>);
+<tag:items:forge:armor/spruce>.add(<item:woodarmor:spruce_leggings>);
+<tag:items:forge:armor/spruce>.add(<item:woodarmor:spruce_boots>);
+
+<tag:items:forge:armor/warped>.add(<item:woodarmor:warped_helmet>);
+<tag:items:forge:armor/warped>.add(<item:woodarmor:warped_chestplate>);
+<tag:items:forge:armor/warped>.add(<item:woodarmor:warped_leggings>);
+<tag:items:forge:armor/warped>.add(<item:woodarmor:warped_boots>);
 
 var addingArmorStoneForge = [
 	"woodarmor:stone_boots",
@@ -414,8 +413,6 @@ for tag_rods_forge in addingRodsForge {
 	<tag:items:forge:rods>.add(<item:${tag_rods_forge}>);
 }
 var addingRodsAllForge = [
-	//"contenttweaker:immersiveengineering/diamond_rod",
-	//"contenttweaker:immersiveengineering/emerald_rod",
 	"electrodynamics:rodhslasteel",
 	"electrodynamics:rodstainlesssteel",
 	"electrodynamics:rodtitaniumcarbide"
@@ -567,6 +564,8 @@ var addingToolsKnivesForge = [
 	"enlightened_end:adamantite_knife",
 	"contenttweaker:evolution_craft/knife/copper_knife",
 	"contenttweaker:evolution_craft/knife/steel_knife",
+	"contenttweaker:evolution_craft/knife/stone_knife",
+	"contenttweaker:evolution_craft/knife/wooden_knife",
 	"fiow:flint_knife",
 	"tconstruct:dagger"
 ];

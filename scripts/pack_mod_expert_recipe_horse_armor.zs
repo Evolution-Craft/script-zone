@@ -30,8 +30,6 @@ import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.recipe.SmithingRecipeManager;
 import crafttweaker.api.tag.manager.ITagManager;
 
-val pack_mode_expert_enable = true;
-
 var shapedHorseArmorVarFunction as function(usualOut as IItemStack, inputs as IItemStack[][]) as IItemStack = (usualOut as IItemStack, inputs as IItemStack[][]) => {
 	var oldDamage = inputs[1][1].damage;
 	if oldDamage < 0 {
