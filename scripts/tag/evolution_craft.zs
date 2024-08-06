@@ -24,8 +24,8 @@ var addingEvolutionCraftBook = [
 	"contenttweaker:evolution_craft/book/monster_book",
 	"contenttweaker:evolution_craft/book/necronomicon_book",
 	"contenttweaker:evolution_craft/book/notchs_book",
-	"contenttweaker:evolution_craft/book/book.old_book",
-	"contenttweaker:evolution_craft/book/book.rexs_book"
+	"contenttweaker:evolution_craft/book/old_book",
+	"contenttweaker:evolution_craft/book/rexs_book"
 ];
 for tag_evolution_craft_book in addingEvolutionCraftBook {
 	<tag:items:evolution_craft:books>.add(<item:${tag_evolution_craft_book}>);

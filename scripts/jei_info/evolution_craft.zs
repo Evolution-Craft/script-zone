@@ -37,8 +37,8 @@ var addingBookInfo = [
 	"evolution_craft/book/monster_book",
 	"evolution_craft/book/necronomicon_book",
 	"evolution_craft/book/notchs_book",
-	"evolution_craft/book/book.old_book",
-	"evolution_craft/book/book.rexs_book"
+	"evolution_craft/book/old_book",
+	"evolution_craft/book/rexs_book"
 ];
 for book_add_info in addingBookInfo {
 	packJeiDescripton(<item:contenttweaker:${book_add_info}>, "This is a part of Book Set, random Leggendary drop in Abandoned Mineshaft, Bastion, Jungle Temple, Pillager Outpost, Shipwreck Treasure, Stronghold Library, Woodland Mansion, World Treasure ");
@@ -58,7 +58,9 @@ for coin_add_info in addingCoinInfo {
 // Evolution Craft - Knife
 var addingKnifeInfo = [
 	"evolution_craft/knife/copper_knife",
-	"evolution_craft/knife/steel_knife"
+	"evolution_craft/knife/steel_knife",
+	"evolution_craft/knife/stone_knife",
+	"evolution_craft/knife/wooden_knife"
 ];
 for knife_add_info in addingKnifeInfo {
 	packJeiDescripton(<item:contenttweaker:${knife_add_info}>, "Knives are lightweight melee weapon. They can harvest Straw from grasses, and guarantee secondary drops from animals.");

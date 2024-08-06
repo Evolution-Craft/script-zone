@@ -10,6 +10,7 @@
  * v0.4 : Add Custom Plates.
  * v0.5 : Add Custom Knife.
  * v0.6 : Add Custom Tinkers Food.
+ * v0.7 : Correct Knife Implementation and Add Custom Books, Fragments, Gems
  */
 
 println("===============================================================");
@@ -23,8 +24,7 @@ println("===============================================================");
 #loader contenttweaker
 
 import contenttweaker.builder.vanilla.item.Basic;
-//import contenttweaker.builder.vanilla.item.Sword;
-import contenttweaker.builder.vanilla.item.ToolBuilder;
+import contenttweaker.builder.vanilla.item.Sword;
 import contenttweaker.object.vanilla.property.StandardItemProperties;
 
 val evolutionCreativeTab = <factory:creative_tab>.create("evolutionTab", <item:create:experience_nugget>);
@@ -277,33 +277,40 @@ val opal_gem = <factory:item>.typed<Basic>()
 	.build("evolution_craft/gem/opal_gem");
 
 // Knife
-val copper_knife = <factory:item>.typed<Basic>()
+val copper_knife = <factory:item>.typed<Sword>()
 	.tab(evolutionTab)
+	.tier(<tooltier:minecraft:stone>)
+	.baseAttackDamage(2)
+	.attackSpeed(-2.0f)
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.durability(150)
-/*	withType<ItemBuilderTool>()
-	.withToolType(<tooltype:sword>, 3, 4.0F) //Shovel harvest level 3 and destroy speed 4.0
-	.withAttackDamage(10.0F)
-	.withAttackSpeed(5.0F)
-	.withDurabilityCostAttack(1)*/
 	.build("evolution_craft/knife/copper_knife");
 
-val steel_knife = <factory:item>.typed<Basic>()
+val steel_knife = <factory:item>.typed<Sword>()
 	.tab(evolutionTab)
+	.tier(<tooltier:minecraft:iron>)
+	.baseAttackDamage(3)
+	.attackSpeed(-2.0f)
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.durability(484)
 	.build("evolution_craft/knife/steel_knife");
 
-val stone_knife = <factory:item>.typed<Basic>()
+val stone_knife = <factory:item>.typed<Sword>()
 	.tab(evolutionTab)
+	.tier(<tooltier:minecraft:stone>)
+	.baseAttackDamage(1)
+	.attackSpeed(-2.0f)
 	.rarity(<constant:minecraft:item/rarity:common>)
-	.durability(45)
+	.durability(128)
 	.build("evolution_craft/knife/stone_knife");
 
-val wooden_knife = <factory:item>.typed<Basic>()
+val wooden_knife = <factory:item>.typed<Sword>()
 	.tab(evolutionTab)
+	.tier(<tooltier:minecraft:wood>)
+	.baseAttackDamage(1)
+	.attackSpeed(-2.0f)
 	.rarity(<constant:minecraft:item/rarity:common>)
-	.durability(20)
+	.durability(58)
 	.build("evolution_craft/knife/wooden_knife");
 
 // Ae2 Integration

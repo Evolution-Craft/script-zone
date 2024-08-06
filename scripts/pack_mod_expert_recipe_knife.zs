@@ -25,6 +25,16 @@ craftingTable.addShaped("pack_expert_crafting_knife/steel_knife", <item:contentt
 	[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
+craftingTable.addShaped("pack_expert_crafting_knife/stone_knife", <item:contenttweaker:evolution_craft/knife/stone_knife>, [
+	[<item:minecraft:air>, <tag:items:forge:cobblestone>, <item:minecraft:air>],
+	[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+craftingTable.addShaped("pack_expert_crafting_knife/wooden_knife", <item:contenttweaker:evolution_craft/knife/wooden_knife>, [
+	[<item:minecraft:air>, <tag:items:minecraft:planks>, <item:minecraft:air>],
+	[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
 
 if (packModeSetting.packModeSettingKnife() == true) {
 

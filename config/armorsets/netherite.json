@@ -3,6 +3,9 @@
   "performanceMode": true,
   "head": {
     "itemKey": "minecraft:netherite_helmet",
+    "mixAndMatch": [
+      "create:netherite_diving_helmet"
+    ],
     "mustBeEmpty": false
   },
   "chest": {
@@ -15,6 +18,9 @@
   },
   "boots": {
     "itemKey": "minecraft:netherite_boots",
+    "mixAndMatch": [
+      "create:netherite_diving_boots"
+    ],
     "mustBeEmpty": false
   },
   "partialBonusRequiredAmount": 2,
