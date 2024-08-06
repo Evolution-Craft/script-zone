@@ -5,12 +5,11 @@
  *
  * CHANGELOG:
  * v0.1 : First Issue.
+ * v0.2 : Rework.
  */
 
 Globals.startScript("jei_info/undergardendelight");
 Globals.priorityScript("Null");
-
-import mods.jei.JEI as JEI;
 
 var addingUndergardenDelightKnifeInfo = [
 	"cloggrum_knife",
@@ -19,7 +18,7 @@ var addingUndergardenDelightKnifeInfo = [
 	"utherium_knife"
 ];
 for undergardendelight_knife_add_info in addingUndergardenDelightKnifeInfo {
-	JEI.addDescription(<item:undergardendelight:${undergardendelight_knife_add_info}>, ("Knives are lightweight melee weapon. They can harvest Straw from grasses, and guarantee secondary drops from animals."));
+	packJeiDescripton(<item:undergardendelight:${undergardendelight_knife_add_info}>, "Knives are lightweight melee weapon. They can harvest Straw from grasses, and guarantee secondary drops from animals.");
 }
 
 Globals.endScript("jei_info/undergardendelight");

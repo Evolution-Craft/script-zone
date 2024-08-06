@@ -248,6 +248,8 @@ for composterAddItemMaterial, composterAddItemValue in composterAddItem {
 }
 
 // Blast Furnace
+blastFurnace.removeByName("aquaculture:neptunium_ingot_from_blasting");
+blastFurnace.addRecipe("blast_furnace/aquaculture_neptunium_fillet_knife", <item:aquaculture:neptunium_nugget>, <item:aquaculture:neptunium_fillet_knife>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/aquaculturedelight_neptunium_knife", <item:aquaculture:neptunium_nugget>, <item:aquaculturedelight:neptunium_knife>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/contenttweaker_copper_knife", <item:thermal:copper_nugget>, <item:contenttweaker:evolution_craft/knife/copper_knife>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/contenttweaker_steel_knife", <item:thermal:steel_nugget>, <item:contenttweaker:evolution_craft/knife/steel_knife>, 0.1, 100);
@@ -262,7 +264,8 @@ blastFurnace.addRecipe("blast_furnace/create_crushed_queens_slime", <item:tconst
 blastFurnace.addRecipe("blast_furnace/create_crushed_rose_gold", <item:tconstruct:rose_gold_ingot>, <item:contenttweaker:tconstruct/crushed_rose_gold>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create_crushed_slimesteel", <item:tconstruct:slimesteel_ingot>, <item:contenttweaker:tconstruct/crushed_slimesteel>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create_raw_zinc_block", <item:create:zinc_block>, <item:create:raw_zinc_block>, 6.0, 200);
-blastFurnace.addRecipe("blast_furnace/croptopia_knife", <item:minecraft:iron_nugget>, <item:croptopia:knife>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/croptopia_knife", <item:minecraft:iron_ingot>, <item:croptopia:knife>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/enlightened_end_adamantite_knife", <item:enlightened_end:adamantite_nugget>, <item:enlightened_end:adamantite_knife>, 0.1, 100);
 blastFurnace.removeByName("exlinecopperequipment:copper_boots_blast");
 blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 100);
 blastFurnace.removeByName("exlinecopperequipment:copper_chest_blast");
@@ -273,11 +276,13 @@ blastFurnace.removeByName("exlinecopperequipment:copper_horse_armor_blast");
 blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_horse_armor", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_horse_armor>, 0.1, 100);
 blastFurnace.removeByName("exlinecopperequipment:copper_leggs_blast");
 blastFurnace.addRecipe("blast_furnace/exlinecopperequipment_copper_leggings", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_leggings>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/farmersdelight_netherite_knife", <item:thermal:netherite_nugget>, <item:farmersdelight:netherite_knife>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/galosphere_sterling_boots", <item:thermal:silver_nugget>, <item:galosphere:sterling_boots>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/galosphere_sterling_chestplate", <item:thermal:silver_nugget>, <item:galosphere:sterling_chestplate>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/galosphere_sterling_helmet", <item:thermal:silver_nugget>, <item:galosphere:sterling_helmet>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/galosphere_sterling_horse_armor", <item:thermal:silver_nugget>, <item:galosphere:sterling_horse_armor>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/galosphere_sterling_leggings", <item:thermal:silver_nugget>, <item:galosphere:sterling_leggings>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/galosphere_delight_silver_knife", <item:thermal:silver_nugget>, <item:galosphere_delight:silver_knife>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/infernalexp_silt", <item:minecraft:glass>, <item:infernalexp:silt>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/mekanism_ingot_refined_glowstone_from_crushed_refined_glowstone", <item:mekanism:ingot_refined_glowstone>, <item:contenttweaker:mekanism/crushed_refined_glowstone>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/mekanism_ingot_refined_obsidian_from_crushed_refined_obsidian", <item:mekanism:ingot_refined_obsidian>, <item:contenttweaker:mekanism/crushed_refined_obsidian>, 0.1, 100);
@@ -303,6 +308,7 @@ for furnace_concrete_dye_add_item in Constant.packColours {
 
 furnace.addRecipe("furnace/alexsmobs_fish_bones", <item:minecraft:bone_meal> * 3, <item:alexsmobs:fish_bones>, 0.05, 200);
 furnace.addRecipe("furnace/aquaculture_fish_bones", <item:minecraft:bone_meal> * 3, <item:aquaculture:fish_bones>, 0.05, 200);
+furnace.addRecipe("furnace/aquaculture_neptunium_fillet_knife", <item:aquaculture:neptunium_nugget>, <item:aquaculture:neptunium_fillet_knife>, 0.1, 200);
 furnace.addRecipe("furnace/aquaculturedelight_neptunium_knife", <item:aquaculture:neptunium_nugget>, <item:aquaculturedelight:neptunium_knife>, 0.1, 200);
 furnace.addRecipe("furnace/contenttweaker_copper_knife", <item:thermal:copper_nugget>, <item:contenttweaker:evolution_craft/knife/copper_knife>, 0.1, 200);
 furnace.addRecipe("furnace/contenttweaker_steel_knife", <item:thermal:steel_nugget>, <item:contenttweaker:evolution_craft/knife/steel_knife>, 0.1, 200);
@@ -316,7 +322,8 @@ furnace.addRecipe("furnace/create_crushed_quartz", <item:minecraft:quartz>, <ite
 furnace.addRecipe("furnace/create_crushed_queens_slime", <item:tconstruct:queens_slime_ingot>, <item:contenttweaker:tconstruct/crushed_queens_slime>, 0.1, 200);
 furnace.addRecipe("furnace/create_crushed_rose_gold", <item:tconstruct:rose_gold_ingot>, <item:contenttweaker:tconstruct/crushed_rose_gold>, 0.1, 200);
 furnace.addRecipe("furnace/create_crushed_slimesteel", <item:tconstruct:slimesteel_ingot>, <item:contenttweaker:tconstruct/crushed_slimesteel>, 0.1, 200);
-furnace.addRecipe("furnace/croptopia_knife", <item:minecraft:iron_nugget>, <item:croptopia:knife>, 0.1, 200);
+furnace.addRecipe("furnace/croptopia_knife", <item:minecraft:iron_ingot>, <item:croptopia:knife>, 0.1, 200);
+furnace.addRecipe("furnace/enlightened_end_adamantite_knife", <item:enlightened_end:adamantite_nugget>, <item:enlightened_end:adamantite_knife>, 0.1, 200);
 furnace.removeByName("exlinecopperequipment:copper_boots_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_boots", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_boots>, 0.1, 200);
 furnace.removeByName("exlinecopperequipment:copper_chest_smelt");
@@ -327,11 +334,13 @@ furnace.removeByName("exlinecopperequipment:copper_horse_armor_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_horse_armor", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_horse_armor>, 0.1, 200);
 furnace.removeByName("exlinecopperequipment:copper_leggs_smelt");
 furnace.addRecipe("furnace/exlinecopperequipment_copper_leggings", <item:thermal:copper_nugget>, <item:exlinecopperequipment:copper_leggings>, 0.1, 200);
+furnace.addRecipe("furnace/farmersdelight_netherite_knife", <item:thermal:netherite_nugget>, <item:farmersdelight:netherite_knife>, 0.1, 200);
 furnace.addRecipe("furnace/galosphere_sterling_boots", <item:thermal:silver_nugget>, <item:galosphere:sterling_boots>, 0.1, 200);
 furnace.addRecipe("furnace/galosphere_sterling_chestplate", <item:thermal:silver_nugget>, <item:galosphere:sterling_chestplate>, 0.1, 200);
 furnace.addRecipe("furnace/galosphere_sterling_helmet", <item:thermal:silver_nugget>, <item:galosphere:sterling_helmet>, 0.1, 200);
 furnace.addRecipe("furnace/galosphere_sterling_horse_armor", <item:thermal:silver_nugget>, <item:galosphere:sterling_horse_armor>, 0.1, 200);
 furnace.addRecipe("furnace/galosphere_sterling_leggings", <item:thermal:silver_nugget>, <item:galosphere:sterling_leggings>, 0.1, 200);
+furnace.addRecipe("furnace/galosphere_delight_silver_knife", <item:thermal:silver_nugget>, <item:galosphere_delight:silver_knife>, 0.1, 200);
 furnace.addRecipe("furnace/mekanism_ingot_refined_glowstone_from_crushed_refined_glowstone", <item:mekanism:ingot_refined_glowstone>, <item:contenttweaker:mekanism/crushed_refined_glowstone>, 0.1, 200);
 furnace.addRecipe("furnace/mekanism_ingot_refined_obsidian_from_crushed_refined_obsidian", <item:mekanism:ingot_refined_obsidian>, <item:contenttweaker:mekanism/crushed_refined_obsidian>, 0.1, 200);
 furnace.addRecipe("furnace/minecraft_beetroot", <item:minecraft:sugar> * 2, <item:minecraft:beetroot>, 0.1, 60);

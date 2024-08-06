@@ -5,12 +5,11 @@
  *
  * CHANGELOG:
  * v0.1 : First Issue.
+ * v0.2 : Rework.
  */
 
 Globals.startScript("jei_info/ends_delight");
 Globals.priorityScript("Null");
-
-import mods.jei.JEI as JEI;
 
 var addingEndsDelightKnifeInfo = [
 	"dragon_egg_shell_knife",
@@ -19,7 +18,7 @@ var addingEndsDelightKnifeInfo = [
 	"purpur_knife"
 ];
 for ends_delight_knife_add_info in addingEndsDelightKnifeInfo {
-	JEI.addDescription(<item:ends_delight:${ends_delight_knife_add_info}>, ("Knives are lightweight melee weapon. They can harvest Straw from grasses, and guarantee secondary drops from animals."));
+	packJeiDescripton(<item:ends_delight:${ends_delight_knife_add_info}>, "Knives are lightweight melee weapon. They can harvest Straw from grasses, and guarantee secondary drops from animals.");
 }
 
 Globals.endScript("jei_info/ends_delight");

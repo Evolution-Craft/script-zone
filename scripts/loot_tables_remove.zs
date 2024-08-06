@@ -38,11 +38,11 @@ CommonLootModifiers.removeAll(
 	// Infernal Espanscion
 	<item:infernalexp:ascus_bomb>,
 	// Leathered Boots
-	<item:leatheredboots:leathered_chainmail_boots>,
-	<item:leatheredboots:leathered_iron_boots>,
-	<item:leatheredboots:leathered_gold_boots>,
-	<item:leatheredboots:leathered_diamond_boots>,
-	<item:leatheredboots:leathered_netherite_boots>,
+	<item:leathered_boots:leathered_chainmail_boots>,
+	<item:leathered_boots:leathered_iron_boots>,
+	<item:leathered_boots:leathered_gold_boots>,
+	<item:leathered_boots:leathered_diamond_boots>,
+	<item:leathered_boots:leathered_netherite_boots>,
 	// Library Ferret
 	<item:libraryferret:diamond_coins_jtl>,
 	<item:libraryferret:emerald_coins_jtl>,

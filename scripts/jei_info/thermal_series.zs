@@ -5,13 +5,12 @@
  *
  * CHANGELOG:
  * v0.1 : First Issue.
+ * v0.2 : Rework.
  */
 
 Globals.startScript("jei_info/thermal_series");
 Globals.priorityScript("Null");
 
-import mods.jei.JEI as JEI;
-
-JEI.addDescription(<item:thermal:compost>, ("Crafting in Batch Composter."));
+packJeiDescripton(<item:thermal:compost>, "Crafting in Batch Composter.");
 
 Globals.endScript("jei_info/thermal_series");

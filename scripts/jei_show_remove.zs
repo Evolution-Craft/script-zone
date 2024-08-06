@@ -220,11 +220,11 @@ var removeJeiIngradient = [
 	// Integrated Dynamics
 	"integrateddynamics:energy_battery_creative",
 	// Leathered Boots
-	"leatheredboots:leathered_chainmail_boots",
-	"leatheredboots:leathered_iron_boots",
-	"leatheredboots:leathered_gold_boots",
-	"leatheredboots:leathered_diamond_boots",
-	"leatheredboots:leathered_netherite_boots",
+	"leathered_boots:leathered_chainmail_boots",
+	"leathered_boots:leathered_iron_boots",
+	"leathered_boots:leathered_gold_boots",
+	"leathered_boots:leathered_diamond_boots",
+	"leathered_boots:leathered_netherite_boots",
 	// Mekanism
 	"mekanism:block_salt",
 	"mekanism:creative_bin",
