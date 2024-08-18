@@ -146,16 +146,16 @@ if (packModeSetting.packModeSettingArmors() == true) {
 	craftingTable.removeByName("exlinecopperequipment:copper_chestplate_recipe");
 	craftingTable.removeByName("exlinecopperequipment:copper_leggings_recipe");
 	craftingTable.removeByName("exlinecopperequipment:copper_boots_recipe");
-	var armorCastTconstructAdd = {
+	var armorCastIntegrationAdd = {
 		"sterling_helmet" : "copper_helmet",
 		"sterling_chestplate" : "copper_chestplate",
 		"sterling_leggings" : "copper_leggings",
 		"sterling_boots" : "copper_boots"
 	};
-	for armorCastTconstructAddCast, armorCastTconstructAddResult in armorCastTconstructAdd {
-		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting_armor/tconstruct_casting_table/" + armorCastTconstructAddResult, {
+	for armorCastIntegrationAddCast, armorCastIntegrationAddResult in armorCastIntegrationAdd {
+		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting_armor/tconstruct_casting_table/" + armorCastIntegrationAddResult, {
 			"cast": {
-				"item": "galosphere:" + armorCastTconstructAddCast
+				"item": "galosphere:" + armorCastIntegrationAddCast
 			},
 			"cast_consumed": true,
 			"fluid": {
@@ -163,9 +163,21 @@ if (packModeSetting.packModeSettingArmors() == true) {
 				"amount": 810
 			},
 			"result": {
-				"item": "exlinecopperequipment:" + armorCastTconstructAddResult
+				"item": "exlinecopperequipment:" + armorCastIntegrationAddResult
 			},
 			"cooling_time": 240
+		});
+		<recipetype:thermal:bottler>.addJsonRecipe("pack_expert_crafting_armor/thermal_machines/bottler/" + armorCastIntegrationAddResult, {
+			"ingredients": [{
+				"item": "galosphere:" + armorCastIntegrationAddCast
+			},
+			{
+				"fluid": "tconstruct:molten_copper",
+				"amount": 810
+			}],
+			"result": [{
+				"item": "exlinecopperequipment:" + armorCastIntegrationAddResult
+			}]
 		});
 	}
 

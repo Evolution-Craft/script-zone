@@ -5,6 +5,7 @@
  *
  * CHANGELOG:
  * v0.1 : Add Custom Arrow Recipe.
+ * v0.2 : Implementation "packAddRecipeApotheosisFletching" function.
  */
 
 Globals.startScript("recipe_apotheosis");
@@ -17,69 +18,15 @@ import crafttweaker.api.recipe.Replacer;
 // Fletching
 craftingTable.removeByName("archarsenal:arrow_up_vanilla_to_barbed");
 craftingTable.removeByName("archarsenal:barbed_arrow");
-<recipetype:apotheosis:fletching>.addJsonRecipe("fletching/barbed_arrow", {
-	"conditions": [{
-		"type": "apotheosis:module",
-		"module": "village"
-	}],
-	"ingredients": [{
-			"item": "minecraft:iron_nugget"
-		},
-		{
-			"item": "minecraft:stick"
-		},
-		{
-			"item": "minecraft:feather"
-		}
-	],
-	"result": {
-		"item": "archarsenal:barbed_arrow",
-		"count": 2
-	}
-});
+packAddRecipeApotheosisFletching("fletching/barbed_arrow", <item:minecraft:iron_nugget>, <item:minecraft:stick>, <item:minecraft:feather>, <item:archarsenal:barbed_arrow>, 2);
 
 craftingTable.removeByName("unusualend:phantom_arrows");
-<recipetype:apotheosis:fletching>.addJsonRecipe("fletching/phantom_arrow", {
-	"conditions": [{
-		"type": "apotheosis:module",
-		"module": "village"
-	}],
-	"ingredients": [{
-			"item": "minecraft:phantom_membrane"
-		},
-		{
-			"item": "minecraft:arrow"
-		},
-		{
-			"item": "minecraft:phantom_membrane"
-		}
-	],
-	"result": {
-		"item": "unusualend:phantom_arrow",
-		"count": 4
-	}
-});
+packAddRecipeApotheosisFletching("fletching/phantom_arrow",<item:minecraft:phantom_membrane>, <item:minecraft:arrow>, <item:minecraft:phantom_membrane>, <item:unusualend:phantom_arrow>, 4);
 
 craftingTable.removeByName("alexsmobs:shark_tooth_arrow");
-<recipetype:apotheosis:fletching>.addJsonRecipe("fletching/shark_tooth_arrow", {
-	"conditions": [{
-		"type": "apotheosis:module",
-		"module": "village"
-	}],
-	"ingredients": [{
-			"item": "alexsmobs:shark_tooth"
-		},
-		{
-			"item": "minecraft:stick"
-		},
-		{
-			"item": "minecraft:kelp"
-		}
-	],
-	"result": {
-		"item": "alexsmobs:shark_tooth_arrow",
-		"count": 6
-	}
-});
+packAddRecipeApotheosisFletching("fletching/shark_tooth_arrow",<item:alexsmobs:shark_tooth>, <item:minecraft:stick>, <item:minecraft:kelp>, <item:alexsmobs:shark_tooth_arrow>, 6);
+
+<recipetype:apotheosis:fletching>.removeByName("apotheosis:fletching/obsidian_arrow");
+packAddRecipeApotheosisFletching("fletching/obsidian_arrow",<item:create:powdered_obsidian>, <item:minecraft:arrow>, <item:minecraft:feather>, <item:apotheosis:obsidian_arrow>, 4);
 
 Globals.endScript("recipe_apotheosis");

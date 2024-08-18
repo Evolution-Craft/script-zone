@@ -1,0 +1,47 @@
+{
+  "armorSetName": "bronze",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "mekanismtools:bronze_helmet",
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "mekanismtools:bronze_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "mekanismtools:bronze_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "mekanismtools:bronze_boots",
+    "mustBeEmpty": false
+  },
+  "partialBonusRequiredAmount": 2,
+  "partialSetBonuses": [
+    {
+      "type": "effect",
+      "name": "toughasnails:climate_clemency",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "value": 12.0,
+      "modifierUUID": "368ec898-3476-4ffe-a3d1-4010037292df",
+      "description": "+6 hearts",
+      "attributeOperation": 0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}
