@@ -56,6 +56,70 @@ for tag_log_minecraft in addingLogsMinecraft {
 	<tag:items:minecraft:logs>.add(<item:${tag_log_minecraft}>);
 }
 
+// Piglin Loved
+var addingPiglinLovedMinecraft = [
+	"aquaculture:goldfish",
+	"archarsenal:bow_gold",
+	"betterbundles:gold_bundle",
+	"bloodmagic:goldfragment",
+	"bloodmagic:goldgravel",
+	"createaddition:gold_wire",
+	"createaddition:gold_spool",
+	"createaddition:gold_rod",
+	"cyclic:gold_bars",
+	"cyclic:gold_chain",
+	"cyclic:gold_lantern",
+	"cyclic:gold_soul_lantern",
+	"electrodynamics:wiregold",
+	"electrodynamics:wireinsulatedgold",
+	"electrodynamics:wirehighlyinsulatedgold",
+	"electrodynamics:wireceramicinsulatedgold",
+	"electrodynamics:wirelogisticsgold",
+	"electrodynamics:impuredustgold",
+	"electrodynamics:crystalgold",
+	"galosphere:golden_lichen_cordyceps",
+	"galosphere_delight:golden_lichen_crate",
+	"immersiveengineering:sheetmetal_gold",
+	"immersiveengineering:slab_sheetmetal_gold",
+	"immersiveposts:fence_gold",
+	"infernalexp:molten_gold_cluster",
+	"mcwlights:golden_chain",
+	"mcwwindows:golden_curtain_rod",
+	"minecraft:gold_nugget",
+	"miniutilities:gold_spikes",
+	"miniutilities:gold_opinium_core",
+	"naturesaura:gold_leaf",
+	"reactive:gold_symbol",
+	"reactive:gold_foam",
+	"rechiseled:gold_block_beams",
+	"rechiseled:gold_block_beams_connecting",
+	"rechiseled:gold_block_bordered",
+	"rechiseled:gold_block_bordered_connecting",
+	"rechiseled:gold_block_lines",
+	"rechiseled:gold_block_lines_connecting",
+	"rechiseled:gold_block_pattern",
+	"rechiseled:gold_block_pattern_connecting",
+	"rechiseled:gold_block_polished",
+	"rechiseled:gold_block_polished_connecting",
+	"rechiseled:gold_block_scales",
+	"rechiseled:gold_block_scales_connecting",
+	"rechiseled:gold_block_small_bricks",
+	"rechiseled:gold_block_small_bricks_connecting",
+	"rechiseled:gold_block_small_tiles",
+	"rechiseled:gold_block_small_tiles_connecting",
+	"rechiseled:gold_block_striped",
+	"rechiseled:gold_block_striped_connecting",
+	"rechiseled:gold_block_smooth",
+	"rechiseled:gold_block_tiles",
+	"rechiseled:gold_block_tiles_connecting",
+	"thermal:gold_dust",
+	"thermal:gold_gear",
+	"thermal:gold_plate"
+];
+for tag_piglin_loved_minecraft in addingPiglinLovedMinecraft {
+	<tag:items:minecraft:piglin_loved>.add(<item:${tag_piglin_loved_minecraft}>);
+}
+
 // Slab
 var addingSlabMinecraft = [
 	"vinery:coarse_dirt_slab",

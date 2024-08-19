@@ -13,6 +13,7 @@
  * v0.7 : Remove Partinal temorary Fix.
  * v0.8 : Add Armors Tags.
  * v0.9 : Add Custom Rods.
+ * v1.0 : Add Missing Tag.
  */
 
 #priority 997
@@ -279,6 +280,15 @@ for tag_doughs_forge in addingDoughsForge {
 	<tag:items:forge:doughs>.add(<item:${tag_doughs_forge}>);
 }
 
+// Fishing Rods
+var addingFishingRodsForge = [
+	"tombstone:fishing_rod_of_misadventure",
+	"netherdepthsupgrade:lava_fishing_rod"
+];
+for tag_fishing_rods_forge in addingFishingRodsForge {
+	<tag:items:forge:fishing_rods>.add(<item:${tag_fishing_rods_forge}>);
+}
+
 // Flour
 var addingFlourForge = [
 	"pneumaticcraft:wheat_flour",
@@ -462,6 +472,22 @@ for tag_seed_forge in addingSeedForge {
 	<tag:items:forge:seeds/grape>.add(<item:${tag_seed_forge}>); // Temporary Fix
 }
 
+// Shears
+var addingShearsForge = [
+	"netherite_shears_and_flint_and_steel:netherite_shears",
+	"woodenshears:wshears_oak",
+	"woodenshears:wshears_spruce",
+	"woodenshears:wshears_birch",
+	"woodenshears:wshears_jungle",
+	"woodenshears:wshears_acacia",
+	"woodenshears:wshears_big_oak",
+	"woodenshears:wshears_crimson",
+	"woodenshears:wshears_warped"
+];
+for tag_shears_forge in addingShearsForge {
+	<tag:items:forge:shears>.add(<item:${tag_shears_forge}>);
+}
+
 // Shovels
 var addingShovelsForge = [
 	"ae2:certus_quartz_shovel",
@@ -559,6 +585,45 @@ for tag_tools_copper_forge in addingToolsCopperForge {
 	<tag:items:forge:tools/copper>.add(<item:${tag_tools_copper_forge}>);
 }
 
+// Tool Hoes
+var addingToolsHoesForge = [
+	"ae2:certus_quartz_hoe",
+	"ae2:nether_quartz_hoe",
+	"ae2:fluix_hoe",
+	"aquaculture:neptunium_hoe",
+	"botania:manasteel_hoe",
+	"botania:elementium_hoe",
+	"exlinecopperequipment:copper_hoe",
+	"cyclic:amethyst_hoe",
+	"cyclic:emerald_hoe",
+	"cyclic:crystal_hoe",
+	"cyclic:sandstone_hoe",
+	"cyclic:netherbrick_hoe",
+	"enlightened_end:tenebrium_hoe",
+	"enlightened_end:starsteel_hoe",
+	"enlightened_end:adamantite_hoe",
+	"fiow:flint_hoe",
+	"mekanismtools:bronze_hoe",
+	"mekanismtools:lapis_lazuli_hoe",
+	"mekanismtools:osmium_hoe",
+	"mekanismtools:refined_glowstone_hoe",
+	"mekanismtools:refined_obsidian_hoe",
+	"mekanismtools:steel_hoe",
+	"naturesaura:infused_iron_hoe",
+	"naturesaura:sky_hoe",
+	"twilightforest:ironwood_hoe",
+	"twilightforest:steeleaf_hoe",
+	"undergarden:cloggrum_hoe",
+	"undergarden:froststeel_hoe",
+	"undergarden:forgotten_hoe",
+	"undergarden:utherium_hoe"
+];
+for tag_tools_hoes_forge in addingToolsHoesForge {
+	<tag:items:forge:hoes>.add(<item:${tag_tools_hoes_forge}>);
+	<tag:items:forge:tools/hoes>.add(<item:${tag_tools_hoes_forge}>);
+}
+<tag:items:forge:hoes>.add(<item:immersiveengineering:hoe_steel>);
+
 // Tools Knives
 var addingToolsKnivesForge = [
 	"enlightened_end:adamantite_knife",
@@ -613,6 +678,7 @@ var addingToolsPickaxesForge = [
 	"undergarden:forgotten_pickaxe"
 ];
 for tag_tools_pickaxes_forge in addingToolsPickaxesForge {
+	<tag:items:forge:pickaxes>.add(<item:${tag_tools_pickaxes_forge}>);
 	<tag:items:forge:tools/pickaxes>.add(<item:${tag_tools_pickaxes_forge}>);
 }
 
@@ -653,6 +719,7 @@ var addingToolsSwordsForge = [
 	"undergarden:forgotten_sword"
 ];
 for tag_tools_swords_forge in addingToolsSwordsForge {
+	<tag:items:forge:swords>.add(<item:${tag_tools_swords_forge}>);
 	<tag:items:forge:tools/swords>.add(<item:${tag_tools_swords_forge}>);
 }
 

@@ -4,25 +4,22 @@
  * The author of this file is Millennium, using CraftTweaker mod code.
  *
  * CHANGELOG:
- * v0.1 : Fix Missing Tag.
- * v0.2 : Add Missing Tag.
+ * v0.1 : First Issue.
  */
 
-#priority 990
+#priority 984
 
-Globals.startScript("tag/bookshelf");
-Globals.priorityScript("990");
+Globals.startScript("tag/elemental_craft");
+Globals.priorityScript("984");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
 // Axes
-var addingAxesBookshelf = [
+var addingAxesElementalCraft = [
 	"ae2:certus_quartz_axe",
 	"ae2:fluix_axe",
 	"ae2:nether_quartz_axe",
-	"botania:elementium_axe",
-	"botania:manasteel_axe",
 	"cyclic:amethyst_axe",
 	"cyclic:crystal_axe",
 	"cyclic:emerald_axe",
@@ -33,11 +30,6 @@ var addingAxesBookshelf = [
 	"enlightened_end:tenebrium_axe",
 	"exlinecopperequipment:copper_axe",
 	"immersiveengineering:axe_steel",
-	"mekanismtools:lapis_lazuli_axe",
-	"mekanismtools:osmium_axe",
-	"mekanismtools:refined_glowstone_axe",
-	"mekanismtools:refined_obsidian_axe",
-	"mekanismtools:steel_axe",
 	"naturesaura:infused_iron_axe",
 	"naturesaura:sky_axe",
 	"twilightforest:diamond_minotaur_axe",
@@ -52,27 +44,30 @@ var addingAxesBookshelf = [
 	"undergarden:froststeel_axe",
 	"undergarden:utherium_axe"
 ];
-for tag_axes_bookshelf in addingAxesBookshelf {
-	<tag:items:bookshelf:axes>.add(<item:${tag_axes_bookshelf}>);
+for tag_axes_elemental_craft in addingAxesElementalCraft {
+	<tag:items:elementalcraft:infusable/axes>.add(<item:${tag_axes_elemental_craft}>);
+	<tag:items:elementalcraft:jewel_socketables>.add(<item:${tag_axes_elemental_craft}>);
 }
 
 // Fishing Rods
-var addingFishingRodsBookshelf = [
-	"tombstone:fishing_rod_of_misadventure",
+var addingFishingRodsElementalCraft = [
+	"aquaculture:iron_fishing_rod",
+	"aquaculture:gold_fishing_rod",
+	"aquaculture:diamond_fishing_rod",
+	"aquaculture:neptunium_fishing_rod",
 	"netherdepthsupgrade:lava_fishing_rod"
 ];
-for tag_fishing_rods_bookshelf in addingFishingRodsBookshelf {
-	<tag:items:bookshelf:fishing_rods>.add(<item:${tag_fishing_rods_bookshelf}>);
+for tag_fishing_rods_elemental_craft in addingFishingRodsElementalCraft {
+	<tag:items:elementalcraft:infusable/fishing_rods>.add(<item:${tag_fishing_rods_elemental_craft}>);
+	<tag:items:elementalcraft:jewel_socketables>.add(<item:${tag_fishing_rods_elemental_craft}>);
 }
 
 // Hoes
-var addingHoesBookshelf = [
+var addingHoesElementalCraft = [
 	"ae2:certus_quartz_hoe",
 	"ae2:nether_quartz_hoe",
 	"ae2:fluix_hoe",
 	"aquaculture:neptunium_hoe",
-	"botania:manasteel_hoe",
-	"botania:elementium_hoe",
 	"exlinecopperequipment:copper_hoe",
 	"cyclic:amethyst_hoe",
 	"cyclic:emerald_hoe",
@@ -83,13 +78,6 @@ var addingHoesBookshelf = [
 	"enlightened_end:starsteel_hoe",
 	"enlightened_end:adamantite_hoe",
 	"fiow:flint_hoe",
-	"immersiveengineering:hoe_steel",
-	"mekanismtools:bronze_hoe",
-	"mekanismtools:lapis_lazuli_hoe",
-	"mekanismtools:osmium_hoe",
-	"mekanismtools:refined_glowstone_hoe",
-	"mekanismtools:refined_obsidian_hoe",
-	"mekanismtools:steel_hoe",
 	"naturesaura:infused_iron_hoe",
 	"naturesaura:sky_hoe",
 	"twilightforest:ironwood_hoe",
@@ -99,20 +87,17 @@ var addingHoesBookshelf = [
 	"undergarden:forgotten_hoe",
 	"undergarden:utherium_hoe"
 ];
-for tag_hoes_bookshelf in addingHoesBookshelf {
-	<tag:items:bookshelf:hoes>.add(<item:${tag_hoes_bookshelf}>);
+for tag_hoes_elemental_craft in addingHoesElementalCraft {
+	<tag:items:elementalcraft:infusable/hoes>.add(<item:${tag_hoes_elemental_craft}>);
+	<tag:items:elementalcraft:jewel_socketables>.add(<item:${tag_hoes_elemental_craft}>);
 }
 
 // Pickaxes
-var addingPickaxesBookshelf = [
+var addingPickaxesElementalCraft = [
 	"ae2:certus_quartz_pickaxe",
 	"ae2:nether_quartz_pickaxe",
 	"ae2:fluix_pickaxe",
 	"aquaculture:neptunium_pickaxe",
-	"bloodmagic:soulpickaxe",
-	"botania:manasteel_pick",
-	"botania:elementium_pickaxe",
-	"botania:glass_pickaxe",
 	"exlinecopperequipment:copper_pick",
 	"cyclic:amethyst_pickaxe",
 	"cyclic:emerald_pickaxe",
@@ -124,12 +109,6 @@ var addingPickaxesBookshelf = [
 	"enlightened_end:adamantite_pickaxe",
 	"fiow:flint_pickaxe",
 	"immersiveengineering:pickaxe_steel",
-	"mekanismtools:bronze_pickaxe",
-	"mekanismtools:lapis_lazuli_pickaxe",
-	"mekanismtools:osmium_pickaxe",
-	"mekanismtools:refined_glowstone_pickaxe",
-	"mekanismtools:refined_obsidian_pickaxe",
-	"mekanismtools:steel_pickaxe",
 	"naturesaura:infused_iron_pickaxe",
 	"naturesaura:sky_pickaxe",
 	"twilightforest:ironwood_pickaxe",
@@ -142,34 +121,17 @@ var addingPickaxesBookshelf = [
 	"undergarden:utherium_pickaxe",
 	"undergarden:forgotten_pickaxe"
 ];
-for tag_pickaxes_bookshelf in addingPickaxesBookshelf {
-	<tag:items:bookshelf:pickaxes>.add(<item:${tag_pickaxes_bookshelf}>);
-}
-
-// Shears
-var addingShearsBookshelf = [
-	"netherite_shears_and_flint_and_steel:netherite_shears",
-	"woodenshears:wshears_oak",
-	"woodenshears:wshears_spruce",
-	"woodenshears:wshears_birch",
-	"woodenshears:wshears_jungle",
-	"woodenshears:wshears_acacia",
-	"woodenshears:wshears_big_oak",
-	"woodenshears:wshears_crimson",
-	"woodenshears:wshears_warped"
-];
-for tag_shears_bookshelf in addingShearsBookshelf {
-	<tag:items:bookshelf:shears>.add(<item:${tag_shears_bookshelf}>);
+for tag_pickaxes_elemental_craft in addingPickaxesElementalCraft {
+	<tag:items:elementalcraft:infusable/pickaxes>.add(<item:${tag_pickaxes_elemental_craft}>);
+	<tag:items:elementalcraft:jewel_socketables>.add(<item:${tag_pickaxes_elemental_craft}>);
 }
 
 // Shovels
-var addingShovelsBookshelf = [
+var addingShovelsElementalCraft = [
 	"ae2:certus_quartz_shovel",
 	"ae2:nether_quartz_shovel",
 	"ae2:fluix_shovel",
 	"aquaculture:neptunium_shovel",
-	"botania:manasteel_shovel",
-	"botania:elementium_shovel",
 	"exlinecopperequipment:copper_shovel",
 	"cyclic:amethyst_shovel",
 	"cyclic:emerald_shovel",
@@ -180,12 +142,6 @@ var addingShovelsBookshelf = [
 	"enlightened_end:starsteel_shovel",
 	"enlightened_end:adamantite_shovel",
 	"immersiveengineering:shovel_steel",
-	"mekanismtools:bronze_shovel",
-	"mekanismtools:lapis_lazuli_shovel",
-	"mekanismtools:osmium_shovel",
-	"mekanismtools:refined_glowstone_shovel",
-	"mekanismtools:refined_obsidian_shovel",
-	"mekanismtools:steel_shovel",
 	"naturesaura:infused_iron_shovel",
 	"naturesaura:sky_shovel",
 	"twilightforest:ironwood_shovel",
@@ -195,18 +151,17 @@ var addingShovelsBookshelf = [
 	"undergarden:utherium_shovel",
 	"undergarden:forgotten_shovel"
 ];
-for tag_shovels_bookshelf in addingShovelsBookshelf {
-	<tag:items:bookshelf:shovels>.add(<item:${tag_shovels_bookshelf}>);
+for tag_shovels_elemental_craft in addingShovelsElementalCraft {
+	<tag:items:elementalcraft:infusable/hovels>.add(<item:${tag_shovels_elemental_craft}>);
+	<tag:items:elementalcraft:jewel_socketables>.add(<item:${tag_shovels_elemental_craft}>);
 }
 
 // Swords
-var addingSwordsBookshelf = [
+var addingSwordsElementalCraft = [
 	"ae2:certus_quartz_sword",
 	"ae2:nether_quartz_sword",
 	"ae2:fluix_sword",
 	"aquaculture:neptunium_sword",
-	"botania:manasteel_sword",
-	"botania:elementium_sword",
 	"exlinecopperequipment:copper_sword",
 	"cyclic:amethyst_sword",
 	"cyclic:emerald_sword",
@@ -217,12 +172,6 @@ var addingSwordsBookshelf = [
 	"enlightened_end:starsteel_sword",
 	"enlightened_end:adamantite_sword",
 	"immersiveengineering:sword_steel",
-	"mekanismtools:bronze_sword",
-	"mekanismtools:lapis_lazuli_sword",
-	"mekanismtools:osmium_sword",
-	"mekanismtools:refined_glowstone_sword",
-	"mekanismtools:refined_obsidian_sword",
-	"mekanismtools:steel_sword",
 	"twilightforest:ironwood_sword",
 	"twilightforest:fiery_sword",
 	"twilightforest:steeleaf_sword",
@@ -235,8 +184,9 @@ var addingSwordsBookshelf = [
 	"undergarden:utherium_sword",
 	"undergarden:forgotten_sword"
 ];
-for tag_swords_bookshelf in addingSwordsBookshelf {
-	<tag:items:bookshelf:swords>.add(<item:${tag_swords_bookshelf}>);
+for tag_swords_elemental_craft in addingSwordsElementalCraft {
+	<tag:items:elementalcraft:infusable/swords>.add(<item:${tag_swords_elemental_craft}>);
+	<tag:items:elementalcraft:jewel_socketables>.add(<item:${tag_swords_elemental_craft}>);
 }
 
-Globals.endScript("tag/bookshelf");
+Globals.endScript("tag/elemental_craft");

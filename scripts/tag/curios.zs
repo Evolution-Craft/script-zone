@@ -6,6 +6,7 @@
  * CHANGELOG:
  * v0.1 : Fix Elytra uncategorized.
  * v0.2 : Add priority.
+ * v0.3 : Add Bundles.
  */
 
 #priority 983
@@ -24,6 +25,19 @@ var addingBackCurios = [
 ];
 for tag_back_curios in addingBackCurios {
 	<tag:items:curios:back>.add(<item:${tag_back_curios}>);
+}
+
+// Bundle
+var addingBundleCurios = [
+	"betterbundles:copper_bundle",
+	"betterbundles:iron_bundle",
+	"betterbundles:silver_bundle",
+	"betterbundles:gold_bundle",
+	"betterbundles:diamond_bundle",
+	"betterbundles:netherite_bundle"
+];
+for tag_bundle_curios in addingBundleCurios {
+	<tag:items:curios:bundle>.add(<item:${tag_bundle_curios}>);
 }
 
 Globals.endScript("tag/curios");
