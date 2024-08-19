@@ -1,8 +1,0 @@
-{
-	"type": "corail_woodcutter:woodcutting",
-	"ingredient": {
-		"tag": "vinery:cherry_logs"
-	},
-	"result": "vinery:cherry_planks",
-	"count": 4
-}

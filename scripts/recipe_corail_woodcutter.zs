@@ -71,6 +71,7 @@ val woodcutting_log_button_return = 4;
 val woodcutting_log_door_return = 4;
 val woodcutting_log_fence_return = 4;
 val woodcutting_log_fence_gate_return = 1;
+val woodcutting_log_hollow_return = 1;
 val woodcutting_log_planks_return = 4;
 val woodcutting_log_pressure_plate_return = 4;
 val woodcutting_log_sign_return = 4;
@@ -193,6 +194,28 @@ var addingFenceGateFromPlanksCorailWoodcutter = {
 };
 for addingFenceGateFromPlanksCorailWoodcutterItemIn, addingFenceGateFromPlanksCorailWoodcutterItemOut in addingFenceGateFromPlanksCorailWoodcutter {
 	packAddRecipeCorailWoodcutter_Item("corail_woodcutter_" + <item:${addingFenceGateFromPlanksCorailWoodcutterItemOut}>.registryName.path + "_from_" + <item:${addingFenceGateFromPlanksCorailWoodcutterItemIn}>.registryName.path, <item:${addingFenceGateFromPlanksCorailWoodcutterItemIn}>, <item:${addingFenceGateFromPlanksCorailWoodcutterItemOut}>, woodcutting_planks_fence_gate_return);
+}
+
+var addingHollowFromPlanksCorailWoodcutter = {
+	"minecraft:acacia_log" : "twilightforest:hollow_acacia_log",
+	"minecraft:birch_log" : "twilightforest:hollow_birch_log",
+	"minecraft:crimson_stem" : "twilightforest:hollow_crimson_stem",
+	"minecraft:dark_oak_log" : "twilightforest:hollow_dark_oak_log",
+	"minecraft:jungle_log" : "twilightforest:hollow_jungle_log",
+	"minecraft:oak_log" : "twilightforest:hollow_oak_log",
+	"minecraft:spruce_log" : "twilightforest:hollow_spruce_log",
+	"minecraft:warped_stem" : "twilightforest:hollow_warped_stem",
+	"twilightforest:canopy_log" : "twilightforest:hollow_canopy_log",
+	"twilightforest:dark_log" :  "twilightforest:hollow_dark_log",
+	"twilightforest:mangrove_log" : "twilightforest:hollow_mangrove_log",
+	"twilightforest:mining_log" : "twilightforest:hollow_mining_log",
+	"twilightforest:sorting_log" : "twilightforest:hollow_sorting_log",
+	"twilightforest:time_log" : "twilightforest:hollow_time_log",
+	"twilightforest:transformation_log" : "twilightforest:hollow_transformation_log",
+	"twilightforest:twilight_oak_log" : "twilightforest:hollow_twilight_oak_log"
+};
+for addingHollowFromPlanksCorailWoodcutterItemIn, addingHollowFromPlanksCorailWoodcutterItemOut in addingHollowFromPlanksCorailWoodcutter {
+	packAddRecipeCorailWoodcutter_Item("corail_woodcutter_" + <item:${addingHollowFromPlanksCorailWoodcutterItemOut}>.registryName.path + "_from_" + <item:${addingHollowFromPlanksCorailWoodcutterItemIn}>.registryName.path, <item:${addingHollowFromPlanksCorailWoodcutterItemIn}>, <item:${addingHollowFromPlanksCorailWoodcutterItemOut}>, woodcutting_log_hollow_return);
 }
 
 var addingOtherFromPlanksCorailWoodcutter = {
@@ -437,6 +460,7 @@ var addingIntegratedDynamicsMenrilCorailWoodcutter = {
 	"menril_fence" : woodcutting_log_fence_return,
 	"menril_fence_gate" : woodcutting_log_fence_gate_return,
 	"menril_slab" : woodcutting_log_slab_return,
+	"menril_planks" : woodcutting_log_planks_return,
 	"menril_planks_stairs" : woodcutting_log_stairs_return
 };
 for addingIntegratedDynamicsMenrilCorailWoodcutterOut, addingIntegratedDynamicsMenrilCorailWoodcutterCount in addingIntegratedDynamicsMenrilCorailWoodcutter {
@@ -449,23 +473,8 @@ for addingIntegratedDynamicsMenrilCorailWoodcutterOut, addingIntegratedDynamicsM
 	});
 }
 
-var addingNaturesAuraAncientCorailWoodcutter = {
-	"ancient_slab" : (woodcutting_log_slab_return / 2),
-	"ancient_stairs" : (woodcutting_log_stairs_return / 2),
-	"ancient_stick" : (woodcutting_log_stick_return / 2),
-	"ancient_planks" : (woodcutting_log_planks_return / 2)
-};
-for addingNaturesAuraAncientCorailWoodcutterOut, addingNaturesAuraAncientCorailWoodcutterCount in addingNaturesAuraAncientCorailWoodcutter {
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingNaturesAuraAncientCorailWoodcutterOut + "_from_ancient_log", {
-		"ingredient": {
-			"tag": "naturesaura:ancient_logs"
-		},
-		"result": "naturesaura:" + addingNaturesAuraAncientCorailWoodcutterOut,
-		"count": addingNaturesAuraAncientCorailWoodcutterCount
-	});
-}
-
 var addingComponentLogCorailWoodcutter = {
+	"ancient" : "naturesaura",
 	"azalea" : "ecologics",
 	"bloodshroom" : "tconstruct",
 	"cerulean" : "enlightened_end",
@@ -481,14 +490,30 @@ var addingComponentLogCorailWoodcutter = {
 	"wigglewood" : "undergarden"
 };
 for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterModId in addingComponentLogCorailWoodcutter {
-	if (addingComponentLogCorailWoodcutterModId == "ecologics" || 
-		addingComponentLogCorailWoodcutterModId == "undergarden") {
+	if (addingComponentLogCorailWoodcutterModId == "naturesaura") {
+		var addingComponentCorailWoodcutter = {
+			"slab" : (woodcutting_log_slab_return / 2),
+			"stairs" : (woodcutting_log_stairs_return / 2),
+			"stick" : (woodcutting_log_stick_return / 2),
+			"planks" : (woodcutting_log_planks_return / 2)
+		};
+		for addingComponentCorailWoodcutterOut, addingComponentCorailWoodcutterCount in addingComponentCorailWoodcutter {
+			<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe("corail_woodcutter_" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut + "_from_" + addingComponentLogCorailWoodcutterName + "_log", {
+				"ingredient": {
+					"tag": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_logs"
+				},
+				"result": addingComponentLogCorailWoodcutterModId + ":" + addingComponentLogCorailWoodcutterName + "_" + addingComponentCorailWoodcutterOut,
+				"count": addingComponentCorailWoodcutterCount
+			});
+		}	
+	} else if (addingComponentLogCorailWoodcutterModId == "ecologics" || addingComponentLogCorailWoodcutterModId == "undergarden") {
 		if (addingComponentLogCorailWoodcutterName == "flowering_azalea") {
 			var addingComponentCorailWoodcutter = {
 				"boat" : woodcutting_log_boat_return,
 				"door" : woodcutting_log_door_return,
 				"fence" : woodcutting_log_fence_return,
 				"fence_gate" : woodcutting_log_fence_gate_return,
+				"planks" : woodcutting_log_planks_return,
 				"sign" : woodcutting_log_sign_return,
 				"slab" : woodcutting_log_slab_return,
 				"stairs" : woodcutting_log_stairs_return,
@@ -510,6 +535,7 @@ for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterMo
 				"door" : woodcutting_log_door_return,
 				"fence" : woodcutting_log_fence_return,
 				"fence_gate" : woodcutting_log_fence_gate_return,
+				"planks" : woodcutting_log_planks_return,
 				"pressure_plate" : woodcutting_log_pressure_plate_return,
 				"sign" : woodcutting_log_sign_return,
 				"slab" : woodcutting_log_slab_return,
@@ -526,13 +552,13 @@ for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterMo
 				});
 			}
 		}
-	} else if (addingComponentLogCorailWoodcutterModId == "enlightened_end" || 
-		addingComponentLogCorailWoodcutterModId == "vinery") {
+	} else if (addingComponentLogCorailWoodcutterModId == "enlightened_end" || addingComponentLogCorailWoodcutterModId == "vinery") {
 		var addingComponentCorailWoodcutter = {
 			"button" : woodcutting_log_button_return,
 			"door" : woodcutting_log_door_return,
 			"fence" : woodcutting_log_fence_return,
 			"fence_gate" : woodcutting_log_fence_gate_return,
+			"planks" : woodcutting_log_planks_return,
 			"pressure_plate" : woodcutting_log_pressure_plate_return,
 			"slab" : woodcutting_log_slab_return,
 			"stairs" : woodcutting_log_stairs_return,
@@ -567,6 +593,7 @@ for addingComponentLogCorailWoodcutterName, addingComponentLogCorailWoodcutterMo
 			"fence_gate" : woodcutting_log_fence_gate_return,
 			"pressure_plate" : woodcutting_log_pressure_plate_return,
 			"sign" : woodcutting_log_sign_return,
+			"planks" : woodcutting_log_planks_return,
 			"planks_slab" : woodcutting_log_slab_return,
 			"planks_stairs" : woodcutting_log_stairs_return,
 			"trapdoor" : woodcutting_log_trapdoor_return

@@ -1,8 +1,0 @@
-{
-	"type": "corail_woodcutter:woodcutting",
-	"ingredient": {
-		"tag": "enlightened_end:indigo_stems"
-	},
-	"result": "enlightened_end:indigo_planks",
-	"count": 4
-}

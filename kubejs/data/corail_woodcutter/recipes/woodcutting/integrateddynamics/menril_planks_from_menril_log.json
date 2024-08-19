@@ -1,8 +1,0 @@
-{
-	"type": "corail_woodcutter:woodcutting",
-	"ingredient": {
-		"tag": "integrateddynamics:menril_logs"
-	},
-	"result": "integrateddynamics:menril_planks",
-	"count": 4
-}

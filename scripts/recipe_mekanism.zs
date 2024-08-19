@@ -423,14 +423,7 @@ var addingSawingMekanism = {
 	"twilight_oak" : "twilightforest:twilight_oak"
 };
 for addingSawingMekanismName, addingSawingMekanismMod in addingSawingMekanism {
-	if (addingSawingMekanismName == "canopy" || 
-		addingSawingMekanismName == "darkwood" ||
-		addingSawingMekanismName == "mangrove" || 
-		addingSawingMekanismName == "mining" || 
-		addingSawingMekanismName == "sorting" || 
-		addingSawingMekanismName == "transformation" || 
-	    addingSawingMekanismName == "timewood" ||
-		addingSawingMekanismName == "twilight_oak") {
+	if (addingSawingMekanismName == "canopy" || addingSawingMekanismName == "darkwood" || addingSawingMekanismName == "mangrove" || addingSawingMekanismName == "mining" || addingSawingMekanismName == "sorting" || addingSawingMekanismName == "transformation" || addingSawingMekanismName == "timewood" || addingSawingMekanismName == "twilight_oak") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/boat/" + addingSawingMekanismName, ItemStackIngredient.from(<item:twilightdecor:${addingSawingMekanismName}_boat>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_boat_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_door>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_door_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
@@ -441,12 +434,7 @@ for addingSawingMekanismName, addingSawingMekanismMod in addingSawingMekanism {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_door>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_door_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapdoor/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_trapdoor>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_trapdoor_return);
-	} else if (addingSawingMekanismName == "bloodshroom" ||
-			   addingSawingMekanismName == "cerulean" ||
-			   addingSawingMekanismName == "cherry" ||
-			   addingSawingMekanismName == "greenheart" ||
-			   addingSawingMekanismName == "indigo" ||
-			   addingSawingMekanismName == "skyroot") {
+	} else if (addingSawingMekanismName == "bloodshroom" || addingSawingMekanismName == "cerulean" || addingSawingMekanismName == "cherry" || addingSawingMekanismName == "greenheart" || addingSawingMekanismName == "indigo" || addingSawingMekanismName == "skyroot") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/door/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_door>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_door_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/fence_gate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_fence_gate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_fence_gate_return, <item:minecraft:stick> * mekanism_stick_fence_gate_return, mekanism_stick_fence_gate_chance);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/pressure_plate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_pressure_plate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_pressure_plate_return);
@@ -518,8 +506,7 @@ var addingSawingBookshelfMekanism = {
 	"twilightforest:twilight_oak" : "twilightdecor:twilight_oak_bookshelf"
 };
 for addingSawingBookshelfMekanismOut, addingSawingBookshelfMekanismIn in addingSawingBookshelfMekanism {
-	val addingSawingNameBookshelfMekanism = <item:${addingSawingBookshelfMekanismIn}>;
-	<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/bookshelf/" + addingSawingNameBookshelfMekanism.registryName.path, ItemStackIngredient.from(<item:${addingSawingBookshelfMekanismIn}>), <item:${addingSawingBookshelfMekanismOut}_planks> * mekanism_planks_bookshelf_return, <item:minecraft:book> * mekanism_book_bookshelf_return, mekanism_book_bookshelf_chance);
+	<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/bookshelf/" + <item:${addingSawingBookshelfMekanismIn}>.registryName.path, ItemStackIngredient.from(<item:${addingSawingBookshelfMekanismIn}>), <item:${addingSawingBookshelfMekanismOut}_planks> * mekanism_planks_bookshelf_return, <item:minecraft:book> * mekanism_book_bookshelf_return, mekanism_book_bookshelf_chance);
 }
 
 var addingSawingChestMekanism = {
@@ -543,20 +530,11 @@ var addingSawingChestMekanism = {
 	"twilight_oak" : "twilightforest:twilight_oak_chest"
 };
 for addingSawingChestMekanismName, addingSawingChestMekanismId in addingSawingChestMekanism {
-	if (addingSawingChestMekanismName == "canopy" || 
-		addingSawingChestMekanismName == "dark" ||
-		addingSawingChestMekanismName == "mangrove" || 
-		addingSawingChestMekanismName == "mining" || 
-		addingSawingChestMekanismName == "sorting" || 
-		addingSawingChestMekanismName == "transformation" || 
-	    addingSawingChestMekanismName == "time" ||
-		addingSawingChestMekanismName == "twilight_oak") {
+	if (addingSawingChestMekanismName == "canopy" || addingSawingChestMekanismName == "dark" || addingSawingChestMekanismName == "mangrove" || addingSawingChestMekanismName == "mining" || addingSawingChestMekanismName == "sorting" || addingSawingChestMekanismName == "transformation" || addingSawingChestMekanismName == "time" || addingSawingChestMekanismName == "twilight_oak") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/chest/" + addingSawingChestMekanismName, ItemStackIngredient.from(<item:${addingSawingChestMekanismId}>), <item:twilightforest:${addingSawingChestMekanismName}_planks> * mekanism_planks_chest_return);
-	} else if (addingSawingChestMekanismName == "azalea" || 
-			   addingSawingChestMekanismName == "blossom") {
+	} else if (addingSawingChestMekanismName == "azalea" || addingSawingChestMekanismName == "blossom") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/chest/" + addingSawingChestMekanismName, ItemStackIngredient.from(<item:${addingSawingChestMekanismId}>), <item:quark:${addingSawingChestMekanismName}_planks> * mekanism_planks_chest_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapped_chest/" + addingSawingChestMekanismName, ItemStackIngredient.from(<item:quark:${addingSawingChestMekanismName}_trapped_chest>), <item:quark:${addingSawingChestMekanismName}_planks> * mekanism_planks_trapped_chest_return, <item:minecraft:tripwire_hook> * mekanism_tripwire_hook_chest_return, mekanism_tripwire_hook_chest_chance);
-
 	} else{
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/chest/" + addingSawingChestMekanismName, ItemStackIngredient.from(<item:${addingSawingChestMekanismId}>), <item:minecraft:${addingSawingChestMekanismName}_planks> * mekanism_planks_chest_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapped_chest/" + addingSawingChestMekanismName, ItemStackIngredient.from(<item:quark:${addingSawingChestMekanismName}_trapped_chest>), <item:minecraft:${addingSawingChestMekanismName}_planks> * mekanism_planks_trapped_chest_return, <item:minecraft:tripwire_hook> * mekanism_tripwire_hook_chest_return, mekanism_tripwire_hook_chest_chance);

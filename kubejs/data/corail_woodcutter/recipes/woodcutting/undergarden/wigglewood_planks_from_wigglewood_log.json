@@ -1,8 +1,0 @@
-{
-	"type": "corail_woodcutter:woodcutting",
-	"ingredient": {
-		"tag": "undergarden:wigglewood_logs"
-	},
-	"result": "undergarden:wigglewood_planks",
-	"count": 4
-}
