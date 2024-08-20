@@ -19,13 +19,33 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
+// Compacting
+<recipetype:create:compacting>.addRecipe("create_compacted/coal_from_charcoal", <constant:create:heat_condition:heated>, [<item:minecraft:coal> % 75], [<item:minecraft:charcoal>]);
+<recipetype:create:compacting>.addRecipe("create_compacted/diamond_from_coal", <constant:create:heat_condition:superheated>, [<item:minecraft:diamond> % 10], [<item:minecraft:coal_block> * 16]);
+
 // Crushing
 <recipetype:create:crushing>.addRecipe("create_crushing/ancient_debris", [<item:contenttweaker:tconstruct/crushed_ancient_debris>, (<item:contenttweaker:tconstruct/crushed_ancient_debris> * 2) % 25, <item:create:experience_nugget> % 10, <item:minecraft:netherrack> % 12], <item:minecraft:ancient_debris>, 350);
 <recipetype:create:crushing>.addRecipe("create_crushing/charged_certus_quartz_crystal", [<item:contenttweaker:ae2/crushed_charged_certus_quartz>, <item:contenttweaker:ae2/crushed_charged_certus_quartz> % 25, <item:create:experience_nugget> % 10], <item:ae2:charged_certus_quartz_crystal>, 350);
+<recipetype:create:crushing>.addRecipe("create_crushing/deepslate_quartz_ore", [<item:contenttweaker:ae2/crushed_certus_quartz> * 2, <item:ae2:certus_quartz_dust> * 4, <item:ae2:certus_quartz_dust> % 50, <item:minecraft:cobbled_deepslate> % 12], <item:ae2:deepslate_quartz_ore>, 300);
 <recipetype:create:crushing>.addRecipe("create_crushing/nether_cobalt_ore", [<item:contenttweaker:tconstruct/crushed_cobalt_ore> * 2, <item:contenttweaker:tconstruct/crushed_cobalt_ore> % 25, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 350);
 <recipetype:create:crushing>.removeByName("create:crushing/nether_quartz_ore");
 <recipetype:create:crushing>.addRecipe("create_crushing/nether_quartz_ore", [<item:contenttweaker:ae2/crushed_quartz> * 2, <item:contenttweaker:ae2/crushed_quartz> % 25, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:minecraft:nether_quartz_ore>, 350);
+<recipetype:create:crushing>.addRecipe("create_crushing/quartz_ore", [<item:contenttweaker:ae2/crushed_certus_quartz> * 2, <item:ae2:certus_quartz_dust> * 4, <item:ae2:certus_quartz_dust> % 50, <item:minecraft:cobblestone> % 12], <item:ae2:quartz_ore>, 300);
 <recipetype:create:crushing>.addRecipe("create_crushing/purpur_block", [<item:minecraft:popped_chorus_fruit>, <item:minecraft:popped_chorus_fruit> % 25], <item:minecraft:purpur_block>, 250);
+<recipetype:create:crushing>.addRecipe("create_crushing/soul_sand", [<item:thermal_extra:soul_sand_dust>], <item:minecraft:soul_sand>, 200);
+
+// Filling
+<recipetype:create:filling>.addRecipe("create_filling/leather_from_rotten_flesh", <item:minecraft:leather> % 50, <item:minecraft:rotten_flesh>, <fluid:minecraft:water> * 25, 800);
+<recipetype:create:filling>.addRecipe("create_filling/quartz_rose_from_quartz", <item:create:rose_quartz>, <item:minecraft:quartz>, <fluid:thermal:redstone> * 25, 100);
+
+// Haunting
+<recipetype:create:haunting>.addRecipe("create_haunting/basalt_from_tuff", [<item:minecraft:basalt>], <item:minecraft:tuff>, 100);
+<recipetype:create:haunting>.addRecipe("create_haunting/coal_from_charcoal", [<item:minecraft:coal> % 75], <item:minecraft:charcoal>, 200);
+<recipetype:create:haunting>.addRecipe("create_haunting/nether_wart_from_wheat_seeds", [<item:minecraft:nether_wart> % 50], <item:minecraft:wheat_seeds>, 600);
+
+// Milling
+<recipetype:create:milling>.addRecipe("create_milling/alexsmobs/fish_bones", [<item:minecraft:bone_meal> * 3, <item:minecraft:white_dye> % 25, (<item:minecraft:bone_meal> * 3) % 25], <item:alexsmobs:fish_bones>, 100);
+<recipetype:create:milling>.addRecipe("create_milling/aquaculture/fish_bones", [<item:minecraft:bone_meal> * 3, <item:minecraft:white_dye> % 25, (<item:minecraft:bone_meal> * 3) % 25], <item:aquaculture:fish_bones>, 100);
 
 // Mixing
 <recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_flux", {
@@ -828,5 +848,7 @@ if (packModeSetting.packModeSettingPlates() != true) {
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_rose_gold", [<item:tconstruct:rose_gold_nugget> * 10, (<item:tconstruct:rose_gold_nugget> * 5) % 50], <item:contenttweaker:tconstruct/crushed_rose_gold>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_slimesteel", [<item:tconstruct:slimesteel_nugget> * 10, (<item:tconstruct:slimesteel_nugget> * 5) % 50], <item:contenttweaker:tconstruct/crushed_slimesteel>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_steel", [<item:thermal:steel_nugget> * 12, (<item:thermal:steel_nugget> * 5) % 50], <item:contenttweaker:mekanism/crushed_steel>, 200);
+<recipetype:create:splashing>.addRecipe("create_splashing/nautilus_shell_from_red_sandstone", [<item:minecraft:red_sand>, <item:minecraft:nautilus_shell> % 5], <item:minecraft:red_sandstone>, 200);
+<recipetype:create:splashing>.addRecipe("create_splashing/nautilus_shell_from_sandstone", [<item:minecraft:sand>, <item:minecraft:nautilus_shell> % 2], <item:minecraft:sandstone>, 200);
 
 Globals.endScript("recipe_create");

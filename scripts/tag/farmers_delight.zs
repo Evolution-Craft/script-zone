@@ -18,6 +18,15 @@ import crafttweaker.api.block.Block;
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Blood Slime
+var addingBloodSlime = [
+	"tconstruct:blood_slime_fern",
+	"tconstruct:blood_slime_tall_grass"
+];
+for tag_blood_slime in addingBloodSlime {
+	<tag:items:farmersdelight:blood_slime>.add(<item:${tag_blood_slime}>);
+}
+
 // Heat Sources
 var addingHeatSources = [
 	"ends_delight:end_stove",

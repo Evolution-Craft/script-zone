@@ -77,63 +77,10 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 // Crusher
 <recipetype:cyclic:crusher>.removeByName("cyclic:crusher/chest");
 <recipetype:cyclic:crusher>.addRecipe("cyclic_crusher/chest", <tag:items:forge:chests/wooden>, <item:minecraft:stick> * 16, 20, 100);
-/*<recipetype:cyclic:crusher>.addJsonRecipe("cyclic_crusher/chest",{
-	"input": {
-		"tag": "forge:chests/wooden"
-	},
-	"energy": {
-		"ticks": 100,
-		"rfpertick": 20
-	},
-	"result": {
-		"item": "minecraft:stick",
-		"count": 16
-	}
-});*/
 
 // Solidifier
-<recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_chocolate_1", [<item:minecraft:air>, <item:minecraft:apple_honey>, <item:minecraft:air>], <fluid:create:chocolate> * 180, <item:cyclic:apple_chocolate>, 100, 120);
-/*<recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_chocolate_1", {
-	"ingredients":[{
-		"item": "cyclic:apple_honey"
-	}],
-	"mix": {
-		"fluid": "create:chocolate",
-		"count": 180
-	},
-	"energy": {
-		"rfpertick": 100,
-		"ticks": 120
-	},
-	"result": {
-		"item": "cyclic:apple_chocolate",
-		"count": 1
-	}
-});*/
-
-<recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_chocolate_3", {
-	"ingredients":[{
-		"item": "cyclic:apple_honey"
-	},
-	{
-		"item": "cyclic:apple_honey"
-	},
-	{
-		"item": "cyclic:apple_honey"
-	}],
-	"mix": {
-		"fluid": "create:chocolate",
-		"count": 540
-	},
-	"energy": {
-		"rfpertick": 2000,
-		"ticks": 80
-	},
-	"result": {
-		"item": "cyclic:apple_chocolate",
-		"count": 3
-	}
-});
+<recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_chocolate_1", [<item:minecraft:air>, <item:cyclic:apple_honey>, <item:minecraft:air>], <fluid:create:chocolate> * 180, <item:cyclic:apple_chocolate>, 100, 120);
+<recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_chocolate_3", [<item:cyclic:apple_honey>, <item:cyclic:apple_honey>, <item:cyclic:apple_honey>], <fluid:create:chocolate> * 540, <item:cyclic:apple_chocolate> * 3, 2000, 80);
 
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_chorus", {
 	"ingredients":[{
