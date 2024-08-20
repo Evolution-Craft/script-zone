@@ -25,6 +25,7 @@ import crafttweaker.api.recipe.Replacer;
 <recipetype:create:crushing>.addRecipe("create_crushing/nether_cobalt_ore", [<item:contenttweaker:tconstruct/crushed_cobalt_ore> * 2, <item:contenttweaker:tconstruct/crushed_cobalt_ore> % 25, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 350);
 <recipetype:create:crushing>.removeByName("create:crushing/nether_quartz_ore");
 <recipetype:create:crushing>.addRecipe("create_crushing/nether_quartz_ore", [<item:contenttweaker:ae2/crushed_quartz> * 2, <item:contenttweaker:ae2/crushed_quartz> % 25, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:minecraft:nether_quartz_ore>, 350);
+<recipetype:create:crushing>.addRecipe("create_crushing/purpur_block", [<item:minecraft:popped_chorus_fruit>, <item:minecraft:popped_chorus_fruit> % 25], <item:minecraft:purpur_block>, 250);
 
 // Mixing
 <recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_flux", {

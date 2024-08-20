@@ -19,6 +19,14 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
+// Shapeless
+craftingTable.addShapeless("farmersdelight_delight/tconstruct/blood_cake", <item:tconstruct:blood_cake>, [<item:contenttweaker:tconstruct/delight/blood_cake_slice>, <item:contenttweaker:tconstruct/delight/blood_cake_slice>, <item:contenttweaker:tconstruct/delight/blood_cake_slice>, <item:contenttweaker:tconstruct/delight/blood_cake_slice>, <item:contenttweaker:tconstruct/delight/blood_cake_slice>, <item:contenttweaker:tconstruct/delight/blood_cake_slice>, <item:contenttweaker:tconstruct/delight/blood_cake_slice>]);
+craftingTable.addShapeless("farmersdelight_delight/tconstruct/earth_cake", <item:tconstruct:earth_cake>, [<item:contenttweaker:tconstruct/delight/earthslime_cake_slice>, <item:contenttweaker:tconstruct/delight/earthslime_cake_slice>, <item:contenttweaker:tconstruct/delight/earthslime_cake_slice>, <item:contenttweaker:tconstruct/delight/earthslime_cake_slice>, <item:contenttweaker:tconstruct/delight/earthslime_cake_slice>, <item:contenttweaker:tconstruct/delight/earthslime_cake_slice>, <item:contenttweaker:tconstruct/delight/earthslime_cake_slice>]);
+craftingTable.addShapeless("farmersdelight_delight/tconstruct/ender_cake", <item:tconstruct:ender_cake>, [<item:contenttweaker:tconstruct/delight/enderslime_cake_slice>, <item:contenttweaker:tconstruct/delight/enderslime_cake_slice>, <item:contenttweaker:tconstruct/delight/enderslime_cake_slice>, <item:contenttweaker:tconstruct/delight/enderslime_cake_slice>, <item:contenttweaker:tconstruct/delight/enderslime_cake_slice>, <item:contenttweaker:tconstruct/delight/enderslime_cake_slice>, <item:contenttweaker:tconstruct/delight/enderslime_cake_slice>]);
+craftingTable.addShapeless("farmersdelight_delight/tconstruct/magma_cake", <item:tconstruct:magma_cake>, [<item:contenttweaker:tconstruct/delight/magma_cake_slice>, <item:contenttweaker:tconstruct/delight/magma_cake_slice>, <item:contenttweaker:tconstruct/delight/magma_cake_slice>, <item:contenttweaker:tconstruct/delight/magma_cake_slice>, <item:contenttweaker:tconstruct/delight/magma_cake_slice>, <item:contenttweaker:tconstruct/delight/magma_cake_slice>, <item:contenttweaker:tconstruct/delight/magma_cake_slice>]);
+craftingTable.addShapeless("farmersdelight_delight/tconstruct/sky_cake", <item:tconstruct:sky_cake>, [<item:contenttweaker:tconstruct/delight/skyslime_cake_slice>, <item:contenttweaker:tconstruct/delight/skyslime_cake_slice>, <item:contenttweaker:tconstruct/delight/skyslime_cake_slice>, <item:contenttweaker:tconstruct/delight/skyslime_cake_slice>, <item:contenttweaker:tconstruct/delight/skyslime_cake_slice>, <item:contenttweaker:tconstruct/delight/skyslime_cake_slice>, <item:contenttweaker:tconstruct/delight/skyslime_cake_slice>]);
+craftingTable.addShapeless("farmersdelight_delight/tconstruct/skyslime_sweets", <item:contenttweaker:tconstruct/delight/skyslime_sweets>, [<item:tconstruct:sky_slime_ball>, <item:minecraft:sugar>]);
+
 // Shaped
 craftingTable.removeByName("farmersdelight:cooking_pot");
 craftingTable.addShaped("farmersdelight_delight_cooking_pot", <item:farmersdelight:cooking_pot>, [
@@ -28,11 +36,14 @@ craftingTable.addShaped("farmersdelight_delight_cooking_pot", <item:farmersdelig
 ]);
 
 // Cooking Pot
-<recipetype:farmersdelight:cooking>.addRecipe("cooking_pot_vinery_applesauce", <item:vinery:applesauce>, [<item:minecraft:apple>, <item:minecraft:sugar> * 2], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:minecraft:bowl>, 1, 400);
-<recipetype:farmersdelight:cooking>.addRecipe("cooking_pot_vinery_apple_jam", <item:vinery:apple_jam>, [<item:minecraft:apple>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 1, 400);
-<recipetype:farmersdelight:cooking>.addRecipe("cooking_pot_vinery_cherry_jam", <item:vinery:cherry_jam>, [<item:vinery:cherry>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 1, 400);
-<recipetype:farmersdelight:cooking>.addRecipe("cooking_pot_vinery_grape_jam", <item:vinery:grape_jam>, [<tag:items:forge:crops/grape>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 1, 400);
-<recipetype:farmersdelight:cooking>.addRecipe("cooking_pot_vinery_sweetberry_jam", <item:vinery:sweetberry_jam>, [<item:minecraft:sweet_berries>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 1, 400);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/tconstruct/crimson_broth", <item:contenttweaker:tconstruct/delight/crimson_broth>, [<item:tconstruct:bloodbone>, [<item:tconstruct:blood_slime_tall_grass> | <item:tconstruct:blood_slime_fern>], <item:minecraft:nether_wart>], <constant:farmersdelight:cooking_pot_recipe_book_tab:meals>, <item:minecraft:bowl>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/tconstruct/enderslime_pudding", <item:contenttweaker:tconstruct/delight/enderslime_pudding>, [<item:tconstruct:ender_slime_ball>, <item:minecraft:chorus_fruit>, <item:minecraft:sugar>], <constant:farmersdelight:cooking_pot_recipe_book_tab:meals>, <item:minecraft:air>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/tconstruct/tinkers_stew", <item:contenttweaker:tconstruct/delight/tinkers_stewe>, [<item:farmersdelight:cooked_bacon>, <item:tconstruct:sky_slime_ball>, <item:tconstruct:blood_slime_sapling>, <tag:items:forge:vegetables>], <constant:farmersdelight:cooking_pot_recipe_book_tab:meals>, <item:minecraft:bowl>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/vinery/applesauce", <item:vinery:applesauce>, [<item:minecraft:apple>, <item:minecraft:sugar> * 2], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:minecraft:bowl>, 1, 400);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/vinery/apple_jam", <item:vinery:apple_jam>, [<item:minecraft:apple>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 1, 400);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/vinery/cherry_jam", <item:vinery:cherry_jam>, [<item:vinery:cherry>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 1, 400);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/vinery/grape_jam", <item:vinery:grape_jam>, [<tag:items:forge:crops/grape>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 1, 400);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/vinery/sweetberry_jam", <item:vinery:sweetberry_jam>, [<item:minecraft:sweet_berries>, <item:minecraft:sugar> * 3], <constant:farmersdelight:cooking_pot_recipe_book_tab:misc>, <item:vinery:cherry_jar>, 1, 400);
 
 // Cutting Board
 var addingSeedCuttingFarmersDelight = {
@@ -202,11 +213,14 @@ var addingLogCuttingFarmersDelight = {
 	"twilightforest:transformation_log" : "twilightforest:stripped_transformation_log",
 	"twilightforest:transformation_wood" : "twilightforest:stripped_transformation_wood",
 	"twilightforest:twilight_oak_log" : "twilightforest:stripped_twilight_oak_log",
-	"twilightforest:twilight_oak_wood" : "twilightforest:stripped_twilight_oak_wood"
+	"twilightforest:twilight_oak_wood" : "twilightforest:stripped_twilight_oak_wood",
+	"vinery:cherry_log" : "vinery:stripped_cherry_log",
+	"vinery:cherry_wood" : "vinery:stripped_cherry_wood",
+	"vinery:old_cherry_log" : "vinery:stripped_old_cherry_log",
+	"vinery:old_cherry_wood" : "vinery:stripped_old_cherry_wood"
 };
 for addingLogCuttingFarmersDelightIn, addingLogCuttingFarmersDelightOut in addingLogCuttingFarmersDelight {
-	val addingLogCuttingFarmersDelightName = <item:${addingLogCuttingFarmersDelightIn}>;
-	<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingLogCuttingFarmersDelightName.registryName.path, {
+	<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + <item:${addingLogCuttingFarmersDelightIn}>.registryName.path, {
 		"ingredients": [{
 			"item": addingLogCuttingFarmersDelightIn
 		}],
@@ -223,74 +237,6 @@ for addingLogCuttingFarmersDelightIn, addingLogCuttingFarmersDelightOut in addin
 		"sound": "minecraft:item.axe.strip"
 	});
 }
-
-<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/cherry_log", {
-	"ingredients": [{
-		"item": "vinery:cherry_log"
-	}],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "axe_strip"
-	},
-	"result": [{
-		"item": "vinery:stripped_cherry_log"
-	},
-	{
-		"item": "farmersdelight:tree_bark"
-	}],
-	"sound": "minecraft:item.axe.strip"
-});
-
-<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/cherry_wood", {
-	"ingredients": [{
-		"item": "vinery:cherry_wood"
-	}],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "axe_strip"
-	},
-	"result": [{
-		"item": "vinery:stripped_cherry_wood"
-	},
-	{
-		"item": "farmersdelight:tree_bark"
-	}],
-	"sound": "minecraft:item.axe.strip"
-});
-
-<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/old_cherry_log", {
-	"ingredients": [{
-		"item": "vinery:old_cherry_log"
-	}],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "axe_strip"
-	},
-	"result": [{
-		"item": "vinery:stripped_old_cherry_log"
-	},
-	{
-		"item": "farmersdelight:tree_bark"
-	}],
-	"sound": "minecraft:item.axe.strip"
-});
-
-<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/old_cherry_wood", {
-	"ingredients": [{
-		"item": "vinery:old_cherry_wood"
-	}],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "axe_strip"
-	},
-	"result": [{
-		"item": "vinery:stripped_old_cherry_wood"
-	},
-	{
-		"item": "farmersdelight:tree_bark"
-	}],
-	"sound": "minecraft:item.axe.strip"
-});
 
 var addingDoorCuttingFarmersDelight = {
 	"azalea" : "ecologics:azalea",
@@ -465,7 +411,15 @@ for addingTFLostCuttingFarmersDelightName, addingTFLostCuttingFarmersDelightId i
 	}]
 });
 
-<recipetype:farmersdelight:cutting>.addRecipe("thermal_cutting_board_frost_melon_slice", <item:thermal:frost_melon>, [<item:thermal:frost_melon_slice> * 9], <tag:items:farmersdelight:tools/knives>);
-<recipetype:farmersdelight:cutting>.addRecipe("vinery_cutting_board_cake_slice", <item:vinery:apple_pie>, [<item:vinery:apple_pie_slice> * 4], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/alexsmobs/fish_bones", <item:alexsmobs:fish_bones>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculture/fish_bones", <item:aquaculture:fish_bones>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/netherdepthsupgrade/fish_bones", <item:netherdepthsupgrade:bonefish>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/blood_cake_slice", <item:tconstruct:blood_cake>, [<item:contenttweaker:tconstruct/delight/blood_cake_slice> * 7], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/earth_cake_slice", <item:tconstruct:earth_cake>, [<item:contenttweaker:tconstruct/delight/earth_cake_slice> * 7], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/enderslime_cake_slice", <item:tconstruct:ender_cake>, [<item:contenttweaker:tconstruct/delight/enderslime_cake_slice> * 7], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/magma_cake_slice", <item:tconstruct:magma_cake>, [<item:contenttweaker:tconstruct/delight/magma_cake_slice> * 7], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/skyslime_cake_slice", <item:tconstruct:skyslime_cake>, [<item:contenttweaker:tconstruct/delight/skyslime_cake_slice> * 7], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/thermal/frost_melon_slice", <item:thermal:frost_melon>, [<item:thermal:frost_melon_slice> * 9], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/vinery/cake_slice", <item:vinery:apple_pie>, [<item:vinery:apple_pie_slice> * 4], <tag:items:farmersdelight:tools/knives>);
 
 Globals.endScript("recipe_farmers_delight");

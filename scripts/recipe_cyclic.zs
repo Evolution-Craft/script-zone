@@ -6,6 +6,7 @@
  * CHANGELOG:
  * v0.1 : New recipe Solidfier.
  * v0.2 : Fix Recipe Rotation Wand.
+ * v0.3 : Code Cleanup.
  */
 
 Globals.startScript("recipe_cyclic");
@@ -22,6 +23,20 @@ craftingTable.addShaped("cyclic_breaker", <item:cyclic:breaker>, [
 	[<item:minecraft:tripwire_hook>, <tag:items:forge:nuggets/copper>, <item:minecraft:tripwire_hook>],
 	[<item:exlinecopperequipment:copper_shovel>, <item:minecraft:dispenser>, <item:exlinecopperequipment:copper_pick>],
 	[<item:minecraft:mossy_cobblestone_slab>, <item:minecraft:mossy_cobblestone_slab>, <item:minecraft:mossy_cobblestone_slab>]
+]);
+
+craftingTable.removeByName("cyclic:copper_chain");
+craftingTable.addShaped("cyclic_copper_chain", <item:cyclic:copper_chain>, [
+	[<item:minecraft:air>, <tag:items:forge:nuggets/copper>, <item:minecraft:air>],
+	[<item:minecraft:air>, <tag:items:forge:ingots/copper>, <item:minecraft:air>],
+	[<item:minecraft:air>, <tag:items:forge:nuggets/copper>, <item:minecraft:air>]
+]);
+
+craftingTable.removeByName("cyclic:gold_chain");
+craftingTable.addShaped("cyclic_gold_chain", <item:cyclic:gold_chain>, [
+	[<item:minecraft:air>, <tag:items:forge:nuggets/gold>, <item:minecraft:air>],
+	[<item:minecraft:air>, <tag:items:forge:ingots/gold>, <item:minecraft:air>],
+	[<item:minecraft:air>, <tag:items:forge:nuggets/gold>, <item:minecraft:air>]
 ]);
 
 craftingTable.removeByName("cyclic:rotation_wand");
@@ -61,7 +76,8 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 
 // Crusher
 <recipetype:cyclic:crusher>.removeByName("cyclic:crusher/chest");
-<recipetype:cyclic:crusher>.addJsonRecipe("cyclic_crusher/chest",{
+<recipetype:cyclic:crusher>.addRecipe("cyclic_crusher/chest", <tag:items:forge:chests/wooden>, <item:minecraft:stick> * 16, 20, 100);
+/*<recipetype:cyclic:crusher>.addJsonRecipe("cyclic_crusher/chest",{
 	"input": {
 		"tag": "forge:chests/wooden"
 	},
@@ -72,22 +88,12 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 	"result": {
 		"item": "minecraft:stick",
 		"count": 16
-	},
-	"conditions": [{
-		"values": [{
-			"modid": "cyclic",
-			"type": "forge:mod_loaded"
-		},
-		{
-			"item": "cyclic:crusher",
-			"type": "forge:item_exists"
-		}],
-		"type": "forge:and"
-	}]
-});
+	}
+});*/
 
 // Solidifier
-<recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_chocolate_1", {
+<recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_chocolate_1", [<item:minecraft:air>, <item:minecraft:apple_honey>, <item:minecraft:air>], <fluid:create:chocolate> * 180, <item:cyclic:apple_chocolate>, 100, 120);
+/*<recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_chocolate_1", {
 	"ingredients":[{
 		"item": "cyclic:apple_honey"
 	}],
@@ -103,7 +109,7 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 		"item": "cyclic:apple_chocolate",
 		"count": 1
 	}
-});
+});*/
 
 <recipetype:cyclic:solidifier>.addJsonRecipe("cyclic_solidifier/apple_chocolate_3", {
 	"ingredients":[{

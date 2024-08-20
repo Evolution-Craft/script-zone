@@ -6,6 +6,7 @@
  * CHANGELOG:
  * v0.1 : First Issue.
  * v0.2 : Potions Settings.
+ * v0.3 : Tom's Support.
  */
 
 #priority 1500
@@ -25,6 +26,8 @@ public class packModeSetting {
 	private static val pack_mode_expert_recipe_log_enable as string = true;
 	private static val pack_mode_expert_recipe_plate_enable as string = true;
 	private static val pack_mode_expert_recipe_shears_enable as string = true;
+
+	private static val pack_mode_expert_recipe_toms_storage_enable as string = true;
 
 	private static val quantity_planks_from_log as int = 2;
 
@@ -77,6 +80,12 @@ public class packModeSetting {
 	}
 	public static val packModeSettingKnife_Set as string = "packModeSettingKnife Set: " + pack_mode_expert_recipe_knife_enable;
 	public static val packModeSettingKnife_Load as string = "packModeSettingKnife Load Completed";
+
+	public static packModeSettingTomsStorage() as string {
+		return pack_mode_expert_recipe_toms_storage_enable;
+	}
+	public static val packModeSettingTomsStorage_Set as string = "packModeSettingTomsStorage Set: " + pack_mode_expert_recipe_toms_storage_enable;
+	public static val packModeSettingTomsStorage_Load as string = "packModeSettingTomsStorage Load Completed";
 
 	public static packModeSettingLogs() as string {
 		return pack_mode_expert_recipe_log_enable;
@@ -147,6 +156,8 @@ println("          -> " + packModeSetting.packModeSettingHorseArmors_Set + "    
 println("          -> " + packModeSetting.packModeSettingHorseArmors_Load + "          ");
 println("          -> " + packModeSetting.packModeSettingKnife_Set + "          ");
 println("          -> " + packModeSetting.packModeSettingKnife_Load + "          ");
+println("          -> " + packModeSetting.packModeSettingTomsStorage_Set + "          ");
+println("          -> " + packModeSetting.packModeSettingTomsStorage_Load + "          ");
 println("          -> " + packModeSetting.packModeSettingLogs_Set + "          ");
 println("          -> " + packModeSetting.packModeSettingLogsCount_Set + "          ");
 println("          -> " + packModeSetting.packModeSettingLogs_Load + "          ");

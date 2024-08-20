@@ -13,7 +13,7 @@
  * v0.7 : Remove Partinal temorary Fix.
  * v0.8 : Add Armors Tags.
  * v0.9 : Add Custom Rods.
- * v1.0 : Add Missing Tag.
+ * v0.10 : Add Missing Tag.
  */
 
 #priority 997
