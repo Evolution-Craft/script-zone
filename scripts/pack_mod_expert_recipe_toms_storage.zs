@@ -21,13 +21,13 @@ if (packModeSetting.packModeSettingTomsStorage() == true) {
 
 	// Shapeless
 	craftingTable.removeByName("toms_storage:inventory_cable");
-	craftingTable.addShapeless("pack_expert_crafting_toms_storage/inventory_cable", <toms_storage:ts.inventory_cable> * 8, [<item:create:brass_sheet>, <item:minecraft:dried_kelp>]);
+	craftingTable.addShapeless("pack_expert_crafting_toms_storage/inventory_cable", <item:toms_storage:ts.inventory_cable> * 8, [<item:create:brass_sheet>, <item:minecraft:dried_kelp>]);
 	craftingTable.removeByName("toms_storage:inventory_cable_connector");
-	craftingTable.addShapeless("pack_expert_crafting_toms_storage/inventory_cable_connector", <toms_storage:ts.inventory_cable_connector>, [<item:toms_storage:ts.inventory_cable>, <item:create:chute>]);
+	craftingTable.addShapeless("pack_expert_crafting_toms_storage/inventory_cable_connector", <item:toms_storage:ts.inventory_cable_connector>, [<item:toms_storage:ts.inventory_cable>, <item:create:chute>]);
 	craftingTable.removeByName("toms_storage:level_emitter");
-	craftingTable.addShapeless("pack_expert_crafting_toms_storage/level_emitter", <toms_storage:ts.level_emitter>, [<item:create:content_observer>, <item:toms_storage:ts.inventory_cable>, <item:minecraft:redstone_torch>]);
+	craftingTable.addShapeless("pack_expert_crafting_toms_storage/level_emitter", <item:toms_storage:ts.level_emitter>, [<item:create:content_observer>, <item:toms_storage:ts.inventory_cable>, <item:minecraft:redstone_torch>]);
 	craftingTable.removeByName("toms_storage:inventory_proxy");
-	craftingTable.addShapeless("pack_expert_crafting_toms_storage/inventory_proxy", <toms_storage:ts.inventory_proxy>, [<item:toms_storage:ts.inventory_connector>, <item:create:smart_chute>]);
+	craftingTable.addShapeless("pack_expert_crafting_toms_storage/inventory_proxy", <item:toms_storage:ts.inventory_proxy>, [<item:toms_storage:ts.inventory_connector>, <item:create:smart_chute>]);
 
 	// Shaped
 	craftingTable.removeByName("toms_storage:inventory_cable_connector_filtered");
@@ -69,7 +69,7 @@ if (packModeSetting.packModeSettingTomsStorage() == true) {
 	craftingTable.addShaped("pack_expert_crafting_toms_storage/storage_terminal", <item:toms_storage:ts.storage_terminal>, [
 		[<item:minecraft:air>, <item:create:precision_mechanism>, <item:minecraft:air>],
 		[<item:create:content_observer>, <item:create:display_link>, <item:create:display_board>],
-		[<item:minecraft:buttons>, <item:minecraft:buttons>, <item:minecraft:buttons>]
+		[<tag:items:minecraft:buttons>, <tag:items:minecraft:buttons>, <tag:items:minecraft:buttons>]
 	]);
 
 	craftingTable.removeByName("toms_storage:trim");

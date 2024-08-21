@@ -295,6 +295,7 @@ blastFurnace.addRecipe("blast_furnace/minecraft_raw_copper_block", <item:minecra
 blastFurnace.addRecipe("blast_furnace/minecraft_raw_gold_block", <item:minecraft:gold_block>, <item:minecraft:raw_gold_block>, 6.0, 200);
 blastFurnace.addRecipe("blast_furnace/minecraft_sand", <item:minecraft:glass>, <tag:items:minecraft:sand>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/minecraft_stone", <item:minecraft:smooth_stone>, <item:minecraft:stone>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/nha_netherite_horse_armor", <item:thermal:netherite_nugget>, <item:nha:netherite_horse_armor>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/tconstruct_ingot_pig_iron_from_crushed_pig_iron", <item:tconstruct:pig_iron_ingot>, <item:contenttweaker:tconstruct/crushed_pig_iron>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/quark_dirty_glass", <item:minecraft:glass>, <item:quark:dirty_glass>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/thermal_steel_ingot_from_crushed_steel", <item:thermal:steel_ingot>, <item:contenttweaker:mekanism/crushed_steel>, 0.1, 100);
@@ -345,8 +346,9 @@ furnace.addRecipe("furnace/mekanism_ingot_refined_glowstone_from_crushed_refined
 furnace.addRecipe("furnace/mekanism_ingot_refined_obsidian_from_crushed_refined_obsidian", <item:mekanism:ingot_refined_obsidian>, <item:contenttweaker:mekanism/crushed_refined_obsidian>, 0.1, 200);
 furnace.addRecipe("furnace/minecraft_beetroot", <item:minecraft:sugar> * 2, <item:minecraft:beetroot>, 0.1, 60);
 furnace.addRecipe("furnace/minecraft_rotten_flesh", <item:minecraft:leather>, <item:minecraft:rotten_flesh> * 4, 0.4, 240);
-furnace.addRecipe("furnace/thermal_steel_ingot_from_crushed_steel", <item:thermal:steel_ingot>, <item:contenttweaker:mekanism/crushed_steel>, 0.1, 200);
+furnace.addRecipe("furnace/nha_netherite_horse_armor", <item:thermal:netherite_nugget>, <item:nha:netherite_horse_armor>, 0.1, 200);
 furnace.addRecipe("furnace/netherdepthsupgrade_bonefish", <item:minecraft:bone_meal> * 3, <item:netherdepthsupgrade:bonefish>, 0.05, 200);
+furnace.addRecipe("furnace/thermal_steel_ingot_from_crushed_steel", <item:thermal:steel_ingot>, <item:contenttweaker:mekanism/crushed_steel>, 0.1, 200);
 furnace.addRecipe("furnace/tconstruct_ingot_pig_iron_from_crushed_pig_iron", <item:tconstruct:pig_iron_ingot>, <item:contenttweaker:tconstruct/crushed_pig_iron>, 0.1, 200);
 furnace.addRecipe("furnace/twilightforest_green_thorns", <item:twilightforest:burnt_thorns>, <item:twilightforest:green_thorns>, 0.4, 240);
 furnace.addRecipe("furnace/twilightforest_brown_thorns", <item:twilightforest:burnt_thorns>, <item:twilightforest:brown_thorns>, 0.4, 240);

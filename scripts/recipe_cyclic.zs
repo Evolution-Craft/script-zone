@@ -84,15 +84,15 @@ craftingTable.addShaped("cyclic_spikes_iron", <item:cyclic:spikes_iron> * 2, [
 <recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_chorus", [<item:minecraft:chorus_flower>, <item:cyclic:apple_chocolate>, <item:salt:salt>], <fluid:enlightened_end:ooze_fluid> * 1000, <item:cyclic:apple_chorus>, 100, 120);
 <recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_iron_one", [<item:minecraft:air>, <item:cyclic:apple_honey>, <item:minecraft:air>], <fluid:tconstruct:molten_iron> * 180, <item:cyclic:apple_iron>, 100, 120);
 <recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_iron_three", [<item:cyclic:apple_honey>, <item:cyclic:apple_honey>, <item:cyclic:apple_honey>], <fluid:tconstruct:molten_iron> * 540, <item:cyclic:apple_iron> * 3, 2000, 80);
-<recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_lapis", [<item:minecraft:lapis_lazuli>, <item:cyclic:apple_honey>, <item:minecraft:lapis_lazuli>], <fluid:forge:experience> * 1000, <item:cyclic:apple_lapis>, 100, 120);
+<recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_lapis", [<item:minecraft:lapis_lazuli>, <item:cyclic:apple_honey>, <item:minecraft:lapis_lazuli>], "forge:experience", 1000, <item:cyclic:apple_lapis>, 100, 120);
 <recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_sprout_diamond", [<item:minecraft:air>, <item:cyclic:apple_chorus>, <item:minecraft:air>], <fluid:tconstruct:molten_diamond> * 1000, <item:cyclic:apple_sprout_diamond> * 2, 100, 120);
 <recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/apple_sprout_emerald", [<item:minecraft:air>, <item:cyclic:apple_chorus>, <item:minecraft:air>], <fluid:tconstruct:molten_emerald> * 1000, <item:cyclic:apple_sprout_emerald> * 2, 100, 120);
 <recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/fireball", [<item:minecraft:fire_charge>, <item:minecraft:gunpowder>, <item:minecraft:air>], <fluid:cyclic:wax> * 200, <item:cyclic:fireball>, 100, 120);
 <recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/solidifier_apple_enchanted");
 <recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/solidifier_apple_enchanted", [<item:cyclic:apple_diamond>, <item:minecraft:netherite_ingot>, <item:cyclic:apple_emerald>], <fluid:tconstruct:molten_queens_slime> * 1000, <item:minecraft:enchanted_golden_apple>, 5500, 200);
 <recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/solidifier_honeyhive");
-<recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/solidifier_honeyhive", [<tag:items:forge:chests/wooden>, <item:minecraft:honeycomb>, <item:minecraft:stick>], <fluid:forge:honey> * 100, <item:minecraft:beehive> * 3, 100, 100);
+<recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/solidifier_honeyhive", [<tag:items:forge:chests/wooden>, <item:minecraft:honeycomb>, <item:minecraft:stick>], "forge:honey", 100, <item:minecraft:beehive> * 3, 100, 100);
 <recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/wax_hive");
-<recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/wax_hive", [<item:minecraft:air>, <tag:items:forge:chests/wooden>, <item:minecraft:air>], <fluid:forge:wax> * 1000, <item:minecraft:beehive>, 2000, 80);
+<recipetype:cyclic:solidifier>.addRecipe("cyclic_solidifier/wax_hive", [<item:minecraft:air>, <tag:items:forge:chests/wooden>, <item:minecraft:air>], "forge:wax", 1000, <item:minecraft:beehive>, 2000, 80);
 
 Globals.endScript("recipe_cyclic");

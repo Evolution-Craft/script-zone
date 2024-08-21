@@ -41,7 +41,6 @@ public function packAddRecipeApotheosisFletching(recipeName_ApotheosisFletching 
 }
 val packAddRecipeApotheosisFletching_Load as string = "packAddRecipeApotheosisFletching Load Completed";
 
-// crafttweaker.api.ingredient.IIngredient;
 public function packAddRecipeCorailWoodcutter_Item(recipeName_CorailWoodcutter_Item as string, itemIn as crafttweaker.api.item.IItemStack, itemOut as crafttweaker.api.item.IItemStack, count as int) as void {
 	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe(recipeName_CorailWoodcutter_Item, {
 		"ingredient":{

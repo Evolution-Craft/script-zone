@@ -7,6 +7,7 @@
  * v0.1 : Fix recipe carpet bug.
  * v0.2 : Fix confort compatibility.
  * v0.3 : Fix recipe glass pane bug.
+ * v0.4 : Add quark glass shard support.
  */
 
 Globals.startScript("recipe_supplementaries");
@@ -27,6 +28,12 @@ craftingTable.addShaped("supplementaries_soap/carpet", <item:minecraft:white_car
 
 craftingTable.addShaped("supplementaries_soap/glass_pane", <item:minecraft:glass_pane>, [
 	[<tag:items:forge:glass_panes/silica>, <item:supplementaries:soap>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
+craftingTable.addShaped("supplementaries_soap/shard", <item:quark:clear_shard>, [
+	[<tag:items:quark:shards>, <item:supplementaries:soap>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);

@@ -430,6 +430,7 @@ var removeRecipeByName = [
 	// The Undergarden
 	"undergarden:undergarden_scaffolding",
 	// Thermal Series
+	"thermal:cheese_wedge_from_wheel",
 	"thermal:dynamo_numismatic",
 	"thermal:fire_charge/bronze_ingot_4",
 	"thermal:fire_charge/constantan_ingot_2",

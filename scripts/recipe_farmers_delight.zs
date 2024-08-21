@@ -33,15 +33,25 @@ craftingTable.addShapeless("farmersdelight_delight/tconstruct/skyslime_sweets", 
 
 // Shaped
 craftingTable.removeByName("farmersdelight:cooking_pot");
-craftingTable.addShaped("farmersdelight_delight_cooking_pot", <item:farmersdelight:cooking_pot>, [
+craftingTable.addShaped("farmersdelight_delight/cooking_pot", <item:farmersdelight:cooking_pot>, [
 	[<item:minecraft:brick>, <item:minecraft:iron_shovel>, <item:minecraft:brick>],
 	[<item:minecraft:iron_ingot>, <item:minecraft:water_bucket>, <item:minecraft:iron_ingot>],
 	[<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]
 ]);
+craftingTable.addShaped("farmersdelight_delight/tconstruct/delight/ichor_salad", <item:contenttweaker:tconstruct/delight/ichor_salad>, [
+	[<item:tconstruct:blazing_bone>, <item:tconstruct:ichor_slime_ball>, <item:minecraft:air>],
+	[<item:farmersdelight:cooked_mutton_chops>, <item:minecraft:bowl>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
 
 // Cooking Pot
-<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_chai", <item:simplytea:cup_tea_chai>, [<item:farmersdelight:milk_bottle>, <item:simplytea:black_tea>, <item:simplytea:black_tea>, <tag:items:forge:cinnamon>], rbDrinks, <item:simplytea:cup>, 1, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_cocoa", <item:simplytea:cup_cocoa>, [<item:farmersdelight:milk_bottle>, <item:minecraft:cocoa_beans>, <item:minecraft:cocoa_beans>], rbDrinks, <item:simplytea:cup>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_black", <item:simplytea:cup_tea_black>, [<item:croptopia:water_bottle>, <item:simplytea:black_tea>, <item:simplytea:black_tea>], rbDrinks, <item:simplytea:cup>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_chai", <item:simplytea:cup_tea_chai>, [<item:farmersdelight:milk_bottle>, <item:simplytea:black_tea>, <item:simplytea:black_tea>, <tag:items:forge:cinnamon>], rbDrinks, <item:simplytea:cup>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_chorus", <item:simplytea:cup_tea_chorus>, [<item:croptopia:water_bottle>, <tag:items:forge:crops/chorus_petal>, <tag:items:forge:crops/chorus_petal>], rbDrinks, <item:simplytea:cup>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_floral", <item:simplytea:cup_tea_floral>, [<item:croptopia:water_bottle>, <item:minecraft:dandelion>, <item:minecraft:dandelion>], rbDrinks, <item:simplytea:cup>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_green", <item:simplytea:cup_tea_green>, [<item:croptopia:water_bottle>, <tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>], rbDrinks, <item:simplytea:cup>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_iced", <item:simplytea:cup_tea_iced>, [<item:croptopia:water_bottle>, <tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>, <item:simplytea:ice_cube>, <item:minecraft:apple>], rbDrinks, <item:simplytea:cup>, 1, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/tconstruct/crimson_broth", <item:contenttweaker:tconstruct/delight/crimson_broth>, [<item:tconstruct:bloodbone>, <tag:items:farmersdelight:blood_slime>, <item:minecraft:nether_wart>], rbMeals, <item:minecraft:bowl>, 1, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/tconstruct/enderslime_pudding", <item:contenttweaker:tconstruct/delight/enderslime_pudding>, [<item:tconstruct:ender_slime_ball>, <item:minecraft:chorus_fruit>, <item:minecraft:sugar>], rbMeals, <item:minecraft:air>, 1, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/tconstruct/tinkers_stew", <item:contenttweaker:tconstruct/delight/tinkers_stew>, [<item:farmersdelight:cooked_bacon>, <item:tconstruct:sky_slime_ball>, <item:tconstruct:blood_slime_sapling>, <tag:items:forge:vegetables>], rbMeals, <item:minecraft:bowl>, 1, 200);
@@ -149,7 +159,7 @@ for addingSeedCuttingFarmersDelightName, addingSeedCuttingFarmersDelightOut in a
 				"chance": 0.5
 			},
 			{
-				"item": "croptopia:paprica",
+				"item": "croptopia:paprika",
 				"chance": 0.3
 			}]
 		});
@@ -244,7 +254,7 @@ for addingLogCuttingFarmersDelightIn, addingLogCuttingFarmersDelightOut in addin
 	});
 }
 
-var addingDoorCuttingFarmersDelight = {
+var addingCuttingFarmersDelight = {
 	"azalea" : "ecologics:azalea",
 	"bloodshroom" : "tconstruct:bloodshroom",
 	"canopy" : "twilightforest:canopy",
@@ -256,152 +266,137 @@ var addingDoorCuttingFarmersDelight = {
 	"greenheart" : "tconstruct:greenheart",
 	"indigo" : "enlightened_end:indigo",
 	"mangrove" : "twilightforest:mangrove",
+	"menril" : "integrateddynamics:menril",
 	"mining" : "twilightforest:mining",
 	"sorting" : "twilightforest:sorting",
 	"skyroot" : "tconstruct:skyroot",
 	"walnut" : "ecologics:walnut",
+	"thorn" : "tflostblocks:thorn_planks",
 	"timewood" : "twilightforest:time",
+	"towerwood" : "twilightforest:towerwood",
 	"transformation" : "twilightforest:transformation",
 	"twilight_oak" : "twilightforest:twilight_oak"
 };
-for addingDoorCuttingFarmersDelightName, addingDoorCuttingFarmersDelightId in addingDoorCuttingFarmersDelight {
-	<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingDoorCuttingFarmersDelightName + "_door", {
-		"ingredients": [{
-			"item": addingDoorCuttingFarmersDelightId + "_door"
-		}],
-		"tool": {
-			"type": "farmersdelight:tool_action",
-			"action": "axe_dig"
-		},
-		"result": [{
-			"item": addingDoorCuttingFarmersDelightId + "_planks"
-		}]
-	});
-	<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingDoorCuttingFarmersDelightName + "_trapdoor", {
-		"ingredients": [{
-			"item": addingDoorCuttingFarmersDelightId + "_trapdoor"
-		}],
-		"tool": {
-			"type": "farmersdelight:tool_action",
-			"action": "axe_dig"
-		},
-		"result": [{
-			"item": addingDoorCuttingFarmersDelightId + "_planks"
-		}]
-	});
-	if (addingDoorCuttingFarmersDelightName != "cerulean" || addingDoorCuttingFarmersDelightName != "cherry" || addingDoorCuttingFarmersDelightName != "darkwood" || addingDoorCuttingFarmersDelightName != "indigo") {
-		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingDoorCuttingFarmersDelightName + "_sign", {
+for addingCuttingFarmersDelightName, addingCuttingFarmersDelightId in addingCuttingFarmersDelight {
+	if (addingCuttingFarmersDelightName == "cerulean" || addingCuttingFarmersDelightName == "cherry" || addingCuttingFarmersDelightName == "darkwood" || addingCuttingFarmersDelightName == "indigo") {
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingCuttingFarmersDelightName + "_door", {
 			"ingredients": [{
-				"item": addingDoorCuttingFarmersDelightId + "_sign"
+				"item": addingCuttingFarmersDelightId + "_door"
 			}],
 			"tool": {
 				"type": "farmersdelight:tool_action",
 				"action": "axe_dig"
 			},
 			"result": [{
-				"item": addingDoorCuttingFarmersDelightId + "_planks"
+				"item": addingCuttingFarmersDelightId + "_planks"
+			}]
+		});
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingCuttingFarmersDelightName + "_trapdoor", {
+			"ingredients": [{
+				"item": addingCuttingFarmersDelightId + "_trapdoor"
+			}],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_dig"
+			},
+			"result": [{
+				"item": addingCuttingFarmersDelightId + "_planks"
+			}]
+		});
+	} else if (addingCuttingFarmersDelightName == "thorn" || addingCuttingFarmersDelightName == "towerwood") {
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingCuttingFarmersDelightName + "_door", {
+			"ingredients": [{
+				"item": "tflostblocks:" + addingCuttingFarmersDelightName + "_door"
+			}],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_dig"
+			},
+			"result": [{
+				"item": addingCuttingFarmersDelightId
+			}]
+		});
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingCuttingFarmersDelightName + "_trapdoor", {
+			"ingredients": [{
+				"item": "tflostblocks:" + addingCuttingFarmersDelightName + "_trapdoor"
+			}],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_dig"
+			},
+			"result": [{
+				"item": addingCuttingFarmersDelightId
+			}]
+		});
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingCuttingFarmersDelightName + "_sign", {
+			"ingredients": [{
+				"item": "tflostblocks:" + addingCuttingFarmersDelightName + "_sign"
+			}],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_dig"
+			},
+			"result": [{
+				"item": addingCuttingFarmersDelightId
+			}]
+		});
+	} else if (addingCuttingFarmersDelightName == "menril") {
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingCuttingFarmersDelightName + "_door", {
+			"ingredients": [{
+				"item": addingCuttingFarmersDelightId + "_door"
+			}],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_dig"
+			},
+			"result": [{
+				"item": addingCuttingFarmersDelightId + "_planks"
+			}]
+		});
+	} else {
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingCuttingFarmersDelightName + "_door", {
+			"ingredients": [{
+				"item": addingCuttingFarmersDelightId + "_door"
+			}],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_dig"
+			},
+			"result": [{
+				"item": addingCuttingFarmersDelightId + "_planks"
+			}]
+		});
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingCuttingFarmersDelightName + "_trapdoor", {
+			"ingredients": [{
+				"item": addingCuttingFarmersDelightId + "_trapdoor"
+			}],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_dig"
+			},
+			"result": [{
+				"item": addingCuttingFarmersDelightId + "_planks"
+			}]
+		});
+		<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingCuttingFarmersDelightName + "_sign", {
+			"ingredients": [{
+				"item": addingCuttingFarmersDelightId + "_sign"
+			}],
+			"tool": {
+				"type": "farmersdelight:tool_action",
+				"action": "axe_dig"
+			},
+			"result": [{
+				"item": addingCuttingFarmersDelightId + "_planks"
 			}]
 		});
 	}
 }
 
-var addingTFLostCuttingFarmersDelight = {
-	"towerwood" : "twilightforest:towerwood",
-	"thorn" : "tflostblocks:thorn_planks"
-};
-for addingTFLostCuttingFarmersDelightName, addingTFLostCuttingFarmersDelightId in addingTFLostCuttingFarmersDelight {
-	<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingTFLostCuttingFarmersDelightName + "_door", {
-		"ingredients": [{
-			"item": "tflostblocks:" + addingTFLostCuttingFarmersDelightName + "_door"
-		}],
-		"tool": {
-			"type": "farmersdelight:tool_action",
-			"action": "axe_dig"
-		},
-		"result": [{
-			"item": addingTFLostCuttingFarmersDelightId
-		}]
-	});
-	<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingTFLostCuttingFarmersDelightName + "_trapdoor", {
-		"ingredients": [{
-			"item": "tflostblocks:" + addingTFLostCuttingFarmersDelightName + "_trapdoor"
-		}],
-		"tool": {
-			"type": "farmersdelight:tool_action",
-			"action": "axe_dig"
-		},
-		"result": [{
-			"item": addingTFLostCuttingFarmersDelightId
-		}]
-	});
-	<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/" + addingTFLostCuttingFarmersDelightName + "_sign", {
-		"ingredients": [{
-			"item": "tflostblocks:" + addingTFLostCuttingFarmersDelightName + "_sign"
-		}],
-		"tool": {
-			"type": "farmersdelight:tool_action",
-			"action": "axe_dig"
-		},
-		"result": [{
-			"item": addingTFLostCuttingFarmersDelightId
-		}]
-	});
-}
-
-<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/menril_door", {
-	"ingredients": [{
-		"item": "integrateddynamics:menril_door"
-	}],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "axe_dig"
-	},
-	"result": [{
-		"item": "integrateddynamics:menril_planks"
-	}]
-});
-
-<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/chorus_nest_planks_door", {
-	"ingredients": [{
-		"item": "unusualend:chorus_nest_planks_door"
-	}],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "axe_dig"
-	},
-	"result": [{
-		"item": "unusualend:chorus_nest_planks"
-	}]
-});
-
-<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/chorus_nest_trapdoor", {
-	"ingredients": [{
-		"item": "unusualend:chorus_nest_trapdoor"
-	}],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "axe_dig"
-	},
-	"result": [{
-		"item": "unusualend:chorus_nest_planks"
-	}]
-});
-
-<recipetype:farmersdelight:cutting>.addJsonRecipe("farmersdelight_cutting/darkwood_sign", {
-	"ingredients": [{
-		"item": "twilightforest:darkwood_sign"
-	}],
-	"tool": {
-		"type": "farmersdelight:tool_action",
-		"action": "axe_dig"
-	},
-	"result": [{
-		"item": "twilightforest:dark_planks"
-	}]
-});
-
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/alexsmobs/fish_bones", <item:alexsmobs:fish_bones>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculture/fish_bones", <item:aquaculture:fish_bones>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/croptopia/noodle", <tag:items:forge:dough>, [<item:croptopia:noodle>], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/minecraft/wheat", <item:minecraft:wheat>, [<item:minecraft:wheat_seeds>, <item:minecraft:wheat_seeds> % 50, <item:croptopia:flour> % 30], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/netherdepthsupgrade/fish_bones", <item:netherdepthsupgrade:bonefish>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/blood_cake_slice", <item:tconstruct:blood_cake>, [<item:contenttweaker:tconstruct/delight/blood_cake_slice> * 7], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/earth_slime_crystal_block", <item:tconstruct:earth_slime_crystal_block>, [<item:tconstruct:earth_slime_crystal> * 4], <toolaction:pickaxe_dig>);
@@ -414,8 +409,11 @@ for addingTFLostCuttingFarmersDelightName, addingTFLostCuttingFarmersDelightId i
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/seared_bricks", <item:tconstruct:seared_bricks>, [<item:tconstruct:seared_brick> * 4], <toolaction:pickaxe_dig>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/skyslime_cake_slice", <item:tconstruct:sky_cake>, [<item:contenttweaker:tconstruct/delight/skyslime_cake_slice> * 7], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/sky_slime_crystal_block", <item:tconstruct:sky_slime_crystal_block>, [<item:tconstruct:sky_slime_crystal> * 4], <toolaction:pickaxe_dig>);
-<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/thermal/frost_melon_slice", <item:thermal:cheese_wheel>, [<item:thermal:cheese_wedge> * 4], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/thermal/cheese_wheel", <item:thermal:cheese_wheel>, [<item:thermal:cheese_wedge> * 4], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/thermal/frost_melon_slice", <item:thermal:frost_melon>, [<item:thermal:frost_melon_slice> * 9], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/twilightforest/darkwood_sign", <item:twilightforest:darkwood_sign>, [<item:twilightforest:dark_planks>], <toolaction:axe_dig>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/unusualend/chorus_nest_planks_door", <item:unusualend:chorus_nest_planks_door>, [<item:unusualend:chorus_nest_planks>], <toolaction:axe_dig>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/unusualend/chorus_nest_trapdoor", <item:unusualend:chorus_nest_trapdoor>, [<item:unusualend:chorus_nest_planks>], <toolaction:axe_dig>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/vinery/cake_slice", <item:vinery:apple_pie>, [<item:vinery:apple_pie_slice> * 4], <tag:items:farmersdelight:tools/knives>);
 
 Globals.endScript("recipe_farmers_delight");
