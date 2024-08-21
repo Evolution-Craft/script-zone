@@ -21,7 +21,6 @@ import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 import mods.mekanism.api.ingredient.ItemStackIngredient;
 
-// Crusher
 val mekanism_bio_fuel_crops_quantity = 5;
 val mekanism_bio_fuel_flowers_quantity = 5;
 val mekanism_bio_fuel_leaves_quantity = 2;
@@ -30,6 +29,25 @@ val mekanism_bio_fuel_mushrooms_block_quantity = 7;
 val mekanism_bio_fuel_saplings_quantity = 2;
 val mekanism_bio_fuel_seeds_quantity = 2;
 
+val mekanism_book_bookshelf_chance = 1;
+val mekanism_book_bookshelf_return = 3;
+val mekanism_planks_boat_return = 5;
+val mekanism_planks_bookshelf_return = 6;
+val mekanism_planks_chest_return = 8;
+val mekanism_planks_door_return = 2;
+val mekanism_planks_fence_gate_return = 2;
+val mekanism_planks_log_return = 6;
+val mekanism_planks_pressure_plate_return = 2;
+val mekanism_planks_trapdoor_return = 3;
+val mekanism_planks_trapped_chest_return = 8;
+val mekanism_saw_dust_log_chance = 0.25;
+val mekanism_saw_dust_log_return = 1;
+val mekanism_stick_fence_gate_chance = 1;
+val mekanism_stick_fence_gate_return = 4;
+val mekanism_tripwire_hook_chest_chance = 0.75;
+val mekanism_tripwire_hook_chest_return = 1;
+
+// Crusher
 var addingSeedCrushingMekanism = {
 	"croptopia/artichoke" : "croptopia:artichoke",
 	"croptopia/asparagus" : "croptopia:asparagus",
@@ -371,24 +389,6 @@ for addingFlowersCrushingMekanismName, addingFlowersCrushingMekanismMod in addin
 <recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/hop_graphite_dust_from_petcoke", ItemStackIngredient.from(<item:immersivepetroleum:petcoke_dust> * 4), <item:immersiveengineering:dust_hop_graphite>);
 
 // Precision Sawmill
-val mekanism_book_bookshelf_chance = 1;
-val mekanism_book_bookshelf_return = 3;
-val mekanism_planks_boat_return = 5;
-val mekanism_planks_bookshelf_return = 6;
-val mekanism_planks_chest_return = 8;
-val mekanism_planks_door_return = 2;
-val mekanism_planks_fence_gate_return = 2;
-val mekanism_planks_log_return = 6;
-val mekanism_planks_pressure_plate_return = 2;
-val mekanism_planks_trapdoor_return = 3;
-val mekanism_planks_trapped_chest_return = 8;
-val mekanism_saw_dust_log_chance = 0.25;
-val mekanism_saw_dust_log_return = 1;
-val mekanism_stick_fence_gate_chance = 1;
-val mekanism_stick_fence_gate_return = 4;
-val mekanism_tripwire_hook_chest_chance = 0.75;
-val mekanism_tripwire_hook_chest_return = 1;
-
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/log/ancient", ItemStackIngredient.from(<tag:items:naturesaura:ancient_logs>), <item:naturesaura:ancient_planks> * (mekanism_planks_log_return / 2), <item:thermal:sawdust> * mekanism_saw_dust_log_return, mekanism_saw_dust_log_chance);
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/log/rubberwood", ItemStackIngredient.from(<item:myrtrees:rubberwood_log>), <item:myrtrees:rubberwood_planks> * mekanism_planks_log_return, <item:thermal:sawdust> * mekanism_saw_dust_log_return, mekanism_saw_dust_log_chance);
 
@@ -535,7 +535,7 @@ for addingSawingChestMekanismName, addingSawingChestMekanismId in addingSawingCh
 	} else if (addingSawingChestMekanismName == "azalea" || addingSawingChestMekanismName == "blossom") {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/chest/" + addingSawingChestMekanismName, ItemStackIngredient.from(<item:${addingSawingChestMekanismId}>), <item:quark:${addingSawingChestMekanismName}_planks> * mekanism_planks_chest_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapped_chest/" + addingSawingChestMekanismName, ItemStackIngredient.from(<item:quark:${addingSawingChestMekanismName}_trapped_chest>), <item:quark:${addingSawingChestMekanismName}_planks> * mekanism_planks_trapped_chest_return, <item:minecraft:tripwire_hook> * mekanism_tripwire_hook_chest_return, mekanism_tripwire_hook_chest_chance);
-	} else{
+	} else {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/chest/" + addingSawingChestMekanismName, ItemStackIngredient.from(<item:${addingSawingChestMekanismId}>), <item:minecraft:${addingSawingChestMekanismName}_planks> * mekanism_planks_chest_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapped_chest/" + addingSawingChestMekanismName, ItemStackIngredient.from(<item:quark:${addingSawingChestMekanismName}_trapped_chest>), <item:minecraft:${addingSawingChestMekanismName}_planks> * mekanism_planks_trapped_chest_return, <item:minecraft:tripwire_hook> * mekanism_tripwire_hook_chest_return, mekanism_tripwire_hook_chest_chance);
 	}

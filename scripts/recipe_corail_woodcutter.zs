@@ -20,6 +20,42 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
+val woodcutting_log_boat_return = 1;
+val woodcutting_log_button_return = 4;
+val woodcutting_log_door_return = 4;
+val woodcutting_log_fence_return = 4;
+val woodcutting_log_fence_gate_return = 1;
+val woodcutting_log_hollow_return = 1;
+val woodcutting_log_planks_return = 4;
+val woodcutting_log_pressure_plate_return = 4;
+val woodcutting_log_sign_return = 4;
+val woodcutting_log_slab_return = 8;
+val woodcutting_log_stairs_return = 4;
+val woodcutting_log_stick_return = 8;
+val woodcutting_log_trapdoor_return = 4;
+
+val woodcutting_mcwbridges = 1;
+val woodcutting_mcwfences = 1;
+val woodcutting_mcwpaths_log = 24;
+val woodcutting_mcwpaths_planks = 6;
+val woodcutting_mcwroofs_log = 1;
+val woodcutting_mcwroofs_planks = 1;
+
+val woodcutting_planks_banister_return = 1;
+val woodcutting_planks_button_return = 1;
+val woodcutting_planks_door_return = 1;
+val woodcutting_planks_fence_return = 1;
+val woodcutting_planks_fence_gate_return = 1;
+val woodcutting_planks_other_planks_return = 1;
+val woodcutting_planks_pressure_plate_return = 1;
+val woodcutting_planks_scaffold_return = 1;
+val woodcutting_planks_sign_return = 1;
+val woodcutting_planks_slab_return = 2;
+val woodcutting_planks_stairs_return = 1;
+val woodcutting_planks_stick_return = 2;
+val woodcutting_planks_trapdoor_return = 1;
+val woodcutting_planks_wall_return = 1;
+
 // Shaped
 var craftingExpertLogCorailWoodcutter = {
 	"oak" : <tag:items:minecraft:oak_logs>,
@@ -65,40 +101,6 @@ for craftingExpertLogCorailWoodcutterName, craftingExpertLogCorailWoodcutterModI
 	"result": "quark:jungle_post",
 	"count": 4
 });
-
-val woodcutting_log_boat_return = 1;
-val woodcutting_log_button_return = 4;
-val woodcutting_log_door_return = 4;
-val woodcutting_log_fence_return = 4;
-val woodcutting_log_fence_gate_return = 1;
-val woodcutting_log_hollow_return = 1;
-val woodcutting_log_planks_return = 4;
-val woodcutting_log_pressure_plate_return = 4;
-val woodcutting_log_sign_return = 4;
-val woodcutting_log_slab_return = 8;
-val woodcutting_log_stairs_return = 4;
-val woodcutting_log_stick_return = 8;
-val woodcutting_log_trapdoor_return = 4;
-val woodcutting_mcwbridges = 1;
-val woodcutting_mcwfences = 1;
-val woodcutting_mcwpaths_log = 24;
-val woodcutting_mcwpaths_planks = 6;
-val woodcutting_mcwroofs_log = 1;
-val woodcutting_mcwroofs_planks = 1;
-val woodcutting_planks_banister_return = 1;
-val woodcutting_planks_button_return = 1;
-val woodcutting_planks_door_return = 1;
-val woodcutting_planks_fence_return = 1;
-val woodcutting_planks_fence_gate_return = 1;
-val woodcutting_planks_other_planks_return = 1;
-val woodcutting_planks_pressure_plate_return = 1;
-val woodcutting_planks_scaffold_return = 1;
-val woodcutting_planks_sign_return = 1;
-val woodcutting_planks_slab_return = 2;
-val woodcutting_planks_stairs_return = 1;
-val woodcutting_planks_stick_return = 2;
-val woodcutting_planks_trapdoor_return = 1;
-val woodcutting_planks_wall_return = 1;
 
 var addingBanisterFromPlanksCorailWoodcutter = {
 	"tflostblocks:thorn_planks" : "tflostblocks:thorn_banister",

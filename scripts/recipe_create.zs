@@ -19,9 +19,13 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
+val hcNone = <constant:create:heat_condition:none>;
+val hcHeated = <constant:create:heat_condition:heated>;
+val hcSuperheated = <constant:create:heat_condition:superheated>;
+
 // Compacting
-<recipetype:create:compacting>.addRecipe("create_compacted/coal_from_charcoal", <constant:create:heat_condition:heated>, [<item:minecraft:coal> % 75], [<item:minecraft:charcoal>]);
-<recipetype:create:compacting>.addRecipe("create_compacted/diamond_from_coal", <constant:create:heat_condition:superheated>, [<item:minecraft:diamond> % 10], [<item:minecraft:coal_block> * 16]);
+<recipetype:create:compacting>.addRecipe("create_compacted/coal_from_charcoal", hcHeated, [<item:minecraft:coal> % 75], [<item:minecraft:charcoal>]);
+<recipetype:create:compacting>.addRecipe("create_compacted/diamond_from_coal", hcSuperheated, [<item:minecraft:diamond> % 10], [<item:minecraft:coal_block> * 16]);
 
 // Crushing
 <recipetype:create:crushing>.addRecipe("create_crushing/ancient_debris", [<item:contenttweaker:tconstruct/crushed_ancient_debris>, (<item:contenttweaker:tconstruct/crushed_ancient_debris> * 2) % 25, <item:create:experience_nugget> % 10, <item:minecraft:netherrack> % 12], <item:minecraft:ancient_debris>, 350);
@@ -33,6 +37,9 @@ import crafttweaker.api.recipe.Replacer;
 <recipetype:create:crushing>.addRecipe("create_crushing/quartz_ore", [<item:contenttweaker:ae2/crushed_certus_quartz> * 2, <item:ae2:certus_quartz_dust> * 4, <item:ae2:certus_quartz_dust> % 50, <item:minecraft:cobblestone> % 12], <item:ae2:quartz_ore>, 300);
 <recipetype:create:crushing>.addRecipe("create_crushing/purpur_block", [<item:minecraft:popped_chorus_fruit>, <item:minecraft:popped_chorus_fruit> % 25], <item:minecraft:purpur_block>, 250);
 <recipetype:create:crushing>.addRecipe("create_crushing/soul_sand", [<item:thermal_extra:soul_sand_dust>], <item:minecraft:soul_sand>, 200);
+
+// Deployer
+<recipetype:create:deploying>.addRecipe("create_deploying/rabbits_foot", <item:minecraft:rabbit_hide>, <item:minecraft:bone>, [<item:minecraft:rabbit_foot>]);
 
 // Filling
 <recipetype:create:filling>.addRecipe("create_filling/leather_from_rotten_flesh", <item:minecraft:leather> % 50, <item:minecraft:rotten_flesh>, <fluid:minecraft:water> * 25, 800);
@@ -46,317 +53,37 @@ import crafttweaker.api.recipe.Replacer;
 // Milling
 <recipetype:create:milling>.addRecipe("create_milling/alexsmobs/fish_bones", [<item:minecraft:bone_meal> * 3, <item:minecraft:white_dye> % 25, (<item:minecraft:bone_meal> * 3) % 25], <item:alexsmobs:fish_bones>, 100);
 <recipetype:create:milling>.addRecipe("create_milling/aquaculture/fish_bones", [<item:minecraft:bone_meal> * 3, <item:minecraft:white_dye> % 25, (<item:minecraft:bone_meal> * 3) % 25], <item:aquaculture:fish_bones>, 100);
+<recipetype:create:milling>.addRecipe("create_milling/bhc/wither_bone", [<item:minecraft:bone_meal> * 3, <item:minecraft:black_dye> % 25, (<item:minecraft:bone_meal> * 3) % 25], <item:bhc:wither_bone>, 100);
+<recipetype:create:milling>.addRecipe("create_milling/netherdepthsupgrade/bonefish", [<item:minecraft:bone_meal> * 3, <item:minecraft:white_dye> % 25, (<item:minecraft:bone_meal> * 3) % 25], <item:netherdepthsupgrade:bonefish>, 100);
+<recipetype:create:milling>.addRecipe("create_milling/netherdepthsupgrade/wither_bonefish", [<item:minecraft:bone_meal> * 3, <item:minecraft:black_dye> % 25, (<item:minecraft:bone_meal> * 3) % 25], <item:netherdepthsupgrade:wither_bonefish>, 100);
+<recipetype:create:milling>.addRecipe("create_milling/tconstruct/blazing_bone", [<item:minecraft:bone_meal> * 3, <item:minecraft:blaze_powder> % 25, (<item:minecraft:bone_meal> * 3) % 25], <item:tconstruct:blazing_bone>, 100);
+<recipetype:create:milling>.addRecipe("create_milling/tconstruct/bloodbone", [<item:minecraft:bone_meal> * 3, <item:minecraft:red_dye> % 25, (<item:minecraft:bone_meal> * 3) % 25], <item:tconstruct:bloodbone>, 100);
+<recipetype:create:milling>.addRecipe("create_milling/tconstruct/necronium_bone", [<item:minecraft:bone_meal> * 3, <item:immersiveengineering:dust_uranium> % 25, (<item:minecraft:bone_meal> * 3) % 25], <item:tconstruct:necronium_bone>, 100);
 
 // Mixing
-<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_flux", {
-	"ingredients": [
-		{
-			"item": "contenttweaker:ae2/crushed_charged_certus_quartz"
-		},
-		{
-			"item": "contenttweaker:ae2/crushed_quartz"
-		},
-		{
-			"item": "minecraft:redstone"
-		},
-		{
-			"fluid": "minecraft:water",
-			"nbt": {},
-			"amount": 250
-		}
-	],
-	"results": [
-		{
-			"item": "contenttweaker:ae2/crushed_fluix",
-			"count": 2
-		} 
-	]
-});
+for mixing_glass_dye_add_item in Constant.packColours {
+	<recipetype:create:mixing>.addRecipe("create_mixing/quark/" + mixing_glass_dye_add_item + "_shard", hcNone, [<item:quark:${mixing_glass_dye_add_item}_shard> * 4], [<item:quark:shards> * 4, <item:minecraft:${mixing_glass_dye_add_item}_dye>]);
+	<recipetype:create:mixing>.addRecipe("create_mixing/quark/" + mixing_glass_dye_add_item + "_stained_glass", hcHeated, [<item:minecraft:${mixing_glass_dye_add_item}_stained_glass>], [<item:quark:${mixing_glass_dye_add_item}_shard> * 4]);
+}
 
-<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_hepatizon", {
-	"ingredients": [
-		{
-			"item": "create:crushed_raw_copper"
-		},
-		{
-			"item": "create:crushed_raw_copper"
-		},
-		{
-			"item": "contenttweaker:tconstruct/crushed_cobalt_ore"
-		},
-		{
-			"item": "create:powdered_obsidian"
-		}
-	],
-	"results": [
-		{
-			"item": "contenttweaker:tconstruct/crushed_hepatizon",
-			"count": 2
-		} 
-	],
-	"heatRequirement": "superheated"
-});
-
-<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_manyullyn", {
-	"ingredients": [
-		{
-			"item": "contenttweaker:tconstruct/crushed_cobalt_ore"
-		},
-		{
-			"item": "contenttweaker:tconstruct/crushed_cobalt_ore"
-		},
-		{
-			"item": "contenttweaker:tconstruct/crushed_cobalt_ore"
-		},
-		{
-			"item": "contenttweaker:tconstruct/crushed_ancient_debris"
-		}
-	],
-	"results": [
-		{
-			"item": "contenttweaker:tconstruct/crushed_manyullyn",
-			"count": 4
-		} 
-	],
-	"heatRequirement": "superheated"
-});
-
-<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_queens_slime", {
-	"ingredients": [
-		{
-			"item": "minecraft:magma_cream"
-		},
-		{
-			"item": "create:crushed_raw_gold"
-		},
-		{
-			"item": "contenttweaker:tconstruct/crushed_cobalt_ore"
-		}
-	],
-	"results": [
-		{
-			"item": "contenttweaker:tconstruct/crushed_queens_slime",
-			"count": 2
-		} 
-	],
-	"heatRequirement": "superheated"
-});
-
-<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_pig_iron", {
-	"ingredients": [
-		{
-			"item": "create:crushed_raw_iron"
-		},
-		{
-			"item": "tconstruct:blood_slime_ball"
-		},
-		{
-			"item": "minecraft:clay_ball"
-		}
-	],
-	"results": [
-		{
-			"item": "contenttweaker:tconstruct/crushed_pig_iron",
-			"count": 2
-		} 
-	],
-	"heatRequirement": "heated"
-});
-
-<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_refined_glowstone", {
-	"ingredients": [
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "minecraft:glowstone_dust"
-		},
-		{
-			"item": "minecraft:glowstone_dust"
-		},
-		{
-			"item": "minecraft:glowstone_dust"
-		},
-		{
-			"item": "minecraft:glowstone_dust"
-		},
-		{
-			"item": "minecraft:glowstone_dust"
-		},
-		{
-			"item": "minecraft:glowstone_dust"
-		},
-		{
-			"item": "minecraft:glowstone_dust"
-		},
-		{
-			"item": "minecraft:glowstone_dust"
-		}
-	],
-	"results": [
-		{
-			"item": "contenttweaker:mekanism/crushed_refined_glowstone",
-			"count": 8
-		} 
-	],
-	"heatRequirement": "superheated"
-});
-
-<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_refined_obsidian", {
-	"ingredients": [
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:crushed_raw_osmium"
-		},
-		{
-			"item": "create:powdered_obsidian"
-		},
-		{
-			"item": "create:powdered_obsidian"
-		},
-		{
-			"item": "create:powdered_obsidian"
-		},
-		{
-			"item": "create:powdered_obsidian"
-		},
-		{
-			"item": "create:powdered_obsidian"
-		},
-		{
-			"item": "create:powdered_obsidian"
-		},
-		{
-			"item": "create:powdered_obsidian"
-		},
-		{
-			"item": "create:powdered_obsidian"
-		},
-		{
-			"item": "mekanism:enriched_diamond"
-		}
-	],
-	"results": [
-		{
-			"item": "contenttweaker:mekanism/crushed_refined_obsidian",
-			"count": 8
-		} 
-	],
-	"heatRequirement": "superheated"
-});
-
-<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_rose_gold", {
-	"ingredients": [
-		{
-			"item": "create:crushed_raw_copper"
-		},
-		{
-			"item": "create:crushed_raw_copper"
-		},
-		{
-			"item": "create:crushed_raw_copper"
-		},
-		{
-			"item": "create:crushed_raw_gold"
-		}
-	],
-	"results": [
-		{
-			"item": "contenttweaker:tconstruct/crushed_rose_gold",
-			"count": 4
-		} 
-	],
-	"heatRequirement": "heated"
-});
-
-<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_slimesteel", {
-	"ingredients": [
-		{
-			"item": "create:crushed_raw_iron"
-		},
-		{
-			"item": "tconstruct:grout"
-		},
-		{
-			"item": "tconstruct:sky_slime_ball"
-		}
-	],
-	"results": [
-		{
-			"item": "contenttweaker:tconstruct/crushed_slimesteel",
-			"count": 2
-		} 
-	],
-	"heatRequirement": "heated"
-});
-
-<recipetype:create:mixing>.addJsonRecipe("create_mixing/crushed_steel", {
-	"ingredients": [
-		{
-			"item": "create:crushed_raw_iron"
-		},
-		{
-			"item": "create:crushed_raw_iron"
-		},
-		{
-			"item": "create:crushed_raw_iron"
-		},
-		{
-			"item": "create:crushed_raw_iron"
-		},
-		{
-			"item": "mekanism:enriched_carbon"
-		}
-	],
-	"results": [
-		{
-			"item": "contenttweaker:mekanism/crushed_steel",
-			"count": 4
-		} 
-	],
-	"heatRequirement": "heated"
-});
+<recipetype:create:mixing>.addRecipe("create_mixing/blaze_rod", hcNone, [<item:minecraft:blaze_rod>], [<item:minecraft:slime_ball>, <item:minecraft:blaze_powder> * 2]);
+<recipetype:create:mixing>.addRecipe("create_mixing/crushed_hepatizon", hcSuperheated, [<item:contenttweaker:tconstruct/crushed_hepatizon> * 2], [<item:create:crushed_raw_copper> * 2, <item:contenttweaker:tconstruct/crushed_cobalt_ore>, <item:create:powdered_obsidian>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/crushed_fluix", hcHeated, [<item:contenttweaker:ae2/crushed_fluix> * 2], [<item:contenttweaker:ae2/crushed_charged_certus_quartz>, <item:contenttweaker:ae2/crushed_quartz>, <item:minecraft:redstone>], [<fluid:minecraft:water> * 250], 200);
+<recipetype:create:mixing>.addRecipe("create_mixing/crushed_manyullyn", hcSuperheated, [<item:contenttweaker:tconstruct/crushed_manyullyn> * 4], [<item:contenttweaker:tconstruct/crushed_cobalt_ore> * 3, <item:contenttweaker:crushed_ancient_debris>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/crushed_queens_slime", hcSuperheated, [<item:contenttweaker:tconstruct/crushed_queens_slime> * 2], [<item:minecraft:magma_cream> , <item:create:crushed_raw_gold>, <item:contenttweaker:tconstruct/crushed_cobalt_ore>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/crushed_pig_iron", hcHeated, [<item:contenttweaker:tconstruct/crushed_pig_iron> * 2], [<item:create:crushed_raw_iron> , <item:tconstruct:blood_slime_ball>, <item:minecraft:clay_ball>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/crushed_refined_glowstone", hcSuperheated, [<item:contenttweaker:mekanism/crushed_refined_glowstone> * 8], [<item:create:crushed_raw_osmium> * 8, <item:minecraft:glowstone_dust> * 8]);
+<recipetype:create:mixing>.addRecipe("create_mixing/crushed_refined_obsidian", hcSuperheated, [<item:contenttweaker:mekanism/crushed_refined_obsidian> * 8], [<item:create:crushed_raw_osmium> * 8, <item:create:powdered_obsidian> * 8, <item:mekanism:enriched_diamond>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/crushed_rose_gold", hcHeated, [<item:contenttweaker:tconstruct/crushed_rose_gold> * 4], [<item:create:crushed_raw_copper> * 3, <item:create:crushed_raw_gold>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/crushed_slimesteel", hcHeated, [<item:contenttweaker:tconstruct/crushed_slimesteel> * 2], [<item:create:crushed_raw_iron> , <item:tconstruct:grout>, <item:tconstruct:sky_slime_ball>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/crushed_steel", hcHeated, [<item:contenttweaker:mekanism/crushed_steel> * 4], [<item:create:crushed_raw_iron> * 4, <item:mekanism:enriched_carbon>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/dragonsteel_ingot", hcHeated, [<item:thermal_extra:dragonsteel_ingot>], [<item:thermal:apatite> * 2, <item:minecraft:dragon_breath> * 3, <item:minecraft:netherite_ingot>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/gilded_blackstone", hcSuperheated, [<item:minecraft:gilded_blackstone>], [<tag:items:forge:ingots/gold> * 2, <item:minecraft:blackstone>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/shellite_ingot", hcHeated, [<item:thermal_extra:shellite_ingot>], [<item:thermal:apatite>, <item:minecraft:shulker_shell> * 2, <item:thermal:bronze_ingot>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/shroomlight", hcNone, [<item:minecraft:shroomlight>], [<tag:items:forge:dusts/glowstone> * 4, <item:minecraft:wart_blocks>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/soul_infused_ingot", hcHeated, [<item:thermal_extra:soul_infused_ingot>], [<item:thermal:apatite>, <item:thermal_extra:soul_sand_dust> * 2, <item:thermal:invar_ingot>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/sugar_from_honey", hcHeated, [<item:minecraft:sugar>], [<item:minecraft:air>], [<fluid:create:honey> * 50], 300);
+<recipetype:create:mixing>.addRecipe("create_mixing/twinite_ingot", hcHeated, [<item:thermal_extra:twinite_ingot>], [<item:thermal:apatite>, <item:minecraft:amethyst_shard> * 2, <item:thermal:enderium_ingot>]);
 
 // Sawing
 <recipetype:create:cutting>.addRecipe("stripped_cinnamon_log_from_cinnamon_log", <item:croptopia:stripped_cinnamon_log> % 100, <item:croptopia:cinnamon_log>, 50);
