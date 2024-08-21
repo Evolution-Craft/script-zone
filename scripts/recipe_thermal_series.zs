@@ -47,35 +47,36 @@ craftingTable.addShaped("thermal_storage/tea_block", <item:thermal:tea_block>, [
 	[<tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>]
 ]);
 
-// Blast Chiller 
-<recipetype:thermal:chiller>.addJsonRecipe("thermal_machines/chiller/chiller_diamond_rod", {
-	"input": [{
-		"fluid": "tconstruct:molten_diamond",
-		"amount": 45
-	},
-	{
-		"item": "thermal:chiller_rod_cast"
-	}],
-	"result": {
-		"item": "contenttweaker:immersiveengineering/diamond_rod",
-		"count": 1
-	},
-	"energy": 2400
-});
-<recipetype:thermal:chiller>.addJsonRecipe("thermal_machines/chiller/chiller_emerald_rod", {
-	"input": [{
-		"fluid": "tconstruct:molten_emerald",
-		"amount": 45
-	},
-	{
-		"item": "thermal:chiller_rod_cast"
-	}],
-	"result": {
-		"item": "contenttweaker:immersiveengineering/emerald_rod",
-		"count": 1
-	},
-	"energy": 2400
-});
+// Blast Chiller
+var addingRodBlastChiller = {
+	"tconstruct:molten_brass" : "createaddition:brass_rod",
+	"tconstruct:molten_constantan" : "immersiveposts:stick_constantan",
+	"tconstruct:molten_copper" : "createaddition:copper_rod",
+	"tconstruct:molten_diamond" : "contenttweaker:immersiveengineering/diamond_rod",
+	"tconstruct:molten_electrum" : "createaddition:electrum_rod",
+	"tconstruct:molten_emerald" : "contenttweaker:immersiveengineering/emerald_rod",
+	"tconstruct:molten_gold" : "createaddition:gold_rod",
+	"tconstruct:molten_lead" : "immersiveposts:stick_lead",
+	"tconstruct:molten_nickel" : "immersiveposts:stick_nickel",
+	"tconstruct:molten_silver" : "immersiveposts:stick_silver",
+	"tconstruct:molten_uranium" : "immersiveposts:stick_uranium"
+};
+for addingRodBlastChillerFuild, addingRodBlastChillerOut in addingRodBlastChiller {
+	<recipetype:thermal:chiller>.addJsonRecipe("thermal_machines/chiller/chiller_" + <item:${addingRodBlastChillerOut}>.registryName.path, {
+		"input": [{
+			"fluid": addingRodBlastChillerFuild,
+			"amount": 45
+		},
+		{
+			"item": "thermal:chiller_rod_cast"
+		}],
+		"result": {
+			"item": addingRodBlastChillerOut,
+			"count": 1
+		},
+		"energy": 2400
+	});
+}
 
 // Centrifugal Separator
 <recipetype:thermal:centrifuge>.addRecipe("thermal_compat/create/centrifuge_create_crushed_certus_quartz", [<item:ae2:certus_quartz_crystal> % 100, <item:ae2:certus_quartz_dust> % 25], <fluid:minecraft:empty>, <item:contenttweaker:ae2/crushed_certus_quartz>, 1600);
@@ -217,8 +218,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	};
 
 	for addingPlateMultiservoPressOut, addingPlateMultiservoPressIn in addingPlateMultiservoPress {
-		val addingPlateMultiservoPressName = <item:${addingPlateMultiservoPressOut}>;
-		<recipetype:thermal:press>.addJsonRecipe("pack_expert_crafting/thermal_machines/press/press_" + addingPlateMultiservoPressName.registryName.path, {
+		<recipetype:thermal:press>.addJsonRecipe("pack_expert_crafting/thermal_machines/press/press_" + <item:${addingPlateMultiservoPressOut}>.registryName.path, {
 			"ingredients": [{
 				"tag": addingPlateMultiservoPressIn,
 				"count": expert_ingradient_to_plate
@@ -334,5 +334,100 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	}],
 	"experience": 0.3
 });
+
+// Sawmill
+var addingLogSawmill = {
+	"ancient" : "naturesaura",
+	"azalea" : "ecologics",
+	"canopy" : "twilightforest",
+	"cerulean" : "enlightened_end",
+	"cherry" : "vinery",
+	"coconut" : "ecologics",
+	"darkwood" : "twilightforest",
+	"flowering_azalea" : "ecologics",
+	"grongle" : "undergarden",
+	"indigo" : "enlightened_end",
+	"mangrove" : "twilightforest",
+	"menril" : "integrateddynamics",
+	"mining" : "twilightforest",
+	"rubberwood" : "myrtrees",
+	"smogstem" : "undergarden",
+	"twilight_oak" : "twilightforest",
+	"walnut" : "ecologics",
+	"wigglewood" : "undergarden"
+};
+for addingLogSawmillName, addingLogSawmillModId in addingLogSawmill {
+	if (addingLogSawmillName == " ancient") {
+		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+			"ingredient": {
+				"tag": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
+			},
+			"result": [{
+				"item": addingLogSawmillModId + ":" + addingLogSawmillName + "_planks",
+				"count": 3
+			},{
+				"item": "thermal:sawdust",
+				"chance": 1.25
+			}],
+			"energy": 1000
+		});
+	} else if (addingLogSawmillName == " darkwood") {
+		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+			"ingredient": {
+				"item": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
+			},
+			"result": [{
+				"item": addingLogSawmillModId + ":dark_planks",
+				"count": 6
+			},{
+				"item": "thermal:sawdust",
+				"chance": 1.25
+			}],
+			"energy": 1000
+		});
+	} else if (addingLogSawmillName == " indigo") {
+		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_stems", {
+			"ingredient": {
+				"item": addingLogSawmillModId + ":" + addingLogSawmillName + "_stems"
+			},
+			"result": [{
+				"item": addingLogSawmillModId + ":" + addingLogSawmillName + "_planks",
+				"count": 6
+			},{
+				"item": "thermal:sawdust",
+				"chance": 1.25
+			}],
+			"energy": 1000
+		});
+	} else if (addingLogSawmillName == " rubberwoodt") {
+		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+			"ingredient": {
+				"item": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
+			},
+			"result": [{
+				"item": addingLogSawmillModId + ":" + addingLogSawmillName + "_planks",
+				"count": 6
+			},{
+				"item": "thermal:sawdust",
+				"chance": 1.25
+			}],
+			"energy": 1000
+		});
+	} else {
+		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+			"ingredient": {
+				"tag": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
+			},
+			"result": [{
+				"item": addingLogSawmillModId + ":" + addingLogSawmillName + "_planks",
+				"count": 6
+			},{
+				"item": "thermal:sawdust",
+				"chance": 1.25
+			}],
+			"energy": 1000
+		});
+	}
+}
 
 Globals.endScript("recipe_thermal_series");
