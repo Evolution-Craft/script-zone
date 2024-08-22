@@ -573,6 +573,15 @@ for tag_stone_forge in addingStoneForge {
 	<tag:items:forge:stone>.add(<item:${tag_stone_forge}>);
 }
 
+// Tomato Sauces
+var addingTomatoSaucesForge = [
+	"farmersdelight:tomato_sauce",
+	"thermal:tomato_sauce"
+];
+for tag_tomato_sauces_forge in addingTomatoSaucesForge {
+	<tag:items:forge:tomato_sauces>.add(<item:${tag_tomato_sauces_forge}>);
+}
+
 // Tool
 var addingToolsCopperForge = [
 	"exlinecopperequipment:copper_axe",

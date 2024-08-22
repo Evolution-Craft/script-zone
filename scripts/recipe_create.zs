@@ -23,6 +23,18 @@ val hcNone = <constant:create:heat_condition:none>;
 val hcHeated = <constant:create:heat_condition:heated>;
 val hcSuperheated = <constant:create:heat_condition:superheated>;
 
+// Shaped
+craftingTable.addShaped("create/mechanical_drill_from_head", <item:create:mechanical_drill>, [
+	[<item:minecraft:air>, <thermal:drill_head>, <item:minecraft:air>],
+	[<item:minecraft:air>, <create:andesite_casing>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+craftingTable.addShaped("create/mechanical_saw_from_blade", <item:create:mechanical_saw>, [
+	[<item:minecraft:air>, <thermal:saw_blade>, <item:minecraft:air>],
+	[<item:minecraft:air>, <create:andesite_casing>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
 // Compacting
 <recipetype:create:compacting>.addRecipe("create_compacted/coal_from_charcoal", hcHeated, [<item:minecraft:coal> % 75], [<item:minecraft:charcoal>]);
 <recipetype:create:compacting>.addRecipe("create_compacted/diamond_from_coal", hcSuperheated, [<item:minecraft:diamond> % 10], [<item:minecraft:coal_block> * 16]);
@@ -44,14 +56,21 @@ for logWoodenHorseId, logWoodenHorseName in logsWoodenHorse {
 
 <recipetype:create:crushing>.addRecipe("create_crushing/copper_horse_armor", [<item:minecraft:copper_ingot> * 2, <item:minecraft:leather> % 50, <item:minecraft:copper_ingot> % 50, (<item:minecraft:string> * 2) % 25, (<item:thermal:copper_nugget> * 4) % 25], <item:exlinecopperequipment:copper_horse_armor>, 200);
 <recipetype:create:crushing>.addRecipe("create_crushing/ancient_debris", [<item:contenttweaker:tconstruct/crushed_ancient_debris>, (<item:contenttweaker:tconstruct/crushed_ancient_debris> * 2) % 25, <item:create:experience_nugget> % 10, <item:minecraft:netherrack> % 12], <item:minecraft:ancient_debris>, 350);
+<recipetype:create:crushing>.addRecipe("create_crushing/basalz_rod", [<item:thermal:basalz_powder> * 2, <item:thermal:basalz_powder> % 50, <item:thermal:slag> % 50], <item:thermal:basalz_rod>, 100);
+<recipetype:create:crushing>.addRecipe("create_crushing/blitz_rod", [<item:thermal:blitz_rod> * 2, <item:thermal:blitz_rod> % 50, <item:thermal:slag> % 50], <item:thermal:blitz_rod>, 100);
+<recipetype:create:crushing>.addRecipe("create_crushing/blizz_rod", [<item:thermal:blizz_rod> * 2, <item:thermal:blizz_rod> % 50, <item:thermal:slag> % 50], <item:thermal:blizz_rod>, 100);
 <recipetype:create:crushing>.addRecipe("create_crushing/charged_certus_quartz_crystal", [<item:contenttweaker:ae2/crushed_charged_certus_quartz>, <item:contenttweaker:ae2/crushed_charged_certus_quartz> % 25, <item:create:experience_nugget> % 10], <item:ae2:charged_certus_quartz_crystal>, 350);
-<recipetype:create:crushing>.addRecipe("create_crushing/deepslate_quartz_ore", [<item:contenttweaker:ae2/crushed_certus_quartz> * 2, <item:ae2:certus_quartz_dust> * 4, <item:ae2:certus_quartz_dust> % 50, <item:minecraft:cobbled_deepslate> % 12], <item:ae2:deepslate_quartz_ore>, 300);
+<recipetype:create:crushing>.addRecipe("create_crushing/deepslate_quartz_ore", [<item:contenttweaker:ae2/crushed_certus_quartz> * 2, <item:ae2:certus_quartz_dust> * 4, <item:ae2:certus_quartz_dust> % 50, <item:minecraft:cobbled_deepslate> % 12], <item:ae2:deepslate_quartz_ore>, 450);
+<recipetype:create:crushing>.addRecipe("create_crushing/deepslate_ruby_ore", [<item:thermal:ruby> * 2, <item:thermal:ruby> % 25, <item:create:experience_nugget> % 75, <item:minecraft:cobbled_deepslate> % 12], <item:thermal:deepslate_ruby_ore>, 450);
+<recipetype:create:crushing>.addRecipe("create_crushing/deepslate_sapphire_ore", [<item:thermal:sapphire> * 2, <item:thermal:sapphire> % 25, <item:create:experience_nugget> % 75, <item:minecraft:cobbled_deepslate> % 12], <item:thermal:deepslate_sapphire_ore>, 450);
 <recipetype:create:crushing>.addRecipe("create_crushing/nether_cobalt_ore", [<item:contenttweaker:tconstruct/crushed_cobalt_ore> * 2, <item:contenttweaker:tconstruct/crushed_cobalt_ore> % 25, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 350);
 <recipetype:create:crushing>.removeByName("create:crushing/nether_quartz_ore");
 <recipetype:create:crushing>.addRecipe("create_crushing/nether_quartz_ore", [<item:contenttweaker:ae2/crushed_quartz> * 2, <item:contenttweaker:ae2/crushed_quartz> % 25, <item:create:experience_nugget> % 75, <item:minecraft:netherrack> % 12], <item:minecraft:nether_quartz_ore>, 350);
 <recipetype:create:crushing>.addRecipe("create_crushing/netherite_horse_armor", [<item:minecraft:netherite_ingot> * 2, <item:minecraft:leather> % 50, <item:minecraft:netherite_ingot> % 50, (<item:minecraft:string> * 2) % 25, (<item:thermal:netherite_nugget> * 4) % 25], <item:nha:netherite_horse_armor>, 200);
 <recipetype:create:crushing>.addRecipe("create_crushing/quartz_ore", [<item:contenttweaker:ae2/crushed_certus_quartz> * 2, <item:ae2:certus_quartz_dust> * 4, <item:ae2:certus_quartz_dust> % 50, <item:minecraft:cobblestone> % 12], <item:ae2:quartz_ore>, 300);
 <recipetype:create:crushing>.addRecipe("create_crushing/purpur_block", [<item:minecraft:popped_chorus_fruit>, <item:minecraft:popped_chorus_fruit> % 25], <item:minecraft:purpur_block>, 250);
+<recipetype:create:crushing>.addRecipe("create_crushing/ruby_ore", [<item:thermal:ruby> * 2, <item:thermal:ruby> % 25, <item:create:experience_nugget> % 75, <item:minecraft:cobblestone> % 12], <item:thermal:ruby_ore>, 350);
+<recipetype:create:crushing>.addRecipe("create_crushing/sapphire_ore", [<item:thermal:sapphire> * 2, <item:thermal:sapphire> % 25, <item:create:experience_nugget> % 75, <item:minecraft:cobblestone> % 12], <item:thermal:sapphire_ore>, 350);
 <recipetype:create:crushing>.addRecipe("create_crushing/silver_horse_armor", [<item:thermal:silver_ingot> * 2, <item:minecraft:leather> % 50, <item:thermal:silver_ingot> % 50, (<item:minecraft:string> * 2) % 25, (<item:thermal:silver_nugget> * 4) % 25], <item:galosphere:sterling_horse_armor>, 200);
 <recipetype:create:crushing>.addRecipe("create_crushing/soul_sand", [<item:thermal_extra:soul_sand_dust>], <item:minecraft:soul_sand>, 200);
 <recipetype:create:crushing>.addRecipe("create_crushing/stone_horse_armor", [<item:minecraft:cobblestone> * 2, (<item:minecraft:cobblestone> * 2) % 50], <item:woodarmorhorse:stone_horse_armor>, 200);
@@ -100,6 +119,8 @@ for mixing_glass_dye_add_item in Constant.packColours {
 <recipetype:create:mixing>.addRecipe("create_mixing/crushed_steel", hcHeated, [<item:contenttweaker:mekanism/crushed_steel> * 4], [<item:create:crushed_raw_iron> * 4, <item:mekanism:enriched_carbon>]);
 <recipetype:create:mixing>.addRecipe("create_mixing/dragonsteel_ingot", hcHeated, [<item:thermal_extra:dragonsteel_ingot>], [<item:thermal:apatite> * 2, <item:minecraft:dragon_breath> * 3, <item:minecraft:netherite_ingot>]);
 <recipetype:create:mixing>.addRecipe("create_mixing/gilded_blackstone", hcSuperheated, [<item:minecraft:gilded_blackstone>], [<tag:items:forge:ingots/gold> * 2, <item:minecraft:blackstone>]);
+<recipetype:create:mixing>.addRecipe("create_mixing/latex_from_dandelion", hcNone, [<fluid:thermal:latex> * 100], [<item:minecraft:dandelion>], [<fluid:minecraft:water> * 50], 200);
+<recipetype:create:mixing>.addRecipe("create_mixing/latex_from_vine", hcNone, [<fluid:thermal:latex> * 100], [<item:minecraft:vine>], [<fluid:minecraft:water> * 50], 200);
 <recipetype:create:mixing>.addRecipe("create_mixing/shellite_ingot", hcHeated, [<item:thermal_extra:shellite_ingot>], [<item:thermal:apatite>, <item:minecraft:shulker_shell> * 2, <item:thermal:bronze_ingot>]);
 <recipetype:create:mixing>.addRecipe("create_mixing/shroomlight", hcNone, [<item:minecraft:shroomlight>], [<tag:items:forge:dusts/glowstone> * 4, <item:minecraft:nether_wart_block>]);
 <recipetype:create:mixing>.addRecipe("create_mixing/soul_infused_ingot", hcHeated, [<item:thermal_extra:soul_infused_ingot>], [<item:thermal:apatite>, <item:thermal_extra:soul_sand_dust> * 2, <item:thermal:invar_ingot>]);
@@ -598,5 +619,8 @@ if (packModeSetting.packModeSettingPlates() != true) {
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_steel", [<item:thermal:steel_nugget> * 12, (<item:thermal:steel_nugget> * 5) % 50], <item:contenttweaker:mekanism/crushed_steel>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/nautilus_shell_from_red_sandstone", [<item:minecraft:red_sand>, <item:minecraft:nautilus_shell> % 5], <item:minecraft:red_sandstone>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/nautilus_shell_from_sandstone", [<item:minecraft:sand>, <item:minecraft:nautilus_shell> % 2], <item:minecraft:sandstone>, 200);
+
+<recipetype:create:splashing>.addRecipe("create_splashing/oil_sand", [<item:thermal:bitumen> % 50, <item:minecraft:clay_ball> % 25], <item:thermal:oil_sand>, 200);
+<recipetype:create:splashing>.addRecipe("create_splashing/oil_red_sand", [<item:thermal:bitumen> % 50, (<item:minecraft:gold_nugget> * 3) % 12, <item:minecraft:dead_bush> % 5], <item:thermal:oil_red_sand>, 200);
 
 Globals.endScript("recipe_create");

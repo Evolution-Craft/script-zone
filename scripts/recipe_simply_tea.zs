@@ -19,6 +19,8 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 // Shapeless
 craftingTable.addShapeless("simplytea_chorus_petal", <item:simplytea:chorus_petal> * 4, [<item:minecraft:chorus_fruit>]);
+craftingTable.removeByName("simplytea:cup_tea_chai");
+craftingTable.addShapeless("simplytea_cup_tea_chai", <item:simplytea:cup_tea_chai>, [<item:simplytea:cup>, <item:simplytea:teabag_black>, <tag:items:forge:cinnamon>, <item:simplytea:teapot_frothed>]);
 craftingTable.addShapeless("simplytea_ice_cube", <item:simplytea:ice_cube> * 4, [<item:minecraft:ice>]);
 
 // Shaped
