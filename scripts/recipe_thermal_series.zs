@@ -29,7 +29,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 val mpGear = <item:thermal:press_gear_die>;
 val mpPacking2x2 = <item:thermal:press_packing_2x2_die>;
 val mpPacking3x3 = <item:thermal:press_packing_3x3_die>;
-val mpRod = <item:contenttweaker:thermal/press_rod_die>:
+val mpRod = <item:contenttweaker:thermal/press_rod_die>;
 val mpUnpacking = <item:thermal:press_unpacking_die>;
 val mpWire = <item:immersiveengineering:mold_wire>; // Temporary Using
 
@@ -173,22 +173,38 @@ for bottler_potion_type in Constant.packPotions {
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/press_salt", [<item:salt:salt> * 9], <fluid:minecraft:empty>, [<item:salt:salt_block>, mpUnpacking], 400);
 
 // TODO: check Fix implementation
-/*<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/cabbage_crate", [<item:farmersdelight:cabbage> * 9], <fluid:minecraft:empty>, [<item:farmersdelight:cabbage_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/corn_crate", [<item:corn_delight:corn> * 9], <fluid:minecraft:empty>, [<item:corn_delight:corn_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/corn_crate", [<item:corn_delight:corn_crate>], <fluid:minecraft:empty>, [<item:corn_delight:corn> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/cratedmushroomsred", [<item:minecraft:red_mushroom> * 9], <fluid:minecraft:empty>, [<item:eggcrate:cratedmushroomsred>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/cratedmushroomsred", [<item:eggcrate:cratedmushroomsred>], <fluid:minecraft:empty>, [<item:minecraft:red_mushroom> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/cratedmushroombrown", [<item:minecraft:brown_mushroom> * 9], <fluid:minecraft:empty>, [<item:eggcrate:cratedmushroombrown>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/cratedmushroombrown", [<item:eggcrate:cratedmushroombrown>], <fluid:minecraft:empty>, [<item:minecraft:brown_mushroom> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/eggcrate", [<item:minecraft:egg> * 9], <fluid:minecraft:empty>, [<item:eggcrate:eggcrate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/eggcrate", [<item:eggcrate:eggcrate>], <fluid:minecraft:empty>, [<item:minecraft:egg> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/chorus_fruit_crate", [<item:minecraft:chorus_fruit> * 9], <fluid:minecraft:empty>, [<item:ends_delight:chorus_fruit_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/chorus_fruit_crate", [<item:ends_delight:chorus_fruit_crate>], <fluid:minecraft:empty>, [<item:minecraft:chorus_fruit> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/chorus_crate", [<item:minecraft:chorus_plant> * 9], <fluid:minecraft:empty>, [<item:endersdelight:chorus_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/chorus_crate", [<item:endersdelight:chorus_crate>], <fluid:minecraft:empty>, [<item:minecraft:chorus_plant> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/carrot_crate", [<item:minecraft:carrot> * 9], <fluid:minecraft:empty>, [<item:farmersdelight:carrot_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/carrot_crate", [<item:farmersdelight:carrot_crate>], <fluid:minecraft:empty>, [<item:minecraft:carrot> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/potato_crate", [<item:minecraft:potato> * 9], <fluid:minecraft:empty>, [<item:farmersdelight:potato_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/rice_bag", [<item:farmersdelight:rice> * 9], <fluid:minecraft:empty>, [<item:farmersdelight:rice_bag>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/rice_bag", [<item:farmersdelight:rice_bag>], <fluid:minecraft:empty>, [<item:farmersdelight:rice> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/potato_crate", [<item:farmersdelight:potato_crate>], <fluid:minecraft:empty>, [<item:minecraft:potato> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/beetroot_crate", [<item:minecraft:beetroot> * 9], <fluid:minecraft:empty>, [<item:farmersdelight:beetroot_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/beetroot_crate", [<item:farmersdelight:beetroot_crate>], <fluid:minecraft:empty>, [<item:minecraft:beetroot> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/cabbage_crate", [<item:farmersdelight:cabbage> * 9], <fluid:minecraft:empty>, [<item:farmersdelight:cabbage_crate>, mpPacking3x3], 400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/cabbage_crate", [<item:farmersdelight:cabbage_crate>], <fluid:minecraft:empty>, [<item:farmersdelight:cabbage> * 9, mpUnpacking], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/cocoabeans_bag", [<item:minecraft:cocoa_beanse> * 9], <fluid:minecraft:empty>, [<item:cratedelight:cocoabeans_bag>, mpPacking3x3], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/cocoabeans_bag", [<item:cratedelight:cocoabeans_bag>], <fluid:minecraft:empty>, [<item:minecraft:cocoa_beans> * 9, mpUnpacking], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/egg_crate", [<item:minecraft:egg> * 9], <fluid:minecraft:empty>, [<item:cratedelight:egg_crate>, mpPacking3x3], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/egg_crate", [<item:cratedelight:egg_crate>], <fluid:minecraft:empty>, [<item:minecraft:egg> * 9, mpUnpacking], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/glowberry_crate", [<item:minecraft:glow_berries> * 9], <fluid:minecraft:empty>, [<item:cratedelight:glowberry_crate>, mpPacking3x3], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/glowberry_crate", [<item:cratedelight:glowberry_crate>], <fluid:minecraft:empty>, [<item:minecraft:glow_berries> * 9, mpUnpacking], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/rice_bale", [<item:farmersdelight:rice_panicle> * 9], <fluid:minecraft:empty>, [<item:farmersdelight:rice_bale>, mpPacking3x3], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/rice_bale", [<item:farmersdelight:rice_bale>], <fluid:minecraft:empty>, [<item:farmersdelight:rice_panicle> * 9, mpUnpacking], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/straw_bale", [<item:farmersdelight:straw> * 9], <fluid:minecraft:empty>, [<item:farmersdelight:straw_bale>, mpPacking3x3], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/straw_bale", [<item:farmersdelight:straw_bale>], <fluid:minecraft:empty>, [<item:farmersdelight:straw> * 9, mpUnpacking], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/sugar_bag", [<item:minecraft:sugar> * 9], <fluid:minecraft:empty>, [<item:cratedelight:sugar_bag>, mpPacking3x3], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/sugar_bag", [<item:cratedelight:sugar_bag>], <fluid:minecraft:empty>, [<item:minecraft:sugar> * 9, mpUnpacking], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/berry_crate", [<item:minecraft:sweet_berries> * 9], <fluid:minecraft:empty>, [<item:cratedelight:berry_crate>, mpPacking3x3], 400);
-<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/berry_crate", [<item:cratedelight:berry_crate>], <fluid:minecraft:empty>, [<minecraft:sweet_berries> * 9, mpUnpacking], 400);*/
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/tomato_crate", [<item:farmersdelight:tomato> * 9], <fluid:minecraft:empty>, [<item:farmersdelight:tomato_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/tomato_crate", [<item:farmersdelight:tomato_crate>], <fluid:minecraft:empty>, [<item:farmersdelight:tomato> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/onion_crate", [<item:farmersdelight:onion> * 9], <fluid:minecraft:empty>, [<item:farmersdelight:onion_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/onion_crate", [<item:farmersdelight:onion_crate>], <fluid:minecraft:empty>, [<item:farmersdelight:onion> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/lichen_crate", [<item:galosphere:lichen_cordyceps> * 9], <fluid:minecraft:empty>, [<item:galosphere_delight:lichen_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/lichen_crate", [<item:galosphere_delight:lichen_crate>], <fluid:minecraft:empty>, [<item:galosphere:lichen_cordyceps> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/golden_lichen_crate", [<item:galosphere:golden_lichen_cordyceps> * 9], <fluid:minecraft:empty>, [<item:galosphere_delight:golden_lichen_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/golden_lichen_crate", [<item:galosphere_delight:golden_lichen_crate>], <fluid:minecraft:empty>, [<item:galosphere:golden_lichen_cordyceps> * 9, mpUnpacking], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/cave_carrot_crate", [<item:miners_delight:cave_carrot> * 9], <fluid:minecraft:empty>, [<item:miners_delight:cave_carrot_crate>, mpPacking3x3], 400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/cave_carrot_crate", [<item:miners_delight:cave_carrot_crate>], <fluid:minecraft:empty>, [<item:miners_delight:cave_carrot> * 9, mpUnpacking], 400);
 
 if (packModeSetting.packModeSettingPlates() == true) {
 
@@ -320,8 +336,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_quark_azalea_flower", [(<item:quark:azalea_log> * 6) % 100, <item:ecologics:azalea_flower> % 10, <item:minecraft:hanging_roots> % 25], <item:ecologics:azalea_flower>, 1000, 60000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_mimicarnation", [(<item:nethersdelight:mimicarnation> * 3) % 100], <item:nethersdelight:mimicarnation>, 1000, 10000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_propelpearl", [(<item:nethersdelight:propelpearl> * 2) % 100, <item:nethersdelight:propelplant_cane> % 50], <item:nethersdelight:propelpearl>, 1000, 10000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_propelplant_berry_stem", [(<item:nethersdelight:propelpearl> * 2) % 100, <item:nethersdelight:propelplant_cane> % 50], <item:nethersdelight:propelplant_berry_stem>, 1000, 10000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_propelplant_torch", [(<item:nethersdelight:propelpearl> * 2) % 100, <item:nethersdelight:propelplant_cane> % 50], <item:nethersdelight:propelplant_torch>, 1000, 10000);
+<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_propelplant_stem", [(<item:nethersdelight:propelplant_stem> * 2) % 100, (<item:nethersdelight:propelpearl> * 2) % 50, <item:nethersdelight:propelplant_cane> % 50], <item:nethersdelight:propelplant_stem>, 1000, 10000);
+<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_propelplant_torch", [(<item:nethersdelight:propelplant_torch> * 2) % 100,(<item:nethersdelight:propelpearl> * 2) % 50, <item:nethersdelight:propelplant_cane> % 50], <item:nethersdelight:propelplant_torch>, 1000, 10000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_simply_tea_sapling", [(<item:simplytea:tea_leaf> * 4) % 100, <item:simplytea:tea_sapling> % 10, <item:simplytea:tea_stick> % 25], <item:simplytea:tea_sapling>, 1000, 60000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_twilight_oak_sapling", [(<item:twilightforest:twilight_oak_log> * 6) % 100, <item:twilightforest:twilight_oak_sapling> % 10, <item:twilightforest:hollow_oak_sapling> % 0.05], <item:twilightforest:twilight_oak_sapling>, 1000, 60000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_canopy_sapling", [(<item:twilightforest:canopy_log> * 6) % 100, <item:twilightforest:canopy_sapling> % 10], <item:twilightforest:canopy_sapling>, 1000, 60000);
@@ -408,7 +424,7 @@ var addingLogSawmill = {
 };
 for addingLogSawmillName, addingLogSawmillModId in addingLogSawmill {
 	if (addingLogSawmillName == " ancient") {
-		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+		<recipetype:thermal:sawmill>.addJsonRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
 			"ingredient": {
 				"tag": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
 			},
@@ -422,7 +438,7 @@ for addingLogSawmillName, addingLogSawmillModId in addingLogSawmill {
 			"energy": 1000
 		});
 	} else if (addingLogSawmillName == " darkwood") {
-		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+		<recipetype:thermal:sawmill>.addJsonRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
 			"ingredient": {
 				"tag": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
 			},
@@ -436,7 +452,7 @@ for addingLogSawmillName, addingLogSawmillModId in addingLogSawmill {
 			"energy": 1000
 		});
 	} else if (addingLogSawmillName == " indigo") {
-		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_stems", {
+		<recipetype:thermal:sawmill>.addJsonRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_stems", {
 			"ingredient": {
 				"tag": addingLogSawmillModId + ":" + addingLogSawmillName + "_stems"
 			},
@@ -450,7 +466,7 @@ for addingLogSawmillName, addingLogSawmillModId in addingLogSawmill {
 			"energy": 1000
 		});
 	} else if (addingLogSawmillName == " rubberwoodt") {
-		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+		<recipetype:thermal:sawmill>.addJsonRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
 			"ingredient": {
 				"item": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
 			},
@@ -464,7 +480,7 @@ for addingLogSawmillName, addingLogSawmillModId in addingLogSawmill {
 			"energy": 1000
 		});
 	} else if (addingLogSawmillName == "sortwood") {
-		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+		<recipetype:thermal:sawmill>.addJsonRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
 			"ingredient": {
 				"tag": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
 			},
@@ -478,7 +494,7 @@ for addingLogSawmillName, addingLogSawmillModId in addingLogSawmill {
 			"energy": 1000
 		});
 	} else if (addingLogSawmillName == "timewood") {
-		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+		<recipetype:thermal:sawmill>.addJsonRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
 			"ingredient": {
 				"tag": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
 			},
@@ -492,7 +508,7 @@ for addingLogSawmillName, addingLogSawmillModId in addingLogSawmill {
 			"energy": 1000
 		});
 	} else if (addingLogSawmillName == "transwood") {
-		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+		<recipetype:thermal:sawmill>.addJsonRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
 			"ingredient": {
 				"tag": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
 			},
@@ -506,7 +522,7 @@ for addingLogSawmillName, addingLogSawmillModId in addingLogSawmill {
 			"energy": 1000
 		});
 	} else {
-		<recipetype:thermal:sawmill>.addRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
+		<recipetype:thermal:sawmill>.addJsonRecipe("thermal_machines/sawmill/" + addingLogSawmillModId + "/sawmill_" + addingLogSawmillName + "_log", {
 			"ingredient": {
 				"tag": addingLogSawmillModId + ":" + addingLogSawmillName + "_logs"
 			},

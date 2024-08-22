@@ -773,6 +773,8 @@ for remove_industrial_foregoing_recipe_by_name in removeRecipeByNameIndustrialFo
 
 // Thermal Series
 var removeMultiservoPressRecipeByName = [
+	"thermal:compat/quark/press_quark_chorus_fruit_packing",
+	"thermal:compat/quark/press_quark_chorus_fruit_unpacking",
 	// Coin
 	"thermal:machines/press/press_bronze_ingot_to_coin",
 	"thermal:machines/press/press_bronze_nugget_to_coin",

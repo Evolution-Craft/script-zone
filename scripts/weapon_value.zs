@@ -19,12 +19,6 @@ import crafttweaker.api.item.IItemStack;
 <item:contenttweaker:evolution_craft/knife/stone_knife>.anyDamage().removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:mainhand>]);
 <item:contenttweaker:evolution_craft/knife/stone_knife>.anyDamage().addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "generic.attack_damage", 1.5, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:mainhand>]);
 
-// Knife
-<item:croptopia:knife>.anyDamage().removeGlobalAttribute(<attribute:minecraft:generic.attack_damage>, [<constant:minecraft:equipmentslot:mainhand>]);
-<item:croptopia:knife>.anyDamage().addGlobalAttributeModifier(<attribute:minecraft:generic.attack_damage>, IItemStack.BASE_ATTACK_DAMAGE_UUID, "generic.attack_damage", 2.5, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:mainhand>]);
-<item:croptopia:knife>.anyDamage().removeGlobalAttribute(<attribute:minecraft:generic.attack_speed>, [<constant:minecraft:equipmentslot:mainhand>]);
-<item:croptopia:knife>.anyDamage().addGlobalAttributeModifier(<attribute:minecraft:generic.attack_speed>, IItemStack.BASE_ATTACK_SPEED_UUID, "generic.attack_speed", -2.5, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:mainhand>]);
-
 // All Knife Reach Distance
 var addingKnifeReachDistance = [
 	"aquaculture:diamond_fillet_knife",
@@ -38,7 +32,6 @@ var addingKnifeReachDistance = [
 	"contenttweaker:evolution_craft/knife/steel_knife",
 	"contenttweaker:evolution_craft/knife/stone_knife",
 	"contenttweaker:evolution_craft/knife/wooden_knife",
-	"croptopia:knife",
 	"ends_delight:dragon_egg_shell_knife",
 	"ends_delight:dragon_tooth_knife",
 	"ends_delight:end_stone_knife",

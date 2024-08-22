@@ -39,6 +39,12 @@ for tag_heat_sources in addingHeatSources {
 	<tag:blocks:mmlib:heat_conductors>.add(<block:${tag_heat_sources}>);
 }
 
+// Mineable Knife
+<tag:blocks:farmersdelight:mineable/knife>.add(<block:thermal:rice_block>);
+
+// Straw Blocks
+<tag:blocks:farmersdelight:straw_blocks>.add(<block:thermal:rice_block>);
+
 // Tray Heat Sources
 var addingTrayHeatSources = [
 	"infernalexp:glow_campfire",

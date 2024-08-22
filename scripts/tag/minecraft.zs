@@ -45,6 +45,19 @@ for tag_climbable_minecraft in addingClimbableMinecraft {
 	<tag:blocks:minecraft:climbable>.add(<block:${tag_climbable_minecraft}>);
 }
 
+// Minable Axe
+var addingMinableAxeMinecraft = [
+	"corn_delight:corn_crate",
+	"eggcrate:cratedmushroomsred",
+	"eggcrate:cratedmushroombrown",
+	"endersdelight:chorus_crate",
+	"galosphere_delight:lichen_crate",
+	"galosphere_delight:golden_lichen_crate"
+];
+for tag_minable_axe_minecraft in addingMinableAxeMinecraft {
+	<tag:blocks:minecraft:mineable/axe>.add(<block:${tag_minable_axe_minecraft}>);
+}
+
 // Logs
 var addingLogsMinecraft = [
 	"infernalexp:luminous_hyphae",
@@ -55,42 +68,6 @@ var addingLogsMinecraft = [
 for tag_log_minecraft in addingLogsMinecraft {
 	<tag:items:minecraft:logs>.add(<item:${tag_log_minecraft}>);
 }
-
-// Minable Axe
-// TODO: check Fix implementation
-/*var addingMinableAxeMinecraft = [
-	"cratedelight:carrot_crate",
-	"cratedelight:potato_crate",
-	"cratedelight:beetroot_crate",
-	"cratedelight:apple_crate",
-	"cratedelight:berry_crate",
-	"cratedelight:blueberry_crate",
-	"cratedelight:glowberry_crate",
-	"cratedelight:egg_crate",
-	"cratedelight:duck_egg_crate",
-	"cratedelight:salmon_crate",
-	"cratedelight:cod_crate",
-	"cratedelight:catfish_crate",
-	"cratedelight:bass_crate",
-	"cratedelight:golden_apple_crate",
-	"cratedelight:red_mushroom_crate",
-	"cratedelight:brown_mushroom_crate",
-	"cratedelight:emu_egg_crate",
-	"cratedelight:terrapin_egg_crate",
-	"cratedelight:crocodile_egg_crate",
-	"cratedelight:caiman_egg_crate",
-	"cratedelight:platypus_egg_crate",
-	"cratedelight:banana_crate",
-	"cratedelight:golden_carrot_crate",
-	"cratedelight:kiwi_egg_crate",
-	"cratedelight:kiwifruit_crate",
-	"cratedelight:peanut_crate",
-	"cratedelight:salt_bag",
-	"cratedelight:ground_cinnamon_bag"
-];
-for tag_minable_axe_minecraft in addingMinableAxeMinecraft {
-	<tag:blocks:minecraft:mineable/axe>.add(<item:${tag_minable_axe_minecraft}>);
-}*/
 
 // Piglin Loved
 var addingPiglinLovedMinecraft = [

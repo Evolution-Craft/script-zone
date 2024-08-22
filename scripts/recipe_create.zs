@@ -25,13 +25,13 @@ val hcSuperheated = <constant:create:heat_condition:superheated>;
 
 // Shaped
 craftingTable.addShaped("create/mechanical_drill_from_head", <item:create:mechanical_drill>, [
-	[<item:minecraft:air>, <thermal:drill_head>, <item:minecraft:air>],
-	[<item:minecraft:air>, <create:andesite_casing>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:thermal:drill_head>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:create:andesite_casing>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 craftingTable.addShaped("create/mechanical_saw_from_blade", <item:create:mechanical_saw>, [
-	[<item:minecraft:air>, <thermal:saw_blade>, <item:minecraft:air>],
-	[<item:minecraft:air>, <create:andesite_casing>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:thermal:saw_blade>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:create:andesite_casing>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 

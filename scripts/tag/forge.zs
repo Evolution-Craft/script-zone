@@ -350,6 +350,19 @@ for tag_furnaces_forge in addingFurnacesForge {
 <tag:items:forge:raw_materials>.add(<item:galosphere:raw_silver>);
 <tag:items:forge:raw_materials/silver>.add(<item:galosphere:raw_silver>);
 
+// Minable Paxel
+var addingMinablePaxelForge = [
+	"corn_delight:corn_crate",
+	"eggcrate:cratedmushroomsred",
+	"eggcrate:cratedmushroombrown",
+	"endersdelight:chorus_crate",
+	"galosphere_delight:lichen_crate",
+	"galosphere_delight:golden_lichen_crate"
+];
+for tag_minable_paxel_forge in addingMinablePaxelForge {
+	<tag:blocks:forge:mineable/paxel>.add(<block:${tag_minable_paxel_forge}>);
+}
+
 // Nugget
 <tag:items:forge:nuggets>.add(<item:exlinecopperequipment:copper_nugget>);
 <tag:items:forge:nuggets/copper>.add(<item:exlinecopperequipment:copper_nugget>);

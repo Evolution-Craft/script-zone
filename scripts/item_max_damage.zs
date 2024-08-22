@@ -15,7 +15,11 @@ import crafttweaker.api.item.ItemStack;
 var itemSetMaxDamage = {
 	"aquaculture:neptunium_fillet_knife" : 1860,
 	"aquaculturedelight:neptunium_knife" : 2260,
-	"croptopia:knife" : 400,
+	"croptopia:cooking_pot" : 128,
+	"croptopia:frying_pan" : 128,
+	"croptopia:food_press" : 128,
+	"croptopia:knife" : 128,
+	"croptopia:mortar_and_pestle" : 32,
 	"cyclic:shears_flint" : 25,
 	"ends_delight:dragon_tooth_knife" : 956,
 	"ends_delight:end_stone_knife" : 98,
