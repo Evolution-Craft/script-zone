@@ -171,8 +171,6 @@ for bottler_potion_type in Constant.packPotions {
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/packing3x3/press_salt_block", [<item:salt:salt_block>], <fluid:minecraft:empty>, [<item:salt:salt> * 9, mpPacking3x3], 400);
 <recipetype:thermal:press>.removeByName("thermal:compat/mekanism/press_mek_salt_unpacking");
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/press_salt", [<item:salt:salt> * 9], <fluid:minecraft:empty>, [<item:salt:salt_block>, mpUnpacking], 400);
-
-// TODO: check Fix implementation
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/corn_crate", [<item:corn_delight:corn> * 9], <fluid:minecraft:empty>, [<item:corn_delight:corn_crate>, mpPacking3x3], 400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/unpacking/corn_crate", [<item:corn_delight:corn_crate>], <fluid:minecraft:empty>, [<item:corn_delight:corn> * 9, mpUnpacking], 400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/packing/cratedmushroomsred", [<item:minecraft:red_mushroom> * 9], <fluid:minecraft:empty>, [<item:eggcrate:cratedmushroomsred>, mpPacking3x3], 400);

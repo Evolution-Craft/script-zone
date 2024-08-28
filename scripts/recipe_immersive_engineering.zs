@@ -69,8 +69,108 @@ craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersive
 });
 
 // Cloche
+var addingSeedlCloche = {
+	"amaranth" : "thermal",
+	"artichoke" : "croptopia",
+	"asparagus" : "croptopia",
+	"barley" : "croptopia",
+	"barley" : "thermal",
+	"basil" : "croptopia",
+	"bellpepper" : "croptopia",
+	"bell_pepper" : "thermal",
+	"blackbean" : "croptopia",
+	"blackberry" : "croptopia",
+	"blueberry" : "croptopia",
+	"broccoli" : "croptopia",
+	"cabbage" : "croptopia",
+	"cantaloupe" : "croptopia",
+	"cauliflower" : "croptopia",
+	"celery" : "croptopia",
+	"chile_pepper" : "croptopia",
+	"coffee" : "croptopia",
+	"corn" : "croptopia",
+	"corn" : "thermal",
+	"cranberry" : "croptopia",
+	"cucumber" : "croptopia",
+	"currant" : "croptopia",
+	"eggplant" : "croptopia",
+	"eggplant" : "thermal",
+	"elderberry" : "croptopia",
+	"flax" : "thermal",
+	"garlic" : "croptopia",
+	"ginger" : "croptopia",
+	"grape" : "croptopia",
+	"greenbean" : "croptopia",
+	"green_bean" : "thermal",
+	"greenonion" : "croptopia",
+	"honeydew" : "croptopia",
+	"hops" : "croptopia",
+	"kale" : "croptopia",
+	"kiwi" : "croptopia",
+	"leek" : "croptopia",
+	"lettuce" : "croptopia",
+	"mustard" : "croptopia",
+	"oat" : "croptopia",
+	"olive" : "croptopia",
+	"onion" : "croptopia",
+	"onion" : "thermal",
+	"peanut" : "croptopia",
+	"peanut" : "thermal",
+	"pineapple" : "croptopia",
+	"radish" : "croptopia",
+	"radish" : "thermal",
+	"raspberry" : "croptopia",
+	"rhubarb" : "croptopia",
+	"rice" : "croptopia",
+	"rice" : "thermal",
+	"rutabaga" : "croptopia",
+	"sadiroot" : "thermal",
+	"saguaro" : "croptopia",
+	"soybean" : "croptopia",
+	"spinach" : "croptopia",
+	"spinach" : "thermal",
+	"squash" : "croptopia",
+	"strawberry" : "croptopia",
+	"strawberry" : "thermal",
+	"sweetpotato" : "croptopia",
+	"tomatillo" : "croptopia",
+	"tomato" : "croptopia",
+	"tomato" : "thermal",
+	"turmeric" : "croptopia",
+	"turnip" : "croptopia",
+	"vanilla" : "croptopia",
+	"yam" : "croptopia",
+	"zucchini" : "croptopia"
+};
+for addingSeedlClocheName, addingSeedlClocheModId in addingSeedlCloche {
+	if (addingSeedlClocheModId == "croptopia") {
+		if (addingSeedlClocheName == "barley" || addingSeedlClocheName == "flax" || addingSeedlClocheName == "radish" || addingSeedlClocheName == "rice" || addingSeedlClocheName == "sadiroot" || addingSeedlClocheName == "spinach") {
+			<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/" + addingSeedlClocheModId + "/" + addingSeedlClocheName + "seeds_rich_soil", <item:${addingSeedlClocheModId}:${addingSeedlClocheName}_seeds>, <item:farmersdelight:rich_soil>, 720, [<item:${addingSeedlClocheModId}:${addingSeedlClocheName}> * 2, <item:${addingSeedlClocheModId}:${addingSeedlClocheName}_seeds>], <blockstate:${addingSeedlClocheModId}:${addingSeedlClocheName}_crop>.block, "crop");
+			<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/" + addingSeedlClocheModId + "/" + addingSeedlClocheName + "_seeds", <item:${addingSeedlClocheModId}:${addingSeedlClocheName}_seeds>, <tag:items:forge:dirt>, 800, [<item:${addingSeedlClocheModId}:${addingSeedlClocheName}> * 2, <item:${addingSeedlClocheModId}:${addingSeedlClocheName}_seeds>], <blockstate:${addingSeedlClocheModId}:${addingSeedlClocheName}_crop>.block, "crop");
+		} else {
+			<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/" + addingSeedlClocheModId + "/" + addingSeedlClocheName + "seeds_rich_soil", <item:${addingSeedlClocheModId}:${addingSeedlClocheName}_seeds>, <item:farmersdelight:rich_soil>, 1008, [<item:${addingSeedlClocheModId}:${addingSeedlClocheName}> * 2, <item:${addingSeedlClocheModId}:${addingSeedlClocheName}_seeds>], <blockstate:${addingSeedlClocheModId}:${addingSeedlClocheName}_crop>.block, "crop");
+			<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/" + addingSeedlClocheModId + "/" + addingSeedlClocheName + "_seeds", <item:${addingSeedlClocheModId}:${addingSeedlClocheName}_seeds>, <tag:items:forge:dirt>, 1200, [<item:${addingSeedlClocheModId}:${addingSeedlClocheName}> * 2, <item:${addingSeedlClocheModId}:${addingSeedlClocheName}_seeds>], <blockstate:${addingSeedlClocheModId}:${addingSeedlClocheName}_crop>.block, "crop");
+		}
+	} else {
+		<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/" + addingSeedlClocheModId + "/" + addingSeedlClocheName + "seed_rich_soil", <item:${addingSeedlClocheModId}:${addingSeedlClocheName}_seed>, <item:farmersdelight:rich_soil>, 576, [<item:${addingSeedlClocheModId}:${addingSeedlClocheName}> * 2, <item:${addingSeedlClocheModId}:${addingSeedlClocheName}_seed>], <blockstate:${addingSeedlClocheModId}:${addingSeedlClocheName}_crop>.block, "crop");
+	}
+}
+
+var addingSporeCloche = {
+	"glowstone_mushroom_spores" : "glowstone_mushroom",
+	"gunpowder_mushroom_spores" : "gunpowder_mushroom",
+	"redstone_mushroom_spores" : "redstone_mushroom",
+	"slime_mushroom_spores" : "slime_mushroom"
+};
+for addingSporeClocheName, addingSporeClocheBlock in addingSporeCloche {
+	<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/" + addingSporeClocheName + "rich_soil", <item:thermal:${addingSporeClocheName}>, <item:farmersdelight:rich_soil>, 2160, [<item:thermal:${addingSporeClocheName}> * 2], <blockstate:thermal:${addingSporeClocheBlock}_crop>.block, "crop");
+	<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/" + addingSporeClocheName, <item:thermal:${addingSporeClocheName}>, [<item:minecraft:mycelium>, <item:minecraft:podzol>], 2400, [<item:thermal:${addingSporeClocheName}> * 2], <blockstate:thermal:${addingSporeClocheBlock}_crop>.block, "crop");
+}
+
 <recipetype:immersiveengineering:cloche>.removeByName("immersiveengineering:cloche/cactus");
 <recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/cactus", <item:minecraft:cactus>, <tag:items:forge:sand>, 560, [<item:minecraft:cactus>, <item:ecologics:prickly_pear>], <blockstate:minecraft:cactus>.block, "stacking");
+<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/frost_melon", <item:thermal:frost_melon>, <tag:items:forge:dirt>, 2400, [<item:thermal:frost_melon>, <item:thermal:frost_melon_seeds>], <blockstate:thermal:frost_melon>.block, "stem");
+<recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/thermal/frost_melon", <item:thermal:frost_melon>, <item:farmersdelight:rich_soil>, 2160, [<item:thermal:frost_melon>, <item:thermal:frost_melon_seeds>], <blockstate:thermal:frost_melon>.block, "stem");
 
 // Crusher
 <recipetype:immersiveengineering:crusher>.removeByName("tmted:crusher/wheat_flour_from_bale");
@@ -108,6 +208,7 @@ craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersive
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/unpacking_chorus_pie", <item:endersdelight:chorus_pie>, <item:immersiveengineering:mold_unpacking>, 3200, <item:endersdelight:chorus_pie_slice> * 4);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/unpacking_earth_cake", <item:tconstruct:earth_cake>, <item:immersiveengineering:mold_unpacking>, 3200, <item:contenttweaker:tconstruct/delight/earthslime_cake_slice> * 7);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/unpacking_ender_cake", <item:tconstruct:ender_cake>, <item:immersiveengineering:mold_unpacking>, 3200, <item:contenttweaker:tconstruct/delight/enderslime_cake_slice> * 7);
+<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/unpacking_frost_melon", <item:thermal:frost_melon>, <item:immersiveengineering:mold_unpacking>, 3200, <item:thermal:frost_melon_slice> * 9);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/unpacking_gloomgourd", <item:undergarden:gloomgourd>, <item:immersiveengineering:mold_unpacking>, 3200, <item:undergardendelight:gloomgourd_slice> * 4);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/unpacking_gloomgourd_pie", <item:undergarden:gloomgourd_pie>, <item:immersiveengineering:mold_unpacking>, 3200, <item:undergardendelight:gloomgourd_pie_slice> * 4);
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/unpacking_lumiere_shimmer_cake", <item:galosphere_delight:lumiere_shimmer_cake>, <item:immersiveengineering:mold_unpacking>, 3200, <item:galosphere_delight:lumiere_shimmer_cake_slice> * 4);
@@ -191,5 +292,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_soul_infused", <tag:items:forge:ingots/soul_infused>, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:soul_infused_plate>);
 	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/plate_twinite", <tag:items:forge:ingots/twinite>, <item:immersiveengineering:mold_plate>, 2400, <item:thermal_extra:twinite_plate>);
 }
+
+// Squeezer
+//<recipetype:immersiveengineering:squeezer>.addRecipe("immersiveengineering_metalpress/squeezer/wheat_seeds", <tag:items:forge:seeds/wheat> , 6400, <fluid:immersiveengineering:plantoil> * 80);
 
 Globals.endScript("recipe_immersive_engieneering");
