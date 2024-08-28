@@ -58,15 +58,6 @@ for tag_evolution_craft_fragment in addingEvolutionCraftFragment {
 	<tag:items:evolution_craft:fragments>.add(<item:${tag_evolution_craft_fragment}>);
 }
 
-// Evolution Craft - Milk
-var addingEvolutionCraftMilk = [
-	"croptopia:milk_bottle",
-	"croptopia:soy_milk"
-];
-for tag_evolution_craft_milk in addingEvolutionCraftMilk {
-	<tag:items:evolution_craft:milk>.add(<item:${tag_evolution_craft_milk}>);
-}
-
 // Evolution Craft - Parts
 var addingEvolutionCraftPart = [
 	"contenttweaker:common_part",
@@ -102,6 +93,24 @@ var addingEvolutionCraftIngot = [
 for tag_evolution_craft_ingot in addingEvolutionCraftIngot {
 	<tag:items:evolution_craft:ingors>.add(<item:${tag_evolution_craft_ingot}>);
 	<tag:items:forge:ingors>.add(<item:${tag_evolution_craft_ingot}>);
+}
+
+// Evolution Craft - Milk
+var addingEvolutionCraftMilk = [
+	"croptopia:milk_bottle",
+	"croptopia:soy_milk"
+];
+for tag_evolution_craft_milk in addingEvolutionCraftMilk {
+	<tag:items:evolution_craft:milk>.add(<item:${tag_evolution_craft_milk}>);
+}
+
+// Evolution Craft - Podzol
+var addingEvolutionCraftPodzol = [
+	"minecraft:mycelium",
+	"minecraft:podzol"
+];
+for tag_evolution_craft_podzol in addingEvolutionCraftPodzol {
+	<tag:items:evolution_craft:dirt/podzol>.add(<item:${tag_evolution_craft_podzol}>);
 }
 
 Globals.endScript("tag/evolution_craft");

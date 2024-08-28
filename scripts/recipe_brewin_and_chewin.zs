@@ -305,6 +305,34 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 3
 });
+craftingTable.removeByName("croptopia:rum");
+<recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/croptopia/rum", {
+	"ingredients": [
+	{
+		"item": "croptopia:molasses"
+	},
+	{
+		"item": "brewinandchewin:mead"
+	},
+	{
+		"item": "minecraft:sugar_cane"
+	},
+	{
+		"item": "minecraft:sugar_cane"
+	}],
+	"result": {
+		"item": "croptopia:rum"
+	},
+	"container": {
+		"item": "minecraft:glass_bottle"
+	},
+	"liquid": {
+		"item": "croptopia:water_bottle"
+	},
+	"experience": 0.6,
+	"cookingtime": 12000,
+	"temperature": 3
+});
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/vinery/aegis_wine", {
 	"ingredients": [
 	{

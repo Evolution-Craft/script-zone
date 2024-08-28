@@ -17,7 +17,6 @@ import crafttweaker.api.recipe.Replacer;
 // Shapeless
 craftingTable.removeByName("croptopia:paprika");
 craftingTable.addShapeless("croptopia/paprika", <item:croptopia:paprika>, [<item:croptopia:chile_pepper>, <item:croptopia:mortar_and_pestle>.anyDamage().transformDamage()]);
-craftingTable.removeByName("croptopia:tuna_sandwich");
 craftingTable.addShapeless("croptopia/tuna_sandwich", <item:croptopia:tuna_sandwich>, [<tag:items:forge:bread>, <item:croptopia:cooked_tuna>]);
 
 // Shaped
@@ -30,7 +29,7 @@ craftingTable.addShaped("croptopia/apple_juice", <item:croptopia:apple_juice>, [
 
 craftingTable.removeByName("croptopia:apple_pie");
 craftingTable.addShaped("croptopia/apple_pie", <item:croptopia:apple_pie>, [
-	[<tag:items:forge:apples>, <item:croptopia:sugar>, <tag:items:forge:eggs>],
+	[<tag:items:forge:apples>, <item:minecraft:sugar>, <tag:items:forge:eggs>],
 	[<tag:items:forge:flour>, <tag:items:forge:doughs>, <item:croptopia:frying_pan>.anyDamage().transformDamage()],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
@@ -93,7 +92,7 @@ craftingTable.addShaped("croptopia/cherry_jam", <item:croptopia:cherry_jam>, [
 
 craftingTable.removeByName("croptopia:cherry_pie");
 craftingTable.addShaped("croptopia/cherry_pie", <item:croptopia:cherry_pie>, [
-	[<tag:items:forge:cherries>, <item:croptopia:sugar>, <tag:items:forge:eggs>],
+	[<tag:items:forge:cherries>, <item:minecraft:sugar>, <tag:items:forge:eggs>],
 	[<tag:items:forge:flour>, <tag:items:forge:doughs>, <item:croptopia:frying_pan>.anyDamage().transformDamage()],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
@@ -119,6 +118,13 @@ craftingTable.addShaped("croptopia/chili_relleno", <item:croptopia:chili_relleno
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
+craftingTable.removeByName("croptopia:chimichanga");
+craftingTable.addShaped("croptopia/chimichanga", <item:croptopia:chimichanga>, [
+	[<item:croptopia:burrito>, <tag:items:forge:flour>, <item:minecraft:air>],
+	[<item:croptopia:cooking_pot>.anyDamage().transformDamage(), <item:minecraft:air>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
 craftingTable.removeByName("croptopia:chocolate");
 craftingTable.addShaped("croptopia/chocolate", <item:croptopia:chocolate> * 4, [
 	[<item:minecraft:cocoa_beans>, <tag:items:forge:butters>, <item:minecraft:air>],
@@ -130,7 +136,7 @@ craftingTable.removeByName("croptopia:cinnamon_roll");
 craftingTable.addShaped("croptopia/cinnamon_roll", <item:croptopia:cinnamon_roll> * 3, [
 	[<tag:items:evolution_craft:milk>, <tag:items:forge:doughs>, <tag:items:forge:eggs>],
 	[<tag:items:forge:butters>, <tag:items:forge:salts>, <item:minecraft:sugar>],
-	[<tag:items:forge:cinnamon>, <item:minecraft:whipping_cream>, <item:croptopia:frying_pan>.anyDamage().transformDamage()]
+	[<tag:items:forge:cinnamon>, <item:croptopia:whipping_cream>, <item:croptopia:frying_pan>.anyDamage().transformDamage()]
 ]);
 
 craftingTable.removeByName("croptopia:cranberry_juice");
@@ -150,7 +156,7 @@ craftingTable.addShaped("croptopia/croque_monsieur", <item:croptopia:croque_mons
 craftingTable.removeByName("croptopia:croque_madame");
 craftingTable.addShaped("croptopia/croque_madame", <item:croptopia:croque_madame>, [
 	[<item:minecraft:air>, <item:croptopia:frying_pan>.anyDamage().transformDamage(), <item:minecraft:air>],
-	[<tag:items:forge:eggs <item:minecraft:bread>, <tag:items:forge:flour>],
+	[<tag:items:forge:eggs>, <item:minecraft:bread>, <tag:items:forge:flour>],
 	[<tag:items:croptopia:pork_replacements>, <tag:items:forge:cheeses>, <tag:items:forge:butters>]
 ]);
 
@@ -224,6 +230,13 @@ craftingTable.addShaped("croptopia/macaron", <item:croptopia:macaron> * 2, [
 	[<tag:items:forge:almonds>, <item:croptopia:food_press>.anyDamage().transformDamage(), <tag:items:forge:almonds>]
 ]);
 
+craftingTable.removeByName("croptopia:mango_ice_cream");
+craftingTable.addShaped("croptopia/mango_ice_cream", <item:croptopia:mango_ice_cream>, [
+	[<tag:items:forge:mangos>, <item:minecraft:sugar>, <tag:items:forge:eggs>],
+	[<tag:items:evolution_craft:milk>, <item:croptopia:cooking_pot>.anyDamage().transformDamage(), <item:simplytea:ice_cube>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
 craftingTable.removeByName("croptopia:mashed_potatoes");
 craftingTable.addShaped("croptopia/mashed_potatoes", <item:croptopia:mashed_potatoes>, [
 	[<tag:items:forge:potatoes>, <item:minecraft:air>, <item:minecraft:air>],
@@ -280,6 +293,13 @@ craftingTable.addShaped("croptopia/peach_jam", <item:croptopia:peach_jam>, [
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
+craftingTable.removeByName("croptopia:pecan_ice_cream");
+craftingTable.addShaped("croptopia/pecan_ice_cream", <item:croptopia:pecan_ice_cream>, [
+	[<tag:items:forge:pecans>, <item:minecraft:sugar>, <tag:items:forge:eggs>],
+	[<tag:items:evolution_craft:milk>, <item:croptopia:cooking_pot>.anyDamage().transformDamage(), <item:simplytea:ice_cube>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
 craftingTable.removeByName("croptopia:pineapple_juice");
 craftingTable.addShaped("croptopia/pineapple_juice", <item:croptopia:pineapple_juice>, [
 	[<tag:items:forge:pineapples>, <item:croptopia:food_press>.anyDamage().transformDamage(), <item:minecraft:air>],
@@ -294,18 +314,25 @@ craftingTable.addShaped("croptopia/pumpkin_bars", <item:croptopia:pumpkin_bars> 
 	[<item:minecraft:pumpkin>, <tag:items:forge:butters>, <item:minecraft:pumpkin>]
 ]);
 
-craftingTable.removeByName("croptopia:pineapple_juice");
-craftingTable.addShaped("croptopia/pineapple_juice", <item:croptopia:pineapple_juice>, [
-	[<tag:items:forge:pineapples>, <item:croptopia:food_press>.anyDamage().transformDamage(), <item:minecraft:air>],
+craftingTable.removeByName("croptopia:quiche");
+craftingTable.addShaped("croptopia/quiche", <item:croptopia:quiche>, [
+	[<item:minecraft:air>, <item:croptopia:frying_pan>.anyDamage().transformDamage(), <item:minecraft:air>],
+	[<tag:items:evolution_craft:milk>, <tag:items:forge:eggs>, <tag:items:forge:spinach>],
+	[<tag:items:forge:flour>, <item:minecraft:air>, <tag:items:forge:onions>]
+]);
+
+craftingTable.removeByName("croptopia:raspberry_jam");
+craftingTable.addShaped("croptopia/raspberry_jam", <item:croptopia:raspberry_jam>, [
+	[<tag:items:forge:raspberries>, <item:croptopia:food_press>.anyDamage().transformDamage(), <item:minecraft:air>],
 	[<item:minecraft:glass_bottle>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-craftingTable.removeByName("croptopia:quiche");
-craftingTable.addShaped("croptopia/quiche", <item:croptopia:quiche>, [
-	[<item:minecraft:air>, <item:croptopia:frying_pan>.anyDamage().transformDamage(), <item:minecraft:air>],
-	[<tag:item:evolution_craft:milk>, <tag:items:forge:eggs>, <tag:item:forge:spinach>],
-	[<tag:items:forge:flour>, <item:minecraft:air>, <tag:items:forge:onions>]
+craftingTable.removeByName("croptopia:rum_raisin_ice_cream");
+craftingTable.addShaped("croptopia/rum_raisin_ice_cream", <item:croptopia:rum_raisin_ice_cream>, [
+	[<item:minecraft:sugar>, <item:croptopia:raisins>, <item:croptopia:rum>],
+	[<tag:items:evolution_craft:milk>, <tag:items:forge:eggs>, <item:croptopia:cooking_pot>],
+	[<item:minecraft:air>, <item:simplytea:ice_cube>, <item:minecraft:air>]
 ]);
 
 craftingTable.removeByName("croptopia:saguaro_juice");
@@ -331,7 +358,7 @@ craftingTable.addShaped("croptopia/beef_wellington", <item:croptopia:beef_wellin
 
 craftingTable.removeByName("croptopia:shaped_chocolate_ice_cream");
 craftingTable.addShaped("croptopia/chocolate_ice_cream", <item:croptopia:chocolate_ice_cream>, [
-	[<item:minecraft:air>, <tag:items:forge:eggs>, <item:minecraft:air>],
+	[<item:minecraft:air>, <tag:items:forge:eggs>, <item:simplytea:ice_cube>],
 	[<tag:items:evolution_craft:milk>, <item:croptopia:chocolate>, <item:minecraft:sugar>],
 	[<item:minecraft:air>, <item:croptopia:cooking_pot>.anyDamage().transformDamage(), <item:minecraft:air>]
 ]);
@@ -364,7 +391,6 @@ craftingTable.addShaped("croptopia/fruit_cake", <item:croptopia:fruit_cake> * 3,
 	[<tag:items:forge:eggs>, <tag:items:forge:cinnamon>, <tag:items:forge:nutmegs>]
 ]);
 
-craftingTable.removeByName("croptopia:shaped_fried_frog_legs");
 craftingTable.addShaped("croptopia/fried_frog_legs", <item:croptopia:fried_frog_legs>, [
 	[<tag:items:forge:frog_legs>, <tag:items:forge:flour>, <item:minecraft:air>],
 	[<item:croptopia:olive_oil>, <item:croptopia:frying_pan>.anyDamage().transformDamage(), <item:minecraft:air>],
@@ -465,7 +491,7 @@ craftingTable.addShaped("croptopia/steamed_rice", <item:croptopia:steamed_rice>,
 craftingTable.removeByName("croptopia:strawberry_ice_cream");
 craftingTable.addShaped("croptopia/strawberry_ice_cream", <item:croptopia:strawberry_ice_cream>, [
 	[<tag:items:forge:strawberries>, <item:minecraft:sugar>, <tag:items:forge:eggs>],
-	[<tag:items:evolution_craft:milk>, <item:croptopia:cooking_pot>.anyDamage().transformDamage(), <item:minecraft:air>],
+	[<tag:items:evolution_craft:milk>, <item:croptopia:cooking_pot>.anyDamage().transformDamage(), <item:simplytea:ice_cube>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
@@ -494,7 +520,7 @@ craftingTable.removeByName("croptopia:sweet_crepes");
 craftingTable.addShaped("croptopia/sweet_crepes", <item:croptopia:sweet_crepes>, [
 	[<tag:items:forge:flour>, <tag:items:forge:eggs>, <tag:items:evolution_craft:milk>],
 	[<tag:items:forge:jams>, <item:minecraft:air>, <item:minecraft:sugar>],
-	[<item:minecraft:air>, <item:croptopia:frying_pan>.anyDamage(),transformDamage(), <item:minecraft:air>]
+	[<item:minecraft:air>, <item:croptopia:frying_pan>.anyDamage().transformDamage(), <item:minecraft:air>]
 ]);
 
 craftingTable.removeByName("croptopia:tamales");
@@ -507,7 +533,7 @@ craftingTable.addShaped("croptopia/tamales", <item:croptopia:tamales>, [
 craftingTable.removeByName("croptopia:the_big_breakfast");
 craftingTable.addShaped("croptopia/the_big_breakfast", <item:croptopia:the_big_breakfast>, [
 	[<tag:items:forge:eggs>, <item:croptopia:bacon>, <item:croptopia:hashed_brown>],
-	[<item:croptopia:frying_pan>.anyDamage().transformDamage(), <item:croptopia:hashed_brown>, <item:croptopia:tost>],
+	[<item:croptopia:frying_pan>.anyDamage().transformDamage(), <item:croptopia:hashed_brown>, <item:croptopia:toast>],
 	[<item:minecraft:air>, <item:croptopia:baked_beans>, <tag:items:forge:sausages>]
 ]);
 
@@ -532,10 +558,17 @@ craftingTable.addShaped("croptopia/tofu", <item:croptopia:tofu>, [
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
+craftingTable.removeByName("croptopia:tres_leche_cake");
+craftingTable.addShaped("croptopia/tres_leche_cake", <item:croptopia:tres_leche_cake> * 2, [
+	[<tag:items:forge:eggs>, <item:minecraft:sugar>, <tag:items:evolution_craft:milk>],
+	[<tag:items:forge:flour>, <tag:items:forge:vanilla>, <item:croptopia:rum>],
+	[<item:croptopia:whipping_cream>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
 craftingTable.removeByName("croptopia:vanilla_ice_cream");
 craftingTable.addShaped("croptopia/vanilla_ice_cream", <item:croptopia:vanilla_ice_cream>, [
 	[<item:croptopia:vanilla>, <item:minecraft:sugar>, <tag:items:forge:eggs>],
-	[<tag:items:evolution_craft:milk>, <item:croptopia:cooking_pot>.anyDamage().transformDamage(), <item:minecraft:air>],
+	[<tag:items:evolution_craft:milk>, <item:croptopia:cooking_pot>.anyDamage().transformDamage(), <item:simplytea:ice_cube>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
