@@ -619,7 +619,6 @@ if (packModeSetting.packModeSettingPlates() != true) {
 <recipetype:create:splashing>.addRecipe("create_splashing/crushed_steel", [<item:thermal:steel_nugget> * 12, (<item:thermal:steel_nugget> * 5) % 50], <item:contenttweaker:mekanism/crushed_steel>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/nautilus_shell_from_red_sandstone", [<item:minecraft:red_sand>, <item:minecraft:nautilus_shell> % 5], <item:minecraft:red_sandstone>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/nautilus_shell_from_sandstone", [<item:minecraft:sand>, <item:minecraft:nautilus_shell> % 2], <item:minecraft:sandstone>, 200);
-
 <recipetype:create:splashing>.addRecipe("create_splashing/oil_sand", [<item:thermal:bitumen> % 50, <item:minecraft:clay_ball> % 25], <item:thermal:oil_sand>, 200);
 <recipetype:create:splashing>.addRecipe("create_splashing/oil_red_sand", [<item:thermal:bitumen> % 50, (<item:minecraft:gold_nugget> * 3) % 12, <item:minecraft:dead_bush> % 5], <item:thermal:oil_red_sand>, 200);
 

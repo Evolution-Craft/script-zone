@@ -36,11 +36,6 @@ var removeJeiIngradient = [
 	"botania:manasteel_shears",
 	// Building Gadgets
 	"buildinggadgets:construction_paste_container_creative",
-	// Create
-	"create:creative_blaze_cake",
-	"create:creative_crate",
-	"create:creative_fluid_tank",
-	"create:honeyed_apple",
 	// Comforts
 	"comforts:hammock_black",
 	"comforts:hammock_blue",
@@ -114,7 +109,14 @@ var removeJeiIngradient = [
 	"cyclic:unbreakable_block",
 	"cyclic:unbreakable_reactive",
 	"cyclic:uncrafter",
+	// Create
+	"create:creative_blaze_cake",
+	"create:creative_crate",
+	"create:creative_fluid_tank",
+	"create:honeyed_apple",
 	// Croptopia
+	"croptopia:beer",
+	"croptopia:mead",
 	"croptopia:salt",
 	"croptopia:salt_ore",
 	"croptopia:tea",
@@ -126,6 +128,9 @@ var removeJeiIngradient = [
 	"electrodynamics:dustsalt",
 	// Elemental Craft
 	"elementalcraft:creative_container",
+	// Engineer Delight
+	"tmted:wheat_flour",
+	"tmted:bottle_of_wodka",
 	// Exchanger
 	"exchangers:creative_exchanger",
 	// Extended Crafting
@@ -290,6 +295,7 @@ var removeJeiIngradient = [
 	"pneumaticcraft:creative_compressor",
 	"pneumaticcraft:creative_compressed_iron_block",
 	"pneumaticcraft:creative_upgrade",
+	"pneumaticcraft:wheat_flour",
 	// Powah
 	"powah:energy_cell_creative",
 	// Quark

@@ -38,22 +38,44 @@ craftingTable.addShaped("farmersdelight_delight/cooking_pot", <item:farmersdelig
 	[<item:minecraft:iron_ingot>, <item:minecraft:water_bucket>, <item:minecraft:iron_ingot>],
 	[<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]
 ]);
+craftingTable.removeByName("farmersdelight:melon_popsicle");
+craftingTable.addShaped("farmersdelight_delight/melon_popsicle", <item:farmersdelight:melon_popsicle>, [
+	[<item:minecraft:air>, <tag:items:forge:melons>, <tag:items:forge:melons>],
+	[<item:simplytea:ice_cube>, <tag:items:forge:melons>, <tag:items:forge:melons>],
+	[<tag:items:forge:rods/wooden>, <item:simplytea:ice_cube>, <item:minecraft:air>]
+]);
 craftingTable.addShaped("farmersdelight_delight/tconstruct/delight/ichor_salad", <item:contenttweaker:tconstruct/delight/ichor_salad>, [
 	[<item:tconstruct:blazing_bone>, <item:tconstruct:ichor_slime_ball>, <item:minecraft:air>],
 	[<item:farmersdelight:cooked_mutton_chops>, <item:minecraft:bowl>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
+craftingTable.removeByName("tmted:wheat_dough_from_egg");
+craftingTable.addShaped("farmersdelight_delight/tmted/wheat_dough_from_egg", <item:farmersdelight:wheat_dough>, [
+	[<tag:items:forge:eggs>, <tag:items:forge:flour>, <item:minecraft:air>],
+	[<tag:items:forge:flour>, <tag:items:forge:flour>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+craftingTable.removeByName("tmted:wheat_dough_from_waterbucket");
+craftingTable.addShaped("farmersdelight_delight/tmted/wheat_dough_from_water_bucket", <item:farmersdelight:wheat_dough>, [
+	[<item:minecraft:water_bucket>, <tag:items:forge:flour>, <item:minecraft:air>],
+	[<tag:items:forge:flour>, <tag:items:forge:flour>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
 
 // Cooking Pot
-
-<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/apricot_jam", <item:croptopia:apricot_jam>, [<tag:items:forge:apricots>, <item:minecraft:sugar>], rbMisc, <item:minecraft:glass_bottle>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/apricot_jam", <item:croptopia:apricot_jam>, [<tag:items:forge:apricots>, <item:minecraft:sugar>], rbMisc, <item:vinery:cherry_jar>, 1, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/beetroot_salad", <item:croptopia:beetroot_salad>, [<item:minecraft:beetroot>, <item:minecraft:beetroot>, <item:minecraft:beetroot>, <tag:items:forge:lemons>, <tag:items:forge:cheeses>,  <tag:items:forge:lettuce>], rbMeals, <item:minecraft:bowl>, 1, 200);
-<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/blackberry_jam", <item:croptopia:blackberry_jam>, [<tag:items:forge:blackberries>, <item:minecraft:sugar>], rbMisc, <item:minecraft:glass_bottle>, 1, 200);
-<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/blueberry_jam", <item:croptopia:blueberry_jam>, [<tag:items:forge:blueberries>, <item:minecraft:sugar>], rbMisc, <item:minecraft:glass_bottle>, 1, 200);
-<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/cherry_jam", <item:croptopia:cherry_jam>, [<tag:items:forge:berries>, <item:minecraft:sugar>], rbMisc, <item:minecraft:glass_bottle>, 1, 200);
-<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_cocoa", <item:simplytea:cup_cocoa>, [<item:farmersdelight:milk_bottle>, <item:minecraft:cocoa_beans>, <item:minecraft:cocoa_beans>], rbDrinks, <item:simplytea:cup>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/blackberry_jam", <item:croptopia:blackberry_jam>, [<tag:items:forge:blackberries>, <item:minecraft:sugar>], rbMisc, <item:vinery:cherry_jar>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/blueberry_jam", <item:croptopia:blueberry_jam>, [<tag:items:forge:blueberries>, <item:minecraft:sugar>], rbMisc, <item:vinery:cherry_jar>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/cherry_jam", <item:croptopia:cherry_jam>, [<tag:items:forge:berries>, <item:minecraft:sugar>], rbMisc, <item:vinery:cherry_jar>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/elderberry_jam", <item:croptopia:elderberry_jam>, [<tag:items:forge:elderberries>, <item:minecraft:sugar>], rbMisc, <item:vinery:cherry_jar>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/grape_jam", <item:croptopia:grape_jam>, [<tag:items:forge:crops/grape>, <item:minecraft:sugar>], rbMisc, <item:vinery:cherry_jar>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/peach_jam", <item:croptopia:peach_jam>, [<tag:items:forge:peaches>, <item:minecraft:sugar>], rbMisc, <item:vinery:cherry_jar>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/raspberry_jam", <item:croptopia:raspberry_jam>, [<tag:items:forge:raspberries>, <item:minecraft:sugar>], rbMisc, <item:vinery:cherry_jar>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/strawberry_jam", <item:croptopia:strawberry_jam>, [<tag:items:forge:crops/strawberry>, <item:minecraft:sugar>], rbMisc, <item:vinery:cherry_jar>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_cocoa", <item:simplytea:cup_cocoa>, [<tag:items:evolution_craft:milk>, <item:minecraft:cocoa_beans>, <item:minecraft:cocoa_beans>], rbDrinks, <item:simplytea:cup>, 1, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_black", <item:simplytea:cup_tea_black>, [<item:croptopia:water_bottle>, <item:simplytea:black_tea>, <item:simplytea:black_tea>], rbDrinks, <item:simplytea:cup>, 1, 200);
-<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_chai", <item:simplytea:cup_tea_chai>, [<item:farmersdelight:milk_bottle>, <item:simplytea:black_tea>, <item:simplytea:black_tea>, <tag:items:forge:cinnamon>], rbDrinks, <item:simplytea:cup>, 1, 200);
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_chai", <item:simplytea:cup_tea_chai>, [<tag:items:evolution_craft:milk>, <item:simplytea:black_tea>, <item:simplytea:black_tea>, <tag:items:forge:cinnamon>], rbDrinks, <item:simplytea:cup>, 1, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_chorus", <item:simplytea:cup_tea_chorus>, [<item:croptopia:water_bottle>, <tag:items:forge:crops/chorus_petal>, <tag:items:forge:crops/chorus_petal>], rbDrinks, <item:simplytea:cup>, 1, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_floral", <item:simplytea:cup_tea_floral>, [<item:croptopia:water_bottle>, <item:minecraft:dandelion>, <item:minecraft:dandelion>], rbDrinks, <item:simplytea:cup>, 1, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/simplytea/cup_tea_green", <item:simplytea:cup_tea_green>, [<item:croptopia:water_bottle>, <tag:items:forge:crops/tea>, <tag:items:forge:crops/tea>], rbDrinks, <item:simplytea:cup>, 1, 200);
@@ -68,6 +90,8 @@ craftingTable.addShaped("farmersdelight_delight/tconstruct/delight/ichor_salad",
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/thermal/stuffed_pumpkin", <item:thermal:stuffed_pumpkin>, [<tag:items:forge:foods/meat/raw>, <tag:items:forge:crops/bell_pepper>, <tag:items:forge:crops/rice>, <tag:items:forge:crops/onion>, <tag:items:forge:tomato_sauces>], rbMeals, <item:minecraft:carved_pumpkin>, 2, 400);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/thermal/tomato_sauce", <item:thermal:tomato_sauce>, [<tag:items:forge:crops/tomato>, <tag:items:forge:crops/tomato>, <tag:items:forge:crops/tomato>, <tag:items:forge:crops/tomato>, <tag:items:forge:crops/tomato>, <tag:items:forge:crops/tomato>], rbMeals, <item:thermal:jar>, 2, 400);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/thermal/xp_stew", <item:thermal:xp_stew>, [<tag:items:forge:crops/barley>, <tag:items:forge:crops/barley>, <tag:items:forge:crops/eggplant>, <tag:items:forge:crops/spinach>, <tag:items:forge:crops/spinach>, <item:minecraft:experience_bottle>], rbMeals, <item:minecraft:bowl>, 3, 400);
+<recipetype:farmersdelight:cooking>.removeByName("twilightdelight:cooking/glacier_ice_tea");
+<recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/twilightdelight/glacier_ice_tea", <item:twilightdelight:glacier_ice_tea>, [<item:twilightforest:ice_bomb>, <item:simplytea:ice_cube>, <item:twilightforest:arctic_fur>, <item:minecraft:sugar>], rbDrinks, <item:minecraft:glass_bottle>, 0.35, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/vinery/applesauce", <item:vinery:applesauce>, [<item:minecraft:apple>, <item:minecraft:sugar> * 2], rbMisc, <item:minecraft:bowl>, 1, 400);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/vinery/apple_jam", <item:vinery:apple_jam>, [<item:minecraft:apple>, <item:minecraft:sugar> * 3], rbMisc, <item:vinery:cherry_jar>, 1, 400);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/vinery/cherry_jam", <item:vinery:cherry_jam>, [<item:vinery:cherry>, <item:minecraft:sugar> * 3], rbMisc, <item:vinery:cherry_jar>, 1, 400);
@@ -152,7 +176,7 @@ for addingSeedCuttingFarmersDelightName, addingSeedCuttingFarmersDelightOut in a
 				"chance": 0.5
 			},
 			{
-				"item": "croptopia:flour",
+				"item": "create:wheat_flour",
 				"chance": 0.3
 			}]
 		});
@@ -409,7 +433,7 @@ for addingCuttingFarmersDelightName, addingCuttingFarmersDelightId in addingCutt
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/alexsmobs/fish_bones", <item:alexsmobs:fish_bones>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculture/fish_bones", <item:aquaculture:fish_bones>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/croptopia/noodle", <tag:items:forge:dough>, [<item:croptopia:noodle>], <tag:items:farmersdelight:tools/knives>);
-<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/minecraft/wheat", <item:minecraft:wheat>, [<item:minecraft:wheat_seeds>, <item:minecraft:wheat_seeds> % 50, <item:croptopia:flour> % 30], <tag:items:farmersdelight:tools/knives>);
+<recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/minecraft/wheat", <item:minecraft:wheat>, [<item:minecraft:wheat_seeds>, <item:minecraft:wheat_seeds> % 50, <item:create:wheat_flour> % 30], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/netherdepthsupgrade/fish_bones", <item:netherdepthsupgrade:bonefish>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/blood_cake_slice", <item:tconstruct:blood_cake>, [<item:contenttweaker:tconstruct/delight/blood_cake_slice> * 7], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/tconstruct/earth_slime_crystal_block", <item:tconstruct:earth_slime_crystal_block>, [<item:tconstruct:earth_slime_crystal> * 4], <toolaction:pickaxe_dig>);

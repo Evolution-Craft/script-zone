@@ -62,9 +62,6 @@ var removeRecipeByName = [
 	"botania:manasteel_shears",
 	// BucketLib
 	"bucketlib:cake",
-	// Create
-	"create:crafting/appliances/slime_ball",
-	"create:crafting/curiosities/cake",
 	// Cyclic
 	"cyclic:apple_chocolate",
 	"cyclic:apple_chorus",
@@ -167,7 +164,12 @@ var removeRecipeByName = [
 	"comforts:hammock_white",
 	"comforts:rope_and_nail",
 	"comforts:rope_and_nail_shapeless",
+	// Create
+	"create:crafting/appliances/slime_ball",
+	"create:crafting/curiosities/cake",
 	// Croptopia
+	"croptopia:beer",
+	"croptopia:mead",
 	"croptopia:shaped_tea",
 	//Decorative Blocks
 	"decorative_blocks:dirt_from_rocky_dirt",
@@ -701,6 +703,7 @@ for remove_mana_infusion_recipe_by_name in removeManaInfsionRecipeByName {
 
 // Create
 <recipetype:create:filling>.removeByName("create:filling/honeyed_apple");
+<recipetype:create:filling>.removeByName("miners_delight:create/filling/fill_milk_cup");
 
 // Cyclic
 var removeCyclicCrusherRecipeByName = [
@@ -745,7 +748,14 @@ for remove_blueprint_recipe_by_name in removeBlueprintRecipeByName {
 	<recipetype:immersiveengineering:blueprint>.removeByName(remove_blueprint_recipe_by_name);
 }
 
-<recipetype:immersiveengineering:bottling_machine>.removeByName("immersiveengineering:bottling/empty_shell");
+var removeBottelingMachineRecipeByName = [
+	"immersiveengineering:bottling/empty_shell",
+	"tmted:bottling/wodka"
+];
+for remove_bottling_machine_recipe_by_name in removeBottelingMachineRecipeByName {
+	<recipetype:immersiveengineering:bottling_machine>.removeByName(remove_bottling_machine_recipe_by_name);
+}
+
 <recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/bullet_casing");
 
 // Industrial Foregoing

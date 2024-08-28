@@ -53,16 +53,37 @@ craftingTable.addShaped("immersiveengineering_crafting_sawdust", <item:immersive
 <recipetype:immersiveengineering:blueprint>.addRecipe("immersiveengineering_blueprint/alexsmobs/banner_pattern_new_mexico", "bannerpatterns", [<item:minecraft:paper>, <item:alexsmobs:tarantula_hawk_wing_fragment> * 6], <item:alexsmobs:banner_pattern_new_mexico>);
 <recipetype:immersiveengineering:blueprint>.addRecipe("immersiveengineering_blueprint/alexsmobs/banner_pattern_brazil", "bannerpatterns", [<item:minecraft:paper>, <item:alexsmobs:shed_snake_skin> * 6], <item:alexsmobs:banner_pattern_brazil>);
 
+// Bottling Machine
+<recipetype:immersiveengineering:bottling_machine>.removeByName("tmted:bottling/wheat_dough");
+<recipetype:immersiveengineering:bottling_machine>.addJsonRecipe("immersiveengineering_bottling_machine/wheat_dough", {
+	"fluid":{
+		"amount": 250,
+		"tag": "minecraft:water"
+	},
+	"inputs":[{
+		"tag": "forge:flour"
+	}],
+	"results":[{
+		"item":"farmersdelight:wheat_dough"
+	}]
+});
+
 // Cloche
 <recipetype:immersiveengineering:cloche>.removeByName("immersiveengineering:cloche/cactus");
 <recipetype:immersiveengineering:cloche>.addRecipe("immersiveengineering_cloche/cactus", <item:minecraft:cactus>, <tag:items:forge:sand>, 560, [<item:minecraft:cactus>, <item:ecologics:prickly_pear>], <blockstate:minecraft:cactus>.block, "stacking");
 
+// Crusher
+<recipetype:immersiveengineering:crusher>.removeByName("tmted:crusher/wheat_flour_from_bale");
+<recipetype:immersiveengineering:crusher>.addRecipe("immersiveengineering_crusher/wheat_flour_from_hay_block", <item:minecraft:hay_block>, 1600, <item:create:wheat_flour> * 18, (<item:farmersdelight:straw> * 5) % 100, (<item:farmersdelight:straw> * 4) % 25);
+<recipetype:immersiveengineering:crusher>.removeByName("tmted:crusher/wheat_flour");
+<recipetype:immersiveengineering:crusher>.addRecipe("immersiveengineering_crusher/wheat_flour_from_wheat", <item:minecraft:wheat>, 1600, <item:create:wheat_flour> * 2, <item:farmersdelight:straw> % 25);
+
 // Fertilizer
-<recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/industrialforegoing_fertilizer", <item:industrialforegoing:fertilizer>, 1.25);
-<recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/waterstrainer_fertilizer", <item:waterstrainer:fertilizer>, 1.5);
-<recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/thermal_compost", <item:thermal:compost>, 1.75);
-<recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/create_tree_fertilizer", <item:create:tree_fertilizer>, 2.0);
-<recipetype:immersiveengineering:fertilizer>.addFertilizer("garden_cloche_fertilizer/thermal_phytogro", <item:thermal:phytogro>, 3.0);
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("immersiveengineering_garden_cloche_fertilizer/industrialforegoing_fertilizer", <item:industrialforegoing:fertilizer>, 1.25);
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("immersiveengineering_garden_cloche_fertilizer/waterstrainer_fertilizer", <item:waterstrainer:fertilizer>, 1.5);
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("immersiveengineering_garden_cloche_fertilizer/thermal_compost", <item:thermal:compost>, 1.75);
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("immersiveengineering_garden_cloche_fertilizer/create_tree_fertilizer", <item:create:tree_fertilizer>, 2.0);
+<recipetype:immersiveengineering:fertilizer>.addFertilizer("immersiveengineering_garden_cloche_fertilizer/thermal_phytogro", <item:thermal:phytogro>, 3.0);
 
 // Metal Press
 <recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/diamond_rod", <item:minecraft:diamond>, <item:immersiveengineering:mold_rod>, 2400, <item:contenttweaker:immersiveengineering/diamond_rod> * 2);

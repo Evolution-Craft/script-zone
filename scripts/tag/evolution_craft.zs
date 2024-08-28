@@ -58,6 +58,15 @@ for tag_evolution_craft_fragment in addingEvolutionCraftFragment {
 	<tag:items:evolution_craft:fragments>.add(<item:${tag_evolution_craft_fragment}>);
 }
 
+// Evolution Craft - Milk
+var addingEvolutionCraftMilk = [
+	"croptopia:milk_bottle",
+	"croptopia:soy_milk"
+];
+for tag_evolution_craft_milk in addingEvolutionCraftMilk {
+	<tag:items:evolution_craft:milk>.add(<item:${tag_evolution_craft_milk}>);
+}
+
 // Evolution Craft - Parts
 var addingEvolutionCraftPart = [
 	"contenttweaker:common_part",

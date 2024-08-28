@@ -289,15 +289,6 @@ for tag_fishing_rods_forge in addingFishingRodsForge {
 	<tag:items:forge:fishing_rods>.add(<item:${tag_fishing_rods_forge}>);
 }
 
-// Flour
-var addingFlourForge = [
-	"pneumaticcraft:wheat_flour",
-	"tmted:wheat_flour"
-];
-for tag_flour_forge in addingFlourForge {
-	<tag:items:forge:flour>.add(<item:${tag_flour_forge}>);
-}
-
 // Frog Legs
 <tag:items:forge:frog_legs>.add(<item:aquaculture:frog_legs_raw>);
 
