@@ -25,14 +25,14 @@ craftingTable.addShapeless("simplytea_ice_cube", <item:simplytea:ice_cube> * 4, 
 
 // Shaped
 craftingTable.removeByName("simplytea:teabag_chorus");
-craftingTable.addShaped("simplytea_tea_teabag_chorus", <item:simplytea:teabag_chorus>, [
+craftingTable.addShaped("simplytea_tea/teabag_chorus", <item:simplytea:teabag_chorus>, [
 	[<item:simplytea:teabag>, <tag:items:forge:crops/chorus_petal>, <item:minecraft:air>],
 	[<tag:items:forge:crops/chorus_petal>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
 craftingTable.removeByName("simplytea:teabag_green");
-craftingTable.addShaped("simplytea_tea_teabag_green", <item:simplytea:teabag_green>, [
+craftingTable.addShaped("simplytea_tea/teabag_green", <item:simplytea:teabag_green>, [
 	[<item:simplytea:teabag>, <tag:items:forge:crops/tea>, <item:minecraft:air>],
 	[<tag:items:forge:crops/tea>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]

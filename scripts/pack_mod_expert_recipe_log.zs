@@ -62,16 +62,10 @@ if (packModeSetting.packModeSettingLogs() == true) {
 			craftingTable.removeByName("twilightforest:wood/" + <item:${packModeExpertPlanksOut}>.registryName.path);
 		} else if (packModeExpertPlanksOut == "twilightforest:dark_planks") {
 			craftingTable.removeByName("twilightforest:wood/darkwood_planks");
-		} else if (packModeExpertPlanksOut == "tconstruct:bloodshroom_planks") {
-			craftingTable.removeByName("tconstruct:world/wood/bloodshroom/planks");
-		} else if (packModeExpertPlanksOut == "tconstruct:greenheart_planks") {
-			craftingTable.removeByName("tconstruct:world/wood/greenheart/planks");
-		} else if (packModeExpertPlanksOut == "tconstruct:skyroot_planks") {
-			craftingTable.removeByName("tconstruct:world/wood/skyroot/planks");
-		} else if (packModeExpertPlanksOut == "quark:azalea_planks") {
-			craftingTable.removeByName("quark:world/crafting/woodsets/azalea/planks");
-		} else if (packModeExpertPlanksOut == "quark:blossom_planks") {
-			craftingTable.removeByName("quark:world/crafting/woodsets/blossom/planks");
+		} else if (packModeExpertPlanksOut == "tconstruct:bloodshroom_planks" || packModeExpertPlanksOut == "tconstruct:greenheart_planks" || packModeExpertPlanksOut == "tconstruct:skyroot_planks") {
+			craftingTable.removeByName("tconstruct:world/wood/" + <item:${packModeExpertPlanksOut}>.registryName.path + "/planks");
+		} else if (packModeExpertPlanksOut == "quark:azalea_planks" || packModeExpertPlanksOut == "quark:blossom_planks") {
+			craftingTable.removeByName("quark:world/crafting/woodsets/" + <item:${packModeExpertPlanksOut}>.registryName.path + "/planks");
 		} else if (packModeExpertPlanksOut == "integrateddynamics:menril_planks") {
 			craftingTable.removeByName("integrateddynamics:crafting/menril_planks");
 		} else {
@@ -87,6 +81,29 @@ if (packModeSetting.packModeSettingLogs() == true) {
 
 	craftingTable.removeByName("myrtrees:rubberwood_planks");
 	craftingTable.addShapeless("pack_expert_crafting_rubberwood_planks", <item:myrtrees:rubberwood_planks> * expert_log_to_planks, [<item:myrtrees:rubberwood_log>]);
+} else {
+	craftingTable.removeByName("twilightforest:wood/canopy_planks");
+	craftingTable.removeByName("twilightforest:wood/darkwood_planks");
+	craftingTable.removeByName("twilightforest:wood/mangrove_planks");
+	craftingTable.removeByName("twilightforest:wood/mining_planks");
+	craftingTable.removeByName("twilightforest:wood/sorting_planks");
+	craftingTable.removeByName("twilightforest:wood/time_planks");
+	craftingTable.removeByName("twilightforest:wood/transformation_planks");
+	craftingTable.removeByName("twilightforest:wood/twilight_oak_planks");
+	
+	var packModeExpertDisablePlanks = {
+		"canopy_planks" : <tag:items:twilightforest:canopy_logs>,
+		"dark_planks" : <tag:items:twilightforest:darkwood_logs>,
+		"mangrove_planks" : <tag:items:twilightforest:mangrove_logs>,
+		"mining_planks" : <tag:items:twilightforest:mining_logs>,
+		"sorting_planks" : <tag:items:twilightforest:sortwood_logs>,
+		"time_planks" : <tag:items:twilightforest:timewood_logs>,
+		"transformation_planks" : <tag:items:twilightforest:transwood_logs>,
+		"twilight_oak_planks" : <tag:items:twilightforest:twilight_oak_logs>
+	};
+	for packModeExpertDisablePlanksOut, packModeExpertDisablePlanksIn in packModeExpertDisablePlanks {
+		craftingTable.addShapeless("twilightforest/wood/" + packModeExpertDisablePlanksOut, <item:${packModeExpertDisablePlanksOut}> * 4, [packModeExpertDisablePlanksIn]);
+	}
 }
 
 Globals.endScript("pack_mod_expert_recipe_log");

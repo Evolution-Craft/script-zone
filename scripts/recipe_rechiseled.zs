@@ -17,7 +17,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 // Shapeless
 craftingTable.removeByName("rechiseled:chisel");
-craftingTable.addShaped("pack_expert_crafting/rechiseled_chisel", <item:rechiseled:chisel>, [
+craftingTable.addShaped("pack_expert_crafting/rechiseled/chisel", <item:rechiseled:chisel>, [
 	[<item:minecraft:air>, <tag:items:forge:ingots/steel>, <item:minecraft:air>],
 	[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]

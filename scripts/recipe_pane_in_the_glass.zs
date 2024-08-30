@@ -16,12 +16,12 @@ import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 // Shaped
-craftingTable.addShaped("glass_pane_table", <item:pitg:glass_pane_table>, [
+craftingTable.addShaped("pitg/glass_pane_table", <item:pitg:glass_pane_table>, [
 	[<item:minecraft:blackstone_slab>, <tag:items:forge:glass_panes/silica>, <item:minecraft:blackstone_slab>],
 	[<item:minecraft:air>, <item:minecraft:blackstone_slab>, <item:minecraft:air>],
 	[<item:minecraft:blackstone_slab>, <item:minecraft:blackstone_slab>, <item:minecraft:blackstone_slab>]
 ]);
-craftingTable.addShaped("glazing_tool", <item:pitg:glazing_tool>, [
+craftingTable.addShaped("pitg/glazing_tool", <item:pitg:glazing_tool>, [
 	[<tag:items:forge:glass_panes/silica>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:iron_ingot>]

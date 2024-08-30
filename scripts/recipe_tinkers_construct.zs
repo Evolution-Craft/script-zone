@@ -22,6 +22,42 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 val expert_ingradient_to_plate = packModeSetting.packModeSettingPlateCastingBasing();
 
+// Shaped
+craftingTable.removeByName("tconstruct:gadgets/cake/blood_cake");
+craftingTable.addShaped("tconstruct/gadgets/cake/blood_cake", <item:tconstruct:blood_cake>, [
+	[<item:tconstruct:blood_bucket>, <item:tconstruct:blood_bucket>, <item:tconstruct:blood_bucket>],
+	[<tag:items:forge:dusts/glowstone>, <tag:items:forge:eggs>, <tag:items:forge:dusts/glowstone>],
+	[<item:tconstruct:blood_slime_tall_grass>, <item:tconstruct:blood_slime_tall_grass>, <item:tconstruct:blood_slime_tall_grass>]
+]);
+
+craftingTable.removeByName("tconstruct:gadgets/cake/earth_cake");
+craftingTable.addShaped("tconstruct/gadgets/cake/earth_cake", <item:tconstruct:earth_cake>, [
+	[<item:tconstruct:earth_slime_bucket>, <item:tconstruct:earth_slime_bucket>, <item:tconstruct:earth_slime_bucket>],
+	[<item:minecraft:sugar>, <tag:items:forge:eggs>, <item:minecraft:sugar>],
+	[<item:tconstruct:earth_slime_tall_grass>, <item:tconstruct:earth_slime_tall_grass>, <item:tconstruct:earth_slime_tall_grass>]
+]);
+
+craftingTable.removeByName("tconstruct:gadgets/cake/ender_cake");
+craftingTable.addShaped("tconstruct/gadgets/cake/ender_cake", <item:tconstruct:ender_cake>, [
+	[<item:tconstruct:ender_slime_bucket>, <item:tconstruct:ender_slime_bucket>, <item:tconstruct:ender_slime_bucket>],
+	[<item:minecraft:sugar>, <tag:items:forge:eggs>, <item:minecraft:sugar>],
+	[<item:tconstruct:ender_slime_tall_grass>, <item:tconstruct:ender_slime_tall_grass>, <item:tconstruct:ender_slime_tall_grass>]
+]);
+
+craftingTable.removeByName("tconstruct:gadgets/cake/magma_cake");
+craftingTable.addShaped("tconstruct/gadgets/cake/magma_cake", <item:tconstruct:magma_cake>, [
+	[<item:tconstruct:magma_bucket>, <item:tconstruct:magma_bucket>, <item:tconstruct:magma_bucket>],
+	[<tag:items:forge:dusts/glowstone>, <tag:items:forge:eggs>, <tag:items:forge:dusts/glowstone>],
+	[<item:minecraft:crimson_roots>, <item:minecraft:crimson_roots>, <item:minecraft:crimson_roots>]
+]);
+
+craftingTable.removeByName("tconstruct:gadgets/cake/sky_cake");
+craftingTable.addShaped("tconstruct/gadgets/cake/sky_cake", <item:tconstruct:sky_cake>, [
+	[<item:tconstruct:sky_slime_bucket>, <item:tconstruct:sky_slime_bucket>, <item:tconstruct:sky_slime_bucket>],
+	[<tag:items:forge:dusts/glowstone>, <tag:items:forge:eggs>, <tag:items:forge:dusts/glowstone>],
+	[<item:minecraft:sky_slime_tall_grass>, <item:minecraft:sky_slime_tall_grass>, <item:minecraft:sky_slime_tall_grass>]
+]);
+
 // Casting Basin
 <recipetype:tconstruct:casting_basin>.addJsonRecipe("tconstruct_casting_basin/minecraft_petrified_oak_slab", {
 	"cast": {

@@ -25,19 +25,19 @@ craftingTable.addShapeless("refinedstorage_raw_improved_processor", <item:refine
 
 // Shaped
 craftingTable.removeByName("refinedstorage:controller");
-craftingTable.addShaped("refinedstorage_controller", <item:refinedstorage:controller>, [
+craftingTable.addShaped("refinedstorage/controller", <item:refinedstorage:controller>, [
 	[<item:refinedstorage:quartz_enriched_iron>, <item:refinedstorage:advanced_processor>, <item:refinedstorage:quartz_enriched_iron>],
 	[<tag:items:forge:silicon>, <item:refinedstorage:machine_casing>, <tag:items:forge:silicon>],
 	[<item:refinedstorage:quartz_enriched_iron>, <tag:items:forge:silicon>, <item:refinedstorage:quartz_enriched_iron>]
 ]);
 craftingTable.removeByName("refinedstorage:1k_storage_part");
-craftingTable.addShaped("refinedstorage_1k_storage_part", <item:refinedstorage:1k_storage_part>, [
+craftingTable.addShaped("refinedstorage/1k_storage_part", <item:refinedstorage:1k_storage_part>, [
 	[<tag:items:forge:silicon>, <item:refinedstorage:quartz_enriched_iron>, <tag:items:forge:silicon>],
 	[<tag:items:forge:glass>, <item:minecraft:redstone>, <tag:items:forge:glass>],
 	[<tag:items:forge:silicon>, <tag:items:forge:glass>, <tag:items:forge:silicon>]
 ]);
 craftingTable.removeByName("refinedstorage:64k_fluid_storage_part");
-craftingTable.addShaped("refinedstorage_64k_fluid_storage_part", <item:refinedstorage:64k_fluid_storage_part>, [
+craftingTable.addShaped("refinedstorage/64k_fluid_storage_part", <item:refinedstorage:64k_fluid_storage_part>, [
 	[<tag:items:forge:silicon>, <item:refinedstorage:quartz_enriched_iron>, <tag:items:forge:silicon>],
 	[<tag:items:forge:glass>, <item:minecraft:bucket>, <tag:items:forge:glass>],
 	[<tag:items:forge:silicon>, <tag:items:forge:glass>, <tag:items:forge:silicon>]

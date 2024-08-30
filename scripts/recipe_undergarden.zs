@@ -17,7 +17,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 // Shaped
 craftingTable.removeByName("undergarden:shard_torch");
-craftingTable.addShaped("undergarden_shard_torch", <item:undergarden:shard_torch> * 4, [
+craftingTable.addShaped("undergarden/shard_torch", <item:undergarden:shard_torch> * 4, [
 	[<item:minecraft:air>, <item:undergarden:utheric_shard>, <item:minecraft:air>],
 	[<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]

@@ -16,7 +16,7 @@ import crafttweaker.api.recipe.Replacer;
 
 // Shaped
 craftingTable.removeByName("sophisticatedbackpacks:tool_swapper_upgrade");
-craftingTable.addShaped("sophisticatedbackpacks_tool_swapper_upgrade", <item:sophisticatedbackpacks:tool_swapper_upgrade>, [
+craftingTable.addShaped("sophisticatedbackpacks/tool_swapper_upgrade", <item:sophisticatedbackpacks:tool_swapper_upgrade>, [
 	[<item:minecraft:redstone>, <item:minecraft:iron_sword>, <item:minecraft:redstone>],
 	[<item:minecraft:iron_pickaxe>, <item:sophisticatedbackpacks:upgrade_base>, <item:minecraft:iron_axe>],
 	[<item:minecraft:iron_ingot>, <item:minecraft:iron_shovel>, <item:minecraft:iron_ingot>]

@@ -298,4 +298,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 // Squeezer
 //<recipetype:immersiveengineering:squeezer>.addRecipe("immersiveengineering_metalpress/squeezer/wheat_seeds", <tag:items:forge:seeds/wheat> , 6400, <fluid:immersiveengineering:plantoil> * 80);
 
+// Sawmill
+//<recipetype:immersiveengineering:sawmill>.addRecipe("immersiveengineering_sawmill/cherry_door", <item:vinery:cherry_door>, 800, <item:vinery:cherry_planks>, [<tag:items:forge:dusts/wood>]);
+
 Globals.endScript("recipe_immersive_engieneering");
