@@ -1,4 +1,10 @@
 {
+	"conditions": [
+	{
+		"type": "forge:mod_loaded",
+		"modid": "tconstruct"
+	}
+	],
 	"type": "tconstruct:terracube",
 	"name": "entity.tconstruct.terracube",
 	"name_color": "0x9FA5AF",
@@ -23,5 +29,17 @@
 			"item": "minecraft:clay",
 			"count": 4
 		}
+	],
+	"tier_data": [
+		6,
+		54,
+		354,
+		1254
+	],
+	"data_per_kill": [
+		1,
+		4,
+		10,
+		18
 	]
-} 
+}

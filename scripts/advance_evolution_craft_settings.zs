@@ -39,6 +39,8 @@ public class packModeSetting {
 	private static val quantity_splash_potion_stack_size as int = 3;
 	private static val quantity_lingering_potion_stack_size as int = 3;
 
+	private static val quantity_totem_of_undying_stack_size as int = 4;
+
 	public static packModeSettingArmors() as string {
 		return pack_mode_expert_recipe_armor_enable;
 	}
@@ -139,6 +141,11 @@ public class packModeSetting {
 		return quantity_lingering_potion_stack_size;
 	}
 	public static val packModeSettingLingeringPotionStackSize_Set as string = "packModeSettingLingeringPotionStackSize Value: " + quantity_lingering_potion_stack_size;
+
+	public static packModeSettingTotemOfUndyingStackSize() as int {
+		return quantity_totem_of_undying_stack_size;
+	}
+	public static val packModeSettingTotemOfUndyingStackSize_Set as string = "packModeSettingTotemOfUndyingStackSize Value: " + quantity_totem_of_undying_stack_size;
 }
 
 println("          Pack Mode Settings...          ");
@@ -171,5 +178,6 @@ println("          -> " + packModeSetting.packModeSettingShears_Load + "        
 println("          -> " + packModeSetting.packModeSettingPotionStackSize_Set + "          ");
 println("          -> " + packModeSetting.packModeSettingSplashPotionStackSize_Set + "          ");
 println("          -> " + packModeSetting.packModeSettingLingeringPotionStackSize_Set + "          ");
+println("          -> " + packModeSetting.packModeSettingTotemOfUndyingStackSize_Set + "          ");
 println("          Pack Mode Settings Loading Completed          ");
 Globals.endScript("advance_evolution_craft_settings");

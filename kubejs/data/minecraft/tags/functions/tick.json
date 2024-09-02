@@ -1,6 +1,5 @@
 {
-	"values": [
-		"ships:main",
-		"healingbed:heal"
-	]
+  "values": [
+    "ships:main"
+  ]
 }

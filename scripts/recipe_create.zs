@@ -79,6 +79,7 @@ for logWoodenHorseId, logWoodenHorseName in logsWoodenHorse {
 <recipetype:create:deploying>.addRecipe("create_deploying/rabbits_foot", <item:minecraft:rabbit_hide>, <item:minecraft:bone>, [<item:minecraft:rabbit_foot>]);
 
 // Filling
+<recipetype:create:filling>.addRecipe("create_filling/electron_tube_from_polished_rose_quartz", <item:create:electron_tube>, <item:create:polished_rose_quartz>, <fluid:tconstruct:molten_iron> * 16, 250);
 <recipetype:create:filling>.addRecipe("create_filling/leather_from_rotten_flesh", <item:minecraft:leather> % 50, <item:minecraft:rotten_flesh>, <fluid:minecraft:water> * 25, 800);
 <recipetype:create:filling>.addRecipe("create_filling/quartz_rose_from_quartz", <item:create:rose_quartz>, <item:minecraft:quartz>, <fluid:thermal:redstone> * 25, 100);
 
@@ -121,6 +122,7 @@ for mixing_glass_dye_add_item in Constant.packColours {
 <recipetype:create:mixing>.addRecipe("create_mixing/gilded_blackstone", hcSuperheated, [<item:minecraft:gilded_blackstone>], [<tag:items:forge:ingots/gold> * 2, <item:minecraft:blackstone>]);
 <recipetype:create:mixing>.addRecipe("create_mixing/latex_from_dandelion", hcNone, [<fluid:thermal:latex> * 100], [<item:minecraft:dandelion>], [<fluid:minecraft:water> * 50], 200);
 <recipetype:create:mixing>.addRecipe("create_mixing/latex_from_vine", hcNone, [<fluid:thermal:latex> * 100], [<item:minecraft:vine>], [<fluid:minecraft:water> * 50], 200);
+<recipetype:create:mixing>.addRecipe("create_mixing/molten_brass", hcHeated, [<fluid:tconstruct:molten_brass> * 180], [<fluid:tconstruct:molten_zinc> * 90], [<fluid:tconstruct:molten_copper> * 90]);
 <recipetype:create:mixing>.addRecipe("create_mixing/shellite_ingot", hcHeated, [<item:thermal_extra:shellite_ingot>], [<item:thermal:apatite>, <item:minecraft:shulker_shell> * 2, <item:thermal:bronze_ingot>]);
 <recipetype:create:mixing>.addRecipe("create_mixing/shroomlight", hcNone, [<item:minecraft:shroomlight>], [<tag:items:forge:dusts/glowstone> * 4, <item:minecraft:nether_wart_block>]);
 <recipetype:create:mixing>.addRecipe("create_mixing/soul_infused_ingot", hcHeated, [<item:thermal_extra:soul_infused_ingot>], [<item:thermal:apatite>, <item:thermal_extra:soul_sand_dust> * 2, <item:thermal:invar_ingot>]);

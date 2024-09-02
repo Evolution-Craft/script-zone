@@ -8,6 +8,8 @@
  * v0.2 : Potion Max Stack Size.
  */
 
+// TODO: Check bamboon item e disc
+
 Globals.startScript("item_max_stack_size");
 Globals.priorityScript("Null");
 
@@ -16,6 +18,7 @@ import crafttweaker.api.item.ItemStack;
 val expert_max_stack_size_potion = packModeSetting.packModeSettingPotionStackSize();
 val expert_max_stack_size_splash_potion = packModeSetting.packModeSettingSplashPotionStackSize();
 val expert_max_stack_size_lingering_potion = packModeSetting.packModeSettingLingeringPotionStackSize();
+val expert_max_stack_size_totem_of_undying = packModeSettingTotemOfUndyingStackSize();
 
 var itemSetMaxStackSize = {
 
@@ -23,12 +26,15 @@ var itemSetMaxStackSize = {
 	"minecraft:splash_potion" : expert_max_stack_size_splash_potion,
 	"minecraft:lingering_potion" : expert_max_stack_size_lingering_potion,
 
+	"minecraft:totem_of_undying" : expert_max_stack_size_totem_of_undying,
+
 	"ecologics:azalea_sign" : 64,
 	"ecologics:coconut_sign" : 64,
 	"ecologics:flowering_azalea_sign" : 64,
 	"ecologics:walnut_sign" : 64,
 	"ends_delight:chorus_fruit_milk_tea" : 64,
 	"minecraft:acacia_sign" : 64,
+	"minecraft:armor_stand" : 64,
 	"minecraft:birch_sign" : 64,
 	"minecraft:crimson_sign" : 64,
 	"minecraft:dark_oak_sign" : 64,
@@ -37,6 +43,7 @@ var itemSetMaxStackSize = {
 	"minecraft:honey_bottle" : 64,
 	"minecraft:jungle_sign" : 64,
 	"minecraft:oak_sign" : 64,
+	"minecraft:saddle" : 64,
 	"minecraft:spruce_sign" : 64,
 	"minecraft:snowball" : 64,
 	"minecraft:warped_sign" : 64,

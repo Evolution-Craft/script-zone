@@ -48,6 +48,24 @@ public class Constant {
 	];
 	public static val packBaseWoods_Load as string = "packBaseWoods Load Completed";
 
+	public static val packDiscs as string[] = [
+        "music_disc_13",
+        "music_disc_cat",
+        "music_disc_blocks",
+        "music_disc_chirp",
+        "music_disc_far",
+        "music_disc_mall",
+        "music_disc_mellohi",
+        "music_disc_stal",
+        "music_disc_strad",
+        "music_disc_ward",
+        "music_disc_11",
+        "music_disc_wait",
+        "music_disc_otherside",
+        "music_disc_pigstep"
+	];
+	public static val packDiscs_Load as string = "packDiscs Load Completed";
+
 	public static val packPotions as string[] = [
 		"alexsmobs:bug_pheromones",
 		"alexsmobs:clinging",
@@ -193,6 +211,7 @@ public class Constant {
 println("          Class Constant Loading...          ");
 println("          -> " + Constant.packColours_Load + "          ");
 println("          -> " + Constant.packBaseWoods_Load + "          ");
+println("          -> " + Constant.packDiscs_Load + "          ");
 println("          -> " + Constant.packPotions_Load + "          ");
 println("          Class Constant Loading Completed          ");
 Globals.endScript("class_constant");

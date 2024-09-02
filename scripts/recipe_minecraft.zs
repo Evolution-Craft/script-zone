@@ -31,11 +31,20 @@ import crafttweaker.api.misc.Composter;
 import crafttweaker.api.tag.manager.ITagManager;
 
 // Shapeless
+craftingTable.addShapeless("minecraft/blue_dye", <item:minecraft:blue_dye>, [<tag:items:evolution_craft:coral/blue>]);
 craftingTable.addShapeless("minecraft/brown_day", <item:minecraft:brown_dye> * 3, [<item:minecraft:blue_dye>, <item:minecraft:red_dye>, <item:minecraft:yellow_dye>]);
-craftingTable.addShapeless("minecraft/green_day", <item:minecraft:green_dye> * 2, [<item:minecraft:blue_dye>, <item:minecraft:yellow_dye>]);
 craftingTable.addShapeless("minecraft/flint", <item:minecraft:flint>, [<item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>]);
-craftingTable.addShapeless("minecraft/nether_wart_unblock", <item:minecraft:nether_wart> * 4, [<item:minecraft:nether_wart_block>]);
+craftingTable.addShapeless("minecraft/glow_ink_sac", <item:minecraft:glow_ink_sac>, [<item:minecraft:ink_sac>, <tag:items:evolution_craft:glow>]);
+craftingTable.addShapeless("minecraft/green_day", <item:minecraft:green_dye> * 2, [<item:minecraft:blue_dye>, <item:minecraft:yellow_dye>]);
+craftingTable.addShapeless("minecraft/gray_dye", <item:minecraft:gray_dye>, [<tag:items:evolution_craft:coral/gray>]);
+craftingTable.addShapeless("minecraft/magenta_dye", <item:minecraft:magenta_dye>, [<tag:items:evolution_craft:coral/magenta>]);
+craftingTable.addShapeless("minecraft/nether_wart_unpacked", <item:minecraft:nether_wart> * 4, [<item:minecraft:nether_wart_block>]);
+craftingTable.addShapeless("minecraft/pink_dye", <item:minecraft:pink_dye>, [<tag:items:evolution_craft:coral/pink>]);
+craftingTable.addShapeless("minecraft/purple_dye", <item:minecraft:purple_dye>, [<item:minecraft:magenta_dye>, <item:minecraft:blue_dye>]);
+craftingTable.addShapeless("minecraft/red_dye", <item:minecraft:red_dye>, [<tag:items:evolution_craft:coral/red>]);
+craftingTable.addShapeless("minecraft/string", <item:minecraft:string> * 4, [<tag:items:minecraft:wool>, <tag:items:forge:shears>.asIIngredient().anyDamage().transformDamage()]);
 craftingTable.addShapeless("minecraft/snow_block_unblock", <item:minecraft:snowball> * 4, [<item:minecraft:snow_block>]);
+craftingTable.addShapeless("minecraft/yellow_dye", <item:minecraft:yellow_dye>, [<tag:items:evolution_craft:coral/yellow>]);
 craftingTable.removeByName("minecraft:flint_and_steel");
 craftingTable.addShapeless("pack_expert_crafting/flint_and_steel", <item:minecraft:flint_and_steel>, [<tag:items:forge:ingots/steel>, <item:minecraft:flint>]);
 
@@ -293,6 +302,7 @@ blastFurnace.addRecipe("blast_furnace/minecraft/clay", <item:minecraft:terracott
 blastFurnace.addRecipe("blast_furnace/minecraft/clay_ball", <item:minecraft:brick>, <item:minecraft:clay_ball>, 0.3, 100);
 blastFurnace.addRecipe("blast_furnace/minecraft/cobblestone", <item:minecraft:stone>, <item:minecraft:cobblestone>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/minecraft/cobbled_deepslate", <item:minecraft:deepslate>, <item:minecraft:cobbled_deepslate>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/minecraft/magma_cream", <item:minecraft:magma_cream>, <item:minecraft:slime_ball>, 0.35, 400);
 blastFurnace.addRecipe("blast_furnace/minecraft/raw_iron_block", <item:minecraft:iron_block>, <item:minecraft:raw_iron_block>, 4.2, 200);
 blastFurnace.addRecipe("blast_furnace/minecraft/raw_copper_block", <item:minecraft:copper_block>, <item:minecraft:raw_copper_block>, 4.2, 200);
 blastFurnace.addRecipe("blast_furnace/minecraft/raw_gold_block", <item:minecraft:gold_block>, <item:minecraft:raw_gold_block>, 6.0, 200);
@@ -408,6 +418,7 @@ stoneCutter.addRecipe("stonecutter/integrateddynamics/block_of_crystallized_chor
 stoneCutter.addRecipe("stonecutter/integrateddynamics/block_of_crystallized_chorus_to_brick_stairs_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_stairs> * 4, <item:integrateddynamics:crystalized_chorus_block>);
 stoneCutter.addRecipe("stonecutter/integrateddynamics/brick_of_crystallized_chorus_to_slab_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_slab> * 2, <item:integrateddynamics:crystalized_chorus_brick>);
 stoneCutter.addRecipe("stonecutter/integrateddynamics/brick_of_crystallized_chorus_to_stairs_stoncutting", <item:integrateddynamics:crystalized_chorus_brick_stairs>, <item:integrateddynamics:crystalized_chorus_brick>);
+stoneCutter.addRecipe("stonecutter/minecraft/amethyst_cluster", <item:minecraft:amethyst_cluster>, <item:minecraft:amethyst_block>);
 stoneCutter.addRecipe("stonecutter/minecraft/chiseled_deepslate", <item:minecraft:chiseled_deepslate>, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("stonecutter/minecraft/deepslate_brick_slab", <item:minecraft:deepslate_brick_slab> * 2, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("stonecutter/minecraft/deepslate_brick_stairs", <item:minecraft:deepslate_brick_stairs>, <item:minecraft:deepslate>);
@@ -417,11 +428,14 @@ stoneCutter.addRecipe("stonecutter/minecraft/deepslate_tile_slab", <item:minecra
 stoneCutter.addRecipe("stonecutter/minecraft/deepslate_tile_stairs", <item:minecraft:deepslate_tile_stairs>, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("stonecutter/minecraft/deepslate_tile_wall", <item:minecraft:deepslate_tile_wall>, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("stonecutter/minecraft/deepslate_tiles", <item:minecraft:deepslate_tiles>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft/large_amethyst_bud", <item:minecraft:large_amethyst_bud>, <item:minecraft:amethyst_block>);
+stoneCutter.addRecipe("stonecutter/minecraft/medium_amethyst_bud", <item:minecraft:medium_amethyst_bud>, <item:minecraft:amethyst_block>);
 stoneCutter.addRecipe("stonecutter/minecraft/polished_blackstone_pressure_plate", <item:minecraft:polished_blackstone_pressure_plate>, <item:minecraft:polished_blackstone>);
 stoneCutter.addRecipe("stonecutter/minecraft/polished_deepslate_slab", <item:minecraft:polished_deepslate_slab> * 2, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("stonecutter/minecraft/polished_deepslate_stairs", <item:minecraft:polished_deepslate_stairs>, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("stonecutter/minecraft/polished_deepslate", <item:minecraft:polished_deepslate>, <item:minecraft:deepslate>);
 stoneCutter.addRecipe("stonecutter/minecraft/polished_deepslate_wall", <item:minecraft:polished_deepslate_wall>, <item:minecraft:deepslate>);
+stoneCutter.addRecipe("stonecutter/minecraft/small_amethyst_bud", <item:minecraft:small_amethyst_bud>, <item:minecraft:amethyst_block>);
 stoneCutter.addRecipe("stonecutter/minecraft/stone_pressure_plate", <item:minecraft:stone_pressure_plate>, <item:minecraft:stone>);
 stoneCutter.addRecipe("stonecutter/vinery/loam_stairs", <item:vinery:loam_stairs>, <item:vinery:loam>);
 stoneCutter.addRecipe("stonecutter/vinery/loam_slab", <item:vinery:loam_slab> * 2, <item:vinery:loam>);
@@ -429,6 +443,7 @@ stoneCutter.addRecipe("stonecutter/vinery/loam_slab", <item:vinery:loam_slab> * 
 // Smoker
 smoker.removeByName("croptopia:cooked_tuna_from_smoking_tuna");
 smoker.addRecipe("smoker/croptopia/cooked_tuna", <item:croptopia:cooked_tuna>, <tag:items:forge:tuna>, 0.2, 100);
+smoker.addRecipe("smoker/minecraft/popped_chorus_fruit", <item:minecraft:popped_chorus_fruit>, <item:minecraft:chorus_fruit>, 0.1, 100);
 smoker.addRecipe("smoker/tinker_construct/cooked_bacon_from_bacon", <item:farmersdelight:cooked_bacon>, <item:tconstruct:bacon>, 0.35, 100);
 smoker.addRecipe("smoker/vinery/dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 100);
 

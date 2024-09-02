@@ -1,0 +1,42 @@
+{
+  "conditions": [
+  {
+    "modid": "ecologics",
+    "type": "forge:mod_loaded"
+  }
+  ],
+  "type": "ecologics:camel",
+  "variants": [],
+  "name": "entity.ecologics.camel",
+  "name_color": "#a1927a",
+  "gui_scale": 0.7,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 32,
+  "input": {
+    "item": "hostilenetworks:empty_prediction"
+  },
+  "base_drop": {
+    "item": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "custom.trivia.camel",
+  "fabricator_drops": [
+    {
+      "item": "minecraft:leather",
+      "count": 24
+    }
+  ],
+  "tier_data": [
+    6,
+    54,
+    354,
+    1254
+  ],
+  "data_per_kill": [
+    1,
+    4,
+    10,
+    18
+  ]
+}

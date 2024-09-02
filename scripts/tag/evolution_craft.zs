@@ -95,6 +95,90 @@ for tag_evolution_craft_ingot in addingEvolutionCraftIngot {
 	<tag:items:forge:ingors>.add(<item:${tag_evolution_craft_ingot}>);
 }
 
+// Evolution Craft - Coral
+var addingEvolutionCraftCoralBlue = [
+	"minecraft:tube_coral_block",
+	"minecraft:tube_coral",
+	"minecraft:tube_coral_fan"
+];
+for tag_tag_evolution_craft_coral_blue in addingEvolutionCraftCoralBlue {
+	<tag:items:evolution_craft:coral>.add(<item:${tag_tag_evolution_craft_coral_blue}>);
+	<tag:items:evolution_craft:coral/blue>.add(<item:${tag_tag_evolution_craft_coral_blue}>);
+}
+
+var addingEvolutionCraftCoralMagenta = [
+	"minecraft:bubble_coral_block",
+	"minecraft:bubble_coral",
+	"minecraft:bubble_coral_fan"
+];
+for tag_tag_evolution_craft_coral_magenta in addingEvolutionCraftCoralMagenta {
+	<tag:items:evolution_craft:coral>.add(<item:${tag_tag_evolution_craft_coral_magenta}>);
+	<tag:items:evolution_craft:coral/magenta>.add(<item:${tag_tag_evolution_craft_coral_magenta}>);
+}
+
+var addingEvolutionCraftCoralPink = [
+	"minecraft:brain_coral_block",
+	"minecraft:brain_coral",
+	"minecraft:brain_coral_fan"
+];
+for tag_tag_evolution_craft_coral_pink in addingEvolutionCraftCoralPink {
+	<tag:items:evolution_craft:coral>.add(<item:${tag_tag_evolution_craft_coral_pink}>);
+	<tag:items:evolution_craft:coral/pink>.add(<item:${tag_tag_evolution_craft_coral_pink}>);
+}
+
+var addingEvolutionCraftCoralRed = [
+	"minecraft:fire_coral_block",
+	"minecraft:fire_coral",
+	"minecraft:fire_coral_fan"
+];
+for tag_tag_evolution_craft_coral_red in addingEvolutionCraftCoralRed {
+	<tag:items:evolution_craft:coral>.add(<item:${tag_tag_evolution_craft_coral_red}>);
+	<tag:items:evolution_craft:coral/red>.add(<item:${tag_tag_evolution_craft_coral_red}>);
+}
+
+var addingEvolutionCraftCoralYellow = [
+	"minecraft:horn_coral_block",
+	"minecraft:horn_coral",
+	"minecraft:horn_coral_fan",
+];
+for tag_tag_evolution_craft_coral_yellow in addingEvolutionCraftCoralYellow {
+	<tag:items:evolution_craft:coral>.add(<item:${tag_tag_evolution_craft_coral_yellow}>);
+	<tag:items:evolution_craft:coral/yellow>.add(<item:${tag_tag_evolution_craft_coral_yellow}>);
+}
+
+// Evolution Craft - Dead Coral
+var addingEvolutionCraftDeadCoral = [
+	"minecraft:dead_tube_coral_block",
+	"minecraft:dead_tube_coral",
+	"minecraft:dead_tube_coral_fan",
+	"minecraft:dead_brain_coral_block",
+	"minecraft:dead_brain_coral",
+	"minecraft:dead_brain_coral_fan",
+	"minecraft:dead_bubble_coral_block",
+	"minecraft:dead_bubble_coral",
+	"minecraft:dead_bubble_coral_fan",
+	"minecraft:dead_fire_coral_block",
+	"minecraft:dead_fire_coral",
+	"minecraft:dead_fire_coral_fan",
+	"minecraft:dead_horn_coral_block",
+	"minecraft:dead_horn_coral",
+	"minecraft:dead_horn_coral_fan"
+];
+for tag_tag_evolution_craft_dead_coral in addingEvolutionCraftDeadCoral {
+	<tag:items:evolution_craft:dead_coral>.add(<item:${tag_tag_evolution_craft_dead_coral}>);
+	<tag:items:evolution_craft:coral/gray>.add(<item:${tag_tag_evolution_craft_dead_coral}>);
+}
+
+// Evolution Craft - Glow
+var addingEvolutionCraftGlow = [
+	"minecraft:glowstone_dust",
+	"minecraft:glow_lichen",
+	"minecraft:glow_berries"
+];
+for tag_evolution_craft_glow in addingEvolutionCraftGlow {
+	<tag:items:evolution_craft:glow>.add(<item:${tag_evolution_craft_glow}>);
+}
+
 // Evolution Craft - Milk
 var addingEvolutionCraftMilk = [
 	"croptopia:milk_bottle",

@@ -47,6 +47,10 @@ val mekanism_stick_fence_gate_return = 4;
 val mekanism_tripwire_hook_chest_chance = 0.75;
 val mekanism_tripwire_hook_chest_return = 1;
 
+// Crystallizing
+<recipetype:mekanism:crystallizing>.removeByName("mekanism:crystallizing/salt");
+<recipetype:mekanism:crystallizing>.addRecipe("mekanism_crystallizing/salt", GasStackIngredient.from(<gas:mekanism:brine> * 15), <item:salt:salt>);
+
 // Crusher
 var addingSeedCrushingMekanism = {
 	"croptopia/artichoke" : "croptopia:artichoke",
@@ -382,6 +386,9 @@ for addingFlowersCrushingMekanismName, addingFlowersCrushingMekanismMod in addin
 	<recipetype:mekanism:crushing>.addRecipe("mekanism_cruching/biofuel/" + addingFlowersCrushingMekanismName, ItemStackIngredient.from(<item:${addingFlowersCrushingMekanismMod}>), <item:mekanism:bio_fuel> * mekanism_bio_fuel_flowers_quantity);
 }
 
+<recipetype:mekanism:crushing>.removeByName("mekanism:crushing/processing/quartz/to_dust");
+<recipetype:mekanism:crushing>.addRecipe("mekanism_crushing/processing/quartz/to_dust", ItemStackIngredient.from(<tag:items:forge:gems/quartz>), <item:thermal:quartz_dust>);
+
 // Enrichment Chamber
 <recipetype:mekanism:enriching>.removeByName("mekanism:enriching/salt");
 <recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/salt", ItemStackIngredient.from(<item:salt:salt_block>), <item:salt:salt> * 9);
@@ -546,6 +553,7 @@ for addingSawingChestMekanismName, addingSawingChestMekanismId in addingSawingCh
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/torch/dry_bamboo_torch", ItemStackIngredient.from(<item:bambooeverything:dry_bamboo_torch> * 4), <item:bambooeverything:dry_bamboo>, <item:minecraft:coal>, 1);
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/torch/glow_torch", ItemStackIngredient.from(<item:infernalexp:glow_torch> * 4), <item:minecraft:stick>, <item:infernalexp:glowcoal>, 1);
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/torch/menril_torch", ItemStackIngredient.from(<item:integrateddynamics:menril_torch> * 4), <item:minecraft:stick>, <item:integrateddynamics:menril_berries>, 1);
+<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/thermal/frost_melon", ItemStackIngredient.from(<item:thermal:frost_melon>), <item:thermal:frost_melon_slice> * 9 % 1);
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/torch/shard_torch", ItemStackIngredient.from(<item:undergarden:shard_torch> * 4), <item:minecraft:stick>, <item:undergarden:utheric_shard>, 1);
 
 Globals.endScript("recipe_mekanism");

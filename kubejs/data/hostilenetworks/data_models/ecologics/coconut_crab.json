@@ -1,0 +1,50 @@
+{
+  "conditions": [
+  {
+    "modid": "ecologics",
+    "type": "forge:mod_loaded"
+  }
+  ],
+  "type": "ecologics:coconut_crab",
+  "variants": [],
+  "name": "entity.ecologics.coconut_crab",
+  "name_color": "#d93422",
+  "gui_scale": 1,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 128,
+  "input": {
+    "item": "hostilenetworks:empty_prediction"
+  },
+  "base_drop": {
+    "item": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "custom.trivia.coconut_crab",
+  "fabricator_drops": [
+    {
+      "item": "ecologics:crab_claw",
+      "count": 1
+    },
+    {
+      "item": "ecologics:crab_meat",
+      "count": 16
+    },
+    {
+      "item": "ecologics:coconut_slice",
+      "count": 8
+    }
+  ],
+  "tier_data": [
+    6,
+    54,
+    354,
+    1254
+  ],
+  "data_per_kill": [
+    1,
+    4,
+    10,
+    18
+  ]
+}
