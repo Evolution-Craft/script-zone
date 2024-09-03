@@ -95,6 +95,15 @@ for tag_evolution_craft_ingot in addingEvolutionCraftIngot {
 	<tag:items:forge:ingors>.add(<item:${tag_evolution_craft_ingot}>);
 }
 
+// Evolution Craft - Bundles
+var addingEvolutionCraftBundles = [
+	"bambooeverything:bamboo_bundle",
+	"bambooeverything:dry_bamboo_bundle"
+];
+for tag_evolution_craft_bundles in addingEvolutionCraftBundles {
+	<tag:items:evolution_craft:bundles>.add(<item:${tag_evolution_craft_bundles}>);
+}
+
 // Evolution Craft - Coral
 var addingEvolutionCraftCoralBlue = [
 	"minecraft:tube_coral_block",

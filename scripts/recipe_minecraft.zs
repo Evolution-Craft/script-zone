@@ -332,6 +332,7 @@ furnace.addRecipe("furnace/alexsmobs/fish_bones", <item:minecraft:bone_meal> * 3
 furnace.addRecipe("furnace/aquaculture/fish_bones", <item:minecraft:bone_meal> * 3, <item:aquaculture:fish_bones>, 0.05, 200);
 furnace.addRecipe("furnace/aquaculture/neptunium_fillet_knife", <item:aquaculture:neptunium_nugget>, <item:aquaculture:neptunium_fillet_knife>, 0.1, 200);
 furnace.addRecipe("furnace/aquaculturedelight/neptunium_knife", <item:aquaculture:neptunium_nugget>, <item:aquaculturedelight:neptunium_knife>, 0.1, 200);
+furnace.addRecipe("furnace/bambooeverything/bundle_to_charcoal", <item:minecraft:charcoal>, <tag:items:evolution_craft:bundles>, 0.15, 200);
 furnace.addRecipe("furnace/contenttweaker/copper_knife", <item:thermal:copper_nugget>, <item:contenttweaker:evolution_craft/knife/copper_knife>, 0.1, 200);
 furnace.addRecipe("furnace/contenttweaker/steel_knife", <item:thermal:steel_nugget>, <item:contenttweaker:evolution_craft/knife/steel_knife>, 0.1, 200);
 furnace.addRecipe("furnace/create/charged_crushed_certus_quartz", <item:ae2:charged_certus_quartz_crystal>, <item:contenttweaker:ae2/crushed_charged_certus_quartz>, 0.1, 200);

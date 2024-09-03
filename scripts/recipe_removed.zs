@@ -586,6 +586,9 @@ var removeRecipeByNameBlastingFurnace = [
 	"beyond_earth:steel_ingot_blasting",
 	// Croptopia
 	"croptopia:blasting_salt",
+	// Integrated Dynamics
+	"integrateddynamics:blasting/menril_log_coal",
+	"integrateddynamics:blasting/menril_log_filled_coal",
 	// Library Ferret
 	"libraryferret:blasting/diamond_coins_jtl",
 	"libraryferret:blasting/emerald_coins_jtl",
@@ -608,6 +611,9 @@ var removeRecipeByNameFurnace = [
 	"cyclic:smelting/fireball",
 	// Croptopia
 	"croptopia:salt_from_water_bottle",
+	// Integrated Dynamics
+	"integrateddynamics:smelting/menril_log_coal",
+	"integrateddynamics:smelting/menril_log_filled_coal",
 	// Library Ferret
 	"libraryferret:smelting/diamond_coins_jtl",
 	"libraryferret:smelting/emerald_coins_jtl",

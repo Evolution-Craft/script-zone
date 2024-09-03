@@ -296,7 +296,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 }
 
 // Squeezer
-//<recipetype:immersiveengineering:squeezer>.addRecipe("immersiveengineering_squeezer/wheat_seeds", <tag:items:forge:seeds/wheat> , 6400, <fluid:immersiveengineering:plantoil> * 80);
+<recipetype:immersiveengineering:squeezer>.removeByName("tmted:squeezer/tomato");
+<recipetype:immersiveengineering:squeezer>.addRecipe("immersiveengineering_squeezer/tmted/tomato", <tag:items:forge:tomatoes> , 6400, <fluid:tmted:tomato_sauce> * 75);
 
 // Sawmill
 //<recipetype:immersiveengineering:sawmill>.addRecipe("immersiveengineering_sawmill/cherry_door", <item:vinery:cherry_door>, 800, <item:vinery:cherry_planks>, [<tag:items:forge:dusts/wood>]);

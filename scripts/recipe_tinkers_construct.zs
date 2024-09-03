@@ -295,18 +295,17 @@ if (packModeSetting.packModeSettingPlates() == true) {
 }
 
 // Melting
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/cooking_pot", {
-	"ingredient": {
-		"item": "farmersdelight:cooking_pot"
-	},
-	"result": {
-		"fluid": "tconstruct:molten_iron",
-		"amount": 450
-	},
-	"temperature": 800,
-	"time": 159
-});
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/diamond_knife", {
+packAddRecipeTinkersConstruct_Melting("tconstruct_melting/smeltery/melting/croptopia/cooking_pot", <item:croptopia:cooking_pot>, <fluid:tconstruct:molten_iron>, 180, 800, 159);
+packAddRecipeTinkersConstruct_Melting("tconstruct_melting/smeltery/melting/croptopia/food_press", <item:croptopia:food_press>, <fluid:tconstruct:molten_iron>, 180, 800, 159);
+packAddRecipeTinkersConstruct_Melting("tconstruct_melting/smeltery/melting/croptopia/frying_pan", <item:croptopia:frying_pan>, <fluid:tconstruct:molten_iron>, 180, 800, 159);
+packAddRecipeTinkersConstruct_Melting("tconstruct_melting/smeltery/melting/croptopia/knife", <item:croptopia:knife>, <fluid:tconstruct:molten_iron>, 180, 800, 159);
+packAddRecipeTinkersConstruct_Melting("tconstruct_melting/smeltery/melting/contenttweaker/immersiveengineering/diamond_rod", <item:contenttweaker:immersiveengineering/diamond_rod>, <fluid:tconstruct:molten_diamond>, 45, 1450, 83);
+packAddRecipeTinkersConstruct_Melting("tconstruct_melting/smeltery/melting/contenttweaker/immersiveengineering/emerald_rod", <item:contenttweaker:immersiveengineering/emerald_rod>, <fluid:tconstruct:molten_emerald>, 45, 934, 68);
+packAddRecipeTinkersConstruct_Melting("tconstruct_melting/smeltery/melting/farmersdelight/cooking_pot", <item:farmersdelight:cooking_pot>, <fluid:tconstruct:molten_iron>, 450, 800, 159);
+packAddRecipeTinkersConstruct_Melting("tconstruct_melting/smeltery/melting/farmersdelight/horse_feed", <item:farmersdelight:horse_feed>, <fluid:tconstruct:molten_gold>, 80, 700, 99);
+packAddRecipeTinkersConstruct_Melting("tconstruct_melting/smeltery/melting/farmersdelight/stove", <item:farmersdelight:stove>, <fluid:tconstruct:molten_iron>, 270, 800, 159);
+
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/smeltery/melting/farmersdelight/diamond_knife", {
 	"ingredient": {
 		"item": "farmersdelight:diamond_knife"
 	},
@@ -318,29 +317,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	"temperature": 1450,
 	"time": 144
 });
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/contenttweaker/immersiveengineering/diamond_rod", {
-	"ingredient": {
-		"item": "contenttweaker:immersiveengineering/diamond_rod"
-	},
-	"result": {
-		"fluid": "tconstruct:molten_diamond",
-		"amount": 45
-	},
-	"temperature": 1450,
-	"time": 83
-});
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/contenttweaker/immersiveengineering/emerald_rod", {
-	"ingredient": {
-		"item": "contenttweaker:immersiveengineering/emerald_rod"
-	},
-	"result": {
-		"fluid": "tconstruct:molten_emerald",
-		"amount": 45
-	},
-	"temperature": 934,
-	"time": 68
-});
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/golden_knife", {
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/smeltery/melting/farmersdelight/golden_knife", {
 	"ingredient": {
 		"item": "farmersdelight:golden_knife"
 	},
@@ -352,18 +329,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	"temperature": 700,
 	"time": 99
 });
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/horse_feed", {
-	"ingredient": {
-		"item": "farmersdelight:horse_feed"
-	},
-	"result": {
-		"fluid": "tconstruct:molten_gold",
-		"amount": 80
-	},
-	"temperature": 700,
-	"time": 99
-});
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/iron_knife", {
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/smeltery/melting/farmersdelight/iron_knife", {
 	"ingredient": {
 		"item": "farmersdelight:iron_knife"
 	},
@@ -375,7 +341,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	"temperature": 800,
 	"time": 104
 });
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/netherite_knife", {
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/smeltery/melting/farmersdelight/netherite_knife", {
 	"ingredient": {
 		"item": "farmersdelight:netherite_knife"
 	},
@@ -392,7 +358,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		"unit_size": 25
 	}]
 });
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/skillet", {
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/smeltery/melting/farmersdelight/skillet", {
 	"ingredient": {
 		"item": "farmersdelight:skillet"
 	},
@@ -403,17 +369,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	},
 	"temperature": 800,
 	"time": 129
-});
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/stove", {
-	"ingredient": {
-		"item": "farmersdelight:stove"
-	},
-	"result": {
-		"fluid": "tconstruct:molten_iron",
-		"amount": 270
-	},
-	"temperature": 800,
-	"time": 159
 });
 
 Globals.endScript("recipe_tinkers_construct");
