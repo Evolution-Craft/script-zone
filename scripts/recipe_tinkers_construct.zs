@@ -220,11 +220,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	};
 	
 	for addingPlateCastingTableOut, addingPlateCastingTableIn in addingPlateCastingTable {
-
-		val cooling_time_value = 50;
-		val addingPlateCastingTableName = <item:${addingPlateCastingTableOut}>;
-
-		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/tconstruct_smeltery/casting/" + addingPlateCastingTableName.registryName.path + "_gold_cast", {
+		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/tconstruct_smeltery/casting/" + <item:${addingPlateCastingTableOut}>.registryName.path + "_gold_cast", {
 			"cast": {
 				"tag": "tconstruct:casts/multi_use/plate"
 			},
@@ -235,9 +231,9 @@ if (packModeSetting.packModeSettingPlates() == true) {
 			"result": {
 				"item": addingPlateCastingTableOut
 			},
-			"cooling_time": cooling_time_value
+			"cooling_time": 50
 		});
-		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/tconstruct_smeltery/casting/" + addingPlateCastingTableName.registryName.path + "_sand_cast", {
+		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/tconstruct_smeltery/casting/" + <item:${addingPlateCastingTableOut}>.registryName.path + "_sand_cast", {
 			"cast": {
 				"tag": "tconstruct:casts/single_use/plate"
 			},
@@ -249,7 +245,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 			"result": {
 				"item": addingPlateCastingTableOut
 			},
-			"cooling_time": cooling_time_value
+			"cooling_time": 50
 		});
 	}
 } else {
@@ -268,11 +264,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	};
 	
 	for addingPlateCastingTableOut, addingPlateCastingTableIn in addingPlateCastingTable {
-
-		val cooling_time_value = 50;
-		val addingPlateCastingTableName = <item:${addingPlateCastingTableOut}>;
-
-		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/tconstruct_smeltery/casting/" + addingPlateCastingTableName.registryName.path + "_gold_cast", {
+		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/tconstruct_smeltery/casting/" + <item:${addingPlateCastingTableOut}>.registryName.path + "_gold_cast", {
 			"cast": {
 				"tag": "tconstruct:casts/multi_use/plate"
 			},
@@ -283,9 +275,9 @@ if (packModeSetting.packModeSettingPlates() == true) {
 			"result": {
 				"item": addingPlateCastingTableOut
 			},
-			"cooling_time": cooling_time_value
+			"cooling_time": 50
 		});
-		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/tconstruct_smeltery/casting/" + addingPlateCastingTableName.registryName.path + "_sand_cast", {
+		<recipetype:tconstruct:casting_table>.addJsonRecipe("pack_expert_crafting/tconstruct_smeltery/casting/" + <item:${addingPlateCastingTableOut}>.registryName.path + "_sand_cast", {
 			"cast": {
 				"tag": "tconstruct:casts/single_use/plate"
 			},
@@ -297,9 +289,133 @@ if (packModeSetting.packModeSettingPlates() == true) {
 			"result": {
 				"item": addingPlateCastingTableOut
 			},
-			"cooling_time": cooling_time_value
+			"cooling_time": 50
 		});
 	}
 }
+
+// Damagable Melting
+<recipetype:tconstruct:damagable_melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/diamond_knife", {
+	"ingredient": {
+		"item": "farmersdelight:diamond_knife"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 100,
+		"unit_size": 25
+	},
+	"temperature": 1450,
+	"time": 144
+});
+<recipetype:tconstruct:damagable_melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/golden_knife", {
+	"ingredient": {
+		"item": "farmersdelight:golden_knife"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 90,
+		"unit_size": 10
+	},
+	"temperature": 700,
+	"time": 99
+});
+<recipetype:tconstruct:damagable_melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/iron_knife", {
+	"ingredient": {
+		"item": "farmersdelight:iron_knife"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 90,
+		"unit_size": 10
+	},
+	"temperature": 800,
+	"time": 104
+});
+<recipetype:tconstruct:damagable_melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/netherite_knife", {
+	"ingredient": {
+		"item": "farmersdelight:netherite_knife"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_netherite",
+		"amount": 90,
+		"unit_size": 10
+	},
+	"temperature": 1250,
+	"time": 74,
+	"byproducts": [{
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 100,
+		"unit_size": 25
+	}]
+});
+<recipetype:tconstruct:damagable_melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/skillet", {
+	"ingredient": {
+		"item": "farmersdelight:skillet"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 360,
+		"unit_size": 10
+	},
+	"temperature": 800,
+	"time": 129
+});
+
+// Melting
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/contenttweaker/immersiveengineering/diamond_rod", {
+	"ingredient": {
+		"item": "contenttweaker:immersiveengineering/diamond_rod"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 45
+	},
+	"temperature": 1450,
+	"time": 83
+});
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/contenttweaker/immersiveengineering/emerald_rod", {
+	"ingredient": {
+		"item": "contenttweaker:immersiveengineering/emerald_rod"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_emerald",
+		"amount": 45
+	},
+	"temperature": 934,
+	"time": 68
+});
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/cooking_pot", {
+	"ingredient": {
+		"item": "farmersdelight:cooking_pot"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 450
+	},
+	"temperature": 800,
+	"time": 159
+});
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/horse_feed", {
+	"ingredient": {
+		"item": "farmersdelight:horse_feed"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 80
+	},
+	"temperature": 700,
+	"time": 99
+});
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/stove", {
+	"ingredient": {
+		"item": "farmersdelight:stove"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 270
+	},
+	"temperature": 800,
+	"time": 159
+});
 
 Globals.endScript("recipe_tinkers_construct");

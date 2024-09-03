@@ -52,9 +52,25 @@ public function packAddRecipeCorailWoodcutter_Item(recipeName_CorailWoodcutter_I
 }
 val packAddRecipeCorailWoodcutter_Item_Load as string = "packAddRecipeCorailWoodcutter_Item Load Completed";
 
+/*public function packAddRecipeTinkersConstruct_Melting(recipeName_TinkersConstruct_Melting as string, itemIn as crafttweaker.api.item.IItemStack, fluidOut as crafttweaker.api.fluid.IFluidStack, fluid_amount as int, melting_temperature as int, melting_time as int) as void {
+	<recipetype:tconstruct:melting>.addJsonRecipe(recipeName_TinkersConstruct_Melting, {
+		"ingredient": {
+			"item": itemIn.registryName
+		},
+		"result": {
+			"fluid": fluidOut.registryName,
+			"amount": fluid_amount
+		},
+		"temperature": melting_temperature,
+		"time": melting_time
+	});
+}
+val packAddRecipeTinkersConstruct_Melting_Load as string = "packAddRecipeTinkersConstruct_Melting Load Completed";*/
+
 println("          Class Function Loading...          ");
 println("          -> " + packJeiDescripton_Load + "          ");
 println("          -> " + packAddRecipeApotheosisFletching_Load + "          ");
 println("          -> " + packAddRecipeCorailWoodcutter_Item_Load + "          ");
+//println("          -> " + packAddRecipeTinkersConstruct_Melting_Load + "          ");
 println("          Class Function Loading Completed          ");
 Globals.endScript("class_function");

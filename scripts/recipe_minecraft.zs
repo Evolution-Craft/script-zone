@@ -115,7 +115,13 @@ craftingTable.addShaped("pack_expert_crafting/minecraft/piston", <item:minecraft
 
 // Campfire
 campfire.addRecipe("campfire/tinker_construct/cooked_bacon_from_bacon", <item:farmersdelight:cooked_bacon>, <item:tconstruct:bacon>, 0.3, 600);
-campfire.addRecipe("campfire/vinery/toast_from_dough", <item:vinery:toast>, <tag:items:minecraft:dough>, 1.0, 200);
+campfire.addRecipe("campfire/vinery/toast_from_dough", <item:vinery:toast>, <tag:items:minecraft:dough>, 1.0, 600);
+campfire.removeByName("twilightdelight:cooked_insect_campfire");
+campfire.addRecipe("campfire/twilightdelight/cooked_insect", <item:twilightdelight:cooked_insect>, <item:twilightdelight:raw_insect>, 1.0, 600);
+campfire.removeByName("twilightdelight:cooked_meef_slice_campfire");
+campfire.addRecipe("campfire/twilightdelight/cooked_meef_slice", <item:twilightdelight:cooked_meef_slice>, <item:twilightdelight:raw_meef_slice>, 1.0, 600);
+campfire.removeByName("twilightdelight:cooked_venison_rib_campfire");
+campfire.addRecipe("campfire/twilightdelight/cooked_venison_rib", <item:twilightdelight:cooked_venison_rib>, <item:twilightdelight:raw_venison_rib>, 1.0, 600);
 
 // Composter
 var composterAddItem = {

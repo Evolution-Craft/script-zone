@@ -14,7 +14,7 @@
  */
 
 println("===============================================================");
-println("          Starting Script: evolution_part          ");
+println("          Starting Script: evolution_craft_custom_items          ");
 println("===============================================================");
 println("          Script Priority: Null         ");
 println("===============================================================");
@@ -313,7 +313,7 @@ val wooden_knife = <factory:item>.typed<Sword>()
 	.durability(58)
 	.build("evolution_craft/knife/wooden_knife");
 
-// Ae2 Integration
+// Applied Energistics
 val crushed_certus_quartz = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)
 	.rarity(<constant:minecraft:item/rarity:common>)
@@ -544,5 +544,5 @@ val press_rod_die = <factory:item>.typed<Basic>()
 	.build("thermal/press_rod_die");
 
 println("===============================================================");
-println("          Ending Script: evolution_part          ");
+println("          Ending Script: evolution_craft_custom_items          ");
 println("===============================================================");
