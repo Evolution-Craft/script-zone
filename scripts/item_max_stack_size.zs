@@ -8,8 +8,6 @@
  * v0.2 : Potion Max Stack Size.
  */
 
-// TODO: Check bamboon item e disc
-
 Globals.startScript("item_max_stack_size");
 Globals.priorityScript("Null");
 
@@ -18,7 +16,9 @@ import crafttweaker.api.item.ItemStack;
 val expert_max_stack_size_potion = packModeSetting.packModeSettingPotionStackSize();
 val expert_max_stack_size_splash_potion = packModeSetting.packModeSettingSplashPotionStackSize();
 val expert_max_stack_size_lingering_potion = packModeSetting.packModeSettingLingeringPotionStackSize();
-val expert_max_stack_size_totem_of_undying = packModeSettingTotemOfUndyingStackSize();
+val expert_max_stack_size_totem_of_undying = packModeSetting.packModeSettingTotemOfUndyingStackSize();
+
+val disc_max_stack_size_value = 16;
 
 var itemSetMaxStackSize = {
 
@@ -149,6 +149,10 @@ var itemSetMaxStackSize = {
 };
 for itemSetMaxStackSizeMaterial, itemSetMaxStackSizeValue in itemSetMaxStackSize {
 	<item:${itemSetMaxStackSizeMaterial}>.setMaxStackSize(itemSetMaxStackSizeValue);
+}
+
+for disc_max_stack_size in Constant.packDiscs {
+	<item:${disc_max_stack_size}>.setMaxStackSize(disc_max_stack_size_value);
 }
 
 Globals.endScript("item_max_stack_size");

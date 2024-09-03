@@ -19,6 +19,7 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
+import mods.mekanism.api.ingredient.ChemicalStackIngredient.GasStackIngredient;
 import mods.mekanism.api.ingredient.ItemStackIngredient;
 
 val mekanism_bio_fuel_crops_quantity = 5;
@@ -386,7 +387,7 @@ for addingFlowersCrushingMekanismName, addingFlowersCrushingMekanismMod in addin
 	<recipetype:mekanism:crushing>.addRecipe("mekanism_cruching/biofuel/" + addingFlowersCrushingMekanismName, ItemStackIngredient.from(<item:${addingFlowersCrushingMekanismMod}>), <item:mekanism:bio_fuel> * mekanism_bio_fuel_flowers_quantity);
 }
 
-<recipetype:mekanism:crushing>.removeByName("mekanism:crushing/processing/quartz/to_dust");
+<recipetype:mekanism:crushing>.removeByName("mekanism:processing/quartz/to_dust");
 <recipetype:mekanism:crushing>.addRecipe("mekanism_crushing/processing/quartz/to_dust", ItemStackIngredient.from(<tag:items:forge:gems/quartz>), <item:thermal:quartz_dust>);
 
 // Enrichment Chamber

@@ -62,10 +62,16 @@ if (packModeSetting.packModeSettingLogs() == true) {
 			craftingTable.removeByName("twilightforest:wood/" + <item:${packModeExpertPlanksOut}>.registryName.path);
 		} else if (packModeExpertPlanksOut == "twilightforest:dark_planks") {
 			craftingTable.removeByName("twilightforest:wood/darkwood_planks");
-		} else if (packModeExpertPlanksOut == "tconstruct:bloodshroom_planks" || packModeExpertPlanksOut == "tconstruct:greenheart_planks" || packModeExpertPlanksOut == "tconstruct:skyroot_planks") {
-			craftingTable.removeByName("tconstruct:world/wood/" + <item:${packModeExpertPlanksOut}>.registryName.path + "/planks");
-		} else if (packModeExpertPlanksOut == "quark:azalea_planks" || packModeExpertPlanksOut == "quark:blossom_planks") {
-			craftingTable.removeByName("quark:world/crafting/woodsets/" + <item:${packModeExpertPlanksOut}>.registryName.path + "/planks");
+		} else if (packModeExpertPlanksOut == "tconstruct:bloodshroom_planks") {
+			craftingTable.removeByName("tconstruct:world/wood/bloodshroom/planks");
+		} else if (packModeExpertPlanksOut == "tconstruct:greenheart_planks") {
+			craftingTable.removeByName("tconstruct:world/wood/greenheart/planks");
+		} else if (packModeExpertPlanksOut == "tconstruct:skyroot_planks") {
+			craftingTable.removeByName("tconstruct:world/wood/skyroot/planks");
+		} else if (packModeExpertPlanksOut == "quark:azalea_planks") {
+			craftingTable.removeByName("quark:world/crafting/woodsets/azalea/planks");
+		} else if (packModeExpertPlanksOut == "quark:blossom_planks") {
+			craftingTable.removeByName("quark:world/crafting/woodsets/blossom/planks");
 		} else if (packModeExpertPlanksOut == "integrateddynamics:menril_planks") {
 			craftingTable.removeByName("integrateddynamics:crafting/menril_planks");
 		} else {

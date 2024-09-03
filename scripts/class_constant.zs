@@ -7,6 +7,7 @@
  * v0.1 : First Issue.
  * v0.2 : Add packPotion class.
  * v0.3 : Add packBaseWoods class.
+ * v0.4 : Add packDiscs class.
  */
 
 #priority 1499
@@ -49,20 +50,53 @@ public class Constant {
 	public static val packBaseWoods_Load as string = "packBaseWoods Load Completed";
 
 	public static val packDiscs as string[] = [
-        "music_disc_13",
-        "music_disc_cat",
-        "music_disc_blocks",
-        "music_disc_chirp",
-        "music_disc_far",
-        "music_disc_mall",
-        "music_disc_mellohi",
-        "music_disc_stal",
-        "music_disc_strad",
-        "music_disc_ward",
-        "music_disc_11",
-        "music_disc_wait",
-        "music_disc_otherside",
-        "music_disc_pigstep"
+		"alexsmobs:music_disc_daze",
+		"alexsmobs:music_disc_thime",
+		"botania:record_gaia_1",
+		"botania:record_gaia_2",
+		"decoration_delight:cookin_disc",
+		"ecologics:music_disc_coconut",
+		"enlightened_end:sprog_music_disc",
+		"infernalexp:music_disc_flush",
+		"infernalexp:music_disc_soul_spunk",
+		"minecraft:music_disc_11",
+		"minecraft:music_disc_13",
+		"minecraft:music_disc_blocks",
+		"minecraft:music_disc_cat",
+		"minecraft:music_disc_chirp",
+		"minecraft:music_disc_far",
+		"minecraft:music_disc_mall",
+		"minecraft:music_disc_mellohi",
+		"minecraft:music_disc_otherside",
+		"minecraft:music_disc_pigstep",
+		"minecraft:music_disc_stal",
+		"minecraft:music_disc_strad",
+		"minecraft:music_disc_ward",
+		"minecraft:music_disc_wait",
+		"quark:music_disc_chatter",
+		"quark:music_disc_clock",
+		"quark:music_disc_crickets",
+		"quark:music_disc_drips",
+		"quark:music_disc_endermosh",
+		"quark:music_disc_fire",
+		"quark:music_disc_ocean",
+		"quark:music_disc_rain",
+		"quark:music_disc_wind",
+		"twilightforest:music_disc_findings",
+		"twilightforest:music_disc_home",
+		"twilightforest:music_disc_maker",
+		"twilightforest:music_disc_motion",
+		"twilightforest:music_disc_radiance",
+		"twilightforest:music_disc_steps",
+		"twilightforest:music_disc_superstitious",
+		"twilightforest:music_disc_thread",
+		"twilightforest:music_disc_wayfarer",
+		"undergarden:music_disc_gloomper_anthem",
+		"undergarden:music_disc_limax_maximus",
+		"undergarden:music_disc_mammoth",
+		"undergarden:music_disc_relict",
+		"unusualend:music_disc_endstone_golem_theme",
+		"unusualend:music_disc_flying_ships"
 	];
 	public static val packDiscs_Load as string = "packDiscs Load Completed";
 

@@ -122,7 +122,7 @@ for mixing_glass_dye_add_item in Constant.packColours {
 <recipetype:create:mixing>.addRecipe("create_mixing/gilded_blackstone", hcSuperheated, [<item:minecraft:gilded_blackstone>], [<tag:items:forge:ingots/gold> * 2, <item:minecraft:blackstone>]);
 <recipetype:create:mixing>.addRecipe("create_mixing/latex_from_dandelion", hcNone, [<fluid:thermal:latex> * 100], [<item:minecraft:dandelion>], [<fluid:minecraft:water> * 50], 200);
 <recipetype:create:mixing>.addRecipe("create_mixing/latex_from_vine", hcNone, [<fluid:thermal:latex> * 100], [<item:minecraft:vine>], [<fluid:minecraft:water> * 50], 200);
-<recipetype:create:mixing>.addRecipe("create_mixing/molten_brass", hcHeated, [<fluid:tconstruct:molten_brass> * 180], [<fluid:tconstruct:molten_zinc> * 90], [<fluid:tconstruct:molten_copper> * 90]);
+<recipetype:create:mixing>.addRecipe("create_mixing/molten_brass", hcHeated, [<fluid:tconstruct:molten_brass> * 180], [<item:minecraft:air>], [<fluid:tconstruct:molten_zinc> * 90, <fluid:tconstruct:molten_copper> * 90], 280);
 <recipetype:create:mixing>.addRecipe("create_mixing/shellite_ingot", hcHeated, [<item:thermal_extra:shellite_ingot>], [<item:thermal:apatite>, <item:minecraft:shulker_shell> * 2, <item:thermal:bronze_ingot>]);
 <recipetype:create:mixing>.addRecipe("create_mixing/shroomlight", hcNone, [<item:minecraft:shroomlight>], [<tag:items:forge:dusts/glowstone> * 4, <item:minecraft:nether_wart_block>]);
 <recipetype:create:mixing>.addRecipe("create_mixing/soul_infused_ingot", hcHeated, [<item:thermal_extra:soul_infused_ingot>], [<item:thermal:apatite>, <item:thermal_extra:soul_sand_dust> * 2, <item:thermal:invar_ingot>]);
