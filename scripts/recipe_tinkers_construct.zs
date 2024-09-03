@@ -294,8 +294,19 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	}
 }
 
-// Damagable Melting
-<recipetype:tconstruct:damagable_melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/diamond_knife", {
+// Melting
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/cooking_pot", {
+	"ingredient": {
+		"item": "farmersdelight:cooking_pot"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 450
+	},
+	"temperature": 800,
+	"time": 159
+});
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/diamond_knife", {
 	"ingredient": {
 		"item": "farmersdelight:diamond_knife"
 	},
@@ -307,61 +318,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	"temperature": 1450,
 	"time": 144
 });
-<recipetype:tconstruct:damagable_melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/golden_knife", {
-	"ingredient": {
-		"item": "farmersdelight:golden_knife"
-	},
-	"result": {
-		"fluid": "tconstruct:molten_gold",
-		"amount": 90,
-		"unit_size": 10
-	},
-	"temperature": 700,
-	"time": 99
-});
-<recipetype:tconstruct:damagable_melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/iron_knife", {
-	"ingredient": {
-		"item": "farmersdelight:iron_knife"
-	},
-	"result": {
-		"fluid": "tconstruct:molten_diamond",
-		"amount": 90,
-		"unit_size": 10
-	},
-	"temperature": 800,
-	"time": 104
-});
-<recipetype:tconstruct:damagable_melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/netherite_knife", {
-	"ingredient": {
-		"item": "farmersdelight:netherite_knife"
-	},
-	"result": {
-		"fluid": "tconstruct:molten_netherite",
-		"amount": 90,
-		"unit_size": 10
-	},
-	"temperature": 1250,
-	"time": 74,
-	"byproducts": [{
-		"fluid": "tconstruct:molten_diamond",
-		"amount": 100,
-		"unit_size": 25
-	}]
-});
-<recipetype:tconstruct:damagable_melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/skillet", {
-	"ingredient": {
-		"item": "farmersdelight:skillet"
-	},
-	"result": {
-		"fluid": "tconstruct:molten_iron",
-		"amount": 360,
-		"unit_size": 10
-	},
-	"temperature": 800,
-	"time": 129
-});
-
-// Melting
 <recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/contenttweaker/immersiveengineering/diamond_rod", {
 	"ingredient": {
 		"item": "contenttweaker:immersiveengineering/diamond_rod"
@@ -384,16 +340,17 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	"temperature": 934,
 	"time": 68
 });
-<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/cooking_pot", {
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/golden_knife", {
 	"ingredient": {
-		"item": "farmersdelight:cooking_pot"
+		"item": "farmersdelight:golden_knife"
 	},
 	"result": {
-		"fluid": "tconstruct:molten_iron",
-		"amount": 450
+		"fluid": "tconstruct:molten_gold",
+		"amount": 90,
+		"unit_size": 10
 	},
-	"temperature": 800,
-	"time": 159
+	"temperature": 700,
+	"time": 99
 });
 <recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/horse_feed", {
 	"ingredient": {
@@ -405,6 +362,47 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	},
 	"temperature": 700,
 	"time": 99
+});
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/iron_knife", {
+	"ingredient": {
+		"item": "farmersdelight:iron_knife"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 90,
+		"unit_size": 10
+	},
+	"temperature": 800,
+	"time": 104
+});
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/netherite_knife", {
+	"ingredient": {
+		"item": "farmersdelight:netherite_knife"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_netherite",
+		"amount": 90,
+		"unit_size": 10
+	},
+	"temperature": 1250,
+	"time": 74,
+	"byproducts": [{
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 100,
+		"unit_size": 25
+	}]
+});
+<recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/skillet", {
+	"ingredient": {
+		"item": "farmersdelight:skillet"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 360,
+		"unit_size": 10
+	},
+	"temperature": 800,
+	"time": 129
 });
 <recipetype:tconstruct:melting>.addJsonRecipe("tconstruct_melting/casting/farmersdelight/stove", {
 	"ingredient": {
