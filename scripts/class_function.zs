@@ -17,8 +17,8 @@ public function packJeiDescripton(item_description as crafttweaker.api.item.IIte
 }
 val packJeiDescripton_Load as string = "packJeiDescripton Load Completed";
 
-public function packAddRecipeApotheosisFletching(recipeName_ApotheosisFletching as string, First_itemIn as crafttweaker.api.item.IItemStack, Second_itemIn as crafttweaker.api.item.IItemStack, Third_itemIn as crafttweaker.api.item.IItemStack, itemOut as crafttweaker.api.item.IItemStack, count as int) as void {
-	<recipetype:apotheosis:fletching>.addJsonRecipe(recipeName_ApotheosisFletching, {
+public function packAddRecipeApotheosisFletching(recipeName as string, First_itemIn as crafttweaker.api.item.IItemStack, Second_itemIn as crafttweaker.api.item.IItemStack, Third_itemIn as crafttweaker.api.item.IItemStack, itemOut as crafttweaker.api.item.IItemStack, count as int) as void {
+	<recipetype:apotheosis:fletching>.addJsonRecipe(recipeName, {
 		"conditions": [{
 			"type": "apotheosis:module",
 			"module": "village"
@@ -41,8 +41,8 @@ public function packAddRecipeApotheosisFletching(recipeName_ApotheosisFletching 
 }
 val packAddRecipeApotheosisFletching_Load as string = "packAddRecipeApotheosisFletching Load Completed";
 
-public function packAddRecipeCorailWoodcutter_Item(recipeName_CorailWoodcutter_Item as string, itemIn as crafttweaker.api.item.IItemStack, itemOut as crafttweaker.api.item.IItemStack, count as int) as void {
-	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe(recipeName_CorailWoodcutter_Item, {
+public function packAddRecipeCorailWoodcutter_Item(recipeName as string, itemIn as crafttweaker.api.item.IItemStack, itemOut as crafttweaker.api.item.IItemStack, count as int) as void {
+	<recipetype:corail_woodcutter:woodcutting>.addJsonRecipe(recipeName, {
 		"ingredient":{
 			"item": itemIn.registryName
 		},
@@ -52,8 +52,8 @@ public function packAddRecipeCorailWoodcutter_Item(recipeName_CorailWoodcutter_I
 }
 val packAddRecipeCorailWoodcutter_Item_Load as string = "packAddRecipeCorailWoodcutter_Item Load Completed";
 
-public function packAddRecipeTinkersConstruct_Melting(recipeName_TinkersConstruct_Melting as string, itemIn as crafttweaker.api.item.IItemStack, fluidOut as crafttweaker.api.fluid.IFluidStack, fluid_amount as int, melting_temperature as int, melting_time as int) as void {
-	<recipetype:tconstruct:melting>.addJsonRecipe(recipeName_TinkersConstruct_Melting, {
+public function packAddRecipeTinkersConstruct_Melting(recipeName as string, itemIn as crafttweaker.api.item.IItemStack, fluidOut as crafttweaker.api.fluid.IFluidStack, fluid_amount as int, temperature as int, time as int) as void {
+	<recipetype:tconstruct:melting>.addJsonRecipe(recipeName, {
 		"ingredient": {
 			"item": itemIn.registryName
 		},
@@ -61,16 +61,33 @@ public function packAddRecipeTinkersConstruct_Melting(recipeName_TinkersConstruc
 			"fluid": fluidOut.registryName,
 			"amount": fluid_amount
 		},
-		"temperature": melting_temperature,
-		"time": melting_time
+		"temperature": temperature,
+		"time": time
 	});
 }
 val packAddRecipeTinkersConstruct_Melting_Load as string = "packAddRecipeTinkersConstruct_Melting Load Completed";
+
+public function packAddRecipeTinkersConstruct_Damagable_Melting(recipeName as string, itemIn as crafttweaker.api.item.IItemStack, fluidOut as crafttweaker.api.fluid.IFluidStack, fluid_amount as int, unit as int, temperature as int, time as int) as void {
+	<recipetype:tconstruct:melting>.addJsonRecipe(recipeName, {
+		"ingredient": {
+			"item": itemIn.registryName
+		},
+		"result": {
+			"fluid": fluidOut.registryName,
+			"amount": fluid_amount,
+			"unit_size": unit
+		},
+		"temperature": temperature,
+		"time": time
+	});
+}
+val packAddRecipeTinkersConstruct_Damagable_Melting_Load as string = "packAddRecipeTinkersConstruct_Damagable_Melting Load Completed";
 
 println("          Class Function Loading...          ");
 println("          -> " + packJeiDescripton_Load + "          ");
 println("          -> " + packAddRecipeApotheosisFletching_Load + "          ");
 println("          -> " + packAddRecipeCorailWoodcutter_Item_Load + "          ");
 println("          -> " + packAddRecipeTinkersConstruct_Melting_Load + "          ");
+println("          -> " + packAddRecipeTinkersConstruct_Damagable_Melting_Load + "          ");
 println("          Class Function Loading Completed          ");
 Globals.endScript("class_function");

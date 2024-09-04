@@ -55,6 +55,18 @@ craftingTable.addShaped("minecraft/bell", <item:minecraft:bell>, [
 	[<tag:items:forge:ingots/gold>, <item:minecraft:gold_block>, <tag:items:forge:ingots/gold>]
 ]);
 
+craftingTable.addShaped("minecraft/brain_coral_block", <item:minecraft:brain_coral_block>, [
+	[<item:minecraft:brain_coral>, <item:minecraft:brain_coral>, <item:minecraft:air>],
+	[<item:minecraft:brain_coral>, <item:minecraft:brain_coral>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
+craftingTable.addShaped("minecraft/bubble_coral_block", <item:minecraft:bubble_coral_block>, [
+	[<item:minecraft:bubble_coral>, <item:minecraft:bubble_coral>, <item:minecraft:air>],
+	[<item:minecraft:bubble_coral>, <item:minecraft:bubble_coral>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
 craftingTable.addShaped("minecraft/calcite", <item:minecraft:calcite> * 2, [
 	[<item:minecraft:tuff>, <item:minecraft:quartz>, <item:minecraft:air>],
 	[<item:minecraft:quartz>, <item:minecraft:tuff>, <item:minecraft:air>],
@@ -75,6 +87,18 @@ craftingTable.addShaped("minecraft/gunpowder", <item:minecraft:gunpowder> * 2, [
 	[<item:minecraft:air>, <item:sulfurpotassiummod:potassium>, <item:minecraft:air>]
 ]);
 
+craftingTable.addShaped("minecraft/fire_coral_block", <item:minecraft:fire_coral_block>, [
+	[<item:minecraft:fire_coral>, <item:minecraft:fire_coral>, <item:minecraft:air>],
+	[<item:minecraft:fire_coral>, <item:minecraft:fire_coral>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
+craftingTable.addShaped("minecraft/horn_coral_block", <item:minecraft:horn_coral_block>, [
+	[<item:minecraft:horn_coral>, <item:minecraft:horn_coral>, <item:minecraft:air>],
+	[<item:minecraft:horn_coral>, <item:minecraft:horn_coral>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
 craftingTable.addShaped("minecraft/name_tag", <item:minecraft:name_tag>, [
 	[<item:minecraft:air>, <tag:items:forge:ingots/iron>, <tag:items:forge:string>],
 	[<item:minecraft:air>, <item:minecraft:leather>, <tag:items:forge:ingots/iron>],
@@ -91,6 +115,12 @@ craftingTable.addShaped("minecraft/totem_of_undying", <item:minecraft:totem_of_u
 	[<item:minecraft:emerald>, <tag:items:forge:ingots/gold>, <item:minecraft:emerald>],
 	[<tag:items:forge:ingots/gold>, <item:minecraft:nether_star>, <tag:items:forge:ingots/gold>],
 	[<item:minecraft:air>, <item:minecraft:gold_block>, <item:minecraft:air>]
+]);
+
+craftingTable.addShaped("minecraft/tube_coral_block", <item:minecraft:tube_coral_block>, [
+	[<item:minecraft:tube_coral>, <item:minecraft:tube_coral>, <item:minecraft:air>],
+	[<item:minecraft:tube_coral>, <item:minecraft:tube_coral>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
 craftingTable.addShaped("minecraft/tuff", <item:minecraft:tuff> * 2, [
@@ -278,6 +308,9 @@ blastFurnace.addRecipe("blast_furnace/create/crushed_quartz", <item:minecraft:qu
 blastFurnace.addRecipe("blast_furnace/create/crushed_queens_slime", <item:tconstruct:queens_slime_ingot>, <item:contenttweaker:tconstruct/crushed_queens_slime>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create/crushed_rose_gold", <item:tconstruct:rose_gold_ingot>, <item:contenttweaker:tconstruct/crushed_rose_gold>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create/crushed_slimesteel", <item:tconstruct:slimesteel_ingot>, <item:contenttweaker:tconstruct/crushed_slimesteel>, 0.1, 100);
+blastFurnace.addRecipe("blast_furnace/evolution_craft/lapis_ingot_alloy", <item:contenttweaker:lapis_ingot_alloy>, <item:contenttweaker:lapis_iron_compound>, 10, 400);
+blastFurnace.addRecipe("blast_furnace/evolution_craft/redstone_ingot_alloy", <item:contenttweaker:redstone_ingot_alloy>, <item:contenttweaker:redstone_iron_compound>, 10, 400);
+blastFurnace.addRecipe("blast_furnace/create/veridium", <item:create:veridium>, <item:minecraft:prismarine>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/create/raw_zinc_block", <item:create:zinc_block>, <item:create:raw_zinc_block>, 6.0, 200);
 blastFurnace.addRecipe("blast_furnace/croptopia/cooking_pot", <item:minecraft:iron_ingot>, <item:croptopia:cooking_pot>, 0.1, 100);
 blastFurnace.addRecipe("blast_furnace/croptopia/food_press", <item:minecraft:iron_ingot>, <item:croptopia:food_press>, 0.1, 100);
@@ -345,6 +378,7 @@ furnace.addRecipe("furnace/create/crushed_quartz", <item:minecraft:quartz>, <ite
 furnace.addRecipe("furnace/create/crushed_queens_slime", <item:tconstruct:queens_slime_ingot>, <item:contenttweaker:tconstruct/crushed_queens_slime>, 0.1, 200);
 furnace.addRecipe("furnace/create/crushed_rose_gold", <item:tconstruct:rose_gold_ingot>, <item:contenttweaker:tconstruct/crushed_rose_gold>, 0.1, 200);
 furnace.addRecipe("furnace/create/crushed_slimesteel", <item:tconstruct:slimesteel_ingot>, <item:contenttweaker:tconstruct/crushed_slimesteel>, 0.1, 200);
+furnace.addRecipe("furnace/create/veridium", <item:create:veridium>, <item:minecraft:prismarine>, 0.1, 200);
 furnace.removeByName("croptopia:cooked_tuna_from_tuna");
 furnace.addRecipe("furnace/croptopia/cooked_tuna", <item:croptopia:cooked_tuna>, <tag:items:forge:tuna>, 0.2, 200);
 furnace.addRecipe("furnace/croptopia/cooking_pot", <item:minecraft:iron_ingot>, <item:croptopia:cooking_pot>, 0.1, 200);

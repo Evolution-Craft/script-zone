@@ -334,6 +334,27 @@ val crushed_quartz = <factory:item>.typed<Basic>()
 	.rarity(<constant:minecraft:item/rarity:common>)
 	.build("ae2/crushed_quartz");
 
+// Create
+val prismarine_ingot_alloy = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("create/prismarine_ingot_alloy");
+
+val prismarine_rod = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("create/prismarine_rod");
+
+val flint_shard = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("create/flint_shard");
+
+val polished_quartz_tine = <factory:item>.typed<Basic>()
+	.tab(evolutionTab)
+	.rarity(<constant:minecraft:item/rarity:common>)
+	.build("create/polished_quartz_tine");
+
 // Immersive Engineering
 val diamond_rod = <factory:item>.typed<Basic>()
 	.tab(evolutionTab)

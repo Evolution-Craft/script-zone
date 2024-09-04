@@ -87,6 +87,7 @@ for tag_evolution_craft_part_middle in addingEvolutionCraftPartMiddle {
 var addingEvolutionCraftIngot = [
 	"contenttweaker:lapis_ingot_alloy",
 	"contenttweaker:lapis_iron_compound",
+	"contenttweaker:prismarine_ingot_alloy",
 	"contenttweaker:redstone_ingot_alloy",
 	"contenttweaker:redstone_iron_compound"
 ];

@@ -17,20 +17,22 @@ import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 // Shaped
-craftingTable.addShaped("evolution_craft_lapis_iron_compound", <item:contenttweaker:lapis_iron_compound>, [
+craftingTable.addShaped("evolution_craft/lapis_iron_compound", <item:contenttweaker:lapis_iron_compound>, [
 	[<tag:items:forge:dusts/lapis>, <tag:items:forge:dusts/lapis>, <tag:items:forge:dusts/lapis>],
 	[<tag:items:forge:dusts/lapis>, <tag:items:forge:ingots/iron>, <tag:items:forge:dusts/lapis>],
 	[<tag:items:forge:dusts/lapis>, <tag:items:forge:dusts/lapis>, <tag:items:forge:dusts/lapis>]
 ]);
 
-craftingTable.addShaped("evolution_craft_redstone_iron_compound", <item:contenttweaker:redstone_iron_compound>, [
+craftingTable.addShaped("evolution_craft/redstone_iron_compound", <item:contenttweaker:prismarine_ingot_alloy>, [
+	[<item:minecraft:prismarine>, <item:minecraft:prismarine>, <item:minecraft:prismarine>],
+	[<item:minecraft:prismarine>, <tag:items:forge:ingots/copper>, <item:minecraft:prismarine>],
+	[<item:minecraft:prismarine>, <item:minecraft:prismarine>, <item:minecraft:prismarine>]
+]);
+
+craftingTable.addShaped("evolution_craft/redstone_iron_compound", <item:contenttweaker:redstone_iron_compound>, [
 	[<tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>],
 	[<tag:items:forge:dusts/redstone>, <tag:items:forge:ingots/iron>, <tag:items:forge:dusts/redstone>],
 	[<tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>]
 ]);
-
-// Blast Furnace
-blastFurnace.addRecipe("evolution_craft_lapis_ingot_alloy", <item:contenttweaker:lapis_ingot_alloy>, <item:contenttweaker:lapis_iron_compound>, 10, 200);
-blastFurnace.addRecipe("evolution_craft_redstone_ingot_alloy", <item:contenttweaker:redstone_ingot_alloy>, <item:contenttweaker:redstone_iron_compound>, 10, 200);
 
 Globals.endScript("recipe_custom_item");

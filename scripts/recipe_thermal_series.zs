@@ -161,6 +161,7 @@ for bottler_potion_type in Constant.packPotions {
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_lapis_to_gear", [<item:thermal:lapis_gear>], <fluid:minecraft:empty>, [<item:minecraft:lapis_lazuli> * 4, mpGear], 2400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_lead_to_rod", [<item:immersiveposts:stick_lead>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/lead>, mpRod], 2400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_nickel_to_rod", [<item:immersiveposts:stick_nickel>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/nickel>, mpRod], 2400);
+<recipetype:thermal:press>.addRecipe("thermal_machines/press/press_prismarine_to_rod", [<item:contenttweaker:create/prismarine_rod>], <fluid:minecraft:empty>, [<item:contenttweaker:create/prismarine_ingot_alloy>, mpRod], 2400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_quartz_to_gear", [<item:thermal:quartz_gear>], <fluid:minecraft:empty>, [<item:minecraft:quartz> * 4, mpGear], 2400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_silver_to_rod", [<item:immersiveposts:stick_silver>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/silver>, mpRod], 2400);
 <recipetype:thermal:press>.addRecipe("thermal_machines/press/press_steel_to_rod", [<item:immersiveengineering:stick_steel>], <fluid:minecraft:empty>, [<tag:items:forge:ingots/steel>, mpRod], 2400);
