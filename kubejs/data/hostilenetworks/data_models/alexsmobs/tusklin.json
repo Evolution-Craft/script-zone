@@ -1,26 +1,29 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
   "type": "alexsmobs:tusklin",
-  "subtypes": [],
   "name": "entity.alexsmobs.tusklin",
-  "name_color": "0x9B5F21",
-  "gui_scale": 1.0,
-  "gui_x_offset": 0.0,
-  "gui_y_offset": 0.0,
-  "gui_z_offset": 0.0,
-  "sim_cost": 128,
+  "name_color": "#e6e9ec",
+  "gui_scale": 0.75,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 96,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
-    "count": 1
+    "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-	"item": "hostilenetworks:overworld_prediction",
-    "count": 1
+    "item": "hostilenetworks:overworld_prediction"
   },
-  "trivia": "",
+  "trivia": "custom.trivia.tusklin",
   "fabricator_drops": [
     {
       "item": "minecraft:porkchop",
-      "count": 16
+      "count": 32
     },
     {
       "item": "minecraft:snowball",

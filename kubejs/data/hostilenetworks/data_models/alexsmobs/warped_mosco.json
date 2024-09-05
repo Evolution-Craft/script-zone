@@ -1,42 +1,45 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
   "type": "alexsmobs:warped_mosco",
-  "subtypes": [],
   "name": "entity.alexsmobs.warped_mosco",
-  "name_color": "0x5DF3D6",
-  "gui_scale": 0.6,
-  "gui_x_offset": 0.0,
-  "gui_y_offset": 0.0,
-  "gui_z_offset": 0.0,
-  "sim_cost": 2048,
+  "name_color": "#1d7572",
+  "gui_scale": 0.5,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 4096,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
-    "count": 1
+    "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-	"item": "hostilenetworks:nether_prediction",
-    "count": 1
+    "item": "hostilenetworks:nether_prediction"
   },
-  "trivia": "",
+  "trivia": "custom.trivia.warped_mosco",
   "fabricator_drops": [
     {
       "item": "alexsmobs:warped_muscle",
-      "count": 4
+      "count": 1
     },
     {
       "item": "alexsmobs:hemolymph_sac",
-      "count": 4
+      "count": 6
     }
   ],
   "tier_data": [
-    1,
-    54,
-    354,
-    1254
+    100,
+    150,
+    200,
+    1200
   ],
   "data_per_kill": [
-    1,
-    4,
-    10,
-    18
+    50,
+    50,
+    50,
+    240
   ]
 }

@@ -1,34 +1,37 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
   "type": "alexsmobs:bone_serpent",
-  "subtypes": [],
   "name": "entity.alexsmobs.bone_serpent",
-  "name_color": "0xF0F7FD",
-  "gui_scale": 1.0,
-  "gui_x_offset": 0.0,
-  "gui_y_offset": 0.0,
-  "gui_z_offset": 0.0,
+  "name_color": "#5b524d",
+  "gui_scale": 1,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
   "sim_cost": 256,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
-    "count": 1
+    "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-	"item": "hostilenetworks:nether_prediction",
-    "count": 1
+    "item": "hostilenetworks:nether_prediction"
   },
-  "trivia": "",
+  "trivia": "custom.trivia.bone_serpent",
   "fabricator_drops": [
     {
       "item": "alexsmobs:bone_serpent_tooth",
-      "count": 16
+      "count": 4
     },
-	{
+    {
       "item": "minecraft:bone",
-      "count": 64
+      "count": 32
     },
     {
       "item": "minecraft:bone_block",
-      "count": 8
+      "count": 16
     }
   ],
   "tier_data": [

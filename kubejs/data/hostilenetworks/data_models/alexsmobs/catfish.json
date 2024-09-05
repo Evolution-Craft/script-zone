@@ -1,28 +1,29 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
   "type": "alexsmobs:catfish",
-  "subtypes": [
-  "alexsmobs:catfish_large",
-  "alexsmobs:catfish_medium"],
   "name": "entity.alexsmobs.catfish",
-  "name_color": "0x808000",
-  "gui_scale": 1.0,
-  "gui_x_offset": 0.0,
-  "gui_y_offset": 0.0,
-  "gui_z_offset": 0.0,
-  "sim_cost": 128,
+  "name_color": "#787551",
+  "gui_scale": 1,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 48,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
-    "count": 1
+    "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-	"item": "hostilenetworks:overworld_prediction",
-    "count": 1
+    "item": "hostilenetworks:overworld_prediction"
   },
-  "trivia": "",
+  "trivia": "custom.trivia.catfish",
   "fabricator_drops": [
     {
       "item": "alexsmobs:raw_catfish",
-      "count": 16
+      "count": 32
     }
   ],
   "tier_data": [

@@ -1,29 +1,32 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
   "type": "alexsmobs:soul_vulture",
-  "subtypes": [],
   "name": "entity.alexsmobs.soul_vulture",
-  "name_color": "0x07D4F3",
-  "gui_scale": 1.0,
-  "gui_x_offset": 0.0,
-  "gui_y_offset": 0.0,
-  "gui_z_offset": 0.0,
-  "sim_cost": 1024,
+  "name_color": "#23c0c6",
+  "gui_scale": 1,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 128,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
-    "count": 1
+    "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-	"item": "hostilenetworks:nether_prediction",
-    "count": 1
+    "item": "hostilenetworks:nether_prediction"
   },
-  "trivia": "",
+  "trivia": "custom.trivia.soul_vulture",
   "fabricator_drops": [
     {
       "item": "minecraft:bone",
       "count": 16
     },
-	{
-      "item": "minecraft:bone",
+    {
+      "item": "minecraft:coal",
       "count": 16
     },
     {
@@ -32,7 +35,7 @@
     }
   ],
   "tier_data": [
-    16,
+    6,
     54,
     354,
     1254

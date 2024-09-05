@@ -1,22 +1,25 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
   "type": "alexsmobs:mimic_octopus",
-  "subtypes": [],
   "name": "entity.alexsmobs.mimic_octopus",
-  "name_color": "0xA39C9F",
-  "gui_scale": 1.4,
-  "gui_x_offset": 0.0,
-  "gui_y_offset": 0.0,
-  "gui_z_offset": 0.0,
-  "sim_cost": 128,
+  "name_color": "#fbece1",
+  "gui_scale": 1,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 64,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
-    "count": 1
+    "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-	"item": "hostilenetworks:overworld_prediction",
-    "count": 1
+    "item": "hostilenetworks:overworld_prediction"
   },
-  "trivia": "",
+  "trivia": "custom.trivia.mimic_octopus",
   "fabricator_drops": [
     {
       "item": "minecraft:ink_sac",

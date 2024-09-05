@@ -1,26 +1,29 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
   "type": "alexsmobs:straddler",
-  "subtypes": [],
   "name": "entity.alexsmobs.straddler",
-  "name_color": "0x1B2A41",
-  "gui_scale": 0.8,
-  "gui_x_offset": 0.0,
-  "gui_y_offset": 0.0,
-  "gui_z_offset": 0.0,
-  "sim_cost": 512,
+  "name_color": "#2b2e3b",
+  "gui_scale": 0.69,
+  "gui_x_offset": 0,
+  "gui_y_offset": -0.25,
+  "gui_z_offset": 0,
+  "sim_cost": 128,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
-    "count": 1
+    "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-	"item": "hostilenetworks:nether_prediction",
-    "count": 1
+    "item": "hostilenetworks:nether_prediction"
   },
-  "trivia": "",
+  "trivia": "custom.trivia.straddler",
   "fabricator_drops": [
     {
       "item": "alexsmobs:straddlite",
-      "count": 4
+      "count": 2
     },
     {
       "item": "minecraft:basalt",

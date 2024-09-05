@@ -1,22 +1,25 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
   "type": "alexsmobs:lobster",
-  "subtypes": [],
   "name": "entity.alexsmobs.lobster",
-  "name_color": "0xCC0716",
-  "gui_scale": 1.5,
-  "gui_x_offset": 0.0,
-  "gui_y_offset": 0.0,
-  "gui_z_offset": 0.0,
-  "sim_cost": 64,
+  "name_color": "#c13022",
+  "gui_scale": 1,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 36,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
-    "count": 1
+    "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-	"item": "hostilenetworks:overworld_prediction",
-    "count": 1
+    "item": "hostilenetworks:overworld_prediction"
   },
-  "trivia": "",
+  "trivia": "custom.trivia.lobster",
   "fabricator_drops": [
     {
       "item": "alexsmobs:lobster_tail",

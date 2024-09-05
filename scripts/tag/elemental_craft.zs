@@ -62,6 +62,15 @@ for tag_fishing_rods_elemental_craft in addingFishingRodsElementalCraft {
 	<tag:items:elementalcraft:jewel_socketables>.add(<item:${tag_fishing_rods_elemental_craft}>);
 }
 
+// Helmets
+var addingHelmetsElementalCraft = [
+	"alexsmobs:spiked_turtle_shell"
+];
+for tag_helmets_elemental_craft in addingHelmetsElementalCraft {
+	<tag:items:elementalcraft:infusable/helmets>.add(<item:${tag_helmets_elemental_craft}>);
+	<tag:items:elementalcraft:jewel_socketables>.add(<item:${tag_helmets_elemental_craft}>);
+}
+
 // Hoes
 var addingHoesElementalCraft = [
 	"ae2:certus_quartz_hoe",

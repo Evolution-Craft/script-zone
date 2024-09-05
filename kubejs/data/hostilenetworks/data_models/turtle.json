@@ -26,9 +26,13 @@
         {
             "item": "minecraft:turtle_egg",
             "count": 8
+        },
+        {
+            "item": "alexsmobs:terrapin_egg",
+            "count": 2
         }
     ],
-	"tier_data": [
+    "tier_data": [
         6,
         54,
         354,

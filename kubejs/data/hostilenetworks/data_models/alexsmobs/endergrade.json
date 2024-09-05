@@ -5,9 +5,9 @@
       "modid": "alexsmobs"
     }
   ],
-  "type": "alexsmobs:bald_eagle",
-  "name": "entity.alexsmobs.bald_eagle",
-  "name_color": "#1c1f2f",
+  "type": "alexsmobs:endergrade",
+  "name": "entity.alexsmobs.endergrade",
+  "name_color": "#7d9fdc",
   "gui_scale": 1,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
@@ -17,12 +17,13 @@
     "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-    "item": "hostilenetworks:overworld_prediction"
+    "item": "hostilenetworks:end_prediction"
   },
-  "trivia": "custom.trivia.bald_eagle",
+  "trivia": "custom.trivia.endergrade",
   "fabricator_drops": [
     {
-      "item": "minecraft:feather",
+      "optional": true,
+      "item": "outer_end:floral_paste",
       "count": 16
     }
   ],

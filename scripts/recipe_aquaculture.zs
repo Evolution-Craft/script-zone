@@ -18,4 +18,13 @@ import crafttweaker.api.recipe.Replacer;
 craftingTable.removeByName("aquaculture:planks_from_driftwood");
 craftingTable.addShapeless("pack_expert_crafting/aquaculture_planks_from_driftwood", <item:minecraft:oak_planks> * 2, [<item:aquaculture:driftwood>]);
 
+// Shaped
+craftingTable.removeByName("aquaculture:turtle_soup");
+craftingTable.removeByName("bucketlib:aquaculture/turtle_soup");
+craftingTable.addShaped("aquaculture/turtle_soup", <item:aquaculture:turtle_soup>, [
+	[<tag:items:aquaculturedelight:turtles>, <item:croptopia:water_bottle>, <item:minecraft:air>],
+	[<item:croptopia:cooking_pot>.anyDamage().transformDamage(), <item:minecraft:bowl>, <item:minecraft:air>],
+	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
 Globals.endScript("recipe_aquaculture");

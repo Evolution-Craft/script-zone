@@ -1,22 +1,25 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
   "type": "alexsmobs:giant_squid",
-  "subtypes": [],
   "name": "entity.alexsmobs.giant_squid",
-  "name_color": "0xD68F97",
-  "gui_scale": 1.0,
-  "gui_x_offset": 0.0,
-  "gui_y_offset": 0.0,
-  "gui_z_offset": 0.0,
-  "sim_cost": 512,
+  "name_color": "#b35654",
+  "gui_scale": 0.5,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 64,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
-    "count": 1
+    "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-	"item": "hostilenetworks:overworld_prediction",
-    "count": 1
+    "item": "hostilenetworks:overworld_prediction"
   },
-  "trivia": "",
+  "trivia": "custom.trivia.giant_squid",
   "fabricator_drops": [
     {
       "item": "minecraft:ink_sac",
@@ -24,7 +27,7 @@
     }
   ],
   "tier_data": [
-    1,
+    6,
     54,
     354,
     1254

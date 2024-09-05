@@ -1,37 +1,32 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
   "type": "alexsmobs:skelewag",
-  "subtypes": [],
   "name": "entity.alexsmobs.skelewag",
-  "name_color": "0xE6E6FA",
-  "gui_scale": 1.0,
-  "gui_x_offset": 0.0,
-  "gui_y_offset": 0.0,
-  "gui_z_offset": 0.0,
-  "sim_cost": 128,
+  "name_color": "#c3e5ae",
+  "gui_scale": 0.9,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 32,
   "input": {
-    "item": "hostilenetworks:empty_prediction",
-    "count": 1
+    "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
-	"item": "hostilenetworks:overworld_prediction",
-    "count": 1
+    "item": "hostilenetworks:overworld_prediction"
   },
-  "trivia": "",
+  "trivia": "custom.trivia.skelewag",
   "fabricator_drops": [
     {
-      "item": "alexsmobs:skelewag_sword",
-      "count": 1
-    },
-	{
-      "item": "alexsmobs:novelty_hat",
-      "count": 1
-    },
-	{
-      "item": "minecraft:bone",
-      "count": 16
+      "item": "alexsmobs:fish_bones",
+      "count": 32
     },
     {
-      "item": "alexsmobs:fish_bones",
+      "item": "minecraft:bone",
       "count": 16
     }
   ],

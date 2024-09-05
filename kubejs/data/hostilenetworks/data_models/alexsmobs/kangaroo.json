@@ -5,9 +5,9 @@
       "modid": "alexsmobs"
     }
   ],
-  "type": "alexsmobs:bald_eagle",
-  "name": "entity.alexsmobs.bald_eagle",
-  "name_color": "#1c1f2f",
+  "type": "alexsmobs:kangaroo",
+  "name": "entity.alexsmobs.kangaroo",
+  "name_color": "#533f28",
   "gui_scale": 1,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
@@ -19,10 +19,14 @@
   "base_drop": {
     "item": "hostilenetworks:overworld_prediction"
   },
-  "trivia": "custom.trivia.bald_eagle",
+  "trivia": "custom.trivia.kangaroo",
   "fabricator_drops": [
     {
-      "item": "minecraft:feather",
+      "item": "alexsmobs:kangaroo_hide",
+      "count": 16
+    },
+    {
+      "item": "alexsmobs:kangaroo_meat",
       "count": 16
     }
   ],

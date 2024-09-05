@@ -391,10 +391,12 @@ for addingFlowersCrushingMekanismName, addingFlowersCrushingMekanismMod in addin
 <recipetype:mekanism:crushing>.addRecipe("mekanism_crushing/processing/quartz/to_dust", ItemStackIngredient.from(<tag:items:forge:gems/quartz>), <item:thermal:quartz_dust>);
 
 // Enrichment Chamber
-<recipetype:mekanism:enriching>.removeByName("mekanism:enriching/salt");
-<recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/salt", ItemStackIngredient.from(<item:salt:salt_block>), <item:salt:salt> * 9);
+<recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/flint_shard_from_flint", ItemStackIngredient.from(<item:minecraft:flint>), <item:contenttweaker:create/flint_shard>);
 <recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/hop_graphite_dust_from_dust", ItemStackIngredient.from(<item:immersiveengineering:dust_coke> * 4), <item:immersiveengineering:dust_hop_graphite>);
 <recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/hop_graphite_dust_from_petcoke", ItemStackIngredient.from(<item:immersivepetroleum:petcoke_dust> * 4), <item:immersiveengineering:dust_hop_graphite>);
+<recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/polished_quartz_tine_from_quartz", ItemStackIngredient.from(<item:minecraft:quartz>), <item:contenttweaker:create/polished_quartz_tine>);
+<recipetype:mekanism:enriching>.removeByName("mekanism:enriching/salt");
+<recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/salt", ItemStackIngredient.from(<item:salt:salt_block>), <item:salt:salt> * 9);
 
 // Precision Sawmill
 <recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/log/ancient", ItemStackIngredient.from(<tag:items:naturesaura:ancient_logs>), <item:naturesaura:ancient_planks> * (mekanism_planks_log_return / 2), <item:thermal:sawdust> * mekanism_saw_dust_log_return, mekanism_saw_dust_log_chance);

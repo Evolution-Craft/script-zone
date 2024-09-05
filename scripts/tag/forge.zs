@@ -447,6 +447,9 @@ for tag_rubbers_forge in addingRubbersForge {
 	<tag:items:forge:rubbers>.add(<item:${tag_rubbers_forge}>);
 }
 
+// Salmon
+<tag:items:forge:salmones>.add(<item:aquaculture:pink_salmon>);
+
 // Salt
 <tag:items:forge:dusts/salt>.add(<item:salt:salt>);
 
