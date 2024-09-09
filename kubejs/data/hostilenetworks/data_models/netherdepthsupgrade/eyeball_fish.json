@@ -1,0 +1,45 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "netherdepthsupgrade"
+    }
+  ],
+  "type": "netherdepthsupgrade:eyeball_fish",
+  "name": "entity.netherdepthsupgrade.eyeball_fish",
+  "name_color": "0xFFD528",
+  "gui_scale": 2,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 128,
+  "input": {
+    "item": "hostilenetworks:empty_prediction"
+  },
+  "base_drop": {
+    "item": "hostilenetworks:nether_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.eyeball_fish",
+  "fabricator_drops": [
+    {
+      "item": "netherdepthsupgrade:eyeball_fish",
+      "count": 16
+    },
+    {
+      "item": "netherdepthsupgrade:eyeball",
+      "count": 8
+    }
+  ],
+  "tier_data": [
+    6,
+    54,
+    354,
+    1254
+  ],
+  "data_per_kill": [
+    1,
+    4,
+    10,
+    18
+  ]
+}

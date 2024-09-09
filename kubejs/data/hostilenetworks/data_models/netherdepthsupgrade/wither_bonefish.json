@@ -1,0 +1,50 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "netherdepthsupgrade"
+    }
+  ],
+  "type": "netherdepthsupgrade:wither_bonefish",
+  "name": "entity.netherdepthsupgrade.wither_bonefish",
+  "name_color": "0x343434",
+  "gui_scale": 2,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 768,
+  "input": {
+    "item": "hostilenetworks:empty_prediction"
+  },
+  "base_drop": {
+    "item": "hostilenetworks:nether_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.wither_bonefish",
+  "fabricator_drops": [
+    {
+      "item": "netherdepthsupgrade:wither_bonefish",
+      "count": 16
+    },
+    {
+      "item": "minecraft:wither_skeleton_skull",
+      "count": 1
+    },
+    {
+      "optional": true,
+      "item": "bhc:wither_bone",
+      "count": 2
+    }
+  ],
+  "tier_data": [
+    100,
+    150,
+    200,
+    1200
+  ],
+  "data_per_kill": [
+    3,
+    12,
+    30,
+    45
+  ]
+}

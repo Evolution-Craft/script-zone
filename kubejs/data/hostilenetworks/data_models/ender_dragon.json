@@ -26,7 +26,27 @@
     {
       "optional": true,
       "item": "quark:dragon_scale",
+      "count": 4
+    },
+    {
+      "optional": true,
+      "item": "ends_delight:dragon_leg",
+      "count": 4
+    },
+    {
+      "optional": true,
+      "item": "ends_delight:raw_dragon_meat",
       "count": 8
+    },
+    {
+      "optional": true,
+      "item": "ends_delight:dragon_tooth",
+      "count": 2
+    },
+    {
+      "optional": true,
+      "item": "tconstruct:dragon_scale",
+      "count": 1
     }
   ],
   "tier_data": [
@@ -36,9 +56,9 @@
     1200
   ],
   "data_per_kill": [
-    50,
-    50,
-    50,
-    240
+    3,
+    12,
+    30,
+    45
   ]
 }

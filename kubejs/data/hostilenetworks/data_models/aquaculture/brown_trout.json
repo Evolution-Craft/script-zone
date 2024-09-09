@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "aquaculture"
+    }
+  ],
   "type": "aquaculture:brown_trout",
   "subtypes": [],
   "name": "entity.aquaculture.brown_trout",
@@ -20,7 +26,7 @@
   "fabricator_drops": [
     {
       "item": "minecraft:bone_meal",
-      "count": 16
+      "count": 8
     },
     {
       "item": "aquaculture:brown_trout",

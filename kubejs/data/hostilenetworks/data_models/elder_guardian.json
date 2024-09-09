@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:elder_guardian",
+  "name": "entity.minecraft.elder_guardian",
+  "name_color": "0xCBB1A5",
+  "gui_scale": 0.5,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0.5,
+  "gui_z_offset": 0,
+  "sim_cost": 4096,
+  "input": {
+    "item": "hostilenetworks:empty_prediction"
+  },
+  "base_drop": {
+    "item": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.elder_guardian",
+  "fabricator_drops": [
+    {
+      "item": "minecraft:cod",
+      "count": 8
+    },
+    {
+      "item": "minecraft:salmon",
+      "count": 2
+    },
+    {
+      "item": "minecraft:pufferfish",
+      "count": 2
+    },
+    {
+      "item": "minecraft:tropical_fish",
+      "count": 2
+    },
+    {
+      "item": "minecraft:prismarine_crystals",
+      "count": 8
+    },
+    {
+      "item": "minecraft:prismarine_shard",
+      "count": 12
+    },
+    {
+      "item": "minecraft:wet_sponge",
+      "count": 32
+    },
+    {
+      "optional": true,
+      "item": "croptopia:anchovy",
+      "count": 2
+    },
+    {
+      "optional": true,
+      "item": "croptopia:tuna",
+      "count": 2
+    },
+    {
+      "optional": true,
+      "item": "croptopia:sea_lettuce",
+      "count": 12
+    },
+    {
+      "optional": true,
+      "item": "oceansdelight:elder_guardian_slab",
+      "count": 8
+    },
+    {
+      "optional": true,
+      "item": "oceansdelight:elder_guardian_slab",
+      "count": 8
+    }
+  ],
+  "tier_data": [
+    100,
+    150,
+    200,
+    1200
+  ],
+  "data_per_kill": [
+    3,
+    12,
+    30,
+    45
+  ]
+}

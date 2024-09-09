@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:illusioner",
+  "subtypes": [],
+  "name": "entity.minecraft.illusioner",
+  "name_color": "0xBCA341",
+  "gui_scale": 1.0,
+  "gui_x_offset": 0.0,
+  "gui_y_offset": 0.0,
+  "gui_z_offset": 0.0,
+  "sim_cost": 1024,
+  "input": {
+    "item": "hostilenetworks:empty_prediction",
+    "count": 1
+  },
+  "base_drop": {
+    "item": "hostilenetworks:overworld_prediction",
+    "count": 1
+  },
+  "trivia": "hostilenetworks.trivia.illusioner",
+  "fabricator_drops": [
+    {
+      "item": "minecraft:emerald",
+      "count": 32
+    }
+  ],
+  "tier_data": [
+    100,
+    150,
+    200,
+    1200
+  ],
+  "data_per_kill": [
+    3,
+    12,
+    30,
+    45
+  ]
+}

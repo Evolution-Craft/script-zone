@@ -28,6 +28,10 @@
     {
       "item": "minecraft:sand",
       "count": 16
+    },
+    {
+      "item": "minecraft:red_sand",
+      "count": 16
     }
   ],
   "tier_data": [

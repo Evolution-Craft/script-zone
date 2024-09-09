@@ -17,7 +17,7 @@
   "fabricator_drops": [
     {
       "item": "minecraft:bone",
-      "count": 32
+      "count": 16
     },
     {
       "item": "minecraft:saddle",
@@ -26,7 +26,7 @@
     {
       "optional": true,
       "item": "reliquary:rib_bone",
-      "count": 4
+      "count": 2
     }
   ],
   "tier_data": [

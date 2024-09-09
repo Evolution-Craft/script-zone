@@ -20,7 +20,7 @@
   "fabricator_drops": [
     {
       "item": "minecraft:leather",
-      "count": 16
+      "count": 8
     },
     {
       "optional": true,

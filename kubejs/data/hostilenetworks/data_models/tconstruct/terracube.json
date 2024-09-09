@@ -23,11 +23,11 @@
   "fabricator_drops": [
     {
       "item": "minecraft:clay_ball",
-      "count": 16
+      "count": 8
     },
     {
       "item": "minecraft:clay",
-      "count": 4
+      "count": 2
     }
   ],
   "tier_data": [

@@ -23,11 +23,16 @@
   "fabricator_drops": [
     {
       "item": "tconstruct:ender_slime_ball",
-      "count": 16
+      "count": 8
     },
     {
       "item": "tconstruct:ender_slime",
-      "count": 4
+      "count": 2
+    },
+    {
+      "optional": true,
+      "item": "reliquary:slime_pearl",
+      "count": 2
     }
   ],
   "tier_data": [

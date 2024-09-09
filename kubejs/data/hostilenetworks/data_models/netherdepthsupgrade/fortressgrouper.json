@@ -1,0 +1,49 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "netherdepthsupgrade"
+    }
+  ],
+  "type": "netherdepthsupgrade:fortress_grouper",
+  "name": "entity.netherdepthsupgrade.fortress_grouper",
+  "name_color": "#8c3307",
+  "gui_scale": 2,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 128,
+  "input": {
+    "item": "hostilenetworks:empty_prediction"
+  },
+  "base_drop": {
+    "item": "hostilenetworks:nether_prediction"
+  },
+  "trivia": "hostilenetworks.trivia.fortress_grouper",
+  "fabricator_drops": [
+    {
+      "item": "netherdepthsupgrade:fortress_grouper",
+      "count": 16
+    },
+    {
+      "item": "netherdepthsupgrade:fortress_grouper_plate",
+      "count": 8
+    },
+    {
+      "item": "minecraft:nether_brick",
+      "count": 8
+    }
+  ],
+  "tier_data": [
+    6,
+    54,
+    354,
+    1254
+  ],
+  "data_per_kill": [
+    1,
+    4,
+    10,
+    18
+  ]
+}

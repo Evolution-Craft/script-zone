@@ -33,6 +33,36 @@
     {
       "item": "ecologics:coconut_slice",
       "count": 8
+    },
+    {
+      "optional": true,
+      "item": "croptopia:crab",
+      "count": 8
+    },
+    {
+      "optional": true,
+      "item": "croptopia:clam",
+      "count": 8
+    },
+    {
+      "optional": true,
+      "item": "croptopia:oyster",
+      "count": 8
+    },
+    {
+      "optional": true,
+      "item": "crabbersdelight:clam",
+      "count": 8
+    },
+    {
+      "optional": true,
+      "item": "crabbersdelight:crab",
+      "count": 8
+    },
+    {
+      "optional": true,
+      "item": "crabbersdelight:clawster",
+      "count": 8
     }
   ],
   "tier_data": [
