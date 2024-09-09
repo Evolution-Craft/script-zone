@@ -8,7 +8,7 @@
   "type": "netherdepthsupgrade:glowdine",
   "name": "entity.netherdepthsupgrade.glowdine",
   "name_color": "#edf250",
-  "gui_scale": 2,
+  "gui_scale": 2.5,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
   "gui_z_offset": 0,

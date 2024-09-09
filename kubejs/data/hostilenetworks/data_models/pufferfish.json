@@ -2,9 +2,9 @@
   "type": "minecraft:pufferfish",
   "name": "entity.minecraft.pufferfish",
   "name_color": "#9e6d13",
-  "gui_scale": 1,
+  "gui_scale": 3.5,
   "gui_x_offset": 0,
-  "gui_y_offset": 0,
+  "gui_y_offset": -0.15,
   "gui_z_offset": 0,
   "sim_cost": 32,
   "input": {

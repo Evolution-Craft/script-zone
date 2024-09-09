@@ -1,8 +1,5 @@
 {
   "type": "minecraft:piglin_brute",
-  "subtypes": [
-    "minecraft:piglin",
-  ],
   "name": "entity.minecraft.piglin_brute",
   "name_color": "0x3B992F",
   "gui_scale": 1,

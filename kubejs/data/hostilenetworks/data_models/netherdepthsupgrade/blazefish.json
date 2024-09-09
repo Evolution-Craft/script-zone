@@ -8,7 +8,7 @@
   "type": "netherdepthsupgrade:blazefish",
   "name": "entity.netherdepthsupgrade.blazefish",
   "name_color": "0xFFD528",
-  "gui_scale": 2,
+  "gui_scale": 1.5,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
   "gui_z_offset": 0,
@@ -26,7 +26,7 @@
       "count": 8
     },
     {
-      "item": "netherdepthsupgrade:blaze_rod",
+      "item": "minecraft:blaze_rod",
       "count": 4
     }
   ],

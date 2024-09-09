@@ -5,7 +5,7 @@
   ],
   "name": "entity.minecraft.salmon",
   "name_color": "#8d3431",
-  "gui_scale": 1,
+  "gui_scale": 1.5,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
   "gui_z_offset": 0,

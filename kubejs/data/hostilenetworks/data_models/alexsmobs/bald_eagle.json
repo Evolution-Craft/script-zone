@@ -8,7 +8,7 @@
   "type": "alexsmobs:bald_eagle",
   "name": "entity.alexsmobs.bald_eagle",
   "name_color": "#1c1f2f",
-  "gui_scale": 1,
+  "gui_scale": 1.3,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
   "gui_z_offset": 0,

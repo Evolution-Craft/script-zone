@@ -13,7 +13,7 @@
   "base_drop": {
     "item": "hostilenetworks:overworld_prediction"
   },
-  "trivia": "",
+  "trivia": "hostilenetworks.trivia.mooshroom",
   "fabricator_drops": [
   {
     "item": "minecraft:brown_mushroom",

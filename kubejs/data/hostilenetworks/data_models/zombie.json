@@ -39,7 +39,7 @@
     {
       "item": "minecraft:zombie_head",
       "count": 2
-    }
+    },
     {
       "optional": true,
       "item": "reliquary:zombie_heart",

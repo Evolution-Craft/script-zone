@@ -5,12 +5,12 @@
       "modid": "netherdepthsupgrade"
     }
   ],
-  "type": "netherdepthsupgrade:fortress_grouper",
-  "name": "entity.netherdepthsupgrade.fortress_grouper",
+  "type": "netherdepthsupgrade:fortressgrouper",
+  "name": "entity.netherdepthsupgrade.fortressgrouper",
   "name_color": "#8c3307",
-  "gui_scale": 2,
+  "gui_scale": 0.6,
   "gui_x_offset": 0,
-  "gui_y_offset": 0,
+  "gui_y_offset": 0.5,
   "gui_z_offset": 0,
   "sim_cost": 128,
   "input": {

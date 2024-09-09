@@ -8,7 +8,7 @@
   "type": "netherdepthsupgrade:eyeball_fish",
   "name": "entity.netherdepthsupgrade.eyeball_fish",
   "name_color": "0xFFD528",
-  "gui_scale": 2,
+  "gui_scale": 1.5,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
   "gui_z_offset": 0,

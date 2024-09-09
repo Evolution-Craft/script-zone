@@ -9,7 +9,7 @@
   "variants": [],
   "name": "entity.ecologics.coconut_crab",
   "name_color": "#d93422",
-  "gui_scale": 1,
+  "gui_scale": 1.5,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
   "gui_z_offset": 0,
@@ -24,7 +24,7 @@
   "fabricator_drops": [
     {
       "item": "ecologics:crab_claw",
-      "count": 1
+      "count": 8
     },
     {
       "item": "ecologics:crab_meat",

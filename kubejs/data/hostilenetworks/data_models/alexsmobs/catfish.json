@@ -8,7 +8,7 @@
   "type": "alexsmobs:catfish",
   "name": "entity.alexsmobs.catfish",
   "name_color": "#787551",
-  "gui_scale": 1,
+  "gui_scale": 1.5,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
   "gui_z_offset": 0,

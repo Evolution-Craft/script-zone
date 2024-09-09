@@ -8,7 +8,7 @@
   "type": "alexsmobs:toucan",
   "name": "entity.alexsmobs.toucan",
   "name_color": "#fbc93d",
-  "gui_scale": 1,
+  "gui_scale": 1.5,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
   "gui_z_offset": 0,
