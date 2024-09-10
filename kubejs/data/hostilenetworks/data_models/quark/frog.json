@@ -1,33 +1,35 @@
 {
   "conditions": [
-    {
-      "type": "forge:mod_loaded",
-      "modid": "alexsmobs"
-    }
+  {
+    "modid": "quark",
+    "type": "forge:mod_loaded"
+  }
   ],
-  "type": "alexsmobs:warped_mosco",
-  "name": "entity.alexsmobs.warped_mosco",
-  "name_color": "#1d7572",
-  "gui_scale": 0.5,
+  "type": "quark:frog",
+  "variants": [],
+  "name": "entity.quark.frog",
+  "name_color": "#ed0707",
+  "gui_scale": 1.25,
   "gui_x_offset": 0,
   "gui_y_offset": 0,
   "gui_z_offset": 0,
-  "sim_cost": 4096,
+  "sim_cost": 192,
   "input": {
     "item": "hostilenetworks:empty_prediction"
   },
   "base_drop": {
     "item": "hostilenetworks:nether_prediction"
   },
-  "trivia": "custom.trivia.warped_mosco",
+  "trivia": "custom.trivia.frog",
   "fabricator_drops": [
     {
-      "item": "alexsmobs:warped_muscle",
-      "count": 1
+      "item": "quark:frog_leg",
+      "count": 32
     },
     {
-      "item": "alexsmobs:hemolymph_sac",
-      "count": 6
+      "optional": "true",
+      "item": "aquaculture:frog_legs_raw",
+      "count": 32
     }
   ],
   "tier_data": [

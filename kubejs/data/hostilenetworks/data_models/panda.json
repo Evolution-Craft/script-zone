@@ -1,13 +1,13 @@
 {
-  "type": "minecraft:illusioner",
+  "type": "minecraft:panda",
   "subtypes": [],
-  "name": "entity.minecraft.illusioner",
-  "name_color": "0xBCA341",
+  "name": "entity.minecraft.panda",
+  "name_color": "#ffffff",
   "gui_scale": 1.0,
   "gui_x_offset": 0.0,
   "gui_y_offset": 0.0,
   "gui_z_offset": 0.0,
-  "sim_cost": 1024,
+  "sim_cost": 512,
   "input": {
     "item": "hostilenetworks:empty_prediction",
     "count": 1
@@ -16,11 +16,15 @@
     "item": "hostilenetworks:overworld_prediction",
     "count": 1
   },
-  "trivia": "hostilenetworks.trivia.illusioner",
+  "trivia": "hostilenetworks.trivia.panda",
   "fabricator_drops": [
     {
-      "item": "minecraft:emerald",
+      "item": "minecraft:bamboo",
       "count": 32
+    },
+    {
+      "item": "minecraft:beef",
+      "count": 16
     }
   ],
   "tier_data": [

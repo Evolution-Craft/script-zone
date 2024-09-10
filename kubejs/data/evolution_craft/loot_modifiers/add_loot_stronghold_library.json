@@ -1,0 +1,11 @@
+{
+  "type": "evolution_craft:add_loot_table",
+  "conditions":
+  [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/stronghold_library"
+    }
+  ],
+  "lootTable": "evolution_craft:chests/add_loot_evolution_craft_book"
+}

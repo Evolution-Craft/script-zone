@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "entries": [
+    "evolution_craft:add_loot_abandoned_mineshaft",
+    "evolution_craft:add_loot_bastion_hoglin_stable",
+    "evolution_craft:add_loot_bastion_treasure",
+    "evolution_craft:add_loot_desert_pyramid",
+    "evolution_craft:add_loot_end_city_treasure",
+    "evolution_craft:add_loot_engineers_house",
+    "evolution_craft:add_loot_jungle_temple",
+    "evolution_craft:add_loot_mechanic_house",
+    "evolution_craft:add_loot_nether_bridge",
+    "evolution_craft:add_loot_pillager_outpost",
+    "evolution_craft:add_loot_ruined_portal",
+    "evolution_craft:add_loot_shipwreck_supply",
+    "evolution_craft:add_loot_simple_dungeon",
+    "evolution_craft:add_loot_stronghold_corridor",
+    "evolution_craft:add_loot_stronghold_crossing",
+    "evolution_craft:add_loot_stronghold_library",
+    "evolution_craft:add_loot_tower_chest",
+    "evolution_craft:add_loot_underwater_ruin_big",
+    "evolution_craft:add_loot_underwater_ruin_small",
+    "evolution_craft:add_loot_village_butcher",
+    "evolution_craft:add_loot_village_cooker",
+    "evolution_craft:add_loot_village_plains_house",
+    "evolution_craft:add_loot_village_taiga_house",
+    "evolution_craft:add_loot_village_snowy_house",
+    "evolution_craft:add_loot_village_desert_house",
+    "evolution_craft:add_loot_village_savanna_house",
+    "evolution_craft:add_loot_woodland_mansion"
+  ]
+}
