@@ -21,9 +21,9 @@ if (packModeSetting.packModeSettingFurnaces() == true) {
 
 	craftingTable.removeByName("quark:building/crafting/furnaces/cobblestone_furnace");
 	craftingTable.addShaped("pack_expert_crafting_furnaces/cobblestone_furnace", <item:minecraft:furnace>, [
-		[<item:compressium:cobblestone_1>, <item:compressium:cobblestone_1>, <item:compressium:cobblestone_1>],
-		[<item:compressium:cobblestone_1>, <item:minecraft:air>, <item:compressium:cobblestone_1>],
-		[<item:compressium:cobblestone_1>, <item:compressium:cobblestone_1>, <item:compressium:cobblestone_1>]
+		[<item:cyclic:compressed_cobblestone>, <item:cyclic:compressed_cobblestone>, <item:cyclic:compressed_cobblestone>],
+		[<item:cyclic:compressed_cobblestone>, <item:minecraft:air>, <item:cyclic:compressed_cobblestone>],
+		[<item:cyclic:compressed_cobblestone>, <item:cyclic:compressed_cobblestone>, <item:cyclic:compressed_cobblestone>]
 	]);
 
 	craftingTable.removeByName("quark:building/crafting/furnaces/deepslate_furnace");

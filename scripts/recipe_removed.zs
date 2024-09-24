@@ -79,7 +79,6 @@ var removeRecipeByName = [
 	"cyclic:carrot_ender",
 	"cyclic:charm_torch",
 	"cyclic:charm_torch_cave",
-	"cyclic:compressed_cobblestone",
 	"cyclic:conveyor",
 	"cyclic:copper_ingot",
 	"cyclic:copper_axe",

@@ -30,6 +30,7 @@ var itemSetMaxStackSize = {
 
 	"ecologics:azalea_sign" : 64,
 	"ecologics:coconut_sign" : 64,
+	"ecologics:crab_claw" : 64,
 	"ecologics:flowering_azalea_sign" : 64,
 	"ecologics:walnut_sign" : 64,
 	"ends_delight:chorus_fruit_milk_tea" : 64,

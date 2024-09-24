@@ -81,11 +81,5 @@
 			"thermal_extra:soul_infused_coin",
 			"thermal_extra:twinite_coin",
 			"unusualend:void_totem"]
-	},
-	{
-		"mob": "minecraft:husk",
-		"random": 0.1,
-		"item": "minecraft:sand",
-		"itemcount": "1-2/2-4/4-6"
 	}
 ]
