@@ -1,4 +1,4 @@
-console.log('loot_table compiled')
+console.log('loot_table_entity compiled')
 
 onEvent("lootjs", (event) => {
 	event

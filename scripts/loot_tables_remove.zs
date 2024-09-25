@@ -118,7 +118,9 @@ CommonLootModifiers.removeAll(
 	<item:theoneprobe:gold_helmet_probe>,
 	<item:theoneprobe:iron_helmet_probe>,
 	<item:theoneprobe:probe>,
-	<item:theoneprobe:probenote>
+	<item:theoneprobe:probenote>,
+	// Unusualend
+	<item:unusualend:void_totem>
 );
 
 Globals.endScript("loot_tables_remove");
