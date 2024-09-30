@@ -337,6 +337,9 @@ for tag_furnaces_forge in addingFurnacesForge {
 	<tag:items:forge:furnaces>.add(<item:${tag_furnaces_forge}>);
 }
 
+// Ingot
+<tag:items:forge:ingot/prismarine>.add(<item:contenttweaker:create/prismarine_ingot_alloy>);
+
 // Material
 <tag:items:forge:raw_materials>.add(<item:galosphere:raw_silver>);
 <tag:items:forge:raw_materials/silver>.add(<item:galosphere:raw_silver>);

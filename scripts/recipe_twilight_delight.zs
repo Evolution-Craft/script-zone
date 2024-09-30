@@ -16,7 +16,6 @@ import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 // Shaped
-craftingTable.removeByName("twilightdelight:torchberry_cookie");
 craftingTable.addShaped("twilightdelight/torchberry_cookie", <item:twilightdelight:torchberry_cookie> * 8, [
 	[<tag:items:forge:grain>, <item:twilightforest:torchberries>, <tag:items:forge:grain>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],

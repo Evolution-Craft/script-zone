@@ -25,10 +25,8 @@ Globals.priorityScript("1000");
 
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.item.ItemStack;
-import crafttweaker.api.recipe.CampFireRecipeManager;
 import crafttweaker.api.recipe.FurnaceRecipeManager;
 import crafttweaker.api.recipe.SmithingRecipeManager;
-import crafttweaker.api.recipe.StoneCutterManager;
 import crafttweaker.api.recipe.Replacer;
 
 var removeRecipeByName = [
@@ -38,29 +36,42 @@ var removeRecipeByName = [
 	"alexsmobs:banner_pattern_bear",
 	"alexsmobs:banner_pattern_brazil",
 	"alexsmobs:banner_pattern_new_mexico",
+	"alexsmobs:shark_tooth_arrow",
 	"alexsmobs:vine_lasso",
 	// Apotheosis
 	"apotheosis:ender_lead",
 	// Applied Energistics 2
 	"ae2:misc/vanilla_comparator",
 	"ae2:tools/matter_cannon",
+	// Aquaculture
+	"aquaculture:planks_from_driftwood",
+	"aquaculture:turtle_soup",
 	// Archers Arsenal
-	"archarsenal:arrow_down_vanilla_to_villager",
-	"archarsenal:arrow_up_villager_to_vanilla",
-	"archarsenal:villager_arrow",
 	"archarsenal:arrow_down_barbed_to_vanilla",
+	"archarsenal:arrow_down_vanilla_to_villager",
+	"archarsenal:arrow_up_vanilla_to_barbed",
+	"archarsenal:arrow_up_villager_to_vanilla",
+	"archarsenal:barbed_arrow",
+	"archarsenal:villager_arrow",
 	// Baubley Heart Canisters
 	"bhc:god_apple",
+	// Bamboo Everything
+	"bambooeverything:bamboo_torch",
+	"bambooeverything:dry_bamboo_torch",
 	// Beyond Earth
 	"beyond_earth:desh_plate",
 	"beyond_earth:iron_plate",
 	"beyond_earth:iron_stick",
 	// Beyond Earth Giselle Addon
 	"beyond_earth_giselle_addon:compat/immersiveengineering/crafting/plate_desh_hammering",
+	// Brewin And Chewin
+	"brewinandchewin:ham_and_cheese_sandwich",
+	"brewinandchewin:pizza",
 	// Botania
 	"botania:elementium_shears",
 	"botania:manasteel_shears",
 	// BucketLib
+	"bucketlib:aquaculture/turtle_soup",
 	"bucketlib:cake",
 	// Cyclic
 	"cyclic:apple_chocolate",
@@ -109,7 +120,6 @@ var removeRecipeByName = [
 	"cyclic:hopper_gold",
 	"cyclic:item_pipe",
 	"cyclic:laser_cannon",
-	//"cyclic:magic_net",
 	"cyclic:magic_net_alt",
 	"cyclic:netherite_ingot",
 	"cyclic:quiver_damage",
@@ -169,6 +179,7 @@ var removeRecipeByName = [
 	// Croptopia
 	"croptopia:beer",
 	"croptopia:mead",
+	"croptopia:rum",
 	"croptopia:shaped_tea",
 	//Decorative Blocks
 	"decorative_blocks:dirt_from_rocky_dirt",
@@ -331,6 +342,7 @@ var removeRecipeByName = [
 	"libraryferret:crafting_shaped/fake_netherite_block",
 	// Mekanism Tools
 	"mekanismtools:wood_paxel",
+	"mekanism:storage_blocks/salt",
 	// Minecraft
 	"minecraft:arrow",
 	"minecraft:beacon",
@@ -338,13 +350,16 @@ var removeRecipeByName = [
 	"minecraft:creeper_banner_pattern",
 	"minecraft:daylight_detector",
 	"minecraft:end_crystal",
+	"minecraft:flint_and_steel",
 	"minecraft:flower_banner_pattern",
 	"minecraft:lead",
 	"minecraft:magma_cream",
 	"minecraft:mojang_banner_pattern",
+	"minecraft:piston",
 	"minecraft:skull_banner_pattern",
 	"minecraft:spectral_arrow",
 	"minecraft:sticky_piston",
+	"minecraft:stonecutter",
 	"minecraft:wooden_axe",
 	"minecraft:wooden_hoe",
 	"minecraft:wooden_pickaxe",
@@ -395,15 +410,31 @@ var removeRecipeByName = [
 	"naturesaura:ancient_planks_from_bark",
 	// Pneumatic Craft
 	"pneumaticcraft:compressed_iron_gear",
+	// Simply Tea
+	"simplytea:cup_tea_chai",
+	"simplytea:teabag_chorus",
+	"simplytea:teabag_green",
+	// Sophisticated Backpacks
+	"sophisticatedbackpacks:tool_swapper_upgrade",
 	// Supplementaries
 	"supplementaries:bomb",
 	"supplementaries:soap/hammock",
+	"supplementaries:soap/carpet",
+	"supplementaries:soap/sleeping_bag",
 	"supplementaries:spiky_bomb_2",
 	// Quark
 	"quark:automation/crafting/obsidian_pressure_plate",
 	"quark:building/crafting/compressed/bamboo_block",
 	"quark:building/crafting/compressed/bamboo_block_uncompress",
+	"quark:building/crafting/compressed/chorus_fruit_block",
 	"quark:building/crafting/iron_ladder",
+	// Refined Storage
+	"refinedstorage:1k_storage_part",
+	"refinedstorage:64k_fluid_storage_part",
+	"refinedstorage:controller",
+	"refinedstorage:raw_advanced_processor",
+	"refinedstorage:raw_basic_processor",
+	"refinedstorage:raw_improved_processor",
 	// RF Tools Builder
 	"rftoolsbuilder:blue_shield_template_block",
 	"rftoolsbuilder:green_shield_template_block",
@@ -428,7 +459,13 @@ var removeRecipeByName = [
 	"rftoolsbuilder:vehicle_control_module",
 	"rftoolsbuilder:vehicle_status_module",
 	"rftoolsbuilder:yellow_shield_template_block",
+	// Sulfur Potassium
+	"sulfurpotassiummod:gunpowder",
+	// The Salt
+	"salt:gunpowder",
+	"salt:salt_packing",
 	// The Undergarden
+	"undergarden:shard_torch",
 	"undergarden:undergarden_scaffolding",
 	// Thermal Series
 	"thermal:cheese_wedge_from_wheel",
@@ -470,6 +507,8 @@ var removeRecipeByName = [
 	"thermal:press_coin_die",
 	"thermal:storage/bamboo_block",
 	"thermal:storage/bamboo_from_block",
+	"thermal:storage/sawdust_block",
+	"thermal:storage/tea_block",
 	"thermal:tools/detonator",
 	// Thermal Series - GRENADE
 	"thermal:earth_grenade_4",
@@ -503,6 +542,11 @@ var removeRecipeByName = [
 	"systeams:boilers/upgrades/numismatic_upgrade",
 	// Tinkers Construct
 	"tconstruct:common/gold_bars",
+	"tconstruct:gadgets/cake/blood",
+	"tconstruct:gadgets/cake/earth",
+	"tconstruct:gadgets/cake/ender",
+	"tconstruct:gadgets/cake/magma",
+	"tconstruct:gadgets/cake/sky",
 	"tconstruct:gadgets/slimesling/earth",
 	"tconstruct:gadgets/slimesling/ender",
 	"tconstruct:gadgets/slimesling/ichor",
@@ -533,6 +577,8 @@ var removeRecipeByName = [
 	"twilightdecor:crafting/timewood/time_planks",
 	"twilightdecor:crafting/transformation/trans_planks",
 	"twilightdecor:crafting/twilight_oak/twilight_oak_planks",
+	// Twilight Delight
+	"twilightdelight:torchberry_cookie",
 	// Twilight Forest
 	"twilightforest:iron_ladder",
 	"twilightforest:wood/canopy_from_stripped_planks",
@@ -559,6 +605,8 @@ var removeRecipeByName = [
 	"twilightforest:wood/twilight_oak_from_stripped_planks",
 	"twilightforest:wood/twilight_oak_from_stripped_wood_planks",
 	"twilightforest:wood/twilight_oak_from_wood_planks",
+	// Unusualend
+	"unusualend:phantom_arrows",
 	// Vinery
 	"vinery:cooking_pot",
 	"vinery:fermentation_barrel",
@@ -602,7 +650,17 @@ for remove_recipe_by_name_blasting_furnace in removeRecipeByNameBlastingFurnace 
 }
 
 // Campfire
-campfire.removeByName("apotheosis:torch");
+var removeRecipeByNameCampfire = [
+	// Apotheosis
+	"apotheosis:torch",
+	// Twilight Delight
+	"twilightdelight:cooked_insect_campfire",
+	"twilightdelight:cooked_meef_slice_campfire",
+	"twilightdelight:cooked_venison_rib_campfire"
+];
+for remove_recipe_by_name_campfire in removeRecipeByNameCampfire {
+	<recipetype:minecraft:campfire_cooking>.removeByName(remove_recipe_by_name_campfire);
+}
 
 // Furnace
 var removeRecipeByNameFurnace = [
@@ -649,7 +707,7 @@ for remove_recipe_by_name_smithing_table in removeRecipeByNameSmithingTable {
 }
 
 // Smoker
-smoker.removeByName("croptopia:salt_from_smoking_water_bottle");
+<recipetype:minecraft:smoking>.removeByName("croptopia:salt_from_smoking_water_bottle");
 
 // Stone Cutter
 var removeRecipeByNameStoneCutter = [
@@ -658,7 +716,7 @@ var removeRecipeByNameStoneCutter = [
 	"twilightforest:stonecutting/dark_wood/towerwood"
 ];
 for remove_recipe_by_name_stone_cutter in removeRecipeByNameStoneCutter {
-	stoneCutter.removeByName(remove_recipe_by_name_stone_cutter);
+	<recipetype:minecraft:stonecutting>.removeByName(remove_recipe_by_name_stone_cutter);
 }
 
 var removeRecipeByRegexStoneCutter = [
@@ -669,7 +727,7 @@ var removeRecipeByRegexStoneCutter = [
 	"twilightforest:.*hollow_.*"
 ];
 for remove_recipe_by_regex_stone_cutter in removeRecipeByRegexStoneCutter {
-	stoneCutter.removeByRegex(remove_recipe_by_regex_stone_cutter);
+	<recipetype:minecraft:stonecutting>.removeByRegex(remove_recipe_by_regex_stone_cutter);
 }
 
 // Alchemistry
@@ -678,12 +736,15 @@ for remove_recipe_by_regex_stone_cutter in removeRecipeByRegexStoneCutter {
 // Applied Energistics
 <recipetype:ae2:inscriber>.removeByName("lazierae2:compat/ae2/inscriber/universal_press");
 
+// Apotheosis
+<recipetype:apotheosis:fletching>.removeByName("apotheosis:fletching/obsidian_arrow");
+
 // Beyond Earth: Giselle Addon
 <recipetype:beyond_earth_giselle_addon:extruding>.removeByName("beyond_earth_giselle_addon:extruding/iron_stick");
 <recipetype:beyond_earth_giselle_addon:rolling>.removeByName("beyond_earth_giselle_addon:rolling/iron_plate");
 
 // Botania
-var removeManaInfsionRecipeByName = [
+var removeManaInfusionRecipeByName = [
 	"botania:mana_infusion/acacia_log_to_dark_oak_log",
 	"botania:mana_infusion/acacia_sapling_to_dark_oak_sapling",
 	"botania:mana_infusion/birch_log_to_jungle_log",
@@ -702,13 +763,43 @@ var removeManaInfsionRecipeByName = [
 	"botania:mana_infusion/quartz_dupe",
 	"botania:mana_infusion/redstone_dupe"
 ];
-for remove_mana_infusion_recipe_by_name in removeManaInfsionRecipeByName {
+for remove_mana_infusion_recipe_by_name in removeManaInfusionRecipeByName {
 	<recipetype:botania:mana_infusion>.removeByName(remove_mana_infusion_recipe_by_name);
 }
 
+var removePureDaisyRecipeByName = [
+	"botania:pure_daisy/livingrock",
+	"botania:pure_daisy/livingwood"
+];
+for remove_pure_daisy_recipe_by_name in removePureDaisyRecipeByName {
+	<recipetype:botania:pure_daisy>.removeByName(remove_pure_daisy_recipe_by_name);
+}
+
+// Botany Pots
+<recipetype:botanypots:crop>.removeByName("botanypots:minecraft/crop/cactus");
+
+// Brewin And Chewin
+var removeFermentingRecipeByName = [
+	"brewinandchewin:fermenting/beer",
+	"brewinandchewin:fermenting/bloody_mary",
+	"brewinandchewin:fermenting/egg_grog",
+	"brewinandchewin:fermenting/mead",
+	"brewinandchewin:fermenting/rice_wine",
+	"brewinandchewin:fermenting/saccharine_rum",
+	"brewinandchewin:fermenting/steel_toe_stout",
+	"brewinandchewin:fermenting/strongroot_ale",
+	"brewinandchewin:fermenting/vodka",
+	"brewinandchewin:kombucha"
+];
+for remove_fermenting_recipe_by_name in removeFermentingRecipeByName {
+	<recipetype:brewinandchewin:fermenting>.removeByName(remove_fermenting_recipe_by_name);
+}
+
 // Create
+<recipetype:create:crushing>.removeByName("create:crushing/nether_quartz_ore");
 <recipetype:create:filling>.removeByName("create:filling/honeyed_apple");
 <recipetype:create:filling>.removeByName("miners_delight:create/filling/fill_milk_cup");
+<recipetype:create:milling>.removeByName("corn_delight:integration/create/milling/corn");
 
 // Cyclic
 var removeCyclicCrusherRecipeByName = [
@@ -790,6 +881,9 @@ for remove_industrial_foregoing_recipe_by_name in removeRecipeByNameIndustrialFo
 var removeMultiservoPressRecipeByName = [
 	"thermal:compat/quark/press_quark_chorus_fruit_packing",
 	"thermal:compat/quark/press_quark_chorus_fruit_unpacking",
+	"thermal:machines/press/packing3x3/press_sawdust_packing",
+	"thermal:compat/mekanism/press_mek_salt_packing",
+	"thermal:compat/mekanism/press_mek_salt_unpacking",
 	// Coin
 	"thermal:machines/press/press_bronze_ingot_to_coin",
 	"thermal:machines/press/press_bronze_nugget_to_coin",
@@ -837,7 +931,42 @@ for remove_multiservo_press_recipe_by_name in removeMultiservoPressRecipeByName 
 	<recipetype:thermal:press>.removeByName(remove_multiservo_press_recipe_by_name);
 }
 
+if (packModeSetting.packModeSettingPlates() == true) {
+	var removeMultiservoPressPlateRecipeByName = [
+		"beyond_earth_giselle_addon:compat/thermal/press/press_desh_ingot_to_plate",
+		"thermal:compat/immersiveengineering/press_ie_aluminum_ingot_to_plate",
+		"thermal:compat/immersiveengineering/press_ie_steel_ingot_to_plate",
+		"thermal:compat/immersiveengineering/press_ie_uranium_ingot_to_plate"
+		"thermal:machines/press/press_bronze_ingot_to_plate",
+		"thermal:machines/press/press_constantan_ingot_to_plate",
+		"thermal:machines/press/press_copper_ingot_to_plate",
+		"thermal:machines/press/press_electrum_ingot_to_plate",
+		"thermal:machines/press/press_enderium_ingot_to_plate",
+		"thermal:machines/press/press_gold_ingot_to_plate",
+		"thermal:machines/press/press_invar_ingot_to_plate",
+		"thermal:machines/press/press_iron_ingot_to_plate",
+		"thermal:machines/press/press_lead_ingot_to_plate",
+		"thermal:machines/press/press_lumium_ingot_to_plate",
+		"thermal:machines/press/press_netherite_ingot_to_plate",
+		"thermal:machines/press/press_nickel_ingot_to_plate",
+		"thermal:machines/press/press_rose_gold_ingot_to_plate",
+		"thermal:machines/press/press_signalum_ingot_to_plate",
+		"thermal:machines/press/press_silver_ingot_to_plate",
+		"thermal:machines/press/press_tin_ingot_to_plate",
+		"thermal_extra:machine/press/dragonsteel_plate",
+		"thermal_extra:machine/press/shellite_plate",
+		"thermal_extra:machine/press/soul_infused_plate",
+		"thermal_extra:machine/press/twinite_plate",
+	]
+	for remove_multiservo_press_plate_recipe_by_name in removeMultiservoPressPlateRecipeByName {
+		<recipetype:thermal:press>.removeByName(remove_multiservo_press_plate_recipe_by_name);
+	}
+}
 <recipetype:thermal:bottler>.removeByName("thermal:compat/create/bottler_create_honeyed_apple");
+
+<recipetype:thermal:insolator>.removeByName("thermal:compat/quark/insolator_quark_azalea_bush");
+<recipetype:thermal:insolator>.removeByName("thermal:compat/quark/insolator_quark_flowering_azalea_bush");
+<recipetype:thermal:insolator>.removeByName("thermal:machines/insolator/insolator_cactus");
 
 // Tinkers Construct
 var removeCastingTableRecipeByName = [
@@ -928,6 +1057,62 @@ var removeCastingTableRecipeByName = [
 ];
 for remove_casting_table_recipe_by_name in removeCastingTableRecipeByName {
 	<recipetype:tconstruct:casting_table>.removeByName(remove_casting_table_recipe_by_name);
+}
+
+if (packModeSetting.packModeSettingPlates() == true) {
+	var removeCastingTablePlateRecipeByName = [
+		"beyond_earth:smeltery/casting/metal/desh/plate_gold_cast",
+		"beyond_earth:smeltery/casting/metal/desh/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/aluminum/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/aluminum/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/brass/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/brass/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/bronze/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/bronze/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/constantan/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/constantan/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/copper/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/copper/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/electrum/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/electrum/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/enderium/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/enderium/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/gold/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/gold/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/invar/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/invar/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/iron/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/iron/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/lead/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/lead/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/lumium/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/lumium/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/netherite/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/netherite/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/nickel/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/nickel/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/rose_gold/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/rose_gold/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/signalum/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/signalum/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/silver/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/silver/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/steel/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/steel/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/tin/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/tin/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/uranium/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/uranium/plate_sand_cast",
+		"tconstruct:smeltery/casting/metal/zinc/plate_gold_cast",
+		"tconstruct:smeltery/casting/metal/zinc/plate_sand_cast",
+		"thermal_extra:compat/tconstruct/casting/dragonsteel/plate_gold_cast",
+		"thermal_extra:compat/tconstruct/casting/dragonsteel/plate_sand_cast",
+		"thermal_extra:compat/tconstruct/casting/soul_infused/plate_gold_cast",
+		"thermal_extra:compat/tconstruct/casting/soul_infused/plate_sand_cast"
+	];
+	for remove_casting_table_plate_recipe_by_name in removeCastingTablePlateRecipeByName {
+		<recipetype:tconstruct:casting_table>.removeByName(remove_casting_table_plate_recipe_by_name);
+	}
 }
 
 var removeMoldingTableRecipeByName = [

@@ -22,10 +22,8 @@ Globals.priorityScript("Null");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.BlastFurnaceRecipeManager;
-import crafttweaker.api.recipe.CampFireRecipeManager;
 import crafttweaker.api.recipe.FurnaceRecipeManager;
 import crafttweaker.api.recipe.Replacer;
-import crafttweaker.api.recipe.SmokerRecipeManager;
 import crafttweaker.api.recipe.StoneCutterManager;
 import crafttweaker.api.misc.Composter;
 import crafttweaker.api.tag.manager.ITagManager;
@@ -35,7 +33,7 @@ craftingTable.addShapeless("minecraft/blue_dye", <item:minecraft:blue_dye>, [<ta
 craftingTable.addShapeless("minecraft/brown_day", <item:minecraft:brown_dye> * 3, [<item:minecraft:blue_dye>, <item:minecraft:red_dye>, <item:minecraft:yellow_dye>]);
 craftingTable.addShapeless("minecraft/flint", <item:minecraft:flint>, [<item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>, <item:minecraft:gravel>]);
 craftingTable.addShapeless("minecraft/glow_ink_sac", <item:minecraft:glow_ink_sac>, [<item:minecraft:ink_sac>, <tag:items:evolution_craft:glow>]);
-craftingTable.addShapeless("minecraft/green_day", <item:minecraft:green_dye> * 2, [<item:minecraft:blue_dye>, <item:minecraft:yellow_dye>]);
+craftingTable.addShapeless("minecraft/green_dye", <item:minecraft:green_dye> * 2, [<item:minecraft:blue_dye>, <item:minecraft:yellow_dye>]);
 craftingTable.addShapeless("minecraft/gray_dye", <item:minecraft:gray_dye>, [<tag:items:evolution_craft:coral/gray>]);
 craftingTable.addShapeless("minecraft/magenta_dye", <item:minecraft:magenta_dye>, [<tag:items:evolution_craft:coral/magenta>]);
 craftingTable.addShapeless("minecraft/nether_wart_unpacked", <item:minecraft:nether_wart> * 4, [<item:minecraft:nether_wart_block>]);
@@ -45,8 +43,7 @@ craftingTable.addShapeless("minecraft/red_dye", <item:minecraft:red_dye>, [<tag:
 craftingTable.addShapeless("minecraft/string", <item:minecraft:string> * 4, [<tag:items:minecraft:wool>, <tag:items:forge:shears>.asIIngredient().anyDamage().transformDamage()]);
 craftingTable.addShapeless("minecraft/snow_block_unblock", <item:minecraft:snowball> * 4, [<item:minecraft:snow_block>]);
 craftingTable.addShapeless("minecraft/yellow_dye", <item:minecraft:yellow_dye>, [<tag:items:evolution_craft:coral/yellow>]);
-craftingTable.removeByName("minecraft:flint_and_steel");
-craftingTable.addShapeless("pack_expert_crafting/flint_and_steel", <item:minecraft:flint_and_steel>, [<tag:items:forge:ingots/steel>, <item:minecraft:flint>]);
+craftingTable.addShapeless("pack_expert_crafting/minecraft/flint_and_steel", <item:minecraft:flint_and_steel>, [<tag:items:forge:ingots/steel>, <item:minecraft:flint>]);
 
 // Shaped
 craftingTable.addShaped("minecraft/bell", <item:minecraft:bell>, [
@@ -79,8 +76,6 @@ craftingTable.addShaped("minecraft/grass_block", <item:minecraft:grass_block>, [
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-craftingTable.removeByName("sulfurpotassiummod:gunpowder");
-craftingTable.removeByName("salt:gunpowder");
 craftingTable.addShaped("minecraft/gunpowder", <item:minecraft:gunpowder> * 2, [
 	[<item:minecraft:air>, <item:sulfurpotassiummod:sulfur>, <item:minecraft:air>],
 	[<item:salt:salt>, <item:minecraft:charcoal>, <item:salt:salt>],
@@ -129,14 +124,12 @@ craftingTable.addShaped("minecraft/tuff", <item:minecraft:tuff> * 2, [
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-craftingTable.removeByName("minecraft:stonecutter");
 craftingTable.addShaped("pack_expert_crafting/minecraft/stonecutter", <item:minecraft:stonecutter>, [
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:thermal:saw_blade>, <item:minecraft:air>],
 	[<item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>, <item:minecraft:smooth_stone>]
 ]);
 
-craftingTable.removeByName("minecraft:piston");
 craftingTable.addShaped("pack_expert_crafting/minecraft/piston", <item:minecraft:piston>, [
 	[<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <tag:items:minecraft:planks>],
 	[<item:minecraft:stone>, <tag:items:forge:ingots/invar>, <item:minecraft:stone>],
@@ -144,14 +137,16 @@ craftingTable.addShaped("pack_expert_crafting/minecraft/piston", <item:minecraft
 ]);
 
 // Campfire
-campfire.addRecipe("campfire/tinker_construct/cooked_bacon_from_bacon", <item:farmersdelight:cooked_bacon>, <item:tconstruct:bacon>, 0.3, 600);
-campfire.addRecipe("campfire/vinery/toast_from_dough", <item:vinery:toast>, <tag:items:minecraft:dough>, 1.0, 600);
-campfire.removeByName("twilightdelight:cooked_insect_campfire");
-campfire.addRecipe("campfire/twilightdelight/cooked_insect", <item:twilightdelight:cooked_insect>, <item:twilightdelight:raw_insect>, 1.0, 600);
-campfire.removeByName("twilightdelight:cooked_meef_slice_campfire");
-campfire.addRecipe("campfire/twilightdelight/cooked_meef_slice", <item:twilightdelight:cooked_meef_slice>, <item:twilightdelight:raw_meef_slice>, 1.0, 600);
-campfire.removeByName("twilightdelight:cooked_venison_rib_campfire");
-campfire.addRecipe("campfire/twilightdelight/cooked_venison_rib", <item:twilightdelight:cooked_venison_rib>, <item:twilightdelight:raw_venison_rib>, 1.0, 600);
+var campfireAddItem = {
+	<item:farmersdelight:cooked_bacon> : <item:tconstruct:bacon>,
+	<item:twilightdelight:cooked_insect> : <item:twilightdelight:raw_insect>,
+	<item:twilightdelight:cooked_meef_slice> : <item:twilightdelight:raw_meef_slice>,
+	<item:twilightdelight:cooked_venison_rib> : <item:twilightdelight:raw_venison_rib>,
+	<item:vinery:toast> : <tag:items:minecraft:dough>
+};
+for campfireAddItemOut, campfireAddItemIn in campfireAddItem {
+	<recipetype:minecraft:campfire_cooking>.addRecipe("campfire/" + campfireAddItemOut.registryName.path, campfireAddItemOut, campfireAddItemIn, 1.0, 600);
+}
 
 // Composter
 var composterAddItem = {
@@ -290,6 +285,7 @@ var composterAddItem = {
 };
 for composterAddItemMaterial, composterAddItemValue in composterAddItem {
 	composter.setValue(<item:${composterAddItemMaterial}>, composterAddItemValue);
+	//<recipetype:minecraft:composting>.setValue(<item:${composterAddItemMaterial}>, composterAddItemValue);
 }
 
 // Blast Furnace
@@ -482,10 +478,10 @@ stoneCutter.addRecipe("stonecutter/vinery/loam_stairs", <item:vinery:loam_stairs
 stoneCutter.addRecipe("stonecutter/vinery/loam_slab", <item:vinery:loam_slab> * 2, <item:vinery:loam>);
 
 // Smoker
-smoker.removeByName("croptopia:cooked_tuna_from_smoking_tuna");
-smoker.addRecipe("smoker/croptopia/cooked_tuna", <item:croptopia:cooked_tuna>, <tag:items:forge:tuna>, 0.2, 100);
-smoker.addRecipe("smoker/minecraft/popped_chorus_fruit", <item:minecraft:popped_chorus_fruit>, <item:minecraft:chorus_fruit>, 0.1, 100);
-smoker.addRecipe("smoker/tinker_construct/cooked_bacon_from_bacon", <item:farmersdelight:cooked_bacon>, <item:tconstruct:bacon>, 0.35, 100);
-smoker.addRecipe("smoker/vinery/dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 100);
+<recipetype:minecraft:smoking>.removeByName("croptopia:cooked_tuna_from_smoking_tuna");
+<recipetype:minecraft:smoking>.addRecipe("smoker/croptopia/cooked_tuna", <item:croptopia:cooked_tuna>, <tag:items:forge:tuna>, 0.2, 100);
+<recipetype:minecraft:smoking>.addRecipe("smoker/minecraft/popped_chorus_fruit", <item:minecraft:popped_chorus_fruit>, <item:minecraft:chorus_fruit>, 0.1, 100);
+<recipetype:minecraft:smoking>.addRecipe("smoker/tinker_construct/cooked_bacon_from_bacon", <item:farmersdelight:cooked_bacon>, <item:tconstruct:bacon>, 0.35, 100);
+<recipetype:minecraft:smoking>.addRecipe("smoker/vinery/dought", <item:vinery:crusty_bread>, <item:vinery:dough>, 0.35, 100);
 
 Globals.endScript("recipe_minecraft");

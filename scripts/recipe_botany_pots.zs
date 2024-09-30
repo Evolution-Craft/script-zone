@@ -15,8 +15,7 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
-<recipetype:botanypots:crop>.removeByName("botanypots:minecraft/crop/cactus");
-<recipetype:botanypots:crop>.addJsonRecipe("botanypots_minecraft_crop_cactus", {
+<recipetype:botanypots:crop>.addJsonRecipe("botanypots/minecraft/crop_cactus", {
 	"seed": {
 		"item": "minecraft:cactus"
 	},
@@ -43,7 +42,7 @@ import crafttweaker.api.recipe.Replacer;
 	}]
 });
 
-<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/red_grape_seeds", {
+<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops/vinery/red_grape_seeds", {
 	"seed": {
 		"item": "vinery:red_grape_seeds"
 	},
@@ -72,7 +71,7 @@ import crafttweaker.api.recipe.Replacer;
 	}]
 });
 
-<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/white_grape_seeds", {
+<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops/vinery/white_grape_seeds", {
 	"seed": {
 		"item": "vinery:white_grape_seeds"
 	},
@@ -101,7 +100,7 @@ import crafttweaker.api.recipe.Replacer;
 	}]
 });
 
-<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/savanna_grape_seeds_red", {
+<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops/vinery/savanna_grape_seeds_red", {
 	"seed": {
 		"item": "vinery:savanna_grape_seeds_red"
 	},
@@ -130,7 +129,7 @@ import crafttweaker.api.recipe.Replacer;
 	}]
 });
 
-<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/savanna_grape_seeds_white", {
+<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops/vinery/savanna_grape_seeds_white", {
 	"seed": {
 		"item": "vinery:savanna_grape_seeds_white"
 	},
@@ -159,7 +158,7 @@ import crafttweaker.api.recipe.Replacer;
 	}]
 });
 
-<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/taiga_grape_seeds_red", {
+<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops/vinery/taiga_grape_seeds_red", {
 	"seed": {
 		"item": "vinery:taiga_grape_seeds_red"
 	},
@@ -188,7 +187,7 @@ import crafttweaker.api.recipe.Replacer;
 	}]
 });
 
-<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/taiga_grape_seeds_white", {
+<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops/vinery/taiga_grape_seeds_white", {
 	"seed": {
 		"item": "vinery:taiga_grape_seeds_white"
 	},
@@ -217,7 +216,7 @@ import crafttweaker.api.recipe.Replacer;
 	}]
 });
 
-<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/jungle_grape_seeds_red", {
+<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops/vinery/jungle_grape_seeds_red", {
 	"seed": {
 		"item": "vinery:jungle_grape_seeds_red"
 	},
@@ -246,7 +245,7 @@ import crafttweaker.api.recipe.Replacer;
 	}]
 });
 
-<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops_vinery/jungle_grape_seeds_white", {
+<recipetype:botanypots:crop>.addJsonRecipe("botanypots_crops/vinery/jungle_grape_seeds_white", {
 	"seed": {
 		"item": "vinery:jungle_grape_seeds_white"
 	},

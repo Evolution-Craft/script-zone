@@ -15,7 +15,6 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
 // Shaped
-craftingTable.removeByName("quark:building/crafting/compressed/chorus_fruit_block");
 craftingTable.addShaped("quark/building/crafting/compressed/chorus_fruit_block", <item:quark:chorus_fruit_block>, [
 	[<item:minecraft:chorus_fruit>, <item:minecraft:chorus_fruit>, <item:minecraft:air>],
 	[<item:minecraft:chorus_fruit>, <item:minecraft:chorus_fruit>, <item:minecraft:air>],

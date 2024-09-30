@@ -23,35 +23,26 @@ import crafttweaker.api.tag.manager.ITagManager;
 val expert_ingradient_to_plate = packModeSetting.packModeSettingPlateCastingBasing();
 
 // Shaped
-craftingTable.removeByName("tconstruct:gadgets/cake/blood");
 craftingTable.addShaped("tconstruct/gadgets/cake/blood_cake", <item:tconstruct:blood_cake>, [
 	[<item:tconstruct:blood_bucket>, <item:tconstruct:blood_bucket>, <item:tconstruct:blood_bucket>],
 	[<tag:items:forge:dusts/glowstone>, <tag:items:forge:eggs>, <tag:items:forge:dusts/glowstone>],
 	[<item:tconstruct:blood_slime_tall_grass>, <item:tconstruct:blood_slime_tall_grass>, <item:tconstruct:blood_slime_tall_grass>]
 ]);
-
-craftingTable.removeByName("tconstruct:gadgets/cake/earth");
 craftingTable.addShaped("tconstruct/gadgets/cake/earth_cake", <item:tconstruct:earth_cake>, [
 	[<item:tconstruct:earth_slime_bucket>, <item:tconstruct:earth_slime_bucket>, <item:tconstruct:earth_slime_bucket>],
 	[<item:minecraft:sugar>, <tag:items:forge:eggs>, <item:minecraft:sugar>],
 	[<item:tconstruct:earth_slime_tall_grass>, <item:tconstruct:earth_slime_tall_grass>, <item:tconstruct:earth_slime_tall_grass>]
 ]);
-
-craftingTable.removeByName("tconstruct:gadgets/cake/ender");
 craftingTable.addShaped("tconstruct/gadgets/cake/ender_cake", <item:tconstruct:ender_cake>, [
 	[<item:tconstruct:ender_slime_bucket>, <item:tconstruct:ender_slime_bucket>, <item:tconstruct:ender_slime_bucket>],
 	[<item:minecraft:sugar>, <tag:items:forge:eggs>, <item:minecraft:sugar>],
 	[<item:tconstruct:ender_slime_tall_grass>, <item:tconstruct:ender_slime_tall_grass>, <item:tconstruct:ender_slime_tall_grass>]
 ]);
-
-craftingTable.removeByName("tconstruct:gadgets/cake/magma");
 craftingTable.addShaped("tconstruct/gadgets/cake/magma_cake", <item:tconstruct:magma_cake>, [
 	[<item:tconstruct:magma_bucket>, <item:tconstruct:magma_bucket>, <item:tconstruct:magma_bucket>],
 	[<tag:items:forge:dusts/glowstone>, <tag:items:forge:eggs>, <tag:items:forge:dusts/glowstone>],
 	[<item:minecraft:crimson_roots>, <item:minecraft:crimson_roots>, <item:minecraft:crimson_roots>]
 ]);
-
-craftingTable.removeByName("tconstruct:gadgets/cake/sky");
 craftingTable.addShaped("tconstruct/gadgets/cake/sky_cake", <item:tconstruct:sky_cake>, [
 	[<item:tconstruct:sky_slime_bucket>, <item:tconstruct:sky_slime_bucket>, <item:tconstruct:sky_slime_bucket>],
 	[<tag:items:forge:dusts/glowstone>, <tag:items:forge:eggs>, <tag:items:forge:dusts/glowstone>],
@@ -132,55 +123,6 @@ craftingTable.addShaped("tconstruct/gadgets/cake/sky_cake", <item:tconstruct:sky
 });
 
 if (packModeSetting.packModeSettingPlates() == true) {
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/aluminum/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/aluminum/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/brass/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/brass/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/bronze/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/bronze/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/constantan/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/constantan/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/copper/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/copper/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("thermal_extra:compat/tconstruct/casting/dragonsteel/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("thermal_extra:compat/tconstruct/casting/dragonsteel/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("beyond_earth:smeltery/casting/metal/desh/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("beyond_earth:smeltery/casting/metal/desh/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/electrum/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/electrum/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/enderium/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/enderium/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/gold/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/gold/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/invar/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/invar/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/iron/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/iron/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/lead/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/lead/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/lumium/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/lumium/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/netherite/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/netherite/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/nickel/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/nickel/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/rose_gold/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/rose_gold/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/signalum/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/signalum/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/silver/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/silver/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("thermal_extra:compat/tconstruct/casting/soul_infused/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("thermal_extra:compat/tconstruct/casting/soul_infused/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/steel/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/steel/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/tin/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/tin/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/uranium/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/uranium/plate_sand_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/zinc/plate_gold_cast");
-	<recipetype:tconstruct:casting_table>.removeByName("tconstruct:smeltery/casting/metal/zinc/plate_sand_cast");
-
 	var addingPlateCastingTable = {
 		"immersiveengineering:plate_aluminum" : "tconstruct:molten_aluminum",
 		"create:brass_sheet" : "tconstruct:molten_brass",

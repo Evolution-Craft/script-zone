@@ -16,13 +16,11 @@ import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 // Shaped
-craftingTable.removeByName("brewinandchewin:ham_and_cheese_sandwich");
 craftingTable.addShaped("brewinandchewin/ham_and_cheese_sandwich", <item:brewinandchewin:ham_and_cheese_sandwich>, [
 	[<tag:items:forge:bread>, <tag:items:forge:cheeses>, <item:minecraft:air>],
 	[<item:farmersdelight:smoked_ham>, <tag:items:forge:bread>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
-craftingTable.removeByName("brewinandchewin:pizza");
 craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	[<tag:items:forge:cheeses>, <tag:items:forge:cheeses>, <tag:items:forge:cheeses>],
 	[<item:minecraft:brown_mushroom>, <tag:items:forge:tomatoes>, <item:farmersdelight:beef_patty>],
@@ -30,7 +28,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 ]);
 
 // Fermenting
-<recipetype:brewinandchewin:fermenting>.removeByName("brewinandchewin:fermenting/beer");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/beer", {
 	"ingredients": [
 	{
@@ -55,7 +52,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 3
 });
-<recipetype:brewinandchewin:fermenting>.removeByName("brewinandchewin:fermenting/bloody_mary");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/bloody_mary", {
 	"ingredients": [
 	{
@@ -83,7 +79,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 4
 });
-<recipetype:brewinandchewin:fermenting>.removeByName("brewinandchewin:fermenting/egg_grog");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/egg_grog", {
 	"ingredients": [
 	{
@@ -111,7 +106,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 4
 });
-<recipetype:brewinandchewin:fermenting>.removeByName("brewinandchewin:fermenting/mead");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/mead", {
 	"ingredients": [
 	{
@@ -136,7 +130,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 3
 });
-<recipetype:brewinandchewin:fermenting>.removeByName("brewinandchewin:fermenting/rice_wine");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/rice_wine", {
 	"ingredients": [
 	{
@@ -164,7 +157,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 3
 });
-<recipetype:brewinandchewin:fermenting>.removeByName("brewinandchewin:fermenting/saccharine_rum");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/saccharine_rum", {
 	"ingredients": [
 	{
@@ -192,7 +184,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 4
 });
-<recipetype:brewinandchewin:fermenting>.removeByName("brewinandchewin:fermenting/steel_toe_stout");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/steel_toe_stout", {
 	"ingredients": [
 	{
@@ -220,8 +211,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 1
 });
-
-<recipetype:brewinandchewin:fermenting>.removeByName("brewinandchewin:fermenting/strongroot_ale");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/strongroot_ale", {
 	"ingredients": [
 	{
@@ -249,7 +238,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 3
 });
-<recipetype:brewinandchewin:fermenting>.removeByName("brewinandchewin:fermenting/vodka");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/vodka", {
 	"ingredients": [
 	{
@@ -277,7 +265,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 3
 });
-<recipetype:brewinandchewin:fermenting>.removeByName("brewinandchewin:kombucha");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/kombucha", {
 	"ingredients": [
 	{
@@ -305,7 +292,6 @@ craftingTable.addShaped("brewinandchewin/pizza", <item:brewinandchewin:pizza>, [
 	"cookingtime": 12000,
 	"temperature": 3
 });
-craftingTable.removeByName("croptopia:rum");
 <recipetype:brewinandchewin:fermenting>.addJsonRecipe("brewinandchewin_fermenting/croptopia/rum", {
 	"ingredients": [
 	{
