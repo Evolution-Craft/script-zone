@@ -975,7 +975,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		"immersiveengineering:metalpress/plate_tin",
 		"immersiveengineering:metalpress/plate_uranium",
 		"immersiveengineering:metalpress/plate_zinc"
-	]
+	];
 	for remove_press_plate_recipe_by_name_immersive_engineering in removePressPlateRecipeByNameImmersiveEngineering {
 		<recipetype:immersiveengineering:metal_press>.removeByName(remove_press_plate_recipe_by_name_immersive_engineering);
 	}

@@ -203,10 +203,9 @@ for addingGearMetalPressIn, addingGearMetalPressOut in addingGearMetalPress {
 }
 
 var addingRodMetalPress = {
-	<tag:items:forge:gems/diamond> : "contenttweaker:immersiveengineering/diamond_rod",
-	<tag:items:forge:gems/emerald> : "contenttweaker:immersiveengineering/emerald_rod",
+	<item:minecraft:diamond> : "contenttweaker:immersiveengineering/diamond_rod",
+	<item:minecraft:emerald> : "contenttweaker:immersiveengineering/emerald_rod",
 	<item:contenttweaker:create/prismarine_ingot_alloy> : "contenttweaker:create/prismarine_rod"
-
 };
 for addingRodMetalPressIn, addingRodMetalPressOut in addingRodMetalPress {
 	<recipetype:immersiveengineering:metal_press>.addRecipe("immersiveengineering_metalpress/" + <item:${addingRodMetalPressOut}>.registryName.path, addingRodMetalPressIn * 4, imRod, 2400, <item:${addingRodMetalPressOut}> * 2);

@@ -305,10 +305,11 @@ var addingPhytogenicInsolator = {
 	"croptopia:walnut" : "minecraft:dark_oak_log"
 };
 for addingPhytogenicInsolatorSeed, addingPhytogenicInsolatorLog in addingPhytogenicInsolator {
-	if (addingPhytogenicInsolatorSeed == "croptopia:apple")
-		<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_" + <item:${addingPhytogenicInsolatorSeed}>.registryName.path + "_sapling", [(<item:${addingPhytogenicInsolatorLog}> * 6) % 100, <item:${addingPhytogenicInsolatorSeed}_sapling> % 10, <item:minecraft:apple> % 50], <item:${addingPhytogenicInsolatorSeed}_sapling>, 1000, 60000);
-	else
+	if (addingPhytogenicInsolatorSeed == "croptopia:apple") {
+		<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_apple_sapling", [(<item:${addingPhytogenicInsolatorLog}> * 6) % 100, <item:${addingPhytogenicInsolatorSeed}_sapling> % 10, <item:minecraft:apple> % 50], <item:${addingPhytogenicInsolatorSeed}_sapling>, 1000, 60000);
+	} else {
 		<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_" + <item:${addingPhytogenicInsolatorSeed}>.registryName.path + "_sapling", [(<item:${addingPhytogenicInsolatorLog}> * 6) % 100, <item:${addingPhytogenicInsolatorSeed}_sapling> % 10, <item:${addingPhytogenicInsolatorSeed}> % 50], <item:${addingPhytogenicInsolatorSeed}_sapling>, 1000, 60000);
+	}
 }
 
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_ecologics_walnut_sapling", [(<item:ecologics:walnut_log> * 6) % 100, <item:ecologics:walnut_sapling> % 10, <item:ecologics:walnut> % 50], <item:ecologics:walnut_sapling>, 1000, 60000);
