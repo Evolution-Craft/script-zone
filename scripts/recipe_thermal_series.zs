@@ -2,16 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Adding Missing Gear.
- * v0.2 : Adding Missing Rod.
- * v0.3 : Remove Rod for Fix Bug fluid quantiti in Blast Chiller, convert recipe in .json in KubeJS.
- * v0.4 : Adding Missing Sapling.
- * v0.5 : Adding HOP Graphite dust.
- * v0.6 : Add Custom Rods.
- * v0.7 : Adding Plate System.
- * v0.8 : Adding Tipped Arrow.
  */
 
 Globals.startScript("recipe_thermal_series");
@@ -287,42 +277,40 @@ if (packModeSetting.packModeSettingPlates() == true) {
 // Phytogenic Insolator
 var addingPhytogenicInsolator = {
 	"croptopia:almond" : "minecraft:dark_oak_log",
-	//"croptopia:apple" : "minecraft:oak_log",
+	"croptopia:apple" : "minecraft:oak_log",
 	"croptopia:apricot" : "minecraft:oak_log",
 	"croptopia:avocado" : "minecraft:spruce_log",
 	"croptopia:banana" : "minecraft:jungle_log",
+	"croptopia:cashew" : "minecraft:dark_oak_log",
+	"croptopia:cherry" : "minecraft:oak_log",
+	"croptopia:cinnamon" : "croptopia:cinnamon_log",
+	"croptopia:coconut" : "minecraft:jungle_log",
+	"croptopia:date" : "minecraft:jungle_log",
+	"croptopia:dragonfruit" : "minecraft:jungle_log",
+	"croptopia:fig" : "minecraft:jungle_log",
+	"croptopia:grapefruit" : "minecraft:jungle_log",
+	"croptopia:kumquat" : "minecraft:jungle_log",
+	"croptopia:lemon" : "minecraft:oak_log",
+	"croptopia:lime" : "minecraft:oak_log",
+	"croptopia:mango" : "minecraft:jungle_log",
+	"croptopia:nectarine" : "minecraft:oak_log",
+	"croptopia:nutmeg" : "minecraft:jungle_log",
+	"croptopia:orange" : "minecraft:oak_log",
+	"croptopia:peach" : "minecraft:oak_log",
+	"croptopia:pear" : "minecraft:oak_log",
+	"croptopia:pecan" : "minecraft:dark_oak_log",
+	"croptopia:persimmon" : "minecraft:jungle_log",
+	"croptopia:plum" : "minecraft:jungle_log",
+	"croptopia:starfruit" : "minecraft:oak_log",
+	"croptopia:walnut" : "minecraft:dark_oak_log"
 };
 for addingPhytogenicInsolatorSeed, addingPhytogenicInsolatorLog in addingPhytogenicInsolator {
-	<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_" + <item:${addingPhytogenicInsolatorSeed}>.registryName.path + "_sapling", [(<item:${addingPhytogenicInsolatorLog}> * 6) % 100, <item:${addingPhytogenicInsolatorSeed}_sapling> % 10, <item:${addingPhytogenicInsolatorSeed}> % 50], <item:${addingPhytogenicInsolatorSeed}_sapling>, 1000, 60000);
+	if (addingPhytogenicInsolatorSeed == "croptopia:apple")
+		<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_" + <item:${addingPhytogenicInsolatorSeed}>.registryName.path + "_sapling", [(<item:${addingPhytogenicInsolatorLog}> * 6) % 100, <item:${addingPhytogenicInsolatorSeed}_sapling> % 10, <item:minecraft:apple> % 50], <item:${addingPhytogenicInsolatorSeed}_sapling>, 1000, 60000);
+	else
+		<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_" + <item:${addingPhytogenicInsolatorSeed}>.registryName.path + "_sapling", [(<item:${addingPhytogenicInsolatorLog}> * 6) % 100, <item:${addingPhytogenicInsolatorSeed}_sapling> % 10, <item:${addingPhytogenicInsolatorSeed}> % 50], <item:${addingPhytogenicInsolatorSeed}_sapling>, 1000, 60000);
 }
 
-//<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_almond_sapling", [(<item:minecraft:dark_oak_log> * 6) % 100, <item:croptopia:almond_sapling> % 10, <item:croptopia:almond> % 50], <item:croptopia:almond_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_apple_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:apple_sapling> % 10, <item:minecraft:apple> % 50], <item:croptopia:apple_sapling>, 1000, 60000);
-//<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_apricot_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:apricot_sapling> % 10, <item:croptopia:apricot> % 50], <item:croptopia:apricot_sapling>, 1000, 60000);
-//<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_avocado_sapling", [(<item:minecraft:spruce_log> * 6) % 100, <item:croptopia:avocado_sapling> % 10, <item:croptopia:avocado> % 50], <item:croptopia:avocado_sapling>, 1000, 60000);
-//<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_banana_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:banana_sapling> % 10, <item:croptopia:banana> % 50], <item:croptopia:banana_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_cashew_sapling", [(<item:minecraft:dark_oak_log> * 6) % 100, <item:croptopia:cashew_sapling> % 10, <item:croptopia:cashew> % 50], <item:croptopia:cashew_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_cherry_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:cherry_sapling> % 10, <item:croptopia:cherry> % 50], <item:croptopia:cherry_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_coconut_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:coconut_sapling> % 10, <item:croptopia:coconut> % 50], <item:croptopia:coconut_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_date_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:date_sapling> % 10, <item:croptopia:date> % 50], <item:croptopia:date_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_dragonfruit_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:dragonfruit_sapling> % 10, <item:croptopia:dragonfruit> % 50], <item:croptopia:dragonfruit_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_fig_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:fig_sapling> % 10, <item:croptopia:fig> % 50], <item:croptopia:fig_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_grapefruit_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:grapefruit_sapling> % 10, <item:croptopia:grapefruit> % 50], <item:croptopia:grapefruit_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_kumquat_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:kumquat_sapling> % 10, <item:croptopia:kumquat> % 50], <item:croptopia:kumquat_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_lemon_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:lemon_sapling> % 10, <item:croptopia:lemon> % 50], <item:croptopia:lemon_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_lime_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:lime_sapling> % 10, <item:croptopia:lime> % 50], <item:croptopia:lime_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_mango_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:mango_sapling> % 10, <item:croptopia:mango> % 50], <item:croptopia:mango_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_nectarine_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:nectarine_sapling> % 10, <item:croptopia:nectarine> % 50], <item:croptopia:nectarine_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_nutmeg_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:nutmeg_sapling> % 10, <item:croptopia:nutmeg> % 50], <item:croptopia:nutmeg_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_orange_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:orange_sapling> % 10, <item:croptopia:orange> % 50], <item:croptopia:orange_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_peach_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:peach_sapling> % 10, <item:croptopia:peach> % 50], <item:croptopia:peach_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_pear_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:pear_sapling> % 10, <item:croptopia:pear> % 50], <item:croptopia:pear_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_pecan_sapling", [(<item:minecraft:dark_oak_log> * 6) % 100, <item:croptopia:pecan_sapling> % 10, <item:croptopia:pecan> % 50], <item:croptopia:pecan_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_persimmon_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:persimmon_sapling> % 10, <item:croptopia:persimmon> % 50], <item:croptopia:persimmon_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_plum_sapling", [(<item:minecraft:jungle_log> * 6) % 100, <item:croptopia:plum_sapling> % 10, <item:croptopia:plum> % 50], <item:croptopia:plum_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_starfruit_sapling", [(<item:minecraft:oak_log> * 6) % 100, <item:croptopia:starfruit_sapling> % 10, <item:croptopia:starfruit> % 50], <item:croptopia:starfruit_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_walnut_sapling", [(<item:minecraft:dark_oak_log> * 6) % 100, <item:croptopia:walnut_sapling> % 10, <item:croptopia:walnut> % 50], <item:croptopia:walnut_sapling>, 1000, 60000);
-<recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_cinnamon_sapling", [(<item:croptopia:cinnamon_log> * 6) % 100, <item:croptopia:cinnamon_sapling> % 10, <item:croptopia:cinnamon> % 50], <item:croptopia:cinnamon_sapling>, 1000, 60000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_ecologics_walnut_sapling", [(<item:ecologics:walnut_log> * 6) % 100, <item:ecologics:walnut_sapling> % 10, <item:ecologics:walnut> % 50], <item:ecologics:walnut_sapling>, 1000, 60000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_ecologics_coconut_seedling", [(<item:ecologics:coconut_log> * 6) % 100, <item:ecologics:coconut_seedling> % 10, <item:ecologics:coconut_slice> % 50], <item:ecologics:coconut_seedling>, 1000, 60000);
 <recipetype:thermal:insolator>.addRecipe("thermal_machines/insolator/insolator_ecologics_azalea", [(<item:ecologics:azalea_log> * 6) % 100, <item:minecraft:azalea> % 10, <item:minecraft:hanging_roots> % 25], <item:minecraft:azalea>, 1000, 60000);

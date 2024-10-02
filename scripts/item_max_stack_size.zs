@@ -2,10 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Modify Item Max Stack Size.
- * v0.2 : Potion Max Stack Size.
  */
 
 Globals.startScript("item_max_stack_size");

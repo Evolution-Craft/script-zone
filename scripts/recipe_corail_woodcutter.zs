@@ -2,14 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Adding Missing Item.
- * v0.2 : Fix Jungle Post Bug.
- * v0.3 : Adding Towerwood and Thorn.
- * v0.4 : Code Compatting.
- * v0.5 : Update Code and Adding missing Recipe Botania and Immersive Engineering.
- * v0.6 : Implementation "packAddRecipeCorailWoodcutter_Item" function.
  */
 
 Globals.startScript("recipe_corail_woodcutter");

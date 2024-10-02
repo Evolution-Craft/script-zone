@@ -2,20 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : First remove multiple recipe.
- * v0.2 : Rework the code.
- * v0.3 : Alphabet correct sequence.
- * v0.4 : Add priority and log sequence.
- * v0.5 : Remove Pane In The Glass recipe.
- * v0.6 : Rework Gear.
- * v0.7 : Rework Banner.
- * v0.8 : Coin Remove.
- * v0.9 : Rework Rod.
- * v0.10 : Various Fix and Remove Other Recipe.
- * v0.11 : Remove Stone Cutter Hollow Log.
- * v0.12 : Remve All Vinery Recipe.
  */
 
 #priority 1000
@@ -84,14 +70,16 @@ var removeRecipeByName = [
 	"cyclic:boomerang_carry",
 	"cyclic:boomerang_damage",
 	"cyclic:boomerang_stun",
+	"cyclic:breaker",
 	"cyclic:cable_wrench",
 	"cyclic:carrot_ender",
 	"cyclic:charm_torch",
 	"cyclic:charm_torch_cave",
 	"cyclic:conveyor",
-	"cyclic:copper_ingot",
 	"cyclic:copper_axe",
+	"cyclic:copper_chain",
 	"cyclic:copper_hoe",
+	"cyclic:copper_ingot",
 	"cyclic:copper_pickaxe",
 	"cyclic:copper_shovel",
 	"cyclic:copper_sword",
@@ -112,6 +100,7 @@ var removeRecipeByName = [
 	"cyclic:fluid_pipe",
 	"cyclic:flute_summoning",
 	"cyclic:generator_solar",
+	"cyclic:gold_chain",
 	"cyclic:heart",
 	"cyclic:heart_empty",
 	"cyclic:hopper",
@@ -123,10 +112,15 @@ var removeRecipeByName = [
 	"cyclic:quiver_damage",
 	"cyclic:quiver_lightning",
 	"cyclic:redstone_carrot_speed",
+	"cyclic:rotation_wand",
 	"cyclic:shapeless/spark",
 	"cyclic:shapeless/ender_fishing",
 	"cyclic:shapeless/ender_torch",
 	"cyclic:shears_obsidian",
+	"cyclic:spikes_curse",
+	"cyclic:spikes_diamond",
+	"cyclic:spikes_fire",
+	"cyclic:spikes_iron",
 	"cyclic:sprinkler",
 	"cyclic:sleeping_mat",
 	"cyclic:wand_hypno",
@@ -177,10 +171,12 @@ var removeRecipeByName = [
 	// Croptopia
 	"croptopia:beer",
 	"croptopia:mead",
+	"croptopia:paprika",
 	"croptopia:rum",
 	"croptopia:shaped_tea",
-	//Decorative Blocks
+	// Decorative Blocks
 	"decorative_blocks:dirt_from_rocky_dirt",
+	"decorative_blocks:rocky_dirt",
 	// Easy Villagers
 	"easy_villagers:iron_farm",
 	// Electrodynamics
@@ -199,8 +195,16 @@ var removeRecipeByName = [
 	"enlightened_end:ceruelean_log_to_planks",
 	// Enginners Delight
 	"tmted:slime_ball",
+	"tmted:wheat_dough_from_egg",
+	"tmted:wheat_dough_from_waterbucket",
+	// Enders Delight
+	"endersdelight:chorus_crate",
+	"endersdelight:chorus_fruit_from_crate",
 	// Extended Crafting
 	"extendedcrafting:handheld_table",
+	// Farmers Delight
+	"farmersdelight:cooking_pot",
+	"farmersdelight:melon_popsicle",
 	// Ftb Quests
 	"ftbquests:screen_1",
 	"ftbquests:screen_3",
@@ -225,6 +229,7 @@ var removeRecipeByName = [
 	"immersiveengineering:crafting/drillhead_steel",
 	"immersiveengineering:crafting/empty_casing",
 	"immersiveengineering:crafting/empty_shell",
+	"immersiveengineering:crafting/fiberboard",
 	"immersiveengineering:crafting/firework",
 	"immersiveengineering:crafting/hammercrushing_aluminum",
 	"immersiveengineering:crafting/hammercrushing_cobalt",
@@ -274,6 +279,7 @@ var removeRecipeByName = [
 	"immersiveengineering:crafting/stick_aluminum",
 	"immersiveengineering:crafting/stick_iron",
 	"immersiveengineering:crafting/stick_steel",
+	"immersiveengineering:crafting/sawdust",
 	"immersiveengineering:crafting/toolupgrade_buzzsaw_spareblades",
 	"immersiveengineering:crafting/toolupgrade_chemthrower_focus",
 	"immersiveengineering:crafting/toolupgrade_chemthrower_multitank",
@@ -300,6 +306,7 @@ var removeRecipeByName = [
 	// Immersive Petroleum
 	"immersivepetroleum:molotov_wool",
 	"immersivepetroleum:molotov_fabric",
+	"immersivepetroleum:seismic_survey_tool",
 	"immersivepetroleum:speedboat",
 	"immersivepetroleum:toolupgrade_drill_lube",
 	"immersivepetroleum:upgrade_icebreaker",
@@ -363,6 +370,8 @@ var removeRecipeByName = [
 	"minecraft:wooden_pickaxe",
 	"minecraft:wooden_shovel",
 	"minecraft:wooden_sword",
+	// Miners Delight
+	"miners_delight:copper_pot",
 	// Mini Utilities
 	"miniutilities:chorus_tile",
 	"miniutilities:destruction_pickaxe",
@@ -382,6 +391,7 @@ var removeRecipeByName = [
 	"miniutilities:mechanical_placer",
 	"miniutilities:netherite_reinforced_drum",
 	"miniutilities:precision_shears",
+	"miniutilities:quantum_quarry",
 	"miniutilities:redstone_clock",
 	"miniutilities:reinforced_large_drum",
 	"miniutilities:reversing_hoe",
@@ -404,10 +414,16 @@ var removeRecipeByName = [
 	"mob_grinding_utils:recipe_spawner_upgrade_height",
 	"mob_grinding_utils:recipe_spawner_upgrade_width",
 	"mob_grinding_utils:recipe_spikes",
+	"mob_grinding_utils:recipe_saw",
 	// Nature Aura
+	"naturesaura:ancient_planks",
 	"naturesaura:ancient_planks_from_bark",
 	// Pneumatic Craft
 	"pneumaticcraft:compressed_iron_gear",
+	"pneumaticcraft:raw_salmon_tempura",
+	"pneumaticcraft:sourdough",
+	// Rechiseled
+	"rechiseled:chisel",
 	// Simply Tea
 	"simplytea:cup_tea_chai",
 	"simplytea:teabag_chorus",
@@ -433,6 +449,10 @@ var removeRecipeByName = [
 	"refinedstorage:raw_advanced_processor",
 	"refinedstorage:raw_basic_processor",
 	"refinedstorage:raw_improved_processor",
+	// Reborn Storage
+	"rebornstorage:multiblock_frame",
+	"rebornstorage:multiblock_heat",
+	"rebornstorage:parts/raw_super_advanced_processor",
 	// RF Tools Builder
 	"rftoolsbuilder:blue_shield_template_block",
 	"rftoolsbuilder:green_shield_template_block",
@@ -726,8 +746,14 @@ for remove_recipe_by_name_smithing_table in removeRecipeByNameSmithingTable {
 }
 
 // Smoker
-<recipetype:minecraft:smoking>.removeByName("croptopia:cooked_tuna_from_smoking_tuna");
-<recipetype:minecraft:smoking>.removeByName("croptopia:salt_from_smoking_water_bottle");
+var removeRecipeByNameSmoker = [
+	// Croptopia
+	"croptopia:cooked_tuna_from_smoking_tuna",
+	"croptopia:salt_from_smoking_water_bottle"
+];
+for remove_recipe_by_name_smoker in removeRecipeByNameSmoker {
+	<recipetype:minecraft:smoking>.removeByName(remove_recipe_by_name_smoker);
+}
 
 // Stone Cutter
 var removeRecipeByNameStoneCutter = [
@@ -821,8 +847,25 @@ for remove_fermenting_recipe_by_name in removeFermentingRecipeByName {
 <recipetype:create:filling>.removeByName("miners_delight:create/filling/fill_milk_cup");
 <recipetype:create:milling>.removeByName("corn_delight:integration/create/milling/corn");
 
+if (packModeSetting.packModeSettingPlates() == true) {
+	<recipetype:create:pressing>.removeByName("create:pressing/brass_ingot");
+	<recipetype:create:pressing>.removeByName("create:pressing/copper_ingot");
+	<recipetype:create:pressing>.removeByName("create:pressing/gold_ingot");
+	<recipetype:create:pressing>.removeByName("create:pressing/iron_ingot");
+	<recipetype:create:pressing>.removeByName("createaddition:pressing/aluminum_ingot");
+	<recipetype:create:pressing>.removeByName("createaddition:pressing/constantan_ingot");
+	<recipetype:create:pressing>.removeByName("createaddition:pressing/electrum_ingot");
+	<recipetype:create:pressing>.removeByName("createaddition:pressing/lead_ingot");
+	<recipetype:create:pressing>.removeByName("createaddition:pressing/nickel_ingot");
+	<recipetype:create:pressing>.removeByName("createaddition:pressing/silver_ingot");
+	<recipetype:create:pressing>.removeByName("createaddition:pressing/steel_ingot");
+	<recipetype:create:pressing>.removeByName("createaddition:pressing/uranium_ingot");
+	<recipetype:create:pressing>.removeByName("createaddition:pressing/zinc_ingot");
+}
+
 // Cyclic
 var removeCyclicCrusherRecipeByName = [
+	"cyclic:crusher/chest",
 	"cyclic:crusher/coal_ore",
 	"cyclic:crusher/copper_ore",
 	"cyclic:crusher/diamond_ore",
@@ -836,6 +879,38 @@ var removeCyclicCrusherRecipeByName = [
 ];
 for remove_cyclic_crusher_recipe_by_name in removeCyclicCrusherRecipeByName {
 	<recipetype:cyclic:crusher>.removeByName(remove_cyclic_crusher_recipe_by_name);
+}
+
+<recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/solidifier_apple_enchanted");
+<recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/solidifier_honeyhive");
+<recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/wax_hive");
+
+// Farmers Delight
+var removeFarmersDelightCookingPotRecipeByName = [
+	// Corn Delight
+	"corn_delight:cooking/cornbread_stuffing",
+	// Twilight Delight
+	"twilightdelight:cooking/fried_insect",
+	"twilightdelight:cooking/glacier_ice_tea",
+	"twilightdelight:cooking/grilled_ghast"
+];
+for remove_farmers_delight_cooking_pot_recipe_by_name in removeFarmersDelightCookingPotRecipeByName {
+	<recipetype:farmersdelight:cooking>.removeByName(remove_farmers_delight_cooking_pot_recipe_by_name);
+}
+
+var removeFarmersDelightCuttingBoardRecipeByName = [
+	// Aquaculture Delight
+	"aquaculturedelight:cutting/knife/fillet_four",
+	"aquaculturedelight:cutting/knife/fillet_fourteen",
+	"aquaculturedelight:cutting/knife/fillet_one",
+	"aquaculturedelight:cutting/knife/fillet_six",
+	"aquaculturedelight:cutting/knife/fillet_ten",
+	"aquaculturedelight:cutting/knife/fillet_three",
+	"aquaculturedelight:cutting/knife/fillet_twelve",
+	"aquaculturedelight:cutting/knife/fillet_two"
+];
+for remove_farmers_delight_cutting_board_recipe_by_name in removeFarmersDelightCuttingBoardRecipeByName {
+	<recipetype:farmersdelight:cutting>.removeByName(remove_farmers_delight_cutting_board_recipe_by_name);
 }
 
 // Electrodynamics
@@ -865,14 +940,49 @@ for remove_blueprint_recipe_by_name in removeBlueprintRecipeByName {
 }
 
 var removeBottelingMachineRecipeByName = [
-	"immersiveengineering:bottling/empty_shell",
-	"tmted:bottling/wodka"
+	// Enginners Delight
+	"tmted:bottling/wheat_dough",
+	"tmted:bottling/wodka",
+	// Immersive Engineering
+	"immersiveengineering:bottling/empty_shell"
 ];
 for remove_bottling_machine_recipe_by_name in removeBottelingMachineRecipeByName {
 	<recipetype:immersiveengineering:bottling_machine>.removeByName(remove_bottling_machine_recipe_by_name);
 }
 
+<recipetype:immersiveengineering:cloche>.removeByName("immersiveengineering:cloche/cactus");
+<recipetype:immersiveengineering:crusher>.removeByName("tmted:crusher/wheat_flour_from_bale");
+<recipetype:immersiveengineering:crusher>.removeByName("tmted:crusher/wheat_flour");
+
+if (packModeSetting.packModeSettingPlates() == true) {
+	var removePressPlateRecipeByNameImmersiveEngineering = [
+		// Beyond Earth Giselle Addon
+		"beyond_earth_giselle_addon:compat/immersiveengineering/metalpress/plate_desh",
+		// Immersive Engineering
+		"immersiveengineering:metalpress/plate_aluminum",
+		"immersiveengineering:metalpress/plate_brass",
+		"immersiveengineering:metalpress/plate_bronze",
+		"immersiveengineering:metalpress/plate_copper",
+		"immersiveengineering:metalpress/plate_electrum",
+		"immersiveengineering:metalpress/plate_gold",
+		"immersiveengineering:metalpress/plate_invar",
+		"immersiveengineering:metalpress/plate_iron",
+		"immersiveengineering:metalpress/plate_lead",
+		"immersiveengineering:metalpress/plate_nickel",
+		"immersiveengineering:metalpress/plate_rose_gold",
+		"immersiveengineering:metalpress/plate_silver",
+		"immersiveengineering:metalpress/plate_steel",
+		"immersiveengineering:metalpress/plate_tin",
+		"immersiveengineering:metalpress/plate_uranium",
+		"immersiveengineering:metalpress/plate_zinc"
+	]
+	for remove_press_plate_recipe_by_name_immersive_engineering in removePressPlateRecipeByNameImmersiveEngineering {
+		<recipetype:immersiveengineering:metal_press>.removeByName(remove_press_plate_recipe_by_name_immersive_engineering);
+	}
+}
+
 <recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/bullet_casing");
+<recipetype:immersiveengineering:squeezer>.removeByName("tmted:squeezer/tomato");
 
 // Industrial Foregoing
 var removeRecipeByNameIndustrialForegoing = [
@@ -891,8 +1001,16 @@ for remove_industrial_foregoing_recipe_by_name in removeRecipeByNameIndustrialFo
 // Lazier
 <recipetype:lazierae2:etcher>.removeByName("lazierae2:etcher/universal_press");
 
+// Mekanism
+<recipetype:mekanism:crystallizing>.removeByName("mekanism:crystallizing/salt");
+<recipetype:mekanism:crushing>.removeByName("mekanism:processing/quartz/to_dust");
+<recipetype:mekanism:enriching>.removeByName("mekanism:enriching/salt");
+<recipetype:mekanism:sawing>.removeByName("mekanism:sawing/bookshelf");
+
 // Pneumatic Craft
 <recipetype:pneumaticcraft:amadron>.removeAll();
+<recipetype:pneumaticcraft:explosion_crafting>.removeByName("pneumaticcraft:explosion_crafting/wheat_flour");
+<recipetype:pneumaticcraft:pressure_chamber>.removeByName("pneumaticcraft:pressure_chamber/wheat_flour");
 
 // Twilight Forest
 <recipetype:twilightforest:uncrafting>.removeAll();

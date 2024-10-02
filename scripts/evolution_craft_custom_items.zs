@@ -2,15 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Add Custom Item.
- * v0.2 : Add Custom Ingot.
- * v0.3 : Add Custom Rods.
- * v0.4 : Add Custom Plates.
- * v0.5 : Add Custom Knife.
- * v0.6 : Add Custom Tinkers Food.
- * v0.7 : Correct Knife Implementation and Add Custom Books, Fragments, Gems
  */
 
 println("===============================================================");

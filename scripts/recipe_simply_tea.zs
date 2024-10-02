@@ -2,11 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Add Missing Crafting.
- * v0.2 : Add Missing Tags.
- * v0.3 : Support for Unusual End.
  */
 
 Globals.startScript("recipe_simply_tea");

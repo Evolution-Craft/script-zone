@@ -2,10 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Adding Value on Knife.
- * v0.2 : Modify Reach Distance attribute on Knife.
  */
 
 Globals.startScript("weapon_value");

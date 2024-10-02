@@ -2,13 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Adding burnTime to Immersive Engineering and Immersive Petroleum.
- * v0.2 : Rework code and Addin various Missing Item.
- * v0.3 : Adding Rechiseled.
- * v0.4 : Removing Crimson and Warped Burning Time.
- * v0.5 : Add missing Item.
  */
 
 Globals.startScript("item_burning_time");

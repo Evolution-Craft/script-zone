@@ -2,16 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : First remove jei ingradient.
- * v0.2 : Rework the code, Add priority and log sequence.
- * v0.3 : Alphabet correct sequence.
- * v0.4 : Code rework.
- * v0.5 : Rework remove Spawn Eggs.
- * v0.6 : Coin Removed.
- * v0.7 : Hide Creative Item.
- * v0.8 : Remove Duplicate Item.
  */
 
 #priority 999

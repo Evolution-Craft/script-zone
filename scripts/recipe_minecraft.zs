@@ -2,18 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Code Rework.
- * v0.2 : Add Missing Composter Item.
- * v0.3 : Rework Composter Code and Add More Item.
- * v0.4 : Add Missing Campfire Recipe.
- * v0.5 : Add Missing StoneCutter.
- * v0.6 : Adding in Furnace Concrite for converting in Concrete Powder.
- * v0.7 : Adding Missing Pressure Plate and Loam in StoneCutter.
- * V0.8 : Code Compatting.
- * v0.9 : Add Tag and Name Fixing.
- * v0.10 : Adding bone in Furnace.
  */
 
 Globals.startScript("recipe_minecraft");

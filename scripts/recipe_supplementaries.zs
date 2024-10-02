@@ -2,12 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Fix recipe carpet bug.
- * v0.2 : Fix confort compatibility.
- * v0.3 : Fix recipe glass pane bug.
- * v0.4 : Add quark glass shard support.
  */
 
 Globals.startScript("recipe_supplementaries");

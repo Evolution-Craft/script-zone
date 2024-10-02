@@ -15,7 +15,6 @@ import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
 
 // Shapeless
-craftingTable.removeByName("croptopia:paprika");
 craftingTable.addShapeless("croptopia/paprika", <item:croptopia:paprika>, [<item:croptopia:chile_pepper>, <item:croptopia:mortar_and_pestle>.anyDamage().transformDamage()]);
 craftingTable.addShapeless("croptopia/tuna_sandwich", <item:croptopia:tuna_sandwich>, [<tag:items:forge:bread>, <item:croptopia:cooked_tuna>]);
 

@@ -2,12 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : First Issue.
- * v0.2 : Add packPotion class.
- * v0.3 : Add packBaseWoods class.
- * v0.4 : Add packDiscs class.
  */
 
 #priority 1499

@@ -2,10 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Adding Missing Sapling Recipe.
- * v0.2 : Adding Missing Log Recipe.
  */
 
 Globals.startScript("recipe_alchemistry");

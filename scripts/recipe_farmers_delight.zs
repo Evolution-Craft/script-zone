@@ -2,13 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Fix Cooking Pot.
- * v0.2 : Add Vinery Mod Support.
- * v0.3 : Adding Door/Trapdoor/Sign in Cutting Board.
- * v0.4 : Adding Stripped Log and Wood on Cutting Board.
- * v0.5 : Remove unnecessary Item.
  */
 
 Globals.startScript("recipe_farmers_delight");
@@ -32,13 +25,11 @@ craftingTable.addShapeless("farmersdelight_delight/tconstruct/sky_cake", <item:t
 craftingTable.addShapeless("farmersdelight_delight/tconstruct/skyslime_sweets", <item:contenttweaker:tconstruct/delight/skyslime_sweets>, [<item:tconstruct:sky_slime_ball>, <item:minecraft:sugar>]);
 
 // Shaped
-craftingTable.removeByName("farmersdelight:cooking_pot");
 craftingTable.addShaped("farmersdelight_delight/cooking_pot", <item:farmersdelight:cooking_pot>, [
 	[<item:minecraft:brick>, <item:minecraft:iron_shovel>, <item:minecraft:brick>],
 	[<item:minecraft:iron_ingot>, <item:minecraft:water_bucket>, <item:minecraft:iron_ingot>],
 	[<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]
 ]);
-craftingTable.removeByName("farmersdelight:melon_popsicle");
 craftingTable.addShaped("farmersdelight_delight/melon_popsicle", <item:farmersdelight:melon_popsicle>, [
 	[<item:minecraft:air>, <tag:items:forge:melons>, <tag:items:forge:melons>],
 	[<item:simplytea:ice_cube>, <tag:items:forge:melons>, <tag:items:forge:melons>],
@@ -49,13 +40,11 @@ craftingTable.addShaped("farmersdelight_delight/tconstruct/delight/ichor_salad",
 	[<item:farmersdelight:cooked_mutton_chops>, <item:minecraft:bowl>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
-craftingTable.removeByName("tmted:wheat_dough_from_egg");
 craftingTable.addShaped("farmersdelight_delight/tmted/wheat_dough_from_egg", <item:farmersdelight:wheat_dough>, [
 	[<tag:items:forge:eggs>, <tag:items:forge:flour>, <item:minecraft:air>],
 	[<tag:items:forge:flour>, <tag:items:forge:flour>, <item:minecraft:air>],
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
-craftingTable.removeByName("tmted:wheat_dough_from_waterbucket");
 craftingTable.addShaped("farmersdelight_delight/tmted/wheat_dough_from_water_bucket", <item:farmersdelight:wheat_dough>, [
 	[<item:minecraft:water_bucket>, <tag:items:forge:flour>, <item:minecraft:air>],
 	[<tag:items:forge:flour>, <tag:items:forge:flour>, <item:minecraft:air>],
@@ -63,7 +52,6 @@ craftingTable.addShaped("farmersdelight_delight/tmted/wheat_dough_from_water_buc
 ]);
 
 // Cooking Pot
-<recipetype:farmersdelight:cooking>.removeByName("corn_delight:cooking/cornbread_stuffing");
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/corn_delight/cornbread_stuffing", <item:corn_delight:cornbread_stuffing>, [<item:corn_delight:cornbread>, <tag:items:forge:vegetables>, <item:minecraft:baked_potato>, <tag:items:forge:berries>], rbMisc, <item:minecraft:air>, 0.5, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/apricot_jam", <item:croptopia:apricot_jam>, [<tag:items:forge:apricots>, <item:minecraft:sugar>], rbMisc, <item:vinery:cherry_jar>, 1, 200);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/croptopia/beetroot_salad", <item:croptopia:beetroot_salad>, [<item:minecraft:beetroot>, <item:minecraft:beetroot>, <item:minecraft:beetroot>, <tag:items:forge:lemons>, <tag:items:forge:cheeses>,  <tag:items:forge:lettuce>], rbMeals, <item:minecraft:bowl>, 1, 200);
@@ -119,11 +107,8 @@ craftingTable.addShaped("farmersdelight_delight/tmted/wheat_dough_from_water_buc
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/thermal/stuffed_pumpkin", <item:thermal:stuffed_pumpkin>, [<tag:items:forge:foods/meat/raw>, <tag:items:forge:crops/bell_pepper>, <tag:items:forge:crops/rice>, <tag:items:forge:crops/onion>, <tag:items:forge:tomato_sauces>], rbMeals, <item:minecraft:carved_pumpkin>, 2, 400);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/thermal/tomato_sauce", <item:thermal:tomato_sauce>, [<tag:items:forge:tomatoes>, <tag:items:forge:tomatoes>, <tag:items:forge:tomatoes>, <tag:items:forge:tomatoes>, <tag:items:forge:tomatoes>, <tag:items:forge:tomatoes>], rbMeals, <item:thermal:jar>, 2, 400);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/thermal/xp_stew", <item:thermal:xp_stew>, [<tag:items:forge:crops/barley>, <tag:items:forge:crops/barley>, <tag:items:forge:crops/eggplant>, <tag:items:forge:crops/spinach>, <tag:items:forge:crops/spinach>, <item:minecraft:experience_bottle>], rbMeals, <item:minecraft:bowl>, 3, 400);
-<recipetype:farmersdelight:cooking>.removeByName("twilightdelight:cooking/fried_insect");
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/twilightdelight/fried_insect", <item:twilightdelight:fried_insect>, [<item:twilightdelight:raw_insect>, <tag:items:forge:onions>, <item:minecraft:carrot>], rbMeals, <item:minecraft:bowl>, 0.35, 200);
-<recipetype:farmersdelight:cooking>.removeByName("twilightdelight:cooking/glacier_ice_tea");
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/twilightdelight/glacier_ice_tea", <item:twilightdelight:glacier_ice_tea>, [<item:twilightforest:ice_bomb>, <item:simplytea:ice_cube>, <item:twilightforest:arctic_fur>, <item:minecraft:sugar>], rbDrinks, <item:minecraft:glass_bottle>, 0.35, 200);
-<recipetype:farmersdelight:cooking>.removeByName("twilightdelight:cooking/grilled_ghast");
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/twilightdelight/grilled_ghast", <item:twilightdelight:grilled_ghast>, [<tag:items:forge:tomatoes>, <item:minecraft:beetroot>, <item:twilightforest:fiery_tears>, <item:twilightforest:experiment_115>, <item:twilightforest:experiment_115>], rbMeals, <item:minecraft:bowl>, 0.35, 400);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/vinery/applesauce", <item:vinery:applesauce>, [<item:minecraft:apple>, <item:minecraft:sugar> * 2], rbMisc, <item:minecraft:bowl>, 1, 400);
 <recipetype:farmersdelight:cooking>.addRecipe("farmersdelight_cooking_pot/vinery/apple_jam", <item:vinery:apple_jam>, [<item:minecraft:apple>, <item:minecraft:sugar> * 3], rbMisc, <item:vinery:cherry_jar>, 1, 400);
@@ -253,47 +238,47 @@ for addingSeedCuttingFarmersDelightName, addingSeedCuttingFarmersDelightOut in a
 }
 
 var addingLogCuttingFarmersDelight = {
-	"tconstruct:bloodshroom_log" : "tconstruct:stripped_bloodshroom_log",
-	"tconstruct:bloodshroom_wood" : "tconstruct:stripped_bloodshroom_wood",
-	"ecologics:azalea_log" : "ecologics:stripped_azalea_log",
-	"ecologics:azalea_wood" : "ecologics:stripped_azalea_wood",
-	"enlightened_end:cerulean_log" : "enlightened_end:stripped_cerulean_stalk_block",
-	"twilightforest:canopy_log" : "twilightforest:stripped_canopy_log",
-	"twilightforest:canopy_wood" : "twilightforest:stripped_canopy_wood",
-	"croptopia:cinnamon_log" : "croptopia:stripped_cinnamon_log",
-	"croptopia:cinnamon_wood" : "croptopia:stripped_cinnamon_wood",
-	"ecologics:coconut_log" : "ecologics:stripped_coconut_log",
-	"ecologics:coconut_wood" : "ecologics:stripped_coconut_wood",
 	"botania:dreamwood_log" : "botania:stripped_dreamwood_log",
 	"botania:dreamwood" : "botania:stripped_dreamwood",
 	"botania:glimmering_dreamwood_log" : "botania:glimmering_stripped_dreamwood_log",
 	"botania:glimmering_dreamwood" : "botania:glimmering_stripped_dreamwood",
-	"twilightforest:dark_log" : "twilightforest:stripped_dark_log",
-	"twilightforest:dark_wood" : "twilightforest:stripped_dark_wood",
-	"ecologics:flowering_azalea_log" : "ecologics:stripped_azalea_log",
-	"ecologics:flowering_azalea_wood" : "ecologics:stripped_azalea_wood",
-	"tconstruct:greenheart_log" : "tconstruct:stripped_greenheart_log",
-	"tconstruct:greenheart_wood" : "tconstruct:stripped_greenheart_wood",
-	"enlightened_end:indigo_stem" : "enlightened_end:stripped_indigo_stem",
-	"enlightened_end:indigo_hyphae" : "enlightened_end:stripped_indigo_hyphae",
-	"botania:livingwood_log" : "botania:stripped_livingwood_log",
-	"botania:livingwood" : "botania:stripped_livingwood",
 	"botania:glimmering_livingwood_log" : "botania:glimmering_stripped_livingwood_log",
 	"botania:glimmering_livingwood" : "botania:glimmering_stripped_livingwood",
+	"botania:livingwood_log" : "botania:stripped_livingwood_log",
+	"botania:livingwood" : "botania:stripped_livingwood",
+	"ecologics:azalea_log" : "ecologics:stripped_azalea_log",
+	"ecologics:azalea_wood" : "ecologics:stripped_azalea_wood",
+	"croptopia:cinnamon_log" : "croptopia:stripped_cinnamon_log",
+	"croptopia:cinnamon_wood" : "croptopia:stripped_cinnamon_wood",
+	"ecologics:coconut_log" : "ecologics:stripped_coconut_log",
+	"ecologics:coconut_wood" : "ecologics:stripped_coconut_wood",
+	"ecologics:flowering_azalea_log" : "ecologics:stripped_azalea_log",
+	"ecologics:flowering_azalea_wood" : "ecologics:stripped_azalea_wood",
+	"ecologics:walnut_log" : "ecologics:stripped_walnut_log",
+	"ecologics:walnut_wood" : "ecologics:stripped_walnut_wood",
+	"enlightened_end:cerulean_log" : "enlightened_end:stripped_cerulean_stalk_block",	
+	"enlightened_end:indigo_stem" : "enlightened_end:stripped_indigo_stem",
+	"enlightened_end:indigo_hyphae" : "enlightened_end:stripped_indigo_hyphae",	
 	"infernalexp:luminous_stem" : "infernalexp:stripped_luminous_stem",
 	"infernalexp:luminous_hyphae" : "infernalexp:stripped_luminous_hyphae",
+	"integrateddynamics:menril_log" : "integrateddynamics:menril_log_stripped",
+	"integrateddynamics:menril_wood" : "integrateddynamics:menril_wood_stripped",
+	"tconstruct:bloodshroom_log" : "tconstruct:stripped_bloodshroom_log",
+	"tconstruct:bloodshroom_wood" : "tconstruct:stripped_bloodshroom_wood",
+	"tconstruct:greenheart_log" : "tconstruct:stripped_greenheart_log",
+	"tconstruct:greenheart_wood" : "tconstruct:stripped_greenheart_wood",
+	"tconstruct:skyroot_log" : "tconstruct:stripped_skyroot_log",
+	"tconstruct:skyroot_wood" : "tconstruct:stripped_skyroot_wood",
+	"twilightforest:canopy_log" : "twilightforest:stripped_canopy_log",
+	"twilightforest:canopy_wood" : "twilightforest:stripped_canopy_wood",
+	"twilightforest:dark_log" : "twilightforest:stripped_dark_log",
+	"twilightforest:dark_wood" : "twilightforest:stripped_dark_wood",
 	"twilightforest:mangrove_log" : "twilightforest:stripped_mangrove_log",
 	"twilightforest:mangrove_wood" : "twilightforest:stripped_mangrove_wood",
 	"twilightforest:mining_log" : "twilightforest:stripped_mining_log",
 	"twilightforest:mining_wood" : "twilightforest:stripped_mining_wood",
-	"integrateddynamics:menril_log" : "integrateddynamics:menril_log_stripped",
-	"integrateddynamics:menril_wood" : "integrateddynamics:menril_wood_stripped",
 	"twilightforest:sorting_log" : "twilightforest:stripped_sorting_log",
 	"twilightforest:sorting_wood" : "twilightforest:stripped_sorting_wood",
-	"tconstruct:skyroot_log" : "tconstruct:stripped_skyroot_log",
-	"tconstruct:skyroot_wood" : "tconstruct:stripped_skyroot_wood",
-	"ecologics:walnut_log" : "ecologics:stripped_walnut_log",
-	"ecologics:walnut_wood" : "ecologics:stripped_walnut_wood",
 	"twilightforest:time_log" : "twilightforest:stripped_time_log",
 	"twilightforest:time_wood" : "twilightforest:stripped_time_wood",
 	"twilightforest:transformation_log" : "twilightforest:stripped_transformation_log",
@@ -465,21 +450,13 @@ for addingCuttingFarmersDelightName, addingCuttingFarmersDelightId in addingCutt
 
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/alexsmobs/fish_bones", <item:alexsmobs:fish_bones>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculture/fish_bones", <item:aquaculture:fish_bones>, [<item:minecraft:bone_meal> * 4], <tag:items:farmersdelight:tools/knives>);
-<recipetype:farmersdelight:cutting>.removeByName("aquaculturedelight:cutting/knife/fillet_four");
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculturedelight/fillet_four", <tag:items:aquaculturedelight:fillet_four>, [<item:aquaculture:fish_fillet_raw> * 4, <item:minecraft:bone_meal>, <item:aquaculture:fish_bones> % 5], <tag:items:forge:fillet_knife>);
-<recipetype:farmersdelight:cutting>.removeByName("aquaculturedelight:cutting/knife/fillet_fourteen");
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculturedelight/fillet_fourteen", <tag:items:aquaculturedelight:fillet_fourteen>, [<item:aquaculture:fish_fillet_raw> * 14, <item:minecraft:bone_meal>, <item:aquaculture:fish_bones> % 5], <tag:items:forge:fillet_knife>);
-<recipetype:farmersdelight:cutting>.removeByName("aquaculturedelight:cutting/knife/fillet_one");
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculturedelight/fillet_one", <tag:items:aquaculturedelight:fillet_one>, [<item:aquaculture:fish_fillet_raw>, <item:minecraft:bone_meal>, <item:aquaculture:fish_bones> % 5], <tag:items:forge:fillet_knife>);
-<recipetype:farmersdelight:cutting>.removeByName("aquaculturedelight:cutting/knife/fillet_six");
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculturedelight/fillet_six", <tag:items:aquaculturedelight:fillet_six>, [<item:aquaculture:fish_fillet_raw> * 6, <item:minecraft:bone_meal>, <item:aquaculture:fish_bones> % 5], <tag:items:forge:fillet_knife>);
-<recipetype:farmersdelight:cutting>.removeByName("aquaculturedelight:cutting/knife/fillet_ten");
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculturedelight/fillet_ten", <tag:items:aquaculturedelight:fillet_ten>, [<item:aquaculture:fish_fillet_raw> * 10, <item:minecraft:bone_meal>, <item:aquaculture:fish_bones> % 5], <tag:items:forge:fillet_knife>);
-<recipetype:farmersdelight:cutting>.removeByName("aquaculturedelight:cutting/knife/fillet_three");
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculturedelight/fillet_three", <tag:items:aquaculturedelight:fillet_three>, [<item:aquaculture:fish_fillet_raw> * 3, <item:minecraft:bone_meal>, <item:aquaculture:fish_bones> % 5], <tag:items:forge:fillet_knife>);
-<recipetype:farmersdelight:cutting>.removeByName("aquaculturedelight:cutting/knife/fillet_twelve");
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculturedelight/fillet_twelve", <tag:items:aquaculturedelight:fillet_twelve>, [<item:aquaculture:fish_fillet_raw> * 12, <item:minecraft:bone_meal>, <item:aquaculture:fish_bones> % 5], <tag:items:forge:fillet_knife>);
-<recipetype:farmersdelight:cutting>.removeByName("aquaculturedelight:cutting/knife/fillet_two");
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculturedelight/fillet_two", <tag:items:aquaculturedelight:fillet_two>, [<item:aquaculture:fish_fillet_raw> * 2, <item:minecraft:bone_meal>, <item:aquaculture:fish_bones> % 5], <tag:items:forge:fillet_knife>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculturedelight/neptunium_fillet_one", <tag:items:aquaculturedelight:fillet_one>, [<item:aquaculture:fish_fillet_raw> * 2, <item:minecraft:bone_meal>, <item:aquaculture:fish_bones> % 5], <tag:items:aquaculturedelight:neptunium_knives>);
 <recipetype:farmersdelight:cutting>.addRecipe("farmersdelight_cutting/aquaculturedelight/neptunium_fillet_three", <tag:items:aquaculturedelight:fillet_three>, [<item:aquaculture:fish_fillet_raw> * 4, <item:minecraft:bone_meal>, <item:aquaculture:fish_bones> % 5], <tag:items:aquaculturedelight:neptunium_knives>);

@@ -2,10 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Add Vinery Crops.
- * v0.2 : Modify Cactus Recipe.
  */
 
 Globals.startScript("recipe_botany_pots");

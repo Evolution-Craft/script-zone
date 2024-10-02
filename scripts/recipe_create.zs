@@ -2,10 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Adding Missing Recipe.
- * v0.2 : Adding Plate System.
  */
  
 Globals.startScript("recipe_create");
@@ -171,7 +167,6 @@ for mixing_glass_dye_add_item in Constant.packColours {
 
 // Sequenced Assembly
 if (packModeSetting.packModeSettingPlates() == true) {
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/aluminum_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/aluminum_sheet")
 		.transitionTo(<item:immersiveengineering:ingot_aluminum>)
 		.require(<item:immersiveengineering:ingot_aluminum>)
@@ -180,10 +175,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersiveengineering:ingot_aluminum>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersiveengineering:ingot_aluminum>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersiveengineering:ingot_aluminum>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("create:pressing/brass_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/brass_sheet")
 		.transitionTo(<item:create:brass_ingot>)
 		.require(<item:create:brass_ingot>)
@@ -192,7 +185,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:brass_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:brass_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:brass_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/bronze_plate")
@@ -203,7 +195,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:bronze_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:bronze_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:bronze_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/cobalt_plate")
@@ -214,10 +205,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:cobalt_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:cobalt_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:cobalt_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/constantan_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/constantan_plate")
 		.transitionTo(<item:thermal:constantan_ingot>)
 		.require(<item:thermal:constantan_ingot>)
@@ -226,10 +215,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:constantan_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:constantan_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:constantan_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("create:pressing/copper_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/copper_plate")
 		.transitionTo(<item:minecraft:copper_ingot>)
 		.require(<item:minecraft:copper_ingot>)
@@ -238,7 +225,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:copper_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:copper_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:copper_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/desh_plate")
@@ -249,7 +235,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:beyond_earth:desh_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:beyond_earth:desh_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:beyond_earth:desh_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/diamond_plate")
@@ -260,7 +245,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:diamond>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:diamond>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:diamond>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/dragonsteel_plate")
@@ -271,10 +255,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:dragonsteel_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:dragonsteel_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:dragonsteel_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/electrum_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/electrum_plate")
 		.transitionTo(<item:thermal:electrum_ingot>)
 		.require(<item:thermal:electrum_ingot>)
@@ -283,7 +265,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:electrum_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:electrum_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:electrum_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/emerald_plate")
@@ -294,7 +275,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:emerald>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:emerald>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:emerald>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/enderium_plate")
@@ -305,10 +285,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:enderium_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:enderium_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:enderium_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("create:pressing/gold_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/gold_plate")
 		.transitionTo(<item:minecraft:gold_ingot>)
 		.require(<item:minecraft:gold_ingot>)
@@ -317,7 +295,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:gold_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:gold_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:gold_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/hepatizon_plate")
@@ -328,7 +305,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:hepatizon_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:hepatizon_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:hepatizon_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/invar_plate")
@@ -339,10 +315,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:invar_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:invar_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:invar_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("create:pressing/iron_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/iron_plate")
 		.transitionTo(<item:minecraft:iron_ingot>)
 		.require(<item:minecraft:iron_ingot>)
@@ -351,7 +325,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:iron_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:iron_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:iron_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/lapis_lazuli_plate")
@@ -362,10 +335,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:lapis_lazuli>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:lapis_lazuli>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:lapis_lazuli>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/lead_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/lead_plate")
 		.transitionTo(<item:thermal:lead_ingot>)
 		.require(<item:thermal:lead_ingot>)
@@ -374,7 +345,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:lead_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:lead_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:lead_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/lumium_plate")
@@ -385,7 +355,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:lumium_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:lumium_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:lumium_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/manyullyn_plate")
@@ -396,7 +365,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:manyullyn_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:manyullyn_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:manyullyn_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/netherite_plate")
@@ -407,10 +375,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:netherite_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:netherite_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:netherite_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/nickel_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/nickel_plate")
 		.transitionTo(<item:thermal:nickel_ingot>)
 		.require(<item:thermal:nickel_ingot>)
@@ -419,7 +385,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:nickel_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:nickel_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:nickel_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/pig_iron_plate")
@@ -430,7 +395,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:pig_iron_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:pig_iron_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:pig_iron_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/queens_slime_plate")
@@ -441,7 +405,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:queens_slime_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:queens_slime_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:queens_slime_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/quartz_plate")
@@ -452,7 +415,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:quartz>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:quartz>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:quartz>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/rose_gold_plate")
@@ -463,7 +425,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:rose_gold_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:rose_gold_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:rose_gold_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/shellite_plate")
@@ -474,10 +435,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:shellite_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:shellite_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:shellite_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/silver_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/silver_plate")
 		.transitionTo(<item:thermal:silver_ingot>)
 		.require(<item:thermal:silver_ingot>)
@@ -486,7 +445,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:silver_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:silver_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:silver_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/signalum_plate")
@@ -497,7 +455,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:signalum_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:signalum_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:signalum_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/slimesteel_plate")
@@ -508,7 +465,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:slimesteel_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:slimesteel_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:slimesteel_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/soul_infused_plate")
@@ -519,10 +475,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:soul_infused_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:soul_infused_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:soul_infused_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/steel_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/steel_plate")
 		.transitionTo(<item:thermal:steel_ingot>)
 		.require(<item:thermal:steel_ingot>)
@@ -531,7 +485,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:steel_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:steel_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:steel_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/twinite_plate")
@@ -542,7 +495,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:twinite_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:twinite_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal_extra:twinite_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/tin_plate")
@@ -553,10 +505,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:tin_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:tin_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:thermal:tin_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/uranium_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/uranium_plate")
 		.transitionTo(<item:immersiveengineering:ingot_uranium>)
 		.require(<item:immersiveengineering:ingot_uranium>)
@@ -565,10 +515,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersiveengineering:ingot_uranium>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersiveengineering:ingot_uranium>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersiveengineering:ingot_uranium>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/zinc_ingot");
 	<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("pack_expert_crafting/zinc_sheet")
 		.transitionTo(<item:create:zinc_ingot>)
 		.require(<item:create:zinc_ingot>)
@@ -577,7 +525,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:zinc_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 		.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:zinc_ingot>))
-		//.addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:zinc_ingot>))
 		.addStep<mods.createtweaker.PressingRecipe>()
 	);
 }

@@ -2,14 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Fix Salt.
- * v0.2 : Add Missing Precision Sawmill Recipe.
- * v0.3 : Add Torch.
- * v0.4 : Adding Towerwood and Thorn.
- * v0.5 : Bio Fuel Update.
- * v0.6 : Adding HOP Graphite dust.
  */
 
 Globals.startScript("recipe_mekanism");
@@ -49,7 +41,6 @@ val mekanism_tripwire_hook_chest_chance = 0.75;
 val mekanism_tripwire_hook_chest_return = 1;
 
 // Crystallizing
-<recipetype:mekanism:crystallizing>.removeByName("mekanism:crystallizing/salt");
 <recipetype:mekanism:crystallizing>.addRecipe("mekanism_crystallizing/salt", GasStackIngredient.from(<gas:mekanism:brine> * 15), <item:salt:salt>);
 
 // Crusher
@@ -387,7 +378,6 @@ for addingFlowersCrushingMekanismName, addingFlowersCrushingMekanismMod in addin
 	<recipetype:mekanism:crushing>.addRecipe("mekanism_cruching/biofuel/" + addingFlowersCrushingMekanismName, ItemStackIngredient.from(<item:${addingFlowersCrushingMekanismMod}>), <item:mekanism:bio_fuel> * mekanism_bio_fuel_flowers_quantity);
 }
 
-<recipetype:mekanism:crushing>.removeByName("mekanism:processing/quartz/to_dust");
 <recipetype:mekanism:crushing>.addRecipe("mekanism_crushing/processing/quartz/to_dust", ItemStackIngredient.from(<tag:items:forge:gems/quartz>), <item:thermal:quartz_dust>);
 
 // Enrichment Chamber
@@ -395,7 +385,6 @@ for addingFlowersCrushingMekanismName, addingFlowersCrushingMekanismMod in addin
 <recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/hop_graphite_dust_from_dust", ItemStackIngredient.from(<item:immersiveengineering:dust_coke> * 4), <item:immersiveengineering:dust_hop_graphite>);
 <recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/hop_graphite_dust_from_petcoke", ItemStackIngredient.from(<item:immersivepetroleum:petcoke_dust> * 4), <item:immersiveengineering:dust_hop_graphite>);
 <recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/polished_quartz_tine_from_quartz", ItemStackIngredient.from(<item:minecraft:quartz>), <item:contenttweaker:create/polished_quartz_tine>);
-<recipetype:mekanism:enriching>.removeByName("mekanism:enriching/salt");
 <recipetype:mekanism:enriching>.addRecipe("mekanism_enriching/salt", ItemStackIngredient.from(<item:salt:salt_block>), <item:salt:salt> * 9);
 
 // Precision Sawmill
@@ -494,7 +483,6 @@ for addingSawingMekanismName, addingSawingMekanismMod in addingSawingMekanism {
 	}
 }
 
-<recipetype:mekanism:sawing>.removeByName("mekanism:sawing/bookshelf");
 var addingSawingBookshelfMekanism = {
 	"minecraft:acacia" : "quark:acacia_bookshelf",
 	"quark:azalea" : "quark:azalea_bookshelf",
