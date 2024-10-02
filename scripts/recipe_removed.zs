@@ -678,12 +678,29 @@ for remove_recipe_by_name_blasting_furnace in removeRecipeByNameBlastingFurnace 
 
 // Campfire
 var removeRecipeByNameCampfire = [
+	// Alexs Delight
+	"alexsdelight:smelting/bison_campfire",
+	"alexsdelight:smelting/bison_patty_campfire",
+	"alexsdelight:smelting/bunfungus_campfire",
+	"alexsdelight:smelting/bunfungus_drumstick_campfire",
+	"alexsdelight:smelting/catfish_slice_campfire",
+	"alexsdelight:smelting/centipede_leg_campfire",
+	"alexsdelight:smelting/kangaroo_shank_campfire",
+	"alexsdelight:smelting/singular_cooked_moose_rib_campfire",
 	// Apotheosis
 	"apotheosis:torch",
+	// Aquaculture
+	"aquaculture:cooked_frog_legs_from_campire",
 	// Croptopia
+	"croptopia:campfire_baked_beans",
+	"croptopia:campfire_baked_sweet_potato",
 	"croptopia:campfire_baked_yam",
 	"croptopia:campfire_caramel",
+	"croptopia:campfire_molasses",
+	"croptopia:campfire_popcorn",
 	"croptopia:campfire_raisins",
+	"croptopia:campfire_toast",
+	"croptopia:roasted_nuts_from_campfire",
 	// Twilight Delight
 	"twilightdelight:cooked_insect_campfire",
 	"twilightdelight:cooked_meef_slice_campfire",

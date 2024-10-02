@@ -109,9 +109,24 @@ craftingTable.addShaped("pack_expert_crafting/minecraft/piston", <item:minecraft
 
 // Campfire
 var campfireAddItem = {
-	"croptopia:baked_yam" : <item:croptopia:yam>,
+	"alexsdelight:cooked_bison" : <item:alexsdelight:raw_bison>,
+	"alexsdelight:bison_patty" : <item:alexsdelight:bison_mince>,
+	"alexsdelight:cooked_bunfungus" : <item:alexsdelight:raw_bunfungus>,
+	"alexsdelight:cooked_bunfungus_drumstick" : <item:alexsdelight:raw_bunfungus_drumstick>,
+	"alexsdelight:cooked_catfish_slice" : <item:alexsdelight:raw_catfish_slice>,
+	"alexsdelight:cooked_centipede_leg" : <item:alexsmobs:centipede_leg>,
+	"alexsdelight:cooked_kangaroo_shank" : <item:alexsdelight:kangaroo_shank>,
+	"alexsdelight:cooked_loose_moose_rib" : <item:alexsdelight:loose_moose_rib>,
+	"aquaculture:frog_legs_cooked" : <item:aquaculture:frog_legs_raw>,
+	"croptopia:baked_beans" : <tag:items:forge:blackbeans>,
+	"croptopia:baked_sweet_potato" : <tag:items:forge:sweetpotatos>,
+	"croptopia:baked_yam" : <tag:items:forge:yams>,
 	"croptopia:caramel" : <item:minecraft:sugar>,
-	"croptopia:raisins" : <tag:items:forge:crops/grape>,
+	"croptopia:molasses" : <item:minecraft:sugar_cane>,
+	"croptopia:popcorn" : <tag:items:forge:corn>,
+	"croptopia:raisins" : <tag:items:forge:grapes>,
+	"croptopia:roasted_nuts" : <tag:items:forge:nuts>,
+	"croptopia:toast" : <tag:items:forge:bread>,
 	"farmersdelight:cooked_bacon" : <item:tconstruct:bacon>,
 	"twilightdelight:cooked_insect" : <item:twilightdelight:raw_insect>,
 	"twilightdelight:cooked_meef_slice" : <item:twilightdelight:raw_meef_slice>,
@@ -119,7 +134,11 @@ var campfireAddItem = {
 	"vinery:toast" : <tag:items:minecraft:dough>
 };
 for campfireAddItemOut, campfireAddItemIn in campfireAddItem {
-	<recipetype:minecraft:campfire_cooking>.addRecipe("campfire/" + <item:${campfireAddItemOut}>.registryName.path, <item:${campfireAddItemOut}>, campfireAddItemIn, 1.0, 600);
+	if (campfireAddItemOut == "vinery:toast") {
+		<recipetype:minecraft:campfire_cooking>.addRecipe("campfire/vinery/" + <item:${campfireAddItemOut}>.registryName.path, <item:${campfireAddItemOut}>, campfireAddItemIn, 1.0, 600);
+	} else {
+		<recipetype:minecraft:campfire_cooking>.addRecipe("campfire/" + <item:${campfireAddItemOut}>.registryName.path, <item:${campfireAddItemOut}>, campfireAddItemIn, 1.0, 600);
+	}
 }
 
 // Composter
