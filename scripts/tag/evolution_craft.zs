@@ -149,7 +149,7 @@ for tag_tag_evolution_craft_coral_red in addingEvolutionCraftCoralRed {
 var addingEvolutionCraftCoralYellow = [
 	"minecraft:horn_coral_block",
 	"minecraft:horn_coral",
-	"minecraft:horn_coral_fan",
+	"minecraft:horn_coral_fan"
 ];
 for tag_tag_evolution_craft_coral_yellow in addingEvolutionCraftCoralYellow {
 	<tag:items:evolution_craft:coral>.add(<item:${tag_tag_evolution_craft_coral_yellow}>);

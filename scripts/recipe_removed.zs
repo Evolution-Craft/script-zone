@@ -25,8 +25,6 @@ Globals.priorityScript("1000");
 
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.item.ItemStack;
-import crafttweaker.api.recipe.FurnaceRecipeManager;
-import crafttweaker.api.recipe.SmithingRecipeManager;
 import crafttweaker.api.recipe.Replacer;
 
 var removeRecipeByName = [
@@ -629,10 +627,18 @@ for remove_recipe_by_modid in removeRecipeByModid {
 
 // Blasting Furnace
 var removeRecipeByNameBlastingFurnace = [
+	// Aquaculture
+	"aquaculture:neptunium_ingot_from_blasting",
 	// Beyond Earth
 	"beyond_earth:steel_ingot_blasting",
 	// Croptopia
 	"croptopia:blasting_salt",
+	// Exline Copper Equipment
+	"exlinecopperequipment:copper_boots_blast",
+	"exlinecopperequipment:copper_chest_blast",
+	"exlinecopperequipment:copper_helm_blast",
+	"exlinecopperequipment:copper_horse_armor_blast",
+	"exlinecopperequipment:copper_leggs_blast",
 	// Integrated Dynamics
 	"integrateddynamics:blasting/menril_log_coal",
 	"integrateddynamics:blasting/menril_log_filled_coal",
@@ -643,16 +649,21 @@ var removeRecipeByNameBlastingFurnace = [
 	"libraryferret:blasting/iron_coins_jtl",
 	"libraryferret:blasting/netherite_coins_jtl",
 	// Undergarden
+	"undergarden:blast_froststeel_item",
 	"undergarden:blast_utherium_item"
 ];
 for remove_recipe_by_name_blasting_furnace in removeRecipeByNameBlastingFurnace {
-	blastFurnace.removeByName(remove_recipe_by_name_blasting_furnace);
+	<recipetype:minecraft:blasting>.removeByName(remove_recipe_by_name_blasting_furnace);
 }
 
 // Campfire
 var removeRecipeByNameCampfire = [
 	// Apotheosis
 	"apotheosis:torch",
+	// Croptopia
+	"croptopia:campfire_baked_yam",
+	"croptopia:campfire_caramel",
+	"croptopia:campfire_raisins",
 	// Twilight Delight
 	"twilightdelight:cooked_insect_campfire",
 	"twilightdelight:cooked_meef_slice_campfire",
@@ -667,7 +678,14 @@ var removeRecipeByNameFurnace = [
 	// Cyclic
 	"cyclic:smelting/fireball",
 	// Croptopia
+	"croptopia:cooked_tuna_from_tuna",
 	"croptopia:salt_from_water_bottle",
+	// Exline Copper Equipment
+	"exlinecopperequipment:copper_boots_smelt",
+	"exlinecopperequipment:copper_chest_smelt",
+	"exlinecopperequipment:copper_helm_smelt",
+	"exlinecopperequipment:copper_horse_armor_smelt",
+	"exlinecopperequipment:copper_leggs_smelt",
 	// Integrated Dynamics
 	"integrateddynamics:smelting/menril_log_coal",
 	"integrateddynamics:smelting/menril_log_filled_coal",
@@ -686,10 +704,11 @@ var removeRecipeByNameFurnace = [
 	"thermal:smelting/gunpowder_from_spores_smelting",
 	"thermal:smelting/redstone_from_spores_smelting",
 	// Undergarden
+	"undergarden:smelt_froststeel_item",
 	"undergarden:smelt_utherium_item"
 ];
 for remove_recipe_by_name_furnace in removeRecipeByNameFurnace {
-	furnace.removeByName(remove_recipe_by_name_furnace);
+	<recipetype:minecraft:smelting>.removeByName(remove_recipe_by_name_furnace);
 }
 
 // Smithing Table
@@ -703,10 +722,11 @@ var removeRecipeByNameSmithingTable = [
 	"leathered_boots:smithing/leathered_netherite_boots_from_diamond"
 ];
 for remove_recipe_by_name_smithing_table in removeRecipeByNameSmithingTable {
-	smithing.removeByName(remove_recipe_by_name_smithing_table);
+	<recipetype:minecraft:smithing>.removeByName(remove_recipe_by_name_smithing_table);
 }
 
 // Smoker
+<recipetype:minecraft:smoking>.removeByName("croptopia:cooked_tuna_from_smoking_tuna");
 <recipetype:minecraft:smoking>.removeByName("croptopia:salt_from_smoking_water_bottle");
 
 // Stone Cutter
@@ -936,7 +956,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		"beyond_earth_giselle_addon:compat/thermal/press/press_desh_ingot_to_plate",
 		"thermal:compat/immersiveengineering/press_ie_aluminum_ingot_to_plate",
 		"thermal:compat/immersiveengineering/press_ie_steel_ingot_to_plate",
-		"thermal:compat/immersiveengineering/press_ie_uranium_ingot_to_plate"
+		"thermal:compat/immersiveengineering/press_ie_uranium_ingot_to_plate",
 		"thermal:machines/press/press_bronze_ingot_to_plate",
 		"thermal:machines/press/press_constantan_ingot_to_plate",
 		"thermal:machines/press/press_copper_ingot_to_plate",
@@ -956,8 +976,8 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		"thermal_extra:machine/press/dragonsteel_plate",
 		"thermal_extra:machine/press/shellite_plate",
 		"thermal_extra:machine/press/soul_infused_plate",
-		"thermal_extra:machine/press/twinite_plate",
-	]
+		"thermal_extra:machine/press/twinite_plate"
+	];
 	for remove_multiservo_press_plate_recipe_by_name in removeMultiservoPressPlateRecipeByName {
 		<recipetype:thermal:press>.removeByName(remove_multiservo_press_plate_recipe_by_name);
 	}

@@ -203,7 +203,7 @@
 	#Defines the level max of the perk Witch Doctor [1..5|default:5]
 	#Range: 1 ~ 5
 	level_max_witch_doctor = 5
-	#The cooldown in minutes to reset the perks with the ankh of Pray [20..1440|default:120]
+	#The cooldown in minutes to reset the perks with the ankh of Prayer [20..1440|default:120]
 	#Range: 20 ~ 1440
 	cooldown_reset_perk = 120
 

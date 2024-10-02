@@ -81,6 +81,8 @@ var materialBurnTime = {
 	"cyclic:crate_mini" : 150,
 	"cyclic:magma_bucket" : 40000,
 	"cyclic:shield_wood" : 300,
+	// Corn Delight
+	"corn_delight:corn_crate" : 300,
 	// Decoration Delight
 	"decoration_delight:acacia_counter" : 300,
 	"decoration_delight:acacia_counter_bend" : 300,
@@ -129,6 +131,10 @@ var materialBurnTime = {
 	"ecologics:flowering_azalea_fence_gate" : 300,
 	"ecologics:walnut_fence" : 300,
 	"ecologics:walnut_fence_gate" : 300,
+	// Egg Crate
+	"eggcrate:cratedmushroombrown" : 300,
+	"eggcrate:cratedmushroomsred" : 300,
+	"eggcrate:eggcrate" : 300,
 	// Electrodynamics
 	"electrodynamics:coalcoke" : 3200,
 	// Enlightend
@@ -147,6 +153,20 @@ var materialBurnTime = {
 	"enlightened_end:indigo_trapdoor" : 0,
 	"enlightened_end:stripped_indigo_hyphae" : 0,
 	"enlightened_end:stripped_indigo_stem" : 0,
+	// Ends Delight
+	"ends_delight:chorus_fruit_crate" : 300,
+	// Enders Delight
+	"endersdelight:chorus_crate" : 300,
+	// Farmers Delight
+	"farmersdelight:beetroot_crate" : 300,
+	"farmersdelight:cabbage_crate" : 300,
+	"farmersdelight:carrot_crate" : 300,
+	"farmersdelight:onion_crate" : 300,
+	"farmersdelight:potato_crate" : 300,
+	"farmersdelight:tomato_crate" : 300,
+	// Galosphere Delight
+	"galosphere_delight:golden_lichen_crate" : 300,
+	"galosphere_delight:lichen_crate" : 300,
 	// Immersive Engineering
 	"immersiveengineering:biodiesel_bucket" : 9600,
 	"immersiveengineering:crate" : 2400,
@@ -472,6 +492,8 @@ var materialBurnTime = {
 	"mcwwindows:warped_stem_four_window" : 0,
 	// Mekanism
 	"mekanism:sawdust" : 100,
+	// Miners Delight
+	"miners_delight:cave_carrot_crate" : 300,
 	// MmmMmmMmmMmm
 	"dummmmmmy:target_dummy_placer" : 400,
 	// Myrtrees

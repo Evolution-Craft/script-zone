@@ -19,7 +19,6 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
-import crafttweaker.api.recipe.SmithingRecipeManager;
 import crafttweaker.api.tag.manager.ITagManager;
 
 var shapedArmorVarFunction as function(usualOut as IItemStack, inputs as IItemStack[][]) as IItemStack = (usualOut as IItemStack, inputs as IItemStack[][]) => {
@@ -114,28 +113,28 @@ if (packModeSetting.packModeSettingArmors() == true) {
 		});
 	}
 
-	smithing.removeByName("galosphere:sterling_helmet_smithing");
+	<recipetype:minecraft:smithing>.removeByName("galosphere:sterling_helmet_smithing");
 	craftingTable.addShaped("pack_expert_crafting_armor/silver_helmet", <item:galosphere:sterling_helmet>, [
 		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>],
 		[<tag:items:forge:ingots/silver>, <item:minecraft:leather_helmet>.anyDamage(), <tag:items:forge:ingots/silver>],
 		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>]
 	], shapedArmorVarFunction);
 
-	smithing.removeByName("galosphere:sterling_chestplate_smithing");
+	<recipetype:minecraft:smithing>.removeByName("galosphere:sterling_chestplate_smithing");
 	craftingTable.addShaped("pack_expert_crafting_armor/silver_chestplate", <item:galosphere:sterling_chestplate>, [
 		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>],
 		[<tag:items:forge:ingots/silver>, <item:minecraft:leather_chestplate>.anyDamage(), <tag:items:forge:ingots/silver>],
 		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>]
 	], shapedArmorVarFunction);
 
-	smithing.removeByName("galosphere:sterling_leggings_smithing");
+	<recipetype:minecraft:smithing>.removeByName("galosphere:sterling_leggings_smithing");
 	craftingTable.addShaped("pack_expert_crafting_armor/silver_leggings", <item:galosphere:sterling_leggings>, [
 		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>],
 		[<tag:items:forge:ingots/silver>, <item:minecraft:leather_leggings>.anyDamage(), <tag:items:forge:ingots/silver>],
 		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>]
 	], shapedArmorVarFunction);
 
-	smithing.removeByName("galosphere:sterling_boots_smithing");
+	<recipetype:minecraft:smithing>.removeByName("galosphere:sterling_boots_smithing");
 	craftingTable.addShaped("pack_expert_crafting_armor/silver_boots", <item:galosphere:sterling_boots>, [
 		[<tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>, <tag:items:forge:ingots/silver>],
 		[<tag:items:forge:ingots/silver>, <item:minecraft:leather_boots>.anyDamage(), <tag:items:forge:ingots/silver>],

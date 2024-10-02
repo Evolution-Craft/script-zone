@@ -27,7 +27,6 @@ import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.recipe.Replacer;
-import crafttweaker.api.recipe.SmithingRecipeManager;
 import crafttweaker.api.tag.manager.ITagManager;
 
 var shapedHorseArmorVarFunction as function(usualOut as IItemStack, inputs as IItemStack[][]) as IItemStack = (usualOut as IItemStack, inputs as IItemStack[][]) => {
@@ -80,7 +79,7 @@ if (packModeSetting.packModeSettingHorseArmors() == true) {
 		[<item:minecraft:leather_leggings>, <item:minecraft:air>, <item:minecraft:leather_leggings>]
 	], shapedHorseArmorVarFunction);
 
-	smithing.removeByName("galosphere:sterling_horse_armor_smithing");
+	<recipetype:minecraft:smithing>.removeByName("galosphere:sterling_horse_armor_smithing");
 	craftingTable.addShaped("pack_expert_crafting_horse_armor/sterling_horse_armor", <item:galosphere:sterling_horse_armor>, [
 		[<item:minecraft:air>, <item:minecraft:air>, <item:galosphere:sterling_helmet>],
 		[<tag:items:forge:ingots/silver>, <item:minecraft:leather_horse_armor>.anyDamage(), <tag:items:forge:ingots/silver>],

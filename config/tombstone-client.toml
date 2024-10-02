@@ -79,4 +79,8 @@
 	no_blinking_nightvision = true
 	#Allows the ghost to appear around you during Halloween [false/true|default:true]
 	enable_halloween_ghost = false
+	#Equips shield in priority when recovering your lost items [false/true|default:false]
+	equip_shield_in_priority = false
+	#Sorts the inventory by filling the last slots first [false/true|default:false]
+	reverse_inventory_sorting = false
 
