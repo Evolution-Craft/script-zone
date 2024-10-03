@@ -128,6 +128,9 @@ var campfireAddItem = {
 	"croptopia:roasted_nuts" : <tag:items:forge:nuts>,
 	"croptopia:toast" : <tag:items:forge:bread>,
 	"farmersdelight:cooked_bacon" : <item:tconstruct:bacon>,
+	"simplytea:teapot_frothed" : <item:simplytea:teapot_milk>,
+	"simplytea:teapot_hot" : <item:simplytea:teapot_water>,
+	"thirst:terracotta_bowl" : <item:thirst:clay_bowl>,
 	"twilightdelight:cooked_insect" : <item:twilightdelight:raw_insect>,
 	"twilightdelight:cooked_meef_slice" : <item:twilightdelight:raw_meef_slice>,
 	"twilightdelight:cooked_venison_rib" : <item:twilightdelight:raw_venison_rib>,
@@ -138,6 +141,80 @@ for campfireAddItemOut, campfireAddItemIn in campfireAddItem {
 		<recipetype:minecraft:campfire_cooking>.addRecipe("campfire/vinery/" + <item:${campfireAddItemOut}>.registryName.path, <item:${campfireAddItemOut}>, campfireAddItemIn, 1.0, 600);
 	} else {
 		<recipetype:minecraft:campfire_cooking>.addRecipe("campfire/" + <item:${campfireAddItemOut}>.registryName.path, <item:${campfireAddItemOut}>, campfireAddItemIn, 1.0, 600);
+	}
+}
+
+var campfireThirstAddItem = [
+	"minecraft:water_bottle",
+	"minecraft:water_bucket",
+	"thirst:thirst:terracotta_water_bowl"
+];
+var campfireThirstValue = {
+	0 : 1,
+	1 : 2,
+	2 : 3
+};
+for campfireThirstAddItemType in campfireThirstAddItem {
+	for campfireThirstValueIn, campfireThirstValueOut in campfireThirstValue {
+		if (campfireThirstValueIn == 0) {
+			if (campfireThirstAddItemType == "minecraft:water_bottle") {
+				val campfireThirstValueInNbtFirst = "{Potion:'minecraft:water',Purity:" + campfireThirstValueIn + "}";
+				val campfireThirstValueInNbtSecond = "{Potion:'minecraft:water',Purity:-1}";
+				val campfireThirstValueInOut = "Potion": "minecraft:water", "Purity": campfireThirstValueOut;
+			} else {
+				val campfireThirstValueInNbtFirst = "{Purity:" + campfireThirstValueIn + "}";
+				val campfireThirstValueInNbtSecond = "{Purity:-1}";
+				val campfireThirstValueInOut = "Purity": campfireThirstValueOut;
+			}
+			<recipetype:minecraft:campfire_cooking>.addRecipe("campfire/" + <item:${campfireThirstAddItemType}>.registryName.path + "_from_campfire_cooking_slight_dirty",{
+				"ingredient":[{
+					"type": "forge:nbt",
+					"item": campfireThirstAddItemType,
+					"nbt": campfireThirstValueInNbtFirst
+				},
+				{
+					"type": "forge:nbt",
+					"item": campfireThirstAddItemType,
+					"nbt": campfireThirstValueInNbtSecond
+				}],
+				"result": {
+					"item": campfireThirstAddItemType,
+					"nbt": {
+						campfireThirstValueInOut
+					}
+				},
+				"experience": 0.35,
+				"cookingtime": 600
+			});
+		} else {
+			if (campfireThirstValueIn == 1) {
+				val campfireThirstAddItemName = "acceptable";
+			} else {
+				val campfireThirstAddItemName = "purified";
+			}
+			if (campfireThirstAddItemType == "minecraft:water_bottle") {
+				val campfireThirstValueInNbt = "{Potion:'minecraft:water',Purity:" + campfireThirstValueIn + "}";
+				val campfireThirstValueInOut = "Potion": "minecraft:water", "Purity": campfireThirstValueOut;
+			} else {
+				val campfireThirstValueInNbt = "{Purity:" + campfireThirstValueIn + "}";
+				val campfireThirstValueInOut = "Purity": campfireThirstValueOut;
+			}
+			<recipetype:minecraft:campfire_cooking>.addRecipe("campfire/" + <item:${campfireThirstAddItemType}>.registryName.path + "_from_campfire_cooking_" + campfireThirstAddItemName,{
+				"ingredient":[{
+					"type": "forge:nbt",
+					"item": campfireThirstAddItemType,
+					"nbt": campfireThirstValueInNbt
+				}],
+				"result": {
+					"item": campfireThirstAddItemType,
+					"nbt": {
+						campfireThirstValueInOut
+					}
+				},
+				"experience": 0.35,
+				"cookingtime": 600
+			});
+		}
 	}
 }
 

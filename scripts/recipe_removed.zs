@@ -736,10 +736,24 @@ var removeRecipeByNameFurnace = [
 	"miniutilities:smelting/ender_ore",
 	// Refinde Storage
 	"refinedstorage:silicon",
+	// Simply Tea
+	"simplytea:teapot_frothed_campfire",
+	"simplytea:teapot_hot_campfire",
 	// Thermal Series
 	"thermal:smelting/glowstone_dust_from_spores_smelting",
 	"thermal:smelting/gunpowder_from_spores_smelting",
 	"thermal:smelting/redstone_from_spores_smelting",
+	// Thirst Was Taken
+	"thirst:terracotta_bowl_from_campfire_cooking",
+	"thirst:terracotta_water_bowl_from_campfire_cooking_acceptable",
+	"thirst:terracotta_water_bowl_from_campfire_cooking_purified",
+	"thirst:terracotta_water_bowl_from_campfire_cooking_slight_dirty",
+	"thirst:water_bottle_from_campfire_cooking_acceptable",
+	"thirst:water_bottle_from_campfire_cooking_purified",
+	"thirst:water_bottle_from_campfire_cooking_slight_dirty",
+	"thirst:water_bucket_from_campfire_cooking_acceptable",
+	"thirst:water_bucket_from_campfire_cooking_slight_dirty",
+	"thirst:water_bucket_from_campfire_purified",
 	// Undergarden
 	"undergarden:smelt_froststeel_item",
 	"undergarden:smelt_utherium_item"
