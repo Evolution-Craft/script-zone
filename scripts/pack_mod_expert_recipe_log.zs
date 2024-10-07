@@ -2,9 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Modify Item Max Stack Size.
  */
 
 #priority 500
@@ -58,45 +55,15 @@ if (packModeSetting.packModeSettingLogs() == true) {
 		"vinery:cherry_planks" : <tag:items:vinery:cherry_logs>
 	};
 	for packModeExpertPlanksOut, packModeExpertPlanksIn in packModeExpertPlanks {
-		if (packModeExpertPlanksOut == "twilightforest:canopy_planks" || packModeExpertPlanksOut == "twilightforest:mangrove_planks" || packModeExpertPlanksOut == "twilightforest:mining_planks" || packModeExpertPlanksOut == "twilightforest:sorting_planks" || packModeExpertPlanksOut == "twilightforest:time_planks" || packModeExpertPlanksOut == "twilightforest:transformation_planks" || packModeExpertPlanksOut == "twilightforest:twilight_oak_planks") {
-			craftingTable.removeByName("twilightforest:wood/" + <item:${packModeExpertPlanksOut}>.registryName.path);
-		} else if (packModeExpertPlanksOut == "twilightforest:dark_planks") {
-			craftingTable.removeByName("twilightforest:wood/darkwood_planks");
-		} else if (packModeExpertPlanksOut == "tconstruct:bloodshroom_planks") {
-			craftingTable.removeByName("tconstruct:world/wood/bloodshroom/planks");
-		} else if (packModeExpertPlanksOut == "tconstruct:greenheart_planks") {
-			craftingTable.removeByName("tconstruct:world/wood/greenheart/planks");
-		} else if (packModeExpertPlanksOut == "tconstruct:skyroot_planks") {
-			craftingTable.removeByName("tconstruct:world/wood/skyroot/planks");
-		} else if (packModeExpertPlanksOut == "quark:azalea_planks") {
-			craftingTable.removeByName("quark:world/crafting/woodsets/azalea/planks");
-		} else if (packModeExpertPlanksOut == "quark:blossom_planks") {
-			craftingTable.removeByName("quark:world/crafting/woodsets/blossom/planks");
-		} else if (packModeExpertPlanksOut == "integrateddynamics:menril_planks") {
-			craftingTable.removeByName("integrateddynamics:crafting/menril_planks");
-		} else {
-			craftingTable.removeByName(packModeExpertPlanksOut);
-		}
-
 		if (packModeExpertPlanksOut == "quark:azalea_planks") {
-			craftingTable.addShapeless("pack_expert_crafting/quark_" + <item:${packModeExpertPlanksOut}>.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
+			craftingTable.addShapeless("pack_expert_crafting/log/quark_" + <item:${packModeExpertPlanksOut}>.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
 		} else {
-			craftingTable.addShapeless("pack_expert_crafting_" + <item:${packModeExpertPlanksOut}>.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
+			craftingTable.addShapeless("pack_expert_crafting/log/" + <item:${packModeExpertPlanksOut}>.registryName.path, <item:${packModeExpertPlanksOut}> * expert_log_to_planks, [packModeExpertPlanksIn]);
 		}
 	}
 
-	craftingTable.removeByName("myrtrees:rubberwood_planks");
 	craftingTable.addShapeless("pack_expert_crafting_rubberwood_planks", <item:myrtrees:rubberwood_planks> * expert_log_to_planks, [<item:myrtrees:rubberwood_log>]);
 } else {
-	craftingTable.removeByName("twilightforest:wood/canopy_planks");
-	craftingTable.removeByName("twilightforest:wood/darkwood_planks");
-	craftingTable.removeByName("twilightforest:wood/mangrove_planks");
-	craftingTable.removeByName("twilightforest:wood/mining_planks");
-	craftingTable.removeByName("twilightforest:wood/sorting_planks");
-	craftingTable.removeByName("twilightforest:wood/time_planks");
-	craftingTable.removeByName("twilightforest:wood/transformation_planks");
-	craftingTable.removeByName("twilightforest:wood/twilight_oak_planks");
-	
 	var packModeExpertDisablePlanks = {
 		"canopy_planks" : <tag:items:twilightforest:canopy_logs>,
 		"dark_planks" : <tag:items:twilightforest:darkwood_logs>,

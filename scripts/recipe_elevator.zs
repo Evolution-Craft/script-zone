@@ -17,7 +17,6 @@ craftingTable.addShapeless("elevatorid_elevator_white_using_soap", <item:elevato
 
 // Shaped
 for elevatorid_dye_item in Constant.packColours {
-	craftingTable.removeByName("elevatorid:elevator_" + elevatorid_dye_item);
 	craftingTable.addShaped("pack_expert_crafting_elevator/elevator_" + elevatorid_dye_item, <item:elevatorid:elevator_${elevatorid_dye_item}>, [
 		[<item:minecraft:${elevatorid_dye_item}_wool>, <tag:items:forge:ingots/iron>, <item:minecraft:${elevatorid_dye_item}_wool>],
 		[<tag:items:forge:ingots/iron>, <item:minecraft:ender_pearl>, <tag:items:forge:ingots/iron>],

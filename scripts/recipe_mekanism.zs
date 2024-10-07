@@ -463,42 +463,72 @@ for addingSawingMekanismName, addingSawingMekanismMod in addingSawingMekanism {
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/pressure_plate/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_pressure_plate>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_pressure_plate_return);
 		<recipetype:mekanism:sawing>.addRecipe("mekanism_sawing/trapdoor/" + addingSawingMekanismName, ItemStackIngredient.from(<item:${addingSawingMekanismMod}_trapdoor>), <item:${addingSawingMekanismMod}_planks> * mekanism_planks_trapdoor_return);
 	}
-	if (addingSawingMekanismName != "towerwood") {
-		<recipetype:mekanism:sawing>.addJsonRecipe("mekanism_sawing/log/" + addingSawingMekanismName, {
-			"input": {
-				"ingredient": {
-					"tag": addingSawingMekanismMod + "_logs"
-				}
-			},
-			"mainOutput": {
-				"item": addingSawingMekanismMod + "_planks",
-				"count": mekanism_planks_log_return
-			},
-			"secondaryOutput": {
-				"item": "thermal:sawdust",
-				"count": mekanism_saw_dust_log_return
-			},
-			"secondaryChance": mekanism_saw_dust_log_chance
-		});
-	}
+}
+
+var addingSawingLogMekanism = {
+	"azalea" : "ecologics:azalea",
+	"azalea_quark" : "quark:azalea",
+	"bloodshroom" : "tconstruct:bloodshroom",
+	"blossom" : "quark:blossom",
+	"canopy" : "twilightforest:canopy",
+	"cerulean" : "enlightened_end:cerulean",
+	"cherry" : "vinery:cherry",
+	"chorus_nest" : "unusualend:chorus_nest",
+	"chorus_nest_mosaic" : "unusualend:chorus_nest",
+	"coconut" : "ecologics:coconut",
+	"darkwood" : "twilightforest:dark",
+	"flowering_azalea" : "ecologics:flowering_azalea",
+	"greenheart" : "tconstruct:greenheart",
+	"grongle" : "undergarden:grongle",
+	"indigo" : "enlightened_end:indigo",
+	"mangrove" : "twilightforest:mangrove",
+	"menril" : "integrateddynamics:menril",
+	"mining" : "twilightforest:mining",
+	"smogstem" : "undergarden:smogstem",
+	"sorting" : "twilightforest:sorting",
+	"skyroot" : "tconstruct:skyroot",
+	"walnut" : "ecologics:walnut",
+	"wigglewood" : "undergarden:wigglewood",
+	"thorn" : "tflostblocks:thorn",
+	"timewood" : "twilightforest:time",
+	"transformation" : "twilightforest:transformation",
+	"twilight_oak" : "twilightforest:twilight_oak"
+};
+for addingSawingLogMekanismName, addingSawingLogMekanismMod in addingSawingLogMekanism {
+	<recipetype:mekanism:sawing>.addJsonRecipe("mekanism_sawing/log/" + addingSawingLogMekanismName, {
+		"input": {
+			"ingredient": {
+				"tag": addingSawingLogMekanismMod + "_logs"
+			}
+		},
+		"mainOutput": {
+			"item": addingSawingLogMekanismMod + "_planks",
+			"count": mekanism_planks_log_return
+		},
+		"secondaryOutput": {
+			"item": "thermal:sawdust",
+			"count": mekanism_saw_dust_log_return
+		},
+		"secondaryChance": mekanism_saw_dust_log_chance
+	});
 }
 
 var addingSawingBookshelfMekanism = {
 	"minecraft:acacia" : "quark:acacia_bookshelf",
-	"quark:azalea" : "quark:azalea_bookshelf",
 	"minecraft:birch" : "quark:birch_bookshelf",
-	"quark:blossom" : "quark:blossom_bookshelf",
-	"twilightforest:canopy" : "twilightforest:canopy_bookshelf",
 	"minecraft:crimson" : "quark:crimson_bookshelf",
 	"minecraft:dark_oak"  : "quark:dark_oak_bookshelf",
-	"twilightforest:dark" : "twilightdecor:darkwood_bookshelf",
 	"minecraft:jungle" : "quark:jungle_bookshelf",
-	"twilightforest:mangrove" : "twilightdecor:mangrove_bookshelf",
-	"twilightforest:mining" : "twilightdecor:mining_bookshelf",
 	"minecraft:oak" : "minecraft:bookshelf",
-	"twilightforest:sorting" : "twilightdecor:sorting_bookshelf",
 	"minecraft:spruce" : "quark:spruce_bookshelf",
 	"minecraft:warped" : "quark:warped_bookshelf",
+	"quark:azalea" : "quark:azalea_bookshelf",
+	"quark:blossom" : "quark:blossom_bookshelf",
+	"twilightforest:canopy" : "twilightforest:canopy_bookshelf",
+	"twilightforest:dark" : "twilightdecor:darkwood_bookshelf",
+	"twilightforest:mangrove" : "twilightdecor:mangrove_bookshelf",
+	"twilightforest:mining" : "twilightdecor:mining_bookshelf",
+	"twilightforest:sorting" : "twilightdecor:sorting_bookshelf",
 	"twilightforest:time" : "twilightdecor:timewood_bookshelf",
 	"twilightforest:transformation" : "twilightdecor:transformation_bookshelf",
 	"twilightforest:twilight_oak" : "twilightdecor:twilight_oak_bookshelf"

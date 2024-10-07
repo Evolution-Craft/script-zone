@@ -169,11 +169,96 @@ var removeRecipeByName = [
 	"create:crafting/appliances/slime_ball",
 	"create:crafting/curiosities/cake",
 	// Croptopia
+	"croptopia:apple_juice",
+	"croptopia:apple_pie",
+	"croptopia:apricot_jam",
+	"croptopia:banana_cream_pie",
+	"croptopia:banana_smoothie",
+	"croptopia:baked_crepes",
 	"croptopia:beer",
+	"croptopia:beetroot_salad",
+	"croptopia:blackberry_jam",
+	"croptopia:blt",
+	"croptopia:borscht",
+	"croptopia:butter",
+	"croptopia:cherry_jam",
+	"croptopia:cherry_pie",
+	"croptopia:cheese",
+	"croptopia:chicken_and_noodles",
+	"croptopia:chili_relleno",
+	"croptopia:chimichanga",
+	"croptopia:chocolate",
+	"croptopia:cinnamon_roll",
+	"croptopia:cranberry_juice",
+	"croptopia:croque_monsieur",
+	"croptopia:croque_madame",
+	"croptopia:coffee",
+	"croptopia:dough",
+	"croptopia:french_fries",
+	"croptopia:grape_juice",
+	"croptopia:ground_pork",
+	"croptopia:hashed_brown",
+	"croptopia:hamburger",
+	"croptopia:lemonade",
+	"croptopia:limeade",
+	"croptopia:macaron",
+	"croptopia:mango_ice_cream",
+	"croptopia:mashed_potatoes",
 	"croptopia:mead",
+	"croptopia:melon_juice",
+	"croptopia:meringue",
+	"croptopia:noodle",
+	"croptopia:olive_oil",
+	"croptopia:orange_juice",
+	"croptopia:onion_rings",
 	"croptopia:paprika",
+	"croptopia:peach_jam",
+	"croptopia:pecan_ice_cream",
+	"croptopia:pineapple_juice",
+	"croptopia:pumpkin_bars",
+	"croptopia:quiche",
+	"croptopia:raspberry_jam",
 	"croptopia:rum",
+	"croptopia:rum_raisin_ice_cream",
+	"croptopia:saguaro_juice",
+	"croptopia:shaped_bacon",
+	"croptopia:shaped_beef_wellington",
+	"croptopia:shaped_chocolate_ice_cream",
+	"croptopia:shaped_eggplant_parmesan",
+	"croptopia:shaped_eton_mess",
+	"croptopia:shaped_figgy_pudding",
+	"croptopia:shaped_fish_and_chips",
+	"croptopia:shaped_fruit_cake",
+	"croptopia:shaped_lemon_coconut_bar",
+	"croptopia:shaped_milk_bottle",
+	"croptopia:shaped_peanut_butter",
+	"croptopia:shaped_scones",
+	"croptopia:shaped_sticky_toffee_pudding",
+	"croptopia:shaped_stuffed_artichoke",
 	"croptopia:shaped_tea",
+	"croptopia:shaped_toast_sandwich",
+	"croptopia:shaped_treacle_tart",
+	"croptopia:shaped_trifle",
+	"croptopia:shaped_water_bottle",
+	"croptopia:soy_sauce",
+	"croptopia:soy_milk",
+	"croptopia:steamed_crab",
+	"croptopia:steamed_rice",
+	"croptopia:strawberry_ice_cream",
+	"croptopia:strawberry_smoothie",
+	"croptopia:strawberry_jam",
+	"croptopia:stuffed_poblanos",
+	"croptopia:sunny_side_eggs",
+	"croptopia:sweet_potato_fries",
+	"croptopia:sweet_crepes",
+	"croptopia:tamales",
+	"croptopia:the_big_breakfast",
+	"croptopia:tomato_juice",
+	"croptopia:tofu",
+	"croptopia:tofu_and_dumplings".
+	"croptopia:tres_leche_cake",
+	"croptopia:vanilla_ice_cream",
+	"croptopia:wine"
 	// Decorative Blocks
 	"decorative_blocks:dirt_from_rocky_dirt",
 	"decorative_blocks:rocky_dirt",
@@ -635,6 +720,114 @@ for remove_recipe_by_name in removeRecipeByName {
 	craftingTable.removeByName(remove_recipe_by_name);
 }
 
+for remove_elevatorid_dye_item_recipe_by_name in Constant.packColours {
+	craftingTable.removeByName("elevatorid:elevator_" + remove_elevatorid_dye_item_recipe_by_name);
+}
+
+if (packModeSetting.packModeSettingHoppers() == true) {
+	var removeHoppersRecipeByName = [
+		"brickhopper:brick_hopper",
+		"cyclic:hopper_fluid",
+		"minecraft:hopper",
+		"speedyhoppers:speedyhopper_mk1",
+		"speedyhoppers:speedyhopper_mk2",
+		"speedyhoppers:speedyhopper_mk3"
+	];
+	for remove_hoppers_recipe_by_name in removeHoppersRecipeByName {
+		craftingTable.removeByName(remove_hoppers_recipe_by_name);
+	}
+}
+
+if (packModeSetting.packModeSettingLogs() == true) {
+	var removeLogsRecipeByName = [
+		"botania:dreamwood_planks",
+		"botania:livingwood_planks",
+		"ecologics:azalea_planks",
+		"ecologics:flowering_azalea_planks",
+		"ecologics:coconut_planks",
+		"ecologics:walnut_planks",
+		"enlightened_end:cerulean_planks",
+		"enlightened_end:indigo_planks",
+		"integrateddynamics:crafting/menril_planks",
+		"myrtrees:rubberwood_planks",
+		"quark:world/crafting/woodsets/azalea/planks",
+		"quark:world/crafting/woodsets/blossom/planks",
+		"tconstruct:world/wood/bloodshroom/planks",
+		"tconstruct:world/wood/greenheart/planks",
+		"tconstruct:world/wood/skyroot/planks",
+		"twilightforest:wood/canopy_planks",
+		"twilightforest:wood/darkwood_planks",
+		"twilightforest:wood/mangrove_planks",
+		"twilightforest:wood/mining_planks",
+		"twilightforest:wood/sorting_planks",
+		"twilightforest:wood/time_planks",
+		"twilightforest:wood/transformation_planks",
+		"twilightforest:wood/twilight_oak_planks",
+		"undergarden:grongle_planks",
+		"undergarden:smogstem_planks",
+		"undergarden:wigglewood_planks",
+		"vinery:cherry_planks"
+	];
+	for remove_logs_recipe_by_name in removeLogsRecipeByName {
+		craftingTable.removeByName(remove_logs_recipe_by_name);
+	}
+
+	for remove_logs_base_wood_recipe_by_name in Constant.packBaseWoods {
+		craftingTable.removeByName("minecraft:" + remove_logs_base_wood_recipe_by_name);
+	}
+} else {
+	var removeLogRecipeByName = [
+		"twilightforest:wood/canopy_planks",
+		"twilightforest:wood/darkwood_planks",
+		"twilightforest:wood/mangrove_planks",
+		"twilightforest:wood/mining_planks",
+		"twilightforest:wood/sorting_planks",
+		"twilightforest:wood/time_planks",
+		"twilightforest:wood/transformation_planks",
+		"twilightforest:wood/twilight_oak_planks"
+	];
+	for remove_log_recipe_by_name in removeLogRecipeByName {
+		craftingTable.removeByName(remove_log_recipe_by_name);
+	}
+}
+
+if (packModeSetting.packModeSettingShears() == true) {
+	var removeShearsRecipeByName = [
+		"ceramicshears:ceramic_shears",
+		"cyclic:shears_flint",
+		"cyclic:shearing",
+		"minecraft:shears"
+	];
+	for remove_shears_recipe_by_name in removeShearsRecipeByName {
+		craftingTable.removeByName(remove_shears_recipe_by_name);
+	}
+
+	for remove_woodenshears_recipe_by_name in Constant.packModWoods {
+		craftingTable.removeByName("woodenshears:wshears." + remove_woodenshears_recipe_by_name);
+	}
+}
+
+if (packModeSetting.packModeSettingTomsStorage() == true) {
+	var removeTomsStorageRecipeByName = [
+		"toms_storage:inventory_cable",
+		"toms_storage:inventory_cable_connector",
+		"toms_storage:inventory_cable_connector_filtered",
+		"toms_storage:inventory_cable_connector_framed",
+		"toms_storage:inventory_cable_framed",
+		"toms_storage:inventory_connector",
+		"toms_storage:inventory_hopper_basic",
+		"toms_storage:inventory_proxy",
+		"toms_storage:level_emitter",
+		"toms_storage:storage_terminal",
+		"toms_storage:crafting_terminal",
+		"toms_storage:trim",
+		"toms_storage:wireless_terminal"
+	];
+	for remove_toms_storage_recipe_by_name in removeTomsStorageRecipeByName {
+		craftingTable.removeByName(remove_toms_storage_recipe_by_name);
+	}
+}
+
 var removeRecipeByModid = [
 	// Pane In The Glass
 	"pitg",
@@ -701,6 +894,11 @@ var removeRecipeByNameCampfire = [
 	"croptopia:campfire_raisins",
 	"croptopia:campfire_toast",
 	"croptopia:roasted_nuts_from_campfire",
+	// Simply Tea
+	"simplytea:teapot_frothed_campfire",
+	"simplytea:teapot_hot_campfire",
+	// Thirst Was Taken
+	"thirst:terracotta_bowl_from_campfire_cooking",
 	// Twilight Delight
 	"twilightdelight:cooked_insect_campfire",
 	"twilightdelight:cooked_meef_slice_campfire",
@@ -736,24 +934,10 @@ var removeRecipeByNameFurnace = [
 	"miniutilities:smelting/ender_ore",
 	// Refinde Storage
 	"refinedstorage:silicon",
-	// Simply Tea
-	"simplytea:teapot_frothed_campfire",
-	"simplytea:teapot_hot_campfire",
 	// Thermal Series
 	"thermal:smelting/glowstone_dust_from_spores_smelting",
 	"thermal:smelting/gunpowder_from_spores_smelting",
 	"thermal:smelting/redstone_from_spores_smelting",
-	// Thirst Was Taken
-	"thirst:terracotta_bowl_from_campfire_cooking",
-	"thirst:terracotta_water_bowl_from_campfire_cooking_acceptable",
-	"thirst:terracotta_water_bowl_from_campfire_cooking_purified",
-	"thirst:terracotta_water_bowl_from_campfire_cooking_slight_dirty",
-	"thirst:water_bottle_from_campfire_cooking_acceptable",
-	"thirst:water_bottle_from_campfire_cooking_purified",
-	"thirst:water_bottle_from_campfire_cooking_slight_dirty",
-	"thirst:water_bucket_from_campfire_cooking_acceptable",
-	"thirst:water_bucket_from_campfire_cooking_slight_dirty",
-	"thirst:water_bucket_from_campfire_purified",
 	// Undergarden
 	"undergarden:smelt_froststeel_item",
 	"undergarden:smelt_utherium_item"
