@@ -442,7 +442,6 @@ craftingTable.addShaped("croptopia/vanilla_ice_cream", <item:croptopia:vanilla_i
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 // TODO: Move on Brewin And Chewin
-craftingTable.removeByName("croptopia:wine");
 craftingTable.addShaped("croptopia/wine", <item:croptopia:wine>, [
 	[<tag:items:forge:fruits/grape>, <tag:items:forge:fruits/grape>, <item:minecraft:air>],
 	[<item:croptopia:food_press>.anyDamage().transformDamage(), <item:minecraft:glass_bottle>, <item:minecraft:air>],

@@ -40,6 +40,15 @@ val mekanism_stick_fence_gate_return = 4;
 val mekanism_tripwire_hook_chest_chance = 0.75;
 val mekanism_tripwire_hook_chest_return = 1;
 
+// Shaped
+if (packModeSetting.packModeSettingShears() == true) {
+	craftingTable.addShaped("pack_expert_crafting_shears/mekanism/module_shearing_unit", <item:mekanism:module_shearing_unit>, [
+		[<item:mekanism:alloy_infused>, <item:netherite_shears_and_flint_and_steel:netherite_shears>.anyDamage(), <item:mekanism:alloy_infused>],
+		[<item:mekanism:alloy_infused>, <item:mekanism:module_base>, <item:mekanism:alloy_infused>],
+		[<item:mekanism:hdpe_sheet>, <item:mekanism:hdpe_sheet>, <item:mekanism:hdpe_sheet>]
+	]);
+}
+
 // Crystallizing
 <recipetype:mekanism:crystallizing>.addRecipe("mekanism_crystallizing/salt", GasStackIngredient.from(<gas:mekanism:brine> * 15), <item:salt:salt>);
 

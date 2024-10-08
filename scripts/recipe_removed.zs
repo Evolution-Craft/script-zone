@@ -255,10 +255,10 @@ var removeRecipeByName = [
 	"croptopia:the_big_breakfast",
 	"croptopia:tomato_juice",
 	"croptopia:tofu",
-	"croptopia:tofu_and_dumplings".
+	"croptopia:tofu_and_dumplings",
 	"croptopia:tres_leche_cake",
 	"croptopia:vanilla_ice_cream",
-	"croptopia:wine"
+	"croptopia:wine",
 	// Decorative Blocks
 	"decorative_blocks:dirt_from_rocky_dirt",
 	"decorative_blocks:rocky_dirt",
@@ -773,7 +773,7 @@ if (packModeSetting.packModeSettingLogs() == true) {
 	}
 
 	for remove_logs_base_wood_recipe_by_name in Constant.packBaseWoods {
-		craftingTable.removeByName("minecraft:" + remove_logs_base_wood_recipe_by_name);
+		craftingTable.removeByName("minecraft:" + remove_logs_base_wood_recipe_by_name + "_planks");
 	}
 } else {
 	var removeLogRecipeByName = [
@@ -796,6 +796,7 @@ if (packModeSetting.packModeSettingShears() == true) {
 		"ceramicshears:ceramic_shears",
 		"cyclic:shears_flint",
 		"cyclic:shearing",
+		"mekanism:module_shearing_unit",
 		"minecraft:shears"
 	];
 	for remove_shears_recipe_by_name in removeShearsRecipeByName {
@@ -954,7 +955,8 @@ var removeRecipeByNameSmithingTable = [
 	"leathered_boots:smithing/leathered_gold_boots",
 	"leathered_boots:smithing/leathered_diamond_boots",
 	"leathered_boots:smithing/leathered_netherite_boots",
-	"leathered_boots:smithing/leathered_netherite_boots_from_diamond"
+	"leathered_boots:smithing/leathered_netherite_boots_from_diamond",
+	"minecraft:netherite_gear_smithing"
 ];
 for remove_recipe_by_name_smithing_table in removeRecipeByNameSmithingTable {
 	<recipetype:minecraft:smithing>.removeByName(remove_recipe_by_name_smithing_table);
@@ -1323,90 +1325,7 @@ if (packModeSetting.packModeSettingPlates() == true) {
 
 // Tinkers Construct
 var removeCastingTableRecipeByName = [
-	"tconstruct:smeltery/casting/metal/gold/bars",
-	// Gold Cast
-	"tconstruct:smeltery/casts/gold_casts/gears",
-	"tconstruct:smeltery/casts/gold_casts/coins",
-	// Coin Gold Cast
-	"tconstruct:smeltery/casting/metal/bronze/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/constantan/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/copper/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/electrum/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/enderium/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/gold/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/invar/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/iron/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/lead/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/lumium/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/netherite/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/nickel/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/rose_gold/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/signalum/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/silver/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/steel/coin_gold_cast",
-	"tconstruct:smeltery/casting/metal/tin/coin_gold_cast",
-	"thermal_extra:compat/tconstruct/casting/dragonsteel/coin_gold_cast",
-	"thermal_extra:compat/tconstruct/casting/soul_infused/coin_gold_cast",
-	// Gear Gold Cast
-	"tconstruct:smeltery/casting/metal/bronze/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/constantan/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/copper/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/electrum/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/enderium/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/gold/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/invar/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/iron/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/lead/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/lumium/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/netherite/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/nickel/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/rose_gold/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/signalum/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/silver/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/steel/gear_gold_cast",
-	"tconstruct:smeltery/casting/metal/tin/gear_gold_cast",
-	"thermal_extra:compat/tconstruct/casting/dragonsteel/gear_gold_cast",
-	"thermal_extra:compat/tconstruct/casting/soul_infused/gear_gold_cast",
-	// Coin Sand Cast
-	"tconstruct:smeltery/casting/metal/bronze/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/constantan/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/copper/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/electrum/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/enderium/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/gold/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/invar/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/iron/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/lead/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/lumium/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/netherite/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/nickel/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/rose_gold/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/signalum/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/silver/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/steel/coin_sand_cast",
-	"tconstruct:smeltery/casting/metal/tin/coin_sand_cast",
-	"thermal_extra:compat/tconstruct/casting/dragonsteel/coin_sand_cast",
-	"thermal_extra:compat/tconstruct/casting/soul_infused/coin_sand_cast",
-	// Gear Sand Cast
-	"tconstruct:smeltery/casting/metal/bronze/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/constantan/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/copper/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/electrum/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/enderium/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/gold/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/invar/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/iron/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/lead/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/lumium/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/netherite/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/nickel/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/rose_gold/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/signalum/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/silver/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/steel/gear_sand_cast",
-	"tconstruct:smeltery/casting/metal/tin/gear_sand_cast",
-	"thermal_extra:compat/tconstruct/casting/dragonsteel/gear_sand_cast",
-	"thermal_extra:compat/tconstruct/casting/soul_infused/gear_sand_cast"
+	"tconstruct:smeltery/casting/metal/gold/bars"
 ];
 for remove_casting_table_recipe_by_name in removeCastingTableRecipeByName {
 	<recipetype:tconstruct:casting_table>.removeByName(remove_casting_table_recipe_by_name);
@@ -1473,14 +1392,49 @@ var removeMoldingTableRecipeByName = [
 	"tconstruct:smeltery/casts/sand_casts/coins",
 	"tconstruct:smeltery/casts/red_sand_casts/coins",
 	"tconstruct:smeltery/casts/sand_casts/gears",
-	"tconstruct:smeltery/casts/red_sand_casts/gears"
+	"tconstruct:smeltery/casts/red_sand_casts/gears",
+	"tconstruct:smeltery/casts/sand_casts/repair_kit",
+	"tconstruct:smeltery/casts/red_sand_casts/repair_kit",
+	"tconstruct:smeltery/casts/sand_casts/round_plate",
+	"tconstruct:smeltery/casts/red_sand_casts/round_plate"
 ];
 for remove_molding_table_recipe_by_name in removeMoldingTableRecipeByName {
 	<recipetype:tconstruct:molding_table>.removeByName(remove_molding_table_recipe_by_name);
 }
 
+var removeRecipeByRegexCastingTable = [
+	"tconstruct:.*coin.*",
+	"tconstruct:.*gear.*",
+	"tconstruct:.*repair_kit.*",
+	"tconstruct:.*round_plate.*",
+	"thermal_extra:.*coin.*",
+	"thermal_extra:.*gear.*"
+];
+for remove_recipe_by_regex_casting_table in removeRecipeByRegexCastingTable {
+	<recipetype:tconstruct:casting_table>.removeByRegex(remove_recipe_by_regex_casting_table);
+}
+
+var removeRecipeByRegexMelting = [
+	"tconstruct:.*coins.*",
+	"tcintegrations:tools.*",
+	"tconstruct:tools.*",
+	"thermal_extra:.*coin.*"
+];
+for remove_recipe_by_regex_melting in removeRecipeByRegexMelting {
+	<recipetype:tconstruct:melting>.removeByRegex(remove_recipe_by_regex_melting);
+}
+
+var removeRecipeByRegexPartBuilder = [
+	"tconstruct:.*coins.*",
+	"tconstruct:.*repair_kit.*",
+	"tconstruct:.*round_plate.*"
+];
+for remove_recipe_by_regex_part_builder in removeRecipeByRegexPartBuilder {
+	<recipetype:tconstruct:part_builder>.removeByRegex(remove_recipe_by_regex_part_builder);
+}
+
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/quartz/gem_1");
-<recipetype:tconstruct:modifier_worktable>.removeAll();
+//<recipetype:tconstruct:modifier_worktable>.removeAll();
 
 // Vinery
 <recipetype:vinery:pot_cooking>.removeAll();
