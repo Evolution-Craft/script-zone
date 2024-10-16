@@ -2,11 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : First Issue.
- * v0.2 : Add Knife Info.
- * v0.3 : Rework.
  */
 
 Globals.startScript("jei_info/evolution_craft");

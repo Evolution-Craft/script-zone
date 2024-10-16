@@ -2,10 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Fix uncategorized.
- * v0.2 : Adding Quark, Twilight Forest and Undergarden Sapling.
  */
 
 #priority 994

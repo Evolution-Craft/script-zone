@@ -18,6 +18,7 @@ if (packModeSetting.packModeSettingLogs() == true) {
 
 	Globals.packExpertScript("Log - Active");
 
+	// Shapeless
 	var packModeExpertPlanks = {
 		"botania:dreamwood_planks" : <tag:items:botania:dreamwood_logs>,
 		"botania:livingwood_planks" : <tag:items:botania:livingwood_logs>,

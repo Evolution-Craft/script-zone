@@ -2,11 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Add tag heat sources.
- * v0.2 : Fix tag knife.
- * v0.3 : Add priority and tag tray heat sources, fix knife tag.
  */
 
 #priority 987

@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.misc.Composter;
 import crafttweaker.api.tag.manager.ITagManager;
 

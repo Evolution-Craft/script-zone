@@ -9,12 +9,12 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 if (packModeSetting.packModeSettingHoppers() == true) {
 
 	Globals.packExpertScript("Hopper - Active");
 
+	// Shaped
 	craftingTable.addShaped("pack_expert_crafting_hopper/brick_hopper", <item:brickhopper:brick_hopper>, [
 		[<item:minecraft:brick>, <item:minecraft:air>, <item:minecraft:brick>],
 		[<item:minecraft:brick>, <item:woodenhopper:wooden_hopper>, <item:minecraft:brick>],

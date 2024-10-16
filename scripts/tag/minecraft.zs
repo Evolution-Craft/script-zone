@@ -2,11 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Add Missing Boat.
- * v0.2 : Add Missing Stair and Slab.
- * v0.3 : Add Missing Sapling.
  */
 
 #priority 996

@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 // Grinder
 val lazier_bio_fuel_crops_quantity = 5;

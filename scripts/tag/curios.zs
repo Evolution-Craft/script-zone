@@ -2,11 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Fix Elytra uncategorized.
- * v0.2 : Add priority.
- * v0.3 : Add Bundles.
  */
 
 #priority 983

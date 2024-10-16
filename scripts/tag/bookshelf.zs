@@ -2,10 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Fix Missing Tag.
- * v0.2 : Add Missing Tag.
  */
 
 #priority 990

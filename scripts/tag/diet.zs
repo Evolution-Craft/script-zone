@@ -2,14 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Fix Diet uncategorized.
- * v0.2 : Add beyond_earth:cheese.
- * v0.3 : Add mythicbotany:dream_cherry and varius update.
- * v0.4 : Add supper for Unusual End, Enlightened and Enders Delight.
- * v0.5 : Alphabet correct sequence.
- * v0.6 : Add missing Aquaculture food.
  */
 
 #priority 993

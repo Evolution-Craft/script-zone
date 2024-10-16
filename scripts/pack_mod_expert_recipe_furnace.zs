@@ -2,9 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Created crafting sequence for Furnaces.
  */
 
 Globals.startScript("pack_mod_expert_recipe_furnace");
@@ -12,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 if (packModeSetting.packModeSettingFurnaces() == true) {

@@ -2,10 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Fix Empty Tag.
- * v0.2 : Add priority.
  */
 
 #priority 982
@@ -16,7 +12,7 @@ Globals.priorityScript("982");
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.tag.manager.ITagManager;
 
-// Seeds
+// Hollow
 var addingHollowQuarkDelight = [
 	"twilightforest:hollow_oak_log",
 	"twilightforest:hollow_spruce_log",

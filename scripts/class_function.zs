@@ -80,6 +80,15 @@ public function packAddRecipeTinkersConstruct_Damagable_Melting(recipeName as st
 }
 val packAddRecipeTinkersConstruct_Damagable_Melting_Load as string = "packAddRecipeTinkersConstruct_Damagable_Melting Load Completed";
 
+// TODO: test before implementation
+/*public var shapedOldDamageVarFunction as function(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack[][]) as crafttweaker.api.item.IItemStack = (usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack[][]) => {
+	var oldDamage = inputs[1][1].damage;
+	if oldDamage < 0 {
+		oldDamage = 0;
+	}
+	return usualOut.withDamage(oldDamage);
+};*/
+
 println("          Class Function Loading...          ");
 println("          -> " + packJeiDescripton_Load + "          ");
 println("          -> " + packAddRecipeApotheosisFletching_Load + "          ");

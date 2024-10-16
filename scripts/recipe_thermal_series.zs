@@ -13,7 +13,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 val mpGear = <item:thermal:press_gear_die>;

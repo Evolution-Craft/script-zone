@@ -13,7 +13,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 val expert_ingradient_to_plate = packModeSetting.packModeSettingPlateCastingBasing();

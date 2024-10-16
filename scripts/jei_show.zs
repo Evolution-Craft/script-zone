@@ -11,7 +11,12 @@ Globals.priorityScript("998");
 
 import mods.jei.JEI;
 
-JEI.addIngredient(<item:minecraft:dragon_egg>);
-JEI.addIngredient(<item:miniutilities:bat_wing>);
+var addJeiIngradient = [
+	"minecraft:dragon_egg",
+	"miniutilities:bat_wing"
+];
+for add_jei in addJeiIngradient{
+	JEI.addIngredient(<item:${add_jei}>);
+}
 
 Globals.endScript("jei_show");

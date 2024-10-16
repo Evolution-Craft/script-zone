@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 // Shaped
 craftingTable.addShaped("quark/building/crafting/compressed/chorus_fruit_block", <item:quark:chorus_fruit_block>, [

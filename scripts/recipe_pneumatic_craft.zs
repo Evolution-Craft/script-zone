@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 // Shapeless
 craftingTable.addShapeless("pneumaticcraft/pneumaticcraft/raw_salmon_tempura", <item:pneumaticcraft:raw_salmon_tempura>, [<tag:items:forge:salmones>, <item:pneumaticcraft:sourdough>]);

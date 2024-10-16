@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 // Shaped
 craftingTable.addShaped("sophisticatedbackpacks/tool_swapper_upgrade", <item:sophisticatedbackpacks:tool_swapper_upgrade>, [

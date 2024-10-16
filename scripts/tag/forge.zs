@@ -2,18 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Fix Missing Crops/Tea.
- * v0.2 : Fix Simply Tea.
- * v0.3 : Add Corundum Tag.
- * v0.4 : Add Missing Sapling and Log.
- * v0.5 : Move Salt Tag on this Script.
- * v0.6 : Add Missing Tags.
- * v0.7 : Remove Partinal temorary Fix.
- * v0.8 : Add Armors Tags.
- * v0.9 : Add Custom Rods.
- * v0.10 : Add Missing Tag.
  */
 
 #priority 997
@@ -439,6 +427,7 @@ for tag_rods_all_forge in addingRodsAllForge {
 }
 <tag:items:forge:rods/diamond>.add(<item:contenttweaker:immersiveengineering/diamond_rod>);
 <tag:items:forge:rods/emerald>.add(<item:contenttweaker:immersiveengineering/emerald_rod>);
+<tag:items:forge:rods/prismarine_rod>.add(<item:contenttweaker:create/prismarine_rod>);
 
 // Rubber
 var addingRubbersForge = [

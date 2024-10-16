@@ -13,7 +13,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 val hcNone = <constant:create:heat_condition:none>;
 val hcHeated = <constant:create:heat_condition:heated>;

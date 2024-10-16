@@ -9,13 +9,13 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 if (packModeSetting.packModeSettingShears() == true) {
 
 	Globals.packExpertScript("Shears - Active");
 
+	// Shaped
 	craftingTable.addShaped("pack_expert_crafting_shears/flint_shears", <item:cyclic:shears_flint>, [
 		[<item:minecraft:air>, <item:fiow:flint_tool_head>, <item:minecraft:air>],
 		[<item:fiow:flint_tool_head>, <item:minecraft:air>, <item:minecraft:air>],

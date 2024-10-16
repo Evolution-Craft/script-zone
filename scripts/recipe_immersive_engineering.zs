@@ -13,7 +13,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 import crafttweaker.api.tag.manager.ITagManager;
 
 val imGear = <item:immersiveengineering:mold_gear>;

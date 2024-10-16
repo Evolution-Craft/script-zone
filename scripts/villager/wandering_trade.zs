@@ -2,9 +2,6 @@
  * This file is part of the Evolution Craft modpack.
  *
  * The author of this file is Millennium, using CraftTweaker mod code.
- *
- * CHANGELOG:
- * v0.1 : Add new Trade.
  */
 
 Globals.startScript("villager/wandering_trade");

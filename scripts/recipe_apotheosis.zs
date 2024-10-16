@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 // Fletching
 packAddRecipeApotheosisFletching("fletching/barbed_arrow", <item:minecraft:iron_nugget>, <item:minecraft:stick>, <item:minecraft:feather>, <item:archarsenal:barbed_arrow>, 2);

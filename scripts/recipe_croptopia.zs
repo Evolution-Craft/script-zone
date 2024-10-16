@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 // Shapeless
 craftingTable.addShapeless("croptopia/paprika", <item:croptopia:paprika>, [<item:croptopia:chile_pepper>, <item:croptopia:mortar_and_pestle>.anyDamage().transformDamage()]);

@@ -43,18 +43,6 @@ public class Constant {
 	];
 	public static val packBaseWoods_Load as string = "packBaseWoods Load Completed";
 
-	public static val packModWoods as string[] = [
-		"acacia",
-		"big_oak",
-		"birch",
-		"crimson",
-		"jungle",
-		"oak",
-		"spruce",
-		"warped"
-	];
-	public static val packModWoods_Load as string = "packModWoods Load Completed";
-
 	public static val packDiscs as string[] = [
 		"alexsmobs:music_disc_daze",
 		"alexsmobs:music_disc_thime",
@@ -251,7 +239,6 @@ public class Constant {
 println("          Class Constant Loading...          ");
 println("          -> " + Constant.packColours_Load + "          ");
 println("          -> " + Constant.packBaseWoods_Load + "          ");
-println("          -> " + Constant.packModWoods_Load + "          ");
 println("          -> " + Constant.packDiscs_Load + "          ");
 println("          -> " + Constant.packPotions_Load + "          ");
 println("          Class Constant Loading Completed          ");

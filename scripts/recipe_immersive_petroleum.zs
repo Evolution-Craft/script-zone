@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 // Shaped
 craftingTable.addShaped("immersivepetroleum/seismic_survey_tool", <item:immersivepetroleum:seismic_survey>, [

@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 // Shaped
 craftingTable.addShaped("miners_delight/copper_pot", <item:miners_delight:copper_pot>, [

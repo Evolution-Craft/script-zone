@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 // Shaped
 craftingTable.addShaped("decorative_blocks_rocky_dirt", <item:decorative_blocks:rocky_dirt>, [

@@ -9,7 +9,6 @@ Globals.priorityScript("Null");
 
 import crafttweaker.api.item.ItemStack;
 import crafttweaker.api.item.Ingredient;
-import crafttweaker.api.recipe.Replacer;
 
 // Shapeless
 craftingTable.addShapeless("endersdelight_chorus_plant_from_crate", <item:minecraft:chorus_plant> * 9, [<item:endersdelight:chorus_crate>]);

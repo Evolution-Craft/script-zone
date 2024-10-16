@@ -11,7 +11,6 @@ Globals.priorityScript("1000");
 
 import crafttweaker.api.item.Ingredient;
 import crafttweaker.api.item.ItemStack;
-import crafttweaker.api.recipe.Replacer;
 
 var removeRecipeByName = [
 	// Alexs Mobs
@@ -724,6 +723,50 @@ for remove_elevatorid_dye_item_recipe_by_name in Constant.packColours {
 	craftingTable.removeByName("elevatorid:elevator_" + remove_elevatorid_dye_item_recipe_by_name);
 }
 
+if (packModeSetting.packModeSettingArmors() == true) {
+	var removeArmorsRecipeByName = [
+		"create:crafting/appliances/copper_diving_boots"
+		"create:crafting/appliances/copper_diving_helmet",
+		"exlinecopperequipment:copper_boots_recipe",
+		"exlinecopperequipment:copper_chestplate_recipe",
+		"exlinecopperequipment:copper_helmet_recipe",
+		"exlinecopperequipment:copper_leggings_recipe",
+		"mekanismtools:lapis_lazuli/armor/boots",
+		"mekanismtools:lapis_lazuli/armor/chestplate",
+		"mekanismtools:lapis_lazuli/armor/helmet",
+		"mekanismtools:lapis_lazuli/armor/leggings",
+		"minecraft:chainmail_boots",
+		"minecraft:chainmail_chestplate",
+		"minecraft:chainmail_helmet",
+		"minecraft:chainmail_leggings",
+		"minecraft:leather_boots",
+		"minecraft:leather_chestplate",
+		"minecraft:leather_helmet",
+		"minecraft:leather_leggings",
+		"tconstruct:armor/building/travelers_boots",
+		"tconstruct:armor/building/travelers_chestplate",
+		"tconstruct:armor/building/travelers_goggles",
+		"tconstruct:armor/building/travelers_pants",
+		"woodarmor:stone_boots_recipe",
+		"woodarmor:stone_chest_recipe",
+		"woodarmor:stone_helm_recipe",
+		"woodarmor:stone_leggs_recipe"
+	];
+	for remove_armors_recipe_by_name in removeArmorsRecipeByName {
+		craftingTable.removeByName(remove_armors_recipe_by_name);
+	}
+}
+
+if (packModeSetting.packModeSettingBuckets() == true) {
+	var removeBucketsRecipeByName = [
+		"ceramicbucket:unfired_clay_bucket",
+		"minecraft:bucket"
+	];
+	for remove_buckets_recipe_by_name in removeBucketsRecipeByName {
+		craftingTable.removeByName(remove_buckets_recipe_by_name);
+	}
+}
+
 if (packModeSetting.packModeSettingHoppers() == true) {
 	var removeHoppersRecipeByName = [
 		"brickhopper:brick_hopper",
@@ -735,6 +778,20 @@ if (packModeSetting.packModeSettingHoppers() == true) {
 	];
 	for remove_hoppers_recipe_by_name in removeHoppersRecipeByName {
 		craftingTable.removeByName(remove_hoppers_recipe_by_name);
+	}
+}
+
+if (packModeSetting.packModeSettingHorseArmors() == true) {
+	var removeHorsesRecipeByName = [
+		"exlinecopperequipment:copper_horse_armor_recipe",
+		"minecraft:leather_horse_armor"
+	];
+	for remove_horses_recipe_by_name in removeHorsesRecipeByName {
+		craftingTable.removeByName(remove_horses_recipe_by_name);
+	}
+
+	for remove_woodarmorhorse_recipe_by_name in Constant.packBaseWoods {
+		craftingTable.removeByName("woodarmorhorse:" + remove_woodarmorhorse_recipe_by_name + "_horse_armor_recipe");
 	}
 }
 
@@ -803,8 +860,12 @@ if (packModeSetting.packModeSettingShears() == true) {
 		craftingTable.removeByName(remove_shears_recipe_by_name);
 	}
 
-	for remove_woodenshears_recipe_by_name in Constant.packModWoods {
-		craftingTable.removeByName("woodenshears:wshears." + remove_woodenshears_recipe_by_name);
+	for remove_woodenshears_recipe_by_name in Constant.packBaseWoods {
+		if(remove_woodenshears_recipe_by_name == "dark_oak") {
+			craftingTable.removeByName("woodenshears:wshears.big_oak");
+		} else {
+			craftingTable.removeByName("woodenshears:wshears." + remove_woodenshears_recipe_by_name);
+		}
 	}
 }
 
@@ -830,9 +891,7 @@ if (packModeSetting.packModeSettingTomsStorage() == true) {
 }
 
 var removeRecipeByModid = [
-	// Pane In The Glass
 	"pitg",
-	// The One Probe
 	"theoneprobe"
 ];
 for remove_recipe_by_modid in removeRecipeByModid {
@@ -841,28 +900,21 @@ for remove_recipe_by_modid in removeRecipeByModid {
 
 // Blasting Furnace
 var removeRecipeByNameBlastingFurnace = [
-	// Aquaculture
 	"aquaculture:neptunium_ingot_from_blasting",
-	// Beyond Earth
 	"beyond_earth:steel_ingot_blasting",
-	// Croptopia
 	"croptopia:blasting_salt",
-	// Exline Copper Equipment
 	"exlinecopperequipment:copper_boots_blast",
 	"exlinecopperequipment:copper_chest_blast",
 	"exlinecopperequipment:copper_helm_blast",
 	"exlinecopperequipment:copper_horse_armor_blast",
 	"exlinecopperequipment:copper_leggs_blast",
-	// Integrated Dynamics
 	"integrateddynamics:blasting/menril_log_coal",
 	"integrateddynamics:blasting/menril_log_filled_coal",
-	// Library Ferret
 	"libraryferret:blasting/diamond_coins_jtl",
 	"libraryferret:blasting/emerald_coins_jtl",
 	"libraryferret:blasting/gold_coins_jtl",
 	"libraryferret:blasting/iron_coins_jtl",
 	"libraryferret:blasting/netherite_coins_jtl",
-	// Undergarden
 	"undergarden:blast_froststeel_item",
 	"undergarden:blast_utherium_item"
 ];
@@ -872,7 +924,6 @@ for remove_recipe_by_name_blasting_furnace in removeRecipeByNameBlastingFurnace 
 
 // Campfire
 var removeRecipeByNameCampfire = [
-	// Alexs Delight
 	"alexsdelight:smelting/bison_campfire",
 	"alexsdelight:smelting/bison_patty_campfire",
 	"alexsdelight:smelting/bunfungus_campfire",
@@ -881,11 +932,8 @@ var removeRecipeByNameCampfire = [
 	"alexsdelight:smelting/centipede_leg_campfire",
 	"alexsdelight:smelting/kangaroo_shank_campfire",
 	"alexsdelight:smelting/singular_cooked_moose_rib_campfire",
-	// Apotheosis
 	"apotheosis:torch",
-	// Aquaculture
 	"aquaculture:cooked_frog_legs_from_campire",
-	// Croptopia
 	"croptopia:campfire_baked_beans",
 	"croptopia:campfire_baked_sweet_potato",
 	"croptopia:campfire_baked_yam",
@@ -895,12 +943,9 @@ var removeRecipeByNameCampfire = [
 	"croptopia:campfire_raisins",
 	"croptopia:campfire_toast",
 	"croptopia:roasted_nuts_from_campfire",
-	// Simply Tea
 	"simplytea:teapot_frothed_campfire",
 	"simplytea:teapot_hot_campfire",
-	// Thirst Was Taken
 	"thirst:terracotta_bowl_from_campfire_cooking",
-	// Twilight Delight
 	"twilightdelight:cooked_insect_campfire",
 	"twilightdelight:cooked_meef_slice_campfire",
 	"twilightdelight:cooked_venison_rib_campfire"
@@ -911,35 +956,26 @@ for remove_recipe_by_name_campfire in removeRecipeByNameCampfire {
 
 // Furnace
 var removeRecipeByNameFurnace = [
-	// Cyclic
 	"cyclic:smelting/fireball",
-	// Croptopia
 	"croptopia:cooked_tuna_from_tuna",
 	"croptopia:salt_from_water_bottle",
-	// Exline Copper Equipment
 	"exlinecopperequipment:copper_boots_smelt",
 	"exlinecopperequipment:copper_chest_smelt",
 	"exlinecopperequipment:copper_helm_smelt",
 	"exlinecopperequipment:copper_horse_armor_smelt",
 	"exlinecopperequipment:copper_leggs_smelt",
-	// Integrated Dynamics
 	"integrateddynamics:smelting/menril_log_coal",
 	"integrateddynamics:smelting/menril_log_filled_coal",
-	// Library Ferret
 	"libraryferret:smelting/diamond_coins_jtl",
 	"libraryferret:smelting/emerald_coins_jtl",
 	"libraryferret:smelting/gold_coins_jtl",
 	"libraryferret:smelting/iron_coins_jtl",
 	"libraryferret:smelting/netherite_coins_jtl",
-	// Mini Utilities
 	"miniutilities:smelting/ender_ore",
-	// Refinde Storage
 	"refinedstorage:silicon",
-	// Thermal Series
 	"thermal:smelting/glowstone_dust_from_spores_smelting",
 	"thermal:smelting/gunpowder_from_spores_smelting",
 	"thermal:smelting/redstone_from_spores_smelting",
-	// Undergarden
 	"undergarden:smelt_froststeel_item",
 	"undergarden:smelt_utherium_item"
 ];
@@ -949,7 +985,6 @@ for remove_recipe_by_name_furnace in removeRecipeByNameFurnace {
 
 // Smithing Table
 var removeRecipeByNameSmithingTable = [
-	// Leathered Boots
 	"leathered_boots:smithing/leathered_chainmail_boots",
 	"leathered_boots:smithing/leathered_iron_boots",
 	"leathered_boots:smithing/leathered_gold_boots",
@@ -962,9 +997,24 @@ for remove_recipe_by_name_smithing_table in removeRecipeByNameSmithingTable {
 	<recipetype:minecraft:smithing>.removeByName(remove_recipe_by_name_smithing_table);
 }
 
+if (packModeSetting.packModeSettingArmors() == true) {
+	var removeArmorsRecipeByNameSmithingTable = [
+		"galosphere:sterling_boots_smithing",
+		"galosphere:sterling_chestplate_smithing",
+		"galosphere:sterling_helmet_smithing",
+		"galosphere:sterling_leggings_smithing"
+	];
+	for remove_armors_recipe_by_name_smithing_table in removeArmorsRecipeByNameSmithingTable {
+		<recipetype:minecraft:smithing>.removeByName(remove_armors_recipe_by_name_smithing_table);
+	}
+}
+
+if (packModeSetting.packModeSettingHorseArmors() == true) {
+	<recipetype:minecraft:smithing>.removeByName("galosphere:sterling_horse_armor_smithing");
+}
+
 // Smoker
 var removeRecipeByNameSmoker = [
-	// Croptopia
 	"croptopia:cooked_tuna_from_smoking_tuna",
 	"croptopia:salt_from_smoking_water_bottle"
 ];
@@ -974,7 +1024,6 @@ for remove_recipe_by_name_smoker in removeRecipeByNameSmoker {
 
 // Stone Cutter
 var removeRecipeByNameStoneCutter = [
-	// Twilight Forest
 	"twilightforest:stonecutting/dark_log/towerwood",
 	"twilightforest:stonecutting/dark_wood/towerwood"
 ];
@@ -983,10 +1032,8 @@ for remove_recipe_by_name_stone_cutter in removeRecipeByNameStoneCutter {
 }
 
 var removeRecipeByRegexStoneCutter = [
-	// Macaw's Fences
 	"mcwfences:.*railing_.*",
 	"mcwfences:railing_.*",
-	// Twilight Forest
 	"twilightforest:.*hollow_.*"
 ];
 for remove_recipe_by_regex_stone_cutter in removeRecipeByRegexStoneCutter {
@@ -1065,19 +1112,24 @@ for remove_fermenting_recipe_by_name in removeFermentingRecipeByName {
 <recipetype:create:milling>.removeByName("corn_delight:integration/create/milling/corn");
 
 if (packModeSetting.packModeSettingPlates() == true) {
-	<recipetype:create:pressing>.removeByName("create:pressing/brass_ingot");
-	<recipetype:create:pressing>.removeByName("create:pressing/copper_ingot");
-	<recipetype:create:pressing>.removeByName("create:pressing/gold_ingot");
-	<recipetype:create:pressing>.removeByName("create:pressing/iron_ingot");
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/aluminum_ingot");
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/constantan_ingot");
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/electrum_ingot");
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/lead_ingot");
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/nickel_ingot");
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/silver_ingot");
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/steel_ingot");
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/uranium_ingot");
-	<recipetype:create:pressing>.removeByName("createaddition:pressing/zinc_ingot");
+	var removeCreatePressingPlateRecipeByName = [
+		"create:pressing/brass_ingot",
+		"create:pressing/copper_ingot",
+		"create:pressing/gold_ingot",
+		"create:pressing/iron_ingot",
+		"createaddition:pressing/aluminum_ingot",
+		"createaddition:pressing/constantan_ingot",
+		"createaddition:pressing/electrum_ingot",
+		"createaddition:pressing/lead_ingot",
+		"createaddition:pressing/nickel_ingot",
+		"createaddition:pressing/silver_ingot",
+		"createaddition:pressing/steel_ingot",
+		"createaddition:pressing/uranium_ingot",
+		"createaddition:pressing/zinc_ingot"
+	];
+	for remove_create_pressing_plate_recipe_by_name in removeCreatePressingPlateRecipeByName {
+		<recipetype:create:pressing>.removeByName(remove_create_pressing_plate_recipe_by_name);
+	}
 }
 
 // Cyclic
@@ -1098,15 +1150,18 @@ for remove_cyclic_crusher_recipe_by_name in removeCyclicCrusherRecipeByName {
 	<recipetype:cyclic:crusher>.removeByName(remove_cyclic_crusher_recipe_by_name);
 }
 
-<recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/solidifier_apple_enchanted");
-<recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/solidifier_honeyhive");
-<recipetype:cyclic:solidifier>.removeByName("cyclic:solidifier/wax_hive");
+var removeCyclicSolidifierRecipeByName = [
+	"cyclic:solidifier/solidifier_apple_enchanted",
+	"cyclic:solidifier/solidifier_honeyhive",
+	"cyclic:solidifier/wax_hive"
+];
+for remove_cyclic_solidifier_recipe_by_name in removeCyclicSolidifierRecipeByName {
+	<recipetype:cyclic:solidifier>.removeByName(remove_cyclic_solidifier_recipe_by_name);
+}
 
 // Farmers Delight
 var removeFarmersDelightCookingPotRecipeByName = [
-	// Corn Delight
 	"corn_delight:cooking/cornbread_stuffing",
-	// Twilight Delight
 	"twilightdelight:cooking/fried_insect",
 	"twilightdelight:cooking/glacier_ice_tea",
 	"twilightdelight:cooking/grilled_ghast"
@@ -1116,7 +1171,6 @@ for remove_farmers_delight_cooking_pot_recipe_by_name in removeFarmersDelightCoo
 }
 
 var removeFarmersDelightCuttingBoardRecipeByName = [
-	// Aquaculture Delight
 	"aquaculturedelight:cutting/knife/fillet_four",
 	"aquaculturedelight:cutting/knife/fillet_fourteen",
 	"aquaculturedelight:cutting/knife/fillet_one",
@@ -1157,10 +1211,8 @@ for remove_blueprint_recipe_by_name in removeBlueprintRecipeByName {
 }
 
 var removeBottelingMachineRecipeByName = [
-	// Enginners Delight
 	"tmted:bottling/wheat_dough",
 	"tmted:bottling/wodka",
-	// Immersive Engineering
 	"immersiveengineering:bottling/empty_shell"
 ];
 for remove_bottling_machine_recipe_by_name in removeBottelingMachineRecipeByName {
@@ -1168,14 +1220,20 @@ for remove_bottling_machine_recipe_by_name in removeBottelingMachineRecipeByName
 }
 
 <recipetype:immersiveengineering:cloche>.removeByName("immersiveengineering:cloche/cactus");
-<recipetype:immersiveengineering:crusher>.removeByName("tmted:crusher/wheat_flour_from_bale");
-<recipetype:immersiveengineering:crusher>.removeByName("tmted:crusher/wheat_flour");
+
+var removeCrusherMachineRecipeByName = [
+	"tmted:crusher/wheat_flour_from_bale",
+	"tmted:crusher/wheat_flour"
+];
+for remove_crusher_machine_recipe_by_name in removeCrusherMachineRecipeByName {
+	<recipetype:immersiveengineering:crusher>.removeByName(remove_crusher_machine_recipe_by_name);
+}
+
+<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/bullet_casing");
 
 if (packModeSetting.packModeSettingPlates() == true) {
 	var removePressPlateRecipeByNameImmersiveEngineering = [
-		// Beyond Earth Giselle Addon
 		"beyond_earth_giselle_addon:compat/immersiveengineering/metalpress/plate_desh",
-		// Immersive Engineering
 		"immersiveengineering:metalpress/plate_aluminum",
 		"immersiveengineering:metalpress/plate_brass",
 		"immersiveengineering:metalpress/plate_bronze",
@@ -1198,7 +1256,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 	}
 }
 
-<recipetype:immersiveengineering:metal_press>.removeByName("immersiveengineering:metalpress/bullet_casing");
 <recipetype:immersiveengineering:squeezer>.removeByName("tmted:squeezer/tomato");
 
 // Industrial Foregoing
@@ -1233,6 +1290,17 @@ for remove_industrial_foregoing_recipe_by_name in removeRecipeByNameIndustrialFo
 <recipetype:twilightforest:uncrafting>.removeAll();
 
 // Thermal Series
+<recipetype:thermal:bottler>.removeByName("thermal:compat/create/bottler_create_honeyed_apple");
+
+var removeInsolatorRecipeByName = [
+	"thermal:compat/quark/insolator_quark_azalea_bush",
+	"thermal:compat/quark/insolator_quark_flowering_azalea_bush",
+	"thermal:machines/insolator/insolator_cactus"
+];
+for remove_insolator_recipe_by_name in removeInsolatorRecipeByName {
+	<recipetype:thermal:insolator>.removeByName(remove_insolator_recipe_by_name);
+}
+
 var removeMultiservoPressRecipeByName = [
 	"thermal:compat/quark/press_quark_chorus_fruit_packing",
 	"thermal:compat/quark/press_quark_chorus_fruit_unpacking",
@@ -1317,11 +1385,6 @@ if (packModeSetting.packModeSettingPlates() == true) {
 		<recipetype:thermal:press>.removeByName(remove_multiservo_press_plate_recipe_by_name);
 	}
 }
-<recipetype:thermal:bottler>.removeByName("thermal:compat/create/bottler_create_honeyed_apple");
-
-<recipetype:thermal:insolator>.removeByName("thermal:compat/quark/insolator_quark_azalea_bush");
-<recipetype:thermal:insolator>.removeByName("thermal:compat/quark/insolator_quark_flowering_azalea_bush");
-<recipetype:thermal:insolator>.removeByName("thermal:machines/insolator/insolator_cactus");
 
 // Tinkers Construct
 var removeCastingTableRecipeByName = [
