@@ -427,7 +427,7 @@ for tag_rods_all_forge in addingRodsAllForge {
 }
 <tag:items:forge:rods/diamond>.add(<item:contenttweaker:immersiveengineering/diamond_rod>);
 <tag:items:forge:rods/emerald>.add(<item:contenttweaker:immersiveengineering/emerald_rod>);
-<tag:items:forge:rods/prismarine_rod>.add(<item:contenttweaker:create/prismarine_rod>);
+<tag:items:forge:rods/prismarine>.add(<item:contenttweaker:create/prismarine_rod>);
 
 // Rubber
 var addingRubbersForge = [

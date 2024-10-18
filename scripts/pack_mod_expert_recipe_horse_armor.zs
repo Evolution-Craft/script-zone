@@ -29,7 +29,7 @@ if (packModeSetting.packModeSettingHorseArmors() == true) {
 		if (logWoodenHorseId == "dark_oak") {
 			craftingTable.addShaped("pack_expert_crafting_horse_armor/dark_oak_horse_armor", <item:woodarmorhorse:bigoak_horse_armor>, [
 				[<item:minecraft:air>, <item:minecraft:air>, <item:woodarmor:${logWoodenHorseId}_helmet>],
-				[<item:minecraft:${logWoodenHorseId}_planks>, <item:minecraft:${logWoodenHorseId}_stem>, <item:minecraft:${logWoodenHorseId}_planks>],
+				[<item:minecraft:${logWoodenHorseId}_planks>, <item:minecraft:${logWoodenHorseId}_log>, <item:minecraft:${logWoodenHorseId}_planks>],
 				[<item:woodarmor:${logWoodenHorseId}_leggings>, <item:minecraft:air>, <item:woodarmor:${logWoodenHorseId}_leggings>]
 			]);
 		} else if (logWoodenHorseId == "warped" || logWoodenHorseId == "crimson") {

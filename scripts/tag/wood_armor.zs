@@ -22,25 +22,6 @@ for logWoodenArmorName in Constant.packBaseWoods {
 	<tag:items:woodarmor:wooden_armor/chestplate>.add(<item:woodarmor:${logWoodenArmorName}_chestplate>);
 	<tag:items:woodarmor:wooden_armor/leggings>.add(<item:woodarmor:${logWoodenArmorName}_leggings>);
 	<tag:items:woodarmor:wooden_armor/boots>.add(<item:woodarmor:${logWoodenArmorName}_boots>);
-
-	// TODO: test before implementation
-	/*val tagWoodenArmorGeneric = "<tag:items:woodarmor:wooden_armor_"+ logWoodenArmorName + ">";
-	tagWoodenArmorGeneric.add(<item:woodarmor:${logWoodenArmorName}_helmet>);
-	tagWoodenArmorGeneric.add(<item:woodarmor:${logWoodenArmorName}_chestplate>);
-	tagWoodenArmorGeneric.add(<item:woodarmor:${logWoodenArmorName}_leggings>);
-	tagWoodenArmorGeneric.add(<item:woodarmor:${logWoodenArmorName}_boots>);
-
-	val tagWoodenArmorHelmet = "<tag:items:woodarmor:wooden_armor_"+ logWoodenArmorName + "/helmet>";
-	tagWoodenArmorHelmet.add(<item:woodarmor:${logWoodenArmorName}_helmet>);
-	
-	val tagWoodenArmorChestplate = "<tag:items:woodarmor:wooden_armor_"+ logWoodenArmorName + "/chestplate>";
-	tagWoodenArmorChestplate.add(<item:woodarmor:${logWoodenArmorName}_chestplate>);
-
-	val tagWoodenArmorLeggings = "<tag:items:woodarmor:wooden_armor_"+ logWoodenArmorName + "/leggings>";
-	tagWoodenArmorLeggings.add(<item:woodarmor:${logWoodenArmorName}_leggings>);
-
-	val tagWoodenArmorBoots = "<tag:items:woodarmor:wooden_armor_"+ logWoodenArmorName + "/boots>";
-	tagWoodenArmorBoots.add(<item:woodarmor:${logWoodenArmorName}_boots>);*/
 }
 
 // Acacia Armor

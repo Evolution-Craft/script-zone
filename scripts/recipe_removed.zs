@@ -725,7 +725,7 @@ for remove_elevatorid_dye_item_recipe_by_name in Constant.packColours {
 
 if (packModeSetting.packModeSettingArmors() == true) {
 	var removeArmorsRecipeByName = [
-		"create:crafting/appliances/copper_diving_boots"
+		"create:crafting/appliances/copper_diving_boots",
 		"create:crafting/appliances/copper_diving_helmet",
 		"exlinecopperequipment:copper_boots_recipe",
 		"exlinecopperequipment:copper_chestplate_recipe",
